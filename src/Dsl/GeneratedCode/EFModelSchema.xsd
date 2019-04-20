@@ -258,6 +258,12 @@
             <xsd:documentation>If true, will display warning glyphs with tooltips when model elements have non-fatal issues detected</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: ExposeForeignKeyProperties -->
+        <xsd:attribute name="exposeForeignKeyProperties" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>If true, will create foreign key properties in the appropriate entities for associations</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -1046,12 +1052,6 @@
             <xsd:documentation>Which object(s) in this association is/are the dependent object(s)?</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
-        <!-- Property: ForeignKeyLocation -->
-        <xsd:attribute name="foreignKeyLocation" type="ForeignKeyOwner" >
-          <xsd:annotation>
-            <xsd:documentation>Which class should hold the foreign key for this relationship</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
         <!-- Property: TargetCustomAttributes -->
         <xsd:attribute name="targetCustomAttributes" type="xsd:string" >
           <xsd:annotation>
@@ -1068,6 +1068,24 @@
         <xsd:attribute name="targetAutoProperty" type="xsd:boolean" >
           <xsd:annotation>
             <xsd:documentation>If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ExposeForeignKeyProperties -->
+        <xsd:attribute name="exposeForeignKeyProperties" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>If true, will create foreign key properties in the appropriate entities for associations</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: TargetForeignKeyPropertyName -->
+        <xsd:attribute name="targetForeignKeyPropertyName" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of generated foreign key property for the target of this association</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsExposeForeignKeyPropertiesTracking -->
+        <xsd:attribute name="isExposeForeignKeyPropertiesTracking" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>If true, Association.ExposeForeignKeyProperties tracks ModelRoot.ExposeForeignKeyProperties</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
       </xsd:extension>
@@ -1286,6 +1304,12 @@
         <xsd:attribute name="sourceAutoProperty" type="xsd:boolean" >
           <xsd:annotation>
             <xsd:documentation>If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: SourceForeignKeyPropertyName -->
+        <xsd:attribute name="sourceForeignKeyPropertyName" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of generated foreign key property for the source of this association</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
       </xsd:extension>

@@ -1,4 +1,5 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -66,7 +67,7 @@ namespace Sawczyn.EFDesigner.EFModel
 
          List<string> errorMessages = EFCoreValidator.GetErrors(element).ToList();
          BidirectionalAssociation bidirectionalAssociation = element as BidirectionalAssociation;
-
+         
          switch (e.DomainProperty.Name)
          {
             case "Persistent":
@@ -94,6 +95,52 @@ namespace Sawczyn.EFDesigner.EFModel
 
                if (bidirectionalAssociation != null)
                   CheckSourceForDisplayText(bidirectionalAssociation);
+
+               break;
+
+            case "SourceForeignKeyPropertyName":
+
+               if (bidirectionalAssociation != null)
+               {
+                  if (element.ExposeForeignKeyProperties)
+                  {
+                     string newSourceFKProperty = (string)e.NewValue;
+
+                     if (string.IsNullOrEmpty(newSourceFKProperty))
+                        errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Property name must be a valid .NET identifier");
+                     else
+                     {
+                        ParseResult fragment;
+
+                        try
+                        {
+                           fragment = ModelAttribute.Parse(element.Target.ModelRoot, newSourceFKProperty);
+
+                           if (fragment == null)
+                              errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Could not parse entry '{newSourceFKProperty}'");
+                           else
+                           {
+                              if (string.IsNullOrEmpty(fragment.Name) || !CodeGenerator.IsValidLanguageIndependentIdentifier(fragment.Name))
+                                 errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Property name '{fragment.Name}' isn't a valid .NET identifier");
+                              else if (element.Source.AllAttributes.Any(x => x.Name == fragment.Name))
+                                 errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Property name '{fragment.Name}' already in use");
+                              else if (element.Source.AllNavigationProperties().Any(p => p.PropertyName == fragment.Name || p.AssociationObject.TargetForeignKeyPropertyName == newSourceFKProperty))
+                                 errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Property name '{fragment.Name}' already in use");
+                              else
+                                 bidirectionalAssociation.SourcePropertyName = fragment.Name;
+                           }
+                        }
+                        catch (Exception exception)
+                        {
+                           errorMessages.Add($"Foreign key property for {bidirectionalAssociation.SourcePropertyName}: Could not parse entry '{newSourceFKProperty}': {exception.Message}");
+                        }
+                     }
+                  }
+                  else
+                  {
+                     bidirectionalAssociation.SourceForeignKeyPropertyName = null;
+                  }
+               }
 
                break;
 
@@ -176,6 +223,49 @@ namespace Sawczyn.EFDesigner.EFModel
             case "TargetDeleteAction":
                DeleteAction targetDeleteAction = (DeleteAction)e.NewValue;
                UpdateDisplayForCascadeDelete(element, null, targetDeleteAction);
+
+               break;
+
+            case "TargetForeignKeyPropertyName":
+
+               if (element.ExposeForeignKeyProperties)
+               {
+                  string newTargetFKProperty = (string)e.NewValue;
+
+                  if (string.IsNullOrEmpty(newTargetFKProperty))
+                     errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Property name must be a valid .NET identifier");
+                  else
+                  {
+                     ParseResult fragment;
+
+                     try
+                     {
+                        fragment = ModelAttribute.Parse(element.Source.ModelRoot, newTargetFKProperty);
+
+                        if (fragment == null)
+                           errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Could not parse entry '{newTargetFKProperty}'");
+                        else
+                        {
+                           if (string.IsNullOrEmpty(fragment.Name) || !CodeGenerator.IsValidLanguageIndependentIdentifier(fragment.Name))
+                              errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Property name '{fragment.Name}' isn't a valid .NET identifier");
+                           else if (element.Source.AllAttributes.Any(x => x.Name == fragment.Name))
+                              errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Property name '{fragment.Name}' already in use");
+                           else if (element.Source.AllNavigationProperties().Any(p => p.PropertyName == fragment.Name || p.AssociationObject.TargetForeignKeyPropertyName == newTargetFKProperty))
+                              errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Property name '{fragment.Name}' already in use");
+                           else
+                              element.TargetPropertyName = fragment.Name;
+                        }
+                     }
+                     catch (Exception exception)
+                     {
+                        errorMessages.Add($"Foreign key property for {element.TargetPropertyName}: Could not parse entry '{newTargetFKProperty}': {exception.Message}");
+                     }
+                  }
+               }
+               else
+               {
+                  element.TargetForeignKeyPropertyName = null;
+               }
 
                break;
 

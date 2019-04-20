@@ -10,9 +10,15 @@ namespace Sawczyn.EFDesigner.EFModel
    [ValidationState(ValidationState.Enabled)]
    public partial class Association : IDisplaysWarning
    {
-      public string GetSourceMultiplicityDisplayValue() => MultiplicityDisplayValue(SourceMultiplicity);
+      public string GetSourceMultiplicityDisplayValue()
+      {
+         return MultiplicityDisplayValue(SourceMultiplicity);
+      }
 
-      public string GetTargetMultiplicityDisplayValue() => MultiplicityDisplayValue(TargetMultiplicity);
+      public string GetTargetMultiplicityDisplayValue()
+      {
+         return MultiplicityDisplayValue(TargetMultiplicity);
+      }
 
       private static string MultiplicityDisplayValue(Multiplicity multiplicity)
       {
@@ -37,13 +43,19 @@ namespace Sawczyn.EFDesigner.EFModel
 
       protected bool hasWarning;
 
-      public bool GetHasWarningValue() => hasWarning;
+      public bool GetHasWarningValue()
+      {
+         return hasWarning;
+      }
 
-      public void ResetWarning() => hasWarning = false;
+      public void ResetWarning()
+      {
+         hasWarning = false;
+      }
 
       public void RedrawItem()
       {
-         ModelElement[] modelElements = {this, Source, Target};
+         ModelElement[] modelElements = { this, Source, Target };
 
          List<ShapeElement> shapeElements =
             modelElements.SelectMany(modelElement => PresentationViewsSubject.GetPresentation(modelElement)
@@ -175,12 +187,134 @@ namespace Sawczyn.EFDesigner.EFModel
          ///    The element on which to reset the property
          ///    value.
          /// </param>
-         internal void PreResetValue(Association element) =>
-            // Force the IsCollectionClassTracking property to false so that the value  
-            // of the CollectionClass property is retrieved from storage.  
+         internal void PreResetValue(Association element)
+         {
             element.isCollectionClassTrackingPropertyStorage = false;
+         }
       }
 
       #endregion CollectionClass tracking property
+
+
+      #region ExposeForeignKeyProperties tracking property
+
+      private bool exposeForeignKeyPropertiesStorage;
+
+      private bool GetExposeForeignKeyPropertiesValue()
+      {
+         Transaction transactionManagerCurrentTransaction = Store.TransactionManager.CurrentTransaction;
+         bool loading = Store.TransactionManager.InTransaction && transactionManagerCurrentTransaction.IsSerializing;
+
+         if (!loading && IsExposeForeignKeyPropertiesTracking)
+            try
+            {
+               ModelRoot modelRoot = Store.ElementDirectory.FindElements<ModelRoot>().FirstOrDefault();
+               return modelRoot.ExposeForeignKeyProperties;
+            }
+            catch (NullReferenceException)
+            {
+               return true;
+            }
+            catch (Exception e)
+            {
+               if (CriticalException.IsCriticalException(e))
+                  throw;
+
+               return true;
+            }
+
+         return exposeForeignKeyPropertiesStorage;
+      }
+
+      private void SetExposeForeignKeyPropertiesValue(bool value)
+      {
+         exposeForeignKeyPropertiesStorage = value;
+
+         bool loading = Store.TransactionManager.InTransaction && Store.TransactionManager.CurrentTransaction.IsSerializing;
+
+         if (!Store.InUndoRedoOrRollback && !loading)
+            IsExposeForeignKeyPropertiesTracking = false;
+      }
+
+      internal sealed partial class IsExposeForeignKeyPropertiesTrackingPropertyHandler
+      {
+         /// <summary>
+         ///    Called after the IsExposeForeignKeyPropertiesTracking property changes.
+         /// </summary>
+         /// <param name="element">The model element that has the property that changed. </param>
+         /// <param name="oldValue">The previous value of the property. </param>
+         /// <param name="newValue">The new value of the property. </param>
+         protected override void OnValueChanged(Association element, bool oldValue, bool newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+            if (!element.Store.InUndoRedoOrRollback && newValue)
+            {
+               DomainPropertyInfo propInfo = element.Store.DomainDataDirectory.GetDomainProperty(ExposeForeignKeyPropertiesDomainPropertyId);
+               propInfo.NotifyValueChange(element);
+            }
+         }
+
+         /// <summary>Performs the reset operation for the IsExposeForeignKeyPropertiesTracking property for a model element.</summary>
+         /// <param name="element">The model element that has the property to reset.</param>
+         internal void ResetValue(Association element)
+         {
+            object calculatedValue = null;
+
+            try
+            {
+               ModelRoot modelRoot = element.Source.ModelRoot ?? element.Target.ModelRoot;
+               calculatedValue = modelRoot.ExposeForeignKeyProperties;
+            }
+            catch (NullReferenceException) { }
+            catch (Exception e)
+            {
+               if (CriticalException.IsCriticalException(e))
+                  throw;
+            }
+
+            if (calculatedValue != null && element.ExposeForeignKeyProperties == (bool)calculatedValue)
+               element.isExposeForeignKeyPropertiesTrackingPropertyStorage = true;
+         }
+
+         /// <summary>
+         ///    Method to set IsExposeForeignKeyPropertiesTracking to false so that this instance of this tracking property is not
+         ///    storage-based.
+         /// </summary>
+         /// <param name="element">
+         ///    The element on which to reset the property
+         ///    value.
+         /// </param>
+         internal void PreResetValue(Association element)
+         {
+            element.isExposeForeignKeyPropertiesTrackingPropertyStorage = false;
+         }
+      }
+
+      #endregion ExposeForeignKeyProperties tracking property
+
+      /// <summary>
+      ///    Calls the pre-reset method on the associated property value handler for each
+      ///    tracking property of this model element.
+      /// </summary>
+      // ReSharper disable once UnusedMember.Global
+      internal virtual void PreResetIsTrackingProperties()
+      {
+         IsCollectionClassTrackingPropertyHandler.Instance.PreResetValue(this);
+         IsExposeForeignKeyPropertiesTrackingPropertyHandler.Instance.PreResetValue(this);
+         // same with other tracking properties as they get added
+      }
+
+      /// <summary>
+      ///    Calls the reset method on the associated property value handler for each
+      ///    tracking property of this model element.
+      /// </summary>
+      // ReSharper disable once UnusedMember.Global
+      internal virtual void ResetIsTrackingProperties()
+      {
+         IsCollectionClassTrackingPropertyHandler.Instance.ResetValue(this);
+         IsExposeForeignKeyPropertiesTrackingPropertyHandler.Instance.ResetValue(this);
+         // same with other tracking properties as they get added
+      }
+
    }
 }

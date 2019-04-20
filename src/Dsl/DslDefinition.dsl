@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9987f227-3d05-49b7-b151-857879f5dfb8" Description="Entity Framework visual editor for EF6, EFCore and beyond." Name="EFModel" DisplayName="Entity Framework Visual Editor" Namespace="Sawczyn.EFDesigner.EFModel" MinorVersion="2" Build="7" Revision="1" ProductName="EFDesigner" CompanyName="Michael Sawczyn" PackageGuid="56bbe1ba-aaee-4883-848f-e3c8656f8db2" PackageNamespace="Sawczyn.EFDesigner.EFModel" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
+<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9987f227-3d05-49b7-b151-857879f5dfb8" Description="Entity Framework visual editor for EF6, EFCore and beyond." Name="EFModel" DisplayName="Entity Framework Visual Editor" Namespace="Sawczyn.EFDesigner.EFModel" MinorVersion="2" Build="7" Revision="2" ProductName="EFDesigner" CompanyName="Michael Sawczyn" PackageGuid="56bbe1ba-aaee-4883-848f-e3c8656f8db2" PackageNamespace="Sawczyn.EFDesigner.EFModel" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
   <Classes>
     <DomainClass Id="95532cb8-3452-4b09-a654-aeb2e2d0b3ad" Description="" Name="ModelRoot" DisplayName="Entity Model" Namespace="Sawczyn.EFDesigner.EFModel">
       <CustomTypeDescriptor>
@@ -237,6 +237,11 @@
           </Type>
         </DomainProperty>
         <DomainProperty Id="b79884bd-572a-444c-b64e-24d66c8efc29" Description="If true, will display warning glyphs with tooltips when model elements have non-fatal issues detected" Name="ShowWarningsInDesigner" DisplayName="Show Warnings In Designer" DefaultValue="true" Category="Designer">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="b0536c48-d947-476f-81e5-46692bc7ed92" Description="If true, will create foreign key properties in the appropriate entities for associations" Name="ExposeForeignKeyProperties" DisplayName="Expose Foreign Key Properties" DefaultValue="false" Category="Code Generation">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
@@ -887,11 +892,6 @@
             <DomainEnumerationMoniker Name="EndpointRole" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="c0b9ec69-21ba-432e-a8e9-3afa83f8b2b7" Description="Which class should hold the foreign key for this relationship" Name="ForeignKeyLocation" DisplayName="Foreign Key Location" SetterAccessModifier="Assembly" IsBrowsable="false" IsUIReadOnly="true">
-          <Type>
-            <DomainEnumerationMoniker Name="ForeignKeyOwner" />
-          </Type>
-        </DomainProperty>
         <DomainProperty Id="a667dd36-ac5c-4c98-b368-b84778bdcd56" Description="Any custom attributes to be generated for the target property. Will be passed through as entered." Name="TargetCustomAttributes" DisplayName="End2 Custom Attributes" Category="End 2">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
@@ -903,6 +903,21 @@
           </Type>
         </DomainProperty>
         <DomainProperty Id="c3f59c5e-2afa-4a56-92af-00396e973805" Description="If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="TargetAutoProperty" DisplayName="Target Auto Property" DefaultValue="true" Category="End 2">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="31bbd345-0fec-411c-b4b2-7c7d7b1e75ef" Description="If true, will create foreign key properties in the appropriate entities for associations" Name="ExposeForeignKeyProperties" DisplayName="Expose Foreign Key Properties" DefaultValue="" Kind="CustomStorage" Category="Code Generation" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="d54dccb6-2abf-4c3a-91d9-637091832650" Description="Name of generated foreign key property for the target of this association" Name="TargetForeignKeyPropertyName" DisplayName="Target Foreign Key Property Name">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="604a6258-dd80-4e8c-aa05-7744e0456420" Description="If true, Association.ExposeForeignKeyProperties tracks ModelRoot.ExposeForeignKeyProperties" Name="IsExposeForeignKeyPropertiesTracking" DisplayName="Is Expose Foreign Key Properties Tracking" DefaultValue="true" IsBrowsable="false">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
@@ -1041,6 +1056,11 @@
         <DomainProperty Id="9b6ff495-8b09-434d-9bcc-411afd7e94d5" Description="If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="SourceAutoProperty" DisplayName="Source Auto Property" DefaultValue="true" Category="End 1">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="e36f2b10-0a40-419f-b405-80240dbd8228" Description="Name of generated foreign key property for the source of this association" Name="SourceForeignKeyPropertyName" DisplayName="Source Foreign Key Property Name">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -1555,9 +1575,6 @@
           <XmlPropertyData XmlName="targetRole">
             <DomainPropertyMoniker Name="Association/TargetRole" />
           </XmlPropertyData>
-          <XmlPropertyData XmlName="foreignKeyLocation">
-            <DomainPropertyMoniker Name="Association/ForeignKeyLocation" />
-          </XmlPropertyData>
           <XmlPropertyData XmlName="targetCustomAttributes">
             <DomainPropertyMoniker Name="Association/TargetCustomAttributes" />
           </XmlPropertyData>
@@ -1566,6 +1583,15 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="targetAutoProperty">
             <DomainPropertyMoniker Name="Association/TargetAutoProperty" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="exposeForeignKeyProperties">
+            <DomainPropertyMoniker Name="Association/ExposeForeignKeyProperties" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="targetForeignKeyPropertyName">
+            <DomainPropertyMoniker Name="Association/TargetForeignKeyPropertyName" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="isExposeForeignKeyPropertiesTracking">
+            <DomainPropertyMoniker Name="Association/IsExposeForeignKeyPropertiesTracking" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -1683,6 +1709,9 @@
           <XmlRelationshipData UseFullForm="true" RoleElementName="classes">
             <DomainRelationshipMoniker Name="ModelRootHasClasses" />
           </XmlRelationshipData>
+          <XmlPropertyData XmlName="exposeForeignKeyProperties">
+            <DomainPropertyMoniker Name="ModelRoot/ExposeForeignKeyProperties" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="ModelClass" MonikerAttributeName="" SerializeId="true" MonikerElementName="modelClassMoniker" ElementName="modelClass" MonikerTypeName="ModelClassMoniker">
@@ -1888,6 +1917,9 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="sourceAutoProperty">
             <DomainPropertyMoniker Name="BidirectionalAssociation/SourceAutoProperty" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="sourceForeignKeyPropertyName">
+            <DomainPropertyMoniker Name="BidirectionalAssociation/SourceForeignKeyPropertyName" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>

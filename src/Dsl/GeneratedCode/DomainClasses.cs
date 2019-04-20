@@ -2813,6 +2813,95 @@ namespace Sawczyn.EFDesigner.EFModel
 		}
 		
 		#endregion
+		#region ExposeForeignKeyProperties domain property code
+		
+		/// <summary>
+		/// ExposeForeignKeyProperties domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ExposeForeignKeyPropertiesDomainPropertyId = new global::System.Guid(0xb0536c48, 0xd947, 0x476f, 0x81, 0xe5, 0x46, 0x69, 0x2b, 0xc7, 0xed, 0x92);
+		
+		/// <summary>
+		/// Storage for ExposeForeignKeyProperties
+		/// </summary>
+		private global::System.Boolean exposeForeignKeyPropertiesPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of ExposeForeignKeyProperties domain property.
+		/// If true, will create foreign key properties in the appropriate entities for
+		/// associations
+		/// </summary>
+		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::CategoryResource("Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.Category", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("b0536c48-d947-476f-81e5-46692bc7ed92")]
+		public global::System.Boolean ExposeForeignKeyProperties
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return exposeForeignKeyPropertiesPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ExposeForeignKeyPropertiesPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the ModelRoot.ExposeForeignKeyProperties domain property.
+		/// </summary>
+		internal sealed partial class ExposeForeignKeyPropertiesPropertyHandler : DslModeling::DomainPropertyValueHandler<ModelRoot, global::System.Boolean>
+		{
+			private ExposeForeignKeyPropertiesPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the ModelRoot.ExposeForeignKeyProperties domain property value handler.
+			/// </summary>
+			public static readonly ExposeForeignKeyPropertiesPropertyHandler Instance = new ExposeForeignKeyPropertiesPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the ModelRoot.ExposeForeignKeyProperties domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ExposeForeignKeyPropertiesDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(ModelRoot element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.exposeForeignKeyPropertiesPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(ModelRoot element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.exposeForeignKeyPropertiesPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region Comments opposite domain role accessor
 		
 		/// <summary>

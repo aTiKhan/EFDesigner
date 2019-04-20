@@ -12,15 +12,18 @@ namespace Sawczyn.EFDesigner.EFModel
       private DomainDataDirectory storeDomainDataDirectory;
 
       /// <summary>
-      ///    Returns the property descriptors for the described ModelClass domain class, adding tracking property
-      ///    descriptor(s).
+      /// Returns the property descriptors for the described ModelClass domain class, adding tracking
+      /// property descriptor(s).
       /// </summary>
+      ///
+      /// <param name="attributes">The attributes.</param>
+      ///
+      /// <returns>The custom properties.</returns>
       private PropertyDescriptorCollection GetCustomProperties(Attribute[] attributes)
       {
          // Get the default property descriptors from the base class  
          PropertyDescriptorCollection propertyDescriptors = base.GetProperties(attributes);
 
-         //Add the descriptor for the tracking property.  
          if (ModelElement is Association association)
          {
             storeDomainDataDirectory = association.Store.DomainDataDirectory;
@@ -63,6 +66,24 @@ namespace Sawczyn.EFDesigner.EFModel
                propertyDescriptors.Remove(targetDeleteActionTypeDescriptor);
             }
 
+            // don't display foreign key property names if we're not exposing foreign key properties
+            if (!association.ExposeForeignKeyProperties)
+            {
+               if (association.SourceRole == EndpointRole.Dependent)
+               {
+                  PropertyDescriptor targetForeignKeyPropertyNameTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "TargetForeignKeyPropertyName");
+                  propertyDescriptors.Remove(targetForeignKeyPropertyNameTypeDescriptor);
+               }
+
+               if (association.TargetRole == EndpointRole.Dependent)
+               {
+                  PropertyDescriptor sourceForeignKeyPropertyNameTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().SingleOrDefault(x => x.Name == "SourceForeignKeyPropertyName");
+                  if (sourceForeignKeyPropertyNameTypeDescriptor != null) // only exists in Bidirectional associations
+                     propertyDescriptors.Remove(sourceForeignKeyPropertyNameTypeDescriptor);
+               }
+            }
+
+            //Add the descriptors for the tracking properties.  
             /********************************************************************************/
 
             DomainPropertyInfo collectionClassPropertyInfo = storeDomainDataDirectory.GetDomainProperty(Association.CollectionClassDomainPropertyId);
@@ -77,6 +98,21 @@ namespace Sawczyn.EFDesigner.EFModel
             };
 
             propertyDescriptors.Add(new TrackingPropertyDescriptor(association, collectionClassPropertyInfo, isCollectionClassTrackingPropertyInfo, collectionClassAttributes));
+
+            /********************************************************************************/
+
+            DomainPropertyInfo exposeForeignKeyPropertiesPropertyInfo = storeDomainDataDirectory.GetDomainProperty(Association.ExposeForeignKeyPropertiesDomainPropertyId);
+            DomainPropertyInfo isExposeForeignKeyPropertiesTrackingPropertyInfo = storeDomainDataDirectory.GetDomainProperty(Association.IsExposeForeignKeyPropertiesTrackingDomainPropertyId);
+
+            // Define attributes for the tracking property/properties so that the Properties window displays them correctly.  
+            Attribute[] exposeForeignKeyPropertiesAttributes =
+            {
+               new DisplayNameAttribute("Expose Foreign Key Properties"),
+               new DescriptionAttribute("If true, will create foreign key properties in the appropriate entities for associations. Overrides this property at the model level."),
+               new CategoryAttribute("Code Generation")
+            };
+
+            propertyDescriptors.Add(new TrackingPropertyDescriptor(association, exposeForeignKeyPropertiesPropertyInfo, isExposeForeignKeyPropertiesTrackingPropertyInfo, exposeForeignKeyPropertiesAttributes));
          }
 
          // Return the property descriptors for this element  

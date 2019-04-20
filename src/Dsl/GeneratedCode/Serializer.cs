@@ -681,6 +681,23 @@ namespace Sawczyn.EFDesigner.EFModel
 					}
 				}
 			}
+			// ExposeForeignKeyProperties
+			if (!serializationContext.Result.Failed)
+			{
+				string attribExposeForeignKeyProperties = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "exposeForeignKeyProperties");
+				if (attribExposeForeignKeyProperties != null)
+				{
+					global::System.Boolean valueOfExposeForeignKeyProperties;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribExposeForeignKeyProperties, out valueOfExposeForeignKeyProperties))
+					{
+						instanceOfModelRoot.ExposeForeignKeyProperties = valueOfExposeForeignKeyProperties;
+					}
+					else
+					{	// Invalid property value, ignored.
+						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "exposeForeignKeyProperties", typeof(global::System.Boolean), attribExposeForeignKeyProperties);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -1684,6 +1701,19 @@ namespace Sawczyn.EFDesigner.EFModel
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "true") != 0)
 					{	// No need to write the value out if it's the same as default value.
 						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "showWarningsInDesigner", serializedPropValue);
+					}
+				}
+			}
+			// ExposeForeignKeyProperties
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfModelRoot.ExposeForeignKeyProperties;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "false") != 0)
+					{	// No need to write the value out if it's the same as default value.
+						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "exposeForeignKeyProperties", serializedPropValue);
 					}
 				}
 			}
@@ -8299,26 +8329,6 @@ namespace Sawczyn.EFDesigner.EFModel
 					}
 				}
 			}
-			// ForeignKeyLocation
-			if (!serializationContext.Result.Failed)
-			{
-				string attribForeignKeyLocation = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "foreignKeyLocation");
-				if (attribForeignKeyLocation != null)
-				{
-					ForeignKeyOwner valueOfForeignKeyLocation;
-					if (DslModeling::SerializationUtilities.TryGetValue<ForeignKeyOwner>(serializationContext, attribForeignKeyLocation, out valueOfForeignKeyLocation))
-					{
-						// Non-public setter, use DomainPropertyInfo method.
-						DslModeling::DomainPropertyInfo propInfo = instanceOfAssociation.Partition.DomainDataDirectory.GetDomainProperty (Association.ForeignKeyLocationDomainPropertyId);
-						global::System.Diagnostics.Debug.Assert (propInfo != null, "Cannot get DomainPropertyInfo for Association.ForeignKeyLocation!");
-						propInfo.SetValue(instanceOfAssociation, valueOfForeignKeyLocation);
-					}
-					else
-					{	// Invalid property value, ignored.
-						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "foreignKeyLocation", typeof(ForeignKeyOwner), attribForeignKeyLocation);
-					}
-				}
-			}
 			// TargetCustomAttributes
 			if (!serializationContext.Result.Failed)
 			{
@@ -8367,6 +8377,57 @@ namespace Sawczyn.EFDesigner.EFModel
 					else
 					{	// Invalid property value, ignored.
 						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "targetAutoProperty", typeof(global::System.Boolean), attribTargetAutoProperty);
+					}
+				}
+			}
+			// ExposeForeignKeyProperties
+			if (!serializationContext.Result.Failed)
+			{
+				string attribExposeForeignKeyProperties = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "exposeForeignKeyProperties");
+				if (attribExposeForeignKeyProperties != null)
+				{
+					global::System.Boolean valueOfExposeForeignKeyProperties;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribExposeForeignKeyProperties, out valueOfExposeForeignKeyProperties))
+					{
+						instanceOfAssociation.ExposeForeignKeyProperties = valueOfExposeForeignKeyProperties;
+					}
+					else
+					{	// Invalid property value, ignored.
+						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "exposeForeignKeyProperties", typeof(global::System.Boolean), attribExposeForeignKeyProperties);
+					}
+				}
+			}
+			// TargetForeignKeyPropertyName
+			if (!serializationContext.Result.Failed)
+			{
+				string attribTargetForeignKeyPropertyName = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "targetForeignKeyPropertyName");
+				if (attribTargetForeignKeyPropertyName != null)
+				{
+					global::System.String valueOfTargetForeignKeyPropertyName;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribTargetForeignKeyPropertyName, out valueOfTargetForeignKeyPropertyName))
+					{
+						instanceOfAssociation.TargetForeignKeyPropertyName = valueOfTargetForeignKeyPropertyName;
+					}
+					else
+					{	// Invalid property value, ignored.
+						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "targetForeignKeyPropertyName", typeof(global::System.String), attribTargetForeignKeyPropertyName);
+					}
+				}
+			}
+			// IsExposeForeignKeyPropertiesTracking
+			if (!serializationContext.Result.Failed)
+			{
+				string attribIsExposeForeignKeyPropertiesTracking = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "isExposeForeignKeyPropertiesTracking");
+				if (attribIsExposeForeignKeyPropertiesTracking != null)
+				{
+					global::System.Boolean valueOfIsExposeForeignKeyPropertiesTracking;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribIsExposeForeignKeyPropertiesTracking, out valueOfIsExposeForeignKeyPropertiesTracking))
+					{
+						instanceOfAssociation.IsExposeForeignKeyPropertiesTracking = valueOfIsExposeForeignKeyPropertiesTracking;
+					}
+					else
+					{	// Invalid property value, ignored.
+						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "isExposeForeignKeyPropertiesTracking", typeof(global::System.Boolean), attribIsExposeForeignKeyPropertiesTracking);
 					}
 				}
 			}
@@ -8849,16 +8910,6 @@ namespace Sawczyn.EFDesigner.EFModel
 					}
 				}
 			}
-			// ForeignKeyLocation
-			if (!serializationContext.Result.Failed)
-			{
-				ForeignKeyOwner propValue = instanceOfAssociation.ForeignKeyLocation;
-				string serializedPropValue = DslModeling::SerializationUtilities.GetString<ForeignKeyOwner>(serializationContext, propValue);
-				if (!serializationContext.Result.Failed)
-				{
-					EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "foreignKeyLocation", serializedPropValue);
-				}
-			}
 			// TargetCustomAttributes
 			if (!serializationContext.Result.Failed)
 			{
@@ -8891,6 +8942,43 @@ namespace Sawczyn.EFDesigner.EFModel
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "true") != 0)
 					{	// No need to write the value out if it's the same as default value.
 						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "targetAutoProperty", serializedPropValue);
+					}
+				}
+			}
+			// ExposeForeignKeyProperties
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfAssociation.ExposeForeignKeyProperties;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, string.Empty) != 0)
+					{	// No need to write the value out if it's the same as default value.
+						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "exposeForeignKeyProperties", serializedPropValue);
+					}
+				}
+			}
+			// TargetForeignKeyPropertyName
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.String propValue = instanceOfAssociation.TargetForeignKeyPropertyName;
+				if (!serializationContext.Result.Failed)
+				{
+					if (!string.IsNullOrEmpty(propValue))
+						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "targetForeignKeyPropertyName", propValue);
+	
+				}
+			}
+			// IsExposeForeignKeyPropertiesTracking
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfAssociation.IsExposeForeignKeyPropertiesTracking;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "true") != 0)
+					{	// No need to write the value out if it's the same as default value.
+						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "isExposeForeignKeyPropertiesTracking", serializedPropValue);
 					}
 				}
 			}
@@ -12401,6 +12489,23 @@ namespace Sawczyn.EFDesigner.EFModel
 					}
 				}
 			}
+			// SourceForeignKeyPropertyName
+			if (!serializationContext.Result.Failed)
+			{
+				string attribSourceForeignKeyPropertyName = EFModelSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "sourceForeignKeyPropertyName");
+				if (attribSourceForeignKeyPropertyName != null)
+				{
+					global::System.String valueOfSourceForeignKeyPropertyName;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribSourceForeignKeyPropertyName, out valueOfSourceForeignKeyPropertyName))
+					{
+						instanceOfBidirectionalAssociation.SourceForeignKeyPropertyName = valueOfSourceForeignKeyPropertyName;
+					}
+					else
+					{	// Invalid property value, ignored.
+						EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "sourceForeignKeyPropertyName", typeof(global::System.String), attribSourceForeignKeyPropertyName);
+					}
+				}
+			}
 		}
 	
 		#region TryCreateInstance & TryCreateDerivedInstance
@@ -12932,6 +13037,17 @@ namespace Sawczyn.EFDesigner.EFModel
 					{	// No need to write the value out if it's the same as default value.
 						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "sourceAutoProperty", serializedPropValue);
 					}
+				}
+			}
+			// SourceForeignKeyPropertyName
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.String propValue = instanceOfBidirectionalAssociation.SourceForeignKeyPropertyName;
+				if (!serializationContext.Result.Failed)
+				{
+					if (!string.IsNullOrEmpty(propValue))
+						EFModelSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "sourceForeignKeyPropertyName", propValue);
+	
 				}
 			}
 		}

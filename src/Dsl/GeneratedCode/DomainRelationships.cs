@@ -1404,95 +1404,6 @@ namespace Sawczyn.EFDesigner.EFModel
 		}
 		
 		#endregion
-		#region ForeignKeyLocation domain property code
-		
-		/// <summary>
-		/// ForeignKeyLocation domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid ForeignKeyLocationDomainPropertyId = new global::System.Guid(0xc0b9ec69, 0x21ba, 0x432e, 0xa8, 0xe9, 0x3a, 0xfa, 0x83, 0xf8, 0xb2, 0xb7);
-		
-		/// <summary>
-		/// Storage for ForeignKeyLocation
-		/// </summary>
-		private ForeignKeyOwner foreignKeyLocationPropertyStorage;
-		
-		/// <summary>
-		/// Gets or sets the value of ForeignKeyLocation domain property.
-		/// Which class should hold the foreign key for this relationship
-		/// </summary>
-		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
-		[global::System.ComponentModel.Browsable(false)]
-		[global::System.ComponentModel.ReadOnly(true)]
-		[DslModeling::DomainObjectId("c0b9ec69-21ba-432e-a8e9-3afa83f8b2b7")]
-		public ForeignKeyOwner ForeignKeyLocation
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return foreignKeyLocationPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			internal set
-			{
-				ForeignKeyLocationPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the Association.ForeignKeyLocation domain property.
-		/// </summary>
-		internal sealed partial class ForeignKeyLocationPropertyHandler : DslModeling::DomainPropertyValueHandler<Association, ForeignKeyOwner>
-		{
-			private ForeignKeyLocationPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the Association.ForeignKeyLocation domain property value handler.
-			/// </summary>
-			public static readonly ForeignKeyLocationPropertyHandler Instance = new ForeignKeyLocationPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the Association.ForeignKeyLocation domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return ForeignKeyLocationDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed ForeignKeyOwner GetValue(Association element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.foreignKeyLocationPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(Association element, ForeignKeyOwner newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				ForeignKeyOwner oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.foreignKeyLocationPropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
 		#region TargetCustomAttributes domain property code
 		
 		/// <summary>
@@ -1754,6 +1665,275 @@ namespace Sawczyn.EFDesigner.EFModel
 				{
 					ValueChanging(element, oldValue, newValue);
 					element.targetAutoPropertyPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region ExposeForeignKeyProperties domain property code
+		
+		/// <summary>
+		/// ExposeForeignKeyProperties domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ExposeForeignKeyPropertiesDomainPropertyId = new global::System.Guid(0x31bbd345, 0x0fec, 0x411c, 0xb4, 0xb2, 0x7c, 0x7d, 0x7b, 0x1e, 0x75, 0xef);
+		
+		/// <summary>
+		/// Gets or sets the value of ExposeForeignKeyProperties domain property.
+		/// If true, will create foreign key properties in the appropriate entities for
+		/// associations
+		/// </summary>
+		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::CategoryResource("Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.Category", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.Browsable(false)]
+		[DslModeling::DomainProperty(Kind = DslModeling::DomainPropertyKind.CustomStorage)]
+		[DslModeling::DomainObjectId("31bbd345-0fec-411c-b4b2-7c7d7b1e75ef")]
+		public global::System.Boolean ExposeForeignKeyProperties
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return ExposeForeignKeyPropertiesPropertyHandler.Instance.GetValue(this);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ExposeForeignKeyPropertiesPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Association.ExposeForeignKeyProperties domain property.
+		/// </summary>
+		internal sealed partial class ExposeForeignKeyPropertiesPropertyHandler : DslModeling::DomainPropertyValueHandler<Association, global::System.Boolean>
+		{
+			private ExposeForeignKeyPropertiesPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Association.ExposeForeignKeyProperties domain property value handler.
+			/// </summary>
+			public static readonly ExposeForeignKeyPropertiesPropertyHandler Instance = new ExposeForeignKeyPropertiesPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Association.ExposeForeignKeyProperties domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ExposeForeignKeyPropertiesDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Association element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				// There is no storage for ExposeForeignKeyProperties because its Kind is
+				// set to CustomStorage. Please provide the GetExposeForeignKeyPropertiesValue()
+				// method on the domain class.
+				return element.GetExposeForeignKeyPropertiesValue();
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Association element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					// There is no storage for ExposeForeignKeyProperties because its Kind is
+					// set to CustomStorage. Please provide the SetExposeForeignKeyPropertiesValue()
+					// method on the domain class.
+					element.SetExposeForeignKeyPropertiesValue(newValue);
+					ValueChanged(element, oldValue, GetValue(element));
+				}
+			}
+		}
+		
+		#endregion
+		#region TargetForeignKeyPropertyName domain property code
+		
+		/// <summary>
+		/// TargetForeignKeyPropertyName domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TargetForeignKeyPropertyNameDomainPropertyId = new global::System.Guid(0xd54dccb6, 0x2abf, 0x4c3a, 0x91, 0xd9, 0x63, 0x70, 0x91, 0x83, 0x26, 0x50);
+		
+		/// <summary>
+		/// Storage for TargetForeignKeyPropertyName
+		/// </summary>
+		private global::System.String targetForeignKeyPropertyNamePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of TargetForeignKeyPropertyName domain property.
+		/// Name of generated foreign key property for the target of this association
+		/// </summary>
+		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.Association/TargetForeignKeyPropertyName.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.Association/TargetForeignKeyPropertyName.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("d54dccb6-2abf-4c3a-91d9-637091832650")]
+		public global::System.String TargetForeignKeyPropertyName
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return targetForeignKeyPropertyNamePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TargetForeignKeyPropertyNamePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Association.TargetForeignKeyPropertyName domain property.
+		/// </summary>
+		internal sealed partial class TargetForeignKeyPropertyNamePropertyHandler : DslModeling::DomainPropertyValueHandler<Association, global::System.String>
+		{
+			private TargetForeignKeyPropertyNamePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Association.TargetForeignKeyPropertyName domain property value handler.
+			/// </summary>
+			public static readonly TargetForeignKeyPropertyNamePropertyHandler Instance = new TargetForeignKeyPropertyNamePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Association.TargetForeignKeyPropertyName domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TargetForeignKeyPropertyNameDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Association element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.targetForeignKeyPropertyNamePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Association element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.targetForeignKeyPropertyNamePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region IsExposeForeignKeyPropertiesTracking domain property code
+		
+		/// <summary>
+		/// IsExposeForeignKeyPropertiesTracking domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid IsExposeForeignKeyPropertiesTrackingDomainPropertyId = new global::System.Guid(0x604a6258, 0xdd80, 0x4e8c, 0xaa, 0x05, 0x77, 0x44, 0xe0, 0x45, 0x64, 0x20);
+		
+		/// <summary>
+		/// Storage for IsExposeForeignKeyPropertiesTracking
+		/// </summary>
+		private global::System.Boolean isExposeForeignKeyPropertiesTrackingPropertyStorage = true;
+		
+		/// <summary>
+		/// Gets or sets the value of IsExposeForeignKeyPropertiesTracking domain property.
+		/// If true, Association.ExposeForeignKeyProperties tracks
+		/// ModelRoot.ExposeForeignKeyProperties
+		/// </summary>
+		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.Association/IsExposeForeignKeyPropertiesTracking.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.Association/IsExposeForeignKeyPropertiesTracking.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(true)]
+		[global::System.ComponentModel.Browsable(false)]
+		[DslModeling::DomainObjectId("604a6258-dd80-4e8c-aa05-7744e0456420")]
+		public global::System.Boolean IsExposeForeignKeyPropertiesTracking
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return isExposeForeignKeyPropertiesTrackingPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				IsExposeForeignKeyPropertiesTrackingPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Association.IsExposeForeignKeyPropertiesTracking domain property.
+		/// </summary>
+		internal sealed partial class IsExposeForeignKeyPropertiesTrackingPropertyHandler : DslModeling::DomainPropertyValueHandler<Association, global::System.Boolean>
+		{
+			private IsExposeForeignKeyPropertiesTrackingPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Association.IsExposeForeignKeyPropertiesTracking domain property value handler.
+			/// </summary>
+			public static readonly IsExposeForeignKeyPropertiesTrackingPropertyHandler Instance = new IsExposeForeignKeyPropertiesTrackingPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Association.IsExposeForeignKeyPropertiesTracking domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return IsExposeForeignKeyPropertiesTrackingDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Association element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.isExposeForeignKeyPropertiesTrackingPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Association element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.isExposeForeignKeyPropertiesTrackingPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -3477,6 +3657,93 @@ namespace Sawczyn.EFDesigner.EFModel
 				{
 					ValueChanging(element, oldValue, newValue);
 					element.sourceAutoPropertyPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region SourceForeignKeyPropertyName domain property code
+		
+		/// <summary>
+		/// SourceForeignKeyPropertyName domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid SourceForeignKeyPropertyNameDomainPropertyId = new global::System.Guid(0xe36f2b10, 0x0a40, 0x419f, 0xb4, 0x05, 0x80, 0x24, 0x0d, 0xbd, 0x82, 0x28);
+		
+		/// <summary>
+		/// Storage for SourceForeignKeyPropertyName
+		/// </summary>
+		private global::System.String sourceForeignKeyPropertyNamePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of SourceForeignKeyPropertyName domain property.
+		/// Name of generated foreign key property for the source of this association
+		/// </summary>
+		[DslDesign::DisplayNameResource("Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceForeignKeyPropertyName.DisplayName", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceForeignKeyPropertyName.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("e36f2b10-0a40-419f-b405-80240dbd8228")]
+		public global::System.String SourceForeignKeyPropertyName
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return sourceForeignKeyPropertyNamePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				SourceForeignKeyPropertyNamePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the BidirectionalAssociation.SourceForeignKeyPropertyName domain property.
+		/// </summary>
+		internal sealed partial class SourceForeignKeyPropertyNamePropertyHandler : DslModeling::DomainPropertyValueHandler<BidirectionalAssociation, global::System.String>
+		{
+			private SourceForeignKeyPropertyNamePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the BidirectionalAssociation.SourceForeignKeyPropertyName domain property value handler.
+			/// </summary>
+			public static readonly SourceForeignKeyPropertyNamePropertyHandler Instance = new SourceForeignKeyPropertyNamePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the BidirectionalAssociation.SourceForeignKeyPropertyName domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return SourceForeignKeyPropertyNameDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(BidirectionalAssociation element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.sourceForeignKeyPropertyNamePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(BidirectionalAssociation element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.sourceForeignKeyPropertyNamePropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}

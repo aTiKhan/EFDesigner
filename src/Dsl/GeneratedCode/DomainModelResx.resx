@@ -501,6 +501,18 @@
     <value>Designer</value>
     <comment>Category for DomainProperty &apos;ShowWarningsInDesigner&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.Description" xml:space="preserve">
+    <value>If true, will create foreign key properties in the appropriate entities for associations</value>
+    <comment>Description for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.DisplayName" xml:space="preserve">
+    <value>Expose Foreign Key Properties</value>
+    <comment>DisplayName for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeyProperties.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelClass.Description" xml:space="preserve">
     <value></value>
     <comment>Description for DomainClass &apos;ModelClass&apos;</comment>
@@ -1457,14 +1469,6 @@
     <value>End 2</value>
     <comment>Category for DomainProperty &apos;TargetRole&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.Description" xml:space="preserve">
-    <value>Which class should hold the foreign key for this relationship</value>
-    <comment>Description for DomainProperty &apos;ForeignKeyLocation&apos; on DomainClass &apos;Association&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.DisplayName" xml:space="preserve">
-    <value>Foreign Key Location</value>
-    <comment>DisplayName for DomainProperty &apos;ForeignKeyLocation&apos; on DomainClass &apos;Association&apos;</comment>
-  </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetCustomAttributes.Description" xml:space="preserve">
     <value>Any custom attributes to be generated for the target property. Will be passed through as entered.</value>
     <comment>Description for DomainProperty &apos;TargetCustomAttributes&apos; on DomainClass &apos;Association&apos;</comment>
@@ -1500,6 +1504,34 @@
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Category" xml:space="preserve">
     <value>End 2</value>
     <comment>Category for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.Description" xml:space="preserve">
+    <value>If true, will create foreign key properties in the appropriate entities for associations</value>
+    <comment>Description for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.DisplayName" xml:space="preserve">
+    <value>Expose Foreign Key Properties</value>
+    <comment>DisplayName for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/ExposeForeignKeyProperties.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;ExposeForeignKeyProperties&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetForeignKeyPropertyName.Description" xml:space="preserve">
+    <value>Name of generated foreign key property for the target of this association</value>
+    <comment>Description for DomainProperty &apos;TargetForeignKeyPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetForeignKeyPropertyName.DisplayName" xml:space="preserve">
+    <value>Target Foreign Key Property Name</value>
+    <comment>DisplayName for DomainProperty &apos;TargetForeignKeyPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsExposeForeignKeyPropertiesTracking.Description" xml:space="preserve">
+    <value>If true, Association.ExposeForeignKeyProperties tracks ModelRoot.ExposeForeignKeyProperties</value>
+    <comment>Description for DomainProperty &apos;IsExposeForeignKeyPropertiesTracking&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsExposeForeignKeyPropertiesTracking.DisplayName" xml:space="preserve">
+    <value>Is Expose Foreign Key Properties Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsExposeForeignKeyPropertiesTracking&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/Source.Description" xml:space="preserve">
     <value></value>
@@ -1732,6 +1764,14 @@
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.Category" xml:space="preserve">
     <value>End 1</value>
     <comment>Category for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceForeignKeyPropertyName.Description" xml:space="preserve">
+    <value>Name of generated foreign key property for the source of this association</value>
+    <comment>Description for DomainProperty &apos;SourceForeignKeyPropertyName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceForeignKeyPropertyName.DisplayName" xml:space="preserve">
+    <value>Source Foreign Key Property Name</value>
+    <comment>DisplayName for DomainProperty &apos;SourceForeignKeyPropertyName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/BidirectionalSource.Description" xml:space="preserve">
     <value></value>
