@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  commentId: T:Sawczyn.EFDesigner.EFModel.AutomaticAction
+  id: AutomaticAction
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.AutomaticAction.Ask
+  - Sawczyn.EFDesigner.EFModel.AutomaticAction.False
+  - Sawczyn.EFDesigner.EFModel.AutomaticAction.True
+  langs:
+  - csharp
+  - vb
+  name: AutomaticAction
+  nameWithType: AutomaticAction
+  fullName: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: AutomaticAction
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1412
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: AutomaticAction\nDescription for Sawczyn.EFDesigner.EFModel.AutomaticAction\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum AutomaticAction
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum AutomaticAction
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.AutomaticAction.False
+  commentId: F:Sawczyn.EFDesigner.EFModel.AutomaticAction.False
+  id: "False"
+  parent: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  langs:
+  - csharp
+  - vb
+  name: "False"
+  nameWithType: AutomaticAction.False
+  fullName: Sawczyn.EFDesigner.EFModel.AutomaticAction.False
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: "False"
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1419
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nFalse\nNever perform the action automatically\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/False.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      False = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.AutomaticAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/False.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      False = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.AutomaticAction/False.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.AutomaticAction.True
+  commentId: F:Sawczyn.EFDesigner.EFModel.AutomaticAction.True
+  id: "True"
+  parent: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  langs:
+  - csharp
+  - vb
+  name: "True"
+  nameWithType: AutomaticAction.True
+  fullName: Sawczyn.EFDesigner.EFModel.AutomaticAction.True
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: "True"
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1425
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTrue\nAlways perform the action automatically\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/True.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      True = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.AutomaticAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/True.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      True = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.AutomaticAction/True.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.AutomaticAction.Ask
+  commentId: F:Sawczyn.EFDesigner.EFModel.AutomaticAction.Ask
+  id: Ask
+  parent: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  langs:
+  - csharp
+  - vb
+  name: Ask
+  nameWithType: AutomaticAction.Ask
+  fullName: Sawczyn.EFDesigner.EFModel.AutomaticAction.Ask
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Ask
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1431
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAsk\nAsk each time if should perform the action automatically\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/Ask.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Ask = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.AutomaticAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.AutomaticAction/Ask.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Ask = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.AutomaticAction/Ask.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.AutomaticAction
+  commentId: T:Sawczyn.EFDesigner.EFModel.AutomaticAction
+  parent: Sawczyn.EFDesigner.EFModel
+  name: AutomaticAction
+  nameWithType: AutomaticAction
+  fullName: Sawczyn.EFDesigner.EFModel.AutomaticAction

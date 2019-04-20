@@ -1,0 +1,599 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  id: EFModelHelpKeywordHelper
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+  langs:
+  - csharp
+  - vb
+  name: EFModelHelpKeywordHelper
+  nameWithType: EFModelHelpKeywordHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/HelpKeywordHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelHelpKeywordHelper
+    path: ../Dsl/GeneratedCode/HelpKeywordHelper.cs
+    startLine: 21
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper class used to map shapes and model elements to help keywords.\n"
+  remarks: "\nDouble-derived class to allow easier code customization.\n"
+  example: []
+  syntax:
+    content: 'public class EFModelHelpKeywordHelper : EFModelHelpKeywordHelperBase'
+    content.vb: >-
+      Public Class EFModelHelpKeywordHelper
+          Inherits EFModelHelpKeywordHelperBase
+  inheritance:
+  - System.Object
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.HelpKeywords
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  - Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  langs:
+  - csharp
+  - vb
+  name: EFModelHelpKeywordHelper()
+  nameWithType: EFModelHelpKeywordHelper.EFModelHelpKeywordHelper()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.EFModelHelpKeywordHelper()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/HelpKeywordHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/HelpKeywordHelper.cs
+    startLine: 27
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructs a new EFModelHelpKeywordHelper.\n"
+  example: []
+  syntax:
+    content: protected EFModelHelpKeywordHelper()
+    content.vb: Protected Sub New
+  overload: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+  id: Instance
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: EFModelHelpKeywordHelper.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/HelpKeywordHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Instance
+    path: ../Dsl/GeneratedCode/HelpKeywordHelper.cs
+    startLine: 33
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSingle instance of the EFModelHelpKeywordHelper.\n"
+  example: []
+  syntax:
+    content: public static EFModelHelpKeywordHelper Instance { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+    content.vb: Public Shared ReadOnly Property Instance As EFModelHelpKeywordHelper
+  overload: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelHelpKeywordHelperBase
+  nameWithType: EFModelHelpKeywordHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  name: Initialize()
+  nameWithType: EFModelHelpKeywordHelperBase.Initialize()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+    name: Initialize
+    nameWithType: EFModelHelpKeywordHelperBase.Initialize
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+    name: Initialize
+    nameWithType: EFModelHelpKeywordHelperBase.Initialize
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.HelpKeywords
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.HelpKeywords
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  name: HelpKeywords
+  nameWithType: EFModelHelpKeywordHelperBase.HelpKeywords
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.HelpKeywords
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  isExternal: true
+  name: GetHelpKeyword(ModelElement)
+  nameWithType: EFModelHelpKeywordHelperBase.GetHelpKeyword(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  isExternal: true
+  name: GetDomainRoleHelpKeyword(DomainRoleInfo)
+  nameWithType: EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(DomainRoleInfo)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: GetDomainRoleHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: GetDomainRoleHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainRoleHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+  isExternal: true
+  name: GetDomainPropertyHelpKeyword(DomainPropertyInfo)
+  nameWithType: EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(DomainPropertyInfo)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: GetDomainPropertyHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: GetDomainPropertyHelpKeyword
+    nameWithType: EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.GetDomainPropertyHelpKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.#ctor
+  name: EFModelHelpKeywordHelper
+  nameWithType: EFModelHelpKeywordHelper.EFModelHelpKeywordHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.EFModelHelpKeywordHelper
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+  name: Instance
+  nameWithType: EFModelHelpKeywordHelper.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.Instance
+- uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelHelpKeywordHelper
+  nameWithType: EFModelHelpKeywordHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper

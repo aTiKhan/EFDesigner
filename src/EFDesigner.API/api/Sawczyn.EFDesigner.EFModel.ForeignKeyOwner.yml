@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  commentId: T:Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  id: ForeignKeyOwner
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.None
+  - Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Source
+  - Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Target
+  langs:
+  - csharp
+  - vb
+  name: ForeignKeyOwner
+  nameWithType: ForeignKeyOwner
+  fullName: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ForeignKeyOwner
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1206
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: ForeignKeyOwner\nThe class that contains the foreign key in a relationship\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum ForeignKeyOwner
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum ForeignKeyOwner
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ForeignKeyOwner.None
+  fullName: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1213
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nNo foreign key should be generated\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Source
+  commentId: F:Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Source
+  id: Source
+  parent: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: ForeignKeyOwner.Source
+  fullName: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Source
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Source
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1219
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSource\nForeign key is contained in the Source class\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Source.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Source = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Source.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Source = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Source.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Target
+  commentId: F:Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Target
+  id: Target
+  parent: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: ForeignKeyOwner.Target
+  fullName: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.Target
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Target
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1225
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTarget\nForeign key is contained in the Target class\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Target.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Target = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Target.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Target = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner/Target.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  commentId: T:Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ForeignKeyOwner
+  nameWithType: ForeignKeyOwner
+  fullName: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner

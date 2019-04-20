@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.Modeling;
 
 using Sawczyn.EFDesigner.EFModel.CustomCode.Extensions;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelRoot), FireTime = TimeToFire.TopLevelCommit)]
    internal class ModelRootChangeRules : ChangeRule

@@ -5,6 +5,8 @@ using Sawczyn.EFDesigner.EFModel.CustomCode.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 
+using Sawczyn.EFDesigner.EFModel.Interfaces;
+
 namespace Sawczyn.EFDesigner.EFModel
 {
    [ValidationState(ValidationState.Enabled)]

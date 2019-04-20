@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.IMouseActionTarget
+  commentId: T:Sawczyn.EFDesigner.EFModel.IMouseActionTarget
+  id: IMouseActionTarget
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: IMouseActionTarget
+  nameWithType: IMouseActionTarget
+  fullName: Sawczyn.EFDesigner.EFModel.IMouseActionTarget
+  type: Interface
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IMouseActionTarget.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IMouseActionTarget
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IMouseActionTarget.cs
+    startLine: 4
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public interface IMouseActionTarget
+    content.vb: Public Interface IMouseActionTarget
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  id: DoMouseUp(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Sawczyn.EFDesigner.EFModel.IMouseActionTarget
+  langs:
+  - csharp
+  - vb
+  name: DoMouseUp(ModelElement, DiagramMouseEventArgs)
+  nameWithType: IMouseActionTarget.DoMouseUp(ModelElement, DiagramMouseEventArgs)
+  fullName: Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IMouseActionTarget.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DoMouseUp
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IMouseActionTarget.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: void DoMouseUp(ModelElement dragFrom, DiagramMouseEventArgs e)
+    parameters:
+    - id: dragFrom
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    - id: e
+      type: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    content.vb: Sub DoMouseUp(dragFrom As ModelElement, e As DiagramMouseEventArgs)
+  overload: Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp*
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp
+  name: DoMouseUp
+  nameWithType: IMouseActionTarget.DoMouseUp
+  fullName: Sawczyn.EFDesigner.EFModel.IMouseActionTarget.DoMouseUp
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: DiagramMouseEventArgs
+  nameWithType: DiagramMouseEventArgs
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Microsoft.VisualStudio.Modeling.Diagrams
+  commentId: N:Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Diagrams
+  nameWithType: Microsoft.VisualStudio.Modeling.Diagrams
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams

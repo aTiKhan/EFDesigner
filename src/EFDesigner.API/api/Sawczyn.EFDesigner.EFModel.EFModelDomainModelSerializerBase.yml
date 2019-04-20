@@ -1,0 +1,1388 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  id: EFModelDomainModelSerializerBase
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName(System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: EFModelDomainModelSerializerBase
+  nameWithType: EFModelDomainModelSerializerBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelDomainModelSerializerBase
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24180
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBase class that implements IDomainModelSerializer\n"
+  example: []
+  syntax:
+    content: 'public abstract class EFModelDomainModelSerializerBase : IDomainModelSerializer'
+    content.vb: >-
+      Public MustInherit Class EFModelDomainModelSerializerBase
+          Implements IDomainModelSerializer
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializer
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+  id: DomainModelNamespace
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: DomainModelNamespace
+  nameWithType: EFModelDomainModelSerializerBase.DomainModelNamespace
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DomainModelNamespace
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24188
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThe XML namespace used when serializing the domain model\n"
+  example: []
+  syntax:
+    content: public virtual string DomainModelNamespace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property DomainModelNamespace As String
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelNamespace
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+  id: IsSerializable
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: IsSerializable
+  nameWithType: EFModelDomainModelSerializerBase.IsSerializable
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IsSerializable
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24197
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns true: this DSL can be serialized / deserialized directly.\n"
+  example: []
+  syntax:
+    content: public virtual bool IsSerializable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsSerializable As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.IsSerializable
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+  id: DomainModelType
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: DomainModelType
+  nameWithType: EFModelDomainModelSerializerBase.DomainModelType
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DomainModelType
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24206
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThe type of the domain model\n"
+  example: []
+  syntax:
+    content: public virtual Type DomainModelType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overridable ReadOnly Property DomainModelType As Type
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelType
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+  id: ModelFileExtension
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: ModelFileExtension
+  nameWithType: EFModelDomainModelSerializerBase.ModelFileExtension
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelFileExtension
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24217
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nFile extension used for model files of this kind of domain model\n"
+  remarks: >-
+    If a domain model type cannot be serialized independently, or cannot
+
+    be serialized to a file, it should return null or empty.
+  example: []
+  syntax:
+    content: public string ModelFileExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ModelFileExtension As String
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.ModelFileExtension
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(SerializationResult, Partition, String, ISerializerLocator)
+  nameWithType: EFModelDomainModelSerializerBase.LoadModel(SerializationResult, Partition, String, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24236
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance and its associated diagram file.\n"
+  example: []
+  syntax:
+    content: public virtual ModelElement LoadModel(SerializationResult serializationResult, Partition partition, string fileName, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: fileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: Used to locate any additional domain model types required to load the model. Can be null.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModel(serializationResult As SerializationResult, partition As Partition, fileName As String, serializerLocator As ISerializerLocator) As ModelElement
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  id: SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModel(SerializationResult, ModelElement, String, Encoding)
+  nameWithType: EFModelDomainModelSerializerBase.SaveModel(SerializationResult, ModelElement, String, Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModel
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24255
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given model root to the given file, with specified encoding.\n"
+  example: []
+  syntax:
+    content: public void SaveModel(SerializationResult serializationResult, ModelElement modelRoot, string fileName, Encoding encoding)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: ModelRoot instance to be saved.
+    - id: fileName
+      type: System.String
+      description: Name of the file in which the ModelRoot instance will be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the ModelRoot instance.
+    content.vb: Public Sub SaveModel(serializationResult As SerializationResult, modelRoot As ModelElement, fileName As String, encoding As Encoding)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName(System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName(System.String)
+  id: CalculateDiagramFileName(System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: CalculateDiagramFileName(String)
+  nameWithType: EFModelDomainModelSerializerBase.CalculateDiagramFileName(String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CalculateDiagramFileName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24288
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalculates and returns the name of the diagram file for the specified model file\n"
+  remarks: There is no guarantee that either the model file or the calculated diagram file exist.
+  example: []
+  syntax:
+    content: public virtual string CalculateDiagramFileName(string modelFileName)
+    parameters:
+    - id: modelFileName
+      type: System.String
+      description: The relevant model file name
+    return:
+      type: System.String
+      description: Name of the associated diagram file
+    content.vb: Public Overridable Function CalculateDiagramFileName(modelFileName As String) As String
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISerializerLocator)
+  nameWithType: EFModelDomainModelSerializerBase.LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModelAndDiagram
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24307
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance and its associated diagram file.\n"
+  example: []
+  syntax:
+    content: public ModelElement LoadModelAndDiagram(SerializationResult serializationResult, Partition modelPartition, string modelFileName, Partition diagramPartition, string diagramFileName, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: modelPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: diagramPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new EFModelDiagram instance will be created.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file from which the EFModelDiagram instance will be deserialized.
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: Used to locate any additional domain model types required to load the model. Can be null.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The loaded ModelRoot instance.
+    content.vb: Public Function LoadModelAndDiagram(serializationResult As SerializationResult, modelPartition As Partition, modelFileName As String, diagramPartition As Partition, diagramFileName As String, serializerLocator As ISerializerLocator) As ModelElement
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  id: SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModelAndDiagram(SerializationResult, ModelElement, String, ModelElement, String, Encoding)
+  nameWithType: EFModelDomainModelSerializerBase.SaveModelAndDiagram(SerializationResult, ModelElement, String, ModelElement, String, Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.ModelElement, System.String, Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModelAndDiagram
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24332
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given ModelRoot and EFModelDiagram to the given files, with specified encoding.\n"
+  example: []
+  syntax:
+    content: public void SaveModelAndDiagram(SerializationResult serializationResult, ModelElement modelRoot, string modelFileName, ModelElement diagram, string diagramFileName, Encoding encoding)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: ModelRoot instance to be saved.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file in which the CanonicalSampleRoot instance will be saved.
+    - id: diagram
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the diagram.
+    content.vb: Public Sub SaveModelAndDiagram(serializationResult As SerializationResult, modelRoot As ModelElement, modelFileName As String, diagram As ModelElement, diagramFileName As String, encoding As Encoding)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: IDomainModelSerializer
+  nameWithType: IDomainModelSerializer
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+  name: DomainModelNamespace
+  nameWithType: EFModelDomainModelSerializerBase.DomainModelNamespace
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelNamespace
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelNamespace
+  commentId: P:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelNamespace
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: DomainModelNamespace
+  nameWithType: IDomainModelSerializer.DomainModelNamespace
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelNamespace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+  name: IsSerializable
+  nameWithType: EFModelDomainModelSerializerBase.IsSerializable
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.IsSerializable
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.IsSerializable
+  commentId: P:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.IsSerializable
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: IsSerializable
+  nameWithType: IDomainModelSerializer.IsSerializable
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.IsSerializable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+  name: DomainModelType
+  nameWithType: EFModelDomainModelSerializerBase.DomainModelType
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.DomainModelType
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelType
+  commentId: P:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelType
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: DomainModelType
+  nameWithType: IDomainModelSerializer.DomainModelType
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.DomainModelType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+  name: ModelFileExtension
+  nameWithType: EFModelDomainModelSerializerBase.ModelFileExtension
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.ModelFileExtension
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.ModelFileExtension
+  commentId: P:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.ModelFileExtension
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: ModelFileExtension
+  nameWithType: IDomainModelSerializer.ModelFileExtension
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.ModelFileExtension
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel
+  name: LoadModel
+  nameWithType: EFModelDomainModelSerializerBase.LoadModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModel
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: LoadModel(SerializationResult, Partition, String, ISerializerLocator)
+  nameWithType: IDomainModelSerializer.LoadModel(SerializationResult, Partition, String, ISerializerLocator)
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: IDomainModelSerializer.LoadModel
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: IDomainModelSerializer.LoadModel
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SerializationResult
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationResult
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationResult
+  nameWithType: SerializationResult
+  fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+  commentId: T:Microsoft.VisualStudio.Modeling.ISerializerLocator
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ISerializerLocator
+  nameWithType: ISerializerLocator
+  fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel
+  name: SaveModel
+  nameWithType: EFModelDomainModelSerializerBase.SaveModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModel
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  commentId: M:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: SaveModel(SerializationResult, ModelElement, String, Encoding)
+  nameWithType: IDomainModelSerializer.SaveModel(SerializationResult, ModelElement, String, Encoding)
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Text.Encoding)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+    name: SaveModel
+    nameWithType: IDomainModelSerializer.SaveModel
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+    name: SaveModel
+    nameWithType: IDomainModelSerializer.SaveModel
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName
+  name: CalculateDiagramFileName
+  nameWithType: EFModelDomainModelSerializerBase.CalculateDiagramFileName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.CalculateDiagramFileName
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+  commentId: M:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: CalculateDiagramFileName(String)
+  nameWithType: IDomainModelSerializer.CalculateDiagramFileName(String)
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+    name: CalculateDiagramFileName
+    nameWithType: IDomainModelSerializer.CalculateDiagramFileName
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName(System.String)
+    name: CalculateDiagramFileName
+    nameWithType: IDomainModelSerializer.CalculateDiagramFileName
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.CalculateDiagramFileName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram
+  name: LoadModelAndDiagram
+  nameWithType: EFModelDomainModelSerializerBase.LoadModelAndDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.LoadModelAndDiagram
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISerializerLocator)
+  nameWithType: IDomainModelSerializer.LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISerializerLocator)
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: IDomainModelSerializer.LoadModelAndDiagram
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: IDomainModelSerializer.LoadModelAndDiagram
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.LoadModelAndDiagram
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram
+  name: SaveModelAndDiagram
+  nameWithType: EFModelDomainModelSerializerBase.SaveModelAndDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.SaveModelAndDiagram
+- uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  commentId: M:Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+  parent: Microsoft.VisualStudio.Modeling.IDomainModelSerializer
+  isExternal: true
+  name: SaveModelAndDiagram(SerializationResult, ModelElement, String, ModelElement, String, Encoding)
+  nameWithType: IDomainModelSerializer.SaveModelAndDiagram(SerializationResult, ModelElement, String, ModelElement, String, Encoding)
+  fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.ModelElement, System.String, Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Text.Encoding)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+    name: SaveModelAndDiagram
+    nameWithType: IDomainModelSerializer.SaveModelAndDiagram
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.ModelElement,System.String,Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Text.Encoding)
+    name: SaveModelAndDiagram
+    nameWithType: IDomainModelSerializer.SaveModelAndDiagram
+    fullName: Microsoft.VisualStudio.Modeling.IDomainModelSerializer.SaveModelAndDiagram
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

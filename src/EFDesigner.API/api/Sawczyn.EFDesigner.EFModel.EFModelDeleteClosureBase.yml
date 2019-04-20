@@ -1,0 +1,786 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  id: EFModelDeleteClosureBase
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor
+  - Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  - Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  langs:
+  - csharp
+  - vb
+  name: EFModelDeleteClosureBase
+  nameWithType: EFModelDeleteClosureBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelDeleteClosureBase
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 571
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBase class for remove closure visitor filter\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public class EFModelDeleteClosureBase : IElementVisitorFilter
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Class EFModelDeleteClosureBase
+          Implements IElementVisitorFilter
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sawczyn.EFDesigner.EFModel.EFModelDeleteClosure
+  implements:
+  - Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  langs:
+  - csharp
+  - vb
+  name: EFModelDeleteClosureBase()
+  nameWithType: EFModelDeleteClosureBase.EFModelDeleteClosureBase()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.EFModelDeleteClosureBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 581
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public EFModelDeleteClosureBase()
+    content.vb: Public Sub New
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  id: ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  langs:
+  - csharp
+  - vb
+  name: ShouldVisitRelationship(ElementWalker, ModelElement, DomainRoleInfo, DomainRelationshipInfo, ElementLink)
+  nameWithType: EFModelDeleteClosureBase.ShouldVisitRelationship(ElementWalker, ModelElement, DomainRoleInfo, DomainRelationshipInfo, ElementLink)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.DomainRelationshipInfo, Microsoft.VisualStudio.Modeling.ElementLink)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ShouldVisitRelationship
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 600
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalled to ask the filter if a particular relationship from a source element should be included in the traversal\n"
+  example: []
+  syntax:
+    content: public virtual VisitorFilterResult ShouldVisitRelationship(ElementWalker walker, ModelElement sourceElement, DomainRoleInfo sourceRoleInfo, DomainRelationshipInfo domainRelationshipInfo, ElementLink targetRelationship)
+    parameters:
+    - id: walker
+      type: Microsoft.VisualStudio.Modeling.ElementWalker
+      description: ElementWalker that is traversing the model
+    - id: sourceElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Model Element playing the source role
+    - id: sourceRoleInfo
+      type: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+      description: DomainRoleInfo of the role that the source element is playing in the relationship
+    - id: domainRelationshipInfo
+      type: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+      description: DomainRelationshipInfo for the ElementLink in question
+    - id: targetRelationship
+      type: Microsoft.VisualStudio.Modeling.ElementLink
+      description: Relationship in question
+    return:
+      type: Microsoft.VisualStudio.Modeling.VisitorFilterResult
+      description: Yes if the relationship should be traversed
+    content.vb: Public Overridable Function ShouldVisitRelationship(walker As ElementWalker, sourceElement As ModelElement, sourceRoleInfo As DomainRoleInfo, domainRelationshipInfo As DomainRelationshipInfo, targetRelationship As ElementLink) As VisitorFilterResult
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+  langs:
+  - csharp
+  - vb
+  name: ShouldVisitRolePlayer(ElementWalker, ModelElement, ElementLink, DomainRoleInfo, ModelElement)
+  nameWithType: EFModelDeleteClosureBase.ShouldVisitRolePlayer(ElementWalker, ModelElement, ElementLink, DomainRoleInfo, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementLink, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ShouldVisitRolePlayer
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 613
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalled to ask the filter if a particular role player should be Visited during traversal\n"
+  example: []
+  syntax:
+    content: public virtual VisitorFilterResult ShouldVisitRolePlayer(ElementWalker walker, ModelElement sourceElement, ElementLink elementLink, DomainRoleInfo targetDomainRole, ModelElement targetRolePlayer)
+    parameters:
+    - id: walker
+      type: Microsoft.VisualStudio.Modeling.ElementWalker
+      description: ElementWalker that is traversing the model
+    - id: sourceElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Model Element playing the source role
+    - id: elementLink
+      type: Microsoft.VisualStudio.Modeling.ElementLink
+      description: Element Link that forms the relationship to the role player in question
+    - id: targetDomainRole
+      type: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+      description: DomainRoleInfo of the target role
+    - id: targetRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Model Element that plays the target role in the relationship
+    return:
+      type: Microsoft.VisualStudio.Modeling.VisitorFilterResult
+      description: ''
+    content.vb: Public Overridable Function ShouldVisitRolePlayer(walker As ElementWalker, sourceElement As ModelElement, elementLink As ElementLink, targetDomainRole As DomainRoleInfo, targetRolePlayer As ModelElement) As VisitorFilterResult
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer*
+  implements:
+  - Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  commentId: T:Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: IElementVisitorFilter
+  nameWithType: IElementVisitorFilter
+  fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.#ctor
+  name: EFModelDeleteClosureBase
+  nameWithType: EFModelDeleteClosureBase.EFModelDeleteClosureBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.EFModelDeleteClosureBase
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship
+  name: ShouldVisitRelationship
+  nameWithType: EFModelDeleteClosureBase.ShouldVisitRelationship
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRelationship
+- uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  commentId: M:Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  parent: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  isExternal: true
+  name: ShouldVisitRelationship(ElementWalker, ModelElement, DomainRoleInfo, DomainRelationshipInfo, ElementLink)
+  nameWithType: IElementVisitorFilter.ShouldVisitRelationship(ElementWalker, ModelElement, DomainRoleInfo, DomainRelationshipInfo, ElementLink)
+  fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.DomainRelationshipInfo, Microsoft.VisualStudio.Modeling.ElementLink)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+    name: ShouldVisitRelationship
+    nameWithType: IElementVisitorFilter.ShouldVisitRelationship
+    fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementWalker
+    name: ElementWalker
+    nameWithType: ElementWalker
+    fullName: Microsoft.VisualStudio.Modeling.ElementWalker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+    name: DomainRelationshipInfo
+    nameWithType: DomainRelationshipInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.DomainRelationshipInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+    name: ShouldVisitRelationship
+    nameWithType: IElementVisitorFilter.ShouldVisitRelationship
+    fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRelationship
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementWalker
+    name: ElementWalker
+    nameWithType: ElementWalker
+    fullName: Microsoft.VisualStudio.Modeling.ElementWalker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+    name: DomainRelationshipInfo
+    nameWithType: DomainRelationshipInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementWalker
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementWalker
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementWalker
+  nameWithType: ElementWalker
+  fullName: Microsoft.VisualStudio.Modeling.ElementWalker
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainRoleInfo
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainRoleInfo
+  nameWithType: DomainRoleInfo
+  fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+- uid: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainRelationshipInfo
+  nameWithType: DomainRelationshipInfo
+  fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipInfo
+- uid: Microsoft.VisualStudio.Modeling.ElementLink
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementLink
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementLink
+  nameWithType: ElementLink
+  fullName: Microsoft.VisualStudio.Modeling.ElementLink
+- uid: Microsoft.VisualStudio.Modeling.VisitorFilterResult
+  commentId: T:Microsoft.VisualStudio.Modeling.VisitorFilterResult
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: VisitorFilterResult
+  nameWithType: VisitorFilterResult
+  fullName: Microsoft.VisualStudio.Modeling.VisitorFilterResult
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer
+  name: ShouldVisitRolePlayer
+  nameWithType: EFModelDeleteClosureBase.ShouldVisitRolePlayer
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.ShouldVisitRolePlayer
+- uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  isExternal: true
+  name: ShouldVisitRolePlayer(ElementWalker, ModelElement, ElementLink, DomainRoleInfo, ModelElement)
+  nameWithType: IElementVisitorFilter.ShouldVisitRolePlayer(ElementWalker, ModelElement, ElementLink, DomainRoleInfo, ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementLink, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: ShouldVisitRolePlayer
+    nameWithType: IElementVisitorFilter.ShouldVisitRolePlayer
+    fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementWalker
+    name: ElementWalker
+    nameWithType: ElementWalker
+    fullName: Microsoft.VisualStudio.Modeling.ElementWalker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer(Microsoft.VisualStudio.Modeling.ElementWalker,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: ShouldVisitRolePlayer
+    nameWithType: IElementVisitorFilter.ShouldVisitRolePlayer
+    fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter.ShouldVisitRolePlayer
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementWalker
+    name: ElementWalker
+    nameWithType: ElementWalker
+    fullName: Microsoft.VisualStudio.Modeling.ElementWalker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

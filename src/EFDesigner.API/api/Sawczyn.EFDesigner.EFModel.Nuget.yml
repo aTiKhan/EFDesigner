@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget
+  commentId: N:Sawczyn.EFDesigner.EFModel.Nuget
+  id: Sawczyn.EFDesigner.EFModel.Nuget
+  children:
+  - Sawczyn.EFDesigner.EFModel.Nuget.Context
+  - Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  - Sawczyn.EFDesigner.EFModel.Nuget.Serialize
+  - Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  - Sawczyn.EFDesigner.EFModel.Nuget.Version
+  langs:
+  - csharp
+  - vb
+  name: Sawczyn.EFDesigner.EFModel.Nuget
+  nameWithType: Sawczyn.EFDesigner.EFModel.Nuget
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget
+  type: Namespace
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.Context
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.Context
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: Context
+  nameWithType: Context
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.Context
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: NuGetPackages
+  nameWithType: NuGetPackages
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  name: PackageData
+  nameWithType: PackageData
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.Serialize
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.Serialize
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: Serialize
+  nameWithType: Serialize
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.Serialize
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: TypeEnum
+  nameWithType: TypeEnum
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.Version
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.Version
+  name: Version
+  nameWithType: Version
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.Version
+- uid: Sawczyn.EFDesigner.EFModel.Nuget
+  commentId: N:Sawczyn.EFDesigner.EFModel.Nuget
+  name: Sawczyn.EFDesigner.EFModel.Nuget
+  nameWithType: Sawczyn.EFDesigner.EFModel.Nuget
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget

@@ -1,0 +1,456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  id: EFModelSerializationBehavior
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationBehavior
+  nameWithType: EFModelSerializationBehavior
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelSerializationBehavior
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23432
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nA DomainXmlSerializationBehavior implementation for defined behavior EFModelSerializationBehavior.\nThis is the concrete type of the double-derived implementation.\n"
+  example: []
+  syntax:
+    content: 'public sealed class EFModelSerializationBehavior : EFModelSerializationBehaviorBase'
+    content.vb: >-
+      Public NotInheritable Class EFModelSerializationBehavior
+          Inherits EFModelSerializationBehaviorBase
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.DomainModelXmlNamespace
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.CustomSerializerTypes
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllSerializers
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllNamespaces
+  - Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior.AllPropertySerializers
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+  id: Instance
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: EFModelSerializationBehavior.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Instance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23443
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSingleton instance.\n"
+  example: []
+  syntax:
+    content: public static EFModelSerializationBehavior Instance { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+    content.vb: Public Shared ReadOnly Property Instance As EFModelSerializationBehavior
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainXmlSerializationBehavior
+  nameWithType: DomainXmlSerializationBehavior
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelSerializationBehaviorBase
+  nameWithType: EFModelSerializationBehaviorBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.DomainModelXmlNamespace
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.DomainModelXmlNamespace
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  name: DomainModelXmlNamespace
+  nameWithType: EFModelSerializationBehaviorBase.DomainModelXmlNamespace
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.DomainModelXmlNamespace
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.CustomSerializerTypes
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.CustomSerializerTypes
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  name: CustomSerializerTypes
+  nameWithType: EFModelSerializationBehaviorBase.CustomSerializerTypes
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.CustomSerializerTypes
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllSerializers
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllSerializers
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  name: AllSerializers
+  nameWithType: EFModelSerializationBehaviorBase.AllSerializers
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllSerializers
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllNamespaces
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllNamespaces
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+  name: AllNamespaces
+  nameWithType: EFModelSerializationBehaviorBase.AllNamespaces
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.AllNamespaces
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior.AllPropertySerializers
+  commentId: P:Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior.AllPropertySerializers
+  parent: Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior
+  isExternal: true
+  name: AllPropertySerializers
+  nameWithType: DomainXmlSerializationBehavior.AllPropertySerializers
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializationBehavior.AllPropertySerializers
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+  name: Instance
+  nameWithType: EFModelSerializationBehavior.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.Instance
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelSerializationBehavior
+  nameWithType: EFModelSerializationBehavior
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior

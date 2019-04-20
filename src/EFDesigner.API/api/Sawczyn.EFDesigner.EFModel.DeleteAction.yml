@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.DeleteAction
+  commentId: T:Sawczyn.EFDesigner.EFModel.DeleteAction
+  id: DeleteAction
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.DeleteAction.Cascade
+  - Sawczyn.EFDesigner.EFModel.DeleteAction.Default
+  - Sawczyn.EFDesigner.EFModel.DeleteAction.None
+  langs:
+  - csharp
+  - vb
+  name: DeleteAction
+  nameWithType: DeleteAction
+  fullName: Sawczyn.EFDesigner.EFModel.DeleteAction
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DeleteAction
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 788
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: DeleteAction\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum DeleteAction
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum DeleteAction
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.DeleteAction.Cascade
+  commentId: F:Sawczyn.EFDesigner.EFModel.DeleteAction.Cascade
+  id: Cascade
+  parent: Sawczyn.EFDesigner.EFModel.DeleteAction
+  langs:
+  - csharp
+  - vb
+  name: Cascade
+  nameWithType: DeleteAction.Cascade
+  fullName: Sawczyn.EFDesigner.EFModel.DeleteAction.Cascade
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Cascade
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 795
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCascade\nForce a cascade delete across this association\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/Cascade.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Cascade = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DeleteAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/Cascade.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Cascade = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DeleteAction/Cascade.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DeleteAction.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.DeleteAction.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.DeleteAction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DeleteAction.None
+  fullName: Sawczyn.EFDesigner.EFModel.DeleteAction.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 801
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nEnsure other end is not automatically deleted when one end is deleted.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DeleteAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DeleteAction/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DeleteAction.Default
+  commentId: F:Sawczyn.EFDesigner.EFModel.DeleteAction.Default
+  id: Default
+  parent: Sawczyn.EFDesigner.EFModel.DeleteAction
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: DeleteAction.Default
+  fullName: Sawczyn.EFDesigner.EFModel.DeleteAction.Default
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Default
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 807
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDefault\nUse the default Entity Framework behavior for the type of association\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/Default.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Default = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DeleteAction
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DeleteAction/Default.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Default = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DeleteAction/Default.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.DeleteAction
+  commentId: T:Sawczyn.EFDesigner.EFModel.DeleteAction
+  parent: Sawczyn.EFDesigner.EFModel
+  name: DeleteAction
+  nameWithType: DeleteAction
+  fullName: Sawczyn.EFDesigner.EFModel.DeleteAction

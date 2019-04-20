@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.QuestionDisplay
+  commentId: T:Sawczyn.EFDesigner.QuestionDisplay
+  id: QuestionDisplay
+  parent: Sawczyn.EFDesigner
+  children:
+  - Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer)
+  - Sawczyn.EFDesigner.QuestionDisplay.Show(System.String)
+  langs:
+  - csharp
+  - vb
+  name: QuestionDisplay
+  nameWithType: QuestionDisplay
+  fullName: Sawczyn.EFDesigner.QuestionDisplay
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/QuestionDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: QuestionDisplay
+    path: ../Dsl/CustomCode/Utilities/QuestionDisplay.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  summary: "\nThis helps keep UI interaction out of our DSL project proper. DslPackage calls RegisterDisplayHandler with a method that shows the MessageBox\n(or other UI-related method) properly using the Visual Studio service provider.\n"
+  example: []
+  syntax:
+    content: public static class QuestionDisplay
+    content.vb: Public Module QuestionDisplay
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sawczyn.EFDesigner.QuestionDisplay.Show(System.String)
+  commentId: M:Sawczyn.EFDesigner.QuestionDisplay.Show(System.String)
+  id: Show(System.String)
+  parent: Sawczyn.EFDesigner.QuestionDisplay
+  langs:
+  - csharp
+  - vb
+  name: Show(String)
+  nameWithType: QuestionDisplay.Show(String)
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.Show(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/QuestionDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Show
+    path: ../Dsl/CustomCode/Utilities/QuestionDisplay.cs
+    startLine: 11
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public static bool? Show(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Shared Function Show(message As String) As Boolean?
+  overload: Sawczyn.EFDesigner.QuestionDisplay.Show*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer)
+  commentId: M:Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer)
+  id: RegisterDisplayHandler(Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer)
+  parent: Sawczyn.EFDesigner.QuestionDisplay
+  langs:
+  - csharp
+  - vb
+  name: RegisterDisplayHandler(QuestionDisplay.QuestionVisualizer)
+  nameWithType: QuestionDisplay.RegisterDisplayHandler(QuestionDisplay.QuestionVisualizer)
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/QuestionDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RegisterDisplayHandler
+    path: ../Dsl/CustomCode/Utilities/QuestionDisplay.cs
+    startLine: 27
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public static void RegisterDisplayHandler(QuestionDisplay.QuestionVisualizer method)
+    parameters:
+    - id: method
+      type: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+    content.vb: Public Shared Sub RegisterDisplayHandler(method As QuestionDisplay.QuestionVisualizer)
+  overload: Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.QuestionDisplay.Show*
+  commentId: Overload:Sawczyn.EFDesigner.QuestionDisplay.Show
+  name: Show
+  nameWithType: QuestionDisplay.Show
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler*
+  commentId: Overload:Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler
+  name: RegisterDisplayHandler
+  nameWithType: QuestionDisplay.RegisterDisplayHandler
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.RegisterDisplayHandler
+- uid: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  commentId: T:Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  parent: Sawczyn.EFDesigner
+  name: QuestionDisplay.QuestionVisualizer
+  nameWithType: QuestionDisplay.QuestionVisualizer
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer

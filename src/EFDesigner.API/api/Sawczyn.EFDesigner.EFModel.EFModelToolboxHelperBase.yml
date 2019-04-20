@@ -1,0 +1,1205 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  id: EFModelToolboxHelperBase
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor(System.IServiceProvider)
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.BidirectionalAssociationFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentLinkFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype(Microsoft.VisualStudio.Modeling.Store,System.Guid)
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EnumerationFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GeneralizationFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem(System.String,Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData(System.String,System.Windows.Forms.DataFormats.Format)
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ModelClassFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxFilterString
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.UnidirectionalAssociationFilterString
+  langs:
+  - csharp
+  - vb
+  name: EFModelToolboxHelperBase
+  nameWithType: EFModelToolboxHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelToolboxHelperBase
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 38
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper class used to create and initialize toolbox items for this DSL.\n"
+  example: []
+  syntax:
+    content: public abstract class EFModelToolboxHelperBase
+    content.vb: Public MustInherit Class EFModelToolboxHelperBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sawczyn.EFDesigner.EFModel.EFModelToolboxHelper
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxFilterString
+  id: ToolboxFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ToolboxFilterString
+  nameWithType: EFModelToolboxHelperBase.ToolboxFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ToolboxFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 48
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify EFModel toolbox items.  \n"
+  remarks: "\nSee the MSDN documentation for the ToolboxItemFilterAttribute class for more information on toolbox\nitem filters.\n"
+  example: []
+  syntax:
+    content: public const string ToolboxFilterString = "EFModel.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const ToolboxFilterString As String = "EFModel.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ModelClassFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ModelClassFilterString
+  id: ModelClassFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ModelClassFilterString
+  nameWithType: EFModelToolboxHelperBase.ModelClassFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ModelClassFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelClassFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 52
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify ModelClass element tool.\n"
+  example: []
+  syntax:
+    content: public const string ModelClassFilterString = "ModelClass.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const ModelClassFilterString As String = "ModelClass.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.UnidirectionalAssociationFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.UnidirectionalAssociationFilterString
+  id: UnidirectionalAssociationFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: UnidirectionalAssociationFilterString
+  nameWithType: EFModelToolboxHelperBase.UnidirectionalAssociationFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.UnidirectionalAssociationFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: UnidirectionalAssociationFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 56
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify UnidirectionalAssociation connector tool.\n"
+  example: []
+  syntax:
+    content: public const string UnidirectionalAssociationFilterString = "UnidirectionalAssociation.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const UnidirectionalAssociationFilterString As String = "UnidirectionalAssociation.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.BidirectionalAssociationFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.BidirectionalAssociationFilterString
+  id: BidirectionalAssociationFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: BidirectionalAssociationFilterString
+  nameWithType: EFModelToolboxHelperBase.BidirectionalAssociationFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.BidirectionalAssociationFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BidirectionalAssociationFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 60
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify BidirectionalAssociation connector tool.\n"
+  example: []
+  syntax:
+    content: public const string BidirectionalAssociationFilterString = "BidirectionalAssociation.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const BidirectionalAssociationFilterString As String = "BidirectionalAssociation.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GeneralizationFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GeneralizationFilterString
+  id: GeneralizationFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GeneralizationFilterString
+  nameWithType: EFModelToolboxHelperBase.GeneralizationFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GeneralizationFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GeneralizationFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 64
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify Generalization connector tool.\n"
+  example: []
+  syntax:
+    content: public const string GeneralizationFilterString = "Generalization.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const GeneralizationFilterString As String = "Generalization.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentFilterString
+  id: CommentFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CommentFilterString
+  nameWithType: EFModelToolboxHelperBase.CommentFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CommentFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 68
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify Comment element tool.\n"
+  example: []
+  syntax:
+    content: public const string CommentFilterString = "Comment.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const CommentFilterString As String = "Comment.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentLinkFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentLinkFilterString
+  id: CommentLinkFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CommentLinkFilterString
+  nameWithType: EFModelToolboxHelperBase.CommentLinkFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CommentLinkFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CommentLinkFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 72
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify CommentLink connector tool.\n"
+  example: []
+  syntax:
+    content: public const string CommentLinkFilterString = "CommentLink.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const CommentLinkFilterString As String = "CommentLink.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EnumerationFilterString
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EnumerationFilterString
+  id: EnumerationFilterString
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: EnumerationFilterString
+  nameWithType: EFModelToolboxHelperBase.EnumerationFilterString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EnumerationFilterString
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EnumerationFilterString
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 76
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nToolbox item filter string used to identify Enumeration element tool.\n"
+  example: []
+  syntax:
+    content: public const string EnumerationFilterString = "Enumeration.1.2"
+    return:
+      type: System.String
+    content.vb: Public Const EnumerationFilterString As String = "Enumeration.1.2"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor(System.IServiceProvider)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor(System.IServiceProvider)
+  id: '#ctor(System.IServiceProvider)'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: EFModelToolboxHelperBase(IServiceProvider)
+  nameWithType: EFModelToolboxHelperBase.EFModelToolboxHelperBase(IServiceProvider)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EFModelToolboxHelperBase(System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 87
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructs a new EFModelToolboxHelperBase.\n"
+  example: []
+  syntax:
+    content: protected EFModelToolboxHelperBase(IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    content.vb: Protected Sub New(serviceProvider As IServiceProvider)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+  id: ServiceProvider
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ServiceProvider
+  nameWithType: EFModelToolboxHelperBase.ServiceProvider
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ServiceProvider
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 97
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSerivce provider used to access services from the hosting environment.\n"
+  example: []
+  syntax:
+    content: protected IServiceProvider ServiceProvider { get; }
+    parameters: []
+    return:
+      type: System.IServiceProvider
+    content.vb: Protected ReadOnly Property ServiceProvider As IServiceProvider
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+  id: DefaultToolboxTabName
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: DefaultToolboxTabName
+  nameWithType: EFModelToolboxHelperBase.DefaultToolboxTabName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DefaultToolboxTabName
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 108
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns the display name of the tab that should be opened by default when the editor is opened.\n"
+  example: []
+  syntax:
+    content: public static string DefaultToolboxTabName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DefaultToolboxTabName As String
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  id: DefaultToolboxTabToolboxItemsCount
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: DefaultToolboxTabToolboxItemsCount
+  nameWithType: EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DefaultToolboxTabToolboxItemsCount
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 120
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns the toolbox items count in the default tool box tab.\n"
+  example: []
+  syntax:
+    content: public static int DefaultToolboxTabToolboxItemsCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property DefaultToolboxTabToolboxItemsCount As Integer
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems
+  id: CreateToolboxItems
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CreateToolboxItems()
+  nameWithType: EFModelToolboxHelperBase.CreateToolboxItems()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateToolboxItems
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 132
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns a list of custom toolbox items to be added dynamically\n"
+  example: []
+  syntax:
+    content: public virtual IList<ModelingToolboxItem> CreateToolboxItems()
+    return:
+      type: System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem}
+    content.vb: Public Overridable Function CreateToolboxItems As IList(Of ModelingToolboxItem)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype(Microsoft.VisualStudio.Modeling.Store,System.Guid)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype(Microsoft.VisualStudio.Modeling.Store,System.Guid)
+  id: CreateElementToolPrototype(Microsoft.VisualStudio.Modeling.Store,System.Guid)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CreateElementToolPrototype(Store, Guid)
+  nameWithType: EFModelToolboxHelperBase.CreateElementToolPrototype(Store, Guid)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype(Microsoft.VisualStudio.Modeling.Store, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateElementToolPrototype
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 143
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCreates an ElementGroupPrototype for the element tool corresponding to the given domain class id.\nDefault behavior is to create a prototype containing an instance of the domain class.\nDerived classes may override this to add additional information to the prototype.\n"
+  example: []
+  syntax:
+    content: protected virtual ElementGroupPrototype CreateElementToolPrototype(Store store, Guid domainClassId)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+    - id: domainClassId
+      type: System.Guid
+    return:
+      type: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    content.vb: Protected Overridable Function CreateElementToolPrototype(store As Store, domainClassId As Guid) As ElementGroupPrototype
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem(System.String,Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem(System.String,Microsoft.VisualStudio.Modeling.Store)
+  id: GetToolboxItem(System.String,Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetToolboxItem(String, Store)
+  nameWithType: EFModelToolboxHelperBase.GetToolboxItem(String, Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem(System.String, Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetToolboxItem
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 158
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns instance of ModelingToolboxItem based on specified name.\nThis method must be called from within a Transaction. Failure to do so will result in an exception\n"
+  example: []
+  syntax:
+    content: public virtual ModelingToolboxItem GetToolboxItem(string itemId, Store store)
+    parameters:
+    - id: itemId
+      type: System.String
+      description: unique name of desired ToolboxItem
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store to perform the operation against
+    return:
+      type: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+      description: An instance of ModelingToolboxItem if the itemId can be resolved, null otherwise
+    content.vb: Public Overridable Function GetToolboxItem(itemId As String, store As Store) As ModelingToolboxItem
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+  id: ToolboxStore
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ToolboxStore
+  nameWithType: EFModelToolboxHelperBase.ToolboxStore
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ToolboxStore
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 307
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThe store toe be used for all the toolbox item creation\n"
+  example: []
+  syntax:
+    content: protected Store ToolboxStore { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.Modeling.Store
+    content.vb: Protected ReadOnly Property ToolboxStore As Store
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData(System.String,System.Windows.Forms.DataFormats.Format)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData(System.String,System.Windows.Forms.DataFormats.Format)
+  id: GetToolboxItemData(System.String,System.Windows.Forms.DataFormats.Format)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetToolboxItemData(String, DataFormats.Format)
+  nameWithType: EFModelToolboxHelperBase.GetToolboxItemData(String, DataFormats.Format)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData(System.String, System.Windows.Forms.DataFormats.Format)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ToolboxHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetToolboxItemData
+    path: ../Dsl/GeneratedCode/ToolboxHelper.cs
+    startLine: 364
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGiven a toolbox item &quot;unique ID&quot; and a data format identifier, returns the content of\nthe data format. \n"
+  example: []
+  syntax:
+    content: public virtual object GetToolboxItemData(string itemId, DataFormats.Format format)
+    parameters:
+    - id: itemId
+      type: System.String
+      description: The unique ToolboxItem to retrieve data for
+    - id: format
+      type: System.Windows.Forms.DataFormats.Format
+      description: The desired format of the resulting data
+    return:
+      type: System.Object
+    content.vb: Public Overridable Function GetToolboxItemData(itemId As String, format As DataFormats.Format) As Object
+  overload: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.#ctor
+  name: EFModelToolboxHelperBase
+  nameWithType: EFModelToolboxHelperBase.EFModelToolboxHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.EFModelToolboxHelperBase
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+  name: ServiceProvider
+  nameWithType: EFModelToolboxHelperBase.ServiceProvider
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ServiceProvider
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+  name: DefaultToolboxTabName
+  nameWithType: EFModelToolboxHelperBase.DefaultToolboxTabName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabName
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  name: DefaultToolboxTabToolboxItemsCount
+  nameWithType: EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.DefaultToolboxTabToolboxItemsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems
+  name: CreateToolboxItems
+  nameWithType: EFModelToolboxHelperBase.CreateToolboxItems
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateToolboxItems
+- uid: System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem}
+  commentId: T:System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ModelingToolboxItem>
+  nameWithType: IList<ModelingToolboxItem>
+  fullName: System.Collections.Generic.IList<Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem>
+  nameWithType.vb: IList(Of ModelingToolboxItem)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem)
+  name.vb: IList(Of ModelingToolboxItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+    name: ModelingToolboxItem
+    nameWithType: ModelingToolboxItem
+    fullName: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+    name: ModelingToolboxItem
+    nameWithType: ModelingToolboxItem
+    fullName: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype
+  name: CreateElementToolPrototype
+  nameWithType: EFModelToolboxHelperBase.CreateElementToolPrototype
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.CreateElementToolPrototype
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementGroupPrototype
+  nameWithType: ElementGroupPrototype
+  fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem
+  name: GetToolboxItem
+  nameWithType: EFModelToolboxHelperBase.GetToolboxItem
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItem
+- uid: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+  commentId: T:Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+  parent: Microsoft.VisualStudio.Modeling.Design
+  isExternal: true
+  name: ModelingToolboxItem
+  nameWithType: ModelingToolboxItem
+  fullName: Microsoft.VisualStudio.Modeling.Design.ModelingToolboxItem
+- uid: Microsoft.VisualStudio.Modeling.Design
+  commentId: N:Microsoft.VisualStudio.Modeling.Design
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Design
+  nameWithType: Microsoft.VisualStudio.Modeling.Design
+  fullName: Microsoft.VisualStudio.Modeling.Design
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+  name: ToolboxStore
+  nameWithType: EFModelToolboxHelperBase.ToolboxStore
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.ToolboxStore
+- uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData
+  name: GetToolboxItemData
+  nameWithType: EFModelToolboxHelperBase.GetToolboxItemData
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.GetToolboxItemData
+- uid: System.Windows.Forms.DataFormats.Format
+  commentId: T:System.Windows.Forms.DataFormats.Format
+  parent: System.Windows.Forms
+  isExternal: true
+  name: DataFormats.Format
+  nameWithType: DataFormats.Format
+  fullName: System.Windows.Forms.DataFormats.Format
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms

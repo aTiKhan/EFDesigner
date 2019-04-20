@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  commentId: T:Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  id: WarningDisplay.WarningVisualizer
+  parent: Sawczyn.EFDesigner
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: WarningDisplay.WarningVisualizer
+  nameWithType: WarningDisplay.WarningVisualizer
+  fullName: Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  type: Delegate
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/WarningDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WarningVisualizer
+    path: ../Dsl/CustomCode/Utilities/WarningDisplay.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public delegate void WarningVisualizer(string message);
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Delegate Sub WarningVisualizer(message As String)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

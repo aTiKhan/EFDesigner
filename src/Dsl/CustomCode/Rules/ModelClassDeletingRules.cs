@@ -3,7 +3,7 @@ using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelClass), FireTime = TimeToFire.TopLevelCommit)]
    internal class ModelClassDeletingRules : DeletingRule

@@ -3,7 +3,7 @@ using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelEnum), FireTime = TimeToFire.TopLevelCommit)]
    internal class ModelEnumChangeRules : ChangeRule

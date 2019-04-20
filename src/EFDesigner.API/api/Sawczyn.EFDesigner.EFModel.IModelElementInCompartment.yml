@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  commentId: T:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  id: IModelElementInCompartment
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  - Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  langs:
+  - csharp
+  - vb
+  name: IModelElementInCompartment
+  nameWithType: IModelElementInCompartment
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  type: Interface
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IModelElementInCompartment
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+    startLine: 5
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTag interface indicating diagram items for this element are compartments in a parent element\n"
+  example: []
+  syntax:
+    content: public interface IModelElementInCompartment
+    content.vb: Public Interface IModelElementInCompartment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  commentId: P:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  id: ParentModelElement
+  parent: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  langs:
+  - csharp
+  - vb
+  name: ParentModelElement
+  nameWithType: IModelElementInCompartment.ParentModelElement
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ParentModelElement
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+    startLine: 7
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: IModelElementWithCompartments ParentModelElement { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+    content.vb: ReadOnly Property ParentModelElement As IModelElementWithCompartments
+  overload: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  commentId: P:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  id: CompartmentName
+  parent: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  langs:
+  - csharp
+  - vb
+  name: CompartmentName
+  nameWithType: IModelElementInCompartment.CompartmentName
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CompartmentName
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IModelElementInCompartment.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: string CompartmentName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CompartmentName As String
+  overload: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  name: ParentModelElement
+  nameWithType: IModelElementInCompartment.ParentModelElement
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  commentId: T:Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  parent: Sawczyn.EFDesigner.EFModel
+  name: IModelElementWithCompartments
+  nameWithType: IModelElementWithCompartments
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  name: CompartmentName
+  nameWithType: IModelElementInCompartment.CompartmentName
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

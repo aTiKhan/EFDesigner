@@ -1,0 +1,440 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.ErrorDisplay
+  commentId: T:Sawczyn.EFDesigner.ErrorDisplay
+  id: ErrorDisplay
+  parent: Sawczyn.EFDesigner
+  children:
+  - Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer)
+  - Sawczyn.EFDesigner.ErrorDisplay.Show(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ErrorDisplay
+  nameWithType: ErrorDisplay
+  fullName: Sawczyn.EFDesigner.ErrorDisplay
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/ErrorDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ErrorDisplay
+    path: ../Dsl/CustomCode/Utilities/ErrorDisplay.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  summary: "\nThis helps keep UI interaction out of our DSL project proper. DslPackage calls RegisterDisplayHandler with a method that shows the MessageBox\n(or other UI-related method) properly using the Visual Studio service provider.\n"
+  example: []
+  syntax:
+    content: public static class ErrorDisplay
+    content.vb: Public Module ErrorDisplay
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sawczyn.EFDesigner.ErrorDisplay.Show(System.String)
+  commentId: M:Sawczyn.EFDesigner.ErrorDisplay.Show(System.String)
+  id: Show(System.String)
+  parent: Sawczyn.EFDesigner.ErrorDisplay
+  langs:
+  - csharp
+  - vb
+  name: Show(String)
+  nameWithType: ErrorDisplay.Show(String)
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.Show(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/ErrorDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Show
+    path: ../Dsl/CustomCode/Utilities/ErrorDisplay.cs
+    startLine: 11
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public static void Show(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Shared Sub Show(message As String)
+  overload: Sawczyn.EFDesigner.ErrorDisplay.Show*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer)
+  commentId: M:Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer)
+  id: RegisterDisplayHandler(Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer)
+  parent: Sawczyn.EFDesigner.ErrorDisplay
+  langs:
+  - csharp
+  - vb
+  name: RegisterDisplayHandler(ErrorDisplay.ErrorVisualizer)
+  nameWithType: ErrorDisplay.RegisterDisplayHandler(ErrorDisplay.ErrorVisualizer)
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler(Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/ErrorDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RegisterDisplayHandler
+    path: ../Dsl/CustomCode/Utilities/ErrorDisplay.cs
+    startLine: 26
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public static void RegisterDisplayHandler(ErrorDisplay.ErrorVisualizer method)
+    parameters:
+    - id: method
+      type: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+    content.vb: Public Shared Sub RegisterDisplayHandler(method As ErrorDisplay.ErrorVisualizer)
+  overload: Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.ErrorDisplay.Show*
+  commentId: Overload:Sawczyn.EFDesigner.ErrorDisplay.Show
+  name: Show
+  nameWithType: ErrorDisplay.Show
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler*
+  commentId: Overload:Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler
+  name: RegisterDisplayHandler
+  nameWithType: ErrorDisplay.RegisterDisplayHandler
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.RegisterDisplayHandler
+- uid: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  commentId: T:Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  parent: Sawczyn.EFDesigner
+  name: ErrorDisplay.ErrorVisualizer
+  nameWithType: ErrorDisplay.ErrorVisualizer
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer

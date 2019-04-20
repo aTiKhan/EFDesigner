@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelEnumValue), FireTime = TimeToFire.TopLevelCommit)]
    public class ModelEnumValueChangeRules : ChangeRule

@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  commentId: T:Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  id: ConcurrencyOverride
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Default
+  - Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.None
+  - Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Optimistic
+  langs:
+  - csharp
+  - vb
+  name: ConcurrencyOverride
+  nameWithType: ConcurrencyOverride
+  fullName: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ConcurrencyOverride
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1032
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: ConcurrencyOverride\nDescription for Sawczyn.EFDesigner.EFModel.ConcurrencyOverride\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum ConcurrencyOverride
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum ConcurrencyOverride
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ConcurrencyOverride.None
+  fullName: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1039
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nDon&apos;t generate code to handle concurrency\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Optimistic
+  commentId: F:Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Optimistic
+  id: Optimistic
+  parent: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  langs:
+  - csharp
+  - vb
+  name: Optimistic
+  nameWithType: ConcurrencyOverride.Optimistic
+  fullName: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Optimistic
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Optimistic
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1045
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nOptimistic\nGenerate timestamp columns to handle optimistic concurrency\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Optimistic.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Optimistic = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Optimistic.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Optimistic = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Optimistic.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Default
+  commentId: F:Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Default
+  id: Default
+  parent: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: ConcurrencyOverride.Default
+  fullName: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.Default
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Default
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1051
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDefault\nUse default for model\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Default.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Default = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Default.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Default = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride/Default.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  commentId: T:Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ConcurrencyOverride
+  nameWithType: ConcurrencyOverride
+  fullName: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride

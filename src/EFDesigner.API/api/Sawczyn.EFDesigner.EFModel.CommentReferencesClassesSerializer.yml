@@ -1,0 +1,3271 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  commentId: T:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  id: CommentReferencesClassesSerializer
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+  langs:
+  - csharp
+  - vb
+  name: CommentReferencesClassesSerializer
+  nameWithType: CommentReferencesClassesSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CommentReferencesClassesSerializer
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16107
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSerializer CommentReferencesClassesSerializer for DomainClass CommentReferencesClasses.\n"
+  example: []
+  syntax:
+    content: 'public class CommentReferencesClassesSerializer : CommentReferencesSubjectsSerializer'
+    content.vb: >-
+      Public Class CommentReferencesClassesSerializer
+          Inherits CommentReferencesSubjectsSerializer
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  - Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: CommentReferencesClassesSerializer()
+  nameWithType: CommentReferencesClassesSerializer.CommentReferencesClassesSerializer()
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CommentReferencesClassesSerializer()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16113
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCommentReferencesClassesSerializer Constructor\n"
+  example: []
+  syntax:
+    content: public CommentReferencesClassesSerializer()
+    content.vb: Public Sub New
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset
+  id: Reset
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CommentReferencesClassesSerializer.Reset()
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Reset
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16128
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReset the serializer\n"
+  remarks: "\nClear the cached information about any derived classes so that it is recalculated.\n"
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+  id: XmlTagName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: XmlTagName
+  nameWithType: CommentReferencesClassesSerializer.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: XmlTagName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16141
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the XML tag name used to serialize an instance of CommentReferencesClasses.\n"
+  example: []
+  syntax:
+    content: public override string XmlTagName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property XmlTagName As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.XmlTagName
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+  id: MonikerTagName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: MonikerTagName
+  nameWithType: CommentReferencesClassesSerializer.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerTagName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16150
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the XML tag name used to serialize a monikerized instance of CommentReferencesClasses.\n"
+  example: []
+  syntax:
+    content: public override string MonikerTagName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property MonikerTagName As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerTagName
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+  id: MonikerAttributeName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: MonikerAttributeName
+  nameWithType: CommentReferencesClassesSerializer.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerAttributeName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16159
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the name of the XML attribute that stores the moniker of CommentReferencesClasses in a serialized monikerized instance.\n"
+  example: []
+  syntax:
+    content: public override string MonikerAttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property MonikerAttributeName As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerAttributeName
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  id: Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: Read(SerializationContext, ModelElement, XmlReader)
+  nameWithType: CommentReferencesClassesSerializer.Read(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Read
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16179
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic Read() method that deserializes one CommentReferencesClasses instance from XML.\n"
+  remarks: "\nWhen this method is called, caller guarantees that the passed-in XML reader is positioned at the open XML tag\nof the CommentReferencesClasses element that is about to be deserialized. \nThe method needs to ensure that when it returns, the reader is positioned at the open XML tag of the next sibling element,\nor the close tag of the parent element (or EOF).\n"
+  example: []
+  syntax:
+    content: public override void Read(SerializationContext serializationContext, ModelElement element, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: In-memory CommentReferencesClasses instance that will get the deserialized data.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    content.vb: Public Overrides Sub Read(serializationContext As SerializationContext, element As ModelElement, reader As XmlReader)
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  id: ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: ReadTargetRolePlayer(SerializationContext, ModelElement, XmlReader)
+  nameWithType: CommentReferencesClassesSerializer.ReadTargetRolePlayer(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ReadTargetRolePlayer
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16251
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method reads the target role player ModelClass.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at the open tag of the first child XML element.\nThis method will read only one target role player instance. The method will skip any child XML element it encounters until it reaches:\n1) The open tag of the target role player.\n2) The end tag of the parent element (dangling relationship).\n3) EOF (dangling relationship).\nAfter the call, the reader is positioned at:\n1) The open tag of the next child element after the target role player.\n2) The end tag of the parent element.\n3) EOF.\n"
+  example: []
+  syntax:
+    content: protected override void ReadTargetRolePlayer(SerializationContext serializationContext, ModelElement element, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: In-memory CommentReferencesClasses instance that will link to the target ModelClass instance.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    content.vb: Protected Overrides Sub ReadTargetRolePlayer(serializationContext As SerializationContext, element As ModelElement, reader As XmlReader)
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  id: TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: TryCreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesClassesSerializer.TryCreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16305
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a correct instance of CommentReferencesClasses based on the tag currently pointed by the reader. If the reader\nis positioned at a serialized CommentReferencesClasses, a new CommentReferencesClasses instance will be created in the given partition, otherwise \nnull is returned.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: public override ModelElement TryCreateInstance(SerializationContext serializationContext, XmlReader reader, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which new elements should be created.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Created CommentReferencesClasses instance, or null if the reader is not pointing to a serialized CommentReferencesClasses instance.
+    content.vb: Public Overrides Function TryCreateInstance(serializationContext As SerializationContext, reader As XmlReader, partition As Partition) As ModelElement
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  id: TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: TryCreateDerivedInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesClassesSerializer.TryCreateDerivedInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateDerivedInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16335
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a correct derived instance of CommentReferencesClasses based on the tag currently pointed by the reader.\nNote that the difference between this method and the above one is that this method will never create an instance of the\nCommentReferencesClasses type itself, only derived types are checked.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: public override ElementLink TryCreateDerivedInstance(SerializationContext serializationContext, XmlReader reader, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which new elements should be created.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ElementLink
+      description: Created instance that derives from CommentReferencesClasses, or null if the reader is not pointing to such a serialized instance.
+    content.vb: Public Overrides Function TryCreateDerivedInstance(serializationContext As SerializationContext, reader As XmlReader, partition As Partition) As ElementLink
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  id: CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesClassesSerializer.CreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16399
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates an instance of CommentReferencesClasses based on the tag currently pointed by the reader. The reader is guaranteed (by the caller)\nto be pointed at a serialized instance of CommentReferencesClasses.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the ModelRoot instance being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: protected override ModelElement CreateInstance(SerializationContext serializationContext, XmlReader reader, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which new CommentReferencesClasses instance should be created.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Created CommentReferencesClasses instance.
+    content.vb: Protected Overrides Function CreateInstance(serializationContext As SerializationContext, reader As XmlReader, partition As Partition) As ModelElement
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  id: TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: CommentReferencesClassesSerializer.TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateMonikerInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16500
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a Moniker of the correct derived (including CommentReferencesClasses itself) instance of CommentReferencesClasses based on the tag currently pointed by the reader.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: public override Moniker TryCreateMonikerInstance(SerializationContext serializationContext, XmlReader reader, ModelElement sourceRolePlayer, Guid relDomainClassId, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The source role-player instance from which the moniker being created is referenced.
+    - id: relDomainClassId
+      type: System.Guid
+      description: The DomainClass Id of the relationship that connects the sourceRolePlayer to the moniker being created.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: The new Moniker should be created in the Store associated with this partition.
+    return:
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Created ModelRoot instance, or null if the reader is not pointing to a correct monikerized instance.
+    content.vb: Public Overrides Function TryCreateMonikerInstance(serializationContext As SerializationContext, reader As XmlReader, sourceRolePlayer As ModelElement, relDomainClassId As Guid, partition As Partition) As Moniker
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  id: CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: CommentReferencesClassesSerializer.CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateMonikerInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16556
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a Moniker of CommentReferencesClasses based on the tag currently pointed by the reader.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: protected override Moniker CreateMonikerInstance(SerializationContext serializationContext, XmlReader reader, ModelElement sourceRolePlayer, Guid relDomainClassId, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The source role-player instance from which the moniker being created is referenced.
+    - id: relDomainClassId
+      type: System.Guid
+      description: The DomainClass Id of the relationship that connects the sourceRolePlayer to the moniker being created.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: The new Moniker should be created in the Store associated with this partition.
+    return:
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Created ModelRoot instance, or null if the reader is not pointing to a correct monikerized instance.
+    content.vb: Protected Overrides Function CreateMonikerInstance(serializationContext As SerializationContext, reader As XmlReader, sourceRolePlayer As ModelElement, relDomainClassId As Guid, partition As Partition) As Moniker
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  id: WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  nameWithType: CommentReferencesClassesSerializer.WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WriteMoniker
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16640
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic WriteMoniker() method that writes a monikerized CommentReferencesClasses instance into XML.\n"
+  example: []
+  syntax:
+    content: public override void WriteMoniker(SerializationContext serializationContext, ModelElement element, XmlWriter writer, ModelElement sourceRolePlayer, DomainRelationshipXmlSerializer relSerializer)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: CommentReferencesClasses instance to be monikerized.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Source element that references the CommentReferencesClasses instance being monikerized.
+    - id: relSerializer
+      type: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+      description: Serializer that handles the relationship connecting the source element to the CommentReferencesClasses instance being monikerized.
+    content.vb: Public Overrides Sub WriteMoniker(serializationContext As SerializationContext, element As ModelElement, writer As XmlWriter, sourceRolePlayer As ModelElement, relSerializer As DomainRelationshipXmlSerializer)
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  id: Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  nameWithType: CommentReferencesClassesSerializer.Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.RootElementSettings)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Write
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16679
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic Write() method that serializes one CommentReferencesClasses instance into XML.\n"
+  example: []
+  syntax:
+    content: public override void Write(SerializationContext serializationContext, ModelElement element, XmlWriter writer, RootElementSettings rootElementSettings)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: CommentReferencesClasses instance to be serialized.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    - id: rootElementSettings
+      type: Microsoft.VisualStudio.Modeling.RootElementSettings
+      description: "\nThe root element settings if the passed in element is serialized as a root element in the XML. The root element contains additional\ninformation like schema target namespace, version, etc.\nThis should only be passed for root-level elements. Null should be passed for rest elements (and ideally call the Write() method \nwithout this parameter).\n"
+    content.vb: Public Overrides Sub Write(serializationContext As SerializationContext, element As ModelElement, writer As XmlWriter, rootElementSettings As RootElementSettings)
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: CommentReferencesClassesSerializer.CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CalculateQualifiedName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16745
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method calculates a moniker to a given CommentReferencesClasses instance.\n"
+  example: []
+  syntax:
+    content: public override string CalculateQualifiedName(DomainXmlSerializerDirectory directory, ModelElement element)
+    parameters:
+    - id: directory
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+      description: Directory to look up serializer based on model element type.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: CommentReferencesClasses instance to calculate qualified name for.
+    return:
+      type: System.String
+      description: A fully qualified string moniker to the CommentReferencesClasses instance.
+    content.vb: Public Overrides Function CalculateQualifiedName(directory As DomainXmlSerializerDirectory, element As ModelElement) As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: CommentReferencesClassesSerializer.GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetMonikerQualifier
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16773
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nA domain class can be monikerized in different ways: standard /qualifier/key mechanism, custom moniker, or element ID. If the domain class is serialized\nusing standard /qualifier/key mechanism, this method returns the qualifier of the moniker; if the domain class uses other ways for monikerization, this method\nreturns empty string.\n"
+  example: []
+  syntax:
+    content: public override string GetMonikerQualifier(DomainXmlSerializerDirectory directory, ModelElement element)
+    parameters:
+    - id: directory
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+      description: Directory to look up serializer based on model element type.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: CommentReferencesClasses instance to get moniker qualifier from.
+    return:
+      type: System.String
+      description: "\nValue of this element&apos;s moniker qualifier property, if it has one, or the value of the container&apos;s moniker qualifier property. Or empty string if this\nelement is not monikerized using standard /qualifier/key mechanism.\n"
+    content.vb: Public Overrides Function GetMonikerQualifier(directory As DomainXmlSerializerDirectory, element As ModelElement) As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  id: MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: MonikerizeReference(SerializationContext, ModelElement, Guid, String, Store)
+  nameWithType: CommentReferencesClassesSerializer.MonikerizeReference(SerializationContext, ModelElement, Guid, String, Store)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, System.String, Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerizeReference
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16798
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalculates a Moniker, given a reference to a ModelClass\n"
+  example: []
+  syntax:
+    content: public override Moniker MonikerizeReference(SerializationContext serializationContext, ModelElement sourceElement, Guid domainClassId, string monikerString, Store store)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: sourceElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Instance of Comment that contains the given serialized reference
+    - id: domainClassId
+      type: System.Guid
+      description: DomainClassId of the model element that the given moniker string will be resolved to.
+    - id: monikerString
+      type: System.String
+      description: Serialized string reference to an instance of ModelClass
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store where the Moniker will be created
+    return:
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: A Moniker encapsulating the serialized string reference of ModelClass instance
+    content.vb: Public Overrides Function MonikerizeReference(serializationContext As SerializationContext, sourceElement As ModelElement, domainClassId As Guid, monikerString As String, store As Store) As Moniker
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeReference(SerializationContext, ModelElement, ModelElement)
+  nameWithType: CommentReferencesClassesSerializer.SerializeReference(SerializationContext, ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SerializeReference
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16838
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalculates a monikerized string reference to a ModelClass.\n"
+  example: []
+  syntax:
+    content: public override string SerializeReference(SerializationContext serializationContext, ModelElement sourceElement, ModelElement targetElement)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: sourceElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Source side of reference relationship. The referenced target element will be serialized.
+    - id: targetElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Target side of relationship that will be serialized.
+    return:
+      type: System.String
+      description: A monikerized string reference to target element.
+    content.vb: Public Overrides Function SerializeReference(serializationContext As SerializationContext, sourceElement As ModelElement, targetElement As ModelElement) As String
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+  id: SerializesId
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializesId
+  nameWithType: CommentReferencesClassesSerializer.SerializesId
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SerializesId
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16883
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nExposes whether serializers derived from this class are serializing Id.\n"
+  example: []
+  syntax:
+    content: public override bool SerializesId { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property SerializesId As Boolean
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializesId
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm
+  id: UsesFullForm
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+  langs:
+  - csharp
+  - vb
+  name: UsesFullForm
+  nameWithType: CommentReferencesClassesSerializer.UsesFullForm
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: UsesFullForm
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 16894
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nExposes whether serializers derived from this class are serializing this relationship in full form.\n"
+  example: []
+  syntax:
+    content: public override bool UsesFullForm { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property UsesFullForm As Boolean
+  overridden: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.UsesFullForm
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainClassXmlSerializer
+  nameWithType: DomainClassXmlSerializer
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+- uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainRelationshipXmlSerializer
+  nameWithType: DomainRelationshipXmlSerializer
+  fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  commentId: T:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  parent: Sawczyn.EFDesigner.EFModel
+  name: CommentReferencesSubjectsSerializer
+  nameWithType: CommentReferencesSubjectsSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: ReadPropertiesFromAttributes(SerializationContext, ModelElement, XmlReader)
+  nameWithType: CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadPropertiesFromAttributes
+    nameWithType: CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadPropertiesFromAttributes
+    nameWithType: CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadPropertiesFromAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: WritePropertiesAsAttributes(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WritePropertiesAsAttributes
+    nameWithType: CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WritePropertiesAsAttributes
+    nameWithType: CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WritePropertiesAsAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  nameWithType: DomainClassXmlSerializer.ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: DomainClassXmlSerializer.ReadRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: DomainClassXmlSerializer.ReadRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: DomainClassXmlSerializer.WriteRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: DomainClassXmlSerializer.WriteRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: Write(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.Write(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: Write
+    nameWithType: DomainClassXmlSerializer.Write
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: Write
+    nameWithType: DomainClassXmlSerializer.Write
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: ReadElements(SerializationContext, ModelElement, XmlReader)
+  nameWithType: DomainClassXmlSerializer.ReadElements(SerializationContext, ModelElement, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadElements
+    nameWithType: DomainClassXmlSerializer.ReadElements
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadElements
+    nameWithType: DomainClassXmlSerializer.ReadElements
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: ReadAdditionalElementData(SerializationContext, ModelElement, XmlReader)
+  nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData(SerializationContext, ModelElement, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: WriteElements(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.WriteElements(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteElements
+    nameWithType: DomainClassXmlSerializer.WriteElements
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteElements
+    nameWithType: DomainClassXmlSerializer.WriteElements
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: WriteAdditionalElementData(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.#ctor
+  name: CommentReferencesClassesSerializer
+  nameWithType: CommentReferencesClassesSerializer.CommentReferencesClassesSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CommentReferencesClassesSerializer
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: Reset()
+  nameWithType: CommentReferencesSubjectsSerializer.Reset()
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+    name: Reset
+    nameWithType: CommentReferencesSubjectsSerializer.Reset
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+    name: Reset
+    nameWithType: CommentReferencesSubjectsSerializer.Reset
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset
+  name: Reset
+  nameWithType: CommentReferencesClassesSerializer.Reset
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Reset
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.XmlTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.XmlTagName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: XmlTagName
+  nameWithType: CommentReferencesSubjectsSerializer.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.XmlTagName
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+  name: XmlTagName
+  nameWithType: CommentReferencesClassesSerializer.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.XmlTagName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerTagName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: MonikerTagName
+  nameWithType: CommentReferencesSubjectsSerializer.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerTagName
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+  name: MonikerTagName
+  nameWithType: CommentReferencesClassesSerializer.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerTagName
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerAttributeName
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerAttributeName
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: MonikerAttributeName
+  nameWithType: CommentReferencesSubjectsSerializer.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerAttributeName
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+  name: MonikerAttributeName
+  nameWithType: CommentReferencesClassesSerializer.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerAttributeName
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: Read(SerializationContext, ModelElement, XmlReader)
+  nameWithType: CommentReferencesSubjectsSerializer.Read(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: Read
+    nameWithType: CommentReferencesSubjectsSerializer.Read
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: Read
+    nameWithType: CommentReferencesSubjectsSerializer.Read
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read
+  name: Read
+  nameWithType: CommentReferencesClassesSerializer.Read
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Read
+- uid: Microsoft.VisualStudio.Modeling.SerializationContext
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: ReadTargetRolePlayer(SerializationContext, ModelElement, XmlReader)
+  nameWithType: CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadTargetRolePlayer
+    nameWithType: CommentReferencesSubjectsSerializer.ReadTargetRolePlayer
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadTargetRolePlayer
+    nameWithType: CommentReferencesSubjectsSerializer.ReadTargetRolePlayer
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.ReadTargetRolePlayer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer
+  name: ReadTargetRolePlayer
+  nameWithType: CommentReferencesClassesSerializer.ReadTargetRolePlayer
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.ReadTargetRolePlayer
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: TryCreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesSubjectsSerializer.TryCreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance
+  name: TryCreateInstance
+  nameWithType: CommentReferencesClassesSerializer.TryCreateInstance
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateInstance
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: TryCreateDerivedInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateDerivedInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateDerivedInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateDerivedInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateDerivedInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateDerivedInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance
+  name: TryCreateDerivedInstance
+  nameWithType: CommentReferencesClassesSerializer.TryCreateDerivedInstance
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateDerivedInstance
+- uid: Microsoft.VisualStudio.Modeling.ElementLink
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementLink
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementLink
+  nameWithType: ElementLink
+  fullName: Microsoft.VisualStudio.Modeling.ElementLink
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: CreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: CommentReferencesSubjectsSerializer.CreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateInstance
+    nameWithType: CommentReferencesSubjectsSerializer.CreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateInstance
+    nameWithType: CommentReferencesSubjectsSerializer.CreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance
+  name: CreateInstance
+  nameWithType: CommentReferencesClassesSerializer.CreateInstance
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateInstance
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateMonikerInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateMonikerInstance
+    nameWithType: CommentReferencesSubjectsSerializer.TryCreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.TryCreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance
+  name: TryCreateMonikerInstance
+  nameWithType: CommentReferencesClassesSerializer.TryCreateMonikerInstance
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.TryCreateMonikerInstance
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.VisualStudio.Modeling.Moniker
+  commentId: T:Microsoft.VisualStudio.Modeling.Moniker
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Moniker
+  nameWithType: Moniker
+  fullName: Microsoft.VisualStudio.Modeling.Moniker
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: CommentReferencesSubjectsSerializer.CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateMonikerInstance
+    nameWithType: CommentReferencesSubjectsSerializer.CreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateMonikerInstance
+    nameWithType: CommentReferencesSubjectsSerializer.CreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance
+  name: CreateMonikerInstance
+  nameWithType: CommentReferencesClassesSerializer.CreateMonikerInstance
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CreateMonikerInstance
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  nameWithType: CommentReferencesSubjectsSerializer.WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+    name: WriteMoniker
+    nameWithType: CommentReferencesSubjectsSerializer.WriteMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    name: DomainRelationshipXmlSerializer
+    nameWithType: DomainRelationshipXmlSerializer
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+    name: WriteMoniker
+    nameWithType: CommentReferencesSubjectsSerializer.WriteMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.WriteMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    name: DomainRelationshipXmlSerializer
+    nameWithType: DomainRelationshipXmlSerializer
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker
+  name: WriteMoniker
+  nameWithType: CommentReferencesClassesSerializer.WriteMoniker
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.WriteMoniker
+- uid: System.Xml.XmlWriter
+  commentId: T:System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  nameWithType: CommentReferencesSubjectsSerializer.Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.RootElementSettings)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+    name: Write
+    nameWithType: CommentReferencesSubjectsSerializer.Write
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+    name: RootElementSettings
+    nameWithType: RootElementSettings
+    fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+    name: Write
+    nameWithType: CommentReferencesSubjectsSerializer.Write
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+    name: RootElementSettings
+    nameWithType: RootElementSettings
+    fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write
+  name: Write
+  nameWithType: CommentReferencesClassesSerializer.Write
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.Write
+- uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+  commentId: T:Microsoft.VisualStudio.Modeling.RootElementSettings
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: RootElementSettings
+  nameWithType: RootElementSettings
+  fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: CommentReferencesSubjectsSerializer.CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: CommentReferencesSubjectsSerializer.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: CommentReferencesSubjectsSerializer.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName
+  name: CalculateQualifiedName
+  nameWithType: CommentReferencesClassesSerializer.CalculateQualifiedName
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.CalculateQualifiedName
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainXmlSerializerDirectory
+  nameWithType: DomainXmlSerializerDirectory
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: CommentReferencesSubjectsSerializer.GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetMonikerQualifier
+    nameWithType: CommentReferencesSubjectsSerializer.GetMonikerQualifier
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetMonikerQualifier
+    nameWithType: CommentReferencesSubjectsSerializer.GetMonikerQualifier
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.GetMonikerQualifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier
+  name: GetMonikerQualifier
+  nameWithType: CommentReferencesClassesSerializer.GetMonikerQualifier
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.GetMonikerQualifier
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: MonikerizeReference(SerializationContext, ModelElement, Guid, String, Store)
+  nameWithType: CommentReferencesSubjectsSerializer.MonikerizeReference(SerializationContext, ModelElement, Guid, String, Store)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, System.String, Microsoft.VisualStudio.Modeling.Store)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+    name: MonikerizeReference
+    nameWithType: CommentReferencesSubjectsSerializer.MonikerizeReference
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,System.String,Microsoft.VisualStudio.Modeling.Store)
+    name: MonikerizeReference
+    nameWithType: CommentReferencesSubjectsSerializer.MonikerizeReference
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.MonikerizeReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference
+  name: MonikerizeReference
+  nameWithType: CommentReferencesClassesSerializer.MonikerizeReference
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.MonikerizeReference
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  isExternal: true
+  name: SerializeReference(SerializationContext, ModelElement, ModelElement)
+  nameWithType: CommentReferencesSubjectsSerializer.SerializeReference(SerializationContext, ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: SerializeReference
+    nameWithType: CommentReferencesSubjectsSerializer.SerializeReference
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: SerializeReference
+    nameWithType: CommentReferencesSubjectsSerializer.SerializeReference
+    fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializeReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference
+  name: SerializeReference
+  nameWithType: CommentReferencesClassesSerializer.SerializeReference
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializeReference
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializesId
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializesId
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: SerializesId
+  nameWithType: CommentReferencesSubjectsSerializer.SerializesId
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.SerializesId
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+  name: SerializesId
+  nameWithType: CommentReferencesClassesSerializer.SerializesId
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.SerializesId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.UsesFullForm
+  commentId: P:Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.UsesFullForm
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+  name: UsesFullForm
+  nameWithType: CommentReferencesSubjectsSerializer.UsesFullForm
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.UsesFullForm
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm
+  name: UsesFullForm
+  nameWithType: CommentReferencesClassesSerializer.UsesFullForm
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.UsesFullForm

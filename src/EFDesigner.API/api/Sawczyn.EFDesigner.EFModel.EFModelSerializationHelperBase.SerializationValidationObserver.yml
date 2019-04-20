@@ -1,0 +1,985 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  id: EFModelSerializationHelperBase.SerializationValidationObserver
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationHelperBase.SerializationValidationObserver
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SerializationValidationObserver
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1390
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAn utility class to collect validation messages during serialization, and store them in serialization result.\n"
+  example: []
+  syntax:
+    content: 'protected sealed class SerializationValidationObserver : ValidationMessageObserver, IDisposable'
+    content.vb: >-
+      Protected NotInheritable Class SerializationValidationObserver
+          Inherits ValidationMessageObserver
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  - Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - protected
+  - sealed
+  - class
+  modifiers.vb:
+  - Protected
+  - NotInheritable
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+  id: Finalize
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.Finalize()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Finalize
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1424
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDestructor\n"
+  example: []
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  id: OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  langs:
+  - csharp
+  - vb
+  name: OnValidationMessageAdded(ValidationMessage)
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded(ValidationMessage)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OnValidationMessageAdded
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1434
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalled with validation messages are added.\n"
+  example: []
+  syntax:
+    content: protected override void OnValidationMessageAdded(ValidationMessage addedMessage)
+    parameters:
+    - id: addedMessage
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    content.vb: Protected Overrides Sub OnValidationMessageAdded(addedMessage As ValidationMessage)
+  overridden: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+  id: Dispose
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.Dispose()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Dispose
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1452
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nIDisposable.Dispose().\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  commentId: T:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  parent: Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: ValidationMessageObserver
+  nameWithType: ValidationMessageObserver
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationBeginning(ValidationContext)
+  nameWithType: ValidationMessageObserver.OnValidationBeginning(ValidationContext)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+    name: OnValidationBeginning
+    nameWithType: ValidationMessageObserver.OnValidationBeginning
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+    name: OnValidationBeginning
+    nameWithType: ValidationMessageObserver.OnValidationBeginning
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationBeginning
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationEnded(ValidationContext)
+  nameWithType: ValidationMessageObserver.OnValidationEnded(ValidationContext)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+    name: OnValidationEnded
+    nameWithType: ValidationMessageObserver.OnValidationEnded
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded(Microsoft.VisualStudio.Modeling.Validation.ValidationContext)
+    name: OnValidationEnded
+    nameWithType: ValidationMessageObserver.OnValidationEnded
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationMessagesChanging(ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>)
+  nameWithType: ValidationMessageObserver.OnValidationMessagesChanging(ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>, System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>, System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>, System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>)
+  nameWithType.vb: ValidationMessageObserver.OnValidationMessagesChanging(ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage))
+  fullName.vb: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage), System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage), System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage), System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage))
+  name.vb: OnValidationMessagesChanging(ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+    name: OnValidationMessagesChanging
+    nameWithType: ValidationMessageObserver.OnValidationMessagesChanging
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+    name: OnValidationMessagesChanging
+    nameWithType: ValidationMessageObserver.OnValidationMessagesChanging
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationMessageRemoved(ValidationMessage)
+  nameWithType: ValidationMessageObserver.OnValidationMessageRemoved(ValidationMessage)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+    name: OnValidationMessageRemoved
+    nameWithType: ValidationMessageObserver.OnValidationMessageRemoved
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+    name: OnValidationMessageRemoved
+    nameWithType: ValidationMessageObserver.OnValidationMessageRemoved
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationMessagesChangedSummary(ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>)
+  nameWithType: ValidationMessageObserver.OnValidationMessagesChangedSummary(ReadOnlyCollection<ValidationMessage>, ReadOnlyCollection<ValidationMessage>)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>, System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.VisualStudio.Modeling.Validation.ValidationMessage>)
+  nameWithType.vb: ValidationMessageObserver.OnValidationMessagesChangedSummary(ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage))
+  fullName.vb: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage), System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.VisualStudio.Modeling.Validation.ValidationMessage))
+  name.vb: OnValidationMessagesChangedSummary(ReadOnlyCollection(Of ValidationMessage), ReadOnlyCollection(Of ValidationMessage))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+    name: OnValidationMessagesChangedSummary
+    nameWithType: ValidationMessageObserver.OnValidationMessagesChangedSummary
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary(System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage},System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.VisualStudio.Modeling.Validation.ValidationMessage})
+    name: OnValidationMessagesChangedSummary
+    nameWithType: ValidationMessageObserver.OnValidationMessagesChangedSummary
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessagesChangedSummary
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling.Validation
+  commentId: N:Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Validation
+  nameWithType: Microsoft.VisualStudio.Modeling.Validation
+  fullName: Microsoft.VisualStudio.Modeling.Validation
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+  name: Finalize
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Finalize
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  commentId: M:Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  parent: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver
+  isExternal: true
+  name: OnValidationMessageAdded(ValidationMessage)
+  nameWithType: ValidationMessageObserver.OnValidationMessageAdded(ValidationMessage)
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+    name: OnValidationMessageAdded
+    nameWithType: ValidationMessageObserver.OnValidationMessageAdded
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded(Microsoft.VisualStudio.Modeling.Validation.ValidationMessage)
+    name: OnValidationMessageAdded
+    nameWithType: ValidationMessageObserver.OnValidationMessageAdded
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessageObserver.OnValidationMessageAdded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    name: ValidationMessage
+    nameWithType: ValidationMessage
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded
+  name: OnValidationMessageAdded
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.OnValidationMessageAdded
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+  commentId: T:Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+  parent: Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: ValidationMessage
+  nameWithType: ValidationMessage
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationMessage
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+  name: Dispose
+  nameWithType: EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult
+  commentId: T:Sawczyn.EFDesigner.EFModel.ParseResult
+  id: ParseResult
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+  - Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+  - Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+  - Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+  - Sawczyn.EFDesigner.EFModel.ParseResult.Name
+  - Sawczyn.EFDesigner.EFModel.ParseResult.Required
+  - Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+  - Sawczyn.EFDesigner.EFModel.ParseResult.Type
+  langs:
+  - csharp
+  - vb
+  name: ParseResult
+  nameWithType: ParseResult
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ParseResult
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 210
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public class ParseResult
+    content.vb: Public Class ParseResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+  id: SetterVisibility
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: SetterVisibility
+  nameWithType: ParseResult.SetterVisibility
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SetterVisibility
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 212
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public SetterAccessModifier? SetterVisibility { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Sawczyn.EFDesigner.EFModel.SetterAccessModifier}
+    content.vb: Public Property SetterVisibility As SetterAccessModifier?
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Name
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.Name
+  id: Name
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ParseResult.Name
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Name
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Name
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 213
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Type
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.Type
+  id: Type
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ParseResult.Type
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Type
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Type
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 214
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Required
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.Required
+  id: Required
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: ParseResult.Required
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Required
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Required
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 215
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public bool? Required { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property Required As Boolean?
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.Required*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+  id: MinLength
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: MinLength
+  nameWithType: ParseResult.MinLength
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MinLength
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 216
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public int? MinLength { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MinLength As Integer?
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.MinLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+  id: MaxLength
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: MaxLength
+  nameWithType: ParseResult.MaxLength
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MaxLength
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 217
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public int? MaxLength { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MaxLength As Integer?
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+  id: InitialValue
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: InitialValue
+  nameWithType: ParseResult.InitialValue
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InitialValue
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 218
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string InitialValue { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InitialValue As String
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+  commentId: P:Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+  id: IsIdentity
+  parent: Sawczyn.EFDesigner.EFModel.ParseResult
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: ParseResult.IsIdentity
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IsIdentity
+    path: ../Dsl/CustomCode/ModelAttribute Parser/AttributeParser.cs
+    startLine: 219
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public bool IsIdentity { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsIdentity As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+  name: SetterVisibility
+  nameWithType: ParseResult.SetterVisibility
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.SetterVisibility
+- uid: System.Nullable{Sawczyn.EFDesigner.EFModel.SetterAccessModifier}
+  commentId: T:System.Nullable{Sawczyn.EFDesigner.EFModel.SetterAccessModifier}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<SetterAccessModifier>
+  nameWithType: Nullable<SetterAccessModifier>
+  fullName: System.Nullable<Sawczyn.EFDesigner.EFModel.SetterAccessModifier>
+  nameWithType.vb: Nullable(Of SetterAccessModifier)
+  fullName.vb: System.Nullable(Of Sawczyn.EFDesigner.EFModel.SetterAccessModifier)
+  name.vb: Nullable(Of SetterAccessModifier)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    name: SetterAccessModifier
+    nameWithType: SetterAccessModifier
+    fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    name: SetterAccessModifier
+    nameWithType: SetterAccessModifier
+    fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Name*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.Name
+  name: Name
+  nameWithType: ParseResult.Name
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Type*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.Type
+  name: Type
+  nameWithType: ParseResult.Type
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Type
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.Required*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.Required
+  name: Required
+  nameWithType: ParseResult.Required
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.Required
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.MinLength*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+  name: MinLength
+  nameWithType: ParseResult.MinLength
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.MinLength
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+  name: MaxLength
+  nameWithType: ParseResult.MaxLength
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.MaxLength
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+  name: InitialValue
+  nameWithType: ParseResult.InitialValue
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.InitialValue
+- uid: Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+  name: IsIdentity
+  nameWithType: ParseResult.IsIdentity
+  fullName: Sawczyn.EFDesigner.EFModel.ParseResult.IsIdentity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 
 using Sawczyn.EFDesigner.EFModel.CustomCode.Extensions;
+using Sawczyn.EFDesigner.EFModel.Interfaces;
 
 namespace Sawczyn.EFDesigner.EFModel
 {

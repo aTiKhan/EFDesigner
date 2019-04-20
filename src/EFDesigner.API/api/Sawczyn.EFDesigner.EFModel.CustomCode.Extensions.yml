@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  commentId: N:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  id: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  children:
+  - Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions
+  - Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  - Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions
+  langs:
+  - csharp
+  - vb
+  name: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  nameWithType: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  type: Namespace
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+references:
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions
+  commentId: T:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions
+  name: DiagramViewExtensions
+  nameWithType: DiagramViewExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  commentId: T:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  name: ModelElementExtensions
+  nameWithType: ModelElementExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions
+  commentId: T:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions
+  name: SyntaxNodeExtensions
+  nameWithType: SyntaxNodeExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  commentId: N:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  name: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  nameWithType: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions

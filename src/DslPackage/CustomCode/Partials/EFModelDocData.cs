@@ -15,6 +15,10 @@ using Microsoft.VisualStudio.Modeling.Validation;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using NuGet.VisualStudio;
+
+using Sawczyn.EFDesigner.EFModel.Interfaces;
+using Sawczyn.EFDesigner.EFModel.Rules;
+
 using VSLangProj;
 
 namespace Sawczyn.EFDesigner.EFModel

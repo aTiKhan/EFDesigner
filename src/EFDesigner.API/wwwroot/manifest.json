@@ -1,0 +1,3050 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Code/EFDesigner/src/EFDesigner.API",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspChildControlTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspChildControlTypeAttribute.html",
+          "hash": "DERvNVch6feYAbYlXaB1mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldAttribute.html",
+          "hash": "iIG1KL3oyI6RNl4BE22rEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldsAttribute.html",
+          "hash": "BrFGV/mJSu2qN5X7dEQPdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMethodPropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMethodPropertyAttribute.html",
+          "hash": "irNaqqKfiUMF7zt3fFeukA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionAttribute.html",
+          "hash": "OLHmpwtg98bziXOQl61M5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionSelectorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionSelectorAttribute.html",
+          "hash": "4XX2CqC19GIeyN/3ggnxkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaAttribute.html",
+          "hash": "AYUdWqpn5lVmRps3/tQ9cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaMasterLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaMasterLocationFormatAttribute.html",
+          "hash": "q4I/KZ+Jjk4mwdZfv0cOVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaPartialViewLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaPartialViewLocationFormatAttribute.html",
+          "hash": "D/vLae3+yAE8ZjyZGC0r9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaViewLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaViewLocationFormatAttribute.html",
+          "hash": "aUNG/+Ftr1K1ShNqkLVFKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcControllerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcControllerAttribute.html",
+          "hash": "e2iwHq2eXtdDqq2k9wScSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcDisplayTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcDisplayTemplateAttribute.html",
+          "hash": "6UW26BBunBBe2MBAI8clXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcEditorTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcEditorTemplateAttribute.html",
+          "hash": "oF/fDdCQUQ1y8uPwFvG6sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterAttribute.html",
+          "hash": "MOkqpANqQTogPyPb9vfYVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterLocationFormatAttribute.html",
+          "hash": "VRn0TuGli2jesKakkC+Q4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcModelTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcModelTypeAttribute.html",
+          "hash": "pASMBc1x6z19rAhyPhG3pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewAttribute.html",
+          "hash": "ja1hGWmPfNGq3qfCPHUp9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewLocationFormatAttribute.html",
+          "hash": "A1F3cvL21nq+9jnJztfpGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcSuppressViewErrorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcSuppressViewErrorAttribute.html",
+          "hash": "XL+p2O7wxnU5ltj3lf7Bzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcTemplateAttribute.html",
+          "hash": "P+MPa8JDtQTu4cY3r9254g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewAttribute.html",
+          "hash": "KRm+hjRy824E1GvDP4py9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentAttribute.html",
+          "hash": "AH4PMWV7bRIB9TD15uHEfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentViewAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentViewAttribute.html",
+          "hash": "BC+0cwXETwzCOLyZXlVPOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewLocationFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewLocationFormatAttribute.html",
+          "hash": "Oe62k9RJEZJlFKVuxIbP+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspRequiredAttributeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspRequiredAttributeAttribute.html",
+          "hash": "QX3xBFh7h0UTva8aEFKGaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspTypePropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AspTypePropertyAttribute.html",
+          "hash": "dI6zcDnRsGKSmposIkNzQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionAttribute.html",
+          "hash": "Yg32CvPOcyg4BA++5wP4PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.html",
+          "hash": "5jfQngXzpQJAtxEBNUrg6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.AssertionMethodAttribute.html",
+          "hash": "j4D/Tr3MYCYLxo6nZ/JCzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.BaseTypeRequiredAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.BaseTypeRequiredAttribute.html",
+          "hash": "m2JNvwwcFdze1jqkuatl6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CanBeNullAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CanBeNullAttribute.html",
+          "hash": "EG5iPrv8NJQwRbqMlyzDig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CannotApplyEqualityOperatorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CannotApplyEqualityOperatorAttribute.html",
+          "hash": "gPLSfE//LmaI2GTB+21o+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessAttribute.html",
+          "hash": "5icVEflE/FDqmOWK00MYbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.html",
+          "hash": "99bgOlILfSNVSYS2QWwaLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ContractAnnotationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ContractAnnotationAttribute.html",
+          "hash": "nO4jHcMIwHIvJn8+a28Qdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.HtmlAttributeValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.HtmlAttributeValueAttribute.html",
+          "hash": "jts5wDZ5sDbDUcxdSjghAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.HtmlElementAttributesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.HtmlElementAttributesAttribute.html",
+          "hash": "gpr48sp7mFMEB1tE/G4LDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.html",
+          "hash": "/USbADlUDdbHIt1X3dGMIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.html",
+          "hash": "aUMB6w2lK8CkKz6NqCv8kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.InstantHandleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.InstantHandleAttribute.html",
+          "hash": "f0Ack1zrur63bPGVRb48+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.InvokerParameterNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.InvokerParameterNameAttribute.html",
+          "hash": "++1vPgm8mrKexPyFSz0Wng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ItemCanBeNullAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ItemCanBeNullAttribute.html",
+          "hash": "km7Atf8aKCfHvo1POz7jqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ItemNotNullAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ItemNotNullAttribute.html",
+          "hash": "jR9bNO1IrPx5//irHOa7Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.LinqTunnelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.LinqTunnelAttribute.html",
+          "hash": "pd3PP6ToJKNGXCTA8HG2Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.LocalizationRequiredAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.LocalizationRequiredAttribute.html",
+          "hash": "lInxNu6sPVKRl+SaAd+6TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MacroAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MacroAttribute.html",
+          "hash": "gcntUdnO0eN+/APuO2rzFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute.html",
+          "hash": "ecyYEhw/2Qs6kdaOwmRegg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MustUseReturnValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.MustUseReturnValueAttribute.html",
+          "hash": "VwhajL4Hrd1fUjXLwRAlpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NoEnumerationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NoEnumerationAttribute.html",
+          "hash": "BV//k23//E+x70tIT0aw0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NoReorderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NoReorderAttribute.html",
+          "hash": "ecSjotwCeB8mc3onqOGsiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NotNullAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NotNullAttribute.html",
+          "hash": "Cv3Q77mv3ngrfKLyLClIHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NotifyPropertyChangedInvocatorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.NotifyPropertyChangedInvocatorAttribute.html",
+          "hash": "hF6UdJVCGE+jVO7PWAouiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PathReferenceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PathReferenceAttribute.html",
+          "hash": "Fsku1Vz07Ed1jbUOn8ccwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ProvidesContextAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ProvidesContextAttribute.html",
+          "hash": "MQyeS2T1tjvcMfHz3j8D6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PublicAPIAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PublicAPIAttribute.html",
+          "hash": "qO4GulROFv/HKuBy/PaOyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PureAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.PureAttribute.html",
+          "hash": "jIzq3yPbLvZp0kag8eUc8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorDirectiveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorDirectiveAttribute.html",
+          "hash": "9nae6OHN1ET5V2RiCueOBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorHelperCommonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorHelperCommonAttribute.html",
+          "hash": "pJGoG5XB1/qpY9qqg7B1FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorImportNamespaceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorImportNamespaceAttribute.html",
+          "hash": "k9uzjcUVVLcowVR+C5Qxzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorInjectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorInjectionAttribute.html",
+          "hash": "+88DzNjakxXFC69wopzEig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorLayoutAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorLayoutAttribute.html",
+          "hash": "Y6OfUmFe1Jr1ju49CsF7lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorPageBaseTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorPageBaseTypeAttribute.html",
+          "hash": "vn+EZ4w6TD5wTBhYbBPhmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorSectionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorSectionAttribute.html",
+          "hash": "Rv92JoNEGO/tWP1e0VrFEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteLiteralMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteLiteralMethodAttribute.html",
+          "hash": "tO0DA8ORxVqqJ73LpFP/mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodAttribute.html",
+          "hash": "AdlmlfQDEzn/AwYiJW3Feg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodParameterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodParameterAttribute.html",
+          "hash": "iPHVPvC0myXto4IcuYn7cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RegexPatternAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.RegexPatternAttribute.html",
+          "hash": "/16S38ZN5SVEm2Ny67pQmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.SourceTemplateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.SourceTemplateAttribute.html",
+          "hash": "H+gAB542y1bQEEIBsqXVkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.StringFormatMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.StringFormatMethodAttribute.html",
+          "hash": "fcg/4Kg7vJkfFCXzaKkt8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.TerminatesProgramAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.TerminatesProgramAttribute.html",
+          "hash": "50etyimP/upL0cSL2nQZ1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute.html",
+          "hash": "UCSe7Oqo7hnuSv2UK+O1gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ValueProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.ValueProviderAttribute.html",
+          "hash": "HszdfQdDHQH4Q6dNIWROlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.XamlItemBindingOfItemsControlAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.XamlItemBindingOfItemsControlAttribute.html",
+          "hash": "ZZi6ahli4Qvb4jwsmQSVEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.XamlItemsControlAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.XamlItemsControlAttribute.html",
+          "hash": "oIpL8EhdH1afRo4sFoPgLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Annotations.html",
+          "hash": "2ccZ1xobmIUwIbTZooBISw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Association.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Association.html",
+          "hash": "SxC5hmXl0S1HBlhL1EL3Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationChangeRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationChangeRules.html",
+          "hash": "8dYF1twmaozqSOQkDlA6wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnector.html",
+          "hash": "y4oq3g8IGYagV4V/THVg7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorBase.html",
+          "hash": "1wwSVHpGCBOE6ao6Z8by/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer.html",
+          "hash": "GEGcouefT7a+lUkXuo6NPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.html",
+          "hash": "GRxK7t7UajHGwUItXtLgmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationSerializer.html",
+          "hash": "iDs8ctXHZfF/wj78dz6Uvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationTypeDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AssociationTypeDescriptor.html",
+          "hash": "uqh795pXfXnzuN9+Su67sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AttributeParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AttributeParser.html",
+          "hash": "HKFl87kkLg0IPf1rcUr9JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AttributeTypeTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AttributeTypeTypeConverter.html",
+          "hash": "zWggr3/RAAoKNxQI7CEIAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.AutomaticAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.AutomaticAction.html",
+          "hash": "AvmEy184RiXI0hL7dZ4+Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BaseClassTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BaseClassTypeConverter.html",
+          "hash": "uh4XpA2OlBiS8Oal6Jb3Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociation.html",
+          "hash": "/qjfJGEAEagGP4ODj397pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociationBuilder.html",
+          "hash": "IXhqCb+ZZHBfrXlPdEbrVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociationSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalAssociationSerializer.html",
+          "hash": "MgtwmE8/XhhxDIgyw4d2dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalConnector.html",
+          "hash": "JkWhsWU0X6EplfXzvKSmqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.html",
+          "hash": "mBpfUEEBq9NmTj04T/e4iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassHasAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassHasAttributes.html",
+          "hash": "oueNhFt6ejVKQU2rffazaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassHasAttributesSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassHasAttributesSerializer.html",
+          "hash": "5fIz3zK35Xxkyyym/htxUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShape.html",
+          "hash": "GrsFQzwK5PhdVGug3Ki4mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeBase.html",
+          "hash": "mnCq9oJRI1BnJQos5jQK0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeSerializer.html",
+          "hash": "V3DgDmqS1xcLxGeOUwssdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeSerializerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ClassShapeSerializerBase.html",
+          "hash": "HcaSk/1OZL6/eH4hAMoCcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CodeStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CodeStrategy.html",
+          "hash": "0wSFNsA3iang0QmYnYOXUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CollectionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CollectionType.html",
+          "hash": "w5/5R0z/EK+sJC9fB0tmMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CollectionTypeTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CollectionTypeTypeConverter.html",
+          "hash": "UqdWKoZMv2WbQVf6P8+FzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ColorExtensions.html",
+          "hash": "ZARSLTnHEhtuoKUHzDveMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Comment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Comment.html",
+          "hash": "76Z95/7E5ObEj0lToD/AXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShape.html",
+          "hash": "cyTPk1EhmvaWmh/VuHHgPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeBase.html",
+          "hash": "OPUGANukmg5jn77pnqqlzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializer.html",
+          "hash": "WNrPnkcvhvCPzfwNkNS1rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializerBase.html",
+          "hash": "5/y3Emwav2WiTgKb2HOG4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentConnector.html",
+          "hash": "7viRye53gOSO7eyJB5mQ1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentConnectorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentConnectorSerializer.html",
+          "hash": "uqyOJrYqqPCV/RI9eveIfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClasses.html",
+          "hash": "1KMJ5zNCBo/yXMqEozvigQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClassesBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClassesBuilder.html",
+          "hash": "zAf1n1qnBhEMEl4jybBxBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer.html",
+          "hash": "FDLYT37V6Tj4QqPbrm1mYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnums.html",
+          "hash": "HR/+IddJ2UPk4J1jzb34mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.html",
+          "hash": "vUIVbQw4sJsiXcbNP5Km1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsSerializer.html",
+          "hash": "mYvUCTAup+k5QfbL7yvDlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesSubjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesSubjects.html",
+          "hash": "tL4MgRwsjcMcsO8gXW5T7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer.html",
+          "hash": "ibEyJFQfB9+H2Z/t0Z8Elg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommentSerializer.html",
+          "hash": "Zi2wavprbYyMWr3jJAKbiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CommonRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CommonRules.html",
+          "hash": "OEYeRTalqS/YlOF1++fGYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction-1.html",
+          "hash": "8M8OTm4W6ajXRU63qgQboA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Concurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Concurrency.html",
+          "hash": "6ud08ycaK8G8q2LnC2RSjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ConcurrencyOverride.html",
+          "hash": "WEijZQZ3CWjMkXCaPkZe7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ContainerAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ContainerAccess.html",
+          "hash": "Gr8R06MENmWxBHgQAKv4Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions.html",
+          "hash": "k6ZfuoLMQr4HWnstYU1fHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html",
+          "hash": "eWx800m73qWiNU8MW4xcnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions.html",
+          "hash": "EKA8D5R5IjSb8gfWmr39fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.html",
+          "hash": "SskusTbtb37sNeU1pagZbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DBWorkflow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DBWorkflow.html",
+          "hash": "unKr/iTKdxfNBb8UAb27wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.html",
+          "hash": "H+TFLu8tgsDFO6hmh1Udfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DatabaseKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DatabaseKind.html",
+          "hash": "1SsXMOSMuvKG3RW8joKy+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DeleteAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DeleteAction.html",
+          "hash": "UVlpCM3jIVZkqGyaARYRFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DesignElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DesignElement.html",
+          "hash": "hYWq+mGkiq2WMhyID0vYQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.DesignElementSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.DesignElementSerializer.html",
+          "hash": "MUgmDgDCao/s1O1jZMuTQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFCoreValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFCoreValidator.html",
+          "hash": "ulImdvCMcfxwJfuImjimJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelCopyClosure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelCopyClosure.html",
+          "hash": "lKCCBnFzb9d0LoG99yLzgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelCopyClosureBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelCopyClosureBase.html",
+          "hash": "ol775K9Sb4BNYkVzGeNnlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDeleteClosure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDeleteClosure.html",
+          "hash": "1P82qQCRv21WmjKhD6XdPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase.html",
+          "hash": "TA/ZeVpD5IztH6Ned71oWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDiagram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDiagram.html",
+          "hash": "iU+D7/GvtWUcoEiEmA5aug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDiagramSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDiagramSerializer.html",
+          "hash": "zQS3nozG058KX0tobqW3/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.html",
+          "hash": "Jv3L9G4MKD9gaw/ULF1cDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.html",
+          "hash": "t4j2CahJBRpx0L5HWMal5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModel.html",
+          "hash": "KJmUcRmGIlzupyas50sL8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializer.html",
+          "hash": "EVUT/bp8iFGadTTUy6xe7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase.html",
+          "hash": "SB3LPW6SMnJ+6Vpa6hnSrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper.html",
+          "hash": "vJCDFfMB8g1YIYW5B8t8HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase.html",
+          "hash": "OT4nfgyzipOA22d/9FOoPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior.html",
+          "hash": "eYNj2zlSV6rKzXV26C/ujg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase.html",
+          "hash": "OphHjocAQbK2UrDr3hoSQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.html",
+          "hash": "o7l+yUPMJNro1wPGiGlsgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.html",
+          "hash": "vI8XbRYgV4RNSfeZbJOLmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.html",
+          "hash": "47vWDxqBXdY96a+MWfO/EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.html",
+          "hash": "Q85H0HRHKqGUu45RhlFBfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver.html",
+          "hash": "M0sFaHVhO+zqD60B/I9kRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.html",
+          "hash": "V5TB3V1OqGPq38MtxLzSUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelToolboxHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelToolboxHelper.html",
+          "hash": "vT6qsBm5OqYt3gnF01NOJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase.html",
+          "hash": "+LEZ+j4LY5Yoa0kfDbLZJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFPackageVersionTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFPackageVersionTypeConverter.html",
+          "hash": "eJ+RIgcaQ1mUXi5IwBpqkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EFVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EFVersion.html",
+          "hash": "wuICN+ls0IG1y9PTJwo4oQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EndpointRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EndpointRole.html",
+          "hash": "pcvIFilSJac6f/FCAVxLEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShape.html",
+          "hash": "TB00DNvgjRek/q0YJqnZow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeBase.html",
+          "hash": "xVZiM1oRPwiVwrhJ+oUN8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeSerializer.html",
+          "hash": "wznqr8/xoGHosdtzK9a/WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeSerializerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumShapeSerializerBase.html",
+          "hash": "qTHG4ut9DFUOacnroBfOcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumValueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.EnumValueType.html",
+          "hash": "hLAs1cDjPL1W4sb2MLjQBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute.html",
+          "hash": "fMsE5bEVWAECW0zcxn1kZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute.html",
+          "hash": "2rLAyugkDZ20SV3R6mHV0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute.html",
+          "hash": "GVMbSDPEGe1+KINlFY5Hmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ExtensionEnablement.html",
+          "hash": "1gORRhjhmaxVidlTVfo1cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.FileDropHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.FileDropHelper.html",
+          "hash": "Kb+1143ZaB6QiSWz5KI/0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.html",
+          "hash": "INp7H0R/BFPU69W7bJ65Ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Generalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Generalization.html",
+          "hash": "auvvbONeFQGc5C7MVKF7hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationBuilder.html",
+          "hash": "7Evy9D33HY9yrm0V9tYGUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationConnector.html",
+          "hash": "/ntCrPCh9MvPB8YFMNJVww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationConnectorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationConnectorSerializer.html",
+          "hash": "g5g+v9bl57ssGE3Su+kJ7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.GeneralizationSerializer.html",
+          "hash": "UpHoVbXtUIZy5IJ43GnKkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.HTML5Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.HTML5Type.html",
+          "hash": "BL5hfRx5iRVHeyFenlKlRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IDisplaysWarning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IDisplaysWarning.html",
+          "hash": "smhHeSE06l02qbR3XL+WYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.html",
+          "hash": "qGxTM9gCp96wDE9ujrMUKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.html",
+          "hash": "39/3wJhPZ9/la7IsijOEaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments.html",
+          "hash": "rtnyyEbImlTLy6AkhkCGoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IMouseActionTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IMouseActionTarget.html",
+          "hash": "2UgpFbGrIeMj2D8rNAuUXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.IdentityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.IdentityType.html",
+          "hash": "PgA5bCU+sG+roEwjZ+XssQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.InheritanceModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.InheritanceModifier.html",
+          "hash": "8QLKaM9ykHtiHdtEDM0knA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttribute.html",
+          "hash": "S88VTRIZ28ZPAjOwp1JQyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeChangeRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeChangeRules.html",
+          "hash": "hwmRpBsqKv0zNs9I2KlL4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.html",
+          "hash": "kL0i4KibdvB6yzfcAtip9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeSerializer.html",
+          "hash": "1aDxfApn5crGVrzRXO6Dpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeTypeDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelAttributeTypeDescriptor.html",
+          "hash": "aUJQdXOe+NkxK1ON6VjvvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClass.html",
+          "hash": "eqoA+DPuPLLNq7J1OhL+7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassExtensions.html",
+          "hash": "lfNieNNmK3VkaiYFMHlstg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassNameProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassNameProvider.html",
+          "hash": "UVVt10QQTtFWIxO7JvAydg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassSerializer.html",
+          "hash": "6A5UcnMUATLSXh3mowfQvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassTypeDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelClassTypeDescriptor.html",
+          "hash": "UkaN66tj28tpd/OAV+jf7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnum.html",
+          "hash": "zB1IeyoldjZ/4hxZan9Xzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumHasValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumHasValues.html",
+          "hash": "X3haco92D7COdjzginr3UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumHasValuesSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumHasValuesSerializer.html",
+          "hash": "IsuJ/rFAdC8bRqsX51t82w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumNameProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumNameProvider.html",
+          "hash": "Bt72qO7qzixFACm5otm/Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumSerializer.html",
+          "hash": "DTcBKnzPg1HlEnpFksGhfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumTypeDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumTypeDescriptor.html",
+          "hash": "hWbNsq+qeXWrb6voa2lglw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValue.html",
+          "hash": "/aWE9Hioz1OuHfvvTfxDMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.html",
+          "hash": "1p7ogaWrKrYrNk0IdKBLFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValueSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelEnumValueSerializer.html",
+          "hash": "gb/1YPwBeQhe0DaMHhsxHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRoot.html",
+          "hash": "8X5kRXI861aceWOjJTZ4wQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasClasses.html",
+          "hash": "WadRAaKtF92zyDAJMstWqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasClassesSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasClassesSerializer.html",
+          "hash": "SlnsL7iAhQSbjW72OzQ7DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasComments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasComments.html",
+          "hash": "qfH7etwUiFoe9FdXzOGvZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasCommentsSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasCommentsSerializer.html",
+          "hash": "MAgLdNXhojEtxxv72NdksA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasEnums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasEnums.html",
+          "hash": "cIndH5gnFzpLFVV+YsSDHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasEnumsSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootHasEnumsSerializer.html",
+          "hash": "tZ+7buXRWJa8Z89pDqPjNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootSerializer.html",
+          "hash": "cr0y/csdsLXyXaCj1wuBFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.html",
+          "hash": "J8I5At7/n0dp7mO0pi/Yyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Multiplicity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Multiplicity.html",
+          "hash": "zkDO+xle3eRrqTbV8ZkSrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.html",
+          "hash": "A3Jc9FD4N7JnrmqtdVH2Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.MultiplicityTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.MultiplicityTypeConverter.html",
+          "hash": "vpzoTg7JexpIAnLx2kicow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.NavigationEndpointTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.NavigationEndpointTypeConverter.html",
+          "hash": "tarziqaf14y1lQru2y442w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.NavigationProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.NavigationProperty.html",
+          "hash": "g3G8uj0w+BuwlPdQ91Leig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.NuGetDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.NuGetDisplay.html",
+          "hash": "gLK0CNzk6d+9o3Pqtz63ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.NuGetHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.NuGetHelper.html",
+          "hash": "H7lPp6lt8NwDMaCorpFcGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Context.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Context.html",
+          "hash": "Gyt8C08I08tcbo3FZo1aBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages.html",
+          "hash": "LoZ1DzL8ZtCVp6EPcrcHcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.PackageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.PackageData.html",
+          "hash": "E3WqfAsvoYJsODuZqCQNOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Serialize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Serialize.html",
+          "hash": "l8DKbn4SpYKWXqOJb9HybQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.html",
+          "hash": "1mR7tAOHdkkR3M0hsoPgjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.Version.html",
+          "hash": "oaV2sDUDJEfy5/JLYhjLpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.Nuget.html",
+          "hash": "p+h7eSPAfH036R0TMB0IDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ParseResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ParseResult.html",
+          "hash": "QPq5NZCXgdYIVBmKHv2vJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.PresentationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.PresentationHelper.html",
+          "hash": "qFKXTcGgMpdkwuipoXYfQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ProjectDirectoryTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ProjectDirectoryTypeConverter.html",
+          "hash": "uxPlyB6jIBfNqOMJdUMYFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.SetterAccessModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.SetterAccessModifier.html",
+          "hash": "h3uN5oIPIRiWcg/8k2LgPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.SourceMultiplicityTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.SourceMultiplicityTypeConverter.html",
+          "hash": "SJYkRoTvMup3RQ8fn2FrjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.StringExtensions.html",
+          "hash": "XbCpmi6WprhZAs+HyrUfOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.TargetMultiplicityTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.TargetMultiplicityTypeConverter.html",
+          "hash": "Ugoe2paZQIaAv3sFmdYsNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.TypeAccessModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.TypeAccessModifier.html",
+          "hash": "KVsLJYQueBWnLx9iefYSsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.TypeConverterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.TypeConverterBase.html",
+          "hash": "Kng3xK4PMZQIAkrKeuIFDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociation.html",
+          "hash": "Zvu6W/QIYnRlslGbU16jGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationBuilder.html",
+          "hash": "tAN6qxjQpC0TNdrviAGY2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationSerializer.html",
+          "hash": "+b80JJ7Mh0ux+jlZyeQkqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalConnector.html",
+          "hash": "9dJyNLtBbDhu2V1OzmSkiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalConnectorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.UnidirectionalConnectorSerializer.html",
+          "hash": "qKbwh4pWQpiCzw9udP3SyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.ValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.ValueConverter.html",
+          "hash": "8O7hvviWB9yhG1ZpRIi/Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.EFModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.EFModel.html",
+          "hash": "j2fuPDrQxHHmhHoePDlr1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer.html",
+          "hash": "neBUKfL54vKyOi6nyW877w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.ErrorDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.ErrorDisplay.html",
+          "hash": "nrjvxGOIi/olquxTLP2QHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer.html",
+          "hash": "PxZlux7BuM9Av4R/42qACQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.QuestionDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.QuestionDisplay.html",
+          "hash": "EL4gZqjo36eQ1Wyfr8yRbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer.html",
+          "hash": "qVNRjLZIHZFNj2JxGKHu2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.WarningDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.WarningDisplay.html",
+          "hash": "+l6giHW23OHWGOjiViCrPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sawczyn.EFDesigner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sawczyn.EFDesigner.html",
+          "hash": "4ChUxHwn/a3cZ8d/YgsEoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "R/K+ZgLYK81MHDufRDI7CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 249,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

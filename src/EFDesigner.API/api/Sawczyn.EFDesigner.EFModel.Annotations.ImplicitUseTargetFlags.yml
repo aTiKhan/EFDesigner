@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  id: ImplicitUseTargetFlags
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  children:
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Default
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Itself
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Members
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.WithMembers
+  langs:
+  - csharp
+  - vb
+  name: ImplicitUseTargetFlags
+  nameWithType: ImplicitUseTargetFlags
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ImplicitUseTargetFlags
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 400
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: "\nSpecify what is considered used implicitly when marked\nwith <xref href=\"Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ImplicitUseTargetFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum ImplicitUseTargetFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Default
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Default
+  id: Default
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: ImplicitUseTargetFlags.Default
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Default
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Default
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 403
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  syntax:
+    content: Default = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Itself
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Itself
+  id: Itself
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  langs:
+  - csharp
+  - vb
+  name: Itself
+  nameWithType: ImplicitUseTargetFlags.Itself
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Itself
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Itself
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 404
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  syntax:
+    content: Itself = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Members
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Members
+  id: Members
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  langs:
+  - csharp
+  - vb
+  name: Members
+  nameWithType: ImplicitUseTargetFlags.Members
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.Members
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Members
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 406
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Members of entity marked with attribute are considered used.
+  example: []
+  syntax:
+    content: Members = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.WithMembers
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.WithMembers
+  id: WithMembers
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  langs:
+  - csharp
+  - vb
+  name: WithMembers
+  nameWithType: ImplicitUseTargetFlags.WithMembers
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags.WithMembers
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WithMembers
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 408
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Entity marked with attribute and all its members considered used.
+  example: []
+  syntax:
+    content: WithMembers = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: MeansImplicitUseAttribute
+  nameWithType: MeansImplicitUseAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: UsedImplicitlyAttribute
+  nameWithType: UsedImplicitlyAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute
+- uid: Sawczyn.EFDesigner.EFModel.Annotations
+  commentId: N:Sawczyn.EFDesigner.EFModel.Annotations
+  name: Sawczyn.EFDesigner.EFModel.Annotations
+  nameWithType: Sawczyn.EFDesigner.EFModel.Annotations
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: ImplicitUseTargetFlags
+  nameWithType: ImplicitUseTargetFlags
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags

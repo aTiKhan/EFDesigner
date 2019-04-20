@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection;
 
-using Microsoft.VisualStudio.Modeling;
+using Sawczyn.EFDesigner.EFModel.Rules;
 
 namespace Sawczyn.EFDesigner.EFModel
 {

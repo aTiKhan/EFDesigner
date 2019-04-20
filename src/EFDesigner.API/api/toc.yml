@@ -1,0 +1,506 @@
+### YamlMime:TableOfContent
+- uid: Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  items:
+  - uid: Sawczyn.EFDesigner.ErrorDisplay
+    name: ErrorDisplay
+  - uid: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+    name: ErrorDisplay.ErrorVisualizer
+  - uid: Sawczyn.EFDesigner.QuestionDisplay
+    name: QuestionDisplay
+  - uid: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+    name: QuestionDisplay.QuestionVisualizer
+  - uid: Sawczyn.EFDesigner.WarningDisplay
+    name: WarningDisplay
+  - uid: Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+    name: WarningDisplay.WarningVisualizer
+- uid: Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  items:
+  - uid: Sawczyn.EFDesigner.EFModel.Association
+    name: Association
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationChangeRules
+    name: AssociationChangeRules
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnector
+    name: AssociationConnector
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorBase
+    name: AssociationConnectorBase
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer
+    name: AssociationConnectorSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+    name: AssociationConnectorSerializerBase
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationSerializer
+    name: AssociationSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationTypeDescriptor
+    name: AssociationTypeDescriptor
+  - uid: Sawczyn.EFDesigner.EFModel.AttributeParser
+    name: AttributeParser
+  - uid: Sawczyn.EFDesigner.EFModel.AttributeTypeTypeConverter
+    name: AttributeTypeTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.AutomaticAction
+    name: AutomaticAction
+  - uid: Sawczyn.EFDesigner.EFModel.BaseClassTypeConverter
+    name: BaseClassTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.BidirectionalAssociation
+    name: BidirectionalAssociation
+  - uid: Sawczyn.EFDesigner.EFModel.BidirectionalAssociationBuilder
+    name: BidirectionalAssociationBuilder
+  - uid: Sawczyn.EFDesigner.EFModel.BidirectionalAssociationSerializer
+    name: BidirectionalAssociationSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnector
+    name: BidirectionalConnector
+  - uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+    name: BidirectionalConnectorSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ClassHasAttributes
+    name: ClassHasAttributes
+  - uid: Sawczyn.EFDesigner.EFModel.ClassHasAttributesSerializer
+    name: ClassHasAttributesSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ClassShape
+    name: ClassShape
+  - uid: Sawczyn.EFDesigner.EFModel.ClassShapeBase
+    name: ClassShapeBase
+  - uid: Sawczyn.EFDesigner.EFModel.ClassShapeSerializer
+    name: ClassShapeSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ClassShapeSerializerBase
+    name: ClassShapeSerializerBase
+  - uid: Sawczyn.EFDesigner.EFModel.CodeStrategy
+    name: CodeStrategy
+  - uid: Sawczyn.EFDesigner.EFModel.CollectionType
+    name: CollectionType
+  - uid: Sawczyn.EFDesigner.EFModel.CollectionTypeTypeConverter
+    name: CollectionTypeTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.ColorExtensions
+    name: ColorExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.Comment
+    name: Comment
+  - uid: Sawczyn.EFDesigner.EFModel.CommentBoxShape
+    name: CommentBoxShape
+  - uid: Sawczyn.EFDesigner.EFModel.CommentBoxShapeBase
+    name: CommentBoxShapeBase
+  - uid: Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializer
+    name: CommentBoxShapeSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommentBoxShapeSerializerBase
+    name: CommentBoxShapeSerializerBase
+  - uid: Sawczyn.EFDesigner.EFModel.CommentConnector
+    name: CommentConnector
+  - uid: Sawczyn.EFDesigner.EFModel.CommentConnectorSerializer
+    name: CommentConnectorSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClasses
+    name: CommentReferencesClasses
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesBuilder
+    name: CommentReferencesClassesBuilder
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesClassesSerializer
+    name: CommentReferencesClassesSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnums
+    name: CommentReferencesEnums
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+    name: CommentReferencesEnumsBuilder
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsSerializer
+    name: CommentReferencesEnumsSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjects
+    name: CommentReferencesSubjects
+  - uid: Sawczyn.EFDesigner.EFModel.CommentReferencesSubjectsSerializer
+    name: CommentReferencesSubjectsSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommentSerializer
+    name: CommentSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.CommonRules
+    name: CommonRules
+  - uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+    name: CompartmentDragMouseAction<T>
+    name.vb: CompartmentDragMouseAction(Of T)
+  - uid: Sawczyn.EFDesigner.EFModel.Concurrency
+    name: Concurrency
+  - uid: Sawczyn.EFDesigner.EFModel.ConcurrencyOverride
+    name: ConcurrencyOverride
+  - uid: Sawczyn.EFDesigner.EFModel.ContainerAccess
+    name: ContainerAccess
+  - uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    name: DatabaseInitializerKind
+  - uid: Sawczyn.EFDesigner.EFModel.DatabaseKind
+    name: DatabaseKind
+  - uid: Sawczyn.EFDesigner.EFModel.DBWorkflow
+    name: DBWorkflow
+  - uid: Sawczyn.EFDesigner.EFModel.DeleteAction
+    name: DeleteAction
+  - uid: Sawczyn.EFDesigner.EFModel.DesignElement
+    name: DesignElement
+  - uid: Sawczyn.EFDesigner.EFModel.DesignElementSerializer
+    name: DesignElementSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+    name: EFCoreValidator
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelCopyClosure
+    name: EFModelCopyClosure
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelCopyClosureBase
+    name: EFModelCopyClosureBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosure
+    name: EFModelDeleteClosure
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDeleteClosureBase
+    name: EFModelDeleteClosureBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagramSerializer
+    name: EFModelDiagramSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor
+    name: EFModelDirectiveProcessor
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+    name: EFModelDirectiveProcessorBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    name: EFModelDomainModel
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializer
+    name: EFModelDomainModelSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModelSerializerBase
+    name: EFModelDomainModelSerializerBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelper
+    name: EFModelHelpKeywordHelper
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelHelpKeywordHelperBase
+    name: EFModelHelpKeywordHelperBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehavior
+    name: EFModelSerializationBehavior
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorBase
+    name: EFModelSerializationBehaviorBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver
+    name: EFModelSerializationBehaviorMonikerResolver
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+    name: EFModelSerializationBehaviorMonikerResolverBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+    name: EFModelSerializationBehaviorSerializationMessages
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+    name: EFModelSerializationHelper
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+    name: EFModelSerializationHelperBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SerializationValidationObserver
+    name: EFModelSerializationHelperBase.SerializationValidationObserver
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelper
+    name: EFModelToolboxHelper
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelToolboxHelperBase
+    name: EFModelToolboxHelperBase
+  - uid: Sawczyn.EFDesigner.EFModel.EFPackageVersionTypeConverter
+    name: EFPackageVersionTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.EFVersion
+    name: EFVersion
+  - uid: Sawczyn.EFDesigner.EFModel.EndpointRole
+    name: EndpointRole
+  - uid: Sawczyn.EFDesigner.EFModel.EnumShape
+    name: EnumShape
+  - uid: Sawczyn.EFDesigner.EFModel.EnumShapeBase
+    name: EnumShapeBase
+  - uid: Sawczyn.EFDesigner.EFModel.EnumShapeSerializer
+    name: EnumShapeSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.EnumShapeSerializerBase
+    name: EnumShapeSerializerBase
+  - uid: Sawczyn.EFDesigner.EFModel.EnumValueType
+    name: EnumValueType
+  - uid: Sawczyn.EFDesigner.EFModel.FileDropHelper
+    name: FileDropHelper
+  - uid: Sawczyn.EFDesigner.EFModel.ForeignKeyOwner
+    name: ForeignKeyOwner
+  - uid: Sawczyn.EFDesigner.EFModel.Generalization
+    name: Generalization
+  - uid: Sawczyn.EFDesigner.EFModel.GeneralizationBuilder
+    name: GeneralizationBuilder
+  - uid: Sawczyn.EFDesigner.EFModel.GeneralizationConnector
+    name: GeneralizationConnector
+  - uid: Sawczyn.EFDesigner.EFModel.GeneralizationConnectorSerializer
+    name: GeneralizationConnectorSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.GeneralizationSerializer
+    name: GeneralizationSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.HTML5Type
+    name: HTML5Type
+  - uid: Sawczyn.EFDesigner.EFModel.IdentityType
+    name: IdentityType
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+    name: IDisplaysWarning
+  - uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+    name: IHighlightFromModelExplorer
+  - uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+    name: IModelElementInCompartment
+  - uid: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+    name: IModelElementWithCompartments
+  - uid: Sawczyn.EFDesigner.EFModel.IMouseActionTarget
+    name: IMouseActionTarget
+  - uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+    name: InheritanceModifier
+  - uid: Sawczyn.EFDesigner.EFModel.ModelAttribute
+    name: ModelAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.ModelAttributeChangeRules
+    name: ModelAttributeChangeRules
+  - uid: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider
+    name: ModelAttributeNameProvider
+  - uid: Sawczyn.EFDesigner.EFModel.ModelAttributeSerializer
+    name: ModelAttributeSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelAttributeTypeDescriptor
+    name: ModelAttributeTypeDescriptor
+  - uid: Sawczyn.EFDesigner.EFModel.ModelClass
+    name: ModelClass
+  - uid: Sawczyn.EFDesigner.EFModel.ModelClassExtensions
+    name: ModelClassExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.ModelClassNameProvider
+    name: ModelClassNameProvider
+  - uid: Sawczyn.EFDesigner.EFModel.ModelClassSerializer
+    name: ModelClassSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelClassTypeDescriptor
+    name: ModelClassTypeDescriptor
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnum
+    name: ModelEnum
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumHasValues
+    name: ModelEnumHasValues
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumHasValuesSerializer
+    name: ModelEnumHasValuesSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumNameProvider
+    name: ModelEnumNameProvider
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumSerializer
+    name: ModelEnumSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumTypeDescriptor
+    name: ModelEnumTypeDescriptor
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+    name: ModelEnumValue
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules
+    name: ModelEnumValueChangeRules
+  - uid: Sawczyn.EFDesigner.EFModel.ModelEnumValueSerializer
+    name: ModelEnumValueSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasClasses
+    name: ModelRootHasClasses
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasClassesSerializer
+    name: ModelRootHasClassesSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasComments
+    name: ModelRootHasComments
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasCommentsSerializer
+    name: ModelRootHasCommentsSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasEnums
+    name: ModelRootHasEnums
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootHasEnumsSerializer
+    name: ModelRootHasEnumsSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootSerializer
+    name: ModelRootSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+    name: ModelRootTypeDescriptor
+  - uid: Sawczyn.EFDesigner.EFModel.Multiplicity
+    name: Multiplicity
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions
+    name: MultiplicityExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityTypeConverter
+    name: MultiplicityTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.NavigationEndpointTypeConverter
+    name: NavigationEndpointTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.NavigationProperty
+    name: NavigationProperty
+  - uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+    name: NuGetDisplay
+  - uid: Sawczyn.EFDesigner.EFModel.NuGetHelper
+    name: NuGetHelper
+  - uid: Sawczyn.EFDesigner.EFModel.ParseResult
+    name: ParseResult
+  - uid: Sawczyn.EFDesigner.EFModel.PresentationHelper
+    name: PresentationHelper
+  - uid: Sawczyn.EFDesigner.EFModel.ProjectDirectoryTypeConverter
+    name: ProjectDirectoryTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    name: SetterAccessModifier
+  - uid: Sawczyn.EFDesigner.EFModel.SourceMultiplicityTypeConverter
+    name: SourceMultiplicityTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.StringExtensions
+    name: StringExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.TargetMultiplicityTypeConverter
+    name: TargetMultiplicityTypeConverter
+  - uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+    name: TypeAccessModifier
+  - uid: Sawczyn.EFDesigner.EFModel.TypeConverterBase
+    name: TypeConverterBase
+  - uid: Sawczyn.EFDesigner.EFModel.UnidirectionalAssociation
+    name: UnidirectionalAssociation
+  - uid: Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationBuilder
+    name: UnidirectionalAssociationBuilder
+  - uid: Sawczyn.EFDesigner.EFModel.UnidirectionalAssociationSerializer
+    name: UnidirectionalAssociationSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.UnidirectionalConnector
+    name: UnidirectionalConnector
+  - uid: Sawczyn.EFDesigner.EFModel.UnidirectionalConnectorSerializer
+    name: UnidirectionalConnectorSerializer
+  - uid: Sawczyn.EFDesigner.EFModel.ValueConverter
+    name: ValueConverter
+- uid: Sawczyn.EFDesigner.EFModel.Annotations
+  name: Sawczyn.EFDesigner.EFModel.Annotations
+  items:
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspChildControlTypeAttribute
+    name: AspChildControlTypeAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldAttribute
+    name: AspDataFieldAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspDataFieldsAttribute
+    name: AspDataFieldsAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMethodPropertyAttribute
+    name: AspMethodPropertyAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionAttribute
+    name: AspMvcActionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcActionSelectorAttribute
+    name: AspMvcActionSelectorAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaAttribute
+    name: AspMvcAreaAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaMasterLocationFormatAttribute
+    name: AspMvcAreaMasterLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaPartialViewLocationFormatAttribute
+    name: AspMvcAreaPartialViewLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcAreaViewLocationFormatAttribute
+    name: AspMvcAreaViewLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcControllerAttribute
+    name: AspMvcControllerAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcDisplayTemplateAttribute
+    name: AspMvcDisplayTemplateAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcEditorTemplateAttribute
+    name: AspMvcEditorTemplateAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterAttribute
+    name: AspMvcMasterAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcMasterLocationFormatAttribute
+    name: AspMvcMasterLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcModelTypeAttribute
+    name: AspMvcModelTypeAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewAttribute
+    name: AspMvcPartialViewAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcPartialViewLocationFormatAttribute
+    name: AspMvcPartialViewLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcSuppressViewErrorAttribute
+    name: AspMvcSuppressViewErrorAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcTemplateAttribute
+    name: AspMvcTemplateAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewAttribute
+    name: AspMvcViewAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentAttribute
+    name: AspMvcViewComponentAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewComponentViewAttribute
+    name: AspMvcViewComponentViewAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspMvcViewLocationFormatAttribute
+    name: AspMvcViewLocationFormatAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspRequiredAttributeAttribute
+    name: AspRequiredAttributeAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AspTypePropertyAttribute
+    name: AspTypePropertyAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionAttribute
+    name: AssertionConditionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+    name: AssertionConditionType
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionMethodAttribute
+    name: AssertionMethodAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.BaseTypeRequiredAttribute
+    name: BaseTypeRequiredAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.CanBeNullAttribute
+    name: CanBeNullAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.CannotApplyEqualityOperatorAttribute
+    name: CannotApplyEqualityOperatorAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessAttribute
+    name: CollectionAccessAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+    name: CollectionAccessType
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ContractAnnotationAttribute
+    name: ContractAnnotationAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.HtmlAttributeValueAttribute
+    name: HtmlAttributeValueAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.HtmlElementAttributesAttribute
+    name: HtmlElementAttributesAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+    name: ImplicitUseKindFlags
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseTargetFlags
+    name: ImplicitUseTargetFlags
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.InstantHandleAttribute
+    name: InstantHandleAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.InvokerParameterNameAttribute
+    name: InvokerParameterNameAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ItemCanBeNullAttribute
+    name: ItemCanBeNullAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ItemNotNullAttribute
+    name: ItemNotNullAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.LinqTunnelAttribute
+    name: LinqTunnelAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.LocalizationRequiredAttribute
+    name: LocalizationRequiredAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.MacroAttribute
+    name: MacroAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.MeansImplicitUseAttribute
+    name: MeansImplicitUseAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.MustUseReturnValueAttribute
+    name: MustUseReturnValueAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.NoEnumerationAttribute
+    name: NoEnumerationAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.NoReorderAttribute
+    name: NoReorderAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.NotifyPropertyChangedInvocatorAttribute
+    name: NotifyPropertyChangedInvocatorAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.NotNullAttribute
+    name: NotNullAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.PathReferenceAttribute
+    name: PathReferenceAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ProvidesContextAttribute
+    name: ProvidesContextAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.PublicAPIAttribute
+    name: PublicAPIAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.PureAttribute
+    name: PureAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorDirectiveAttribute
+    name: RazorDirectiveAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorHelperCommonAttribute
+    name: RazorHelperCommonAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorImportNamespaceAttribute
+    name: RazorImportNamespaceAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorInjectionAttribute
+    name: RazorInjectionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorLayoutAttribute
+    name: RazorLayoutAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorPageBaseTypeAttribute
+    name: RazorPageBaseTypeAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorSectionAttribute
+    name: RazorSectionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteLiteralMethodAttribute
+    name: RazorWriteLiteralMethodAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodAttribute
+    name: RazorWriteMethodAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RazorWriteMethodParameterAttribute
+    name: RazorWriteMethodParameterAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.RegexPatternAttribute
+    name: RegexPatternAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.SourceTemplateAttribute
+    name: SourceTemplateAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.StringFormatMethodAttribute
+    name: StringFormatMethodAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.TerminatesProgramAttribute
+    name: TerminatesProgramAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.UsedImplicitlyAttribute
+    name: UsedImplicitlyAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.ValueProviderAttribute
+    name: ValueProviderAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.XamlItemBindingOfItemsControlAttribute
+    name: XamlItemBindingOfItemsControlAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.Annotations.XamlItemsControlAttribute
+    name: XamlItemsControlAttribute
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  name: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  items:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.DiagramViewExtensions
+    name: DiagramViewExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+    name: ModelElementExtensions
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.SyntaxNodeExtensions
+    name: SyntaxNodeExtensions
+- uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  name: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  items:
+  - uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute
+    name: EFModelCommandExtensionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute
+    name: EFModelGestureExtensionAttribute
+  - uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute
+    name: EFModelValidationExtensionAttribute
+- uid: Sawczyn.EFDesigner.EFModel.Nuget
+  name: Sawczyn.EFDesigner.EFModel.Nuget
+  items:
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.Context
+    name: Context
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.NuGetPackages
+    name: NuGetPackages
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+    name: PackageData
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.Serialize
+    name: Serialize
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+    name: TypeEnum
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.Version
+    name: Version

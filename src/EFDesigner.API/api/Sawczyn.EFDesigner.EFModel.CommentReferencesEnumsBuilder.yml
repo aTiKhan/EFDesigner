@@ -1,0 +1,566 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  commentId: T:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  id: CommentReferencesEnumsBuilder
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  langs:
+  - csharp
+  - vb
+  name: CommentReferencesEnumsBuilder
+  nameWithType: CommentReferencesEnumsBuilder
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ConnectionBuilders.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CommentReferencesEnumsBuilder
+    path: ../Dsl/GeneratedCode/ConnectionBuilders.cs
+    startLine: 571
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConnectionBuilder class to provide logic for constructing connections between elements.\n"
+  example: []
+  syntax:
+    content: public static class CommentReferencesEnumsBuilder
+    content.vb: Public Module CommentReferencesEnumsBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource(Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CanAcceptSource(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  langs:
+  - csharp
+  - vb
+  name: CanAcceptSource(ModelElement)
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptSource(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource(Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ConnectionBuilders.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CanAcceptSource
+    path: ../Dsl/GeneratedCode/ConnectionBuilders.cs
+    startLine: 579
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTest whether a given model element is acceptable to this ConnectionBuilder as the source of a connection.\n"
+  example: []
+  syntax:
+    content: public static bool CanAcceptSource(ModelElement candidate)
+    parameters:
+    - id: candidate
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to test.
+    return:
+      type: System.Boolean
+      description: Whether the element can be used as the source of a connection.
+    content.vb: Public Shared Function CanAcceptSource(candidate As ModelElement) As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget(Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CanAcceptTarget(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  langs:
+  - csharp
+  - vb
+  name: CanAcceptTarget(ModelElement)
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptTarget(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget(Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ConnectionBuilders.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CanAcceptTarget
+    path: ../Dsl/GeneratedCode/ConnectionBuilders.cs
+    startLine: 596
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTest whether a given model element is acceptable to this ConnectionBuilder as the target of a connection.\n"
+  example: []
+  syntax:
+    content: public static bool CanAcceptTarget(ModelElement candidate)
+    parameters:
+    - id: candidate
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to test.
+    return:
+      type: System.Boolean
+      description: Whether the element can be used as the target of a connection.
+    content.vb: Public Shared Function CanAcceptTarget(candidate As ModelElement) As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CanAcceptSourceAndTarget(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  langs:
+  - csharp
+  - vb
+  name: CanAcceptSourceAndTarget(ModelElement, ModelElement)
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget(ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ConnectionBuilders.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CanAcceptSourceAndTarget
+    path: ../Dsl/GeneratedCode/ConnectionBuilders.cs
+    startLine: 614
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTest whether a given pair of model elements are acceptable to this ConnectionBuilder as the source and target of a connection\n"
+  example: []
+  syntax:
+    content: public static bool CanAcceptSourceAndTarget(ModelElement candidateSource, ModelElement candidateTarget)
+    parameters:
+    - id: candidateSource
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to test as a source
+    - id: candidateTarget
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to test as a target
+    return:
+      type: System.Boolean
+      description: Whether the elements can be used as the source and target of a connection
+    content.vb: Public Shared Function CanAcceptSourceAndTarget(candidateSource As ModelElement, candidateTarget As ModelElement) As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: Connect(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder
+  langs:
+  - csharp
+  - vb
+  name: Connect(ModelElement, ModelElement)
+  nameWithType: CommentReferencesEnumsBuilder.Connect(ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/ConnectionBuilders.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Connect
+    path: ../Dsl/GeneratedCode/ConnectionBuilders.cs
+    startLine: 662
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nMake a connection between the given pair of source and target elements\n"
+  example: []
+  syntax:
+    content: public static ElementLink Connect(ModelElement source, ModelElement target)
+    parameters:
+    - id: source
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to use as the source of the connection
+    - id: target
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The model element to use as the target of the connection
+    return:
+      type: Microsoft.VisualStudio.Modeling.ElementLink
+      description: A link representing the created connection
+    content.vb: Public Shared Function Connect(source As ModelElement, target As ModelElement) As ElementLink
+  overload: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource
+  name: CanAcceptSource
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptSource
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSource
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget
+  name: CanAcceptTarget
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptTarget
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptTarget
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget
+  name: CanAcceptSourceAndTarget
+  nameWithType: CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.CanAcceptSourceAndTarget
+- uid: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect
+  name: Connect
+  nameWithType: CommentReferencesEnumsBuilder.Connect
+  fullName: Sawczyn.EFDesigner.EFModel.CommentReferencesEnumsBuilder.Connect
+- uid: Microsoft.VisualStudio.Modeling.ElementLink
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementLink
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementLink
+  nameWithType: ElementLink
+  fullName: Microsoft.VisualStudio.Modeling.ElementLink

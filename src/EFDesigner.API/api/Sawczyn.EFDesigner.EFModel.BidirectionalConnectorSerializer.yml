@@ -1,0 +1,3015 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  commentId: T:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  id: BidirectionalConnectorSerializer
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  - Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+  langs:
+  - csharp
+  - vb
+  name: BidirectionalConnectorSerializer
+  nameWithType: BidirectionalConnectorSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BidirectionalConnectorSerializer
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21055
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSerializer BidirectionalConnectorSerializer for DomainClass BidirectionalConnector.\n"
+  example: []
+  syntax:
+    content: 'public class BidirectionalConnectorSerializer : AssociationConnectorSerializer'
+    content.vb: >-
+      Public Class BidirectionalConnectorSerializer
+          Inherits AssociationConnectorSerializer
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  - Microsoft.VisualStudio.Modeling.Diagrams.PresentationElementSerializer
+  - Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+  - Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+  - Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializerBase
+  - Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  - Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  - Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.SerializationContext)
+  - Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: BidirectionalConnectorSerializer()
+  nameWithType: BidirectionalConnectorSerializer.BidirectionalConnectorSerializer()
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.BidirectionalConnectorSerializer()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21061
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBidirectionalConnectorSerializer Constructor\n"
+  example: []
+  syntax:
+    content: public BidirectionalConnectorSerializer()
+    content.vb: Public Sub New
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset
+  id: Reset
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: BidirectionalConnectorSerializer.Reset()
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Reset
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21076
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReset the serializer\n"
+  remarks: "\nClear the cached information about any derived classes so that it is recalculated.\n"
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+  id: XmlTagName
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: XmlTagName
+  nameWithType: BidirectionalConnectorSerializer.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: XmlTagName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21089
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the XML tag name used to serialize an instance of BidirectionalConnector.\n"
+  example: []
+  syntax:
+    content: public override string XmlTagName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property XmlTagName As String
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.XmlTagName
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+  id: MonikerTagName
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: MonikerTagName
+  nameWithType: BidirectionalConnectorSerializer.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerTagName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21098
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the XML tag name used to serialize a monikerized instance of BidirectionalConnector.\n"
+  example: []
+  syntax:
+    content: public override string MonikerTagName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property MonikerTagName As String
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerTagName
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+  commentId: P:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+  id: MonikerAttributeName
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: MonikerAttributeName
+  nameWithType: BidirectionalConnectorSerializer.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerAttributeName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21107
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis is the name of the XML attribute that stores the moniker of BidirectionalConnector in a serialized monikerized instance.\n"
+  example: []
+  syntax:
+    content: public override string MonikerAttributeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property MonikerAttributeName As String
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerAttributeName
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  id: Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: Read(SerializationContext, ModelElement, XmlReader)
+  nameWithType: BidirectionalConnectorSerializer.Read(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Read
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21127
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic Read() method that deserializes one BidirectionalConnector instance from XML.\n"
+  remarks: "\nWhen this method is called, caller guarantees that the passed-in XML reader is positioned at the open XML tag\nof the BidirectionalConnector element that is about to be deserialized. \nThe method needs to ensure that when it returns, the reader is positioned at the open XML tag of the next sibling element,\nor the close tag of the parent element (or EOF).\n"
+  example: []
+  syntax:
+    content: public override void Read(SerializationContext serializationContext, ModelElement element, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: In-memory BidirectionalConnector instance that will get the deserialized data.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    content.vb: Public Overrides Sub Read(serializationContext As SerializationContext, element As ModelElement, reader As XmlReader)
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  id: TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: TryCreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: BidirectionalConnectorSerializer.TryCreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21189
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a correct instance of BidirectionalConnector based on the tag currently pointed by the reader. If the reader\nis positioned at a serialized BidirectionalConnector, a new BidirectionalConnector instance will be created in the given partition, otherwise \nnull is returned.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: public override ModelElement TryCreateInstance(SerializationContext serializationContext, XmlReader reader, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which new elements should be created.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Created BidirectionalConnector instance, or null if the reader is not pointing to a serialized BidirectionalConnector instance.
+    content.vb: Public Overrides Function TryCreateInstance(serializationContext As SerializationContext, reader As XmlReader, partition As Partition) As ModelElement
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  id: CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: BidirectionalConnectorSerializer.CreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21241
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates an instance of BidirectionalConnector based on the tag currently pointed by the reader. The reader is guaranteed (by the caller)\nto be pointed at a serialized instance of BidirectionalConnector.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the ModelRoot instance being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: protected override ModelElement CreateInstance(SerializationContext serializationContext, XmlReader reader, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which new BidirectionalConnector instance should be created.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Created BidirectionalConnector instance.
+    content.vb: Protected Overrides Function CreateInstance(serializationContext As SerializationContext, reader As XmlReader, partition As Partition) As ModelElement
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  id: TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: BidirectionalConnectorSerializer.TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateMonikerInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21332
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a Moniker of the correct derived (including BidirectionalConnector itself) instance of BidirectionalConnector based on the tag currently pointed by the reader.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: public override Moniker TryCreateMonikerInstance(SerializationContext serializationContext, XmlReader reader, ModelElement sourceRolePlayer, Guid relDomainClassId, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The source role-player instance from which the moniker being created is referenced.
+    - id: relDomainClassId
+      type: System.Guid
+      description: The DomainClass Id of the relationship that connects the sourceRolePlayer to the moniker being created.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: The new Moniker should be created in the Store associated with this partition.
+    return:
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Created ModelRoot instance, or null if the reader is not pointing to a correct monikerized instance.
+    content.vb: Public Overrides Function TryCreateMonikerInstance(serializationContext As SerializationContext, reader As XmlReader, sourceRolePlayer As ModelElement, relDomainClassId As Guid, partition As Partition) As Moniker
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  id: CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: BidirectionalConnectorSerializer.CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateMonikerInstance
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21388
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method creates a Moniker of BidirectionalConnector based on the tag currently pointed by the reader.\n"
+  remarks: "\nThe caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should\nnot move the reader; the reader should remain at the same position when this method returns.\n"
+  example: []
+  syntax:
+    content: protected override Moniker CreateMonikerInstance(SerializationContext serializationContext, XmlReader reader, ModelElement sourceRolePlayer, Guid relDomainClassId, Partition partition)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The source role-player instance from which the moniker being created is referenced.
+    - id: relDomainClassId
+      type: System.Guid
+      description: The DomainClass Id of the relationship that connects the sourceRolePlayer to the moniker being created.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: The new Moniker should be created in the Store associated with this partition.
+    return:
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Created ModelRoot instance, or null if the reader is not pointing to a correct monikerized instance.
+    content.vb: Protected Overrides Function CreateMonikerInstance(serializationContext As SerializationContext, reader As XmlReader, sourceRolePlayer As ModelElement, relDomainClassId As Guid, partition As Partition) As Moniker
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  id: WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  nameWithType: BidirectionalConnectorSerializer.WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WriteMoniker
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21472
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic WriteMoniker() method that writes a monikerized BidirectionalConnector instance into XML.\n"
+  example: []
+  syntax:
+    content: public override void WriteMoniker(SerializationContext serializationContext, ModelElement element, XmlWriter writer, ModelElement sourceRolePlayer, DomainRelationshipXmlSerializer relSerializer)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: BidirectionalConnector instance to be monikerized.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    - id: sourceRolePlayer
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Source element that references the BidirectionalConnector instance being monikerized.
+    - id: relSerializer
+      type: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+      description: Serializer that handles the relationship connecting the source element to the BidirectionalConnector instance being monikerized.
+    content.vb: Public Overrides Sub WriteMoniker(serializationContext As SerializationContext, element As ModelElement, writer As XmlWriter, sourceRolePlayer As ModelElement, relSerializer As DomainRelationshipXmlSerializer)
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  id: Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  nameWithType: BidirectionalConnectorSerializer.Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.RootElementSettings)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Write
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21511
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic Write() method that serializes one BidirectionalConnector instance into XML.\n"
+  example: []
+  syntax:
+    content: public override void Write(SerializationContext serializationContext, ModelElement element, XmlWriter writer, RootElementSettings rootElementSettings)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: BidirectionalConnector instance to be serialized.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    - id: rootElementSettings
+      type: Microsoft.VisualStudio.Modeling.RootElementSettings
+      description: "\nThe root element settings if the passed in element is serialized as a root element in the XML. The root element contains additional\ninformation like schema target namespace, version, etc.\nThis should only be passed for root-level elements. Null should be passed for rest elements (and ideally call the Write() method \nwithout this parameter).\n"
+    content.vb: Public Overrides Sub Write(serializationContext As SerializationContext, element As ModelElement, writer As XmlWriter, rootElementSettings As RootElementSettings)
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: BidirectionalConnectorSerializer.CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CalculateQualifiedName
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21568
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method calculates a moniker to a given BidirectionalConnector instance.\n"
+  example: []
+  syntax:
+    content: public override string CalculateQualifiedName(DomainXmlSerializerDirectory directory, ModelElement element)
+    parameters:
+    - id: directory
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+      description: Directory to look up serializer based on model element type.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: BidirectionalConnector instance to calculate qualified name for.
+    return:
+      type: System.String
+      description: A fully qualified string moniker to the BidirectionalConnector instance.
+    content.vb: Public Overrides Function CalculateQualifiedName(directory As DomainXmlSerializerDirectory, element As ModelElement) As String
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer
+  langs:
+  - csharp
+  - vb
+  name: GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: BidirectionalConnectorSerializer.GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetMonikerQualifier
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 21596
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nA domain class can be monikerized in different ways: standard /qualifier/key mechanism, custom moniker, or element ID. If the domain class is serialized\nusing standard /qualifier/key mechanism, this method returns the qualifier of the moniker; if the domain class uses other ways for monikerization, this method\nreturns empty string.\n"
+  example: []
+  syntax:
+    content: public override string GetMonikerQualifier(DomainXmlSerializerDirectory directory, ModelElement element)
+    parameters:
+    - id: directory
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+      description: Directory to look up serializer based on model element type.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: BidirectionalConnector instance to get moniker qualifier from.
+    return:
+      type: System.String
+      description: "\nValue of this element&apos;s moniker qualifier property, if it has one, or the value of the container&apos;s moniker qualifier property. Or empty string if this\nelement is not monikerized using standard /qualifier/key mechanism.\n"
+    content.vb: Public Overrides Function GetMonikerQualifier(directory As DomainXmlSerializerDirectory, element As ModelElement) As String
+  overridden: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainClassXmlSerializer
+  nameWithType: DomainClassXmlSerializer
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.PresentationElementSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.PresentationElementSerializer
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: PresentationElementSerializer
+  nameWithType: PresentationElementSerializer
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.PresentationElementSerializer
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: ShapeElementSerializer
+  nameWithType: ShapeElementSerializer
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: LinkShapeSerializer
+  nameWithType: LinkShapeSerializer
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializerBase
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializerBase
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: BinaryLinkShapeSerializerBase
+  nameWithType: BinaryLinkShapeSerializerBase
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializerBase
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: BinaryLinkShapeSerializer
+  nameWithType: BinaryLinkShapeSerializer
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: AssociationConnectorSerializerBase
+  nameWithType: AssociationConnectorSerializerBase
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer
+  commentId: T:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer
+  parent: Sawczyn.EFDesigner.EFModel
+  name: AssociationConnectorSerializer
+  nameWithType: AssociationConnectorSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializer
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: ReadPropertiesFromAttributes(SerializationContext, ModelElement, XmlReader)
+  nameWithType: AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadPropertiesFromAttributes
+    nameWithType: AssociationConnectorSerializerBase.ReadPropertiesFromAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadPropertiesFromAttributes
+    nameWithType: AssociationConnectorSerializerBase.ReadPropertiesFromAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.ReadPropertiesFromAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: WritePropertiesAsAttributes(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: AssociationConnectorSerializerBase.WritePropertiesAsAttributes(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WritePropertiesAsAttributes
+    nameWithType: AssociationConnectorSerializerBase.WritePropertiesAsAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WritePropertiesAsAttributes
+    nameWithType: AssociationConnectorSerializerBase.WritePropertiesAsAttributes
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WritePropertiesAsAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.SerializationContext)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.SerializationContext)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  isExternal: true
+  name: UseRelationshipId(ElementLink, SerializationContext)
+  nameWithType: BinaryLinkShapeSerializer.UseRelationshipId(ElementLink, SerializationContext)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink, Microsoft.VisualStudio.Modeling.SerializationContext)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: UseRelationshipId
+    nameWithType: BinaryLinkShapeSerializer.UseRelationshipId
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: UseRelationshipId
+    nameWithType: BinaryLinkShapeSerializer.UseRelationshipId
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.UseRelationshipId
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  isExternal: true
+  name: ReadElements(SerializationContext, ModelElement, XmlReader)
+  nameWithType: BinaryLinkShapeSerializer.ReadElements(SerializationContext, ModelElement, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadElements
+    nameWithType: BinaryLinkShapeSerializer.ReadElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadElements
+    nameWithType: BinaryLinkShapeSerializer.ReadElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.ReadElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer
+  isExternal: true
+  name: WriteElements(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: BinaryLinkShapeSerializer.WriteElements(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteElements
+    nameWithType: BinaryLinkShapeSerializer.WriteElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteElements
+    nameWithType: BinaryLinkShapeSerializer.WriteElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShapeSerializer.WriteElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+  isExternal: true
+  name: ReadLinkShapeChildElements(SerializationContext, LinkShape, XmlReader)
+  nameWithType: LinkShapeSerializer.ReadLinkShapeChildElements(SerializationContext, LinkShape, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.Diagrams.LinkShape, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlReader)
+    name: ReadLinkShapeChildElements
+    nameWithType: LinkShapeSerializer.ReadLinkShapeChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    name: LinkShape
+    nameWithType: LinkShape
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlReader)
+    name: ReadLinkShapeChildElements
+    nameWithType: LinkShapeSerializer.ReadLinkShapeChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.ReadLinkShapeChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    name: LinkShape
+    nameWithType: LinkShape
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer
+  isExternal: true
+  name: WriteLinkShapeChildElements(SerializationContext, LinkShape, XmlWriter)
+  nameWithType: LinkShapeSerializer.WriteLinkShapeChildElements(SerializationContext, LinkShape, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.Diagrams.LinkShape, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlWriter)
+    name: WriteLinkShapeChildElements
+    nameWithType: LinkShapeSerializer.WriteLinkShapeChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    name: LinkShape
+    nameWithType: LinkShape
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.LinkShape,System.Xml.XmlWriter)
+    name: WriteLinkShapeChildElements
+    nameWithType: LinkShapeSerializer.WriteLinkShapeChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShapeSerializer.WriteLinkShapeChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    name: LinkShape
+    nameWithType: LinkShape
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LinkShape
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+  isExternal: true
+  name: ReadShapeElementChildElements(SerializationContext, ShapeElement, XmlReader)
+  nameWithType: ShapeElementSerializer.ReadShapeElementChildElements(SerializationContext, ShapeElement, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlReader)
+    name: ReadShapeElementChildElements
+    nameWithType: ShapeElementSerializer.ReadShapeElementChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    name: ShapeElement
+    nameWithType: ShapeElement
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlReader)
+    name: ReadShapeElementChildElements
+    nameWithType: ShapeElementSerializer.ReadShapeElementChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.ReadShapeElementChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    name: ShapeElement
+    nameWithType: ShapeElement
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer
+  isExternal: true
+  name: WriteShapeElementChildElements(SerializationContext, ShapeElement, XmlWriter)
+  nameWithType: ShapeElementSerializer.WriteShapeElementChildElements(SerializationContext, ShapeElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlWriter)
+    name: WriteShapeElementChildElements
+    nameWithType: ShapeElementSerializer.WriteShapeElementChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    name: ShapeElement
+    nameWithType: ShapeElement
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement,System.Xml.XmlWriter)
+    name: WriteShapeElementChildElements
+    nameWithType: ShapeElementSerializer.WriteShapeElementChildElements
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElementSerializer.WriteShapeElementChildElements
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    name: ShapeElement
+    nameWithType: ShapeElement
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  nameWithType: DomainClassXmlSerializer.ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: DomainClassXmlSerializer.ReadRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: DomainClassXmlSerializer.ReadRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: DomainClassXmlSerializer.WriteRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: DomainClassXmlSerializer.WriteRootElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteRootElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: Write(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.Write(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: Write
+    nameWithType: DomainClassXmlSerializer.Write
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: Write
+    nameWithType: DomainClassXmlSerializer.Write
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.Write
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: ReadAdditionalElementData(SerializationContext, ModelElement, XmlReader)
+  nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData(SerializationContext, ModelElement, XmlReader)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.ReadAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.ReadAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer
+  isExternal: true
+  name: WriteAdditionalElementData(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData(SerializationContext, ModelElement, XmlWriter)
+  fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteAdditionalElementData
+    nameWithType: DomainClassXmlSerializer.WriteAdditionalElementData
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassXmlSerializer.WriteAdditionalElementData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Microsoft.VisualStudio.Modeling.Diagrams
+  commentId: N:Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Diagrams
+  nameWithType: Microsoft.VisualStudio.Modeling.Diagrams
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.#ctor
+  name: BidirectionalConnectorSerializer
+  nameWithType: BidirectionalConnectorSerializer.BidirectionalConnectorSerializer
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.BidirectionalConnectorSerializer
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  name: Reset()
+  nameWithType: AssociationConnectorSerializerBase.Reset()
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+    name: Reset
+    nameWithType: AssociationConnectorSerializerBase.Reset
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+    name: Reset
+    nameWithType: AssociationConnectorSerializerBase.Reset
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset
+  name: Reset
+  nameWithType: BidirectionalConnectorSerializer.Reset
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Reset
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.XmlTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.XmlTagName
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  name: XmlTagName
+  nameWithType: AssociationConnectorSerializerBase.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.XmlTagName
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+  name: XmlTagName
+  nameWithType: BidirectionalConnectorSerializer.XmlTagName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.XmlTagName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerTagName
+  commentId: P:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerTagName
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  name: MonikerTagName
+  nameWithType: AssociationConnectorSerializerBase.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerTagName
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+  name: MonikerTagName
+  nameWithType: BidirectionalConnectorSerializer.MonikerTagName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerTagName
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerAttributeName
+  commentId: P:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerAttributeName
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  name: MonikerAttributeName
+  nameWithType: AssociationConnectorSerializerBase.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.MonikerAttributeName
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+  name: MonikerAttributeName
+  nameWithType: BidirectionalConnectorSerializer.MonikerAttributeName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.MonikerAttributeName
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: Read(SerializationContext, ModelElement, XmlReader)
+  nameWithType: AssociationConnectorSerializerBase.Read(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: Read
+    nameWithType: AssociationConnectorSerializerBase.Read
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: Read
+    nameWithType: AssociationConnectorSerializerBase.Read
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read
+  name: Read
+  nameWithType: BidirectionalConnectorSerializer.Read
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Read
+- uid: Microsoft.VisualStudio.Modeling.SerializationContext
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: TryCreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: AssociationConnectorSerializerBase.TryCreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateInstance
+    nameWithType: AssociationConnectorSerializerBase.TryCreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateInstance
+    nameWithType: AssociationConnectorSerializerBase.TryCreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance
+  name: TryCreateInstance
+  nameWithType: BidirectionalConnectorSerializer.TryCreateInstance
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateInstance
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: CreateInstance(SerializationContext, XmlReader, Partition)
+  nameWithType: AssociationConnectorSerializerBase.CreateInstance(SerializationContext, XmlReader, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateInstance
+    nameWithType: AssociationConnectorSerializerBase.CreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateInstance
+    nameWithType: AssociationConnectorSerializerBase.CreateInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance
+  name: CreateInstance
+  nameWithType: BidirectionalConnectorSerializer.CreateInstance
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateInstance
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: AssociationConnectorSerializerBase.TryCreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateMonikerInstance
+    nameWithType: AssociationConnectorSerializerBase.TryCreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: TryCreateMonikerInstance
+    nameWithType: AssociationConnectorSerializerBase.TryCreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.TryCreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance
+  name: TryCreateMonikerInstance
+  nameWithType: BidirectionalConnectorSerializer.TryCreateMonikerInstance
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.TryCreateMonikerInstance
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.VisualStudio.Modeling.Moniker
+  commentId: T:Microsoft.VisualStudio.Modeling.Moniker
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Moniker
+  nameWithType: Moniker
+  fullName: Microsoft.VisualStudio.Modeling.Moniker
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  nameWithType: AssociationConnectorSerializerBase.CreateMonikerInstance(SerializationContext, XmlReader, ModelElement, Guid, Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ModelElement, System.Guid, Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateMonikerInstance
+    nameWithType: AssociationConnectorSerializerBase.CreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ModelElement,System.Guid,Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateMonikerInstance
+    nameWithType: AssociationConnectorSerializerBase.CreateMonikerInstance
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CreateMonikerInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance
+  name: CreateMonikerInstance
+  nameWithType: BidirectionalConnectorSerializer.CreateMonikerInstance
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CreateMonikerInstance
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  nameWithType: AssociationConnectorSerializerBase.WriteMoniker(SerializationContext, ModelElement, XmlWriter, ModelElement, DomainRelationshipXmlSerializer)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+    name: WriteMoniker
+    nameWithType: AssociationConnectorSerializerBase.WriteMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    name: DomainRelationshipXmlSerializer
+    nameWithType: DomainRelationshipXmlSerializer
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer)
+    name: WriteMoniker
+    nameWithType: AssociationConnectorSerializerBase.WriteMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.WriteMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    name: DomainRelationshipXmlSerializer
+    nameWithType: DomainRelationshipXmlSerializer
+    fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker
+  name: WriteMoniker
+  nameWithType: BidirectionalConnectorSerializer.WriteMoniker
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.WriteMoniker
+- uid: System.Xml.XmlWriter
+  commentId: T:System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainRelationshipXmlSerializer
+  nameWithType: DomainRelationshipXmlSerializer
+  fullName: Microsoft.VisualStudio.Modeling.DomainRelationshipXmlSerializer
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  nameWithType: AssociationConnectorSerializerBase.Write(SerializationContext, ModelElement, XmlWriter, RootElementSettings)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter, Microsoft.VisualStudio.Modeling.RootElementSettings)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+    name: Write
+    nameWithType: AssociationConnectorSerializerBase.Write
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+    name: RootElementSettings
+    nameWithType: RootElementSettings
+    fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter,Microsoft.VisualStudio.Modeling.RootElementSettings)
+    name: Write
+    nameWithType: AssociationConnectorSerializerBase.Write
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+    name: RootElementSettings
+    nameWithType: RootElementSettings
+    fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write
+  name: Write
+  nameWithType: BidirectionalConnectorSerializer.Write
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.Write
+- uid: Microsoft.VisualStudio.Modeling.RootElementSettings
+  commentId: T:Microsoft.VisualStudio.Modeling.RootElementSettings
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: RootElementSettings
+  nameWithType: RootElementSettings
+  fullName: Microsoft.VisualStudio.Modeling.RootElementSettings
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: AssociationConnectorSerializerBase.CalculateQualifiedName(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: AssociationConnectorSerializerBase.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: AssociationConnectorSerializerBase.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName
+  name: CalculateQualifiedName
+  nameWithType: BidirectionalConnectorSerializer.CalculateQualifiedName
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.CalculateQualifiedName
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainXmlSerializerDirectory
+  nameWithType: DomainXmlSerializerDirectory
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+- uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase
+  isExternal: true
+  name: GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  nameWithType: AssociationConnectorSerializerBase.GetMonikerQualifier(DomainXmlSerializerDirectory, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetMonikerQualifier
+    nameWithType: AssociationConnectorSerializerBase.GetMonikerQualifier
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier(Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetMonikerQualifier
+    nameWithType: AssociationConnectorSerializerBase.GetMonikerQualifier
+    fullName: Sawczyn.EFDesigner.EFModel.AssociationConnectorSerializerBase.GetMonikerQualifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    name: DomainXmlSerializerDirectory
+    nameWithType: DomainXmlSerializerDirectory
+    fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier
+  name: GetMonikerQualifier
+  nameWithType: BidirectionalConnectorSerializer.GetMonikerQualifier
+  fullName: Sawczyn.EFDesigner.EFModel.BidirectionalConnectorSerializer.GetMonikerQualifier

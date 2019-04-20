@@ -1,0 +1,288 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity
+  commentId: T:Sawczyn.EFDesigner.EFModel.Multiplicity
+  id: Multiplicity
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.Multiplicity.One
+  - Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroMany
+  - Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroOne
+  langs:
+  - csharp
+  - vb
+  name: Multiplicity
+  nameWithType: Multiplicity
+  fullName: Sawczyn.EFDesigner.EFModel.Multiplicity
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Multiplicity
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 725
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: Multiplicity\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum Multiplicity
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum Multiplicity
+  extensionMethods:
+  - Sawczyn.EFDesigner.EFModel.Multiplicity.Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroMany
+  commentId: F:Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroMany
+  id: ZeroMany
+  parent: Sawczyn.EFDesigner.EFModel.Multiplicity
+  langs:
+  - csharp
+  - vb
+  name: ZeroMany
+  nameWithType: Multiplicity.ZeroMany
+  fullName: Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroMany
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ZeroMany
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 731
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nZeroMany\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroMany.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      ZeroMany = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Multiplicity
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroMany.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      ZeroMany = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroMany.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity.One
+  commentId: F:Sawczyn.EFDesigner.EFModel.Multiplicity.One
+  id: One
+  parent: Sawczyn.EFDesigner.EFModel.Multiplicity
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Multiplicity.One
+  fullName: Sawczyn.EFDesigner.EFModel.Multiplicity.One
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: One
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 736
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nOne\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/One.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      One = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Multiplicity
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/One.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      One = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.Multiplicity/One.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroOne
+  commentId: F:Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroOne
+  id: ZeroOne
+  parent: Sawczyn.EFDesigner.EFModel.Multiplicity
+  langs:
+  - csharp
+  - vb
+  name: ZeroOne
+  nameWithType: Multiplicity.ZeroOne
+  fullName: Sawczyn.EFDesigner.EFModel.Multiplicity.ZeroOne
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ZeroOne
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 741
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nZeroOne\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroOne.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      ZeroOne = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Multiplicity
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroOne.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      ZeroOne = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroOne.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity.Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  commentId: M:Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+  parent: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions
+  definition: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+  name: Display()
+  nameWithType: MultiplicityExtensions.Display()
+  fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+    name: Display
+    nameWithType: MultiplicityExtensions.Display
+    fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+    name: Display
+    nameWithType: MultiplicityExtensions.Display
+    fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+  commentId: M:Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+  name: Display(Multiplicity)
+  nameWithType: MultiplicityExtensions.Display(Multiplicity)
+  fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+    name: Display
+    nameWithType: MultiplicityExtensions.Display
+    fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sawczyn.EFDesigner.EFModel.Multiplicity
+    name: Multiplicity
+    nameWithType: Multiplicity
+    fullName: Sawczyn.EFDesigner.EFModel.Multiplicity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display(Sawczyn.EFDesigner.EFModel.Multiplicity)
+    name: Display
+    nameWithType: MultiplicityExtensions.Display
+    fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions.Display
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sawczyn.EFDesigner.EFModel.Multiplicity
+    name: Multiplicity
+    nameWithType: Multiplicity
+    fullName: Sawczyn.EFDesigner.EFModel.Multiplicity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions
+  commentId: T:Sawczyn.EFDesigner.EFModel.MultiplicityExtensions
+  parent: Sawczyn.EFDesigner.EFModel
+  name: MultiplicityExtensions
+  nameWithType: MultiplicityExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.MultiplicityExtensions
+- uid: Sawczyn.EFDesigner.EFModel.Multiplicity
+  commentId: T:Sawczyn.EFDesigner.EFModel.Multiplicity
+  parent: Sawczyn.EFDesigner.EFModel
+  name: Multiplicity
+  nameWithType: Multiplicity
+  fullName: Sawczyn.EFDesigner.EFModel.Multiplicity

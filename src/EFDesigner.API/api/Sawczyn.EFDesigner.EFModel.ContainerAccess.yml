@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ContainerAccess
+  commentId: T:Sawczyn.EFDesigner.EFModel.ContainerAccess
+  id: ContainerAccess
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ContainerAccess.Internal
+  - Sawczyn.EFDesigner.EFModel.ContainerAccess.Public
+  langs:
+  - csharp
+  - vb
+  name: ContainerAccess
+  nameWithType: ContainerAccess
+  fullName: Sawczyn.EFDesigner.EFModel.ContainerAccess
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ContainerAccess
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 767
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: ContainerAccess\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum ContainerAccess
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum ContainerAccess
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.ContainerAccess.Public
+  commentId: F:Sawczyn.EFDesigner.EFModel.ContainerAccess.Public
+  id: Public
+  parent: Sawczyn.EFDesigner.EFModel.ContainerAccess
+  langs:
+  - csharp
+  - vb
+  name: Public
+  nameWithType: ContainerAccess.Public
+  fullName: Sawczyn.EFDesigner.EFModel.ContainerAccess.Public
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Public
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 773
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ContainerAccess/Public.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Public = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ContainerAccess
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ContainerAccess/Public.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Public = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ContainerAccess/Public.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ContainerAccess.Internal
+  commentId: F:Sawczyn.EFDesigner.EFModel.ContainerAccess.Internal
+  id: Internal
+  parent: Sawczyn.EFDesigner.EFModel.ContainerAccess
+  langs:
+  - csharp
+  - vb
+  name: Internal
+  nameWithType: ContainerAccess.Internal
+  fullName: Sawczyn.EFDesigner.EFModel.ContainerAccess.Internal
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Internal
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 778
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInternal\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ContainerAccess/Internal.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Internal = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ContainerAccess
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ContainerAccess/Internal.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Internal = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ContainerAccess/Internal.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.ContainerAccess
+  commentId: T:Sawczyn.EFDesigner.EFModel.ContainerAccess
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ContainerAccess
+  nameWithType: ContainerAccess
+  fullName: Sawczyn.EFDesigner.EFModel.ContainerAccess

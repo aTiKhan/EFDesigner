@@ -1,0 +1,2988 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  commentId: T:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  id: CompartmentDragMouseAction`1
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor(Microsoft.VisualStudio.Modeling.ModelElement,`0,Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)
+  - Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  - Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: CompartmentDragMouseAction<T>
+  nameWithType: CompartmentDragMouseAction<T>
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CompartmentDragMouseAction
+    path: ../Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+    startLine: 10
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nManage the mouse while dragging a compartment item.\n"
+  example: []
+  syntax:
+    content: 'public class CompartmentDragMouseAction<T> : MouseAction, IDisposable where T : CompartmentShape, IMouseActionTarget'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class CompartmentDragMouseAction(Of T As {CompartmentShape, IMouseActionTarget})
+          Inherits MouseAction
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanBumpScroll
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Diagram
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownHitShape
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownPoint
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.PreviousPoint
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentPoint
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.IsActive
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionEvent
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentDiagramArgs
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.InactiveState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragPendingState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DraggingState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCompletedState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCanceledState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ClickedState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HoveringState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCompletedState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCanceledState
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HasTooltip
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ResetToolboxOnDragDrop
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionActivated
+  - Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionDeactivated
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: CompartmentDragMouseAction(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T)
+  name.vb: CompartmentDragMouseAction(Of T)
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor(Microsoft.VisualStudio.Modeling.ModelElement,`0,Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor(Microsoft.VisualStudio.Modeling.ModelElement,`0,Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)
+  id: '#ctor(Microsoft.VisualStudio.Modeling.ModelElement,`0,Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)'
+  parent: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  langs:
+  - csharp
+  - vb
+  name: CompartmentDragMouseAction(ModelElement, T, RectangleD)
+  nameWithType: CompartmentDragMouseAction<T>.CompartmentDragMouseAction(ModelElement, T, RectangleD)
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.CompartmentDragMouseAction(Microsoft.VisualStudio.Modeling.ModelElement, T, Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+    startLine: 16
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public CompartmentDragMouseAction(ModelElement sourceChildElement, T sourceParentShape, RectangleD bounds)
+    parameters:
+    - id: sourceChildElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    - id: sourceParentShape
+      type: '{T}'
+    - id: bounds
+      type: Microsoft.VisualStudio.Modeling.Diagrams.RectangleD
+    content.vb: Public Sub New(sourceChildElement As ModelElement, sourceParentShape As T, bounds As RectangleD)
+  overload: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor*
+  nameWithType.vb: CompartmentDragMouseAction(Of T).CompartmentDragMouseAction(ModelElement, T, RectangleD)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).CompartmentDragMouseAction(Microsoft.VisualStudio.Modeling.ModelElement, T, Microsoft.VisualStudio.Modeling.Diagrams.RectangleD)
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  id: GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  parent: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  langs:
+  - csharp
+  - vb
+  name: GetCursor(Cursor, DiagramClientView, PointD)
+  nameWithType: CompartmentDragMouseAction<T>.GetCursor(Cursor, DiagramClientView, PointD)
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.GetCursor(System.Windows.Forms.Cursor, Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView, Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetCursor
+    path: ../Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+    startLine: 51
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDisplay an appropriate cursor while the drag is in progress:\nUp-down arrow if we are inside the original compartment.\nNo entry if we are elsewhere.\n"
+  example: []
+  syntax:
+    content: public override Cursor GetCursor(Cursor currentCursor, DiagramClientView diagramClientView, PointD mousePosition)
+    parameters:
+    - id: currentCursor
+      type: System.Windows.Forms.Cursor
+      description: ''
+    - id: diagramClientView
+      type: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+      description: ''
+    - id: mousePosition
+      type: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+      description: ''
+    return:
+      type: System.Windows.Forms.Cursor
+      description: ''
+    content.vb: Public Overrides Function GetCursor(currentCursor As Cursor, diagramClientView As DiagramClientView, mousePosition As PointD) As Cursor
+  overridden: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  overload: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor*
+  nameWithType.vb: CompartmentDragMouseAction(Of T).GetCursor(Cursor, DiagramClientView, PointD)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).GetCursor(System.Windows.Forms.Cursor, Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView, Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  id: OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  langs:
+  - csharp
+  - vb
+  name: OnMouseDown(DiagramMouseEventArgs)
+  nameWithType: CompartmentDragMouseAction<T>.OnMouseDown(DiagramMouseEventArgs)
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OnMouseDown
+    path: ../Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+    startLine: 66
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nIdeally, this shouldn&apos;t happen. This action should only be active\nwhile the mouse is still pressed. However, it can happen if you\nmove the mouse rapidly out of the source shape, let go, and then\nclick somewhere else in the source shape. Yuk.\n"
+  example: []
+  syntax:
+    content: protected override void OnMouseDown(DiagramMouseEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+      description: ''
+    content.vb: Protected Overrides Sub OnMouseDown(e As DiagramMouseEventArgs)
+  overridden: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  overload: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown*
+  nameWithType.vb: CompartmentDragMouseAction(Of T).OnMouseDown(DiagramMouseEventArgs)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  id: OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1
+  langs:
+  - csharp
+  - vb
+  name: OnMouseUp(DiagramMouseEventArgs)
+  nameWithType: CompartmentDragMouseAction<T>.OnMouseUp(DiagramMouseEventArgs)
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OnMouseUp
+    path: ../Dsl/CustomCode/Gestures/CompartmentDragMouseAction.cs
+    startLine: 77
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCall back to the source shape to drop the dragged item.\n"
+  example: []
+  syntax:
+    content: protected override void OnMouseUp(DiagramMouseEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+      description: ''
+    content.vb: Protected Overrides Sub OnMouseUp(e As DiagramMouseEventArgs)
+  overridden: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  overload: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp*
+  nameWithType.vb: CompartmentDragMouseAction(Of T).OnMouseUp(DiagramMouseEventArgs)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: MouseAction
+  nameWithType: MouseAction
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Activate(DiagramClientView)
+  nameWithType: MouseAction.Activate(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Activate
+    nameWithType: MouseAction.Activate
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Activate
+    nameWithType: MouseAction.Activate
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Activate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseDown(DiagramMouseEventArgs)
+  nameWithType: MouseAction.MouseDown(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseDown
+    nameWithType: MouseAction.MouseDown
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseDown
+    nameWithType: MouseAction.MouseDown
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseEnter(DiagramPointEventArgs)
+  nameWithType: MouseAction.MouseEnter(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: MouseEnter
+    nameWithType: MouseAction.MouseEnter
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: MouseEnter
+    nameWithType: MouseAction.MouseEnter
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseEnter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseLeave(LeaveShapeEventArgs)
+  nameWithType: MouseAction.MouseLeave(LeaveShapeEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+    name: MouseLeave
+    nameWithType: MouseAction.MouseLeave
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    name: LeaveShapeEventArgs
+    nameWithType: LeaveShapeEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+    name: MouseLeave
+    nameWithType: MouseAction.MouseLeave
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseLeave
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    name: LeaveShapeEventArgs
+    nameWithType: LeaveShapeEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseHover(DiagramPointEventArgs)
+  nameWithType: MouseAction.MouseHover(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: MouseHover
+    nameWithType: MouseAction.MouseHover
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: MouseHover
+    nameWithType: MouseAction.MouseHover
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseHover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseMove(DiagramMouseEventArgs)
+  nameWithType: MouseAction.MouseMove(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseMove
+    nameWithType: MouseAction.MouseMove
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseMove
+    nameWithType: MouseAction.MouseMove
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseMove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseUp(DiagramMouseEventArgs)
+  nameWithType: MouseAction.MouseUp(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseUp
+    nameWithType: MouseAction.MouseUp
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseUp
+    nameWithType: MouseAction.MouseUp
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseUp
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ContextMenuRequested(DiagramMouseEventArgs)
+  nameWithType: MouseAction.ContextMenuRequested(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: ContextMenuRequested
+    nameWithType: MouseAction.ContextMenuRequested
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: ContextMenuRequested
+    nameWithType: MouseAction.ContextMenuRequested
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ContextMenuRequested
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseWheel(DiagramMouseEventArgs)
+  nameWithType: MouseAction.MouseWheel(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseWheel
+    nameWithType: MouseAction.MouseWheel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: MouseWheel
+    nameWithType: MouseAction.MouseWheel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseWheel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Click(DiagramPointEventArgs)
+  nameWithType: MouseAction.Click(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: Click
+    nameWithType: MouseAction.Click
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: Click
+    nameWithType: MouseAction.Click
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Click
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DoubleClick(DiagramPointEventArgs)
+  nameWithType: MouseAction.DoubleClick(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: DoubleClick
+    nameWithType: MouseAction.DoubleClick
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: DoubleClick
+    nameWithType: MouseAction.DoubleClick
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoubleClick
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Cancel(DiagramClientView)
+  nameWithType: MouseAction.Cancel(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Cancel
+    nameWithType: MouseAction.Cancel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Cancel
+    nameWithType: MouseAction.Cancel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Cancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CanCancel(DiagramClientView)
+  nameWithType: MouseAction.CanCancel(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CanCancel
+    nameWithType: MouseAction.CanCancel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CanCancel
+    nameWithType: MouseAction.CanCancel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanCancel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Complete(DiagramClientView)
+  nameWithType: MouseAction.Complete(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Complete
+    nameWithType: MouseAction.Complete
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Complete
+    nameWithType: MouseAction.Complete
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Complete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CanComplete(DiagramClientView)
+  nameWithType: MouseAction.CanComplete(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CanComplete
+    nameWithType: MouseAction.CanComplete
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CanComplete
+    nameWithType: MouseAction.CanComplete
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanComplete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: GotFocus(DiagramEventArgs)
+  nameWithType: MouseAction.GotFocus(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: GotFocus
+    nameWithType: MouseAction.GotFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: GotFocus
+    nameWithType: MouseAction.GotFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GotFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: LostFocus(DiagramEventArgs)
+  nameWithType: MouseAction.LostFocus(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: LostFocus
+    nameWithType: MouseAction.LostFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: LostFocus
+    nameWithType: MouseAction.LostFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.LostFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Scrolled(DiagramEventArgs)
+  nameWithType: MouseAction.Scrolled(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: Scrolled
+    nameWithType: MouseAction.Scrolled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: Scrolled
+    nameWithType: MouseAction.Scrolled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Scrolled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseActionActivated(DiagramEventArgs)
+  nameWithType: MouseAction.OnMouseActionActivated(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionActivated
+    nameWithType: MouseAction.OnMouseActionActivated
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionActivated
+    nameWithType: MouseAction.OnMouseActionActivated
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseActionDeactivated(DiagramEventArgs)
+  nameWithType: MouseAction.OnMouseActionDeactivated(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionDeactivated
+    nameWithType: MouseAction.OnMouseActionDeactivated
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionDeactivated
+    nameWithType: MouseAction.OnMouseActionDeactivated
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionDeactivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnHoveringBegun(MouseActionEventArgs)
+  nameWithType: MouseAction.OnHoveringBegun(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnHoveringBegun
+    nameWithType: MouseAction.OnHoveringBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnHoveringBegun
+    nameWithType: MouseAction.OnHoveringBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnHoveringEnded(MouseActionEventArgs)
+  nameWithType: MouseAction.OnHoveringEnded(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnHoveringEnded
+    nameWithType: MouseAction.OnHoveringEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnHoveringEnded
+    nameWithType: MouseAction.OnHoveringEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnHoveringEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDragPendingBegun(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDragPendingBegun(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragPendingBegun
+    nameWithType: MouseAction.OnDragPendingBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragPendingBegun
+    nameWithType: MouseAction.OnDragPendingBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDragPendingEnded(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDragPendingEnded(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragPendingEnded
+    nameWithType: MouseAction.OnDragPendingEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragPendingEnded
+    nameWithType: MouseAction.OnDragPendingEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragPendingEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDraggingBegun(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDraggingBegun(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDraggingBegun
+    nameWithType: MouseAction.OnDraggingBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDraggingBegun
+    nameWithType: MouseAction.OnDraggingBegun
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingBegun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDraggingEnded(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDraggingEnded(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDraggingEnded
+    nameWithType: MouseAction.OnDraggingEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDraggingEnded
+    nameWithType: MouseAction.OnDraggingEnded
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDraggingEnded
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDragCompleted(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDragCompleted(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragCompleted
+    nameWithType: MouseAction.OnDragCompleted
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragCompleted
+    nameWithType: MouseAction.OnDragCompleted
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDragCanceled(MouseActionEventArgs)
+  nameWithType: MouseAction.OnDragCanceled(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragCanceled
+    nameWithType: MouseAction.OnDragCanceled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnDragCanceled
+    nameWithType: MouseAction.OnDragCanceled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDragCanceled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnClicked(MouseActionEventArgs)
+  nameWithType: MouseAction.OnClicked(MouseActionEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnClicked
+    nameWithType: MouseAction.OnClicked
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked(Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs)
+    name: OnClicked
+    nameWithType: MouseAction.OnClicked
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnClicked
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    name: MouseActionEventArgs
+    nameWithType: MouseActionEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseActionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseActionCompleted(DiagramEventArgs)
+  nameWithType: MouseAction.OnMouseActionCompleted(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionCompleted
+    nameWithType: MouseAction.OnMouseActionCompleted
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionCompleted
+    nameWithType: MouseAction.OnMouseActionCompleted
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseActionCanceled(DiagramEventArgs)
+  nameWithType: MouseAction.OnMouseActionCanceled(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionCanceled
+    nameWithType: MouseAction.OnMouseActionCanceled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnMouseActionCanceled
+    nameWithType: MouseAction.OnMouseActionCanceled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseActionCanceled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseEnter(DiagramPointEventArgs)
+  nameWithType: MouseAction.OnMouseEnter(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnMouseEnter
+    nameWithType: MouseAction.OnMouseEnter
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnMouseEnter
+    nameWithType: MouseAction.OnMouseEnter
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseEnter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseLeave(LeaveShapeEventArgs)
+  nameWithType: MouseAction.OnMouseLeave(LeaveShapeEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+    name: OnMouseLeave
+    nameWithType: MouseAction.OnMouseLeave
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    name: LeaveShapeEventArgs
+    nameWithType: LeaveShapeEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave(Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs)
+    name: OnMouseLeave
+    nameWithType: MouseAction.OnMouseLeave
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseLeave
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    name: LeaveShapeEventArgs
+    nameWithType: LeaveShapeEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LeaveShapeEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseHover(DiagramPointEventArgs)
+  nameWithType: MouseAction.OnMouseHover(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnMouseHover
+    nameWithType: MouseAction.OnMouseHover
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnMouseHover
+    nameWithType: MouseAction.OnMouseHover
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseHover
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseMove(DiagramMouseEventArgs)
+  nameWithType: MouseAction.OnMouseMove(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseMove
+    nameWithType: MouseAction.OnMouseMove
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseMove
+    nameWithType: MouseAction.OnMouseMove
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseMove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnContextMenuRequested(DiagramMouseEventArgs)
+  nameWithType: MouseAction.OnContextMenuRequested(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnContextMenuRequested
+    nameWithType: MouseAction.OnContextMenuRequested
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnContextMenuRequested
+    nameWithType: MouseAction.OnContextMenuRequested
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnContextMenuRequested
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseWheel(DiagramMouseEventArgs)
+  nameWithType: MouseAction.OnMouseWheel(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseWheel
+    nameWithType: MouseAction.OnMouseWheel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseWheel
+    nameWithType: MouseAction.OnMouseWheel
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseWheel
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDoubleClick(DiagramPointEventArgs)
+  nameWithType: MouseAction.OnDoubleClick(DiagramPointEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnDoubleClick
+    nameWithType: MouseAction.OnDoubleClick
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs)
+    name: OnDoubleClick
+    nameWithType: MouseAction.OnDoubleClick
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDoubleClick
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    name: DiagramPointEventArgs
+    nameWithType: DiagramPointEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPointEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDiagramLostFocus(LostFocusEventArgs)
+  nameWithType: MouseAction.OnDiagramLostFocus(LostFocusEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+    name: OnDiagramLostFocus
+    nameWithType: MouseAction.OnDiagramLostFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs
+    name: LostFocusEventArgs
+    nameWithType: LostFocusEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus(Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs)
+    name: OnDiagramLostFocus
+    nameWithType: MouseAction.OnDiagramLostFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramLostFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs
+    name: LostFocusEventArgs
+    nameWithType: LostFocusEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.LostFocusEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDiagramGotFocus(DiagramEventArgs)
+  nameWithType: MouseAction.OnDiagramGotFocus(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnDiagramGotFocus
+    nameWithType: MouseAction.OnDiagramGotFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnDiagramGotFocus
+    nameWithType: MouseAction.OnDiagramGotFocus
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramGotFocus
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnDiagramScrolled(DiagramEventArgs)
+  nameWithType: MouseAction.OnDiagramScrolled(DiagramEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnDiagramScrolled
+    nameWithType: MouseAction.OnDiagramScrolled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled(Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs)
+    name: OnDiagramScrolled
+    nameWithType: MouseAction.OnDiagramScrolled
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnDiagramScrolled
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    name: DiagramEventArgs
+    nameWithType: DiagramEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DoPaintFeedback(DiagramPaintEventArgs)
+  nameWithType: MouseAction.DoPaintFeedback(DiagramPaintEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+    name: DoPaintFeedback
+    nameWithType: MouseAction.DoPaintFeedback
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs
+    name: DiagramPaintEventArgs
+    nameWithType: DiagramPaintEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback(Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs)
+    name: DoPaintFeedback
+    nameWithType: MouseAction.DoPaintFeedback
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DoPaintFeedback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs
+    name: DiagramPaintEventArgs
+    nameWithType: DiagramPaintEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramPaintEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CaptureMouse(DiagramClientView)
+  nameWithType: MouseAction.CaptureMouse(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CaptureMouse
+    nameWithType: MouseAction.CaptureMouse
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: CaptureMouse
+    nameWithType: MouseAction.CaptureMouse
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CaptureMouse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ReleaseMouse(DiagramClientView)
+  nameWithType: MouseAction.ReleaseMouse(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: ReleaseMouse
+    nameWithType: MouseAction.ReleaseMouse
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: ReleaseMouse
+    nameWithType: MouseAction.ReleaseMouse
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ReleaseMouse
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Invalidate(DiagramClientView)
+  nameWithType: MouseAction.Invalidate(DiagramClientView)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Invalidate
+    nameWithType: MouseAction.Invalidate
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate(Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView)
+    name: Invalidate
+    nameWithType: MouseAction.Invalidate
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Invalidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: GetTooltipText(DiagramItem)
+  nameWithType: MouseAction.GetTooltipText(DiagramItem)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+    name: GetTooltipText
+    nameWithType: MouseAction.GetTooltipText
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem
+    name: DiagramItem
+    nameWithType: DiagramItem
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText(Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem)
+    name: GetTooltipText
+    nameWithType: MouseAction.GetTooltipText
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetTooltipText
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem
+    name: DiagramItem
+    nameWithType: DiagramItem
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramItem
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Dispose()
+  nameWithType: MouseAction.Dispose()
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    name: Dispose
+    nameWithType: MouseAction.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    name: Dispose
+    nameWithType: MouseAction.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: MouseAction.Dispose(Boolean)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: MouseAction.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: MouseAction.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanBumpScroll
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanBumpScroll
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CanBumpScroll
+  nameWithType: MouseAction.CanBumpScroll
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CanBumpScroll
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Diagram
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Diagram
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: Diagram
+  nameWithType: MouseAction.Diagram
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.Diagram
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownHitShape
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownHitShape
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseDownHitShape
+  nameWithType: MouseAction.MouseDownHitShape
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownHitShape
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownPoint
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownPoint
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseDownPoint
+  nameWithType: MouseAction.MouseDownPoint
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseDownPoint
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.PreviousPoint
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.PreviousPoint
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: PreviousPoint
+  nameWithType: MouseAction.PreviousPoint
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.PreviousPoint
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentPoint
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentPoint
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CurrentPoint
+  nameWithType: MouseAction.CurrentPoint
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentPoint
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.IsActive
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.IsActive
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: IsActive
+  nameWithType: MouseAction.IsActive
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.IsActive
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CurrentMouseActionState
+  nameWithType: MouseAction.CurrentMouseActionState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionEvent
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionEvent
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CurrentMouseActionEvent
+  nameWithType: MouseAction.CurrentMouseActionEvent
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentMouseActionEvent
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentDiagramArgs
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentDiagramArgs
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: CurrentDiagramArgs
+  nameWithType: MouseAction.CurrentDiagramArgs
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.CurrentDiagramArgs
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.InactiveState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.InactiveState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: InactiveState
+  nameWithType: MouseAction.InactiveState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.InactiveState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragPendingState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragPendingState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DragPendingState
+  nameWithType: MouseAction.DragPendingState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragPendingState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DraggingState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DraggingState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DraggingState
+  nameWithType: MouseAction.DraggingState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DraggingState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCompletedState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCompletedState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DragCompletedState
+  nameWithType: MouseAction.DragCompletedState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCompletedState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCanceledState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCanceledState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: DragCanceledState
+  nameWithType: MouseAction.DragCanceledState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.DragCanceledState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ClickedState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ClickedState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ClickedState
+  nameWithType: MouseAction.ClickedState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ClickedState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HoveringState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HoveringState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: HoveringState
+  nameWithType: MouseAction.HoveringState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HoveringState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCompletedState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCompletedState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ActionCompletedState
+  nameWithType: MouseAction.ActionCompletedState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCompletedState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCanceledState
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCanceledState
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ActionCanceledState
+  nameWithType: MouseAction.ActionCanceledState
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ActionCanceledState
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HasTooltip
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HasTooltip
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: HasTooltip
+  nameWithType: MouseAction.HasTooltip
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.HasTooltip
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ResetToolboxOnDragDrop
+  commentId: P:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ResetToolboxOnDragDrop
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: ResetToolboxOnDragDrop
+  nameWithType: MouseAction.ResetToolboxOnDragDrop
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.ResetToolboxOnDragDrop
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionActivated
+  commentId: E:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionActivated
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseActionActivated
+  nameWithType: MouseAction.MouseActionActivated
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionActivated
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionDeactivated
+  commentId: E:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionDeactivated
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: MouseActionDeactivated
+  nameWithType: MouseAction.MouseActionDeactivated
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.MouseActionDeactivated
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling.Diagrams
+  commentId: N:Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Diagrams
+  nameWithType: Microsoft.VisualStudio.Modeling.Diagrams
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.#ctor
+  name: CompartmentDragMouseAction
+  nameWithType: CompartmentDragMouseAction<T>.CompartmentDragMouseAction
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.CompartmentDragMouseAction
+  nameWithType.vb: CompartmentDragMouseAction(Of T).CompartmentDragMouseAction
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).CompartmentDragMouseAction
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.RectangleD
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.RectangleD
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: RectangleD
+  nameWithType: RectangleD
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.RectangleD
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: GetCursor(Cursor, DiagramClientView, PointD)
+  nameWithType: MouseAction.GetCursor(Cursor, DiagramClientView, PointD)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor, Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView, Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+    name: GetCursor
+    nameWithType: MouseAction.GetCursor
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.Forms.Cursor
+    name: Cursor
+    nameWithType: Cursor
+    fullName: System.Windows.Forms.Cursor
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+    name: PointD
+    nameWithType: PointD
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor(System.Windows.Forms.Cursor,Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView,Microsoft.VisualStudio.Modeling.Diagrams.PointD)
+    name: GetCursor
+    nameWithType: MouseAction.GetCursor
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.GetCursor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.Forms.Cursor
+    name: Cursor
+    nameWithType: Cursor
+    fullName: System.Windows.Forms.Cursor
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    name: DiagramClientView
+    nameWithType: DiagramClientView
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+    name: PointD
+    nameWithType: PointD
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.GetCursor
+  name: GetCursor
+  nameWithType: CompartmentDragMouseAction<T>.GetCursor
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.GetCursor
+  nameWithType.vb: CompartmentDragMouseAction(Of T).GetCursor
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).GetCursor
+- uid: System.Windows.Forms.Cursor
+  commentId: T:System.Windows.Forms.Cursor
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Cursor
+  nameWithType: Cursor
+  fullName: System.Windows.Forms.Cursor
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: DiagramClientView
+  nameWithType: DiagramClientView
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramClientView
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.PointD
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: PointD
+  nameWithType: PointD
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.PointD
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseDown(DiagramMouseEventArgs)
+  nameWithType: MouseAction.OnMouseDown(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseDown
+    nameWithType: MouseAction.OnMouseDown
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseDown
+    nameWithType: MouseAction.OnMouseDown
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseDown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseDown
+  name: OnMouseDown
+  nameWithType: CompartmentDragMouseAction<T>.OnMouseDown
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.OnMouseDown
+  nameWithType.vb: CompartmentDragMouseAction(Of T).OnMouseDown
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).OnMouseDown
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: DiagramMouseEventArgs
+  nameWithType: DiagramMouseEventArgs
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction
+  isExternal: true
+  name: OnMouseUp(DiagramMouseEventArgs)
+  nameWithType: MouseAction.OnMouseUp(DiagramMouseEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseUp
+    nameWithType: MouseAction.OnMouseUp
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp(Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs)
+    name: OnMouseUp
+    nameWithType: MouseAction.OnMouseUp
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.MouseAction.OnMouseUp
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    name: DiagramMouseEventArgs
+    nameWithType: DiagramMouseEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.DiagramMouseEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction`1.OnMouseUp
+  name: OnMouseUp
+  nameWithType: CompartmentDragMouseAction<T>.OnMouseUp
+  fullName: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction<T>.OnMouseUp
+  nameWithType.vb: CompartmentDragMouseAction(Of T).OnMouseUp
+  fullName.vb: Sawczyn.EFDesigner.EFModel.CompartmentDragMouseAction(Of T).OnMouseUp

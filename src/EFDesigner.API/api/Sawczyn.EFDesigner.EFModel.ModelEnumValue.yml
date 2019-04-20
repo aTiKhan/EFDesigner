@@ -1,0 +1,4694 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  id: ModelEnumValue
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributesDomainPropertyId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.DescriptionDomainPropertyId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayTextDomainPropertyId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.DomainClassId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.NameDomainPropertyId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.SummaryDomainPropertyId
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValue.ValueDomainPropertyId
+  langs:
+  - csharp
+  - vb
+  name: ModelEnumValue
+  nameWithType: ModelEnumValue
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelEnumValue
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8842
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainClass ModelEnumValue\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [ValidationState(ValidationState.Enabled)]
+
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainModelOwner(typeof(EFModelDomainModel))]
+
+      [CLSCompliant(true)]
+
+      [DomainObjectId("89938de9-60f8-472a-9507-f7c7de18a511")]
+
+      public class ModelEnumValue : ModelElement, IMergeElements, IModelElementInCompartment, IDisplaysWarning
+    content.vb: >-
+      <ValidationState(ValidationState.Enabled)>
+
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainModelOwner(GetType(EFModelDomainModel))>
+
+      <CLSCompliant(True)>
+
+      <DomainObjectId("89938de9-60f8-472a-9507-f7c7de18a511")>
+
+      Public Class ModelEnumValue
+          Inherits ModelElement
+          Implements IMergeElements, IModelElementInCompartment, IDisplaysWarning
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.ModelElement
+  implements:
+  - Microsoft.VisualStudio.Modeling.IMergeElements
+  - Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+  - Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  - Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Delete
+  - Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+  - Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+  - Microsoft.VisualStudio.Modeling.ModelElement.Copy
+  - Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable{System.Guid})
+  - Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  - Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  - Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  - Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  - Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.AddExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  - Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  - Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  - Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Id
+  - Microsoft.VisualStudio.Modeling.ModelElement.Partition
+  - Microsoft.VisualStudio.Modeling.ModelElement.Store
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsActive
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted
+  - Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  - Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  - Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(System.String)
+  - Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Validation.ValidationStateAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Validation.ValidationStateAttribute.#ctor(Microsoft.VisualStudio.Modeling.Validation.ValidationState)
+    arguments:
+    - type: Microsoft.VisualStudio.Modeling.Validation.ValidationState
+      value: 1
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainModelOwnerAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainModelOwnerAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 89938de9-60f8-472a-9507-f7c7de18a511
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+  id: ParentModelElement
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ParentModelElement
+  nameWithType: ModelEnumValue.ParentModelElement
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ParentModelElement
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 14
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public IModelElementWithCompartments ParentModelElement { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+    content.vb: Public ReadOnly Property ParentModelElement As IModelElementWithCompartments
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement*
+  implements:
+  - Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+  id: CompartmentName
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: CompartmentName
+  nameWithType: ModelEnumValue.CompartmentName
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CompartmentName
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 15
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string CompartmentName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CompartmentName As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName*
+  implements:
+  - Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue
+  id: GetHasWarningValue
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: GetHasWarningValue()
+  nameWithType: ModelEnumValue.GetHasWarningValue()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetHasWarningValue
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 23
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public bool GetHasWarningValue()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetHasWarningValue As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue*
+  implements:
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning
+  id: ResetWarning
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ResetWarning()
+  nameWithType: ModelEnumValue.ResetWarning()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResetWarning
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 25
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public void ResetWarning()
+    content.vb: Public Sub ResetWarning
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning*
+  implements:
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem
+  id: RedrawItem
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: RedrawItem()
+  nameWithType: ModelEnumValue.RedrawItem()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RedrawItem
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 27
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public void RedrawItem()
+    content.vb: Public Sub RedrawItem
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem*
+  implements:
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting
+  id: OnDeleting
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: OnDeleting()
+  nameWithType: ModelEnumValue.OnDeleting()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OnDeleting
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 50
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: Called by the model before the element is deleted.
+  example: []
+  syntax:
+    content: protected override void OnDeleting()
+    content.vb: Protected Overrides Sub OnDeleting
+  overridden: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted
+  id: OnDeleted
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: OnDeleted()
+  nameWithType: ModelEnumValue.OnDeleted()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OnDeleted
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 60
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalled by the model after the element has been deleted.\n"
+  example: []
+  syntax:
+    content: protected override void OnDeleted()
+    content.vb: Protected Overrides Sub OnDeleted
+  overridden: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString
+  id: ToString
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ModelEnumValue.ToString()
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/ModelEnumValue.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ToString
+    path: ../Dsl/CustomCode/Partials/ModelEnumValue.cs
+    startLine: 69
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DomainClassId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.DomainClassId
+  id: DomainClassId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: DomainClassId
+  nameWithType: ModelEnumValue.DomainClassId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DomainClassId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DomainClassId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8855
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nModelEnumValue domain class Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid DomainClassId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DomainClassId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  id: '#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.PropertyAssignment[])'
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ModelEnumValue(Store, PropertyAssignment[])
+  nameWithType: ModelEnumValue.ModelEnumValue(Store, PropertyAssignment[])
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ModelEnumValue(Microsoft.VisualStudio.Modeling.Store, Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8861
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ModelEnumValue(Store store, params PropertyAssignment[] propertyAssignments)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store where new element is to be created.
+    - id: propertyAssignments
+      type: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+      description: List of domain property id/value pairs to set once the element is created.
+    content.vb: Public Sub New(store As Store, ParamArray propertyAssignments As PropertyAssignment())
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor*
+  nameWithType.vb: ModelEnumValue.ModelEnumValue(Store, PropertyAssignment())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ModelEnumValue(Microsoft.VisualStudio.Modeling.Store, Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: ModelEnumValue(Store, PropertyAssignment())
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  id: '#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.PropertyAssignment[])'
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ModelEnumValue(Partition, PropertyAssignment[])
+  nameWithType: ModelEnumValue.ModelEnumValue(Partition, PropertyAssignment[])
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ModelEnumValue(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8871
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ModelEnumValue(Partition partition, params PropertyAssignment[] propertyAssignments)
+    parameters:
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition where new element is to be created.
+    - id: propertyAssignments
+      type: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+      description: List of domain property id/value pairs to set once the element is created.
+    content.vb: Public Sub New(partition As Partition, ParamArray propertyAssignments As PropertyAssignment())
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor*
+  nameWithType.vb: ModelEnumValue.ModelEnumValue(Partition, PropertyAssignment())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ModelEnumValue(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: ModelEnumValue(Partition, PropertyAssignment())
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.NameDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.NameDomainPropertyId
+  id: NameDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: NameDomainPropertyId
+  nameWithType: ModelEnumValue.NameDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.NameDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NameDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8881
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nName domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid NameDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly NameDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+  id: Name
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ModelEnumValue.Name
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Name
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8891
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets the value of Name domain property.\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [ElementName]
+
+      [DomainObjectId("f67322ba-10ef-44d8-bd5f-b54955cb70ff")]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <ElementName>
+
+      <DomainObjectId("f67322ba-10ef-44d8-bd5f-b54955cb70ff")>
+
+      Public Property Name As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Name.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.ElementNameAttribute
+    ctor: Microsoft.VisualStudio.Modeling.ElementNameAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: f67322ba-10ef-44d8-bd5f-b54955cb70ff
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ValueDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ValueDomainPropertyId
+  id: ValueDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: ValueDomainPropertyId
+  nameWithType: ModelEnumValue.ValueDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ValueDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ValueDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8970
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nValue domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid ValueDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly ValueDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+  id: Value
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ModelEnumValue.Value
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Value
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 8982
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets the value of Value domain property.\nOptional value for this enum element. Must be in the range of the enum&apos;s\nValueType\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainObjectId("23fd110b-aff0-4abd-87f6-c38ab7ba3f19")]
+
+      public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainObjectId("23fd110b-aff0-4abd-87f6-c38ab7ba3f19")>
+
+      Public Property Value As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Value.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 23fd110b-aff0-4abd-87f6-c38ab7ba3f19
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DescriptionDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.DescriptionDomainPropertyId
+  id: DescriptionDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: DescriptionDomainPropertyId
+  nameWithType: ModelEnumValue.DescriptionDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DescriptionDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DescriptionDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9059
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDescription domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid DescriptionDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DescriptionDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+  id: Description
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ModelEnumValue.Description
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Description
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9070
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets the value of Description domain property.\nDetailed code documentation\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainObjectId("295765ec-8896-4a75-b4f6-a9b5f6c663cd")]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainObjectId("295765ec-8896-4a75-b4f6-a9b5f6c663cd")>
+
+      Public Property Description As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Description.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 295765ec-8896-4a75-b4f6-a9b5f6c663cd
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.SummaryDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.SummaryDomainPropertyId
+  id: SummaryDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: SummaryDomainPropertyId
+  nameWithType: ModelEnumValue.SummaryDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.SummaryDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SummaryDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9149
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSummary domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid SummaryDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly SummaryDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+  id: Summary
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: ModelEnumValue.Summary
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Summary
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9160
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets the value of Summary domain property.\nBrief code documentation\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainObjectId("4eec932a-9148-4d3c-9f29-35d8dbd13844")]
+
+      public string Summary { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainObjectId("4eec932a-9148-4d3c-9f29-35d8dbd13844")>
+
+      Public Property Summary As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/Summary.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4eec932a-9148-4d3c-9f29-35d8dbd13844
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributesDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributesDomainPropertyId
+  id: CustomAttributesDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: CustomAttributesDomainPropertyId
+  nameWithType: ModelEnumValue.CustomAttributesDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributesDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CustomAttributesDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9238
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCustomAttributes domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid CustomAttributesDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly CustomAttributesDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+  id: CustomAttributes
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: CustomAttributes
+  nameWithType: ModelEnumValue.CustomAttributes
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CustomAttributes
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9250
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets the value of CustomAttributes domain property.\nAny custom attributes to be generated for this element. Will be passed through\nas entered.\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainObjectId("f01f16bc-6d9b-4b19-ad24-182b32379961")]
+
+      public string CustomAttributes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainObjectId("f01f16bc-6d9b-4b19-ad24-182b32379961")>
+
+      Public Property CustomAttributes As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/CustomAttributes.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: f01f16bc-6d9b-4b19-ad24-182b32379961
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayTextDomainPropertyId
+  commentId: F:Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayTextDomainPropertyId
+  id: DisplayTextDomainPropertyId
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: DisplayTextDomainPropertyId
+  nameWithType: ModelEnumValue.DisplayTextDomainPropertyId
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayTextDomainPropertyId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DisplayTextDomainPropertyId
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9327
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDisplayText domain property Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid DisplayTextDomainPropertyId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DisplayTextDomainPropertyId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+  id: DisplayText
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: DisplayText
+  nameWithType: ModelEnumValue.DisplayText
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DisplayText
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9338
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Category", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DomainObjectId("c776a259-4e87-42d3-ade8-a6170087c11b")]
+
+      public string DisplayText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CategoryResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Category", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DomainObjectId("c776a259-4e87-42d3-ade8-a6170087c11b")>
+
+      Public Property DisplayText As String
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText*
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.CategoryResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Category
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue/DisplayText.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: c776a259-4e87-42d3-ade8-a6170087c11b
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+  commentId: P:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+  id: Enum
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+  langs:
+  - csharp
+  - vb
+  name: Enum
+  nameWithType: ModelEnumValue.Enum
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainClasses.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Enum
+    path: ../Dsl/GeneratedCode/DomainClasses.cs
+    startLine: 9415
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets or sets Enum.\nNo description available\n"
+  example: []
+  syntax:
+    content: public virtual ModelEnum Enum { get; set; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelEnum
+    content.vb: Public Overridable Property Enum As ModelEnum
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.IMergeElements
+  commentId: T:Microsoft.VisualStudio.Modeling.IMergeElements
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: IMergeElements
+  nameWithType: IMergeElements
+  fullName: Microsoft.VisualStudio.Modeling.IMergeElements
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  commentId: T:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  parent: Sawczyn.EFDesigner.EFModel
+  name: IModelElementInCompartment
+  nameWithType: IModelElementInCompartment
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  commentId: T:Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  parent: Sawczyn.EFDesigner.EFModel
+  name: IDisplaysWarning
+  nameWithType: IDisplaysWarning
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetDomainClass()
+  nameWithType: ModelElement.GetDomainClass()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+    name: GetDomainClass
+    nameWithType: ModelElement.GetDomainClass
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+    name: GetDomainClass
+    nameWithType: ModelElement.GetDomainClass
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnRolePlayerPositionChanging(DomainRoleInfo, ElementLink, Int32, Int32)
+  nameWithType: ModelElement.OnRolePlayerPositionChanging(DomainRoleInfo, ElementLink, Int32, Int32)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+    name: OnRolePlayerPositionChanging
+    nameWithType: ModelElement.OnRolePlayerPositionChanging
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+    name: OnRolePlayerPositionChanging
+    nameWithType: ModelElement.OnRolePlayerPositionChanging
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnRolePlayerPositionChanged(DomainRoleInfo, ElementLink, Int32, Int32)
+  nameWithType: ModelElement.OnRolePlayerPositionChanged(DomainRoleInfo, ElementLink, Int32, Int32)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+    name: OnRolePlayerPositionChanged
+    nameWithType: ModelElement.OnRolePlayerPositionChanged
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink,System.Int32,System.Int32)
+    name: OnRolePlayerPositionChanged
+    nameWithType: ModelElement.OnRolePlayerPositionChanged
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Delete
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Delete()
+  nameWithType: ModelElement.Delete()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    name: Delete
+    nameWithType: ModelElement.Delete
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    name: Delete
+    nameWithType: ModelElement.Delete
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Delete(Guid[])
+  nameWithType: ModelElement.Delete(Guid[])
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+  nameWithType.vb: ModelElement.Delete(Guid())
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid())
+  name.vb: Delete(Guid())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+    name: Delete
+    nameWithType: ModelElement.Delete
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])
+    name: Delete
+    nameWithType: ModelElement.Delete
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Delete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnResurrected()
+  nameWithType: ModelElement.OnResurrected()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+    name: OnResurrected
+    nameWithType: ModelElement.OnResurrected
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+    name: OnResurrected
+    nameWithType: ModelElement.OnResurrected
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Copy
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Copy()
+  nameWithType: ModelElement.Copy()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    name: Copy
+    nameWithType: ModelElement.Copy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    name: Copy
+    nameWithType: ModelElement.Copy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable{System.Guid})
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable{System.Guid})
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Copy(IEnumerable<Guid>)
+  nameWithType: ModelElement.Copy(IEnumerable<Guid>)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable<System.Guid>)
+  nameWithType.vb: ModelElement.Copy(IEnumerable(Of Guid))
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable(Of System.Guid))
+  name.vb: Copy(IEnumerable(Of Guid))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable{System.Guid})
+    name: Copy
+    nameWithType: ModelElement.Copy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable{System.Guid})
+    name: Copy
+    nameWithType: ModelElement.Copy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Copy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnCopy(ModelElement)
+  nameWithType: ModelElement.OnCopy(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: OnCopy
+    nameWithType: ModelElement.OnCopy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: OnCopy
+    nameWithType: ModelElement.OnCopy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnCopy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: CanMerge(ProtoElementBase, ElementGroupPrototype)
+  nameWithType: ModelElement.CanMerge(ProtoElementBase, ElementGroupPrototype)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: CanMerge
+    nameWithType: ModelElement.CanMerge
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    name: ProtoElementBase
+    nameWithType: ProtoElementBase
+    fullName: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: CanMerge
+    nameWithType: ModelElement.CanMerge
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.CanMerge
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    name: ProtoElementBase
+    nameWithType: ProtoElementBase
+    fullName: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: ChooseMergeTarget(ElementGroupPrototype)
+  nameWithType: ModelElement.ChooseMergeTarget(ElementGroupPrototype)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: ChooseMergeTarget
+    nameWithType: ModelElement.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: ChooseMergeTarget
+    nameWithType: ModelElement.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: ChooseMergeTarget(ElementGroup)
+  nameWithType: ModelElement.ChooseMergeTarget(ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: ChooseMergeTarget
+    nameWithType: ModelElement.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: ChooseMergeTarget
+    nameWithType: ModelElement.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: MergeRelate(ModelElement, ElementGroup)
+  nameWithType: ModelElement.MergeRelate(ModelElement, ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: MergeRelate
+    nameWithType: ModelElement.MergeRelate
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: MergeRelate
+    nameWithType: ModelElement.MergeRelate
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: MergeDisconnect(ModelElement)
+  nameWithType: ModelElement.MergeDisconnect(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: MergeDisconnect
+    nameWithType: ModelElement.MergeDisconnect
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: MergeDisconnect
+    nameWithType: ModelElement.MergeDisconnect
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: MergeConfigure(ElementGroup)
+  nameWithType: ModelElement.MergeConfigure(ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: MergeConfigure
+    nameWithType: ModelElement.MergeConfigure
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: MergeConfigure
+    nameWithType: ModelElement.MergeConfigure
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.CanMerge(ProtoElementBase, ElementGroupPrototype)
+  nameWithType: ModelElement.IMergeElements.CanMerge(ProtoElementBase, ElementGroupPrototype)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge(ProtoElementBase, ElementGroupPrototype)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge(ProtoElementBase, ElementGroupPrototype)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: IMergeElements.CanMerge
+    nameWithType: ModelElement.IMergeElements.CanMerge
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    name: ProtoElementBase
+    nameWithType: ProtoElementBase
+    fullName: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase,Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    name: ProtoElementBase
+    nameWithType: ProtoElementBase
+    fullName: Microsoft.VisualStudio.Modeling.ProtoElementBase
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.ChooseMergeTarget(ElementGroupPrototype)
+  nameWithType: ModelElement.IMergeElements.ChooseMergeTarget(ElementGroupPrototype)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(ElementGroupPrototype)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(ElementGroupPrototype)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: IMergeElements.ChooseMergeTarget
+    nameWithType: ModelElement.IMergeElements.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    name: ElementGroupPrototype
+    nameWithType: ElementGroupPrototype
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroupPrototype
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.ChooseMergeTarget(ElementGroup)
+  nameWithType: ModelElement.IMergeElements.ChooseMergeTarget(ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(ElementGroup)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: IMergeElements.ChooseMergeTarget
+    nameWithType: ModelElement.IMergeElements.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.MergeRelate(ModelElement, ElementGroup)
+  nameWithType: ModelElement.IMergeElements.MergeRelate(ModelElement, ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate(ModelElement, ElementGroup)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate(ModelElement, ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: IMergeElements.MergeRelate
+    nameWithType: ModelElement.IMergeElements.MergeRelate
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.MergeDisconnect(ModelElement)
+  nameWithType: ModelElement.IMergeElements.MergeDisconnect(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect(ModelElement)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect(ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IMergeElements.MergeDisconnect
+    nameWithType: ModelElement.IMergeElements.MergeDisconnect
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IMergeElements.MergeConfigure(ElementGroup)
+  nameWithType: ModelElement.IMergeElements.MergeConfigure(ElementGroup)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+  nameWithType.vb: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure(ElementGroup)
+  name.vb: Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure(ElementGroup)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: IMergeElements.MergeConfigure
+    nameWithType: ModelElement.IMergeElements.MergeConfigure
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft#VisualStudio#Modeling#IMergeElements#MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)
+    name: Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure
+    nameWithType: ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementGroup
+    name: ElementGroup
+    nameWithType: ElementGroup
+    fullName: Microsoft.VisualStudio.Modeling.ElementGroup
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetRoleCollection<TCollection, TElement>(Guid)
+  nameWithType: ModelElement.GetRoleCollection<TCollection, TElement>(Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection<TCollection, TElement>(System.Guid)
+  nameWithType.vb: ModelElement.GetRoleCollection(Of TCollection, TElement)(Guid)
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection(Of TCollection, TElement)(System.Guid)
+  name.vb: GetRoleCollection(Of TCollection, TElement)(Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(System.Guid)
+    name: GetRoleCollection<TCollection, TElement>
+    nameWithType: ModelElement.GetRoleCollection<TCollection, TElement>
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection<TCollection, TElement>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(System.Guid)
+    name: GetRoleCollection(Of TCollection, TElement)
+    nameWithType: ModelElement.GetRoleCollection(Of TCollection, TElement)
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection(Of TCollection, TElement)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetRoleCollection<TCollection, TElement>(ModelElement, Guid)
+  nameWithType: ModelElement.GetRoleCollection<TCollection, TElement>(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection<TCollection, TElement>(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  nameWithType.vb: ModelElement.GetRoleCollection(Of TCollection, TElement)(ModelElement, Guid)
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection(Of TCollection, TElement)(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  name.vb: GetRoleCollection(Of TCollection, TElement)(ModelElement, Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: GetRoleCollection<TCollection, TElement>
+    nameWithType: ModelElement.GetRoleCollection<TCollection, TElement>
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection<TCollection, TElement>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection``2(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: GetRoleCollection(Of TCollection, TElement)
+    nameWithType: ModelElement.GetRoleCollection(Of TCollection, TElement)
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection(Of TCollection, TElement)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetBaseElement(ModelElement)
+  nameWithType: ModelElement.GetBaseElement(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetBaseElement
+    nameWithType: ModelElement.GetBaseElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetBaseElement
+    nameWithType: ModelElement.GetBaseElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetAllExtensions(ModelElement)
+  nameWithType: ModelElement.GetAllExtensions(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetAllExtensions
+    nameWithType: ModelElement.GetAllExtensions
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetAllExtensions
+    nameWithType: ModelElement.GetAllExtensions
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetExtension<T>(ModelElement)
+  nameWithType: ModelElement.GetExtension<T>(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension<T>(Microsoft.VisualStudio.Modeling.ModelElement)
+  nameWithType.vb: ModelElement.GetExtension(Of T)(ModelElement)
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Of T)(Microsoft.VisualStudio.Modeling.ModelElement)
+  name.vb: GetExtension(Of T)(ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetExtension<T>
+    nameWithType: ModelElement.GetExtension<T>
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetExtension(Of T)
+    nameWithType: ModelElement.GetExtension(Of T)
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetExtension(ModelElement, DomainClassInfo)
+  nameWithType: ModelElement.GetExtension(ModelElement, DomainClassInfo)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetExtension(ModelElement, Guid)
+  nameWithType: ModelElement.GetExtension(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: GetExtension(ModelElement, Type)
+  nameWithType: ModelElement.GetExtension(ModelElement, Type)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: GetExtension
+    nameWithType: ModelElement.GetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.GetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: TryGetExtension<T>(ModelElement)
+  nameWithType: ModelElement.TryGetExtension<T>(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension<T>(Microsoft.VisualStudio.Modeling.ModelElement)
+  nameWithType.vb: ModelElement.TryGetExtension(Of T)(ModelElement)
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Of T)(Microsoft.VisualStudio.Modeling.ModelElement)
+  name.vb: TryGetExtension(Of T)(ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: TryGetExtension<T>
+    nameWithType: ModelElement.TryGetExtension<T>
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: TryGetExtension(Of T)
+    nameWithType: ModelElement.TryGetExtension(Of T)
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: TryGetExtension(ModelElement, DomainClassInfo)
+  nameWithType: ModelElement.TryGetExtension(ModelElement, DomainClassInfo)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: TryGetExtension(ModelElement, Guid)
+  nameWithType: ModelElement.TryGetExtension(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: TryGetExtension(ModelElement, Type)
+  nameWithType: ModelElement.TryGetExtension(ModelElement, Type)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: TryGetExtension
+    nameWithType: ModelElement.TryGetExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsExtendedBy(ModelElement, DomainClassInfo)
+  nameWithType: ModelElement.IsExtendedBy(ModelElement, DomainClassInfo)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsExtendedBy(ModelElement, Guid)
+  nameWithType: ModelElement.IsExtendedBy(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsExtendedBy(ModelElement, Type)
+  nameWithType: ModelElement.IsExtendedBy(ModelElement, Type)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: IsExtendedBy
+    nameWithType: ModelElement.IsExtendedBy
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: AddExtension(ModelElement, ExtensionElement)
+  nameWithType: ModelElement.AddExtension(ModelElement, ExtensionElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ExtensionElement
+    name: ExtensionElement
+    nameWithType: ExtensionElement
+    fullName: Microsoft.VisualStudio.Modeling.ExtensionElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ExtensionElement
+    name: ExtensionElement
+    nameWithType: ExtensionElement
+    fullName: Microsoft.VisualStudio.Modeling.ExtensionElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.AddExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: AddExtension<T>(ModelElement)
+  nameWithType: ModelElement.AddExtension<T>(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension<T>(Microsoft.VisualStudio.Modeling.ModelElement)
+  nameWithType.vb: ModelElement.AddExtension(Of T)(ModelElement)
+  fullName.vb: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Of T)(Microsoft.VisualStudio.Modeling.ModelElement)
+  name.vb: AddExtension(Of T)(ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddExtension<T>
+    nameWithType: ModelElement.AddExtension<T>
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension``1(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddExtension(Of T)
+    nameWithType: ModelElement.AddExtension(Of T)
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: AddExtension(ModelElement, DomainClassInfo)
+  nameWithType: ModelElement.AddExtension(ModelElement, DomainClassInfo)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: AddExtension(ModelElement, Guid)
+  nameWithType: ModelElement.AddExtension(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: AddExtension(ModelElement, Type)
+  nameWithType: ModelElement.AddExtension(ModelElement, Type)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: AddExtension
+    nameWithType: ModelElement.AddExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.AddExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: RemoveExtension(ModelElement, ExtensionElement)
+  nameWithType: ModelElement.RemoveExtension(ModelElement, ExtensionElement)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ExtensionElement
+    name: ExtensionElement
+    nameWithType: ExtensionElement
+    fullName: Microsoft.VisualStudio.Modeling.ExtensionElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ExtensionElement)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ExtensionElement
+    name: ExtensionElement
+    nameWithType: ExtensionElement
+    fullName: Microsoft.VisualStudio.Modeling.ExtensionElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: RemoveExtension(ModelElement, DomainClassInfo)
+  nameWithType: ModelElement.RemoveExtension(ModelElement, DomainClassInfo)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: RemoveExtension(ModelElement, Guid)
+  nameWithType: ModelElement.RemoveExtension(ModelElement, Guid)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Guid)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: RemoveExtension(ModelElement, Type)
+  nameWithType: ModelElement.RemoveExtension(ModelElement, Type)
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement,System.Type)
+    name: RemoveExtension
+    nameWithType: ModelElement.RemoveExtension
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Id
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.Id
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Id
+  nameWithType: ModelElement.Id
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Id
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Partition
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.Partition
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Partition
+  nameWithType: ModelElement.Partition
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Partition
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Store
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.Store
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: Store
+  nameWithType: ModelElement.Store
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.Store
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsActive
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.IsActive
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsActive
+  nameWithType: ModelElement.IsActive
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsActive
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsDeleted
+  nameWithType: ModelElement.IsDeleted
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting
+  commentId: P:Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: IsDeleting
+  nameWithType: ModelElement.IsDeleting
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  definition: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+  name: LocateInDiagram()
+  nameWithType: ModelElementExtensions.LocateInDiagram()
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+    name: LocateInDiagram
+    nameWithType: ModelElementExtensions.LocateInDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+    name: LocateInDiagram
+    nameWithType: ModelElementExtensions.LocateInDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  definition: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  name: GetFirstShapeElement()
+  nameWithType: ModelElementExtensions.GetFirstShapeElement()
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+    name: GetFirstShapeElement
+    nameWithType: ModelElementExtensions.GetFirstShapeElement
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+    name: GetFirstShapeElement
+    nameWithType: ModelElementExtensions.GetFirstShapeElement
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  definition: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+  name: GetCompartment(String)
+  nameWithType: ModelElementExtensions.GetCompartment(String)
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(System.String)
+    name: GetCompartment
+    nameWithType: ModelElementExtensions.GetCompartment
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(System.String)
+    name: GetCompartment
+    nameWithType: ModelElementExtensions.GetCompartment
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  definition: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+  name: InvalidateDiagrams()
+  nameWithType: ModelElementExtensions.InvalidateDiagrams()
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+    name: InvalidateDiagrams
+    nameWithType: ModelElementExtensions.InvalidateDiagrams
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+    name: InvalidateDiagrams
+    nameWithType: ModelElementExtensions.InvalidateDiagrams
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+  isExternal: true
+  name: LocateInDiagram(ModelElement)
+  nameWithType: ModelElementExtensions.LocateInDiagram(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: LocateInDiagram
+    nameWithType: ModelElementExtensions.LocateInDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: LocateInDiagram
+    nameWithType: ModelElementExtensions.LocateInDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.LocateInDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  commentId: T:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+  parent: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  name: ModelElementExtensions
+  nameWithType: ModelElementExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  isExternal: true
+  name: GetFirstShapeElement(ModelElement)
+  nameWithType: ModelElementExtensions.GetFirstShapeElement(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetFirstShapeElement
+    nameWithType: ModelElementExtensions.GetFirstShapeElement
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetFirstShapeElement
+    nameWithType: ModelElementExtensions.GetFirstShapeElement
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetFirstShapeElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+  isExternal: true
+  name: GetCompartment(ModelElement, String)
+  nameWithType: ModelElementExtensions.GetCompartment(ModelElement, String)
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement, System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+    name: GetCompartment
+    nameWithType: ModelElementExtensions.GetCompartment
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment(Microsoft.VisualStudio.Modeling.ModelElement,System.String)
+    name: GetCompartment
+    nameWithType: ModelElementExtensions.GetCompartment
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.GetCompartment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+  isExternal: true
+  name: InvalidateDiagrams(ModelElement)
+  nameWithType: ModelElementExtensions.InvalidateDiagrams(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: InvalidateDiagrams
+    nameWithType: ModelElementExtensions.InvalidateDiagrams
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: InvalidateDiagrams
+    nameWithType: ModelElementExtensions.InvalidateDiagrams
+    fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.InvalidateDiagrams
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  commentId: N:Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  name: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  nameWithType: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+  fullName: Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+  name: ParentModelElement
+  nameWithType: ModelEnumValue.ParentModelElement
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ParentModelElement
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  commentId: P:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+  parent: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  name: ParentModelElement
+  nameWithType: IModelElementInCompartment.ParentModelElement
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.ParentModelElement
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  commentId: T:Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  parent: Sawczyn.EFDesigner.EFModel
+  name: IModelElementWithCompartments
+  nameWithType: IModelElementWithCompartments
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+  name: CompartmentName
+  nameWithType: ModelEnumValue.CompartmentName
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CompartmentName
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  commentId: P:Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+  parent: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment
+  name: CompartmentName
+  nameWithType: IModelElementInCompartment.CompartmentName
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.CompartmentName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue
+  name: GetHasWarningValue
+  nameWithType: ModelEnumValue.GetHasWarningValue
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.GetHasWarningValue
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  name: GetHasWarningValue()
+  nameWithType: IDisplaysWarning.GetHasWarningValue()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+    name: GetHasWarningValue
+    nameWithType: IDisplaysWarning.GetHasWarningValue
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+    name: GetHasWarningValue
+    nameWithType: IDisplaysWarning.GetHasWarningValue
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning
+  name: ResetWarning
+  nameWithType: ModelEnumValue.ResetWarning
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ResetWarning
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  name: ResetWarning()
+  nameWithType: IDisplaysWarning.ResetWarning()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+    name: ResetWarning
+    nameWithType: IDisplaysWarning.ResetWarning
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+    name: ResetWarning
+    nameWithType: IDisplaysWarning.ResetWarning
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem
+  name: RedrawItem
+  nameWithType: ModelEnumValue.RedrawItem
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.RedrawItem
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  name: RedrawItem()
+  nameWithType: IDisplaysWarning.RedrawItem()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+    name: RedrawItem
+    nameWithType: IDisplaysWarning.RedrawItem
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+    name: RedrawItem
+    nameWithType: IDisplaysWarning.RedrawItem
+    fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnDeleting()
+  nameWithType: ModelElement.OnDeleting()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+    name: OnDeleting
+    nameWithType: ModelElement.OnDeleting
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+    name: OnDeleting
+    nameWithType: ModelElement.OnDeleting
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting
+  name: OnDeleting
+  nameWithType: ModelEnumValue.OnDeleting
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleting
+- uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+  commentId: M:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+  parent: Microsoft.VisualStudio.Modeling.ModelElement
+  isExternal: true
+  name: OnDeleted()
+  nameWithType: ModelElement.OnDeleted()
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+    name: OnDeleted
+    nameWithType: ModelElement.OnDeleted
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+    name: OnDeleted
+    nameWithType: ModelElement.OnDeleted
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted
+  name: OnDeleted
+  nameWithType: ModelEnumValue.OnDeleted
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.OnDeleted
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString
+  name: ToString
+  nameWithType: ModelEnumValue.ToString
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ToString
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.#ctor
+  name: ModelEnumValue
+  nameWithType: ModelEnumValue.ModelEnumValue
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.ModelEnumValue
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+  isExternal: true
+  name: PropertyAssignment[]
+  nameWithType: PropertyAssignment[]
+  fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+  nameWithType.vb: PropertyAssignment()
+  fullName.vb: Microsoft.VisualStudio.Modeling.PropertyAssignment()
+  name.vb: PropertyAssignment()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+  name: Name
+  nameWithType: ModelEnumValue.Name
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Name
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+  name: Value
+  nameWithType: ModelEnumValue.Value
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Value
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+  name: Description
+  nameWithType: ModelEnumValue.Description
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+  name: Summary
+  nameWithType: ModelEnumValue.Summary
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Summary
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+  name: CustomAttributes
+  nameWithType: ModelEnumValue.CustomAttributes
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.CustomAttributes
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+  name: DisplayText
+  nameWithType: ModelEnumValue.DisplayText
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayText
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+  name: Enum
+  nameWithType: ModelEnumValue.Enum
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValue.Enum
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnum
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelEnum
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelEnum
+  nameWithType: ModelEnum
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnum

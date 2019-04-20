@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelAttribute), FireTime = TimeToFire.TopLevelCommit)]
    internal class ModelAttributeAddRules : AddRule

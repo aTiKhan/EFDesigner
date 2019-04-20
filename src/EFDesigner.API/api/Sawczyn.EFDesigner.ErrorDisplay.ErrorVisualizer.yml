@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  commentId: T:Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  id: ErrorDisplay.ErrorVisualizer
+  parent: Sawczyn.EFDesigner
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ErrorDisplay.ErrorVisualizer
+  nameWithType: ErrorDisplay.ErrorVisualizer
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  type: Delegate
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/ErrorDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ErrorVisualizer
+    path: ../Dsl/CustomCode/Utilities/ErrorDisplay.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public delegate void ErrorVisualizer(string message);
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Delegate Sub ErrorVisualizer(message As String)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,1360 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  id: PackageData
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  children:
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+  - Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+  langs:
+  - csharp
+  - vb
+  name: PackageData
+  nameWithType: PackageData
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: PackageData
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 5
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: public class PackageData
+    content.vb: Public Class PackageData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+  id: Id
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PackageData.Id
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Id
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 7
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("@id")]
+
+      public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("@id")>
+
+      Public Property Id As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '@id'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+  id: Type
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PackageData.Type
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Type
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 10
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("@type")]
+
+      public TypeEnum Type { get; set; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+    content.vb: >-
+      <JsonProperty("@type")>
+
+      Public Property Type As TypeEnum
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '@type'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+  id: Registration
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Registration
+  nameWithType: PackageData.Registration
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Registration
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 13
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("registration")]
+
+      public string Registration { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("registration")>
+
+      Public Property Registration As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: registration
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+  id: DatumId
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: DatumId
+  nameWithType: PackageData.DatumId
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DatumId
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 16
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("id")]
+
+      public string DatumId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("id")>
+
+      Public Property DatumId As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+  id: Version
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: PackageData.Version
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Version
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 19
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("version")]
+
+      public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("version")>
+
+      Public Property Version As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: version
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+  id: Description
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: PackageData.Description
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Description
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 22
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("description")]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("description")>
+
+      Public Property Description As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+  id: Summary
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: PackageData.Summary
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Summary
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 25
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("summary")]
+
+      public string Summary { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("summary")>
+
+      Public Property Summary As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: summary
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+  id: Title
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: PackageData.Title
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Title
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 28
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("title")]
+
+      public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("title")>
+
+      Public Property Title As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: title
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+  id: IconUrl
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: IconUrl
+  nameWithType: PackageData.IconUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IconUrl
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 31
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("iconUrl", NullValueHandling = NullValueHandling.Ignore)]
+
+      public string IconUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("iconUrl", NullValueHandling:=NullValueHandling.Ignore)>
+
+      Public Property IconUrl As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: iconUrl
+    namedArguments:
+    - name: NullValueHandling
+      type: Newtonsoft.Json.NullValueHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+  id: LicenseUrl
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: LicenseUrl
+  nameWithType: PackageData.LicenseUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LicenseUrl
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 34
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("licenseUrl", NullValueHandling = NullValueHandling.Ignore)]
+
+      public string LicenseUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("licenseUrl", NullValueHandling:=NullValueHandling.Ignore)>
+
+      Public Property LicenseUrl As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: licenseUrl
+    namedArguments:
+    - name: NullValueHandling
+      type: Newtonsoft.Json.NullValueHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+  id: ProjectUrl
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: ProjectUrl
+  nameWithType: PackageData.ProjectUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ProjectUrl
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 37
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("projectUrl", NullValueHandling = NullValueHandling.Ignore)]
+
+      public string ProjectUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("projectUrl", NullValueHandling:=NullValueHandling.Ignore)>
+
+      Public Property ProjectUrl As String
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: projectUrl
+    namedArguments:
+    - name: NullValueHandling
+      type: Newtonsoft.Json.NullValueHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+  id: Tags
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: PackageData.Tags
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Tags
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 40
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("tags")]
+
+      public List<string> Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonProperty("tags")>
+
+      Public Property Tags As List(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: tags
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+  id: Authors
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Authors
+  nameWithType: PackageData.Authors
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Authors
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 43
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("authors")]
+
+      public List<string> Authors { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonProperty("authors")>
+
+      Public Property Authors As List(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: authors
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+  id: TotalDownloads
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: TotalDownloads
+  nameWithType: PackageData.TotalDownloads
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TotalDownloads
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 46
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("totalDownloads")]
+
+      public long TotalDownloads { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <JsonProperty("totalDownloads")>
+
+      Public Property TotalDownloads As Long
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: totalDownloads
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+  id: Verified
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Verified
+  nameWithType: PackageData.Verified
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Verified
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 49
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("verified")]
+
+      public bool Verified { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("verified")>
+
+      Public Property Verified As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: verified
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+  commentId: P:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+  id: Versions
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.PackageData
+  langs:
+  - csharp
+  - vb
+  name: Versions
+  nameWithType: PackageData.Versions
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Versions
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/PackageData.cs
+    startLine: 52
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: >-
+      [JsonProperty("versions")]
+
+      public List<Version> Versions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.Nuget.Version}
+    content.vb: >-
+      <JsonProperty("versions")>
+
+      Public Property Versions As List(Of Version)
+  overload: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: versions
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget
+  commentId: N:Sawczyn.EFDesigner.EFModel.Nuget
+  name: Sawczyn.EFDesigner.EFModel.Nuget
+  nameWithType: Sawczyn.EFDesigner.EFModel.Nuget
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+  name: Id
+  nameWithType: PackageData.Id
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+  name: Type
+  nameWithType: PackageData.Type
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Type
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: TypeEnum
+  nameWithType: TypeEnum
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+  name: Registration
+  nameWithType: PackageData.Registration
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Registration
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+  name: DatumId
+  nameWithType: PackageData.DatumId
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.DatumId
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+  name: Version
+  nameWithType: PackageData.Version
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Version
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+  name: Description
+  nameWithType: PackageData.Description
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Description
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+  name: Summary
+  nameWithType: PackageData.Summary
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Summary
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+  name: Title
+  nameWithType: PackageData.Title
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Title
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+  name: IconUrl
+  nameWithType: PackageData.IconUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.IconUrl
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+  name: LicenseUrl
+  nameWithType: PackageData.LicenseUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.LicenseUrl
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+  name: ProjectUrl
+  nameWithType: PackageData.ProjectUrl
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.ProjectUrl
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+  name: Tags
+  nameWithType: PackageData.Tags
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Tags
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+  name: Authors
+  nameWithType: PackageData.Authors
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Authors
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+  name: TotalDownloads
+  nameWithType: PackageData.TotalDownloads
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.TotalDownloads
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+  name: Verified
+  nameWithType: PackageData.Verified
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Verified
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+  name: Versions
+  nameWithType: PackageData.Versions
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.PackageData.Versions
+- uid: System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.Nuget.Version}
+  commentId: T:System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.Nuget.Version}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Version>
+  nameWithType: List<Version>
+  fullName: System.Collections.Generic.List<Sawczyn.EFDesigner.EFModel.Nuget.Version>
+  nameWithType.vb: List(Of Version)
+  fullName.vb: System.Collections.Generic.List(Of Sawczyn.EFDesigner.EFModel.Nuget.Version)
+  name.vb: List(Of Version)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.Version
+    name: Version
+    nameWithType: Version
+    fullName: Sawczyn.EFDesigner.EFModel.Nuget.Version
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sawczyn.EFDesigner.EFModel.Nuget.Version
+    name: Version
+    nameWithType: Version
+    fullName: Sawczyn.EFDesigner.EFModel.Nuget.Version
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,37 @@
+{
+   "metadata": [
+      {
+         "src": [
+            {
+               "files": [
+                  "Dsl/Dsl.csproj"
+               ],
+               "exclude": [ "**/bin/**", "**/obj/**" ],
+               "src": ".."
+            }
+         ],
+         "dest": "api"
+      }
+   ],
+   "build": {
+      "content": [
+         {
+            "files": [
+               "api/*.yml",
+               "index.md",
+               "toc.md"
+            ]
+         }
+      ],
+      "dest": "wwwroot",
+      "globalMetadata": {
+         "_appTitle": "Entity Framework Visual Editor API",
+         "_appFooter": "Copyright © 2019 Michael Sawczyn",
+         "_appLogoPath": "images/VSMarketLogo.png",
+         "_appFaviconPath": "images/help.ico",
+         "_disableBreadcrumb": false,
+         "_disableAffix": false,
+         "_disableContribution": false
+      }
+   }
+}

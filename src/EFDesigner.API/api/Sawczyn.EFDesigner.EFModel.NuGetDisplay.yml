@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  commentId: T:Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  id: NuGetDisplay
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor(Sawczyn.EFDesigner.EFModel.EFVersion,System.String,System.String,System.String,System.String)
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+  - Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+  langs:
+  - csharp
+  - vb
+  name: NuGetDisplay
+  nameWithType: NuGetDisplay
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NuGetDisplay
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 1
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public class NuGetDisplay
+    content.vb: Public Class NuGetDisplay
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+  id: EFVersion
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: EFVersion
+  nameWithType: NuGetDisplay.EFVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFVersion
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 3
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public EFVersion EFVersion { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFVersion
+    content.vb: Public ReadOnly Property EFVersion As EFVersion
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+  id: PackageId
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: PackageId
+  nameWithType: NuGetDisplay.PackageId
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: PackageId
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 4
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string PackageId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PackageId As String
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+  id: ActualPackageVersion
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: ActualPackageVersion
+  nameWithType: NuGetDisplay.ActualPackageVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ActualPackageVersion
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 5
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string ActualPackageVersion { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ActualPackageVersion As String
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+  id: DisplayVersion
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: DisplayVersion
+  nameWithType: NuGetDisplay.DisplayVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DisplayVersion
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string DisplayVersion { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayVersion As String
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+  id: MajorMinorVersion
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: MajorMinorVersion
+  nameWithType: NuGetDisplay.MajorMinorVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MajorMinorVersion
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 7
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public string MajorMinorVersion { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MajorMinorVersion As String
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+  id: MajorMinorVersionNum
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: MajorMinorVersionNum
+  nameWithType: NuGetDisplay.MajorMinorVersionNum
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MajorMinorVersionNum
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 9
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public double MajorMinorVersionNum { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property MajorMinorVersionNum As Double
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor(Sawczyn.EFDesigner.EFModel.EFVersion,System.String,System.String,System.String,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor(Sawczyn.EFDesigner.EFModel.EFVersion,System.String,System.String,System.String,System.String)
+  id: '#ctor(Sawczyn.EFDesigner.EFModel.EFVersion,System.String,System.String,System.String,System.String)'
+  parent: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  langs:
+  - csharp
+  - vb
+  name: NuGetDisplay(EFVersion, String, String, String, String)
+  nameWithType: NuGetDisplay.NuGetDisplay(EFVersion, String, String, String, String)
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.NuGetDisplay(Sawczyn.EFDesigner.EFModel.EFVersion, System.String, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/NuGetDisplay.cs
+    startLine: 13
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public NuGetDisplay(EFVersion efVersion, string packageId, string packageVersion, string display, string majorMinorVersion)
+    parameters:
+    - id: efVersion
+      type: Sawczyn.EFDesigner.EFModel.EFVersion
+    - id: packageId
+      type: System.String
+    - id: packageVersion
+      type: System.String
+    - id: display
+      type: System.String
+    - id: majorMinorVersion
+      type: System.String
+    content.vb: Public Sub New(efVersion As EFVersion, packageId As String, packageVersion As String, display As String, majorMinorVersion As String)
+  overload: Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+  name: EFVersion
+  nameWithType: NuGetDisplay.EFVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.EFVersion
+- uid: Sawczyn.EFDesigner.EFModel.EFVersion
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFVersion
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFVersion
+  nameWithType: EFVersion
+  fullName: Sawczyn.EFDesigner.EFModel.EFVersion
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+  name: PackageId
+  nameWithType: NuGetDisplay.PackageId
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.PackageId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+  name: ActualPackageVersion
+  nameWithType: NuGetDisplay.ActualPackageVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.ActualPackageVersion
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+  name: DisplayVersion
+  nameWithType: NuGetDisplay.DisplayVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.DisplayVersion
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+  name: MajorMinorVersion
+  nameWithType: NuGetDisplay.MajorMinorVersion
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersion
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+  name: MajorMinorVersionNum
+  nameWithType: NuGetDisplay.MajorMinorVersionNum
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.MajorMinorVersionNum
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetDisplay.#ctor
+  name: NuGetDisplay
+  nameWithType: NuGetDisplay.NuGetDisplay
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay.NuGetDisplay

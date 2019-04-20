@@ -1,0 +1,1361 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver
+  id: EFModelSerializationBehaviorMonikerResolver
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory)
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationBehaviorMonikerResolver
+  nameWithType: EFModelSerializationBehaviorMonikerResolver
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelSerializationBehaviorMonikerResolver
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23468
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nMoniker resolver for serialization behavior EFModelSerializationBehavior.\n"
+  example: []
+  syntax:
+    content: 'public class EFModelSerializationBehaviorMonikerResolver : EFModelSerializationBehaviorMonikerResolverBase, IMonikerResolver, IDisposable'
+    content.vb: >-
+      Public Class EFModelSerializationBehaviorMonikerResolver
+          Inherits EFModelSerializationBehaviorMonikerResolverBase
+          Implements IMonikerResolver, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  implements:
+  - Microsoft.VisualStudio.Modeling.IMonikerResolver
+  - System.IDisposable
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.UnresolvedMonikerExceptionMessage
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object,Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object,System.EventArgs)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDisposed
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.SerializationContext
+  - Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDeserializing
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory)
+  id: '#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory)'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationBehaviorMonikerResolver(Store, DomainXmlSerializerDirectory)
+  nameWithType: EFModelSerializationBehaviorMonikerResolver.EFModelSerializationBehaviorMonikerResolver(Store, DomainXmlSerializerDirectory)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.EFModelSerializationBehaviorMonikerResolver(Microsoft.VisualStudio.Modeling.Store, Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23475
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public EFModelSerializationBehaviorMonikerResolver(Store store, DomainXmlSerializerDirectory directory)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store for this moniker resolver.
+    - id: directory
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+      description: Directory to used by this resolver to look up for serializers.
+    content.vb: Public Sub New(store As Store, directory As DomainXmlSerializerDirectory)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  commentId: T:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SimpleMonikerResolver
+  nameWithType: SimpleMonikerResolver
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelSerializationBehaviorMonikerResolverBase
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+- uid: Microsoft.VisualStudio.Modeling.IMonikerResolver
+  commentId: T:Microsoft.VisualStudio.Modeling.IMonikerResolver
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: IMonikerResolver
+  nameWithType: IMonikerResolver
+  fullName: Microsoft.VisualStudio.Modeling.IMonikerResolver
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  isExternal: true
+  name: CanBeMonikerized(DomainClassInfo)
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(DomainClassInfo)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: CanBeMonikerized
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized(Microsoft.VisualStudio.Modeling.DomainClassInfo)
+    name: CanBeMonikerized
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CanBeMonikerized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    name: DomainClassInfo
+    nameWithType: DomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainClassInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  isExternal: true
+  name: CalculateQualifiedName(ModelElement)
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CalculateQualifiedName
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.CalculateQualifiedName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  isExternal: true
+  name: OnUnresolvedMoniker(SerializationResult, Moniker)
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(SerializationResult, Moniker)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Moniker)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+    name: OnUnresolvedMoniker
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+    name: OnUnresolvedMoniker
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnUnresolvedMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  isExternal: true
+  name: OnMonikerResolvedToDuplicateLink(SerializationResult, Moniker)
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(SerializationResult, Moniker)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Moniker)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+    name: OnMonikerResolvedToDuplicateLink
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+    name: OnMonikerResolvedToDuplicateLink
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnMonikerResolvedToDuplicateLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  isExternal: true
+  name: OnAmbiguousMoniker(SerializationContext, String, ModelElement, ModelElement)
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(SerializationContext, String, ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, System.String, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: OnAmbiguousMoniker
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: OnAmbiguousMoniker
+    nameWithType: EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.OnAmbiguousMoniker
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.UnresolvedMonikerExceptionMessage
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.UnresolvedMonikerExceptionMessage
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase
+  name: UnresolvedMonikerExceptionMessage
+  nameWithType: EFModelSerializationBehaviorMonikerResolverBase.UnresolvedMonikerExceptionMessage
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolverBase.UnresolvedMonikerExceptionMessage
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: ResolveMoniker(Moniker)
+  nameWithType: SimpleMonikerResolver.ResolveMoniker(Moniker)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+    name: ResolveMoniker
+    nameWithType: SimpleMonikerResolver.ResolveMoniker
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker(Microsoft.VisualStudio.Modeling.Moniker)
+    name: ResolveMoniker
+    nameWithType: SimpleMonikerResolver.ResolveMoniker
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ResolveMoniker
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Moniker
+    name: Moniker
+    nameWithType: Moniker
+    fullName: Microsoft.VisualStudio.Modeling.Moniker
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: CreateMoniker(ModelElement)
+  nameWithType: SimpleMonikerResolver.CreateMoniker(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CreateMoniker
+    nameWithType: SimpleMonikerResolver.CreateMoniker
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CreateMoniker
+    nameWithType: SimpleMonikerResolver.CreateMoniker
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMoniker
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: CreateMonikerForToken(Object)
+  nameWithType: SimpleMonikerResolver.CreateMonikerForToken(Object)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+    name: CreateMonikerForToken
+    nameWithType: SimpleMonikerResolver.CreateMonikerForToken
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken(System.Object)
+    name: CreateMonikerForToken
+    nameWithType: SimpleMonikerResolver.CreateMonikerForToken
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.CreateMonikerForToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: Dispose()
+  nameWithType: SimpleMonikerResolver.Dispose()
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    name: Dispose
+    nameWithType: SimpleMonikerResolver.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    name: Dispose
+    nameWithType: SimpleMonikerResolver.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: SimpleMonikerResolver.Dispose(Boolean)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: SimpleMonikerResolver.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: SimpleMonikerResolver.Dispose
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: AddNewElement(ModelElement)
+  nameWithType: SimpleMonikerResolver.AddNewElement(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddNewElement
+    nameWithType: SimpleMonikerResolver.AddNewElement
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddNewElement
+    nameWithType: SimpleMonikerResolver.AddNewElement
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddNewElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: OnTopLevelTransactionBeginning(Transaction)
+  nameWithType: SimpleMonikerResolver.OnTopLevelTransactionBeginning(Transaction)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+    name: OnTopLevelTransactionBeginning
+    nameWithType: SimpleMonikerResolver.OnTopLevelTransactionBeginning
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: Microsoft.VisualStudio.Modeling.Transaction
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning(Microsoft.VisualStudio.Modeling.Transaction)
+    name: OnTopLevelTransactionBeginning
+    nameWithType: SimpleMonikerResolver.OnTopLevelTransactionBeginning
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTopLevelTransactionBeginning
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: Microsoft.VisualStudio.Modeling.Transaction
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object,Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object,Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: OnTransactionRollback(Object, TransactionRollbackEventArgs)
+  nameWithType: SimpleMonikerResolver.OnTransactionRollback(Object, TransactionRollbackEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object, Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object,Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+    name: OnTransactionRollback
+    nameWithType: SimpleMonikerResolver.OnTransactionRollback
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs
+    name: TransactionRollbackEventArgs
+    nameWithType: TransactionRollbackEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback(System.Object,Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs)
+    name: OnTransactionRollback
+    nameWithType: SimpleMonikerResolver.OnTransactionRollback
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnTransactionRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs
+    name: TransactionRollbackEventArgs
+    nameWithType: TransactionRollbackEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.TransactionRollbackEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object,System.EventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object,System.EventArgs)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: OnStoreDisposing(Object, EventArgs)
+  nameWithType: SimpleMonikerResolver.OnStoreDisposing(Object, EventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object, System.EventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object,System.EventArgs)
+    name: OnStoreDisposing
+    nameWithType: SimpleMonikerResolver.OnStoreDisposing
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing(System.Object,System.EventArgs)
+    name: OnStoreDisposing
+    nameWithType: SimpleMonikerResolver.OnStoreDisposing
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.OnStoreDisposing
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: DeserializationComplete()
+  nameWithType: SimpleMonikerResolver.DeserializationComplete()
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+    name: DeserializationComplete
+    nameWithType: SimpleMonikerResolver.DeserializationComplete
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+    name: DeserializationComplete
+    nameWithType: SimpleMonikerResolver.DeserializationComplete
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.DeserializationComplete
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: Reset()
+  nameWithType: SimpleMonikerResolver.Reset()
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+    name: Reset
+    nameWithType: SimpleMonikerResolver.Reset
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+    name: Reset
+    nameWithType: SimpleMonikerResolver.Reset
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: ProcessAddedElement(ModelElement)
+  nameWithType: SimpleMonikerResolver.ProcessAddedElement(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: ProcessAddedElement
+    nameWithType: SimpleMonikerResolver.ProcessAddedElement
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: ProcessAddedElement
+    nameWithType: SimpleMonikerResolver.ProcessAddedElement
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.ProcessAddedElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: IsFullyQualified(String)
+  nameWithType: SimpleMonikerResolver.IsFullyQualified(String)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+    name: IsFullyQualified
+    nameWithType: SimpleMonikerResolver.IsFullyQualified
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified(System.String)
+    name: IsFullyQualified
+    nameWithType: SimpleMonikerResolver.IsFullyQualified
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsFullyQualified
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: AddToLookupTable(String, ModelElement)
+  nameWithType: SimpleMonikerResolver.AddToLookupTable(String, ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddToLookupTable
+    nameWithType: SimpleMonikerResolver.AddToLookupTable
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable(System.String,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: AddToLookupTable
+    nameWithType: SimpleMonikerResolver.AddToLookupTable
+    fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.AddToLookupTable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDisposed
+  commentId: P:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDisposed
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: IsDisposed
+  nameWithType: SimpleMonikerResolver.IsDisposed
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDisposed
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.SerializationContext
+  commentId: P:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SimpleMonikerResolver.SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.SerializationContext
+- uid: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDeserializing
+  commentId: P:Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDeserializing
+  parent: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver
+  isExternal: true
+  name: IsDeserializing
+  nameWithType: SimpleMonikerResolver.IsDeserializing
+  fullName: Microsoft.VisualStudio.Modeling.SimpleMonikerResolver.IsDeserializing
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.#ctor
+  name: EFModelSerializationBehaviorMonikerResolver
+  nameWithType: EFModelSerializationBehaviorMonikerResolver.EFModelSerializationBehaviorMonikerResolver
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorMonikerResolver.EFModelSerializationBehaviorMonikerResolver
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainXmlSerializerDirectory
+  nameWithType: DomainXmlSerializerDirectory
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory

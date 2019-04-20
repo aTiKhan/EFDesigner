@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EnumValueType
+  commentId: T:Sawczyn.EFDesigner.EFModel.EnumValueType
+  id: EnumValueType
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EnumValueType.Int16
+  - Sawczyn.EFDesigner.EFModel.EnumValueType.Int32
+  - Sawczyn.EFDesigner.EFModel.EnumValueType.Int64
+  langs:
+  - csharp
+  - vb
+  name: EnumValueType
+  nameWithType: EnumValueType
+  fullName: Sawczyn.EFDesigner.EFModel.EnumValueType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EnumValueType
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 840
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: EnumValueType\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum EnumValueType
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum EnumValueType
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.EnumValueType.Int16
+  commentId: F:Sawczyn.EFDesigner.EFModel.EnumValueType.Int16
+  id: Int16
+  parent: Sawczyn.EFDesigner.EFModel.EnumValueType
+  langs:
+  - csharp
+  - vb
+  name: Int16
+  nameWithType: EnumValueType.Int16
+  fullName: Sawczyn.EFDesigner.EFModel.EnumValueType.Int16
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Int16
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 847
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInt16\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int16.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Int16 = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EnumValueType
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int16.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Int16 = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EnumValueType/Int16.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EnumValueType.Int32
+  commentId: F:Sawczyn.EFDesigner.EFModel.EnumValueType.Int32
+  id: Int32
+  parent: Sawczyn.EFDesigner.EFModel.EnumValueType
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: EnumValueType.Int32
+  fullName: Sawczyn.EFDesigner.EFModel.EnumValueType.Int32
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Int32
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 853
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInt32\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int32.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Int32 = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EnumValueType
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int32.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Int32 = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EnumValueType/Int32.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EnumValueType.Int64
+  commentId: F:Sawczyn.EFDesigner.EFModel.EnumValueType.Int64
+  id: Int64
+  parent: Sawczyn.EFDesigner.EFModel.EnumValueType
+  langs:
+  - csharp
+  - vb
+  name: Int64
+  nameWithType: EnumValueType.Int64
+  fullName: Sawczyn.EFDesigner.EFModel.EnumValueType.Int64
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Int64
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 859
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInt64\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int64.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Int64 = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EnumValueType
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EnumValueType/Int64.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Int64 = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EnumValueType/Int64.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.EnumValueType
+  commentId: T:Sawczyn.EFDesigner.EFModel.EnumValueType
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EnumValueType
+  nameWithType: EnumValueType
+  fullName: Sawczyn.EFDesigner.EFModel.EnumValueType

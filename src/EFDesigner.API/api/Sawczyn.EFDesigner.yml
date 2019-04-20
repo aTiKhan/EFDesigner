@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  id: Sawczyn.EFDesigner
+  children:
+  - Sawczyn.EFDesigner.ErrorDisplay
+  - Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  - Sawczyn.EFDesigner.QuestionDisplay
+  - Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  - Sawczyn.EFDesigner.WarningDisplay
+  - Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  langs:
+  - csharp
+  - vb
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+  type: Namespace
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+references:
+- uid: Sawczyn.EFDesigner.QuestionDisplay
+  commentId: T:Sawczyn.EFDesigner.QuestionDisplay
+  name: QuestionDisplay
+  nameWithType: QuestionDisplay
+  fullName: Sawczyn.EFDesigner.QuestionDisplay
+- uid: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  commentId: T:Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  parent: Sawczyn.EFDesigner
+  name: QuestionDisplay.QuestionVisualizer
+  nameWithType: QuestionDisplay.QuestionVisualizer
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+- uid: Sawczyn.EFDesigner.ErrorDisplay
+  commentId: T:Sawczyn.EFDesigner.ErrorDisplay
+  name: ErrorDisplay
+  nameWithType: ErrorDisplay
+  fullName: Sawczyn.EFDesigner.ErrorDisplay
+- uid: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  commentId: T:Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+  parent: Sawczyn.EFDesigner
+  name: ErrorDisplay.ErrorVisualizer
+  nameWithType: ErrorDisplay.ErrorVisualizer
+  fullName: Sawczyn.EFDesigner.ErrorDisplay.ErrorVisualizer
+- uid: Sawczyn.EFDesigner.WarningDisplay
+  commentId: T:Sawczyn.EFDesigner.WarningDisplay
+  name: WarningDisplay
+  nameWithType: WarningDisplay
+  fullName: Sawczyn.EFDesigner.WarningDisplay
+- uid: Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  commentId: T:Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+  parent: Sawczyn.EFDesigner
+  name: WarningDisplay.WarningVisualizer
+  nameWithType: WarningDisplay.WarningVisualizer
+  fullName: Sawczyn.EFDesigner.WarningDisplay.WarningVisualizer
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner

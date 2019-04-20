@@ -4,6 +4,8 @@ using System;
 using System.Drawing;
 using System.Linq;
 
+using Sawczyn.EFDesigner.EFModel.Interfaces;
+
 namespace Sawczyn.EFDesigner.EFModel
 {
    /// <summary>

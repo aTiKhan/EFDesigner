@@ -2,7 +2,7 @@
 
 using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(Association), FireTime = TimeToFire.Inline)]
    internal class AssociationAddRules : AddRule

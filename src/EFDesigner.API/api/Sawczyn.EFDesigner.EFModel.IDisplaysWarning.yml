@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  commentId: T:Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  id: IDisplaysWarning
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  - Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  langs:
+  - csharp
+  - vb
+  name: IDisplaysWarning
+  nameWithType: IDisplaysWarning
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  type: Interface
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IDisplaysWarning
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+    startLine: 2
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public interface IDisplaysWarning
+    content.vb: Public Interface IDisplaysWarning
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  id: GetHasWarningValue
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  langs:
+  - csharp
+  - vb
+  name: GetHasWarningValue()
+  nameWithType: IDisplaysWarning.GetHasWarningValue()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetHasWarningValue
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+    startLine: 4
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: bool GetHasWarningValue()
+    return:
+      type: System.Boolean
+    content.vb: Function GetHasWarningValue As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue*
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  id: ResetWarning
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  langs:
+  - csharp
+  - vb
+  name: ResetWarning()
+  nameWithType: IDisplaysWarning.ResetWarning()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResetWarning
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: void ResetWarning()
+    content.vb: Sub ResetWarning
+  overload: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning*
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  commentId: M:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  id: RedrawItem
+  parent: Sawczyn.EFDesigner.EFModel.IDisplaysWarning
+  langs:
+  - csharp
+  - vb
+  name: RedrawItem()
+  nameWithType: IDisplaysWarning.RedrawItem()
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RedrawItem
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IDisplaysWarning.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: void RedrawItem()
+    content.vb: Sub RedrawItem
+  overload: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem*
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+  name: GetHasWarningValue
+  nameWithType: IDisplaysWarning.GetHasWarningValue
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.GetHasWarningValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+  name: ResetWarning
+  nameWithType: IDisplaysWarning.ResetWarning
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.ResetWarning
+- uid: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem
+  name: RedrawItem
+  nameWithType: IDisplaysWarning.RedrawItem
+  fullName: Sawczyn.EFDesigner.EFModel.IDisplaysWarning.RedrawItem

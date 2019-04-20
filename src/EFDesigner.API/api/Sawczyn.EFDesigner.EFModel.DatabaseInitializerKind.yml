@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  commentId: T:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  id: DatabaseInitializerKind
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.CreateDatabaseIfNotExists
+  - Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseAlways
+  - Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseIfModelChanges
+  - Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.MigrateDatabaseToLatestVersion
+  - Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.None
+  langs:
+  - csharp
+  - vb
+  name: DatabaseInitializerKind
+  nameWithType: DatabaseInitializerKind
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DatabaseInitializerKind
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 869
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: DatabaseInitializerKind\nDescription for Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum DatabaseInitializerKind
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum DatabaseInitializerKind
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.CreateDatabaseIfNotExists
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.CreateDatabaseIfNotExists
+  id: CreateDatabaseIfNotExists
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  langs:
+  - csharp
+  - vb
+  name: CreateDatabaseIfNotExists
+  nameWithType: DatabaseInitializerKind.CreateDatabaseIfNotExists
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.CreateDatabaseIfNotExists
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateDatabaseIfNotExists
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 877
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCreateDatabaseIfNotExists\nWill recreate and optionally re-seed the database only if the database does not\nexist.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/CreateDatabaseIfNotExists.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      CreateDatabaseIfNotExists = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/CreateDatabaseIfNotExists.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      CreateDatabaseIfNotExists = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/CreateDatabaseIfNotExists.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseAlways
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseAlways
+  id: DropCreateDatabaseAlways
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  langs:
+  - csharp
+  - vb
+  name: DropCreateDatabaseAlways
+  nameWithType: DatabaseInitializerKind.DropCreateDatabaseAlways
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseAlways
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DropCreateDatabaseAlways
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 884
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDropCreateDatabaseAlways\nWill always recreate and optionally re-seed the database the first time that a\ncontext is used in the app domain.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseAlways.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DropCreateDatabaseAlways = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseAlways.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DropCreateDatabaseAlways = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseAlways.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseIfModelChanges
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseIfModelChanges
+  id: DropCreateDatabaseIfModelChanges
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  langs:
+  - csharp
+  - vb
+  name: DropCreateDatabaseIfModelChanges
+  nameWithType: DatabaseInitializerKind.DropCreateDatabaseIfModelChanges
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.DropCreateDatabaseIfModelChanges
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DropCreateDatabaseIfModelChanges
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 891
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDropCreateDatabaseIfModelChanges\nWill delete, recreate, and optionally re-seed the database only if the model has\nchanged since the database was created.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseIfModelChanges.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DropCreateDatabaseIfModelChanges = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseIfModelChanges.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DropCreateDatabaseIfModelChanges = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/DropCreateDatabaseIfModelChanges.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.MigrateDatabaseToLatestVersion
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.MigrateDatabaseToLatestVersion
+  id: MigrateDatabaseToLatestVersion
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  langs:
+  - csharp
+  - vb
+  name: MigrateDatabaseToLatestVersion
+  nameWithType: DatabaseInitializerKind.MigrateDatabaseToLatestVersion
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.MigrateDatabaseToLatestVersion
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MigrateDatabaseToLatestVersion
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 897
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nMigrateDatabaseToLatestVersion\nWill use Code First Migrations to update the database to the latest version.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/MigrateDatabaseToLatestVersion.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      MigrateDatabaseToLatestVersion = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/MigrateDatabaseToLatestVersion.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      MigrateDatabaseToLatestVersion = 3
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/MigrateDatabaseToLatestVersion.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DatabaseInitializerKind.None
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 904
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nNull configuration. Will not check database for correctness, speeding up\ninitialization and queries.\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 4
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 4
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  commentId: T:Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind
+  parent: Sawczyn.EFDesigner.EFModel
+  name: DatabaseInitializerKind
+  nameWithType: DatabaseInitializerKind
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseInitializerKind

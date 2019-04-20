@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  id: ImplicitUseKindFlags
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  children:
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Access
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Assign
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Default
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature
+  - Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature
+  langs:
+  - csharp
+  - vb
+  name: ImplicitUseKindFlags
+  nameWithType: ImplicitUseKindFlags
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ImplicitUseKindFlags
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 379
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ImplicitUseKindFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum ImplicitUseKindFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Default
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Default
+  id: Default
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: ImplicitUseKindFlags.Default
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Default
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Default
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 382
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  syntax:
+    content: Default = 7
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Access
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Access
+  id: Access
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  langs:
+  - csharp
+  - vb
+  name: Access
+  nameWithType: ImplicitUseKindFlags.Access
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Access
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Access
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 384
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Only entity marked with attribute considered used.
+  example: []
+  syntax:
+    content: Access = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Assign
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Assign
+  id: Assign
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  langs:
+  - csharp
+  - vb
+  name: Assign
+  nameWithType: ImplicitUseKindFlags.Assign
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.Assign
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Assign
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 386
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Indicates implicit assignment to a member.
+  example: []
+  syntax:
+    content: Assign = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature
+  id: InstantiatedWithFixedConstructorSignature
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  langs:
+  - csharp
+  - vb
+  name: InstantiatedWithFixedConstructorSignature
+  nameWithType: ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InstantiatedWithFixedConstructorSignature
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 391
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: "\nIndicates implicit instantiation of a type with fixed constructor signature.\nThat means any unused constructor parameters won&apos;t be reported as such.\n"
+  example: []
+  syntax:
+    content: InstantiatedWithFixedConstructorSignature = 4
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature
+  id: InstantiatedNoFixedConstructorSignature
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  langs:
+  - csharp
+  - vb
+  name: InstantiatedNoFixedConstructorSignature
+  nameWithType: ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InstantiatedNoFixedConstructorSignature
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 393
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Indicates implicit instantiation of a type.
+  example: []
+  syntax:
+    content: InstantiatedNoFixedConstructorSignature = 8
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations
+  commentId: N:Sawczyn.EFDesigner.EFModel.Annotations
+  name: Sawczyn.EFDesigner.EFModel.Annotations
+  nameWithType: Sawczyn.EFDesigner.EFModel.Annotations
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: ImplicitUseKindFlags
+  nameWithType: ImplicitUseKindFlags
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.ImplicitUseKindFlags

@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  commentId: T:Sawczyn.EFDesigner.EFModel.DatabaseKind
+  id: DatabaseKind
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.DatabaseKind.None
+  - Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer
+  - Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer2012
+  langs:
+  - csharp
+  - vb
+  name: DatabaseKind
+  nameWithType: DatabaseKind
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DatabaseKind
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1236
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: DatabaseKind\nDatabase manifest token. Optimization if runtime database type is known and\nunchanging.\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum DatabaseKind
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum DatabaseKind
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer
+  id: SqlServer
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  langs:
+  - csharp
+  - vb
+  name: SqlServer
+  nameWithType: DatabaseKind.SqlServer
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SqlServer
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1243
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSqlServer\nDescription for Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      SqlServer = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      SqlServer = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer2012
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer2012
+  id: SqlServer2012
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  langs:
+  - csharp
+  - vb
+  name: SqlServer2012
+  nameWithType: DatabaseKind.SqlServer2012
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer2012
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SqlServer2012
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1249
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSqlServer2012\nDescription for Sawczyn.EFDesigner.EFModel.DatabaseKind.SqlServer2012\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer2012.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      SqlServer2012 = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer2012.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      SqlServer2012 = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseKind/SqlServer2012.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseKind.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.DatabaseKind.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DatabaseKind.None
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseKind.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1255
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nDescription for Sawczyn.EFDesigner.EFModel.DatabaseKind.None\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DatabaseKind
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DatabaseKind/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DatabaseKind/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.DatabaseKind
+  commentId: T:Sawczyn.EFDesigner.EFModel.DatabaseKind
+  parent: Sawczyn.EFDesigner.EFModel
+  name: DatabaseKind
+  nameWithType: DatabaseKind
+  fullName: Sawczyn.EFDesigner.EFModel.DatabaseKind

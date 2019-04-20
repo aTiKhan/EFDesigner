@@ -4,6 +4,9 @@ using Microsoft.VisualStudio.Modeling.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+using Sawczyn.EFDesigner.EFModel.Interfaces;
+
 // ReSharper disable UnusedMember.Global
 // ReSharper disable UnusedMember.Local
 

@@ -1,0 +1,1152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter
+  commentId: T:Sawczyn.EFDesigner.EFModel.ValueConverter
+  id: ValueConverter
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToTwoValuesConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToZeroOneConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.BytesToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.CastingConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.CharToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBinaryConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBytesConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToBinaryConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToTicksConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToNumberConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToBytesConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToBytesConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.StringToBytesConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToStringConverter
+  - Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToTicksConverter
+  langs:
+  - csharp
+  - vb
+  name: ValueConverter
+  nameWithType: ValueConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ValueConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1265
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: ValueConverter\nAvailable value converters for EFCore (>= 2.1)\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum ValueConverter
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum ValueConverter
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToZeroOneConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToZeroOneConverter
+  id: BoolToZeroOneConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: BoolToZeroOneConverter
+  nameWithType: ValueConverter.BoolToZeroOneConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToZeroOneConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BoolToZeroOneConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1272
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBoolToZeroOneConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToZeroOneConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToZeroOneConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      BoolToZeroOneConverter = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToZeroOneConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      BoolToZeroOneConverter = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToZeroOneConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToStringConverter
+  id: BoolToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: BoolToStringConverter
+  nameWithType: ValueConverter.BoolToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BoolToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1278
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBoolToStringConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      BoolToStringConverter = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      BoolToStringConverter = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToTwoValuesConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToTwoValuesConverter
+  id: BoolToTwoValuesConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: BoolToTwoValuesConverter
+  nameWithType: ValueConverter.BoolToTwoValuesConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.BoolToTwoValuesConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BoolToTwoValuesConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1285
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBoolToTwoValuesConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.BoolToTwoValuesConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToTwoValuesConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      BoolToTwoValuesConverter = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToTwoValuesConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      BoolToTwoValuesConverter = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/BoolToTwoValuesConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.BytesToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.BytesToStringConverter
+  id: BytesToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: BytesToStringConverter
+  nameWithType: ValueConverter.BytesToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.BytesToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: BytesToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1291
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nBytesToStringConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.BytesToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BytesToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      BytesToStringConverter = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/BytesToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      BytesToStringConverter = 3
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/BytesToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.CastingConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.CastingConverter
+  id: CastingConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: CastingConverter
+  nameWithType: ValueConverter.CastingConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.CastingConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CastingConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1297
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCastingConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.CastingConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/CastingConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      CastingConverter = 4
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/CastingConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      CastingConverter = 4
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/CastingConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.CharToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.CharToStringConverter
+  id: CharToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: CharToStringConverter
+  nameWithType: ValueConverter.CharToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.CharToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CharToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1303
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCharToStringConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.CharToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/CharToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      CharToStringConverter = 5
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/CharToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      CharToStringConverter = 5
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/CharToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBinaryConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBinaryConverter
+  id: DateTimeOffsetToBinaryConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeOffsetToBinaryConverter
+  nameWithType: ValueConverter.DateTimeOffsetToBinaryConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBinaryConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeOffsetToBinaryConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1310
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeOffsetToBinaryConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBinaryConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBinaryConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeOffsetToBinaryConverter = 6
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBinaryConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeOffsetToBinaryConverter = 6
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBinaryConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBytesConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBytesConverter
+  id: DateTimeOffsetToBytesConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeOffsetToBytesConverter
+  nameWithType: ValueConverter.DateTimeOffsetToBytesConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBytesConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeOffsetToBytesConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1317
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeOffsetToBytesConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToBytesConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBytesConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeOffsetToBytesConverter = 7
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBytesConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeOffsetToBytesConverter = 7
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToBytesConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToStringConverter
+  id: DateTimeOffsetToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeOffsetToStringConverter
+  nameWithType: ValueConverter.DateTimeOffsetToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeOffsetToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1324
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeOffsetToStringConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeOffsetToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeOffsetToStringConverter = 8
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeOffsetToStringConverter = 8
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeOffsetToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToBinaryConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToBinaryConverter
+  id: DateTimeToBinaryConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeToBinaryConverter
+  nameWithType: ValueConverter.DateTimeToBinaryConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToBinaryConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeToBinaryConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1331
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeToBinaryConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToBinaryConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToBinaryConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeToBinaryConverter = 9
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToBinaryConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeToBinaryConverter = 9
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToBinaryConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToStringConverter
+  id: DateTimeToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeToStringConverter
+  nameWithType: ValueConverter.DateTimeToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1338
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeToStringConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeToStringConverter = 10
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeToStringConverter = 10
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToTicksConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToTicksConverter
+  id: DateTimeToTicksConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: DateTimeToTicksConverter
+  nameWithType: ValueConverter.DateTimeToTicksConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToTicksConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTimeToTicksConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1345
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTimeToTicksConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.DateTimeToTicksConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToTicksConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTimeToTicksConverter = 11
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToTicksConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTimeToTicksConverter = 11
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/DateTimeToTicksConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToNumberConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToNumberConverter
+  id: EnumToNumberConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: EnumToNumberConverter
+  nameWithType: ValueConverter.EnumToNumberConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToNumberConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EnumToNumberConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1351
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEnumToNumberConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToNumberConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToNumberConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      EnumToNumberConverter = 12
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToNumberConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      EnumToNumberConverter = 12
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToNumberConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToStringConverter
+  id: EnumToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: EnumToStringConverter
+  nameWithType: ValueConverter.EnumToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EnumToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1357
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEnumToStringConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.EnumToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      EnumToStringConverter = 13
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      EnumToStringConverter = 13
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/EnumToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToBytesConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToBytesConverter
+  id: GuidToBytesConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: GuidToBytesConverter
+  nameWithType: ValueConverter.GuidToBytesConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToBytesConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GuidToBytesConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1363
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGuidToBytesConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToBytesConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToBytesConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      GuidToBytesConverter = 14
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToBytesConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      GuidToBytesConverter = 14
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToBytesConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToStringConverter
+  id: GuidToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: GuidToStringConverter
+  nameWithType: ValueConverter.GuidToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GuidToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1369
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGuidToStringConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.GuidToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      GuidToStringConverter = 15
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      GuidToStringConverter = 15
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/GuidToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToBytesConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToBytesConverter
+  id: NumberToBytesConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: NumberToBytesConverter
+  nameWithType: ValueConverter.NumberToBytesConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToBytesConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NumberToBytesConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1375
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNumberToBytesConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToBytesConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToBytesConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      NumberToBytesConverter = 16
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToBytesConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      NumberToBytesConverter = 16
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToBytesConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToStringConverter
+  id: NumberToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: NumberToStringConverter
+  nameWithType: ValueConverter.NumberToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.NumberToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NumberToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1382
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNumberToStringConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.NumberToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      NumberToStringConverter = 17
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      NumberToStringConverter = 17
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/NumberToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.StringToBytesConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.StringToBytesConverter
+  id: StringToBytesConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: StringToBytesConverter
+  nameWithType: ValueConverter.StringToBytesConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.StringToBytesConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: StringToBytesConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1388
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nStringToBytesConverter\nDescription for Sawczyn.EFDesigner.EFModel.ValueConverter.StringToBytesConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/StringToBytesConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      StringToBytesConverter = 18
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/StringToBytesConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      StringToBytesConverter = 18
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/StringToBytesConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToStringConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToStringConverter
+  id: TimeSpanToStringConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: TimeSpanToStringConverter
+  nameWithType: ValueConverter.TimeSpanToStringConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToStringConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TimeSpanToStringConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1395
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTimeSpanToStringConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToStringConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToStringConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TimeSpanToStringConverter = 19
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToStringConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TimeSpanToStringConverter = 19
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToStringConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToTicksConverter
+  commentId: F:Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToTicksConverter
+  id: TimeSpanToTicksConverter
+  parent: Sawczyn.EFDesigner.EFModel.ValueConverter
+  langs:
+  - csharp
+  - vb
+  name: TimeSpanToTicksConverter
+  nameWithType: ValueConverter.TimeSpanToTicksConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToTicksConverter
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TimeSpanToTicksConverter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1402
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTimeSpanToTicksConverter\nDescription for\nSawczyn.EFDesigner.EFModel.ValueConverter.TimeSpanToTicksConverter\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToTicksConverter.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TimeSpanToTicksConverter = 20
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ValueConverter
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToTicksConverter.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TimeSpanToTicksConverter = 20
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.ValueConverter/TimeSpanToTicksConverter.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.ValueConverter
+  commentId: T:Sawczyn.EFDesigner.EFModel.ValueConverter
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ValueConverter
+  nameWithType: ValueConverter
+  fullName: Sawczyn.EFDesigner.EFModel.ValueConverter

@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  id: EFCoreValidator
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.Association)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelClass)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelRoot)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.Association)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelClass)
+  - Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelRoot)
+  langs:
+  - csharp
+  - vb
+  name: EFCoreValidator
+  nameWithType: EFCoreValidator
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFCoreValidator
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 10
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nContains EFCore limitations as of v2.1. Review for each new release.\n"
+  example: []
+  syntax:
+    content: public static class EFCoreValidator
+    content.vb: Public Module EFCoreValidator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelClass)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelClass)
+  id: GetErrors(Sawczyn.EFDesigner.EFModel.ModelClass)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(ModelClass)
+  nameWithType: EFCoreValidator.GetErrors(ModelClass)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelClass)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetErrors
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 14
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static IEnumerable<string> GetErrors(ModelClass element)
+    parameters:
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelClass
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Function GetErrors(element As ModelClass) As IEnumerable(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelClass)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelClass)
+  id: RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelClass)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: RemoveHiddenProperties(PropertyDescriptorCollection, ModelClass)
+  nameWithType: EFCoreValidator.RemoveHiddenProperties(PropertyDescriptorCollection, ModelClass)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection, Sawczyn.EFDesigner.EFModel.ModelClass)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RemoveHiddenProperties
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 32
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static void RemoveHiddenProperties(PropertyDescriptorCollection propertyDescriptors, ModelClass element)
+    parameters:
+    - id: propertyDescriptors
+      type: System.ComponentModel.PropertyDescriptorCollection
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelClass
+    content.vb: Public Shared Sub RemoveHiddenProperties(propertyDescriptors As PropertyDescriptorCollection, element As ModelClass)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  id: GetErrors(Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(ModelAttribute)
+  nameWithType: EFCoreValidator.GetErrors(ModelAttribute)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetErrors
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 51
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static IEnumerable<string> GetErrors(ModelAttribute element)
+    parameters:
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelAttribute
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Function GetErrors(element As ModelAttribute) As IEnumerable(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  id: RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: RemoveHiddenProperties(PropertyDescriptorCollection, ModelAttribute)
+  nameWithType: EFCoreValidator.RemoveHiddenProperties(PropertyDescriptorCollection, ModelAttribute)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection, Sawczyn.EFDesigner.EFModel.ModelAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RemoveHiddenProperties
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 64
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static void RemoveHiddenProperties(PropertyDescriptorCollection propertyDescriptors, ModelAttribute element)
+    parameters:
+    - id: propertyDescriptors
+      type: System.ComponentModel.PropertyDescriptorCollection
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelAttribute
+    content.vb: Public Shared Sub RemoveHiddenProperties(propertyDescriptors As PropertyDescriptorCollection, element As ModelAttribute)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.Association)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.Association)
+  id: GetErrors(Sawczyn.EFDesigner.EFModel.Association)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(Association)
+  nameWithType: EFCoreValidator.GetErrors(Association)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.Association)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetErrors
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 86
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static IEnumerable<string> GetErrors(Association element)
+    parameters:
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.Association
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Function GetErrors(element As Association) As IEnumerable(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.Association)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.Association)
+  id: RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.Association)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: RemoveHiddenProperties(PropertyDescriptorCollection, Association)
+  nameWithType: EFCoreValidator.RemoveHiddenProperties(PropertyDescriptorCollection, Association)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection, Sawczyn.EFDesigner.EFModel.Association)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RemoveHiddenProperties
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 101
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static void RemoveHiddenProperties(PropertyDescriptorCollection propertyDescriptors, Association element)
+    parameters:
+    - id: propertyDescriptors
+      type: System.ComponentModel.PropertyDescriptorCollection
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.Association
+    content.vb: Public Shared Sub RemoveHiddenProperties(propertyDescriptors As PropertyDescriptorCollection, element As Association)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelRoot)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelRoot)
+  id: GetErrors(Sawczyn.EFDesigner.EFModel.ModelRoot)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(ModelRoot)
+  nameWithType: EFCoreValidator.GetErrors(ModelRoot)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors(Sawczyn.EFDesigner.EFModel.ModelRoot)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetErrors
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 123
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static IEnumerable<string> GetErrors(ModelRoot element)
+    parameters:
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Function GetErrors(element As ModelRoot) As IEnumerable(Of String)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelRoot)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelRoot)
+  id: RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection,Sawczyn.EFDesigner.EFModel.ModelRoot)
+  parent: Sawczyn.EFDesigner.EFModel.EFCoreValidator
+  langs:
+  - csharp
+  - vb
+  name: RemoveHiddenProperties(PropertyDescriptorCollection, ModelRoot)
+  nameWithType: EFCoreValidator.RemoveHiddenProperties(PropertyDescriptorCollection, ModelRoot)
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties(System.ComponentModel.PropertyDescriptorCollection, Sawczyn.EFDesigner.EFModel.ModelRoot)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/EFCoreValidator.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: RemoveHiddenProperties
+    path: ../Dsl/CustomCode/Utilities/EFCoreValidator.cs
+    startLine: 149
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCalled by TypeDescriptors to determine what should be shown in a property editor. Removing a property hides\nit from the property editor in Visual Studio, nothing more.\n"
+  example: []
+  syntax:
+    content: public static void RemoveHiddenProperties(PropertyDescriptorCollection propertyDescriptors, ModelRoot element)
+    parameters:
+    - id: propertyDescriptors
+      type: System.ComponentModel.PropertyDescriptorCollection
+      description: ''
+    - id: element
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ''
+    content.vb: Public Shared Sub RemoveHiddenProperties(propertyDescriptors As PropertyDescriptorCollection, element As ModelRoot)
+  overload: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors
+  name: GetErrors
+  nameWithType: EFCoreValidator.GetErrors
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.GetErrors
+- uid: Sawczyn.EFDesigner.EFModel.ModelClass
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelClass
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelClass
+  nameWithType: ModelClass
+  fullName: Sawczyn.EFDesigner.EFModel.ModelClass
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties
+  name: RemoveHiddenProperties
+  nameWithType: EFCoreValidator.RemoveHiddenProperties
+  fullName: Sawczyn.EFDesigner.EFModel.EFCoreValidator.RemoveHiddenProperties
+- uid: System.ComponentModel.PropertyDescriptorCollection
+  commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  parent: System.ComponentModel
+  isExternal: true
+  name: PropertyDescriptorCollection
+  nameWithType: PropertyDescriptorCollection
+  fullName: System.ComponentModel.PropertyDescriptorCollection
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Sawczyn.EFDesigner.EFModel.ModelAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelAttribute
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelAttribute
+  nameWithType: ModelAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.ModelAttribute
+- uid: Sawczyn.EFDesigner.EFModel.Association
+  commentId: T:Sawczyn.EFDesigner.EFModel.Association
+  parent: Sawczyn.EFDesigner.EFModel
+  name: Association
+  nameWithType: Association
+  fullName: Sawczyn.EFDesigner.EFModel.Association
+- uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelRoot
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelRoot
+  nameWithType: ModelRoot
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRoot

@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  commentId: T:Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  id: IModelElementWithCompartments
+  parent: Sawczyn.EFDesigner.EFModel
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IModelElementWithCompartments
+  nameWithType: IModelElementWithCompartments
+  fullName: Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments
+  type: Interface
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IModelElementWithCompartments.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IModelElementWithCompartments
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IModelElementWithCompartments.cs
+    startLine: 4
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTag interface indicating that the diagram items for this element has compartments\n"
+  example: []
+  syntax:
+    content: public interface IModelElementWithCompartments
+    content.vb: Public Interface IModelElementWithCompartments
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel

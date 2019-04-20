@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.DBWorkflow
+  commentId: T:Sawczyn.EFDesigner.EFModel.DBWorkflow
+  id: DBWorkflow
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.DBWorkflow.TablePerTypeStrategy
+  langs:
+  - csharp
+  - vb
+  name: DBWorkflow
+  nameWithType: DBWorkflow
+  fullName: Sawczyn.EFDesigner.EFModel.DBWorkflow
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DBWorkflow
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 751
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: DBWorkflow\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum DBWorkflow
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum DBWorkflow
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.DBWorkflow.TablePerTypeStrategy
+  commentId: F:Sawczyn.EFDesigner.EFModel.DBWorkflow.TablePerTypeStrategy
+  id: TablePerTypeStrategy
+  parent: Sawczyn.EFDesigner.EFModel.DBWorkflow
+  langs:
+  - csharp
+  - vb
+  name: TablePerTypeStrategy
+  nameWithType: DBWorkflow.TablePerTypeStrategy
+  fullName: Sawczyn.EFDesigner.EFModel.DBWorkflow.TablePerTypeStrategy
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TablePerTypeStrategy
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 758
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTablePerTypeStrategy\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.DBWorkflow/TablePerTypeStrategy.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TablePerTypeStrategy = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.DBWorkflow
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.DBWorkflow/TablePerTypeStrategy.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TablePerTypeStrategy = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.DBWorkflow/TablePerTypeStrategy.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.DBWorkflow
+  commentId: T:Sawczyn.EFDesigner.EFModel.DBWorkflow
+  parent: Sawczyn.EFDesigner.EFModel
+  name: DBWorkflow
+  nameWithType: DBWorkflow
+  fullName: Sawczyn.EFDesigner.EFModel.DBWorkflow

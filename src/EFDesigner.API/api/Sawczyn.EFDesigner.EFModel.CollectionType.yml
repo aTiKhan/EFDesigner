@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CollectionType
+  commentId: T:Sawczyn.EFDesigner.EFModel.CollectionType
+  id: CollectionType
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.CollectionType.HashSet
+  - Sawczyn.EFDesigner.EFModel.CollectionType.List
+  langs:
+  - csharp
+  - vb
+  name: CollectionType
+  nameWithType: CollectionType
+  fullName: Sawczyn.EFDesigner.EFModel.CollectionType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CollectionType
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 817
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: CollectionType\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum CollectionType
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum CollectionType
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.CollectionType.List
+  commentId: F:Sawczyn.EFDesigner.EFModel.CollectionType.List
+  id: List
+  parent: Sawczyn.EFDesigner.EFModel.CollectionType
+  langs:
+  - csharp
+  - vb
+  name: List
+  nameWithType: CollectionType.List
+  fullName: Sawczyn.EFDesigner.EFModel.CollectionType.List
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: List
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 824
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nList\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.CollectionType/List.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      List = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.CollectionType
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.CollectionType/List.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      List = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.CollectionType/List.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.CollectionType.HashSet
+  commentId: F:Sawczyn.EFDesigner.EFModel.CollectionType.HashSet
+  id: HashSet
+  parent: Sawczyn.EFDesigner.EFModel.CollectionType
+  langs:
+  - csharp
+  - vb
+  name: HashSet
+  nameWithType: CollectionType.HashSet
+  fullName: Sawczyn.EFDesigner.EFModel.CollectionType.HashSet
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: HashSet
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 830
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHashSet\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.CollectionType/HashSet.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      HashSet = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.CollectionType
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.CollectionType/HashSet.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      HashSet = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.CollectionType/HashSet.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.CollectionType
+  commentId: T:Sawczyn.EFDesigner.EFModel.CollectionType
+  parent: Sawczyn.EFDesigner.EFModel
+  name: CollectionType
+  nameWithType: CollectionType
+  fullName: Sawczyn.EFDesigner.EFModel.CollectionType

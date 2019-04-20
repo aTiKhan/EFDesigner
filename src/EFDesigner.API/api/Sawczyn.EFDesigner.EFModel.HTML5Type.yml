@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type
+  commentId: T:Sawczyn.EFDesigner.EFModel.HTML5Type
+  id: HTML5Type
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Color
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Date
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.DateTime
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Email
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Month
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.None
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Number
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Password
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Range
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Search
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Telephone
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Time
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.URl
+  - Sawczyn.EFDesigner.EFModel.HTML5Type.Week
+  langs:
+  - csharp
+  - vb
+  name: HTML5Type
+  nameWithType: HTML5Type
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: HTML5Type
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 914
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: HTML5Type\nDescription for Sawczyn.EFDesigner.EFModel.HTML5Type\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum HTML5Type
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum HTML5Type
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: HTML5Type.None
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 921
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\nNo special meaning\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Color
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Color
+  id: Color
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: HTML5Type.Color
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Color
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Color
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 927
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nColor\nValue is a color\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Color.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Color = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Color.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Color = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Color.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Date
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Date
+  id: Date
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: HTML5Type.Date
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Date
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Date
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 933
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDate\nValue is a date (consider changing type to DateTime)\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Date.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Date = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Date.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Date = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Date.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.DateTime
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.DateTime
+  id: DateTime
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: HTML5Type.DateTime
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.DateTime
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DateTime
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 939
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDateTime\nValue is a date/time (consider changing type to DateTime)\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/DateTime.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      DateTime = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/DateTime.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      DateTime = 3
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/DateTime.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Email
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Email
+  id: Email
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: HTML5Type.Email
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Email
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Email
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 945
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEmail\nValue is an email address\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Email.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Email = 4
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Email.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Email = 4
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Email.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Month
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Month
+  id: Month
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Month
+  nameWithType: HTML5Type.Month
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Month
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Month
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 951
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nMonth\nValue is a month\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Month.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Month = 5
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Month.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Month = 5
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Month.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Number
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Number
+  id: Number
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: HTML5Type.Number
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Number
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Number
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 957
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNumber\nValue is a number (consider changing type to a numeric type)\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Number.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Number = 6
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Number.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Number = 6
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Number.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Range
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Range
+  id: Range
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: HTML5Type.Range
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Range
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Range
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 963
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nRange\nValue is a numeric range\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Range.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Range = 8
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Range.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Range = 8
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Range.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Search
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Search
+  id: Search
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Search
+  nameWithType: HTML5Type.Search
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Search
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Search
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 969
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSearch\nValue will be used in a search predicate\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Search.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Search = 9
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Search.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Search = 9
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Search.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Telephone
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Telephone
+  id: Telephone
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Telephone
+  nameWithType: HTML5Type.Telephone
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Telephone
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Telephone
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 975
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTelephone\nValue is a telephone number\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Telephone.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Telephone = 10
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Telephone.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Telephone = 10
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Telephone.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Time
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Time
+  id: Time
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: HTML5Type.Time
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Time
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Time
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 981
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTime\nValue is a time\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Time.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Time = 11
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Time.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Time = 11
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Time.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.URl
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.URl
+  id: URl
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: URl
+  nameWithType: HTML5Type.URl
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.URl
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: URl
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 987
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nURl\nValue is a URL\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/URl.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      URl = 12
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/URl.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      URl = 12
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/URl.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Week
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Week
+  id: Week
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Week
+  nameWithType: HTML5Type.Week
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Week
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Week
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 993
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nWeek\nValue is a calendar week\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Week.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Week = 13
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Week.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Week = 13
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Week.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type.Password
+  commentId: F:Sawczyn.EFDesigner.EFModel.HTML5Type.Password
+  id: Password
+  parent: Sawczyn.EFDesigner.EFModel.HTML5Type
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: HTML5Type.Password
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type.Password
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Password
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 999
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPassword\nValue is a password\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Password.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Password = 7
+    return:
+      type: Sawczyn.EFDesigner.EFModel.HTML5Type
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.HTML5Type/Password.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Password = 7
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.HTML5Type/Password.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.HTML5Type
+  commentId: T:Sawczyn.EFDesigner.EFModel.HTML5Type
+  parent: Sawczyn.EFDesigner.EFModel
+  name: HTML5Type
+  nameWithType: HTML5Type
+  fullName: Sawczyn.EFDesigner.EFModel.HTML5Type

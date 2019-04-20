@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    /// <summary>
    ///    Rules used in various places, consolidated here to remove technical debt stemming from copy/paste

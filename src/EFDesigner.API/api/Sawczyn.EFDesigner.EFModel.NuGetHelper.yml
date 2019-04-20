@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  commentId: T:Sawczyn.EFDesigner.EFModel.NuGetHelper
+  id: NuGetHelper
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+  - Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+  - Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EF6
+  - Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EFCORE
+  langs:
+  - csharp
+  - vb
+  name: NuGetHelper
+  nameWithType: NuGetHelper
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NuGetHelper
+    path: ../Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+    startLine: 7
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public class NuGetHelper
+    content.vb: Public Class NuGetHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EF6
+  commentId: F:Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EF6
+  id: PACKAGEID_EF6
+  parent: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  langs:
+  - csharp
+  - vb
+  name: PACKAGEID_EF6
+  nameWithType: NuGetHelper.PACKAGEID_EF6
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EF6
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: PACKAGEID_EF6
+    path: ../Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+    startLine: 9
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public const string PACKAGEID_EF6 = "EntityFramework"
+    return:
+      type: System.String
+    content.vb: Public Const PACKAGEID_EF6 As String = "EntityFramework"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EFCORE
+  commentId: F:Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EFCORE
+  id: PACKAGEID_EFCORE
+  parent: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  langs:
+  - csharp
+  - vb
+  name: PACKAGEID_EFCORE
+  nameWithType: NuGetHelper.PACKAGEID_EFCORE
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.PACKAGEID_EFCORE
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: PACKAGEID_EFCORE
+    path: ../Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+    startLine: 10
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public const string PACKAGEID_EFCORE = "Microsoft.EntityFrameworkCore"
+    return:
+      type: System.String
+    content.vb: Public Const PACKAGEID_EFCORE As String = "Microsoft.EntityFrameworkCore"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+  id: EFPackageVersions
+  parent: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  langs:
+  - csharp
+  - vb
+  name: EFPackageVersions
+  nameWithType: NuGetHelper.EFPackageVersions
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFPackageVersions
+    path: ../Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+    startLine: 36
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static Dictionary<EFVersion, IEnumerable<string>> EFPackageVersions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{Sawczyn.EFDesigner.EFModel.EFVersion,System.Collections.Generic.IEnumerable{System.String}}
+    content.vb: Public Shared ReadOnly Property EFPackageVersions As Dictionary(Of EFVersion, IEnumerable(Of String))
+  overload: Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+  commentId: P:Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+  id: NuGetPackageDisplay
+  parent: Sawczyn.EFDesigner.EFModel.NuGetHelper
+  langs:
+  - csharp
+  - vb
+  name: NuGetPackageDisplay
+  nameWithType: NuGetHelper.NuGetPackageDisplay
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NuGetPackageDisplay
+    path: ../Dsl/CustomCode/Utilities/Nuget/NuGetHelper.cs
+    startLine: 37
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public static List<NuGetDisplay> NuGetPackageDisplay { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.NuGetDisplay}
+    content.vb: Public Shared ReadOnly Property NuGetPackageDisplay As List(Of NuGetDisplay)
+  overload: Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+  name: EFPackageVersions
+  nameWithType: NuGetHelper.EFPackageVersions
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.EFPackageVersions
+- uid: System.Collections.Generic.Dictionary{Sawczyn.EFDesigner.EFModel.EFVersion,System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{Sawczyn.EFDesigner.EFModel.EFVersion,System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<EFVersion, IEnumerable<String>>
+  nameWithType: Dictionary<EFVersion, IEnumerable<String>>
+  fullName: System.Collections.Generic.Dictionary<Sawczyn.EFDesigner.EFModel.EFVersion, System.Collections.Generic.IEnumerable<System.String>>
+  nameWithType.vb: Dictionary(Of EFVersion, IEnumerable(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of Sawczyn.EFDesigner.EFModel.EFVersion, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: Dictionary(Of EFVersion, IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sawczyn.EFDesigner.EFModel.EFVersion
+    name: EFVersion
+    nameWithType: EFVersion
+    fullName: Sawczyn.EFDesigner.EFModel.EFVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sawczyn.EFDesigner.EFModel.EFVersion
+    name: EFVersion
+    nameWithType: EFVersion
+    fullName: Sawczyn.EFDesigner.EFModel.EFVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+  name: NuGetPackageDisplay
+  nameWithType: NuGetHelper.NuGetPackageDisplay
+  fullName: Sawczyn.EFDesigner.EFModel.NuGetHelper.NuGetPackageDisplay
+- uid: System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.NuGetDisplay}
+  commentId: T:System.Collections.Generic.List{Sawczyn.EFDesigner.EFModel.NuGetDisplay}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<NuGetDisplay>
+  nameWithType: List<NuGetDisplay>
+  fullName: System.Collections.Generic.List<Sawczyn.EFDesigner.EFModel.NuGetDisplay>
+  nameWithType.vb: List(Of NuGetDisplay)
+  fullName.vb: System.Collections.Generic.List(Of Sawczyn.EFDesigner.EFModel.NuGetDisplay)
+  name.vb: List(Of NuGetDisplay)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+    name: NuGetDisplay
+    nameWithType: NuGetDisplay
+    fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+    name: NuGetDisplay
+    nameWithType: NuGetDisplay
+    fullName: Sawczyn.EFDesigner.EFModel.NuGetDisplay
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

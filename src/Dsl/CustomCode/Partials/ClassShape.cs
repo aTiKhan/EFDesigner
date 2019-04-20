@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
+using Sawczyn.EFDesigner.EFModel.Interfaces;
+#pragma warning disable 1591
+
 namespace Sawczyn.EFDesigner.EFModel
 {
    public partial class ClassShape : IHighlightFromModelExplorer, IMouseActionTarget

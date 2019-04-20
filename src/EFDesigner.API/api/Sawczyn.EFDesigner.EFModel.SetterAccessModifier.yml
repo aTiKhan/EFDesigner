@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  id: SetterAccessModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Internal
+  - Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Protected
+  - Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Public
+  langs:
+  - csharp
+  - vb
+  name: SetterAccessModifier
+  nameWithType: SetterAccessModifier
+  fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SetterAccessModifier
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1113
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: SetterAccessModifier\nDetermines attribute setter visibility\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum SetterAccessModifier
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum SetterAccessModifier
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Public
+  commentId: F:Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Public
+  id: Public
+  parent: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Public
+  nameWithType: SetterAccessModifier.Public
+  fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Public
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Public
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1120
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic\nProperty is public\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Public.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Public = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Public.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Public = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Public.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Protected
+  commentId: F:Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Protected
+  id: Protected
+  parent: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Protected
+  nameWithType: SetterAccessModifier.Protected
+  fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Protected
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Protected
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1126
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nProtected\nProperty is protected\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Protected.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Protected = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Protected.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Protected = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Protected.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Internal
+  commentId: F:Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Internal
+  id: Internal
+  parent: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Internal
+  nameWithType: SetterAccessModifier.Internal
+  fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier.Internal
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Internal
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1132
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInternal\nProperty is internal\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Internal.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Internal = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Internal.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Internal = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.SetterAccessModifier/Internal.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.SetterAccessModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  name: SetterAccessModifier
+  nameWithType: SetterAccessModifier
+  fullName: Sawczyn.EFDesigner.EFModel.SetterAccessModifier

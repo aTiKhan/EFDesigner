@@ -1,0 +1,2114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  id: ModelRootTypeDescriptor
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,System.Type)
+  - Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties(System.Attribute[])
+  langs:
+  - csharp
+  - vb
+  name: ModelRootTypeDescriptor
+  nameWithType: ModelRootTypeDescriptor
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/PropertiesGrid.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelRootTypeDescriptor
+    path: ../Dsl/GeneratedCode/PropertiesGrid.cs
+    startLine: 49
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCustom type descriptor class for ModelRoot elements.\n"
+  example: []
+  syntax:
+    content: 'public class ModelRootTypeDescriptor : ElementTypeDescriptor, ICustomTypeDescriptor'
+    content.vb: >-
+      Public Class ModelRootTypeDescriptor
+          Inherits ElementTypeDescriptor
+          Implements ICustomTypeDescriptor
+  inheritance:
+  - System.Object
+  - System.ComponentModel.CustomTypeDescriptor
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  implements:
+  - System.ComponentModel.ICustomTypeDescriptor
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.ComponentModel.PropertyDescriptor@)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Store,System.ComponentModel.PropertyDescriptor@)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo,System.Attribute[])
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.Attribute[])
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.Store
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ModelElement
+  - Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ComponentType
+  - System.ComponentModel.CustomTypeDescriptor.GetAttributes
+  - System.ComponentModel.CustomTypeDescriptor.GetConverter
+  - System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+  - System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+  - System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+  - System.ComponentModel.CustomTypeDescriptor.GetEvents
+  - System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+  - System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: '#ctor(System.ComponentModel.ICustomTypeDescriptor,Microsoft.VisualStudio.Modeling.ModelElement)'
+  parent: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  langs:
+  - csharp
+  - vb
+  name: ModelRootTypeDescriptor(ICustomTypeDescriptor, ModelElement)
+  nameWithType: ModelRootTypeDescriptor.ModelRootTypeDescriptor(ICustomTypeDescriptor, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.ModelRootTypeDescriptor(System.ComponentModel.ICustomTypeDescriptor, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/PropertiesGrid.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/PropertiesGrid.cs
+    startLine: 54
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ModelRootTypeDescriptor(ICustomTypeDescriptor parent, ModelElement selectedElement)
+    parameters:
+    - id: parent
+      type: System.ComponentModel.ICustomTypeDescriptor
+    - id: selectedElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    content.vb: Public Sub New(parent As ICustomTypeDescriptor, selectedElement As ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,System.Type)
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor,System.Type)
+  id: '#ctor(System.ComponentModel.ICustomTypeDescriptor,System.Type)'
+  parent: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  langs:
+  - csharp
+  - vb
+  name: ModelRootTypeDescriptor(ICustomTypeDescriptor, Type)
+  nameWithType: ModelRootTypeDescriptor.ModelRootTypeDescriptor(ICustomTypeDescriptor, Type)
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.ModelRootTypeDescriptor(System.ComponentModel.ICustomTypeDescriptor, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/PropertiesGrid.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/PropertiesGrid.cs
+    startLine: 63
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ModelRootTypeDescriptor(ICustomTypeDescriptor parent, Type modelElementType)
+    parameters:
+    - id: parent
+      type: System.ComponentModel.ICustomTypeDescriptor
+    - id: modelElementType
+      type: System.Type
+    content.vb: Public Sub New(parent As ICustomTypeDescriptor, modelElementType As Type)
+  overload: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties(System.Attribute[])
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties(System.Attribute[])
+  id: GetProperties(System.Attribute[])
+  parent: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(Attribute[])
+  nameWithType: ModelRootTypeDescriptor.GetProperties(Attribute[])
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties(System.Attribute[])
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/PropertiesGrid.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetProperties
+    path: ../Dsl/GeneratedCode/PropertiesGrid.cs
+    startLine: 69
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)
+    parameters:
+    - id: attributes
+      type: System.Attribute[]
+    return:
+      type: System.ComponentModel.PropertyDescriptorCollection
+    content.vb: Public Overrides Function GetProperties(attributes As Attribute()) As PropertyDescriptorCollection
+  overridden: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+  overload: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties*
+  nameWithType.vb: ModelRootTypeDescriptor.GetProperties(Attribute())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties(System.Attribute())
+  name.vb: GetProperties(Attribute())
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ComponentModel.CustomTypeDescriptor
+  commentId: T:System.ComponentModel.CustomTypeDescriptor
+  parent: System.ComponentModel
+  isExternal: true
+  name: CustomTypeDescriptor
+  nameWithType: CustomTypeDescriptor
+  fullName: System.ComponentModel.CustomTypeDescriptor
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  commentId: T:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  parent: Microsoft.VisualStudio.Modeling.Design
+  isExternal: true
+  name: ElementTypeDescriptor
+  nameWithType: ElementTypeDescriptor
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+- uid: System.ComponentModel.ICustomTypeDescriptor
+  commentId: T:System.ComponentModel.ICustomTypeDescriptor
+  parent: System.ComponentModel
+  isExternal: true
+  name: ICustomTypeDescriptor
+  nameWithType: ICustomTypeDescriptor
+  fullName: System.ComponentModel.ICustomTypeDescriptor
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetComponentName()
+  nameWithType: ElementTypeDescriptor.GetComponentName()
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+    name: GetComponentName
+    nameWithType: ElementTypeDescriptor.GetComponentName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+    name: GetComponentName
+    nameWithType: ElementTypeDescriptor.GetComponentName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetComponentName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetProperties()
+  nameWithType: ElementTypeDescriptor.GetProperties()
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    name: GetProperties
+    nameWithType: ElementTypeDescriptor.GetProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    name: GetProperties
+    nameWithType: ElementTypeDescriptor.GetProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.ComponentModel.PropertyDescriptor@)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.ComponentModel.PropertyDescriptor@)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetDisplayProperties(ModelElement, PropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.GetDisplayProperties(ModelElement, PropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement, System.ComponentModel.PropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.ComponentModel.PropertyDescriptor@)
+    name: GetDisplayProperties
+    nameWithType: ElementTypeDescriptor.GetDisplayProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.ComponentModel.PropertyDescriptor@)
+    name: GetDisplayProperties
+    nameWithType: ElementTypeDescriptor.GetDisplayProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Store,System.ComponentModel.PropertyDescriptor@)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Store,System.ComponentModel.PropertyDescriptor@)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetDisplayProperties(ModelElement, Store, PropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.GetDisplayProperties(ModelElement, Store, PropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.Store, System.ComponentModel.PropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Store,System.ComponentModel.PropertyDescriptor@)
+    name: GetDisplayProperties
+    nameWithType: ElementTypeDescriptor.GetDisplayProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.Store,System.ComponentModel.PropertyDescriptor@)
+    name: GetDisplayProperties
+    nameWithType: ElementTypeDescriptor.GetDisplayProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDisplayProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: ShouldCreatePropertyDescriptor(ModelElement, DomainPropertyInfo)
+  nameWithType: ElementTypeDescriptor.ShouldCreatePropertyDescriptor(ModelElement, DomainPropertyInfo)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: ShouldCreatePropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreatePropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: ShouldCreatePropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreatePropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreatePropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: ShouldCreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo)
+  nameWithType: ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: ShouldCreateRolePlayerPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: ShouldCreateRolePlayerPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateRolePlayerPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: ShouldCreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo)
+  nameWithType: ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: ShouldCreateCollectionPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: ShouldCreateCollectionPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ShouldCreateCollectionPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: IncludeOppositeRolePlayerProperties(ModelElement)
+  nameWithType: ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeOppositeRolePlayerProperties
+    nameWithType: ElementTypeDescriptor.IncludeOppositeRolePlayerProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeOppositeRolePlayerProperties
+    nameWithType: ElementTypeDescriptor.IncludeOppositeRolePlayerProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeOppositeRolePlayerProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: IncludeEmbeddingRelationshipProperties(ModelElement)
+  nameWithType: ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeEmbeddingRelationshipProperties
+    nameWithType: ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeEmbeddingRelationshipProperties
+    nameWithType: ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeEmbeddingRelationshipProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: IncludeCollectionRoleProperties(ModelElement)
+  nameWithType: ElementTypeDescriptor.IncludeCollectionRoleProperties(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeCollectionRoleProperties
+    nameWithType: ElementTypeDescriptor.IncludeCollectionRoleProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: IncludeCollectionRoleProperties
+    nameWithType: ElementTypeDescriptor.IncludeCollectionRoleProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IncludeCollectionRoleProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: CollectionRolePropertiesBrowsable(ModelElement)
+  nameWithType: ElementTypeDescriptor.CollectionRolePropertiesBrowsable(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CollectionRolePropertiesBrowsable
+    nameWithType: ElementTypeDescriptor.CollectionRolePropertiesBrowsable
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CollectionRolePropertiesBrowsable
+    nameWithType: ElementTypeDescriptor.CollectionRolePropertiesBrowsable
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CollectionRolePropertiesBrowsable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo,System.Attribute[])
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo,System.Attribute[])
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: CreatePropertyDescriptor(ModelElement, DomainPropertyInfo, Attribute[])
+  nameWithType: ElementTypeDescriptor.CreatePropertyDescriptor(ModelElement, DomainPropertyInfo, Attribute[])
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainPropertyInfo, System.Attribute[])
+  nameWithType.vb: ElementTypeDescriptor.CreatePropertyDescriptor(ModelElement, DomainPropertyInfo, Attribute())
+  fullName.vb: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainPropertyInfo, System.Attribute())
+  name.vb: CreatePropertyDescriptor(ModelElement, DomainPropertyInfo, Attribute())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo,System.Attribute[])
+    name: CreatePropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreatePropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainPropertyInfo,System.Attribute[])
+    name: CreatePropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreatePropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreatePropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: CreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute[])
+  nameWithType: ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute[])
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.Attribute[])
+  nameWithType.vb: ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute())
+  fullName.vb: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.Attribute())
+  name.vb: CreateRolePlayerPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+    name: CreateRolePlayerPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+    name: CreateRolePlayerPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateRolePlayerPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetClassName()
+  nameWithType: ElementTypeDescriptor.GetClassName()
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+    name: GetClassName
+    nameWithType: ElementTypeDescriptor.GetClassName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+    name: GetClassName
+    nameWithType: ElementTypeDescriptor.GetClassName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetClassName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.Attribute[])
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.Attribute[])
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetExtensionProperties(ModelElement, Attribute[])
+  nameWithType: ElementTypeDescriptor.GetExtensionProperties(ModelElement, Attribute[])
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement, System.Attribute[])
+  nameWithType.vb: ElementTypeDescriptor.GetExtensionProperties(ModelElement, Attribute())
+  fullName.vb: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement, System.Attribute())
+  name.vb: GetExtensionProperties(ModelElement, Attribute())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.Attribute[])
+    name: GetExtensionProperties
+    nameWithType: ElementTypeDescriptor.GetExtensionProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties(Microsoft.VisualStudio.Modeling.ModelElement,System.Attribute[])
+    name: GetExtensionProperties
+    nameWithType: ElementTypeDescriptor.GetExtensionProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetExtensionProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: IsPropertyDescriptorReadOnly(ElementPropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.IsPropertyDescriptorReadOnly(ElementPropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: IsPropertyDescriptorReadOnly
+    nameWithType: ElementTypeDescriptor.IsPropertyDescriptorReadOnly
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: IsPropertyDescriptorReadOnly
+    nameWithType: ElementTypeDescriptor.IsPropertyDescriptorReadOnly
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.IsPropertyDescriptorReadOnly
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetPropertyDescriptorDisplayName(ElementPropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.GetPropertyDescriptorDisplayName(ElementPropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetPropertyDescriptorDisplayName
+    nameWithType: ElementTypeDescriptor.GetPropertyDescriptorDisplayName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetPropertyDescriptorDisplayName
+    nameWithType: ElementTypeDescriptor.GetPropertyDescriptorDisplayName
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetPropertyDescriptorDisplayName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetCategory(ElementPropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.GetCategory(ElementPropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetCategory
+    nameWithType: ElementTypeDescriptor.GetCategory
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetCategory
+    nameWithType: ElementTypeDescriptor.GetCategory
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetCategory
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetDescription(ElementPropertyDescriptor)
+  nameWithType: ElementTypeDescriptor.GetDescription(ElementPropertyDescriptor)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetDescription
+    nameWithType: ElementTypeDescriptor.GetDescription
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription(Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor)
+    name: GetDescription
+    nameWithType: ElementTypeDescriptor.GetDescription
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDescription
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    name: ElementPropertyDescriptor
+    nameWithType: ElementPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementPropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetDomainPropertyAttributes(DomainPropertyInfo)
+  nameWithType: ElementTypeDescriptor.GetDomainPropertyAttributes(DomainPropertyInfo)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: GetDomainPropertyAttributes
+    nameWithType: ElementTypeDescriptor.GetDomainPropertyAttributes
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainPropertyInfo)
+    name: GetDomainPropertyAttributes
+    nameWithType: ElementTypeDescriptor.GetDomainPropertyAttributes
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainPropertyAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    name: DomainPropertyInfo
+    nameWithType: DomainPropertyInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainPropertyInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetRolePlayerPropertyAttributes(DomainRoleInfo)
+  nameWithType: ElementTypeDescriptor.GetRolePlayerPropertyAttributes(DomainRoleInfo)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: GetRolePlayerPropertyAttributes
+    nameWithType: ElementTypeDescriptor.GetRolePlayerPropertyAttributes
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes(Microsoft.VisualStudio.Modeling.DomainRoleInfo)
+    name: GetRolePlayerPropertyAttributes
+    nameWithType: ElementTypeDescriptor.GetRolePlayerPropertyAttributes
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetRolePlayerPropertyAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: CreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute[])
+  nameWithType: ElementTypeDescriptor.CreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute[])
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.Attribute[])
+  nameWithType.vb: ElementTypeDescriptor.CreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute())
+  fullName.vb: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.Attribute())
+  name.vb: CreateCollectionPropertyDescriptor(ModelElement, DomainRoleInfo, Attribute())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+    name: CreateCollectionPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreateCollectionPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.Attribute[])
+    name: CreateCollectionPropertyDescriptor
+    nameWithType: ElementTypeDescriptor.CreateCollectionPropertyDescriptor
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.CreateCollectionPropertyDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetDomainClassInfo(ModelElement)
+  nameWithType: ElementTypeDescriptor.GetDomainClassInfo(ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetDomainClassInfo
+    nameWithType: ElementTypeDescriptor.GetDomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo(Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetDomainClassInfo
+    nameWithType: ElementTypeDescriptor.GetDomainClassInfo
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetDomainClassInfo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.Store
+  commentId: P:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.Store
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: Store
+  nameWithType: ElementTypeDescriptor.Store
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.Store
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ModelElement
+  commentId: P:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ModelElement
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: ModelElement
+  nameWithType: ElementTypeDescriptor.ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ComponentType
+  commentId: P:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ComponentType
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: ComponentType
+  nameWithType: ElementTypeDescriptor.ComponentType
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.ComponentType
+- uid: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetAttributes
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetAttributes()
+  nameWithType: CustomTypeDescriptor.GetAttributes()
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetAttributes()
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+    name: GetAttributes
+    nameWithType: CustomTypeDescriptor.GetAttributes
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+    name: GetAttributes
+    nameWithType: CustomTypeDescriptor.GetAttributes
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetConverter
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetConverter()
+  nameWithType: CustomTypeDescriptor.GetConverter()
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetConverter()
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
+    name: GetConverter
+    nameWithType: CustomTypeDescriptor.GetConverter
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetConverter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
+    name: GetConverter
+    nameWithType: CustomTypeDescriptor.GetConverter
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetConverter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetDefaultEvent()
+  nameWithType: CustomTypeDescriptor.GetDefaultEvent()
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent()
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+    name: GetDefaultEvent
+    nameWithType: CustomTypeDescriptor.GetDefaultEvent
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+    name: GetDefaultEvent
+    nameWithType: CustomTypeDescriptor.GetDefaultEvent
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetDefaultProperty()
+  nameWithType: CustomTypeDescriptor.GetDefaultProperty()
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty()
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+    name: GetDefaultProperty
+    nameWithType: CustomTypeDescriptor.GetDefaultProperty
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+    name: GetDefaultProperty
+    nameWithType: CustomTypeDescriptor.GetDefaultProperty
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetEditor(Type)
+  nameWithType: CustomTypeDescriptor.GetEditor(Type)
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+    name: GetEditor
+    nameWithType: CustomTypeDescriptor.GetEditor
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEditor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+    name: GetEditor
+    nameWithType: CustomTypeDescriptor.GetEditor
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEditor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetEvents
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetEvents()
+  nameWithType: CustomTypeDescriptor.GetEvents()
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents()
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    name: GetEvents
+    nameWithType: CustomTypeDescriptor.GetEvents
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    name: GetEvents
+    nameWithType: CustomTypeDescriptor.GetEvents
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetEvents(Attribute[])
+  nameWithType: CustomTypeDescriptor.GetEvents(Attribute[])
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+  nameWithType.vb: CustomTypeDescriptor.GetEvents(Attribute())
+  fullName.vb: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute())
+  name.vb: GetEvents(Attribute())
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+    name: GetEvents
+    nameWithType: CustomTypeDescriptor.GetEvents
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+    name: GetEvents
+    nameWithType: CustomTypeDescriptor.GetEvents
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetEvents
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+  commentId: M:System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+  parent: System.ComponentModel.CustomTypeDescriptor
+  isExternal: true
+  name: GetPropertyOwner(PropertyDescriptor)
+  nameWithType: CustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor)
+  fullName: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+  spec.csharp:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+    name: GetPropertyOwner
+    nameWithType: CustomTypeDescriptor.GetPropertyOwner
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+    name: GetPropertyOwner
+    nameWithType: CustomTypeDescriptor.GetPropertyOwner
+    fullName: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyDescriptor
+    name: PropertyDescriptor
+    nameWithType: PropertyDescriptor
+    fullName: System.ComponentModel.PropertyDescriptor
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Microsoft.VisualStudio.Modeling.Design
+  commentId: N:Microsoft.VisualStudio.Modeling.Design
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Design
+  nameWithType: Microsoft.VisualStudio.Modeling.Design
+  fullName: Microsoft.VisualStudio.Modeling.Design
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.#ctor
+  name: ModelRootTypeDescriptor
+  nameWithType: ModelRootTypeDescriptor.ModelRootTypeDescriptor
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.ModelRootTypeDescriptor
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+  commentId: M:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+  parent: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor
+  isExternal: true
+  name: GetProperties(Attribute[])
+  nameWithType: ElementTypeDescriptor.GetProperties(Attribute[])
+  fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+  nameWithType.vb: ElementTypeDescriptor.GetProperties(Attribute())
+  fullName.vb: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute())
+  name.vb: GetProperties(Attribute())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+    name: GetProperties
+    nameWithType: ElementTypeDescriptor.GetProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties(System.Attribute[])
+    name: GetProperties
+    nameWithType: ElementTypeDescriptor.GetProperties
+    fullName: Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor.GetProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties
+  name: GetProperties
+  nameWithType: ModelRootTypeDescriptor.GetProperties
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRootTypeDescriptor.GetProperties
+- uid: System.Attribute[]
+  isExternal: true
+  name: Attribute[]
+  nameWithType: Attribute[]
+  fullName: System.Attribute[]
+  nameWithType.vb: Attribute()
+  fullName.vb: System.Attribute()
+  name.vb: Attribute()
+  spec.csharp:
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Attribute
+    name: Attribute
+    nameWithType: Attribute
+    fullName: System.Attribute
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.ComponentModel.PropertyDescriptorCollection
+  commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  parent: System.ComponentModel
+  isExternal: true
+  name: PropertyDescriptorCollection
+  nameWithType: PropertyDescriptorCollection
+  fullName: System.ComponentModel.PropertyDescriptorCollection

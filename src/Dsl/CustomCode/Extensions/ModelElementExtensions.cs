@@ -3,7 +3,9 @@ using System.Linq;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 
-namespace Sawczyn.EFDesigner.EFModel.CustomCode.Extensions
+using Sawczyn.EFDesigner.EFModel.CustomCode.Extensions;
+
+namespace Sawczyn.EFDesigner.EFModel
 {
    public static class ModelElementExtensions
    {

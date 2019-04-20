@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  id: TypeEnum
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  children:
+  - Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.Package
+  langs:
+  - csharp
+  - vb
+  name: TypeEnum
+  nameWithType: TypeEnum
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/TypeEnum.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TypeEnum
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/TypeEnum.cs
+    startLine: 1
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: public enum TypeEnum
+    content.vb: Public Enum TypeEnum
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.Package
+  commentId: F:Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.Package
+  id: Package
+  parent: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Package
+  nameWithType: TypeEnum.Package
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum.Package
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/Nuget/Models/TypeEnum.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Package
+    path: ../Dsl/CustomCode/Utilities/Nuget/Models/TypeEnum.cs
+    startLine: 3
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Nuget
+  syntax:
+    content: Package = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Nuget
+  commentId: N:Sawczyn.EFDesigner.EFModel.Nuget
+  name: Sawczyn.EFDesigner.EFModel.Nuget
+  nameWithType: Sawczyn.EFDesigner.EFModel.Nuget
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget
+- uid: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  commentId: T:Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum
+  parent: Sawczyn.EFDesigner.EFModel.Nuget
+  name: TypeEnum
+  nameWithType: TypeEnum
+  fullName: Sawczyn.EFDesigner.EFModel.Nuget.TypeEnum

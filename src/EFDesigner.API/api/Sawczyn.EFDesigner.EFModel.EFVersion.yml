@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFVersion
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFVersion
+  id: EFVersion
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFVersion.EF6
+  - Sawczyn.EFDesigner.EFModel.EFVersion.EFCore
+  langs:
+  - csharp
+  - vb
+  name: EFVersion
+  nameWithType: EFVersion
+  fullName: Sawczyn.EFDesigner.EFModel.EFVersion
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFVersion
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1061
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: EFVersion\nDescription for Sawczyn.EFDesigner.EFModel.EFVersion\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum EFVersion
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum EFVersion
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.EFVersion.EF6
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFVersion.EF6
+  id: EF6
+  parent: Sawczyn.EFDesigner.EFModel.EFVersion
+  langs:
+  - csharp
+  - vb
+  name: EF6
+  nameWithType: EFVersion.EF6
+  fullName: Sawczyn.EFDesigner.EFModel.EFVersion.EF6
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EF6
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1068
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEF6\nEntity Framework 6\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EFVersion/EF6.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      EF6 = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFVersion
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EFVersion/EF6.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      EF6 = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EFVersion/EF6.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFVersion.EFCore
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFVersion.EFCore
+  id: EFCore
+  parent: Sawczyn.EFDesigner.EFModel.EFVersion
+  langs:
+  - csharp
+  - vb
+  name: EFCore
+  nameWithType: EFVersion.EFCore
+  fullName: Sawczyn.EFDesigner.EFModel.EFVersion.EFCore
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFCore
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1074
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEFCore\nEntity Framework Core\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EFVersion/EFCore.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      EFCore = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFVersion
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EFVersion/EFCore.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      EFCore = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EFVersion/EFCore.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.EFVersion
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFVersion
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFVersion
+  nameWithType: EFVersion
+  fullName: Sawczyn.EFDesigner.EFModel.EFVersion

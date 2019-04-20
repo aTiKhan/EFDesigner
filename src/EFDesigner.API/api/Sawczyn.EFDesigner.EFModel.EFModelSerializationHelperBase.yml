@@ -1,0 +1,2355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  id: EFModelSerializationHelperBase
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationHelperBase
+  nameWithType: EFModelSerializationHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelSerializationHelperBase
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 307
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper class for serializing and deserializing EFModel models.\n"
+  example: []
+  syntax:
+    content: public abstract class EFModelSerializationHelperBase
+    content.vb: Public MustInherit Class EFModelSerializationHelperBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationHelperBase()
+  nameWithType: EFModelSerializationHelperBase.EFModelSerializationHelperBase()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.EFModelSerializationHelperBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 43
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: protected EFModelSerializationHelperBase()
+    content.vb: Protected Sub New
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  id: InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: InitializeSerialization(Store)
+  nameWithType: EFModelSerializationHelperBase.InitializeSerialization(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InitializeSerialization
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 53
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEnsure that moniker resolvers and domain element serializers are installed properly on the given store, \nso that deserialization can be carried out correctly.\n"
+  example: []
+  syntax:
+    content: protected virtual void InitializeSerialization(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store on which moniker resolvers will be set up.
+    content.vb: Protected Overridable Sub InitializeSerialization(store As Store)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  id: InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: InitializeSerializationContext(Partition, SerializationContext, Boolean)
+  nameWithType: EFModelSerializationHelperBase.InitializeSerializationContext(Partition, SerializationContext, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.SerializationContext, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InitializeSerializationContext
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 82
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  example: []
+  syntax:
+    content: protected virtual void InitializeSerializationContext(Partition partition, SerializationContext serializationContext, bool isLoading)
+    parameters:
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: The partition being serialized.
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: The current serialization context instance.
+    - id: isLoading
+      type: System.Boolean
+      description: Flag to indicate whether the file is being loaded or saved.
+    content.vb: Protected Overridable Sub InitializeSerializationContext(partition As Partition, serializationContext As SerializationContext, isLoading As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  id: GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetDirectory(Store)
+  nameWithType: EFModelSerializationHelperBase.GetDirectory(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetDirectory
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 89
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturn the directory of serializers to use\n"
+  example: []
+  syntax:
+    content: protected virtual DomainXmlSerializerDirectory GetDirectory(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+    return:
+      type: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+    content.vb: Protected Overridable Function GetDirectory(store As Store) As DomainXmlSerializerDirectory
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  id: GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetMonikerResolvers(Store)
+  nameWithType: EFModelSerializationHelperBase.GetMonikerResolvers(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetMonikerResolvers
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 99
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThis method returns the moniker resolvers for each of the domain models in the store\n"
+  example: []
+  syntax:
+    content: protected virtual IDictionary<Guid, IMonikerResolver> GetMonikerResolvers(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store on which the moniker resolvers are set up.
+    return:
+      type: System.Collections.Generic.IDictionary{System.Guid,Microsoft.VisualStudio.Modeling.IMonikerResolver}
+    content.vb: Protected Overridable Function GetMonikerResolvers(store As Store) As IDictionary(Of Guid, IMonikerResolver)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  id: WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: WriteExtensions(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: EFModelSerializationHelperBase.WriteExtensions(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WriteExtensions
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 129
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nWrite extension element data inside the current XML element\n"
+  remarks: >-
+    The default implemenation is to write out all non-embedded extension elements,
+
+    regardless of whether they relate to the current element or not.
+
+    The additional data should be written as a series of one or more
+
+    XML elements.
+  example: []
+  syntax:
+    content: protected virtual void WriteExtensions(SerializationContext serializationContext, ModelElement element, XmlWriter writer)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: The current serialization context instance.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The element whose attributes have just been written.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    content.vb: Protected Overridable Sub WriteExtensions(serializationContext As SerializationContext, element As ModelElement, writer As XmlWriter)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  id: ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ReadExtensions(SerializationContext, ModelElement, XmlReader)
+  nameWithType: EFModelSerializationHelperBase.ReadExtensions(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ReadExtensions
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 159
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nRead any extension data written inside this XML element\n"
+  remarks: >-
+    The method reads any extension element data, regardless of whether it relates the current
+
+    element or not. There may be no additional data for the specified element.
+  example: []
+  syntax:
+    content: protected virtual void ReadExtensions(SerializationContext serializationContext, ModelElement element, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: The current serialization context instance.
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: In-memory ModelElement instance that is currently being read.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: Reader for the file being read. The reader is positioned after the attributes of the specified element.
+    content.vb: Protected Overridable Sub ReadExtensions(serializationContext As SerializationContext, element As ModelElement, reader As XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 327
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance into the default partition of the given store, and ignore serialization result.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModel(Store store, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: The new ModelRoot instance will be created into the default partition of this store.
+    - id: fileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModel(store As Store, fileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(SerializationResult, Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Store, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 355
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance into the default partition of the given store.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModel(SerializationResult serializationResult, Store store, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: The new ModelRoot instance will be created into the default partition of this store.
+    - id: fileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModel(serializationResult As SerializationResult, store As Store, fileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 383
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModel(SerializationResult serializationResult, Partition partition, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: fileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModel(serializationResult As SerializationResult, partition As Partition, fileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 416
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance from a stream.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModel(SerializationResult serializationResult, Partition partition, string location, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator, Stream stream)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: location
+      type: System.String
+      description: Source location associated with stream from which the ModelRoot instance is to be loaded. Usually a file path, but can be any string, including null.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    - id: stream
+      type: System.IO.Stream
+      description: The Stream from which the ModelRoot will be deserialized.
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModel(serializationResult As SerializationResult, partition As Partition, location As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator, stream As Stream) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  id: TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: TryGetEncoding(XmlReader, out Encoding)
+  nameWithType: EFModelSerializationHelperBase.TryGetEncoding(XmlReader, out Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader, out System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryGetEncoding
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 539
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAttempts to return the encoding used by the reader.\n"
+  remarks: "\nThe reader will be positioned at the start of the document when calling this method.\n"
+  example: []
+  syntax:
+    content: protected virtual bool TryGetEncoding(XmlReader reader, out Encoding encoding)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function TryGetEncoding(reader As XmlReader, ByRef encoding As Encoding) As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding*
+  nameWithType.vb: EFModelSerializationHelperBase.TryGetEncoding(XmlReader, ByRef Encoding)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader, ByRef System.Text.Encoding)
+  name.vb: TryGetEncoding(XmlReader, ByRef Encoding)
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  id: SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModel(SerializationResult, ModelRoot, String)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 564
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given model root to the given file, with default encoding (UTF-8), and optional properties with default value will not\nbe written out.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: fileName
+      type: System.String
+      description: Name of the file in which the ModelRoot instance will be saved.
+    content.vb: Public Overridable Sub SaveModel(serializationResult As SerializationResult, modelRoot As ModelRoot, fileName As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  id: SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModel(SerializationResult, ModelRoot, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 576
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given model to the given file, with default encoding (UTF-8).\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: fileName
+      type: System.String
+      description: Name of the file in which the ModelRoot instance will be saved.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveModel(serializationResult As SerializationResult, modelRoot As ModelRoot, fileName As String, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  id: SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModel(SerializationResult, ModelRoot, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, System.Text.Encoding, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModel
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 589
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given model root to the given file, with specified encoding.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: fileName
+      type: System.String
+      description: Name of the file in which the ModelRoot instance will be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the ModelRoot instance.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveModel(serializationResult As SerializationResult, modelRoot As ModelRoot, fileName As String, encoding As Encoding, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  id: CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CreateModelHelper(Partition)
+  nameWithType: EFModelSerializationHelperBase.CreateModelHelper(Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateModelHelper
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 699
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper method to create and initialize a new ModelRoot.\n"
+  example: []
+  syntax:
+    content: protected virtual ModelRoot CreateModelHelper(Partition modelPartition)
+    parameters:
+    - id: modelPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+    content.vb: Protected Overridable Function CreateModelHelper(modelPartition As Partition) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModelAndDiagram(Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store, System.String, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 723
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance and its associated diagram file into the default partition of the given store, and ignore serialization result.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModelAndDiagram(Store store, string modelFileName, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: The new ModelRoot instance will be created into the default partition of this store.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file from which the EFModelDiagram instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModelAndDiagram(store As Store, modelFileName As String, diagramFileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModelAndDiagram(SerializationResult, Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(SerializationResult, Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Store, System.String, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 747
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance and its associated diagram file into the default partition of the given store.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModelAndDiagram(SerializationResult serializationResult, Store store, string modelFileName, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: The new ModelRoot instance will be created into the default partition of this store.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file from which the EFModelDiagram instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModelAndDiagram(serializationResult As SerializationResult, store As Store, modelFileName As String, diagramFileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  id: LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 778
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance and its associated diagram file.\n"
+  example: []
+  syntax:
+    content: public virtual ModelRoot LoadModelAndDiagram(SerializationResult serializationResult, Partition modelPartition, string modelFileName, Partition diagramPartition, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: modelPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file from which the ModelRoot instance will be deserialized.
+    - id: diagramPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new EFModelDiagram instance will be created.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file from which the EFModelDiagram instance will be deserialized.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overridable Function LoadModelAndDiagram(serializationResult As SerializationResult, modelPartition As Partition, modelFileName As String, diagramPartition As Partition, diagramFileName As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator) As ModelRoot
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CreateDiagramHelper(Partition, ModelElement)
+  nameWithType: EFModelSerializationHelperBase.CreateDiagramHelper(Partition, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateDiagramHelper
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 933
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper method to create and initialize a new EFModelDiagram.\n"
+  example: []
+  syntax:
+    content: protected virtual EFModelDiagram CreateDiagramHelper(Partition diagramPartition, ModelElement modelRoot)
+    parameters:
+    - id: diagramPartition
+      type: Microsoft.VisualStudio.Modeling.Partition
+    - id: modelRoot
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    content.vb: Protected Overridable Function CreateDiagramHelper(diagramPartition As Partition, modelRoot As ModelElement) As EFModelDiagram
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  id: SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 950
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given diagram to the given file, with default encoding (UTF-8), and optional properties with default value will not\nbe written out.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file in which the CanonicalSampleRoot instance will be saved.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    content.vb: Public Overridable Sub SaveModelAndDiagram(serializationResult As SerializationResult, modelRoot As ModelRoot, modelFileName As String, diagram As EFModelDiagram, diagramFileName As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  id: SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 964
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given diagram to the given file, with default encoding (UTF-8).\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file in which the CanonicalSampleRoot instance will be saved.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveModelAndDiagram(serializationResult As SerializationResult, modelRoot As ModelRoot, modelFileName As String, diagram As EFModelDiagram, diagramFileName As String, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  id: SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Text.Encoding, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveModelAndDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 979
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given ModelRoot and EFModelDiagram to the given files, with specified encoding.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: ModelRoot instance to be saved.
+    - id: modelFileName
+      type: System.String
+      description: Name of the file in which the CanonicalSampleRoot instance will be saved.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the diagram.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveModelAndDiagram(serializationResult As SerializationResult, modelRoot As ModelRoot, modelFileName As String, diagram As EFModelDiagram, diagramFileName As String, encoding As Encoding, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  id: SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1039
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given diagram to the given file, with default encoding (UTF-8), and optional properties with default value will not\nbe written out.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    content.vb: Public Overridable Sub SaveDiagram(serializationResult As SerializationResult, diagram As EFModelDiagram, diagramFileName As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  id: SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1051
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given diagram to the given file, with default encoding (UTF-8).\n"
+  example: []
+  syntax:
+    content: public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveDiagram(serializationResult As SerializationResult, diagram As EFModelDiagram, diagramFileName As String, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  id: SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Text.Encoding, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SaveDiagram
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1064
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSaves the given EFModelDiagram to the given file, with specified encoding.\n"
+  example: []
+  syntax:
+    content: public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the save operation.
+    - id: diagram
+      type: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+      description: EFModelDiagram to be saved.
+    - id: diagramFileName
+      type: System.String
+      description: Name of the file in which the diagram will be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the diagram.
+    - id: writeOptionalPropertiesWithDefaultValue
+      type: System.Boolean
+      description: Whether optional properties with default value will be saved.
+    content.vb: Public Overridable Sub SaveDiagram(serializationResult As SerializationResult, diagram As EFModelDiagram, diagramFileName As String, encoding As Encoding, writeOptionalPropertiesWithDefaultValue As Boolean)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  id: ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  nameWithType: EFModelSerializationHelperBase.ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ReadRootElement
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1105
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nRead an element from the root of XML.\n"
+  example: []
+  syntax:
+    content: protected virtual void ReadRootElement(SerializationContext serializationContext, ModelElement rootElement, XmlReader reader, ISchemaResolver schemaResolver)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: rootElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: In-memory element instance that will get the deserialized data.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader to read serialized data from.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+    content.vb: Protected Overridable Sub ReadRootElement(serializationContext As SerializationContext, rootElement As ModelElement, reader As XmlReader, schemaResolver As ISchemaResolver)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  id: WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: EFModelSerializationHelperBase.WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: WriteRootElement
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1144
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nWrite an element as the root of XML.\n"
+  example: []
+  syntax:
+    content: public virtual void WriteRootElement(SerializationContext serializationContext, ModelElement rootElement, XmlWriter writer)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: rootElement
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Root element instance that will be serialized.
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: XmlWriter to write serialized data to.
+    content.vb: Public Overridable Sub WriteRootElement(serializationContext As SerializationContext, rootElement As ModelElement, writer As XmlWriter)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  id: CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CheckVersion(SerializationContext, XmlReader)
+  nameWithType: EFModelSerializationHelperBase.CheckVersion(SerializationContext, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CheckVersion
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1181
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nChecks the version of the file being read.\n"
+  example: []
+  syntax:
+    content: protected virtual void CheckVersion(SerializationContext serializationContext, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: Reader for the file being read. The reader is positioned at the open tag of the root element being read.
+    content.vb: Protected Overridable Sub CheckVersion(serializationContext As SerializationContext, reader As XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  id: TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: TryCreateValidatingReader(ISchemaResolver, XmlReader, SerializationContext)
+  nameWithType: EFModelSerializationHelperBase.TryCreateValidatingReader(ISchemaResolver, XmlReader, SerializationContext)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.SerializationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TryCreateValidatingReader
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1226
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAttempts to return a validating XML reader\n"
+  example: []
+  syntax:
+    content: protected virtual XmlReader TryCreateValidatingReader(ISchemaResolver schemaResolver, XmlReader reader, SerializationContext serializationContext)
+    parameters:
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    - id: reader
+      type: System.Xml.XmlReader
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+    return:
+      type: System.Xml.XmlReader
+      description: >-
+        If all of the schema for registered serializers and all of the schema referenced in the file can be resolved,
+
+        then a validating reader is returned. Otherwise, the supplied reader is returned.
+
+        The serialization context will contain warning messages for all schema that could not be resolved.
+    content.vb: Protected Overridable Function TryCreateValidatingReader(schemaResolver As ISchemaResolver, reader As XmlReader, serializationContext As SerializationContext) As XmlReader
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  id: ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ResolveSchema(String, XmlSchemaSet, ISchemaResolver, XmlReader, SerializationContext)
+  nameWithType: EFModelSerializationHelperBase.ResolveSchema(String, XmlSchemaSet, ISchemaResolver, XmlReader, SerializationContext)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String, System.Xml.Schema.XmlSchemaSet, Microsoft.VisualStudio.Modeling.ISchemaResolver, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.SerializationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResolveSchema
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1276
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAttempts to resolve the supplied schema namespace\n"
+  remarks: "If the schema can be resolved it is added to the supplied schema set. Otherwise, a \nwarning will be written to serializationContext.\n"
+  example: []
+  syntax:
+    content: protected static bool ResolveSchema(string targetNamespace, XmlSchemaSet schemaSet, ISchemaResolver schemaResolver, XmlReader reader, SerializationContext serializationContext)
+    parameters:
+    - id: targetNamespace
+      type: System.String
+    - id: schemaSet
+      type: System.Xml.Schema.XmlSchemaSet
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    - id: reader
+      type: System.Xml.XmlReader
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+    return:
+      type: System.Boolean
+      description: A flag indicating whether the schema was resolved or not
+    content.vb: Protected Shared Function ResolveSchema(targetNamespace As String, schemaSet As XmlSchemaSet, schemaResolver As ISchemaResolver, reader As XmlReader, serializationContext As SerializationContext) As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  id: GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetSerializedModelString(ModelRoot, Encoding)
+  nameWithType: EFModelSerializationHelperBase.GetSerializedModelString(ModelRoot, Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetSerializedModelString
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1352
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturn the model in XML format\n"
+  example: []
+  syntax:
+    content: public virtual string GetSerializedModelString(ModelRoot modelRoot, Encoding encoding)
+    parameters:
+    - id: modelRoot
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: Root instance to be saved.
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encoding to use when saving the root instance.
+    return:
+      type: System.String
+      description: Model in XML form
+    content.vb: Public Overridable Function GetSerializedModelString(modelRoot As ModelRoot, encoding As Encoding) As String
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  id: CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  langs:
+  - csharp
+  - vb
+  name: CheckForOrphanedShapes(Diagram, SerializationResult)
+  nameWithType: EFModelSerializationHelperBase.CheckForOrphanedShapes(Diagram, SerializationResult)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram, Microsoft.VisualStudio.Modeling.SerializationResult)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CheckForOrphanedShapes
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 1481
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGo through the diagram to find all shapes that are not connected to a model element. Some of them may be by design, the rest are out-of-sync shapes.\nWe want to make sure that all out-of-sync shapes are given a chance to fix themselves up, or post proper warning/error messages.\n"
+  example: []
+  syntax:
+    content: protected virtual void CheckForOrphanedShapes(Diagram diagram, SerializationResult serializationResult)
+    parameters:
+    - id: diagram
+      type: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+      description: The diagram of which the shapes are being checked.
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: SerializationResult to store warning/error in case an orphaned shape choose to do so.
+    content.vb: Protected Overridable Sub CheckForOrphanedShapes(diagram As Diagram, serializationResult As SerializationResult)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor
+  name: EFModelSerializationHelperBase
+  nameWithType: EFModelSerializationHelperBase.EFModelSerializationHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.EFModelSerializationHelperBase
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization
+  name: InitializeSerialization
+  nameWithType: EFModelSerializationHelperBase.InitializeSerialization
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext
+  name: InitializeSerializationContext
+  nameWithType: EFModelSerializationHelperBase.InitializeSerializationContext
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: Microsoft.VisualStudio.Modeling.SerializationContext
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory
+  name: GetDirectory
+  nameWithType: EFModelSerializationHelperBase.GetDirectory
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory
+- uid: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainXmlSerializerDirectory
+  nameWithType: DomainXmlSerializerDirectory
+  fullName: Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers
+  name: GetMonikerResolvers
+  nameWithType: EFModelSerializationHelperBase.GetMonikerResolvers
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers
+- uid: System.Collections.Generic.IDictionary{System.Guid,Microsoft.VisualStudio.Modeling.IMonikerResolver}
+  commentId: T:System.Collections.Generic.IDictionary{System.Guid,Microsoft.VisualStudio.Modeling.IMonikerResolver}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<Guid, IMonikerResolver>
+  nameWithType: IDictionary<Guid, IMonikerResolver>
+  fullName: System.Collections.Generic.IDictionary<System.Guid, Microsoft.VisualStudio.Modeling.IMonikerResolver>
+  nameWithType.vb: IDictionary(Of Guid, IMonikerResolver)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.Guid, Microsoft.VisualStudio.Modeling.IMonikerResolver)
+  name.vb: IDictionary(Of Guid, IMonikerResolver)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.IMonikerResolver
+    name: IMonikerResolver
+    nameWithType: IMonikerResolver
+    fullName: Microsoft.VisualStudio.Modeling.IMonikerResolver
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.IMonikerResolver
+    name: IMonikerResolver
+    nameWithType: IMonikerResolver
+    fullName: Microsoft.VisualStudio.Modeling.IMonikerResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions
+  name: WriteExtensions
+  nameWithType: EFModelSerializationHelperBase.WriteExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: System.Xml.XmlWriter
+  commentId: T:System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions
+  name: ReadExtensions
+  nameWithType: EFModelSerializationHelperBase.ReadExtensions
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions
+- uid: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  name: LoadModel
+  nameWithType: EFModelSerializationHelperBase.LoadModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+  commentId: T:Microsoft.VisualStudio.Modeling.ISchemaResolver
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ISchemaResolver
+  nameWithType: ISchemaResolver
+  fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+  commentId: T:Microsoft.VisualStudio.Modeling.Validation.ValidationController
+  parent: Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: ValidationController
+  nameWithType: ValidationController
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+- uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+  commentId: T:Microsoft.VisualStudio.Modeling.ISerializerLocator
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ISerializerLocator
+  nameWithType: ISerializerLocator
+  fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+- uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelRoot
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelRoot
+  nameWithType: ModelRoot
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+- uid: Microsoft.VisualStudio.Modeling.Validation
+  commentId: N:Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Validation
+  nameWithType: Microsoft.VisualStudio.Modeling.Validation
+  fullName: Microsoft.VisualStudio.Modeling.Validation
+- uid: Microsoft.VisualStudio.Modeling.SerializationResult
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationResult
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationResult
+  nameWithType: SerializationResult
+  fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding
+  name: TryGetEncoding
+  nameWithType: EFModelSerializationHelperBase.TryGetEncoding
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  name: SaveModel
+  nameWithType: EFModelSerializationHelperBase.SaveModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper
+  name: CreateModelHelper
+  nameWithType: EFModelSerializationHelperBase.CreateModelHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  name: LoadModelAndDiagram
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper
+  name: CreateDiagramHelper
+  nameWithType: EFModelSerializationHelperBase.CreateDiagramHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelDiagram
+  nameWithType: EFModelDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  name: SaveModelAndDiagram
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  name: SaveDiagram
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement
+  name: ReadRootElement
+  nameWithType: EFModelSerializationHelperBase.ReadRootElement
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement
+  name: WriteRootElement
+  nameWithType: EFModelSerializationHelperBase.WriteRootElement
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion
+  name: CheckVersion
+  nameWithType: EFModelSerializationHelperBase.CheckVersion
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader
+  name: TryCreateValidatingReader
+  nameWithType: EFModelSerializationHelperBase.TryCreateValidatingReader
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema
+  name: ResolveSchema
+  nameWithType: EFModelSerializationHelperBase.ResolveSchema
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema
+- uid: System.Xml.Schema.XmlSchemaSet
+  commentId: T:System.Xml.Schema.XmlSchemaSet
+  parent: System.Xml.Schema
+  isExternal: true
+  name: XmlSchemaSet
+  nameWithType: XmlSchemaSet
+  fullName: System.Xml.Schema.XmlSchemaSet
+- uid: System.Xml.Schema
+  commentId: N:System.Xml.Schema
+  isExternal: true
+  name: System.Xml.Schema
+  nameWithType: System.Xml.Schema
+  fullName: System.Xml.Schema
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString
+  name: GetSerializedModelString
+  nameWithType: EFModelSerializationHelperBase.GetSerializedModelString
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes
+  name: CheckForOrphanedShapes
+  nameWithType: EFModelSerializationHelperBase.CheckForOrphanedShapes
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes
+- uid: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+  commentId: T:Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+  parent: Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: Diagram
+  nameWithType: Diagram
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+- uid: Microsoft.VisualStudio.Modeling.Diagrams
+  commentId: N:Microsoft.VisualStudio.Modeling.Diagrams
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Diagrams
+  nameWithType: Microsoft.VisualStudio.Modeling.Diagrams
+  fullName: Microsoft.VisualStudio.Modeling.Diagrams

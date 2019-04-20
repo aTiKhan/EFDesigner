@@ -1,0 +1,960 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider
+  id: ModelAttributeNameProvider
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ModelAttributeNameProvider
+  nameWithType: ModelAttributeNameProvider
+  fullName: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Name Providers/ModelAttributeNameProvider.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelAttributeNameProvider
+    path: ../Dsl/CustomCode/Name Providers/ModelAttributeNameProvider.cs
+    startLine: 9
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: 'public class ModelAttributeNameProvider : ElementNameProvider'
+    content.vb: >-
+      Public Class ModelAttributeNameProvider
+          Inherits ElementNameProvider
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.ModelElement})
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.Modeling.ModelElement})
+  - Microsoft.VisualStudio.Modeling.ElementNameProvider.DomainProperty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  id: SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider
+  langs:
+  - csharp
+  - vb
+  name: SetUniqueName(ModelElement, ModelElement, DomainRoleInfo, String)
+  nameWithType: ModelAttributeNameProvider.SetUniqueName(ModelElement, ModelElement, DomainRoleInfo, String)
+  fullName: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Name Providers/ModelAttributeNameProvider.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SetUniqueName
+    path: ../Dsl/CustomCode/Name Providers/ModelAttributeNameProvider.cs
+    startLine: 11
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public override void SetUniqueName(ModelElement element, ModelElement container, DomainRoleInfo embeddedDomainRole, string baseName)
+    parameters:
+    - id: element
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    - id: container
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+    - id: embeddedDomainRole
+      type: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    - id: baseName
+      type: System.String
+    content.vb: Public Overrides Sub SetUniqueName(element As ModelElement, container As ModelElement, embeddedDomainRole As DomainRoleInfo, baseName As String)
+  overridden: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  overload: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementNameProvider
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementNameProvider
+  nameWithType: ElementNameProvider
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: GetElementNames(ModelElement, DomainRoleInfo, ModelElement)
+  nameWithType: ElementNameProvider.GetElementNames(ModelElement, DomainRoleInfo, ModelElement)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetElementNames
+    nameWithType: ElementNameProvider.GetElementNames
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: GetElementNames
+    nameWithType: ElementNameProvider.GetElementNames
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetElementNames
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: SetUniqueName(ElementLink, DomainRoleInfo, String)
+  nameWithType: ElementNameProvider.SetUniqueName(ElementLink, DomainRoleInfo, String)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+    name: SetUniqueName
+    nameWithType: ElementNameProvider.SetUniqueName
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ElementLink,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+    name: SetUniqueName
+    nameWithType: ElementNameProvider.SetUniqueName
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: GetLinkNames(ModelElement, DomainRoleInfo, ElementLink)
+  nameWithType: ElementNameProvider.GetLinkNames(ModelElement, DomainRoleInfo, ElementLink)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+    name: GetLinkNames
+    nameWithType: ElementNameProvider.GetLinkNames
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,Microsoft.VisualStudio.Modeling.ElementLink)
+    name: GetLinkNames
+    nameWithType: ElementNameProvider.GetLinkNames
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.GetLinkNames
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ElementLink
+    name: ElementLink
+    nameWithType: ElementLink
+    fullName: Microsoft.VisualStudio.Modeling.ElementLink
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.ModelElement})
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.ModelElement})
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: CustomSetUniqueNameCore(ModelElement, String, IList<ModelElement>)
+  nameWithType: ElementNameProvider.CustomSetUniqueNameCore(ModelElement, String, IList<ModelElement>)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Collections.Generic.IList<Microsoft.VisualStudio.Modeling.ModelElement>)
+  nameWithType.vb: ElementNameProvider.CustomSetUniqueNameCore(ModelElement, String, IList(Of ModelElement))
+  fullName.vb: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Collections.Generic.IList(Of Microsoft.VisualStudio.Modeling.ModelElement))
+  name.vb: CustomSetUniqueNameCore(ModelElement, String, IList(Of ModelElement))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: CustomSetUniqueNameCore
+    nameWithType: ElementNameProvider.CustomSetUniqueNameCore
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IList{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: CustomSetUniqueNameCore
+    nameWithType: ElementNameProvider.CustomSetUniqueNameCore
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.CustomSetUniqueNameCore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.Modeling.ModelElement})
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.Modeling.ModelElement})
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: SetUniqueNameCore(ModelElement, String, IDictionary<String, ModelElement>)
+  nameWithType: ElementNameProvider.SetUniqueNameCore(ModelElement, String, IDictionary<String, ModelElement>)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Collections.Generic.IDictionary<System.String, Microsoft.VisualStudio.Modeling.ModelElement>)
+  nameWithType.vb: ElementNameProvider.SetUniqueNameCore(ModelElement, String, IDictionary(Of String, ModelElement))
+  fullName.vb: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement, System.String, System.Collections.Generic.IDictionary(Of System.String, Microsoft.VisualStudio.Modeling.ModelElement))
+  name.vb: SetUniqueNameCore(ModelElement, String, IDictionary(Of String, ModelElement))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.Modeling.ModelElement})
+    name: SetUniqueNameCore
+    nameWithType: ElementNameProvider.SetUniqueNameCore
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore(Microsoft.VisualStudio.Modeling.ModelElement,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.Modeling.ModelElement})
+    name: SetUniqueNameCore
+    nameWithType: ElementNameProvider.SetUniqueNameCore
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueNameCore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.DomainProperty
+  commentId: P:Microsoft.VisualStudio.Modeling.ElementNameProvider.DomainProperty
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: DomainProperty
+  nameWithType: ElementNameProvider.DomainProperty
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.DomainProperty
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  commentId: M:Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+  parent: Microsoft.VisualStudio.Modeling.ElementNameProvider
+  isExternal: true
+  name: SetUniqueName(ModelElement, ModelElement, DomainRoleInfo, String)
+  nameWithType: ElementNameProvider.SetUniqueName(ModelElement, ModelElement, DomainRoleInfo, String)
+  fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+    name: SetUniqueName
+    nameWithType: ElementNameProvider.SetUniqueName
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName(Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.DomainRoleInfo,System.String)
+    name: SetUniqueName
+    nameWithType: ElementNameProvider.SetUniqueName
+    fullName: Microsoft.VisualStudio.Modeling.ElementNameProvider.SetUniqueName
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    name: DomainRoleInfo
+    nameWithType: DomainRoleInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName
+  name: SetUniqueName
+  nameWithType: ModelAttributeNameProvider.SetUniqueName
+  fullName: Sawczyn.EFDesigner.EFModel.ModelAttributeNameProvider.SetUniqueName
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainRoleInfo
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainRoleInfo
+  nameWithType: DomainRoleInfo
+  fullName: Microsoft.VisualStudio.Modeling.DomainRoleInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,2080 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EFModelSerializationHelperBase
+   | Entity Framework Visual Editor API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EFModelSerializationHelperBase
+   | Entity Framework Visual Editor API ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../images/help.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/VSMarketLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase">
+  
+  
+  <h1 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase" class="text-break">Class EFModelSerializationHelperBase
+  </h1>
+  <div class="markdown level0 summary"><p>Helper class for serializing and deserializing EFModel models.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EFModelSerializationHelperBase</span></div>
+      <div class="level2"><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.html">EFModelSerializationHelper</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sawczyn.EFDesigner.EFModel.html">Sawczyn.EFDesigner.EFModel</a></h6>
+  <h6><strong>Assembly</strong>: Sawczyn.EFDesigner.EFModel.Dsl.dll</h6>
+  <h5 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class EFModelSerializationHelperBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase__ctor.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L44">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase__ctor_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase__ctor" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.#ctor">EFModelSerializationHelperBase()</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EFModelSerializationHelperBase()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckForOrphanedShapes_Microsoft_VisualStudio_Modeling_Diagrams_Diagram_Microsoft_VisualStudio_Modeling_SerializationResult_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram%2CMicrosoft.VisualStudio.Modeling.SerializationResult)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1482">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckForOrphanedShapes_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckForOrphanedShapes_Microsoft_VisualStudio_Modeling_Diagrams_Diagram_Microsoft_VisualStudio_Modeling_SerializationResult_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)">CheckForOrphanedShapes(Diagram, SerializationResult)</h4>
+  <div class="markdown level1 summary"><p>Go through the diagram to find all shapes that are not connected to a model element. Some of them may be by design, the rest are out-of-sync shapes.
+We want to make sure that all out-of-sync shapes are given a chance to fix themselves up, or post proper warning/error messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckForOrphanedShapes(Diagram diagram, SerializationResult serializationResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Diagrams.Diagram</span></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>The diagram of which the shapes are being checked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>SerializationResult to store warning/error in case an orphaned shape choose to do so.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckVersion_Microsoft_VisualStudio_Modeling_SerializationContext_System_Xml_XmlReader_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext%2CSystem.Xml.XmlReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1182">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckVersion_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CheckVersion_Microsoft_VisualStudio_Modeling_SerializationContext_System_Xml_XmlReader_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)">CheckVersion(SerializationContext, XmlReader)</h4>
+  <div class="markdown level1 summary"><p>Checks the version of the file being read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckVersion(SerializationContext serializationContext, XmlReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>Serialization context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reader for the file being read. The reader is positioned at the open tag of the root element being read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateDiagramHelper_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_ModelElement_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition%2CMicrosoft.VisualStudio.Modeling.ModelElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L934">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateDiagramHelper_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateDiagramHelper_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_ModelElement_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)">CreateDiagramHelper(Partition, ModelElement)</h4>
+  <div class="markdown level1 summary"><p>Helper method to create and initialize a new EFModelDiagram.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual EFModelDiagram CreateDiagramHelper(Partition diagramPartition, ModelElement modelRoot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">diagramPartition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateModelHelper_Microsoft_VisualStudio_Modeling_Partition_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L700">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateModelHelper_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_CreateModelHelper_Microsoft_VisualStudio_Modeling_Partition_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)">CreateModelHelper(Partition)</h4>
+  <div class="markdown level1 summary"><p>Helper method to create and initialize a new ModelRoot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ModelRoot CreateModelHelper(Partition modelPartition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">modelPartition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetDirectory_Microsoft_VisualStudio_Modeling_Store_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L90">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetDirectory_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetDirectory_Microsoft_VisualStudio_Modeling_Store_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)">GetDirectory(Store)</h4>
+  <div class="markdown level1 summary"><p>Return the directory of serializers to use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DomainXmlSerializerDirectory GetDirectory(Store store)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.DomainXmlSerializerDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetMonikerResolvers_Microsoft_VisualStudio_Modeling_Store_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L100">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetMonikerResolvers_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetMonikerResolvers_Microsoft_VisualStudio_Modeling_Store_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)">GetMonikerResolvers(Store)</h4>
+  <div class="markdown level1 summary"><p>This method returns the moniker resolvers for each of the domain models in the store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IDictionary&lt;Guid, IMonikerResolver&gt; GetMonikerResolvers(Store store)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>Store on which the moniker resolvers are set up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Guid</span>, <span class="xref">Microsoft.VisualStudio.Modeling.IMonikerResolver</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetSerializedModelString_Sawczyn_EFDesigner_EFModel_ModelRoot_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1353">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetSerializedModelString_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_GetSerializedModelString_Sawczyn_EFDesigner_EFModel_ModelRoot_System_Text_Encoding_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)">GetSerializedModelString(ModelRoot, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Return the model in XML format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetSerializedModelString(ModelRoot modelRoot, Encoding encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>Root instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to use when saving the root instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Model in XML form</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerialization_Microsoft_VisualStudio_Modeling_Store_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L54">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerialization_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerialization_Microsoft_VisualStudio_Modeling_Store_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)">InitializeSerialization(Store)</h4>
+  <div class="markdown level1 summary"><p>Ensure that moniker resolvers and domain element serializers are installed properly on the given store, 
+so that deserialization can be carried out correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeSerialization(Store store)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>Store on which moniker resolvers will be set up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerializationContext_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_SerializationContext_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition%2CMicrosoft.VisualStudio.Modeling.SerializationContext%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L83">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerializationContext_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_InitializeSerializationContext_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_SerializationContext_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)">InitializeSerializationContext(Partition, SerializationContext, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeSerializationContext(Partition partition, SerializationContext serializationContext, bool isLoading)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">partition</span></td>
+        <td><p>The partition being serialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>The current serialization context instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLoading</span></td>
+        <td><p>Flag to indicate whether the file is being loaded or saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CMicrosoft.VisualStudio.Modeling.Partition%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L384">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModel(SerializationResult serializationResult, Partition partition, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the load operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">partition</span></td>
+        <td><p>Partition in which the new ModelRoot instance will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CMicrosoft.VisualStudio.Modeling.Partition%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator%2CSystem.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L417">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_System_IO_Stream_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)">LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModel(SerializationResult serializationResult, Partition partition, string location, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator, Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the load operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">partition</span></td>
+        <td><p>Partition in which the new ModelRoot instance will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>Source location associated with stream from which the ModelRoot instance is to be loaded. Usually a file path, but can be any string, including null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The Stream from which the ModelRoot will be deserialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Store_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CMicrosoft.VisualStudio.Modeling.Store%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L356">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Store_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModel(SerializationResult, Store, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance into the default partition of the given store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModel(SerializationResult serializationResult, Store store, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the load operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>The new ModelRoot instance will be created into the default partition of this store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_Store_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L328">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModel_Microsoft_VisualStudio_Modeling_Store_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModel(Store, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance into the default partition of the given store, and ignore serialization result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModel(Store store, string fileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>The new ModelRoot instance will be created into the default partition of this store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CMicrosoft.VisualStudio.Modeling.Partition%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.Partition%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L779">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_Partition_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance and its associated diagram file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModelAndDiagram(SerializationResult serializationResult, Partition modelPartition, string modelFileName, Partition diagramPartition, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the load operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">modelPartition</span></td>
+        <td><p>Partition in which the new ModelRoot instance will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">diagramPartition</span></td>
+        <td><p>Partition in which the new EFModelDiagram instance will be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file from which the EFModelDiagram instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Store_System_String_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CMicrosoft.VisualStudio.Modeling.Store%2CSystem.String%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L748">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Microsoft_VisualStudio_Modeling_Store_System_String_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModelAndDiagram(SerializationResult, Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance and its associated diagram file into the default partition of the given store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModelAndDiagram(SerializationResult serializationResult, Store store, string modelFileName, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the load operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>The new ModelRoot instance will be created into the default partition of this store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file from which the EFModelDiagram instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_Store_System_String_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store%2CSystem.String%2CSystem.String%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CMicrosoft.VisualStudio.Modeling.Validation.ValidationController%2CMicrosoft.VisualStudio.Modeling.ISerializerLocator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L724">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_LoadModelAndDiagram_Microsoft_VisualStudio_Modeling_Store_System_String_System_String_Microsoft_VisualStudio_Modeling_ISchemaResolver_Microsoft_VisualStudio_Modeling_Validation_ValidationController_Microsoft_VisualStudio_Modeling_ISerializerLocator_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)">LoadModelAndDiagram(Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)</h4>
+  <div class="markdown level1 summary"><p>Loads a ModelRoot instance and its associated diagram file into the default partition of the given store, and ignore serialization result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelRoot LoadModelAndDiagram(Store store, string modelFileName, string diagramFileName, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>The new ModelRoot instance will be created into the default partition of this store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file from which the ModelRoot instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file from which the EFModelDiagram instance will be deserialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).
+If null is passed, schema validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Validation.ValidationController</span></td>
+        <td><span class="parametername">validationController</span></td>
+        <td><p>A ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null
+is passed, load-time validation will not be performed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISerializerLocator</span></td>
+        <td><span class="parametername">serializerLocator</span></td>
+        <td><p>An ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><p>The loaded ModelRoot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlReader_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext%2CMicrosoft.VisualStudio.Modeling.ModelElement%2CSystem.Xml.XmlReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L160">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadExtensions_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlReader_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)">ReadExtensions(SerializationContext, ModelElement, XmlReader)</h4>
+  <div class="markdown level1 summary"><p>Read any extension data written inside this XML element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ReadExtensions(SerializationContext serializationContext, ModelElement element, XmlReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>The current serialization context instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>In-memory ModelElement instance that is currently being read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reader for the file being read. The reader is positioned after the attributes of the specified element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlReader__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method reads any extension element data, regardless of whether it relates the current
+element or not. There may be no additional data for the specified element.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadRootElement_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_ISchemaResolver_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext%2CMicrosoft.VisualStudio.Modeling.ModelElement%2CSystem.Xml.XmlReader%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1106">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadRootElement_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ReadRootElement_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_ISchemaResolver_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)">ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)</h4>
+  <div class="markdown level1 summary"><p>Read an element from the root of XML.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ReadRootElement(SerializationContext serializationContext, ModelElement rootElement, XmlReader reader, ISchemaResolver schemaResolver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>Serialization context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></td>
+        <td><span class="parametername">rootElement</span></td>
+        <td><p>In-memory element instance that will get the deserialized data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>XmlReader to read serialized data from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td><p>An ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ResolveSchema_System_String_System_Xml_Schema_XmlSchemaSet_Microsoft_VisualStudio_Modeling_ISchemaResolver_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_SerializationContext_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String%2CSystem.Xml.Schema.XmlSchemaSet%2CMicrosoft.VisualStudio.Modeling.ISchemaResolver%2CSystem.Xml.XmlReader%2CMicrosoft.VisualStudio.Modeling.SerializationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1277">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ResolveSchema_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ResolveSchema_System_String_System_Xml_Schema_XmlSchemaSet_Microsoft_VisualStudio_Modeling_ISchemaResolver_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_SerializationContext_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)">ResolveSchema(String, XmlSchemaSet, ISchemaResolver, XmlReader, SerializationContext)</h4>
+  <div class="markdown level1 summary"><p>Attempts to resolve the supplied schema namespace</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ResolveSchema(string targetNamespace, XmlSchemaSet schemaSet, ISchemaResolver schemaResolver, XmlReader reader, SerializationContext serializationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetNamespace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.Schema.XmlSchemaSet</span></td>
+        <td><span class="parametername">schemaSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A flag indicating whether the schema was resolved or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_ResolveSchema_System_String_System_Xml_Schema_XmlSchemaSet_Microsoft_VisualStudio_Modeling_ISchemaResolver_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_SerializationContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the schema can be resolved it is added to the supplied schema set. Otherwise, a 
+warning will be written to serializationContext.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1040">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)">SaveDiagram(SerializationResult, EFModelDiagram, String)</h4>
+  <div class="markdown level1 summary"><p>Saves the given diagram to the given file, with default encoding (UTF-8), and optional properties with default value will not
+be written out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1052">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)">SaveDiagram(SerializationResult, EFModelDiagram, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given diagram to the given file, with default encoding (UTF-8).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Text_Encoding_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String%2CSystem.Text.Encoding%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1065">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Text_Encoding_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)">SaveDiagram(SerializationResult, EFModelDiagram, String, Encoding, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given EFModelDiagram to the given file, with specified encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveDiagram(SerializationResult serializationResult, EFModelDiagram diagram, string diagramFileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to use when saving the diagram.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L565">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)">SaveModel(SerializationResult, ModelRoot, String)</h4>
+  <div class="markdown level1 summary"><p>Saves the given model root to the given file, with default encoding (UTF-8), and optional properties with default value will not
+be written out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file in which the ModelRoot instance will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L577">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)">SaveModel(SerializationResult, ModelRoot, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given model to the given file, with default encoding (UTF-8).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file in which the ModelRoot instance will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_System_Text_Encoding_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String%2CSystem.Text.Encoding%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L590">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModel_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_System_Text_Encoding_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)">SaveModel(SerializationResult, ModelRoot, String, Encoding, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given model root to the given file, with specified encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModel(SerializationResult serializationResult, ModelRoot modelRoot, string fileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file in which the ModelRoot instance will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to use when saving the ModelRoot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L951">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)">SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String)</h4>
+  <div class="markdown level1 summary"><p>Saves the given diagram to the given file, with default encoding (UTF-8), and optional properties with default value will not
+be written out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file in which the CanonicalSampleRoot instance will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L965">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)">SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given diagram to the given file, with default encoding (UTF-8).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file in which the CanonicalSampleRoot instance will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Text_Encoding_System_Boolean_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult%2CSawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String%2CSawczyn.EFDesigner.EFModel.EFModelDiagram%2CSystem.String%2CSystem.Text.Encoding%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L980">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_SaveModelAndDiagram_Microsoft_VisualStudio_Modeling_SerializationResult_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_Sawczyn_EFDesigner_EFModel_EFModelDiagram_System_String_System_Text_Encoding_System_Boolean_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)">SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Encoding, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the given ModelRoot and EFModelDiagram to the given files, with specified encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveModelAndDiagram(SerializationResult serializationResult, ModelRoot modelRoot, string modelFileName, EFModelDiagram diagram, string diagramFileName, Encoding encoding, bool writeOptionalPropertiesWithDefaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationResult</span></td>
+        <td><span class="parametername">serializationResult</span></td>
+        <td><p>Stores serialization result from the save operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>ModelRoot instance to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelFileName</span></td>
+        <td><p>Name of the file in which the CanonicalSampleRoot instance will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EFModelDiagram.html">EFModelDiagram</a></td>
+        <td><span class="parametername">diagram</span></td>
+        <td><p>EFModelDiagram to be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">diagramFileName</span></td>
+        <td><p>Name of the file in which the diagram will be saved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding to use when saving the diagram.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">writeOptionalPropertiesWithDefaultValue</span></td>
+        <td><p>Whether optional properties with default value will be saved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryCreateValidatingReader_Microsoft_VisualStudio_Modeling_ISchemaResolver_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_SerializationContext_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver%2CSystem.Xml.XmlReader%2CMicrosoft.VisualStudio.Modeling.SerializationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1227">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryCreateValidatingReader_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryCreateValidatingReader_Microsoft_VisualStudio_Modeling_ISchemaResolver_System_Xml_XmlReader_Microsoft_VisualStudio_Modeling_SerializationContext_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)">TryCreateValidatingReader(ISchemaResolver, XmlReader, SerializationContext)</h4>
+  <div class="markdown level1 summary"><p>Attempts to return a validating XML reader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual XmlReader TryCreateValidatingReader(ISchemaResolver schemaResolver, XmlReader reader, SerializationContext serializationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ISchemaResolver</span></td>
+        <td><span class="parametername">schemaResolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><p>If all of the schema for registered serializers and all of the schema referenced in the file can be resolved,
+then a validating reader is returned. Otherwise, the supplied reader is returned.
+The serialization context will contain warning messages for all schema that could not be resolved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryGetEncoding_System_Xml_XmlReader_System_Text_Encoding__.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader%2CSystem.Text.Encoding%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L540">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryGetEncoding_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryGetEncoding_System_Xml_XmlReader_System_Text_Encoding__" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)">TryGetEncoding(XmlReader, out Encoding)</h4>
+  <div class="markdown level1 summary"><p>Attempts to return the encoding used by the reader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryGetEncoding(XmlReader reader, out Encoding encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_TryGetEncoding_System_Xml_XmlReader_System_Text_Encoding___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The reader will be positioned at the start of the document when calling this method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlWriter_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext%2CMicrosoft.VisualStudio.Modeling.ModelElement%2CSystem.Xml.XmlWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L130">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteExtensions_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlWriter_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)">WriteExtensions(SerializationContext, ModelElement, XmlWriter)</h4>
+  <div class="markdown level1 summary"><p>Write extension element data inside the current XML element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteExtensions(SerializationContext serializationContext, ModelElement element, XmlWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>The current serialization context instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element whose attributes have just been written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>XmlWriter to write serialized data to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteExtensions_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlWriter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default implemenation is to write out all non-embedded extension elements,
+regardless of whether they relate to the current element or not.
+The additional data should be written as a series of one or more
+XML elements.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteRootElement_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlWriter_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext%2CMicrosoft.VisualStudio.Modeling.ModelElement%2CSystem.Xml.XmlWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L1145">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteRootElement_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase_WriteRootElement_Microsoft_VisualStudio_Modeling_SerializationContext_Microsoft_VisualStudio_Modeling_ModelElement_System_Xml_XmlWriter_" data-uid="Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)">WriteRootElement(SerializationContext, ModelElement, XmlWriter)</h4>
+  <div class="markdown level1 summary"><p>Write an element as the root of XML.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteRootElement(SerializationContext serializationContext, ModelElement rootElement, XmlWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.SerializationContext</span></td>
+        <td><span class="parametername">serializationContext</span></td>
+        <td><p>Serialization context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></td>
+        <td><span class="parametername">rootElement</span></td>
+        <td><p>Root element instance that will be serialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Xml.XmlWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>XmlWriter to write serialized data to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_EFModelSerializationHelperBase.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/SerializationHelper.cs/#L308" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright � 2019 Michael Sawczyn
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

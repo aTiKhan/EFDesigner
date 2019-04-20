@@ -1,4 +1,4 @@
-﻿namespace Sawczyn.EFDesigner.EFModel
+﻿namespace Sawczyn.EFDesigner.EFModel.Interfaces
 {
    public interface IDisplaysWarning
    {

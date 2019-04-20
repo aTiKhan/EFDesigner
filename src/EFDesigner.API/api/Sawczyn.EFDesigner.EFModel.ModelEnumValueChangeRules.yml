@@ -1,0 +1,747 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules
+  id: ModelEnumValueChangeRules
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: ModelEnumValueChangeRules
+  nameWithType: ModelEnumValueChangeRules
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Rules/ModelEnumValueChangeRules.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModelEnumValueChangeRules
+    path: ../Dsl/CustomCode/Rules/ModelEnumValueChangeRules.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: >-
+      [RuleOn(typeof(ModelEnumValue), FireTime = TimeToFire.TopLevelCommit)]
+
+      public class ModelEnumValueChangeRules : ChangeRule, IComparable, IComparable<Rule>
+    content.vb: >-
+      <RuleOn(GetType(ModelEnumValue), FireTime:=TimeToFire.TopLevelCommit)>
+
+      Public Class ModelEnumValueChangeRules
+          Inherits ChangeRule
+          Implements IComparable, IComparable(Of Rule)
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.Rule
+  - Microsoft.VisualStudio.Modeling.ChangeRule
+  implements:
+  - System.IComparable
+  - System.IComparable{Microsoft.VisualStudio.Modeling.Rule}
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+  - Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+  - Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+  - Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+  - Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+  - Microsoft.VisualStudio.Modeling.Rule.FireBefore
+  - Microsoft.VisualStudio.Modeling.Rule.IsEnabled
+  - Microsoft.VisualStudio.Modeling.Rule.FireImmediately
+  - Microsoft.VisualStudio.Modeling.Rule.FireOnLocalCommit
+  - Microsoft.VisualStudio.Modeling.Rule.FireOnTopLevelCommit
+  - Microsoft.VisualStudio.Modeling.Rule.FireTime
+  - Microsoft.VisualStudio.Modeling.Rule.Priority
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.RuleOnAttribute
+    ctor: Microsoft.VisualStudio.Modeling.RuleOnAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.ModelEnumValue
+    namedArguments:
+    - name: FireTime
+      type: Microsoft.VisualStudio.Modeling.TimeToFire
+      value: 2
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  commentId: M:Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  id: ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  parent: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules
+  langs:
+  - csharp
+  - vb
+  name: ElementPropertyChanged(ElementPropertyChangedEventArgs)
+  nameWithType: ModelEnumValueChangeRules.ElementPropertyChanged(ElementPropertyChangedEventArgs)
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Rules/ModelEnumValueChangeRules.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ElementPropertyChanged
+    path: ../Dsl/CustomCode/Rules/ModelEnumValueChangeRules.cs
+    startLine: 11
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public override void ElementPropertyChanged(ElementPropertyChangedEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+    content.vb: Public Overrides Sub ElementPropertyChanged(e As ElementPropertyChangedEventArgs)
+  overridden: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  overload: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.Rule
+  commentId: T:Microsoft.VisualStudio.Modeling.Rule
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Rule
+  nameWithType: Rule
+  fullName: Microsoft.VisualStudio.Modeling.Rule
+- uid: Microsoft.VisualStudio.Modeling.ChangeRule
+  commentId: T:Microsoft.VisualStudio.Modeling.ChangeRule
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ChangeRule
+  nameWithType: ChangeRule
+  fullName: Microsoft.VisualStudio.Modeling.ChangeRule
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.IComparable{Microsoft.VisualStudio.Modeling.Rule}
+  commentId: T:System.IComparable{Microsoft.VisualStudio.Modeling.Rule}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<Rule>
+  nameWithType: IComparable<Rule>
+  fullName: System.IComparable<Microsoft.VisualStudio.Modeling.Rule>
+  nameWithType.vb: IComparable(Of Rule)
+  fullName.vb: System.IComparable(Of Microsoft.VisualStudio.Modeling.Rule)
+  name.vb: IComparable(Of Rule)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+  commentId: M:Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Rule.GetHashCode()
+  fullName: Microsoft.VisualStudio.Modeling.Rule.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+    name: GetHashCode
+    nameWithType: Rule.GetHashCode
+    fullName: Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+    name: GetHashCode
+    nameWithType: Rule.GetHashCode
+    fullName: Microsoft.VisualStudio.Modeling.Rule.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+  commentId: M:Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: CompareTo(Object)
+  nameWithType: Rule.CompareTo(Object)
+  fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: Rule.CompareTo
+    fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: Rule.CompareTo
+    fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+  commentId: M:Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: CompareTo(Rule)
+  nameWithType: Rule.CompareTo(Rule)
+  fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+    name: CompareTo
+    nameWithType: Rule.CompareTo
+    fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.CompareTo(Microsoft.VisualStudio.Modeling.Rule)
+    name: CompareTo
+    nameWithType: Rule.CompareTo
+    fullName: Microsoft.VisualStudio.Modeling.Rule.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+  commentId: M:Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Rule.Equals(Object)
+  fullName: Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+    name: Equals
+    nameWithType: Rule.Equals
+    fullName: Microsoft.VisualStudio.Modeling.Rule.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.Equals(System.Object)
+    name: Equals
+    nameWithType: Rule.Equals
+    fullName: Microsoft.VisualStudio.Modeling.Rule.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+  commentId: M:Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: Equals(Rule)
+  nameWithType: Rule.Equals(Rule)
+  fullName: Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+    name: Equals
+    nameWithType: Rule.Equals
+    fullName: Microsoft.VisualStudio.Modeling.Rule.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.Rule.Equals(Microsoft.VisualStudio.Modeling.Rule)
+    name: Equals
+    nameWithType: Rule.Equals
+    fullName: Microsoft.VisualStudio.Modeling.Rule.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Rule
+    name: Rule
+    nameWithType: Rule
+    fullName: Microsoft.VisualStudio.Modeling.Rule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.Rule.FireBefore
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.FireBefore
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: FireBefore
+  nameWithType: Rule.FireBefore
+  fullName: Microsoft.VisualStudio.Modeling.Rule.FireBefore
+- uid: Microsoft.VisualStudio.Modeling.Rule.IsEnabled
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.IsEnabled
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: IsEnabled
+  nameWithType: Rule.IsEnabled
+  fullName: Microsoft.VisualStudio.Modeling.Rule.IsEnabled
+- uid: Microsoft.VisualStudio.Modeling.Rule.FireImmediately
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.FireImmediately
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: FireImmediately
+  nameWithType: Rule.FireImmediately
+  fullName: Microsoft.VisualStudio.Modeling.Rule.FireImmediately
+- uid: Microsoft.VisualStudio.Modeling.Rule.FireOnLocalCommit
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.FireOnLocalCommit
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: FireOnLocalCommit
+  nameWithType: Rule.FireOnLocalCommit
+  fullName: Microsoft.VisualStudio.Modeling.Rule.FireOnLocalCommit
+- uid: Microsoft.VisualStudio.Modeling.Rule.FireOnTopLevelCommit
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.FireOnTopLevelCommit
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: FireOnTopLevelCommit
+  nameWithType: Rule.FireOnTopLevelCommit
+  fullName: Microsoft.VisualStudio.Modeling.Rule.FireOnTopLevelCommit
+- uid: Microsoft.VisualStudio.Modeling.Rule.FireTime
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.FireTime
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: FireTime
+  nameWithType: Rule.FireTime
+  fullName: Microsoft.VisualStudio.Modeling.Rule.FireTime
+- uid: Microsoft.VisualStudio.Modeling.Rule.Priority
+  commentId: P:Microsoft.VisualStudio.Modeling.Rule.Priority
+  parent: Microsoft.VisualStudio.Modeling.Rule
+  isExternal: true
+  name: Priority
+  nameWithType: Rule.Priority
+  fullName: Microsoft.VisualStudio.Modeling.Rule.Priority
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  commentId: M:Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  parent: Microsoft.VisualStudio.Modeling.ChangeRule
+  isExternal: true
+  name: ElementPropertyChanged(ElementPropertyChangedEventArgs)
+  nameWithType: ChangeRule.ElementPropertyChanged(ElementPropertyChangedEventArgs)
+  fullName: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+    name: ElementPropertyChanged
+    nameWithType: ChangeRule.ElementPropertyChanged
+    fullName: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+    name: ElementPropertyChangedEventArgs
+    nameWithType: ElementPropertyChangedEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged(Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs)
+    name: ElementPropertyChanged
+    nameWithType: ChangeRule.ElementPropertyChanged
+    fullName: Microsoft.VisualStudio.Modeling.ChangeRule.ElementPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+    name: ElementPropertyChangedEventArgs
+    nameWithType: ElementPropertyChangedEventArgs
+    fullName: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged
+  name: ElementPropertyChanged
+  nameWithType: ModelEnumValueChangeRules.ElementPropertyChanged
+  fullName: Sawczyn.EFDesigner.EFModel.ModelEnumValueChangeRules.ElementPropertyChanged
+- uid: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementPropertyChangedEventArgs
+  nameWithType: ElementPropertyChangedEventArgs
+  fullName: Microsoft.VisualStudio.Modeling.ElementPropertyChangedEventArgs

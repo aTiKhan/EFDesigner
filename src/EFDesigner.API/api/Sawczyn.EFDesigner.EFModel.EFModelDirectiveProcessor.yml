@@ -1,0 +1,2098 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor
+  id: EFModelDirectiveProcessor
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor
+  langs:
+  - csharp
+  - vb
+  name: EFModelDirectiveProcessor
+  nameWithType: EFModelDirectiveProcessor
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DirectiveProcessor.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelDirectiveProcessor
+    path: ../Dsl/GeneratedCode/DirectiveProcessor.cs
+    startLine: 21
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDouble-derived template directive processor that provides EFModel files\nThe implementation is done in EFModelDirectiveProcessorBase. This class\nexist so users can customize behavior easily.\n"
+  example: []
+  syntax:
+    content: 'public sealed class EFModelDirectiveProcessor : EFModelDirectiveProcessorBase, IDirectiveProcessor'
+    content.vb: >-
+      Public NotInheritable Class EFModelDirectiveProcessor
+          Inherits EFModelDirectiveProcessorBase
+          Implements IDirectiveProcessor
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  implements:
+  - Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.EFModelDirectiveProcessorName
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.FriendlyName
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.LoadDiagramData
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+  - Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+  - Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Host
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#SetProcessingRunIsHostSpecific(System.Boolean)
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Errors
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#Errors
+  - Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#RequiresProcessingRunIsHostSpecific
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor
+  id: '#ctor'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor
+  langs:
+  - csharp
+  - vb
+  name: EFModelDirectiveProcessor()
+  nameWithType: EFModelDirectiveProcessor.EFModelDirectiveProcessor()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.EFModelDirectiveProcessor()
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DirectiveProcessor.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/DirectiveProcessor.cs
+    startLine: 26
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public EFModelDirectiveProcessor()
+    content.vb: Public Sub New
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  commentId: T:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  parent: Microsoft.VisualStudio.TextTemplating
+  isExternal: true
+  name: DirectiveProcessor
+  nameWithType: DirectiveProcessor
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  commentId: T:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  parent: Microsoft.VisualStudio.TextTemplating
+  isExternal: true
+  name: RequiresProvidesDirectiveProcessor
+  nameWithType: RequiresProvidesDirectiveProcessor
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelDirectiveProcessorBase
+  nameWithType: EFModelDirectiveProcessorBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+- uid: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor
+  commentId: T:Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor
+  parent: Microsoft.VisualStudio.TextTemplating
+  isExternal: true
+  name: IDirectiveProcessor
+  nameWithType: IDirectiveProcessor
+  fullName: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.EFModelDirectiveProcessorName
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.EFModelDirectiveProcessorName
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  name: EFModelDirectiveProcessorName
+  nameWithType: EFModelDirectiveProcessorBase.EFModelDirectiveProcessorName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.EFModelDirectiveProcessorName
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.FriendlyName
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.FriendlyName
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  name: FriendlyName
+  nameWithType: EFModelDirectiveProcessorBase.FriendlyName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.FriendlyName
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: IsDirectiveSupported(String)
+  nameWithType: EFModelDirectiveProcessorBase.IsDirectiveSupported(String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+    name: IsDirectiveSupported
+    nameWithType: EFModelDirectiveProcessorBase.IsDirectiveSupported
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported(System.String)
+    name: IsDirectiveSupported
+    nameWithType: EFModelDirectiveProcessorBase.IsDirectiveSupported
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.IsDirectiveSupported
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: StartProcessingRun(CodeDomProvider, String, CompilerErrorCollection)
+  nameWithType: EFModelDirectiveProcessorBase.StartProcessingRun(CodeDomProvider, String, CompilerErrorCollection)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider, System.String, System.CodeDom.Compiler.CompilerErrorCollection)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)
+    name: StartProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.StartProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CompilerErrorCollection
+    name: CompilerErrorCollection
+    nameWithType: CompilerErrorCollection
+    fullName: System.CodeDom.Compiler.CompilerErrorCollection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)
+    name: StartProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.StartProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.StartProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CompilerErrorCollection
+    name: CompilerErrorCollection
+    nameWithType: CompilerErrorCollection
+    fullName: System.CodeDom.Compiler.CompilerErrorCollection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: InitializeRequiresDictionary(String, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.InitializeRequiresDictionary(String, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.InitializeRequiresDictionary(String, IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: InitializeRequiresDictionary(String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: InitializeRequiresDictionary
+    nameWithType: EFModelDirectiveProcessorBase.InitializeRequiresDictionary
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: InitializeRequiresDictionary
+    nameWithType: EFModelDirectiveProcessorBase.InitializeRequiresDictionary
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeRequiresDictionary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: InitializeProvidesDictionary(String, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.InitializeProvidesDictionary(String, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.InitializeProvidesDictionary(String, IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: InitializeProvidesDictionary(String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: InitializeProvidesDictionary
+    nameWithType: EFModelDirectiveProcessorBase.InitializeProvidesDictionary
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: InitializeProvidesDictionary
+    nameWithType: EFModelDirectiveProcessorBase.InitializeProvidesDictionary
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.InitializeProvidesDictionary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: GenerateTransformCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.GenerateTransformCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.GenerateTransformCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: GenerateTransformCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GenerateTransformCode
+    nameWithType: EFModelDirectiveProcessorBase.GenerateTransformCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GenerateTransformCode
+    nameWithType: EFModelDirectiveProcessorBase.GenerateTransformCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GenerateTransformCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: GeneratePreInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.GeneratePreInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.GeneratePreInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: GeneratePreInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GeneratePreInitializationCode
+    nameWithType: EFModelDirectiveProcessorBase.GeneratePreInitializationCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GeneratePreInitializationCode
+    nameWithType: EFModelDirectiveProcessorBase.GeneratePreInitializationCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePreInitializationCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.LoadDiagramData
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.LoadDiagramData
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  name: LoadDiagramData
+  nameWithType: EFModelDirectiveProcessorBase.LoadDiagramData
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.LoadDiagramData
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: GeneratePostInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.GeneratePostInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary<String, String>, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.GeneratePostInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String, System.Text.StringBuilder, System.CodeDom.Compiler.CodeDomProvider, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: GeneratePostInitializationCode(String, StringBuilder, CodeDomProvider, IDictionary(Of String, String), IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GeneratePostInitializationCode
+    nameWithType: EFModelDirectiveProcessorBase.GeneratePostInitializationCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: GeneratePostInitializationCode
+    nameWithType: EFModelDirectiveProcessorBase.GeneratePostInitializationCode
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GeneratePostInitializationCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    nameWithType: CodeDomProvider
+    fullName: System.CodeDom.Compiler.CodeDomProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  isExternal: true
+  name: PostProcessArguments(String, IDictionary<String, String>, IDictionary<String, String>)
+  nameWithType: EFModelDirectiveProcessorBase.PostProcessArguments(String, IDictionary<String, String>, IDictionary<String, String>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: EFModelDirectiveProcessorBase.PostProcessArguments(String, IDictionary(Of String, String), IDictionary(Of String, String))
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: PostProcessArguments(String, IDictionary(Of String, String), IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: PostProcessArguments
+    nameWithType: EFModelDirectiveProcessorBase.PostProcessArguments
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: PostProcessArguments
+    nameWithType: EFModelDirectiveProcessorBase.PostProcessArguments
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.PostProcessArguments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  name: GetImportsForProcessingRun()
+  nameWithType: EFModelDirectiveProcessorBase.GetImportsForProcessingRun()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+    name: GetImportsForProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+    name: GetImportsForProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetImportsForProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase
+  name: GetReferencesForProcessingRun()
+  nameWithType: EFModelDirectiveProcessorBase.GetReferencesForProcessingRun()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun()
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+    name: GetReferencesForProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+    name: GetReferencesForProcessingRun
+    nameWithType: EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessorBase.GetReferencesForProcessingRun
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: Initialize(ITextTemplatingEngineHost)
+  nameWithType: RequiresProvidesDirectiveProcessor.Initialize(ITextTemplatingEngineHost)
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+    name: Initialize
+    nameWithType: RequiresProvidesDirectiveProcessor.Initialize
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost
+    name: ITextTemplatingEngineHost
+    nameWithType: ITextTemplatingEngineHost
+    fullName: Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)
+    name: Initialize
+    nameWithType: RequiresProvidesDirectiveProcessor.Initialize
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost
+    name: ITextTemplatingEngineHost
+    nameWithType: ITextTemplatingEngineHost
+    fullName: Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: ProvideUniqueId(String, IDictionary<String, String>, IDictionary<String, String>, IDictionary<String, String>)
+  nameWithType: RequiresProvidesDirectiveProcessor.ProvideUniqueId(String, IDictionary<String, String>, IDictionary<String, String>, IDictionary<String, String>)
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: RequiresProvidesDirectiveProcessor.ProvideUniqueId(String, IDictionary(Of String, String), IDictionary(Of String, String), IDictionary(Of String, String))
+  fullName.vb: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: ProvideUniqueId(String, IDictionary(Of String, String), IDictionary(Of String, String), IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: ProvideUniqueId
+    nameWithType: RequiresProvidesDirectiveProcessor.ProvideUniqueId
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})
+    name: ProvideUniqueId
+    nameWithType: RequiresProvidesDirectiveProcessor.ProvideUniqueId
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: ProcessDirective(String, IDictionary<String, String>)
+  nameWithType: RequiresProvidesDirectiveProcessor.ProcessDirective(String, IDictionary<String, String>)
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: RequiresProvidesDirectiveProcessor.ProcessDirective(String, IDictionary(Of String, String))
+  fullName.vb: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: ProcessDirective(String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: ProcessDirective
+    nameWithType: RequiresProvidesDirectiveProcessor.ProcessDirective
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: ProcessDirective
+    nameWithType: RequiresProvidesDirectiveProcessor.ProcessDirective
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: FinishProcessingRun()
+  nameWithType: RequiresProvidesDirectiveProcessor.FinishProcessingRun()
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    name: FinishProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    name: FinishProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: GetClassCodeForProcessingRun()
+  nameWithType: RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun()
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    name: GetClassCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    name: GetClassCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: GetPreInitializationCodeForProcessingRun()
+  nameWithType: RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun()
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    name: GetPreInitializationCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    name: GetPreInitializationCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+  commentId: M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: GetPostInitializationCodeForProcessingRun()
+  nameWithType: RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun()
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    name: GetPostInitializationCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    name: GetPostInitializationCodeForProcessingRun
+    nameWithType: RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Host
+  commentId: P:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Host
+  parent: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor
+  isExternal: true
+  name: Host
+  nameWithType: RequiresProvidesDirectiveProcessor.Host
+  fullName: Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Host
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+  commentId: M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+  parent: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  isExternal: true
+  name: GetTemplateClassCustomAttributes()
+  nameWithType: DirectiveProcessor.GetTemplateClassCustomAttributes()
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+    name: GetTemplateClassCustomAttributes
+    nameWithType: DirectiveProcessor.GetTemplateClassCustomAttributes
+    fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+    name: GetTemplateClassCustomAttributes
+    nameWithType: DirectiveProcessor.GetTemplateClassCustomAttributes
+    fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#SetProcessingRunIsHostSpecific(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#SetProcessingRunIsHostSpecific(System.Boolean)
+  parent: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  isExternal: true
+  name: IDirectiveProcessor.SetProcessingRunIsHostSpecific(Boolean)
+  nameWithType: DirectiveProcessor.IDirectiveProcessor.SetProcessingRunIsHostSpecific(Boolean)
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific(System.Boolean)
+  nameWithType.vb: DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific(Boolean)
+  name.vb: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific(Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#SetProcessingRunIsHostSpecific(System.Boolean)
+    name: IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    nameWithType: DirectiveProcessor.IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#SetProcessingRunIsHostSpecific(System.Boolean)
+    name: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    nameWithType: DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.SetProcessingRunIsHostSpecific
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Errors
+  commentId: P:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Errors
+  parent: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  isExternal: true
+  name: Errors
+  nameWithType: DirectiveProcessor.Errors
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Errors
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#Errors
+  commentId: P:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#Errors
+  parent: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  isExternal: true
+  name: IDirectiveProcessor.Errors
+  nameWithType: DirectiveProcessor.IDirectiveProcessor.Errors
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.Errors
+  nameWithType.vb: DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.Errors
+  name.vb: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.Errors
+- uid: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#RequiresProcessingRunIsHostSpecific
+  commentId: P:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IDirectiveProcessor#RequiresProcessingRunIsHostSpecific
+  parent: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor
+  isExternal: true
+  name: IDirectiveProcessor.RequiresProcessingRunIsHostSpecific
+  nameWithType: DirectiveProcessor.IDirectiveProcessor.RequiresProcessingRunIsHostSpecific
+  fullName: Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.RequiresProcessingRunIsHostSpecific
+  nameWithType.vb: DirectiveProcessor.Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.RequiresProcessingRunIsHostSpecific
+  name.vb: Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor.RequiresProcessingRunIsHostSpecific
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TextTemplating
+  commentId: N:Microsoft.VisualStudio.TextTemplating
+  isExternal: true
+  name: Microsoft.VisualStudio.TextTemplating
+  nameWithType: Microsoft.VisualStudio.TextTemplating
+  fullName: Microsoft.VisualStudio.TextTemplating
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.#ctor
+  name: EFModelDirectiveProcessor
+  nameWithType: EFModelDirectiveProcessor.EFModelDirectiveProcessor
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDirectiveProcessor.EFModelDirectiveProcessor

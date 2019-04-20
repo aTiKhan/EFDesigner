@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  commentId: T:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  id: IHighlightFromModelExplorer
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+  - Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+  - Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+  - Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+  langs:
+  - csharp
+  - vb
+  name: IHighlightFromModelExplorer
+  nameWithType: IHighlightFromModelExplorer
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  type: Interface
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IHighlightFromModelExplorer
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+    startLine: 4
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: public interface IHighlightFromModelExplorer
+    content.vb: Public Interface IHighlightFromModelExplorer
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+  commentId: P:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+  id: OutlineColor
+  parent: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  langs:
+  - csharp
+  - vb
+  name: OutlineColor
+  nameWithType: IHighlightFromModelExplorer.OutlineColor
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OutlineColor
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+    startLine: 6
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: Color OutlineColor { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Property OutlineColor As Color
+  overload: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+  commentId: P:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+  id: OutlineDashStyle
+  parent: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  langs:
+  - csharp
+  - vb
+  name: OutlineDashStyle
+  nameWithType: IHighlightFromModelExplorer.OutlineDashStyle
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OutlineDashStyle
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+    startLine: 7
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: DashStyle OutlineDashStyle { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Drawing2D.DashStyle
+    content.vb: Property OutlineDashStyle As DashStyle
+  overload: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+  commentId: P:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+  id: OutlineThickness
+  parent: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  langs:
+  - csharp
+  - vb
+  name: OutlineThickness
+  nameWithType: IHighlightFromModelExplorer.OutlineThickness
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: OutlineThickness
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: float OutlineThickness { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property OutlineThickness As Single
+  overload: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+  commentId: P:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+  id: Visible
+  parent: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: IHighlightFromModelExplorer.Visible
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Visible
+    path: ../Dsl/CustomCode/ModelElement Interfaces/IHighlightFromModelExplorer.cs
+    startLine: 9
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Visible As Boolean
+  overload: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+  name: OutlineColor
+  nameWithType: IHighlightFromModelExplorer.OutlineColor
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineColor
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+  name: OutlineDashStyle
+  nameWithType: IHighlightFromModelExplorer.OutlineDashStyle
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineDashStyle
+- uid: System.Drawing.Drawing2D.DashStyle
+  commentId: T:System.Drawing.Drawing2D.DashStyle
+  parent: System.Drawing.Drawing2D
+  isExternal: true
+  name: DashStyle
+  nameWithType: DashStyle
+  fullName: System.Drawing.Drawing2D.DashStyle
+- uid: System.Drawing.Drawing2D
+  commentId: N:System.Drawing.Drawing2D
+  isExternal: true
+  name: System.Drawing.Drawing2D
+  nameWithType: System.Drawing.Drawing2D
+  fullName: System.Drawing.Drawing2D
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+  name: OutlineThickness
+  nameWithType: IHighlightFromModelExplorer.OutlineThickness
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.OutlineThickness
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+  name: Visible
+  nameWithType: IHighlightFromModelExplorer.Visible
+  fullName: Sawczyn.EFDesigner.EFModel.IHighlightFromModelExplorer.Visible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

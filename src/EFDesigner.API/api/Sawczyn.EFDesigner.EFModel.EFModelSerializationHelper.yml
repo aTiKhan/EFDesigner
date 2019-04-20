@@ -1,0 +1,3353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  id: EFModelSerializationHelper
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationHelper
+  nameWithType: EFModelSerializationHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelSerializationHelper
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 270
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nHelper class for serializing and deserializing EFModel models.\n"
+  example: []
+  syntax:
+    content: 'public sealed class EFModelSerializationHelper : EFModelSerializationHelperBase'
+    content.vb: >-
+      Public NotInheritable Class EFModelSerializationHelper
+          Inherits EFModelSerializationHelperBase
+  inheritance:
+  - System.Object
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  inheritedMembers:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  id: CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: CheckVersion(SerializationContext, XmlReader)
+  nameWithType: EFModelSerializationHelper.CheckVersion(SerializationContext, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/EFModelSerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CheckVersion
+    path: ../Dsl/CustomCode/Partials/EFModelSerializationHelper.cs
+    startLine: 19
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nChecks the version of the file being read.\n"
+  example: []
+  syntax:
+    content: protected override void CheckVersion(SerializationContext serializationContext, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: Serialization context.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: "\nReader for the file being read. The reader is positioned at the open tag of the root element being\nread.\n"
+    content.vb: Protected Overrides Sub CheckVersion(serializationContext As SerializationContext, reader As XmlReader)
+  overridden: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  id: LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  nameWithType: EFModelSerializationHelper.LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Partials/EFModelSerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: LoadModel
+    path: ../Dsl/CustomCode/Partials/EFModelSerializationHelper.cs
+    startLine: 76
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nLoads a ModelRoot instance from a stream.\n"
+  example: []
+  syntax:
+    content: public override ModelRoot LoadModel(SerializationResult serializationResult, Partition partition, string location, ISchemaResolver schemaResolver, ValidationController validationController, ISerializerLocator serializerLocator, Stream stream)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: Stores serialization result from the load operation.
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition in which the new ModelRoot instance will be created.
+    - id: location
+      type: System.String
+      description: Source location associated with stream from which the ModelRoot instance is to be loaded. Usually a file path, but can be any string, including null.
+    - id: schemaResolver
+      type: Microsoft.VisualStudio.Modeling.ISchemaResolver
+      description: "\nAn ISchemaResolver that allows the serializer to do schema validation on the root element (and everything inside it).\nIf null is passed, schema validation will not be performed.\n"
+    - id: validationController
+      type: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+      description: "\nA ValidationController that will be used to do load-time validation (validations with validation category &quot;Load&quot;). If null\nis passed, load-time validation will not be performed.\n"
+    - id: serializerLocator
+      type: Microsoft.VisualStudio.Modeling.ISerializerLocator
+      description: "\nAn ISerializerLocator that will be used to locate any additional domain model types required to load the model. Can be null.\n"
+    - id: stream
+      type: System.IO.Stream
+      description: The Stream from which the ModelRoot will be deserialized.
+    return:
+      type: Sawczyn.EFDesigner.EFModel.ModelRoot
+      description: The loaded ModelRoot instance.
+    content.vb: Public Overrides Function LoadModel(serializationResult As SerializationResult, partition As Partition, location As String, schemaResolver As ISchemaResolver, validationController As ValidationController, serializerLocator As ISerializerLocator, stream As Stream) As ModelRoot
+  overridden: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+  id: Instance
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: EFModelSerializationHelper.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/SerializationHelper.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Instance
+    path: ../Dsl/GeneratedCode/SerializationHelper.cs
+    startLine: 287
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSingleton instance.\n"
+  example: []
+  syntax:
+    content: public static EFModelSerializationHelper Instance { get; }
+    parameters: []
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+    content.vb: Public Shared ReadOnly Property Instance As EFModelSerializationHelper
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelSerializationHelperBase
+  nameWithType: EFModelSerializationHelperBase
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: InitializeSerialization(Store)
+  nameWithType: EFModelSerializationHelperBase.InitializeSerialization(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+    name: InitializeSerialization
+    nameWithType: EFModelSerializationHelperBase.InitializeSerialization
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization(Microsoft.VisualStudio.Modeling.Store)
+    name: InitializeSerialization
+    nameWithType: EFModelSerializationHelperBase.InitializeSerialization
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerialization
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: InitializeSerializationContext(Partition, SerializationContext, Boolean)
+  nameWithType: EFModelSerializationHelperBase.InitializeSerializationContext(Partition, SerializationContext, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.SerializationContext, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+    name: InitializeSerializationContext
+    nameWithType: EFModelSerializationHelperBase.InitializeSerializationContext
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.SerializationContext,System.Boolean)
+    name: InitializeSerializationContext
+    nameWithType: EFModelSerializationHelperBase.InitializeSerializationContext
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.InitializeSerializationContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: GetDirectory(Store)
+  nameWithType: EFModelSerializationHelperBase.GetDirectory(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+    name: GetDirectory
+    nameWithType: EFModelSerializationHelperBase.GetDirectory
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory(Microsoft.VisualStudio.Modeling.Store)
+    name: GetDirectory
+    nameWithType: EFModelSerializationHelperBase.GetDirectory
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetDirectory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: GetMonikerResolvers(Store)
+  nameWithType: EFModelSerializationHelperBase.GetMonikerResolvers(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+    name: GetMonikerResolvers
+    nameWithType: EFModelSerializationHelperBase.GetMonikerResolvers
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers(Microsoft.VisualStudio.Modeling.Store)
+    name: GetMonikerResolvers
+    nameWithType: EFModelSerializationHelperBase.GetMonikerResolvers
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetMonikerResolvers
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: WriteExtensions(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: EFModelSerializationHelperBase.WriteExtensions(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteExtensions
+    nameWithType: EFModelSerializationHelperBase.WriteExtensions
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteExtensions
+    nameWithType: EFModelSerializationHelperBase.WriteExtensions
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteExtensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: ReadExtensions(SerializationContext, ModelElement, XmlReader)
+  nameWithType: EFModelSerializationHelperBase.ReadExtensions(SerializationContext, ModelElement, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadExtensions
+    nameWithType: EFModelSerializationHelperBase.ReadExtensions
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader)
+    name: ReadExtensions
+    nameWithType: EFModelSerializationHelperBase.ReadExtensions
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadExtensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModel(Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModel(SerializationResult, Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Store, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Store, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: TryGetEncoding(XmlReader, Encoding)
+  nameWithType: EFModelSerializationHelperBase.TryGetEncoding(XmlReader, Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader, System.Text.Encoding)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+    name: TryGetEncoding
+    nameWithType: EFModelSerializationHelperBase.TryGetEncoding
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding(System.Xml.XmlReader,System.Text.Encoding@)
+    name: TryGetEncoding
+    nameWithType: EFModelSerializationHelperBase.TryGetEncoding
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryGetEncoding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModel(SerializationResult, ModelRoot, String)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModel(SerializationResult, ModelRoot, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Boolean)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModel(SerializationResult, ModelRoot, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModel(SerializationResult, ModelRoot, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, System.Text.Encoding, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveModel
+    nameWithType: EFModelSerializationHelperBase.SaveModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: CreateModelHelper(Partition)
+  nameWithType: EFModelSerializationHelperBase.CreateModelHelper(Partition)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateModelHelper
+    nameWithType: EFModelSerializationHelperBase.CreateModelHelper
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper(Microsoft.VisualStudio.Modeling.Partition)
+    name: CreateModelHelper
+    nameWithType: EFModelSerializationHelperBase.CreateModelHelper
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateModelHelper
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModelAndDiagram(Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store, System.String, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModelAndDiagram(SerializationResult, Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(SerializationResult, Store, String, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Store, System.String, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Store,System.String,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Store
+    name: Store
+    nameWithType: Store
+    fullName: Microsoft.VisualStudio.Modeling.Store
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram(SerializationResult, Partition, String, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator)
+    name: LoadModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.LoadModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: CreateDiagramHelper(Partition, ModelElement)
+  nameWithType: EFModelSerializationHelperBase.CreateDiagramHelper(Partition, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition, Microsoft.VisualStudio.Modeling.ModelElement)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CreateDiagramHelper
+    nameWithType: EFModelSerializationHelperBase.CreateDiagramHelper
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.ModelElement)
+    name: CreateDiagramHelper
+    nameWithType: EFModelSerializationHelperBase.CreateDiagramHelper
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CreateDiagramHelper
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram(SerializationResult, ModelRoot, String, EFModelDiagram, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.ModelRoot, System.String, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Text.Encoding, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.ModelRoot,System.String,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveModelAndDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveModelAndDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveModelAndDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Boolean)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: SaveDiagram(SerializationResult, EFModelDiagram, String, Encoding, Boolean)
+  nameWithType: EFModelSerializationHelperBase.SaveDiagram(SerializationResult, EFModelDiagram, String, Encoding, Boolean)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult, Sawczyn.EFDesigner.EFModel.EFModelDiagram, System.String, System.Text.Encoding, System.Boolean)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram(Microsoft.VisualStudio.Modeling.SerializationResult,Sawczyn.EFDesigner.EFModel.EFModelDiagram,System.String,System.Text.Encoding,System.Boolean)
+    name: SaveDiagram
+    nameWithType: EFModelSerializationHelperBase.SaveDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.SaveDiagram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+    name: EFModelDiagram
+    nameWithType: EFModelDiagram
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelDiagram
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  nameWithType: EFModelSerializationHelperBase.ReadRootElement(SerializationContext, ModelElement, XmlReader, ISchemaResolver)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.ISchemaResolver)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: EFModelSerializationHelperBase.ReadRootElement
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.ISchemaResolver)
+    name: ReadRootElement
+    nameWithType: EFModelSerializationHelperBase.ReadRootElement
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ReadRootElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  nameWithType: EFModelSerializationHelperBase.WriteRootElement(SerializationContext, ModelElement, XmlWriter)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext, Microsoft.VisualStudio.Modeling.ModelElement, System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: EFModelSerializationHelperBase.WriteRootElement
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement(Microsoft.VisualStudio.Modeling.SerializationContext,Microsoft.VisualStudio.Modeling.ModelElement,System.Xml.XmlWriter)
+    name: WriteRootElement
+    nameWithType: EFModelSerializationHelperBase.WriteRootElement
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.WriteRootElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    nameWithType: XmlWriter
+    fullName: System.Xml.XmlWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: TryCreateValidatingReader(ISchemaResolver, XmlReader, SerializationContext)
+  nameWithType: EFModelSerializationHelperBase.TryCreateValidatingReader(ISchemaResolver, XmlReader, SerializationContext)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.SerializationContext)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: TryCreateValidatingReader
+    nameWithType: EFModelSerializationHelperBase.TryCreateValidatingReader
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader(Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: TryCreateValidatingReader
+    nameWithType: EFModelSerializationHelperBase.TryCreateValidatingReader
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.TryCreateValidatingReader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: ResolveSchema(String, XmlSchemaSet, ISchemaResolver, XmlReader, SerializationContext)
+  nameWithType: EFModelSerializationHelperBase.ResolveSchema(String, XmlSchemaSet, ISchemaResolver, XmlReader, SerializationContext)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String, System.Xml.Schema.XmlSchemaSet, Microsoft.VisualStudio.Modeling.ISchemaResolver, System.Xml.XmlReader, Microsoft.VisualStudio.Modeling.SerializationContext)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: ResolveSchema
+    nameWithType: EFModelSerializationHelperBase.ResolveSchema
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.Schema.XmlSchemaSet
+    name: XmlSchemaSet
+    nameWithType: XmlSchemaSet
+    fullName: System.Xml.Schema.XmlSchemaSet
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema(System.String,System.Xml.Schema.XmlSchemaSet,Microsoft.VisualStudio.Modeling.ISchemaResolver,System.Xml.XmlReader,Microsoft.VisualStudio.Modeling.SerializationContext)
+    name: ResolveSchema
+    nameWithType: EFModelSerializationHelperBase.ResolveSchema
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.ResolveSchema
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.Schema.XmlSchemaSet
+    name: XmlSchemaSet
+    nameWithType: XmlSchemaSet
+    fullName: System.Xml.Schema.XmlSchemaSet
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: GetSerializedModelString(ModelRoot, Encoding)
+  nameWithType: EFModelSerializationHelperBase.GetSerializedModelString(ModelRoot, Encoding)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot, System.Text.Encoding)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+    name: GetSerializedModelString
+    nameWithType: EFModelSerializationHelperBase.GetSerializedModelString
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString(Sawczyn.EFDesigner.EFModel.ModelRoot,System.Text.Encoding)
+    name: GetSerializedModelString
+    nameWithType: EFModelSerializationHelperBase.GetSerializedModelString
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.GetSerializedModelString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+    name: ModelRoot
+    nameWithType: ModelRoot
+    fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: CheckForOrphanedShapes(Diagram, SerializationResult)
+  nameWithType: EFModelSerializationHelperBase.CheckForOrphanedShapes(Diagram, SerializationResult)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram, Microsoft.VisualStudio.Modeling.SerializationResult)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+    name: CheckForOrphanedShapes
+    nameWithType: EFModelSerializationHelperBase.CheckForOrphanedShapes
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+    name: Diagram
+    nameWithType: Diagram
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes(Microsoft.VisualStudio.Modeling.Diagrams.Diagram,Microsoft.VisualStudio.Modeling.SerializationResult)
+    name: CheckForOrphanedShapes
+    nameWithType: EFModelSerializationHelperBase.CheckForOrphanedShapes
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckForOrphanedShapes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+    name: Diagram
+    nameWithType: Diagram
+    fullName: Microsoft.VisualStudio.Modeling.Diagrams.Diagram
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: CheckVersion(SerializationContext, XmlReader)
+  nameWithType: EFModelSerializationHelperBase.CheckVersion(SerializationContext, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+    name: CheckVersion
+    nameWithType: EFModelSerializationHelperBase.CheckVersion
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+    name: CheckVersion
+    nameWithType: EFModelSerializationHelperBase.CheckVersion
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.CheckVersion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationContext
+    name: SerializationContext
+    nameWithType: SerializationContext
+    fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    nameWithType: XmlReader
+    fullName: System.Xml.XmlReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion
+  name: CheckVersion
+  nameWithType: EFModelSerializationHelper.CheckVersion
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.CheckVersion
+- uid: Microsoft.VisualStudio.Modeling.SerializationContext
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+- uid: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase
+  isExternal: true
+  name: LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  nameWithType: EFModelSerializationHelperBase.LoadModel(SerializationResult, Partition, String, ISchemaResolver, ValidationController, ISerializerLocator, Stream)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Partition, System.String, Microsoft.VisualStudio.Modeling.ISchemaResolver, Microsoft.VisualStudio.Modeling.Validation.ValidationController, Microsoft.VisualStudio.Modeling.ISerializerLocator, System.IO.Stream)
+  spec.csharp:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Partition,System.String,Microsoft.VisualStudio.Modeling.ISchemaResolver,Microsoft.VisualStudio.Modeling.Validation.ValidationController,Microsoft.VisualStudio.Modeling.ISerializerLocator,System.IO.Stream)
+    name: LoadModel
+    nameWithType: EFModelSerializationHelperBase.LoadModel
+    fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelperBase.LoadModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.SerializationResult
+    name: SerializationResult
+    nameWithType: SerializationResult
+    fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    name: ISchemaResolver
+    nameWithType: ISchemaResolver
+    fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    name: ValidationController
+    nameWithType: ValidationController
+    fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    name: ISerializerLocator
+    nameWithType: ISerializerLocator
+    fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel
+  name: LoadModel
+  nameWithType: EFModelSerializationHelper.LoadModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.LoadModel
+- uid: Microsoft.VisualStudio.Modeling.SerializationResult
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationResult
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationResult
+  nameWithType: SerializationResult
+  fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.VisualStudio.Modeling.ISchemaResolver
+  commentId: T:Microsoft.VisualStudio.Modeling.ISchemaResolver
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ISchemaResolver
+  nameWithType: ISchemaResolver
+  fullName: Microsoft.VisualStudio.Modeling.ISchemaResolver
+- uid: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+  commentId: T:Microsoft.VisualStudio.Modeling.Validation.ValidationController
+  parent: Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: ValidationController
+  nameWithType: ValidationController
+  fullName: Microsoft.VisualStudio.Modeling.Validation.ValidationController
+- uid: Microsoft.VisualStudio.Modeling.ISerializerLocator
+  commentId: T:Microsoft.VisualStudio.Modeling.ISerializerLocator
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ISerializerLocator
+  nameWithType: ISerializerLocator
+  fullName: Microsoft.VisualStudio.Modeling.ISerializerLocator
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Sawczyn.EFDesigner.EFModel.ModelRoot
+  commentId: T:Sawczyn.EFDesigner.EFModel.ModelRoot
+  parent: Sawczyn.EFDesigner.EFModel
+  name: ModelRoot
+  nameWithType: ModelRoot
+  fullName: Sawczyn.EFDesigner.EFModel.ModelRoot
+- uid: Microsoft.VisualStudio.Modeling.Validation
+  commentId: N:Microsoft.VisualStudio.Modeling.Validation
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling.Validation
+  nameWithType: Microsoft.VisualStudio.Modeling.Validation
+  fullName: Microsoft.VisualStudio.Modeling.Validation
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+  name: Instance
+  nameWithType: EFModelSerializationHelper.Instance
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper.Instance
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EFModelSerializationHelper
+  nameWithType: EFModelSerializationHelper
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationHelper

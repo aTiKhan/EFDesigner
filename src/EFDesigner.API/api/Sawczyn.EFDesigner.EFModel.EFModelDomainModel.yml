@@ -1,0 +1,1928 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  id: EFModelDomainModel
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DomainModelId
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceBaseName
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+  - Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+  langs:
+  - csharp
+  - vb
+  name: EFModelDomainModel
+  nameWithType: EFModelDomainModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelDomainModel
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 18
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainModel EFModelDomainModel\nEntity Framework visual editor for EF6, EFCore and beyond.\n"
+  example: []
+  syntax:
+    content: >-
+      [DisplayNameResource("Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisplayName", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EFModelDomainModel.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      [CLSCompliant(true)]
+
+      [DependsOnDomainModel(typeof(CoreDomainModel))]
+
+      [DependsOnDomainModel(typeof(CoreDesignSurfaceDomainModel))]
+
+      [DomainObjectId("9987f227-3d05-49b7-b151-857879f5dfb8")]
+
+      public class EFModelDomainModel : DomainModel
+    content.vb: >-
+      <DisplayNameResource("Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisplayName", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EFModelDomainModel.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      <CLSCompliant(True)>
+
+      <DependsOnDomainModel(GetType(CoreDomainModel))>
+
+      <DependsOnDomainModel(GetType(CoreDesignSurfaceDomainModel))>
+
+      <DomainObjectId("9987f227-3d05-49b7-b151-857879f5dfb8")>
+
+      Public Class EFModelDomainModel
+          Inherits DomainModel
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.Modeling.DomainModel
+  inheritedMembers:
+  - Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  - Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+  - Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+  - Microsoft.VisualStudio.Modeling.DomainModel.DomainModelInfo
+  - Microsoft.VisualStudio.Modeling.DomainModel.Store
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DisplayNameResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisplayName
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  - type: Microsoft.VisualStudio.Modeling.DependsOnDomainModelAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DependsOnDomainModelAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Microsoft.VisualStudio.Modeling.CoreDomainModel
+  - type: Microsoft.VisualStudio.Modeling.DependsOnDomainModelAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DependsOnDomainModelAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel
+  - type: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute
+    ctor: Microsoft.VisualStudio.Modeling.DomainObjectIdAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9987f227-3d05-49b7-b151-857879f5dfb8
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes
+  id: GetCustomDomainModelTypes
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: GetCustomDomainModelTypes()
+  nameWithType: EFModelDomainModel.GetCustomDomainModelTypes()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Rules/RuleRegistrations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetCustomDomainModelTypes
+    path: ../Dsl/CustomCode/Rules/RuleRegistrations.cs
+    startLine: 28
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  syntax:
+    content: protected override Type[] GetCustomDomainModelTypes()
+    return:
+      type: System.Type[]
+    content.vb: Protected Overrides Function GetCustomDomainModelTypes As Type()
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DomainModelId
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DomainModelId
+  id: DomainModelId
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: DomainModelId
+  nameWithType: EFModelDomainModel.DomainModelId
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DomainModelId
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DomainModelId
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 32
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEFModelDomainModel domain model Id.\n"
+  example: []
+  syntax:
+    content: public static readonly Guid DomainModelId
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DomainModelId As Guid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor(Microsoft.VisualStudio.Modeling.Store)
+  id: '#ctor(Microsoft.VisualStudio.Modeling.Store)'
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: EFModelDomainModel(Store)
+  nameWithType: EFModelDomainModel.EFModelDomainModel(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EFModelDomainModel(Microsoft.VisualStudio.Modeling.Store)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: .ctor
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 38
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public EFModelDomainModel(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+      description: Store containing the domain model.
+    content.vb: Public Sub New(store As Store)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes
+  id: GetGeneratedDomainModelTypes
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: GetGeneratedDomainModelTypes()
+  nameWithType: EFModelDomainModel.GetGeneratedDomainModelTypes()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetGeneratedDomainModelTypes
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 64
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets the list of generated domain model types (classes, rules, relationships).\n"
+  example: []
+  syntax:
+    content: protected override sealed Type[] GetGeneratedDomainModelTypes()
+    return:
+      type: System.Type[]
+      description: List of types.
+    content.vb: Protected NotOverridable Overrides Function GetGeneratedDomainModelTypes As Type()
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes*
+  modifiers.csharp:
+  - protected
+  - override
+  - sealed
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - NotOverridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties
+  id: GetGeneratedDomainProperties
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: GetGeneratedDomainProperties()
+  nameWithType: EFModelDomainModel.GetGeneratedDomainProperties()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetGeneratedDomainProperties
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 111
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets the list of generated domain properties.\n"
+  example: []
+  syntax:
+    content: protected override sealed DomainModel.DomainMemberInfo[] GetGeneratedDomainProperties()
+    return:
+      type: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo[]
+      description: List of property data.
+    content.vb: Protected NotOverridable Overrides Function GetGeneratedDomainProperties As DomainModel.DomainMemberInfo()
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties*
+  modifiers.csharp:
+  - protected
+  - override
+  - sealed
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - NotOverridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles
+  id: GetGeneratedDomainRoles
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: GetGeneratedDomainRoles()
+  nameWithType: EFModelDomainModel.GetGeneratedDomainRoles()
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles()
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetGeneratedDomainRoles
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 256
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets the list of generated domain roles.\n"
+  example: []
+  syntax:
+    content: protected override sealed DomainModel.DomainRolePlayerInfo[] GetGeneratedDomainRoles()
+    return:
+      type: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo[]
+      description: List of role data.
+    content.vb: Protected NotOverridable Overrides Function GetGeneratedDomainRoles As DomainModel.DomainRolePlayerInfo()
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles*
+  modifiers.csharp:
+  - protected
+  - override
+  - sealed
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - NotOverridable
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  id: CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: CreateElement(Partition, Type, PropertyAssignment[])
+  nameWithType: EFModelDomainModel.CreateElement(Partition, Type, PropertyAssignment[])
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateElement
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 297
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCreates an element of specified type.\n"
+  example: []
+  syntax:
+    content: public override sealed ModelElement CreateElement(Partition partition, Type elementType, PropertyAssignment[] propertyAssignments)
+    parameters:
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition where element is to be created.
+    - id: elementType
+      type: System.Type
+      description: Element type which belongs to this domain model.
+    - id: propertyAssignments
+      type: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+      description: New element property assignments.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: Created element.
+    content.vb: Public NotOverridable Overrides Function CreateElement(partition As Partition, elementType As Type, propertyAssignments As PropertyAssignment()) As ModelElement
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement*
+  nameWithType.vb: EFModelDomainModel.CreateElement(Partition, Type, PropertyAssignment())
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: CreateElement(Partition, Type, PropertyAssignment())
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  id: CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: CreateElementLink(Partition, Type, RoleAssignment[], PropertyAssignment[])
+  nameWithType: EFModelDomainModel.CreateElementLink(Partition, Type, RoleAssignment[], PropertyAssignment[])
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.RoleAssignment[], Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CreateElementLink
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 361
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nCreates an element link of specified type.\n"
+  example: []
+  syntax:
+    content: public override sealed ElementLink CreateElementLink(Partition partition, Type elementLinkType, RoleAssignment[] roleAssignments, PropertyAssignment[] propertyAssignments)
+    parameters:
+    - id: partition
+      type: Microsoft.VisualStudio.Modeling.Partition
+      description: Partition where element is to be created.
+    - id: elementLinkType
+      type: System.Type
+      description: Element link type which belongs to this domain model.
+    - id: roleAssignments
+      type: Microsoft.VisualStudio.Modeling.RoleAssignment[]
+      description: List of relationship role assignments for the new link.
+    - id: propertyAssignments
+      type: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+      description: New element property assignments.
+    return:
+      type: Microsoft.VisualStudio.Modeling.ElementLink
+      description: Created element link.
+    content.vb: Public NotOverridable Overrides Function CreateElementLink(partition As Partition, elementLinkType As Type, roleAssignments As RoleAssignment(), propertyAssignments As PropertyAssignment()) As ElementLink
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink*
+  nameWithType.vb: EFModelDomainModel.CreateElementLink(Partition, Type, RoleAssignment(), PropertyAssignment())
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.RoleAssignment(), Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: CreateElementLink(Partition, Type, RoleAssignment(), PropertyAssignment())
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceBaseName
+  commentId: F:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceBaseName
+  id: ResourceBaseName
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: ResourceBaseName
+  nameWithType: EFModelDomainModel.ResourceBaseName
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceBaseName
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResourceBaseName
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 415
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nThe base name of this model&apos;s resources.\n"
+  example: []
+  syntax:
+    content: public const string ResourceBaseName = "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx"
+    return:
+      type: System.String
+    content.vb: Public Const ResourceBaseName As String = "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+  id: ResourceManager
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: ResourceManager
+  nameWithType: EFModelDomainModel.ResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResourceManager
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 420
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets the DomainModel&apos;s ResourceManager. If the ResourceManager does not already exist, then it is created.\n"
+  example: []
+  syntax:
+    content: public override ResourceManager ResourceManager { get; }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Public Overrides ReadOnly Property ResourceManager As ResourceManager
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.ResourceManager
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+  id: SingletonResourceManager
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: SingletonResourceManager
+  nameWithType: EFModelDomainModel.SingletonResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SingletonResourceManager
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 432
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nGets the Singleton ResourceManager for this domain model.\n"
+  example: []
+  syntax:
+    content: public static ResourceManager SingletonResourceManager { get; }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Public Shared ReadOnly Property SingletonResourceManager As ResourceManager
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  id: GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: GetClosureFilter(ClosureType, ICollection<ModelElement>)
+  nameWithType: EFModelDomainModel.GetClosureFilter(ClosureType, ICollection<ModelElement>)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection<Microsoft.VisualStudio.Modeling.ModelElement>)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: GetClosureFilter
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 460
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nReturns an IElementVisitorFilter that corresponds to the ClosureType.\n"
+  example: []
+  syntax:
+    content: public override IElementVisitorFilter GetClosureFilter(ClosureType type, ICollection<ModelElement> rootElements)
+    parameters:
+    - id: type
+      type: Microsoft.VisualStudio.Modeling.ClosureType
+      description: closure type
+    - id: rootElements
+      type: System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement}
+      description: collection of root elements
+    return:
+      type: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+      description: IElementVisitorFilter or null
+    content.vb: Public Overrides Function GetClosureFilter(type As ClosureType, rootElements As ICollection(Of ModelElement)) As IElementVisitorFilter
+  overridden: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter*
+  nameWithType.vb: EFModelDomainModel.GetClosureFilter(ClosureType, ICollection(Of ModelElement))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.Modeling.ModelElement))
+  name.vb: GetClosureFilter(ClosureType, ICollection(Of ModelElement))
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  id: EnableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: EnableDiagramRules(Store)
+  nameWithType: EFModelDomainModel.EnableDiagramRules(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EnableDiagramRules
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 518
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nEnables rules in this domain model related to diagram fixup for the given store.\nIf diagram data will be loaded into the store, this method should be called first to ensure\nthat the diagram behaves properly.\n"
+  example: []
+  syntax:
+    content: public static void EnableDiagramRules(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+    content.vb: Public Shared Sub EnableDiagramRules(store As Store)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  id: DisableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+  langs:
+  - csharp
+  - vb
+  name: DisableDiagramRules(Store)
+  nameWithType: EFModelDomainModel.DisableDiagramRules(Store)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules(Microsoft.VisualStudio.Modeling.Store)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DisableDiagramRules
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 536
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDisables rules in this domain model related to diagram fixup for the given store.\n"
+  example: []
+  syntax:
+    content: public static void DisableDiagramRules(Store store)
+    parameters:
+    - id: store
+      type: Microsoft.VisualStudio.Modeling.Store
+    content.vb: Public Shared Sub DisableDiagramRules(store As Store)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.VisualStudio.Modeling.DomainModel
+  commentId: T:Microsoft.VisualStudio.Modeling.DomainModel
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: DomainModel
+  nameWithType: DomainModel
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetClosureVisitor(ClosureType, ICollection<ModelElement>)
+  nameWithType: DomainModel.GetClosureVisitor(ClosureType, ICollection<ModelElement>)
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection<Microsoft.VisualStudio.Modeling.ModelElement>)
+  nameWithType.vb: DomainModel.GetClosureVisitor(ClosureType, ICollection(Of ModelElement))
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.Modeling.ModelElement))
+  name.vb: GetClosureVisitor(ClosureType, ICollection(Of ModelElement))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: GetClosureVisitor
+    nameWithType: DomainModel.GetClosureVisitor
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ClosureType
+    name: ClosureType
+    nameWithType: ClosureType
+    fullName: Microsoft.VisualStudio.Modeling.ClosureType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: GetClosureVisitor
+    nameWithType: DomainModel.GetClosureVisitor
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureVisitor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ClosureType
+    name: ClosureType
+    nameWithType: ClosureType
+    fullName: Microsoft.VisualStudio.Modeling.ClosureType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetCustomDomainProperties()
+  nameWithType: DomainModel.GetCustomDomainProperties()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+    name: GetCustomDomainProperties
+    nameWithType: DomainModel.GetCustomDomainProperties
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+    name: GetCustomDomainProperties
+    nameWithType: DomainModel.GetCustomDomainProperties
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetCustomDomainRoles()
+  nameWithType: DomainModel.GetCustomDomainRoles()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+    name: GetCustomDomainRoles
+    nameWithType: DomainModel.GetCustomDomainRoles
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+    name: GetCustomDomainRoles
+    nameWithType: DomainModel.GetCustomDomainRoles
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainRoles
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainModelInfo
+  commentId: P:Microsoft.VisualStudio.Modeling.DomainModel.DomainModelInfo
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: DomainModelInfo
+  nameWithType: DomainModel.DomainModelInfo
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainModelInfo
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.Store
+  commentId: P:Microsoft.VisualStudio.Modeling.DomainModel.Store
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: Store
+  nameWithType: DomainModel.Store
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.Store
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetCustomDomainModelTypes()
+  nameWithType: DomainModel.GetCustomDomainModelTypes()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+    name: GetCustomDomainModelTypes
+    nameWithType: DomainModel.GetCustomDomainModelTypes
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+    name: GetCustomDomainModelTypes
+    nameWithType: DomainModel.GetCustomDomainModelTypes
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetCustomDomainModelTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes
+  name: GetCustomDomainModelTypes
+  nameWithType: EFModelDomainModel.GetCustomDomainModelTypes
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetCustomDomainModelTypes
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.#ctor
+  name: EFModelDomainModel
+  nameWithType: EFModelDomainModel.EFModelDomainModel
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EFModelDomainModel
+- uid: Microsoft.VisualStudio.Modeling.Store
+  commentId: T:Microsoft.VisualStudio.Modeling.Store
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Store
+  nameWithType: Store
+  fullName: Microsoft.VisualStudio.Modeling.Store
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetGeneratedDomainModelTypes()
+  nameWithType: DomainModel.GetGeneratedDomainModelTypes()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+    name: GetGeneratedDomainModelTypes
+    nameWithType: DomainModel.GetGeneratedDomainModelTypes
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+    name: GetGeneratedDomainModelTypes
+    nameWithType: DomainModel.GetGeneratedDomainModelTypes
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainModelTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes
+  name: GetGeneratedDomainModelTypes
+  nameWithType: EFModelDomainModel.GetGeneratedDomainModelTypes
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainModelTypes
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetGeneratedDomainProperties()
+  nameWithType: DomainModel.GetGeneratedDomainProperties()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+    name: GetGeneratedDomainProperties
+    nameWithType: DomainModel.GetGeneratedDomainProperties
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+    name: GetGeneratedDomainProperties
+    nameWithType: DomainModel.GetGeneratedDomainProperties
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainProperties
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties
+  name: GetGeneratedDomainProperties
+  nameWithType: EFModelDomainModel.GetGeneratedDomainProperties
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainProperties
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo[]
+  isExternal: true
+  name: DomainModel.DomainMemberInfo[]
+  nameWithType: DomainModel.DomainMemberInfo[]
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo[]
+  nameWithType.vb: DomainModel.DomainMemberInfo()
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo()
+  name.vb: DomainModel.DomainMemberInfo()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo
+    name: DomainModel.DomainMemberInfo
+    nameWithType: DomainModel.DomainMemberInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo
+    name: DomainModel.DomainMemberInfo
+    nameWithType: DomainModel.DomainMemberInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainMemberInfo
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetGeneratedDomainRoles()
+  nameWithType: DomainModel.GetGeneratedDomainRoles()
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+    name: GetGeneratedDomainRoles
+    nameWithType: DomainModel.GetGeneratedDomainRoles
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+    name: GetGeneratedDomainRoles
+    nameWithType: DomainModel.GetGeneratedDomainRoles
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetGeneratedDomainRoles
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles
+  name: GetGeneratedDomainRoles
+  nameWithType: EFModelDomainModel.GetGeneratedDomainRoles
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetGeneratedDomainRoles
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo[]
+  isExternal: true
+  name: DomainModel.DomainRolePlayerInfo[]
+  nameWithType: DomainModel.DomainRolePlayerInfo[]
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo[]
+  nameWithType.vb: DomainModel.DomainRolePlayerInfo()
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo()
+  name.vb: DomainModel.DomainRolePlayerInfo()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo
+    name: DomainModel.DomainRolePlayerInfo
+    nameWithType: DomainModel.DomainRolePlayerInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo
+    name: DomainModel.DomainRolePlayerInfo
+    nameWithType: DomainModel.DomainRolePlayerInfo
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.DomainRolePlayerInfo
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: CreateElement(Partition, Type, PropertyAssignment[])
+  nameWithType: DomainModel.CreateElement(Partition, Type, PropertyAssignment[])
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  nameWithType.vb: DomainModel.CreateElement(Partition, Type, PropertyAssignment())
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: CreateElement(Partition, Type, PropertyAssignment())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+    name: CreateElement
+    nameWithType: DomainModel.CreateElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+    name: CreateElement
+    nameWithType: DomainModel.CreateElement
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElement
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement
+  name: CreateElement
+  nameWithType: EFModelDomainModel.CreateElement
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElement
+- uid: Microsoft.VisualStudio.Modeling.Partition
+  commentId: T:Microsoft.VisualStudio.Modeling.Partition
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Partition
+  nameWithType: Partition
+  fullName: Microsoft.VisualStudio.Modeling.Partition
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+  isExternal: true
+  name: PropertyAssignment[]
+  nameWithType: PropertyAssignment[]
+  fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment[]
+  nameWithType.vb: PropertyAssignment()
+  fullName.vb: Microsoft.VisualStudio.Modeling.PropertyAssignment()
+  name.vb: PropertyAssignment()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: CreateElementLink(Partition, Type, RoleAssignment[], PropertyAssignment[])
+  nameWithType: DomainModel.CreateElementLink(Partition, Type, RoleAssignment[], PropertyAssignment[])
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.RoleAssignment[], Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+  nameWithType.vb: DomainModel.CreateElementLink(Partition, Type, RoleAssignment(), PropertyAssignment())
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition, System.Type, Microsoft.VisualStudio.Modeling.RoleAssignment(), Microsoft.VisualStudio.Modeling.PropertyAssignment())
+  name.vb: CreateElementLink(Partition, Type, RoleAssignment(), PropertyAssignment())
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+    name: CreateElementLink
+    nameWithType: DomainModel.CreateElementLink
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RoleAssignment
+    name: RoleAssignment
+    nameWithType: RoleAssignment
+    fullName: Microsoft.VisualStudio.Modeling.RoleAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink(Microsoft.VisualStudio.Modeling.Partition,System.Type,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])
+    name: CreateElementLink
+    nameWithType: DomainModel.CreateElementLink
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.CreateElementLink
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.Partition
+    name: Partition
+    nameWithType: Partition
+    fullName: Microsoft.VisualStudio.Modeling.Partition
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.RoleAssignment
+    name: RoleAssignment
+    nameWithType: RoleAssignment
+    fullName: Microsoft.VisualStudio.Modeling.RoleAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    name: PropertyAssignment
+    nameWithType: PropertyAssignment
+    fullName: Microsoft.VisualStudio.Modeling.PropertyAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink
+  name: CreateElementLink
+  nameWithType: EFModelDomainModel.CreateElementLink
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.CreateElementLink
+- uid: Microsoft.VisualStudio.Modeling.RoleAssignment[]
+  isExternal: true
+  name: RoleAssignment[]
+  nameWithType: RoleAssignment[]
+  fullName: Microsoft.VisualStudio.Modeling.RoleAssignment[]
+  nameWithType.vb: RoleAssignment()
+  fullName.vb: Microsoft.VisualStudio.Modeling.RoleAssignment()
+  name.vb: RoleAssignment()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.RoleAssignment
+    name: RoleAssignment
+    nameWithType: RoleAssignment
+    fullName: Microsoft.VisualStudio.Modeling.RoleAssignment
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.RoleAssignment
+    name: RoleAssignment
+    nameWithType: RoleAssignment
+    fullName: Microsoft.VisualStudio.Modeling.RoleAssignment
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.VisualStudio.Modeling.ElementLink
+  commentId: T:Microsoft.VisualStudio.Modeling.ElementLink
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ElementLink
+  nameWithType: ElementLink
+  fullName: Microsoft.VisualStudio.Modeling.ElementLink
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.ResourceManager
+  commentId: P:Microsoft.VisualStudio.Modeling.DomainModel.ResourceManager
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: ResourceManager
+  nameWithType: DomainModel.ResourceManager
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.ResourceManager
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+  name: ResourceManager
+  nameWithType: EFModelDomainModel.ResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.ResourceManager
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Resources
+  commentId: N:System.Resources
+  isExternal: true
+  name: System.Resources
+  nameWithType: System.Resources
+  fullName: System.Resources
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+  name: SingletonResourceManager
+  nameWithType: EFModelDomainModel.SingletonResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.SingletonResourceManager
+- uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  commentId: M:Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+  parent: Microsoft.VisualStudio.Modeling.DomainModel
+  isExternal: true
+  name: GetClosureFilter(ClosureType, ICollection<ModelElement>)
+  nameWithType: DomainModel.GetClosureFilter(ClosureType, ICollection<ModelElement>)
+  fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection<Microsoft.VisualStudio.Modeling.ModelElement>)
+  nameWithType.vb: DomainModel.GetClosureFilter(ClosureType, ICollection(Of ModelElement))
+  fullName.vb: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType, System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.Modeling.ModelElement))
+  name.vb: GetClosureFilter(ClosureType, ICollection(Of ModelElement))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: GetClosureFilter
+    nameWithType: DomainModel.GetClosureFilter
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ClosureType
+    name: ClosureType
+    nameWithType: ClosureType
+    fullName: Microsoft.VisualStudio.Modeling.ClosureType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter(Microsoft.VisualStudio.Modeling.ClosureType,System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement})
+    name: GetClosureFilter
+    nameWithType: DomainModel.GetClosureFilter
+    fullName: Microsoft.VisualStudio.Modeling.DomainModel.GetClosureFilter
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.VisualStudio.Modeling.ClosureType
+    name: ClosureType
+    nameWithType: ClosureType
+    fullName: Microsoft.VisualStudio.Modeling.ClosureType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter
+  name: GetClosureFilter
+  nameWithType: EFModelDomainModel.GetClosureFilter
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.GetClosureFilter
+- uid: Microsoft.VisualStudio.Modeling.ClosureType
+  commentId: T:Microsoft.VisualStudio.Modeling.ClosureType
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ClosureType
+  nameWithType: ClosureType
+  fullName: Microsoft.VisualStudio.Modeling.ClosureType
+- uid: System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.VisualStudio.Modeling.ModelElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<ModelElement>
+  nameWithType: ICollection<ModelElement>
+  fullName: System.Collections.Generic.ICollection<Microsoft.VisualStudio.Modeling.ModelElement>
+  nameWithType.vb: ICollection(Of ModelElement)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.Modeling.ModelElement)
+  name.vb: ICollection(Of ModelElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.VisualStudio.Modeling.ModelElement
+    name: ModelElement
+    nameWithType: ModelElement
+    fullName: Microsoft.VisualStudio.Modeling.ModelElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  commentId: T:Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: IElementVisitorFilter
+  nameWithType: IElementVisitorFilter
+  fullName: Microsoft.VisualStudio.Modeling.IElementVisitorFilter
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules
+  name: EnableDiagramRules
+  nameWithType: EFModelDomainModel.EnableDiagramRules
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.EnableDiagramRules
+- uid: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules
+  name: DisableDiagramRules
+  nameWithType: EFModelDomainModel.DisableDiagramRules
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelDomainModel.DisableDiagramRules

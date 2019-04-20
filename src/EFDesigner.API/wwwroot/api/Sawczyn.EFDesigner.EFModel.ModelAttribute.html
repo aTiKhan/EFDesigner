@@ -1,0 +1,2882 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModelAttribute
+   | Entity Framework Visual Editor API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModelAttribute
+   | Entity Framework Visual Editor API ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../images/help.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/VSMarketLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute">
+  
+  
+  <h1 id="Sawczyn_EFDesigner_EFModel_ModelAttribute" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute" class="text-break">Class ModelAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>DomainClass ModelAttribute
+An attribute of a class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></div>
+    <div class="level2"><span class="xref">ModelAttribute</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.VisualStudio.Modeling.IMergeElements</span></div>
+    <div><a class="xref" href="Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.html">IModelElementInCompartment</a></div>
+    <div><a class="xref" href="Sawczyn.EFDesigner.EFModel.IDisplaysWarning.html">IDisplaysWarning</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Delete()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable&lt;System.Guid&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection&lt;TCollection, TElement&gt;(System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection&lt;TCollection, TElement&gt;(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Id</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Partition</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Store</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsActive</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sawczyn.EFDesigner.EFModel.html">Sawczyn.EFDesigner.EFModel</a></h6>
+  <h6><strong>Assembly</strong>: Sawczyn.EFDesigner.EFModel.Dsl.dll</h6>
+  <h5 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ValidationState(ValidationState.Enabled)]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainModelOwner(typeof(EFModelDomainModel))]
+[CLSCompliant(true)]
+[DomainObjectId(&quot;8be1f7ab-85c8-4f57-8621-38e1207d8f8d&quot;)]
+public class ModelAttribute : ModelElement, IMergeElements, IModelElementInCompartment, IDisplaysWarning</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_PropertyAssignment___.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.%23ctor(Microsoft.VisualStudio.Modeling.Partition%2CMicrosoft.VisualStudio.Modeling.PropertyAssignment%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5060">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.#ctor*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_PropertyAssignment___" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.PropertyAssignment[])">ModelAttribute(Partition, PropertyAssignment[])</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelAttribute(Partition partition, params PropertyAssignment[] propertyAssignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">partition</span></td>
+        <td><p>Partition where new element is to be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.PropertyAssignment</span>[]</td>
+        <td><span class="parametername">propertyAssignments</span></td>
+        <td><p>List of domain property id/value pairs to set once the element is created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_Microsoft_VisualStudio_Modeling_Store_Microsoft_VisualStudio_Modeling_PropertyAssignment___.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.%23ctor(Microsoft.VisualStudio.Modeling.Store%2CMicrosoft.VisualStudio.Modeling.PropertyAssignment%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5050">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.#ctor*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute__ctor_Microsoft_VisualStudio_Modeling_Store_Microsoft_VisualStudio_Modeling_PropertyAssignment___" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.#ctor(Microsoft.VisualStudio.Modeling.Store,Microsoft.VisualStudio.Modeling.PropertyAssignment[])">ModelAttribute(Store, PropertyAssignment[])</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelAttribute(Store store, params PropertyAssignment[] propertyAssignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Store</span></td>
+        <td><span class="parametername">store</span></td>
+        <td><p>Store where new element is to be created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.PropertyAssignment</span>[]</td>
+        <td><span class="parametername">propertyAssignments</span></td>
+        <td><p>List of domain property id/value pairs to set once the element is created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_AutoPropertyDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.AutoPropertyDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6669">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_AutoPropertyDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.AutoPropertyDomainPropertyId">AutoPropertyDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>AutoProperty domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid AutoPropertyDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnNameDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnNameDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6847">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnNameDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnNameDomainPropertyId">ColumnNameDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>ColumnName domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ColumnNameDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnTypeDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnTypeDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7027">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnTypeDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnTypeDomainPropertyId">ColumnTypeDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>ColumnType domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ColumnTypeDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_CustomAttributesDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.CustomAttributesDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7206">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CustomAttributesDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CustomAttributesDomainPropertyId">CustomAttributesDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>CustomAttributes domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid CustomAttributesDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_DescriptionDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.DescriptionDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6134">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_DescriptionDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.DescriptionDomainPropertyId">DescriptionDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Description domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DescriptionDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_DisplayTextDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayTextDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7295">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_DisplayTextDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayTextDomainPropertyId">DisplayTextDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>DisplayText domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DisplayTextDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_DomainClassId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.DomainClassId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5044">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_DomainClassId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.DomainClassId">DomainClassId</h4>
+  <div class="markdown level1 summary"><p>ModelAttribute domain class Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DomainClassId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IdentityTypeDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IdentityTypeDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6045">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IdentityTypeDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IdentityTypeDomainPropertyId">IdentityTypeDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IdentityType domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IdentityTypeDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5603">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedDomainPropertyId">IndexedDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Indexed domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IndexedDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedUniqueDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedUniqueDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5691">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedUniqueDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedUniqueDomainPropertyId">IndexedUniqueDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IndexedUnique domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IndexedUniqueDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_InitialValueDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.InitialValueDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5160">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_InitialValueDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.InitialValueDomainPropertyId">InitialValueDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>InitialValue domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid InitialValueDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnNameTrackingDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnNameTrackingDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6938">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnNameTrackingDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnNameTrackingDomainPropertyId">IsColumnNameTrackingDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IsColumnNameTracking domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IsColumnNameTrackingDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnTypeTrackingDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnTypeTrackingDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7117">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnTypeTrackingDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnTypeTrackingDomainPropertyId">IsColumnTypeTrackingDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IsColumnTypeTracking domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IsColumnTypeTrackingDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsConcurrencyTokenDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsConcurrencyTokenDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5957">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsConcurrencyTokenDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsConcurrencyTokenDomainPropertyId">IsConcurrencyTokenDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IsConcurrencyToken domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IsConcurrencyTokenDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsIdentityDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsIdentityDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5249">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsIdentityDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsIdentityDomainPropertyId">IsIdentityDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IsIdentity domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IsIdentityDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_MaxLengthDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.MaxLengthDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5515">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MaxLengthDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MaxLengthDomainPropertyId">MaxLengthDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>MaxLength domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MaxLengthDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_MinLengthDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.MinLengthDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6759">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MinLengthDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MinLengthDomainPropertyId">MinLengthDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>MinLength domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MinLengthDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_NameDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.NameDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6313">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_NameDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.NameDomainPropertyId">NameDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Name domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid NameDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_PersistentDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.PersistentDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5426">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_PersistentDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.PersistentDomainPropertyId">PersistentDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Persistent domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid PersistentDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ReadOnlyDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ReadOnlyDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6580">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ReadOnlyDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ReadOnlyDomainPropertyId">ReadOnlyDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>ReadOnly domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ReadOnlyDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_RequiredDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.RequiredDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5337">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_RequiredDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.RequiredDomainPropertyId">RequiredDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Required domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid RequiredDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SetterVisibilityDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SetterVisibilityDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6403">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetterVisibilityDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetterVisibilityDomainPropertyId">SetterVisibilityDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>SetterVisibility domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SetterVisibilityDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_StringTypeDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.StringTypeDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5779">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_StringTypeDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.StringTypeDomainPropertyId">StringTypeDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>StringType domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid StringTypeDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SummaryDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SummaryDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6224">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SummaryDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SummaryDomainPropertyId">SummaryDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Summary domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SummaryDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_TableOverrideDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.TableOverrideDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5867">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_TableOverrideDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.TableOverrideDomainPropertyId">TableOverrideDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TableOverride domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TableOverrideDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_TypeDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.TypeDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5070">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_TypeDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.TypeDomainPropertyId">TypeDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Type domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TypeDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_VirtualDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.VirtualDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6492">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_VirtualDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.VirtualDomainPropertyId">VirtualDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Virtual domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid VirtualDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_AutoProperty.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.AutoProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6681">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_AutoProperty_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.AutoProperty*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_AutoProperty" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.AutoProperty">AutoProperty</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of AutoProperty domain property.
+If false, generates a backing field with a partial method to hook getting and
+setting the property. If true, generates a simple auto property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/AutoProperty.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/AutoProperty.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/AutoProperty.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;bd0273dc-d3ea-44e2-8b01-f79d39ca0704&quot;)]
+public bool AutoProperty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_CLRType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.CLRType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L222">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CLRType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CLRType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CLRType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CLRType">CLRType</h4>
+  <div class="markdown level1 summary"><p>Converts a C# primitive type to a CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CLRType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The type of the colour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnName.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6853">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnName_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnName*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnName" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnName">ColumnName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of ColumnName domain property.
+The name for the table column backing this property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnName.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnName.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnName.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainProperty(Kind = DomainPropertyKind.CustomStorage)]
+[DomainObjectId(&quot;e4394dde-038f-4fea-a328-3b6bed8571f8&quot;)]
+public string ColumnName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7033">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ColumnType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ColumnType">ColumnType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of ColumnType domain property.
+The data type for the table column backing this property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnType.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnType.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ColumnType.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainProperty(Kind = DomainPropertyKind.CustomStorage)]
+[DomainObjectId(&quot;17cc5012-1352-4a08-9965-55dcecaa985f&quot;)]
+public string ColumnType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_CompartmentName.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.CompartmentName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L30">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CompartmentName_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CompartmentName*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CompartmentName" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CompartmentName">CompartmentName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the compartment holding this model element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CompartmentName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the compartment holding this model element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_CustomAttributes.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.CustomAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7218">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CustomAttributes_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CustomAttributes*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_CustomAttributes" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.CustomAttributes">CustomAttributes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of CustomAttributes domain property.
+Any custom attributes to be generated for this element.  Will be passed through
+as entered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/CustomAttributes.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/CustomAttributes.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/CustomAttributes.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;c54c284f-10d6-4a49-8fc1-0bcf4bab8c6f&quot;)]
+public string CustomAttributes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Description.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6145">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Description_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Description*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Description" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Description domain property.
+Detailed code documentation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Description.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Description.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Description.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;d974a312-57fe-42b3-b377-22fe01562356&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_DisplayText.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7306">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_DisplayText_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayText*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_DisplayText" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.DisplayText">DisplayText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/DisplayText.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/DisplayText.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/DisplayText.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;7d65b45d-ff09-49c7-b1bc-ea80175686d8&quot;)]
+public string DisplayText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_FQPrimitiveType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.FQPrimitiveType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L204">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_FQPrimitiveType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.FQPrimitiveType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_FQPrimitiveType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.FQPrimitiveType">FQPrimitiveType</h4>
+  <div class="markdown level1 summary"><p>Converts the attribute&apos;s CLR type to a C# primitive type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FQPrimitiveType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of primitive type, or the fully qualified name if the attribute is an enumeration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IdentityType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IdentityType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6056">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IdentityType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IdentityType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IdentityType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IdentityType">IdentityType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IdentityType domain property.
+If this property is an identity, how the value is generated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IdentityType.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IdentityType.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IdentityType.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;e52b2355-7c6c-4493-8012-291f4f679d7b&quot;)]
+public IdentityType IdentityType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.IdentityType.html">IdentityType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Indexed.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Indexed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5614">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Indexed_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Indexed*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Indexed" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Indexed">Indexed</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Indexed domain property.
+Should this attribute create an index in the database?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Indexed.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Indexed.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Indexed.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;59213f5b-9662-4f70-ade1-280d2d7ab77b&quot;)]
+public bool Indexed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedUnique.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedUnique%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5702">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedUnique_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedUnique*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IndexedUnique" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IndexedUnique">IndexedUnique</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IndexedUnique domain property.
+If indexed, is the index a unique index?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IndexedUnique.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IndexedUnique.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IndexedUnique.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;a4f65b33-e958-4f04-9dd0-160ce72a9f5c&quot;)]
+public bool IndexedUnique { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_InitialValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.InitialValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5171">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_InitialValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.InitialValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_InitialValue" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.InitialValue">InitialValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of InitialValue domain property.
+Value for attribute when first created</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/InitialValue.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/InitialValue.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/InitialValue.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;711a1ade-6ac9-4f06-be35-3f7d0aacd848&quot;)]
+public string InitialValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnNameTracking.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnNameTracking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6949">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnNameTracking_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnNameTracking*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnNameTracking" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnNameTracking">IsColumnNameTracking</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IsColumnNameTracking domain property.
+If true, ModelAttribute.ColumnName tracks ModelAttribute.Name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsColumnNameTracking.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsColumnNameTracking.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;7e3b91ab-3859-4b80-9270-9adf7b46dbb3&quot;)]
+public bool IsColumnNameTracking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnTypeTracking.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnTypeTracking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7128">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnTypeTracking_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnTypeTracking*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsColumnTypeTracking" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsColumnTypeTracking">IsColumnTypeTracking</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IsColumnTypeTracking domain property.
+If true, ModelAttribute.ColumnType tracks ModelAttribute.Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsColumnTypeTracking.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsColumnTypeTracking.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;8f4f2c30-d7cd-4ee6-aa6b-1bc1dc8fd13c&quot;)]
+public bool IsColumnTypeTracking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsConcurrencyToken.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsConcurrencyToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5968">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsConcurrencyToken_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsConcurrencyToken*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsConcurrencyToken" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsConcurrencyToken">IsConcurrencyToken</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IsConcurrencyToken domain property.
+If true, this property serves as the concurrency value for the class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsConcurrencyToken.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsConcurrencyToken.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsConcurrencyToken.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;875fc44f-1355-4b9e-b3bb-377ab3510f3b&quot;)]
+public bool IsConcurrencyToken { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsIdentity.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5260">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsIdentity_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsIdentity*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsIdentity" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsIdentity">IsIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IsIdentity domain property.
+Does this attribute represent the identity of the object?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsIdentity.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsIdentity.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/IsIdentity.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;ef3764a4-c46e-443d-86b6-968e828d6d3b&quot;)]
+public bool IsIdentity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_MaxLength.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.MaxLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5526">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MaxLength_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MaxLength*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MaxLength" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MaxLength">MaxLength</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of MaxLength domain property.
+Maximum length of the string, 0 for no max length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MaxLength.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MaxLength.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MaxLength.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;8c128f2b-8f9f-4c8e-acf1-dd5488736b79&quot;)]
+public int MaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_MinLength.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.MinLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6770">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MinLength_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MinLength*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_MinLength" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.MinLength">MinLength</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of MinLength domain property.
+Minimum length of the string, 0 for no minimum length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MinLength.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MinLength.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/MinLength.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;7fe42ef4-9691-4db1-8219-59107c14478b&quot;)]
+public int MinLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ModelClass.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ModelClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L7382">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ModelClass*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ModelClass" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ModelClass">ModelClass</h4>
+  <div class="markdown level1 summary"><p>Gets or sets ModelClass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModelClass ModelClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Name.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6324">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Name_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Name*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Name" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Name domain property.
+The name of the property. Must be a valid C# symbol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Name.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Name.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Name.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[ElementName(typeof(ModelAttributeNameProvider))]
+[DomainObjectId(&quot;df236d99-ef7c-419c-833d-a972bf8ccc52&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ParentModelElement.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ParentModelElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L19">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ParentModelElement_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ParentModelElement*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ParentModelElement" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ParentModelElement">ParentModelElement</h4>
+  <div class="markdown level1 summary"><p>Gets the parent model element (ModelClass).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IModelElementWithCompartments ParentModelElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.IModelElementWithCompartments.html">IModelElementWithCompartments</a></td>
+        <td><p>The parent model element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Persistent.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Persistent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5437">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Persistent_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Persistent*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Persistent" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Persistent">Persistent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Persistent domain property.
+Attribute will be stored in persistent storage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Persistent.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Persistent.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Persistent.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;e19260c6-5ae0-43bc-82eb-dd2b4d234f9e&quot;)]
+public bool Persistent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_PrimitiveType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.PrimitiveType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L191">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_PrimitiveType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.PrimitiveType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_PrimitiveType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.PrimitiveType">PrimitiveType</h4>
+  <div class="markdown level1 summary"><p>From internal class System.Data.Metadata.Edm.PrimitiveType in System.Data.Entity. Converts the attribute&apos;s CLR type to a C# primitive type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PrimitiveType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of primitive type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ReadOnly.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6592">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ReadOnly_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ReadOnly*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ReadOnly" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ReadOnly">ReadOnly</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of ReadOnly domain property.
+If true, no setter will be generated. Only valid for transient public
+properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ReadOnly.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ReadOnly.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/ReadOnly.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;d20e1491-e58d-4a3c-8c0a-24653cc38580&quot;)]
+public bool ReadOnly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Required.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Required%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5349">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Required_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Required*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Required" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Required">Required</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Required domain property.
+If true, cannot be null (or the default value for the property type, if not
+nullable)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Required.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Required.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Required.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;e3b492a9-5341-4694-afa5-cb566ae813a7&quot;)]
+public bool Required { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SetterVisibility.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SetterVisibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6414">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetterVisibility_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetterVisibility*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetterVisibility" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetterVisibility">SetterVisibility</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of SetterVisibility domain property.
+Visibility for property setter; getter is public</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/SetterVisibility.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/SetterVisibility.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/SetterVisibility.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;76cc7aca-4420-423c-891c-2d349c8b7bc4&quot;)]
+public SetterAccessModifier SetterVisibility { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.SetterAccessModifier.html">SetterAccessModifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_StringType.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.StringType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5790">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_StringType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.StringType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_StringType" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.StringType">StringType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of StringType domain property.
+If not empty, will create a standard validation annotation for this attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/StringType.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/StringType.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/StringType.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;b129be88-1030-4ef1-9ba2-98a02aa40d2b&quot;)]
+public HTML5Type StringType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.HTML5Type.html">HTML5Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Summary.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Summary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6235">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Summary_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Summary*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Summary" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Summary">Summary</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Summary domain property.
+Brief code documentation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Summary.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Summary.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Summary.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;1ebd74c3-5011-48e6-b5c1-67d78293067d&quot;)]
+public string Summary { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SupportsInitialValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SupportsInitialValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L67">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SupportsInitialValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SupportsInitialValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SupportsInitialValue" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SupportsInitialValue">SupportsInitialValue</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this attribute supports initial values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsInitialValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if supports initial values, false if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_TableOverride.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.TableOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5879">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_TableOverride_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.TableOverride*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_TableOverride" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.TableOverride">TableOverride</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TableOverride domain property.
+Unused - Alternate table to store this attribute. If empty, the class&apos;s table is
+used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/TableOverride.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/TableOverride.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/TableOverride.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;5e502e9e-7120-42d1-bd3b-27dfc42f3618&quot;)]
+public string TableOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Type.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5081">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Type_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Type*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Type" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Type domain property.
+Type of this attribute</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(AttributeTypeTypeConverter))]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Type.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Type.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Type.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;7ccdef4e-9305-485f-abdc-7ee9afed3b83&quot;)]
+public string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Virtual.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Virtual%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L6503">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Virtual_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Virtual*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Virtual" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Virtual">Virtual</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Virtual domain property.
+If true, property will be generated with the &apos;virtual&apos; keyword</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Virtual.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Virtual.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.ModelAttribute/Virtual.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;c416dac0-92c6-4b36-89cd-b76380a3c448&quot;)]
+public bool Virtual { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnNameValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnNameValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L326">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnNameValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnNameValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnNameValue" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnNameValue">GetColumnNameValue()</h4>
+  <div class="markdown level1 summary"><p>Gets the storage for the ColumnName property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetColumnNameValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The ColumnName value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnTypeValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnTypeValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L352">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnTypeValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnTypeValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetColumnTypeValue" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetColumnTypeValue">GetColumnTypeValue()</h4>
+  <div class="markdown level1 summary"><p>Gets the storage for the ColumnType property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetColumnTypeValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The ColumnType value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_GetHasWarningValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.GetHasWarningValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L47">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetHasWarningValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetHasWarningValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_GetHasWarningValue" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.GetHasWarningValue">GetHasWarningValue()</h4>
+  <div class="markdown level1 summary"><p>Indicates if there are any model warnings in this element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHasWarningValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if model warnings exist, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_IsValidInitialValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.IsValidInitialValue(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L103">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsValidInitialValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsValidInitialValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_IsValidInitialValue_System_String_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.IsValidInitialValue(System.String,System.String)">IsValidInitialValue(String, String)</h4>
+  <div class="markdown level1 summary"><p>Tests if the InitialValue property is valid for the type indicated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidInitialValue(string typeName = null, string initialValue = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Name of type to test. If typeName is null, Type property will be used. If initialValue is null, InitialValue property will be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">initialValue</span></td>
+        <td><p>Initial value to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if InitialValue is a valid value for the type, or if initialValue is null or empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_Parse_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.Parse(Sawczyn.EFDesigner.EFModel.ModelRoot%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L578">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Parse_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Parse*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_Parse_Sawczyn_EFDesigner_EFModel_ModelRoot_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.Parse(Sawczyn.EFDesigner.EFModel.ModelRoot,System.String)">Parse(ModelRoot, String)</h4>
+  <div class="markdown level1 summary"><p>Parses the input string to check for type validity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParseResult Parse(ModelRoot modelRoot, string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelRoot.html">ModelRoot</a></td>
+        <td><span class="parametername">modelRoot</span></td>
+        <td><p>Context in which to parse the input</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>String to parse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ParseResult.html">ParseResult</a></td>
+        <td><p>ParseResult object if successful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if unable to parse inut string to a valid type for the model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_RedrawItem.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.RedrawItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L55">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_RedrawItem_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.RedrawItem*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_RedrawItem" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.RedrawItem">RedrawItem()</h4>
+  <div class="markdown level1 summary"><p>Redraws the presentation element on any diagram rendering this model element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RedrawItem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ResetWarning.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ResetWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L51">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ResetWarning_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ResetWarning*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ResetWarning" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ResetWarning">ResetWarning()</h4>
+  <div class="markdown level1 summary"><p>Resets the warning indicator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetWarning()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnNameValue_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnNameValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L336">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnNameValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnNameValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnNameValue_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnNameValue(System.String)">SetColumnNameValue(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the storage for the ColumnName property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnNameValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The ColumnName value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnTypeValue_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnTypeValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L362">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnTypeValue_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnTypeValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_SetColumnTypeValue_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.SetColumnTypeValue(System.String)">SetColumnTypeValue(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the storage for the ColumnType property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnTypeValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The ColumnType value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ToCLRType_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ToCLRType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L287">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToCLRType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToCLRType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToCLRType_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToCLRType(System.String)">ToCLRType(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a C# primitive type to a CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCLRType(string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>C# type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Matching CLR type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ToPrimitiveType_System_String_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ToPrimitiveType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L236">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToPrimitiveType_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToPrimitiveType*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToPrimitiveType_System_String_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToPrimitiveType(System.String)">ToPrimitiveType(String)</h4>
+  <div class="markdown level1 summary"><p>From internal class System.Data.Metadata.Edm.PrimitiveType in System.Data.Entity. Converts a CLR type to a C# primitive type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToPrimitiveType(string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>CLR type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of primitive type given </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute_ToString.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/ModelAttribute.cs/#L536">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToString_" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToString*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToString" data-uid="Sawczyn.EFDesigner.EFModel.ModelAttribute.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h5 id="Sawczyn_EFDesigner_EFModel_ModelAttribute_ToString_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Output is, in order:
+<ul>
+<li>Visibility</li>
+<li>Type (with optional &apos;?&apos; if not a required field</li>
+<li>Max length in brackets, if a string field and length is specified</li>
+<li>Name (with optional &apos;!&apos; if an identity field</li>
+<li>an equal sign (=) followed by an initializer, if an initializer is specified</li>
+</ul></p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.IMergeElements</span>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.IModelElementInCompartment.html">IModelElementInCompartment</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.IDisplaysWarning.html">IDisplaysWarning</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_LocateInDiagram_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.LocateInDiagram(ModelElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_GetFirstShapeElement_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.GetFirstShapeElement(ModelElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_GetCompartment_Microsoft_VisualStudio_Modeling_ModelElement_System_String_">ModelElementExtensions.GetCompartment(ModelElement, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_InvalidateDiagrams_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.InvalidateDiagrams(ModelElement)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_ModelAttribute.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.ModelAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainClasses.cs/#L5030" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright � 2019 Michael Sawczyn
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

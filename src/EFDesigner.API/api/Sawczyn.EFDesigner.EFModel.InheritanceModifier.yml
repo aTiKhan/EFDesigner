@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  id: InheritanceModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.InheritanceModifier.Abstract
+  - Sawczyn.EFDesigner.EFModel.InheritanceModifier.None
+  - Sawczyn.EFDesigner.EFModel.InheritanceModifier.Sealed
+  langs:
+  - csharp
+  - vb
+  name: InheritanceModifier
+  nameWithType: InheritanceModifier
+  fullName: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InheritanceModifier
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 700
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: InheritanceModifier\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum InheritanceModifier
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum InheritanceModifier
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.InheritanceModifier.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: InheritanceModifier.None
+  fullName: Sawczyn.EFDesigner.EFModel.InheritanceModifier.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 706
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNone\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/None.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      None = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/None.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      None = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.InheritanceModifier/None.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier.Abstract
+  commentId: F:Sawczyn.EFDesigner.EFModel.InheritanceModifier.Abstract
+  id: Abstract
+  parent: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  langs:
+  - csharp
+  - vb
+  name: Abstract
+  nameWithType: InheritanceModifier.Abstract
+  fullName: Sawczyn.EFDesigner.EFModel.InheritanceModifier.Abstract
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Abstract
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 711
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAbstract\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/Abstract.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Abstract = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/Abstract.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Abstract = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.InheritanceModifier/Abstract.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier.Sealed
+  commentId: F:Sawczyn.EFDesigner.EFModel.InheritanceModifier.Sealed
+  id: Sealed
+  parent: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  langs:
+  - csharp
+  - vb
+  name: Sealed
+  nameWithType: InheritanceModifier.Sealed
+  fullName: Sawczyn.EFDesigner.EFModel.InheritanceModifier.Sealed
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Sealed
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 716
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nSealed\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/Sealed.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Sealed = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.InheritanceModifier/Sealed.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Sealed = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.InheritanceModifier/Sealed.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.InheritanceModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  name: InheritanceModifier
+  nameWithType: InheritanceModifier
+  fullName: Sawczyn.EFDesigner.EFModel.InheritanceModifier

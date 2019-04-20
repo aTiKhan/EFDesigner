@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  commentId: T:Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  id: QuestionDisplay.QuestionVisualizer
+  parent: Sawczyn.EFDesigner
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: QuestionDisplay.QuestionVisualizer
+  nameWithType: QuestionDisplay.QuestionVisualizer
+  fullName: Sawczyn.EFDesigner.QuestionDisplay.QuestionVisualizer
+  type: Delegate
+  source:
+    remote:
+      path: src/Dsl/CustomCode/Utilities/QuestionDisplay.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: QuestionVisualizer
+    path: ../Dsl/CustomCode/Utilities/QuestionDisplay.cs
+    startLine: 8
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner
+  syntax:
+    content: public delegate bool QuestionVisualizer(string message);
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Delegate Function QuestionVisualizer(message As String) As Boolean
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Sawczyn.EFDesigner
+  commentId: N:Sawczyn.EFDesigner
+  name: Sawczyn.EFDesigner
+  nameWithType: Sawczyn.EFDesigner
+  fullName: Sawczyn.EFDesigner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

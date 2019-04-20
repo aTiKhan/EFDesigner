@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  commentId: T:Sawczyn.EFDesigner.EFModel.CodeStrategy
+  id: CodeStrategy
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerConcreteType
+  - Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerHierarchy
+  - Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerType
+  langs:
+  - csharp
+  - vb
+  name: CodeStrategy
+  nameWithType: CodeStrategy
+  fullName: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CodeStrategy
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1142
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: CodeStrategy\nWhich database strategy to use in code generation\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum CodeStrategy
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum CodeStrategy
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerType
+  commentId: F:Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerType
+  id: TablePerType
+  parent: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  langs:
+  - csharp
+  - vb
+  name: TablePerType
+  nameWithType: CodeStrategy.TablePerType
+  fullName: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerType
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TablePerType
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1149
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTablePerType\nA table will be used for every class\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerType.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TablePerType = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.CodeStrategy
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerType.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TablePerType = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerType.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerConcreteType
+  commentId: F:Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerConcreteType
+  id: TablePerConcreteType
+  parent: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  langs:
+  - csharp
+  - vb
+  name: TablePerConcreteType
+  nameWithType: CodeStrategy.TablePerConcreteType
+  fullName: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerConcreteType
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TablePerConcreteType
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1155
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTablePerConcreteType\nOnly concrete (not abstract) classes will have tables\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerConcreteType.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TablePerConcreteType = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.CodeStrategy
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerConcreteType.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TablePerConcreteType = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerConcreteType.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerHierarchy
+  commentId: F:Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerHierarchy
+  id: TablePerHierarchy
+  parent: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  langs:
+  - csharp
+  - vb
+  name: TablePerHierarchy
+  nameWithType: CodeStrategy.TablePerHierarchy
+  fullName: Sawczyn.EFDesigner.EFModel.CodeStrategy.TablePerHierarchy
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TablePerHierarchy
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1161
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nTablePerHierarchy\nA table will be used for every inheritance chain\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerHierarchy.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      TablePerHierarchy = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.CodeStrategy
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerHierarchy.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      TablePerHierarchy = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.CodeStrategy/TablePerHierarchy.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.CodeStrategy
+  commentId: T:Sawczyn.EFDesigner.EFModel.CodeStrategy
+  parent: Sawczyn.EFDesigner.EFModel
+  name: CodeStrategy
+  nameWithType: CodeStrategy
+  fullName: Sawczyn.EFDesigner.EFModel.CodeStrategy

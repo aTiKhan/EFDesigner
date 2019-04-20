@@ -2,7 +2,7 @@
 
 using Microsoft.VisualStudio.Modeling;
 
-namespace Sawczyn.EFDesigner.EFModel
+namespace Sawczyn.EFDesigner.EFModel.Rules
 {
    [RuleOn(typeof(ModelEnumValue), FireTime = TimeToFire.TopLevelCommit)]
    internal class ModelEnumValueAddRules : AddRule

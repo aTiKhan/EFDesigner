@@ -1,0 +1,2238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Association
+   | Entity Framework Visual Editor API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Association
+   | Entity Framework Visual Editor API ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../images/help.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/VSMarketLogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sawczyn.EFDesigner.EFModel.Association">
+  
+  
+  <h1 id="Sawczyn_EFDesigner_EFModel_Association" data-uid="Sawczyn.EFDesigner.EFModel.Association" class="text-break">Class Association
+  </h1>
+  <div class="markdown level0 summary"><p>DomainRelationship Association
+Associations between Classes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.VisualStudio.Modeling.ModelElement</span></div>
+    <div class="level2"><span class="xref">Microsoft.VisualStudio.Modeling.ElementLink</span></div>
+    <div class="level3"><span class="xref">Association</span></div>
+      <div class="level4"><a class="xref" href="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation.html">BidirectionalAssociation</a></div>
+      <div class="level4"><a class="xref" href="Sawczyn.EFDesigner.EFModel.UnidirectionalAssociation.html">UnidirectionalAssociation</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.VisualStudio.Modeling.IMergeElements</span></div>
+    <div><a class="xref" href="Sawczyn.EFDesigner.EFModel.IDisplaysWarning.html">IDisplaysWarning</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.GetDomainRelationship()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.MoveBefore(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.MoveToIndex(Microsoft.VisualStudio.Modeling.DomainRoleInfo, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.OnRolePlayerChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.OnRolePlayerChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ElementLink.LinkedElements</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetDomainClass()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanging(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnRolePlayerPositionChanged(Microsoft.VisualStudio.Modeling.DomainRoleInfo, Microsoft.VisualStudio.Modeling.ElementLink, System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Delete()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Delete(System.Guid[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnResurrected()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Copy(System.Collections.Generic.IEnumerable&lt;System.Guid&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.OnCopy(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.CanMerge(Microsoft.VisualStudio.Modeling.ProtoElementBase, Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroupPrototype)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.ChooseMergeTarget(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeRelate(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeDisconnect(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Microsoft.VisualStudio.Modeling.IMergeElements.MergeConfigure(Microsoft.VisualStudio.Modeling.ElementGroup)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection&lt;TCollection, TElement&gt;(System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetRoleCollection&lt;TCollection, TElement&gt;(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetBaseElement(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetAllExtensions(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.GetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.TryGetExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsExtendedBy(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension&lt;T&gt;(Microsoft.VisualStudio.Modeling.ModelElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.AddExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ExtensionElement)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.DomainClassInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.RemoveExtension(Microsoft.VisualStudio.Modeling.ModelElement, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Id</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Partition</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.Store</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsActive</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsDeleted</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.ModelElement.IsDeleting</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sawczyn.EFDesigner.EFModel.html">Sawczyn.EFDesigner.EFModel</a></h6>
+  <h6><strong>Assembly</strong>: Sawczyn.EFDesigner.EFModel.Dsl.dll</h6>
+  <h5 id="Sawczyn_EFDesigner_EFModel_Association_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ValidationState(ValidationState.Enabled)]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainModelOwner(typeof(EFModelDomainModel))]
+[CLSCompliant(true)]
+[DomainRelationship(AllowsDuplicates = true)]
+[DomainObjectId(&quot;ce77f831-a92d-4274-823a-3a8441a65f3a&quot;)]
+public abstract class Association : ElementLink, IMergeElements, IDisplaysWarning</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association__ctor_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_RoleAssignment___Microsoft_VisualStudio_Modeling_PropertyAssignment___.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.%23ctor(Microsoft.VisualStudio.Modeling.Partition%2CMicrosoft.VisualStudio.Modeling.RoleAssignment%5B%5D%2CMicrosoft.VisualStudio.Modeling.PropertyAssignment%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L40">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association__ctor_" data-uid="Sawczyn.EFDesigner.EFModel.Association.#ctor*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association__ctor_Microsoft_VisualStudio_Modeling_Partition_Microsoft_VisualStudio_Modeling_RoleAssignment___Microsoft_VisualStudio_Modeling_PropertyAssignment___" data-uid="Sawczyn.EFDesigner.EFModel.Association.#ctor(Microsoft.VisualStudio.Modeling.Partition,Microsoft.VisualStudio.Modeling.RoleAssignment[],Microsoft.VisualStudio.Modeling.PropertyAssignment[])">Association(Partition, RoleAssignment[], PropertyAssignment[])</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Association(Partition partition, RoleAssignment[] roleAssignments, PropertyAssignment[] propertyAssignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.Partition</span></td>
+        <td><span class="parametername">partition</span></td>
+        <td><p>The Partition instance containing this ElementLink</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.RoleAssignment</span>[]</td>
+        <td><span class="parametername">roleAssignments</span></td>
+        <td><p>A set of role assignments for roleplayer initialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.PropertyAssignment</span>[]</td>
+        <td><span class="parametername">propertyAssignments</span></td>
+        <td><p>A set of attribute assignments for attribute initialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_CollectionClassDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.CollectionClassDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L783">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_CollectionClassDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.CollectionClassDomainPropertyId">CollectionClassDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>CollectionClass domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid CollectionClassDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_DomainClassId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.DomainClassId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_DomainClassId" data-uid="Sawczyn.EFDesigner.EFModel.Association.DomainClassId">DomainClassId</h4>
+  <div class="markdown level1 summary"><p>Association domain class Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DomainClassId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_ForeignKeyLocationDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.ForeignKeyLocationDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1412">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_ForeignKeyLocationDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.ForeignKeyLocationDomainPropertyId">ForeignKeyLocationDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>ForeignKeyLocation domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ForeignKeyLocationDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_hasWarning.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.hasWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_hasWarning" data-uid="Sawczyn.EFDesigner.EFModel.Association.hasWarning">hasWarning</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool hasWarning</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_IsCollectionClassTrackingDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.IsCollectionClassTrackingDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1145">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_IsCollectionClassTrackingDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.IsCollectionClassTrackingDomainPropertyId">IsCollectionClassTrackingDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>IsCollectionClassTracking domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IsCollectionClassTrackingDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_PersistentDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.PersistentDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L383">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_PersistentDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.PersistentDomainPropertyId">PersistentDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Persistent domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid PersistentDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceDeleteActionDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceDeleteActionDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L605">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceDeleteActionDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceDeleteActionDomainPropertyId">SourceDeleteActionDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>SourceDeleteAction domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SourceDeleteActionDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceDomainRoleId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceDomainRoleId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L50">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceDomainRoleId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceDomainRoleId">SourceDomainRoleId</h4>
+  <div class="markdown level1 summary"><p>Source domain role Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SourceDomainRoleId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDisplayDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDisplayDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L473">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDisplayDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDisplayDomainPropertyId">SourceMultiplicityDisplayDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>SourceMultiplicityDisplay domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SourceMultiplicityDisplayDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L114">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDomainPropertyId">SourceMultiplicityDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>SourceMultiplicity domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SourceMultiplicityDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceRoleDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceRoleDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1234">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceRoleDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceRoleDomainPropertyId">SourceRoleDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>SourceRole domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SourceRoleDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SummaryDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SummaryDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1055">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SummaryDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.SummaryDomainPropertyId">SummaryDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>Summary domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SummaryDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetAutoPropertyDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetAutoPropertyDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1678">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetAutoPropertyDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetAutoPropertyDomainPropertyId">TargetAutoPropertyDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetAutoProperty domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetAutoPropertyDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetCustomAttributesDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetCustomAttributesDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1501">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetCustomAttributesDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetCustomAttributesDomainPropertyId">TargetCustomAttributesDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetCustomAttributes domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetCustomAttributesDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDeleteActionDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDeleteActionDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L694">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDeleteActionDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDeleteActionDomainPropertyId">TargetDeleteActionDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetDeleteAction domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetDeleteActionDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDescriptionDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDescriptionDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L876">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDescriptionDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDescriptionDomainPropertyId">TargetDescriptionDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetDescription domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetDescriptionDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDisplayTextDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDisplayTextDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1590">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDisplayTextDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDisplayTextDomainPropertyId">TargetDisplayTextDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetDisplayText domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetDisplayTextDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDomainRoleId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDomainRoleId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L82">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDomainRoleId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDomainRoleId">TargetDomainRoleId</h4>
+  <div class="markdown level1 summary"><p>Target domain role Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetDomainRoleId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDisplayDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDisplayDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L539">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDisplayDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDisplayDomainPropertyId">TargetMultiplicityDisplayDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetMultiplicityDisplay domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetMultiplicityDisplayDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L204">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDomainPropertyId">TargetMultiplicityDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetMultiplicity domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetMultiplicityDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetPropertyNameDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetPropertyNameDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L294">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetPropertyNameDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetPropertyNameDomainPropertyId">TargetPropertyNameDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetPropertyName domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetPropertyNameDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetRoleDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetRoleDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1323">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetRoleDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetRoleDomainPropertyId">TargetRoleDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetRole domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetRoleDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetSummaryDomainPropertyId.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetSummaryDomainPropertyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L966">View Source</a>
+  </span>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetSummaryDomainPropertyId" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetSummaryDomainPropertyId">TargetSummaryDomainPropertyId</h4>
+  <div class="markdown level1 summary"><p>TargetSummary domain property Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid TargetSummaryDomainPropertyId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_CollectionClass.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.CollectionClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L789">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_CollectionClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.CollectionClass*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_CollectionClass" data-uid="Sawczyn.EFDesigner.EFModel.Association.CollectionClass">CollectionClass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(CollectionTypeTypeConverter))]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/CollectionClass.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/CollectionClass.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/CollectionClass.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainProperty(Kind = DomainPropertyKind.CustomStorage)]
+[DomainObjectId(&quot;59735c14-84b9-4b9c-b449-2248cb67d65a&quot;)]
+public string CollectionClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_ForeignKeyLocation.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.ForeignKeyLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1423">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_ForeignKeyLocation_" data-uid="Sawczyn.EFDesigner.EFModel.Association.ForeignKeyLocation*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_ForeignKeyLocation" data-uid="Sawczyn.EFDesigner.EFModel.Association.ForeignKeyLocation">ForeignKeyLocation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of ForeignKeyLocation domain property.
+Which class should hold the foreign key for this relationship</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/ForeignKeyLocation.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;c0b9ec69-21ba-432e-a8e9-3afa83f8b2b7&quot;)]
+public ForeignKeyOwner ForeignKeyLocation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ForeignKeyOwner.html">ForeignKeyOwner</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_IsCollectionClassTracking.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.IsCollectionClassTracking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1156">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_IsCollectionClassTracking_" data-uid="Sawczyn.EFDesigner.EFModel.Association.IsCollectionClassTracking*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_IsCollectionClassTracking" data-uid="Sawczyn.EFDesigner.EFModel.Association.IsCollectionClassTracking">IsCollectionClassTracking</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of IsCollectionClassTracking domain property.
+If true, Association.CollectionClass tracks ModelRoot.DefaultCollectionClass</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/IsCollectionClassTracking.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/IsCollectionClassTracking.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;e73f6b6d-22b1-4dd7-8d8d-37b7f1cac4a0&quot;)]
+public bool IsCollectionClassTracking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_Persistent.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.Persistent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L395">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_Persistent_" data-uid="Sawczyn.EFDesigner.EFModel.Association.Persistent*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_Persistent" data-uid="Sawczyn.EFDesigner.EFModel.Association.Persistent">Persistent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Persistent domain property.
+If false, this is a transient association not stored in the database but instead
+created in code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Persistent.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Persistent.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Persistent.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;8c8b1118-d3f2-494a-b18e-8dbe26212910&quot;)]
+public bool Persistent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_Source.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.Source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L55">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_Source_" data-uid="Sawczyn.EFDesigner.EFModel.Association.Source*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_Source" data-uid="Sawczyn.EFDesigner.EFModel.Association.Source">Source</h4>
+  <div class="markdown level1 summary"><p>DomainRole Source</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Source.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Source.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainRole(DomainRoleOrder.Source, PropertyName = &quot;Targets&quot;, PropertyDisplayNameKey = &quot;Sawczyn.EFDesigner.EFModel.Association/Source.PropertyDisplayName&quot;, PropagatesCopy = PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = Multiplicity.ZeroMany)]
+[DomainObjectId(&quot;d2edf927-64c2-4fe3-8d4e-c44e87142c4c&quot;)]
+public abstract ModelClass Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceDeleteAction.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceDeleteAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L616">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_SourceDeleteAction_" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceDeleteAction*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceDeleteAction" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceDeleteAction">SourceDeleteAction</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of SourceDeleteAction domain property.
+The action to take when an entity on this end is deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceDeleteAction.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceDeleteAction.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceDeleteAction.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;f40a8fc6-0b1b-4c1b-a46c-75d3450cd6c8&quot;)]
+public DeleteAction SourceDeleteAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.DeleteAction.html">DeleteAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicity.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L125">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicity_" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicity*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicity" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicity">SourceMultiplicity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of SourceMultiplicity domain property.
+The allowed number of entities at this end of the association</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(SourceMultiplicityTypeConverter))]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicity.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicity.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicity.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;50d076b7-4a3e-4b87-b5bb-8537520adc72&quot;)]
+public Multiplicity SourceMultiplicity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.Multiplicity.html">Multiplicity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDisplay.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L478">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDisplay_" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDisplay*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceMultiplicityDisplay" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceMultiplicityDisplay">SourceMultiplicityDisplay</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of SourceMultiplicityDisplay domain property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicityDisplay.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicityDisplay.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceMultiplicityDisplay.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainProperty(Kind = DomainPropertyKind.Calculated)]
+[DomainObjectId(&quot;0346043b-1ed8-4299-b84a-57167b4c00db&quot;)]
+public string SourceMultiplicityDisplay { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_SourceRole.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.SourceRole%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1245">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_SourceRole_" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceRole*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_SourceRole" data-uid="Sawczyn.EFDesigner.EFModel.Association.SourceRole">SourceRole</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of SourceRole domain property.
+Which object(s) in this association is/are the principal object(s)?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceRole.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceRole.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/SourceRole.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;8f74b05b-3bb2-480b-9513-50efd91588ec&quot;)]
+public EndpointRole SourceRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EndpointRole.html">EndpointRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_Summary.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.Summary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1066">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_Summary_" data-uid="Sawczyn.EFDesigner.EFModel.Association.Summary*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_Summary" data-uid="Sawczyn.EFDesigner.EFModel.Association.Summary">Summary</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of Summary domain property.
+Brief code documentation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Summary.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Summary.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Summary.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainObjectId(&quot;53747127-cd19-43e0-b37b-1b669d506ed2&quot;)]
+public string Summary { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_Target.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.Target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L87">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_Target_" data-uid="Sawczyn.EFDesigner.EFModel.Association.Target*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_Target" data-uid="Sawczyn.EFDesigner.EFModel.Association.Target">Target</h4>
+  <div class="markdown level1 summary"><p>DomainRole Target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Target.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/Target.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainRole(DomainRoleOrder.Target, PropertyName = &quot;Sources&quot;, PropertyDisplayNameKey = &quot;Sawczyn.EFDesigner.EFModel.Association/Target.PropertyDisplayName&quot;, PropagatesCopy = PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = Multiplicity.ZeroMany)]
+[DomainObjectId(&quot;1a39c29f-8df6-4063-bf60-cfe2c0c619fa&quot;)]
+public abstract ModelClass Target { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetAutoProperty.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetAutoProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1690">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetAutoProperty_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetAutoProperty*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetAutoProperty" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetAutoProperty">TargetAutoProperty</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetAutoProperty domain property.
+If false, generates a backing field with a partial method to hook getting and
+setting the property. If true, generates a simple auto property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;c3f59c5e-2afa-4a56-92af-00396e973805&quot;)]
+public bool TargetAutoProperty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetCustomAttributes.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetCustomAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1513">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetCustomAttributes_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetCustomAttributes*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetCustomAttributes" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetCustomAttributes">TargetCustomAttributes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetCustomAttributes domain property.
+Any custom attributes to be generated for the target property. Will be passed
+through as entered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetCustomAttributes.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetCustomAttributes.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetCustomAttributes.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;a667dd36-ac5c-4c98-b368-b84778bdcd56&quot;)]
+public string TargetCustomAttributes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDeleteAction.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDeleteAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L705">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetDeleteAction_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDeleteAction*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDeleteAction" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDeleteAction">TargetDeleteAction</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetDeleteAction domain property.
+The action to take when an entity on this end is deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDeleteAction.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDeleteAction.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDeleteAction.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;6e502a47-428b-455f-b155-edf310ce6c73&quot;)]
+public DeleteAction TargetDeleteAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.DeleteAction.html">DeleteAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDescription.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L887">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetDescription_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDescription*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDescription" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDescription">TargetDescription</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetDescription domain property.
+Detailed code documentation for this end of the association</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDescription.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDescription.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDescription.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;8983d9c4-c5f3-4eaa-b8b2-14d18a858f21&quot;)]
+public string TargetDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetDisplayText.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetDisplayText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1601">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetDisplayText_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDisplayText*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetDisplayText" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetDisplayText">TargetDisplayText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDisplayText.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDisplayText.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetDisplayText.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;4f71c60f-e2d6-475c-b545-1aa18d85d5ab&quot;)]
+public string TargetDisplayText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicity.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L215">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicity_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicity*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicity" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicity">TargetMultiplicity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetMultiplicity domain property.
+The allowed number of entities at this end of the association</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(TargetMultiplicityTypeConverter))]
+[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicity.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicity.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicity.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;b84f185b-4eea-4454-a47d-26b1a4b09523&quot;)]
+public Multiplicity TargetMultiplicity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.Multiplicity.html">Multiplicity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDisplay.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L544">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDisplay_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDisplay*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetMultiplicityDisplay" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetMultiplicityDisplay">TargetMultiplicityDisplay</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetMultiplicityDisplay domain property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicityDisplay.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicityDisplay.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicityDisplay.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[Browsable(false)]
+[DomainProperty(Kind = DomainPropertyKind.Calculated)]
+[DomainObjectId(&quot;450de663-cfb6-48e3-888a-4fbcee3ac778&quot;)]
+public string TargetMultiplicityDisplay { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetPropertyName.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetPropertyName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L305">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetPropertyName_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetPropertyName*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetPropertyName" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetPropertyName">TargetPropertyName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetPropertyName domain property.
+Name of the entity property that returns the value at this end</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetPropertyName.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetPropertyName.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetPropertyName.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;81625766-4885-46ba-a535-c3e23a7c5f88&quot;)]
+public string TargetPropertyName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetRole.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetRole%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1334">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetRole_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetRole*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetRole" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetRole">TargetRole</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetRole domain property.
+Which object(s) in this association is/are the dependent object(s)?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetRole.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetRole.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetRole.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;2eb18350-1736-4c15-84c4-219119a56a2a&quot;)]
+public EndpointRole TargetRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.EndpointRole.html">EndpointRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_TargetSummary.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.TargetSummary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L977">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_TargetSummary_" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetSummary*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_TargetSummary" data-uid="Sawczyn.EFDesigner.EFModel.Association.TargetSummary">TargetSummary</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of TargetSummary domain property.
+Short code documentation for this end of the association</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisplayNameResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetSummary.DisplayName&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[CategoryResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetSummary.Category&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DescriptionResource(&quot;Sawczyn.EFDesigner.EFModel.Association/TargetSummary.Description&quot;, typeof(EFModelDomainModel), &quot;Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx&quot;)]
+[DomainObjectId(&quot;edec72cc-c40b-4c64-b2d4-e713f691ecd0&quot;)]
+public string TargetSummary { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetHasWarningValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetHasWarningValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L40">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetHasWarningValue_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetHasWarningValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetHasWarningValue" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetHasWarningValue">GetHasWarningValue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHasWarningValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetLinks_Sawczyn_EFDesigner_EFModel_ModelClass_Sawczyn_EFDesigner_EFModel_ModelClass_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetLinks(Sawczyn.EFDesigner.EFModel.ModelClass%2CSawczyn.EFDesigner.EFModel.ModelClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1790">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetLinks_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinks*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetLinks_Sawczyn_EFDesigner_EFModel_ModelClass_Sawczyn_EFDesigner_EFModel_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinks(Sawczyn.EFDesigner.EFModel.ModelClass,Sawczyn.EFDesigner.EFModel.ModelClass)">GetLinks(ModelClass, ModelClass)</h4>
+  <div class="markdown level1 summary"><p>Get any Association links between a given ModelClass and a ModelClass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;Association&gt; GetLinks(ModelClass source, ModelClass target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Sawczyn.EFDesigner.EFModel.Association.html">Association</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetLinksToSources_Sawczyn_EFDesigner_EFModel_ModelClass_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetLinksToSources(Sawczyn.EFDesigner.EFModel.ModelClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1778">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetLinksToSources_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinksToSources*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetLinksToSources_Sawczyn_EFDesigner_EFModel_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinksToSources(Sawczyn.EFDesigner.EFModel.ModelClass)">GetLinksToSources(ModelClass)</h4>
+  <div class="markdown level1 summary"><p>Get the list of Association links to a ModelClass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;Association&gt; GetLinksToSources(ModelClass targetInstance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">targetInstance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Sawczyn.EFDesigner.EFModel.Association.html">Association</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetLinksToTargets_Sawczyn_EFDesigner_EFModel_ModelClass_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetLinksToTargets(Sawczyn.EFDesigner.EFModel.ModelClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L1767">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetLinksToTargets_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinksToTargets*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetLinksToTargets_Sawczyn_EFDesigner_EFModel_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetLinksToTargets(Sawczyn.EFDesigner.EFModel.ModelClass)">GetLinksToTargets(ModelClass)</h4>
+  <div class="markdown level1 summary"><p>Get the list of Association links to a ModelClass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;Association&gt; GetLinksToTargets(ModelClass sourceInstance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">sourceInstance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="Sawczyn.EFDesigner.EFModel.Association.html">Association</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetSourceMultiplicityDisplayValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetSourceMultiplicityDisplayValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L13">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetSourceMultiplicityDisplayValue_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetSourceMultiplicityDisplayValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetSourceMultiplicityDisplayValue" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetSourceMultiplicityDisplayValue">GetSourceMultiplicityDisplayValue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSourceMultiplicityDisplayValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetSources_Sawczyn_EFDesigner_EFModel_ModelClass_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetSources(Sawczyn.EFDesigner.EFModel.ModelClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L70">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetSources_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetSources*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetSources_Sawczyn_EFDesigner_EFModel_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetSources(Sawczyn.EFDesigner.EFModel.ModelClass)">GetSources(ModelClass)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of Sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyLinkedElementCollection&lt;ModelClass&gt; GetSources(ModelClass element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ReadOnlyLinkedElementCollection</span>&lt;<a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetTargetMultiplicityDisplayValue.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetTargetMultiplicityDisplayValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L15">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetTargetMultiplicityDisplayValue_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetTargetMultiplicityDisplayValue*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetTargetMultiplicityDisplayValue" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetTargetMultiplicityDisplayValue">GetTargetMultiplicityDisplayValue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTargetMultiplicityDisplayValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_GetTargets_Sawczyn_EFDesigner_EFModel_ModelClass_.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.GetTargets(Sawczyn.EFDesigner.EFModel.ModelClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L102">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_GetTargets_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetTargets*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_GetTargets_Sawczyn_EFDesigner_EFModel_ModelClass_" data-uid="Sawczyn.EFDesigner.EFModel.Association.GetTargets(Sawczyn.EFDesigner.EFModel.ModelClass)">GetTargets(ModelClass)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of Targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyLinkedElementCollection&lt;ModelClass&gt; GetTargets(ModelClass element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.VisualStudio.Modeling.ReadOnlyLinkedElementCollection</span>&lt;<a class="xref" href="Sawczyn.EFDesigner.EFModel.ModelClass.html">ModelClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_RedrawItem.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.RedrawItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L44">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_RedrawItem_" data-uid="Sawczyn.EFDesigner.EFModel.Association.RedrawItem*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_RedrawItem" data-uid="Sawczyn.EFDesigner.EFModel.Association.RedrawItem">RedrawItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RedrawItem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association_ResetWarning.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association.ResetWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/CustomCode/Partials/Association.cs/#L42">View Source</a>
+  </span>
+  <a id="Sawczyn_EFDesigner_EFModel_Association_ResetWarning_" data-uid="Sawczyn.EFDesigner.EFModel.Association.ResetWarning*"></a>
+  <h4 id="Sawczyn_EFDesigner_EFModel_Association_ResetWarning" data-uid="Sawczyn.EFDesigner.EFModel.Association.ResetWarning">ResetWarning()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetWarning()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.VisualStudio.Modeling.IMergeElements</span>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.IDisplaysWarning.html">IDisplaysWarning</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_LocateInDiagram_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.LocateInDiagram(ModelElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_GetFirstShapeElement_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.GetFirstShapeElement(ModelElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_GetCompartment_Microsoft_VisualStudio_Modeling_ModelElement_System_String_">ModelElementExtensions.GetCompartment(ModelElement, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sawczyn.EFDesigner.EFModel.CustomCode.Extensions.ModelElementExtensions.html#Sawczyn_EFDesigner_EFModel_CustomCode_Extensions_ModelElementExtensions_InvalidateDiagrams_Microsoft_VisualStudio_Modeling_ModelElement_">ModelElementExtensions.InvalidateDiagrams(ModelElement)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/new/master/apiSpec/new?filename=Sawczyn_EFDesigner_EFModel_Association.md&amp;value=---%0Auid%3A%20Sawczyn.EFDesigner.EFModel.Association%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/msawczyn/EFDesigner/blob/master/src/Dsl/GeneratedCode/DomainRelationships.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright � 2019 Michael Sawczyn
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

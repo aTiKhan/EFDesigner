@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  commentId: N:Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  id: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  children:
+  - Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute
+  - Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute
+  - Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute
+  langs:
+  - csharp
+  - vb
+  name: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  nameWithType: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  fullName: Sawczyn.EFDesigner.EFModel.ExtensionEnablement
+  type: Namespace
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+references:
+- uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute
+  name: EFModelGestureExtensionAttribute
+  nameWithType: EFModelGestureExtensionAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelGestureExtensionAttribute
+- uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute
+  name: EFModelCommandExtensionAttribute
+  nameWithType: EFModelCommandExtensionAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelCommandExtensionAttribute
+- uid: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute
+  commentId: T:Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute
+  name: EFModelValidationExtensionAttribute
+  nameWithType: EFModelValidationExtensionAttribute
+  fullName: Sawczyn.EFDesigner.EFModel.ExtensionEnablement.EFModelValidationExtensionAttribute

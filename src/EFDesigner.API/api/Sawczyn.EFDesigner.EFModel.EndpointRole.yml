@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole
+  commentId: T:Sawczyn.EFDesigner.EFModel.EndpointRole
+  id: EndpointRole
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EndpointRole.Dependent
+  - Sawczyn.EFDesigner.EFModel.EndpointRole.NotApplicable
+  - Sawczyn.EFDesigner.EFModel.EndpointRole.NotSet
+  - Sawczyn.EFDesigner.EFModel.EndpointRole.Principal
+  langs:
+  - csharp
+  - vb
+  name: EndpointRole
+  nameWithType: EndpointRole
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EndpointRole
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1171
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: EndpointRole\nRole a class plays on an association\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum EndpointRole
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum EndpointRole
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole.Dependent
+  commentId: F:Sawczyn.EFDesigner.EFModel.EndpointRole.Dependent
+  id: Dependent
+  parent: Sawczyn.EFDesigner.EFModel.EndpointRole
+  langs:
+  - csharp
+  - vb
+  name: Dependent
+  nameWithType: EndpointRole.Dependent
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole.Dependent
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Dependent
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1178
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDependent\nClass is the dependent part of the association\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/Dependent.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Dependent = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EndpointRole
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/Dependent.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Dependent = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EndpointRole/Dependent.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole.Principal
+  commentId: F:Sawczyn.EFDesigner.EFModel.EndpointRole.Principal
+  id: Principal
+  parent: Sawczyn.EFDesigner.EFModel.EndpointRole
+  langs:
+  - csharp
+  - vb
+  name: Principal
+  nameWithType: EndpointRole.Principal
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole.Principal
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Principal
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1184
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPrincipal\nClass is the controlling (i.e, principal) part of the association\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/Principal.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Principal = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EndpointRole
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/Principal.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Principal = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EndpointRole/Principal.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole.NotApplicable
+  commentId: F:Sawczyn.EFDesigner.EFModel.EndpointRole.NotApplicable
+  id: NotApplicable
+  parent: Sawczyn.EFDesigner.EFModel.EndpointRole
+  langs:
+  - csharp
+  - vb
+  name: NotApplicable
+  nameWithType: EndpointRole.NotApplicable
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole.NotApplicable
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NotApplicable
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1190
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNotApplicable\nDescription for Sawczyn.EFDesigner.EFModel.EndpointRole.NotApplicable\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/NotApplicable.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      NotApplicable = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EndpointRole
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/NotApplicable.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      NotApplicable = 3
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EndpointRole/NotApplicable.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole.NotSet
+  commentId: F:Sawczyn.EFDesigner.EFModel.EndpointRole.NotSet
+  id: NotSet
+  parent: Sawczyn.EFDesigner.EFModel.EndpointRole
+  langs:
+  - csharp
+  - vb
+  name: NotSet
+  nameWithType: EndpointRole.NotSet
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole.NotSet
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NotSet
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 1196
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nNotSet\nDependent/Principal roles are design decisions and have not been set\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/NotSet.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      NotSet = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.EndpointRole
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.EndpointRole/NotSet.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      NotSet = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.EndpointRole/NotSet.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.EndpointRole
+  commentId: T:Sawczyn.EFDesigner.EFModel.EndpointRole
+  parent: Sawczyn.EFDesigner.EFModel
+  name: EndpointRole
+  nameWithType: EndpointRole
+  fullName: Sawczyn.EFDesigner.EFModel.EndpointRole

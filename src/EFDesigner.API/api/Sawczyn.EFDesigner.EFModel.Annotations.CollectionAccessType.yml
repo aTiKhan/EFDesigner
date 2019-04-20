@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  id: CollectionAccessType
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  children:
+  - Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.ModifyExistingContent
+  - Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.None
+  - Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.Read
+  - Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.UpdatedContent
+  langs:
+  - csharp
+  - vb
+  name: CollectionAccessType
+  nameWithType: CollectionAccessType
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CollectionAccessType
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 842
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum CollectionAccessType
+    content.vb: >-
+      <Flags>
+
+      Public Enum CollectionAccessType
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.None
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.None
+  id: None
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CollectionAccessType.None
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: None
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 846
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Method does not use or modify content of the collection.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.Read
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.Read
+  id: Read
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: CollectionAccessType.Read
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.Read
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Read
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 848
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Method only reads content of the collection but does not modify it.
+  example: []
+  syntax:
+    content: Read = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.ModifyExistingContent
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.ModifyExistingContent
+  id: ModifyExistingContent
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  langs:
+  - csharp
+  - vb
+  name: ModifyExistingContent
+  nameWithType: CollectionAccessType.ModifyExistingContent
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.ModifyExistingContent
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ModifyExistingContent
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 850
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Method can change content of the collection but does not add new elements.
+  example: []
+  syntax:
+    content: ModifyExistingContent = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.UpdatedContent
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.UpdatedContent
+  id: UpdatedContent
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  langs:
+  - csharp
+  - vb
+  name: UpdatedContent
+  nameWithType: CollectionAccessType.UpdatedContent
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType.UpdatedContent
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: UpdatedContent
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 852
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Method can add new elements to the collection.
+  example: []
+  syntax:
+    content: UpdatedContent = 6
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations
+  commentId: N:Sawczyn.EFDesigner.EFModel.Annotations
+  name: Sawczyn.EFDesigner.EFModel.Annotations
+  nameWithType: Sawczyn.EFDesigner.EFModel.Annotations
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: CollectionAccessType
+  nameWithType: CollectionAccessType
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.CollectionAccessType

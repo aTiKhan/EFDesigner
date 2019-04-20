@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  id: TypeAccessModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Internal
+  - Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Private
+  - Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Protected
+  - Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Public
+  langs:
+  - csharp
+  - vb
+  name: TypeAccessModifier
+  nameWithType: TypeAccessModifier
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: TypeAccessModifier
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 668
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nDomainEnumeration: TypeAccessModifier\n"
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(true)]
+
+      public enum TypeAccessModifier
+    content.vb: >-
+      <CLSCompliant(True)>
+
+      Public Enum TypeAccessModifier
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Public
+  commentId: F:Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Public
+  id: Public
+  parent: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Public
+  nameWithType: TypeAccessModifier.Public
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Public
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Public
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 674
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPublic\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Public.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Public = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Public.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Public = 0
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Public.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Private
+  commentId: F:Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Private
+  id: Private
+  parent: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Private
+  nameWithType: TypeAccessModifier.Private
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Private
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Private
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 679
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nPrivate\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Private.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Private = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Private.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Private = 1
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Private.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Protected
+  commentId: F:Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Protected
+  id: Protected
+  parent: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Protected
+  nameWithType: TypeAccessModifier.Protected
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Protected
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Protected
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 685
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nProtected\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Protected.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Protected = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Protected.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Protected = 2
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Protected.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Internal
+  commentId: F:Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Internal
+  id: Internal
+  parent: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  langs:
+  - csharp
+  - vb
+  name: Internal
+  nameWithType: TypeAccessModifier.Internal
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier.Internal
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/DomainModel.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: Internal
+    path: ../Dsl/GeneratedCode/DomainModel.cs
+    startLine: 691
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nInternal\nNo description available\n"
+  example: []
+  syntax:
+    content: >-
+      [DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Internal.Description", typeof(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+
+      Internal = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+    content.vb: >-
+      <DescriptionResource("Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Internal.Description", GetType(EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")>
+
+      Internal = 3
+  attributes:
+  - type: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute
+    ctor: Microsoft.VisualStudio.Modeling.Design.DescriptionResourceAttribute.#ctor(System.String,System.Type,System.String)
+    arguments:
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Internal.Description
+    - type: System.Type
+      value: Sawczyn.EFDesigner.EFModel.EFModelDomainModel
+    - type: System.String
+      value: Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  commentId: T:Sawczyn.EFDesigner.EFModel.TypeAccessModifier
+  parent: Sawczyn.EFDesigner.EFModel
+  name: TypeAccessModifier
+  nameWithType: TypeAccessModifier
+  fullName: Sawczyn.EFDesigner.EFModel.TypeAccessModifier

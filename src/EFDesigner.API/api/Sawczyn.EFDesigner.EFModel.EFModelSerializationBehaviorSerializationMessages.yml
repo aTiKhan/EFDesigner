@@ -1,0 +1,1287 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  commentId: T:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  id: EFModelSerializationBehaviorSerializationMessages
+  parent: Sawczyn.EFDesigner.EFModel
+  children:
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Guid)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  - Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Version,System.Version)
+  langs:
+  - csharp
+  - vb
+  name: EFModelSerializationBehaviorSerializationMessages
+  nameWithType: EFModelSerializationBehaviorSerializationMessages
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: EFModelSerializationBehaviorSerializationMessages
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23607
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nUtility class to provide serialization messages\n"
+  example: []
+  syntax:
+    content: public static class EFModelSerializationBehaviorSerializationMessages
+    content.vb: Public Module EFModelSerializationBehaviorSerializationMessages
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  commentId: P:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  id: ResourceManager
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: ResourceManager
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ResourceManager
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23612
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nResourceManager to get serialization messages from.\n"
+  example: []
+  syntax:
+    content: public static ResourceManager ResourceManager { get; }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Public Shared ReadOnly Property ResourceManager As ResourceManager
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.String)
+  id: AmbiguousSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: AmbiguousSchema(SerializationContext, XmlReader, String, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema(SerializationContext, XmlReader, String, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: AmbiguousSchema
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23627
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning for ambiguous schemas.\n"
+  example: []
+  syntax:
+    content: public static void AmbiguousSchema(SerializationContext serializationContext, XmlReader reader, string targetNamespace, string schemaPath)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: targetNamespace
+      type: System.String
+      description: Target namespace to be resolved.
+    - id: schemaPath
+      type: System.String
+      description: The schema that is used to resolve the definition of the target namespace.
+    content.vb: Public Shared Sub AmbiguousSchema(serializationContext As SerializationContext, reader As XmlReader, targetNamespace As String, schemaPath As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  id: ExpectingFullFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: ExpectingFullFormRelationship(SerializationContext, XmlReader, Type)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(SerializationContext, XmlReader, Type)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ExpectingFullFormRelationship
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23663
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning when a full-form relationship seems to be serialized in short-form.\n"
+  example: []
+  syntax:
+    content: public static void ExpectingFullFormRelationship(SerializationContext serializationContext, XmlReader reader, Type relationshipType)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: relationshipType
+      type: System.Type
+      description: Type of the relationship.
+    content.vb: Public Shared Sub ExpectingFullFormRelationship(serializationContext As SerializationContext, reader As XmlReader, relationshipType As Type)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  id: ExpectingShortFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Type)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: ExpectingShortFormRelationship(SerializationContext, XmlReader, Type)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship(SerializationContext, XmlReader, Type)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: ExpectingShortFormRelationship
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23697
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning when a short-form relationship seems to be serialized in full-form.\n"
+  example: []
+  syntax:
+    content: public static void ExpectingShortFormRelationship(SerializationContext serializationContext, XmlReader reader, Type relationshipType)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: relationshipType
+      type: System.Type
+      description: Type of the relationship.
+    content.vb: Public Shared Sub ExpectingShortFormRelationship(serializationContext As SerializationContext, reader As XmlReader, relationshipType As Type)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  id: IgnoredPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: IgnoredPropertyValue(SerializationContext, XmlReader, String, Type, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(SerializationContext, XmlReader, String, Type, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String, System.Type, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IgnoredPropertyValue
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23732
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning for invalid property value with the given type, which will be ignored.\n"
+  example: []
+  syntax:
+    content: public static void IgnoredPropertyValue(SerializationContext serializationContext, XmlReader reader, string propertyName, Type propertyType, string value)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: propertyName
+      type: System.String
+      description: Name of the property.
+    - id: propertyType
+      type: System.Type
+      description: Type of the property.
+    - id: value
+      type: System.String
+      description: Invalid value that causes this warning.
+    content.vb: Public Shared Sub IgnoredPropertyValue(serializationContext As SerializationContext, reader As XmlReader, propertyName As String, propertyType As Type, value As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Guid)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Guid)
+  id: MissingId(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Guid)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: MissingId(SerializationContext, XmlReader, Guid)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MissingId(SerializationContext, XmlReader, Guid)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MissingId
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23773
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning for missing &quot;Id&quot; property.\n"
+  example: []
+  syntax:
+    content: public static void MissingId(SerializationContext serializationContext, XmlReader reader, Guid newId)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: newId
+      type: System.Guid
+      description: Auto-generated new Id.
+    content.vb: Public Shared Sub MissingId(serializationContext As SerializationContext, reader As XmlReader, newId As Guid)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  id: MonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: MonikerResolvedToDuplicateLink(SerializationResult, Moniker)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink(SerializationResult, Moniker)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Moniker)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MonikerResolvedToDuplicateLink
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23802
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an warning for moniker resolved to duplicate link. The moniker will be ignored.\n"
+  example: []
+  syntax:
+    content: public static void MonikerResolvedToDuplicateLink(SerializationResult serializationResult, Moniker moniker)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: SerializationResult to add the error message to.
+    - id: moniker
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Offending moniker.
+    content.vb: Public Shared Sub MonikerResolvedToDuplicateLink(serializationResult As SerializationResult, moniker As Moniker)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  id: NoSchema(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: NoSchema(SerializationContext, XmlReader, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.NoSchema(SerializationContext, XmlReader, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: NoSchema
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23833
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning for no schema found for the given target namespace, schema validation will be skipped in this case.\n"
+  example: []
+  syntax:
+    content: public static void NoSchema(SerializationContext serializationContext, XmlReader reader, string targetNamespace)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: targetNamespace
+      type: System.String
+      description: Target namespace that cannot be resolved.
+    content.vb: Public Shared Sub NoSchema(serializationContext As SerializationContext, reader As XmlReader, targetNamespace As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  id: SchemaValidationError(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: SchemaValidationError(SerializationContext, XmlReader, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.SchemaValidationError(SerializationContext, XmlReader, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: SchemaValidationError
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23865
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd a warning for schema validation error.\n"
+  example: []
+  syntax:
+    content: public static void SchemaValidationError(SerializationContext serializationContext, XmlReader reader, string message)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: message
+      type: System.String
+      description: Validation message reported from schema validation.
+    content.vb: Public Shared Sub SchemaValidationError(serializationContext As SerializationContext, reader As XmlReader, message As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  id: UnexpectedXmlElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: UnexpectedXmlElement(SerializationContext, XmlReader)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement(SerializationContext, XmlReader)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: UnexpectedXmlElement
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23892
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an warning for unexpected XML element.\n"
+  example: []
+  syntax:
+    content: public static void UnexpectedXmlElement(SerializationContext serializationContext, XmlReader reader)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the warning message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    content.vb: Public Shared Sub UnexpectedXmlElement(serializationContext As SerializationContext, reader As XmlReader)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  id: AmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.String,Microsoft.VisualStudio.Modeling.ModelElement,Microsoft.VisualStudio.Modeling.ModelElement)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: AmbiguousMoniker(SerializationContext, String, ModelElement, ModelElement)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker(SerializationContext, String, ModelElement, ModelElement)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, System.String, Microsoft.VisualStudio.Modeling.ModelElement, Microsoft.VisualStudio.Modeling.ModelElement)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: AmbiguousMoniker
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23924
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for ambiguous moniker.\n"
+  example: []
+  syntax:
+    content: public static void AmbiguousMoniker(SerializationContext serializationContext, string moniker, ModelElement element1, ModelElement element2)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: moniker
+      type: System.String
+      description: The ambiguous moniker string.
+    - id: element1
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The first element using the given moniker.
+    - id: element2
+      type: Microsoft.VisualStudio.Modeling.ModelElement
+      description: The second element using the given moniker.
+    content.vb: Public Shared Sub AmbiguousMoniker(serializationContext As SerializationContext, moniker As String, element1 As ModelElement, element2 As ModelElement)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.String)
+  id: CannotMonikerizeElement(Microsoft.VisualStudio.Modeling.SerializationContext,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: CannotMonikerizeElement(SerializationContext, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement(SerializationContext, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement(Microsoft.VisualStudio.Modeling.SerializationContext, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: CannotMonikerizeElement
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23960
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for not able to monikerize an instance of the given DomainClass.\n"
+  example: []
+  syntax:
+    content: public static void CannotMonikerizeElement(SerializationContext serializationContext, string domainClassName)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: domainClassName
+      type: System.String
+      description: Name of the DomainClass whose instance cannot be monikerized.
+    content.vb: Public Shared Sub CannotMonikerizeElement(serializationContext As SerializationContext, domainClassName As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  id: DanglingRelationship(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: DanglingRelationship(SerializationContext, XmlReader, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.DanglingRelationship(SerializationContext, XmlReader, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: DanglingRelationship
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 23992
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for dangling relationship instance.\n"
+  example: []
+  syntax:
+    content: public static void DanglingRelationship(SerializationContext serializationContext, XmlReader reader, string relationshipType)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: relationshipType
+      type: System.String
+      description: Type name of the relationship.
+    content.vb: Public Shared Sub DanglingRelationship(serializationContext As SerializationContext, reader As XmlReader, relationshipType As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  id: InvalidPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String,System.Type,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: InvalidPropertyValue(SerializationContext, XmlReader, String, Type, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue(SerializationContext, XmlReader, String, Type, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String, System.Type, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: InvalidPropertyValue
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24026
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for invalid property value with given type.\n"
+  example: []
+  syntax:
+    content: public static void InvalidPropertyValue(SerializationContext serializationContext, XmlReader reader, string propertyName, Type propertyType, string value)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: propertyName
+      type: System.String
+      description: Name of the property.
+    - id: propertyType
+      type: System.Type
+      description: Type of the property.
+    - id: value
+      type: System.String
+      description: Invalid value that causes this error.
+    content.vb: Public Shared Sub InvalidPropertyValue(serializationContext As SerializationContext, reader As XmlReader, propertyName As String, propertyType As Type, value As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  id: MissingMoniker(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.String)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: MissingMoniker(SerializationContext, XmlReader, String)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MissingMoniker(SerializationContext, XmlReader, String)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: MissingMoniker
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24067
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for missing moniker.\n"
+  example: []
+  syntax:
+    content: public static void MissingMoniker(SerializationContext serializationContext, XmlReader reader, string monikerAttributeName)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: monikerAttributeName
+      type: System.String
+      description: Name of the attribute that should hold the moniker.
+    content.vb: Public Shared Sub MissingMoniker(serializationContext As SerializationContext, reader As XmlReader, monikerAttributeName As String)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  id: UnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult,Microsoft.VisualStudio.Modeling.Moniker)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: UnresolvedMoniker(SerializationResult, Moniker)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker(SerializationResult, Moniker)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker(Microsoft.VisualStudio.Modeling.SerializationResult, Microsoft.VisualStudio.Modeling.Moniker)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: UnresolvedMoniker
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24098
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for unresolved moniker.\n"
+  example: []
+  syntax:
+    content: public static void UnresolvedMoniker(SerializationResult serializationResult, Moniker moniker)
+    parameters:
+    - id: serializationResult
+      type: Microsoft.VisualStudio.Modeling.SerializationResult
+      description: SerializationResult to add the error message to.
+    - id: moniker
+      type: Microsoft.VisualStudio.Modeling.Moniker
+      description: Unresolved moniker.
+    content.vb: Public Shared Sub UnresolvedMoniker(serializationResult As SerializationResult, moniker As Moniker)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Version,System.Version)
+  commentId: M:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Version,System.Version)
+  id: VersionMismatch(Microsoft.VisualStudio.Modeling.SerializationContext,System.Xml.XmlReader,System.Version,System.Version)
+  parent: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages
+  langs:
+  - csharp
+  - vb
+  name: VersionMismatch(SerializationContext, XmlReader, Version, Version)
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.VersionMismatch(SerializationContext, XmlReader, Version, Version)
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch(Microsoft.VisualStudio.Modeling.SerializationContext, System.Xml.XmlReader, System.Version, System.Version)
+  type: Method
+  source:
+    remote:
+      path: src/Dsl/GeneratedCode/Serializer.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: VersionMismatch
+    path: ../Dsl/GeneratedCode/Serializer.cs
+    startLine: 24130
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel
+  summary: "\nAdd an error for Version mismatch.\n"
+  example: []
+  syntax:
+    content: public static void VersionMismatch(SerializationContext serializationContext, XmlReader reader, Version expectedVersion, Version actualVersion)
+    parameters:
+    - id: serializationContext
+      type: Microsoft.VisualStudio.Modeling.SerializationContext
+      description: SerializationContext to add the error message to.
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The reader pointing to where the message is raised.
+    - id: expectedVersion
+      type: System.Version
+      description: The version that&apos;s expected.
+    - id: actualVersion
+      type: System.Version
+      description: Actual version from the file.
+    content.vb: Public Shared Sub VersionMismatch(serializationContext As SerializationContext, reader As XmlReader, expectedVersion As Version, actualVersion As Version)
+  overload: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sawczyn.EFDesigner.EFModel
+  commentId: N:Sawczyn.EFDesigner.EFModel
+  name: Sawczyn.EFDesigner.EFModel
+  nameWithType: Sawczyn.EFDesigner.EFModel
+  fullName: Sawczyn.EFDesigner.EFModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  name: ResourceManager
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ResourceManager
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ResourceManager
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Resources
+  commentId: N:System.Resources
+  isExternal: true
+  name: System.Resources
+  nameWithType: System.Resources
+  fullName: System.Resources
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema
+  name: AmbiguousSchema
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousSchema
+- uid: Microsoft.VisualStudio.Modeling.SerializationContext
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationContext
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationContext
+  nameWithType: SerializationContext
+  fullName: Microsoft.VisualStudio.Modeling.SerializationContext
+- uid: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.VisualStudio.Modeling
+  commentId: N:Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Microsoft.VisualStudio.Modeling
+  nameWithType: Microsoft.VisualStudio.Modeling
+  fullName: Microsoft.VisualStudio.Modeling
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship
+  name: ExpectingFullFormRelationship
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship
+  name: ExpectingShortFormRelationship
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.ExpectingShortFormRelationship
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue
+  name: IgnoredPropertyValue
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.IgnoredPropertyValue
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId
+  name: MissingId
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MissingId
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink
+  name: MonikerResolvedToDuplicateLink
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MonikerResolvedToDuplicateLink
+- uid: Microsoft.VisualStudio.Modeling.SerializationResult
+  commentId: T:Microsoft.VisualStudio.Modeling.SerializationResult
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: SerializationResult
+  nameWithType: SerializationResult
+  fullName: Microsoft.VisualStudio.Modeling.SerializationResult
+- uid: Microsoft.VisualStudio.Modeling.Moniker
+  commentId: T:Microsoft.VisualStudio.Modeling.Moniker
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: Moniker
+  nameWithType: Moniker
+  fullName: Microsoft.VisualStudio.Modeling.Moniker
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema
+  name: NoSchema
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.NoSchema
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.NoSchema
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError
+  name: SchemaValidationError
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.SchemaValidationError
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.SchemaValidationError
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement
+  name: UnexpectedXmlElement
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnexpectedXmlElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker
+  name: AmbiguousMoniker
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.AmbiguousMoniker
+- uid: Microsoft.VisualStudio.Modeling.ModelElement
+  commentId: T:Microsoft.VisualStudio.Modeling.ModelElement
+  parent: Microsoft.VisualStudio.Modeling
+  isExternal: true
+  name: ModelElement
+  nameWithType: ModelElement
+  fullName: Microsoft.VisualStudio.Modeling.ModelElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement
+  name: CannotMonikerizeElement
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.CannotMonikerizeElement
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship
+  name: DanglingRelationship
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.DanglingRelationship
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.DanglingRelationship
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue
+  name: InvalidPropertyValue
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.InvalidPropertyValue
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker
+  name: MissingMoniker
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.MissingMoniker
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.MissingMoniker
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker
+  name: UnresolvedMoniker
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.UnresolvedMoniker
+- uid: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch*
+  commentId: Overload:Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch
+  name: VersionMismatch
+  nameWithType: EFModelSerializationBehaviorSerializationMessages.VersionMismatch
+  fullName: Sawczyn.EFDesigner.EFModel.EFModelSerializationBehaviorSerializationMessages.VersionMismatch
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version

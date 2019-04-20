@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  id: AssertionConditionType
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  children:
+  - Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_FALSE
+  - Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NOT_NULL
+  - Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NULL
+  - Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_TRUE
+  langs:
+  - csharp
+  - vb
+  name: AssertionConditionType
+  nameWithType: AssertionConditionType
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: AssertionConditionType
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 883
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: "\nSpecifies assertion type. If the assertion method argument satisfies the condition,\nthen the execution continues. Otherwise, execution is assumed to be halted.\n"
+  example: []
+  syntax:
+    content: public enum AssertionConditionType
+    content.vb: Public Enum AssertionConditionType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_TRUE
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_TRUE
+  id: IS_TRUE
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  langs:
+  - csharp
+  - vb
+  name: IS_TRUE
+  nameWithType: AssertionConditionType.IS_TRUE
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_TRUE
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IS_TRUE
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 886
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Marked parameter should be evaluated to true.
+  example: []
+  syntax:
+    content: IS_TRUE = 0
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_FALSE
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_FALSE
+  id: IS_FALSE
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  langs:
+  - csharp
+  - vb
+  name: IS_FALSE
+  nameWithType: AssertionConditionType.IS_FALSE
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_FALSE
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IS_FALSE
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 888
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Marked parameter should be evaluated to false.
+  example: []
+  syntax:
+    content: IS_FALSE = 1
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NULL
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NULL
+  id: IS_NULL
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  langs:
+  - csharp
+  - vb
+  name: IS_NULL
+  nameWithType: AssertionConditionType.IS_NULL
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NULL
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IS_NULL
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 890
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Marked parameter should be evaluated to null value.
+  example: []
+  syntax:
+    content: IS_NULL = 2
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NOT_NULL
+  commentId: F:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NOT_NULL
+  id: IS_NOT_NULL
+  parent: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  langs:
+  - csharp
+  - vb
+  name: IS_NOT_NULL
+  nameWithType: AssertionConditionType.IS_NOT_NULL
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType.IS_NOT_NULL
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/Properties/Annotations.cs
+      branch: master
+      repo: https://github.com/msawczyn/EFDesigner
+    id: IS_NOT_NULL
+    path: ../Dsl/Properties/Annotations.cs
+    startLine: 892
+  assemblies:
+  - Sawczyn.EFDesigner.EFModel.Dsl
+  namespace: Sawczyn.EFDesigner.EFModel.Annotations
+  summary: Marked parameter should be evaluated to not null value.
+  example: []
+  syntax:
+    content: IS_NOT_NULL = 3
+    return:
+      type: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sawczyn.EFDesigner.EFModel.Annotations
+  commentId: N:Sawczyn.EFDesigner.EFModel.Annotations
+  name: Sawczyn.EFDesigner.EFModel.Annotations
+  nameWithType: Sawczyn.EFDesigner.EFModel.Annotations
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations
+- uid: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  commentId: T:Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
+  parent: Sawczyn.EFDesigner.EFModel.Annotations
+  name: AssertionConditionType
+  nameWithType: AssertionConditionType
+  fullName: Sawczyn.EFDesigner.EFModel.Annotations.AssertionConditionType
