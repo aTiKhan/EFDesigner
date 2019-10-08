@@ -12,7 +12,7 @@ namespace Sawczyn.EFDesigner.EFModel
       private DomainDataDirectory storeDomainDataDirectory;
 
       /// <summary>
-      ///    Returns the property descriptors for the described ModelClass domain class, adding tracking property
+      ///    Returns the property descriptors for the described Association domain class, adding tracking property
       ///    descriptor(s).
       /// </summary>
       private PropertyDescriptorCollection GetCustomProperties(Attribute[] attributes)
@@ -25,63 +25,89 @@ namespace Sawczyn.EFDesigner.EFModel
          {
             storeDomainDataDirectory = association.Store.DomainDataDirectory;
 
-            // ImplementNotify implicitly defines autoproperty as false, so we don't display it
-            // Similarly, collections are autoproperty == true, so no need to display it then either
-            if ((association.Target.ImplementNotify || association.SourceMultiplicity == Multiplicity.ZeroMany) && association is BidirectionalAssociation)
-            {
-               PropertyDescriptor sourceAutoPropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "SourceAutoProperty");
-               propertyDescriptors.Remove(sourceAutoPropertyDescriptor);
-            }
-
-            if (association.Source.ImplementNotify || association.TargetMultiplicity == Multiplicity.ZeroMany)
-            {
-               PropertyDescriptor targetAutoPropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "TargetAutoProperty");
-               propertyDescriptors.Remove(targetAutoPropertyDescriptor);
-            }
+            EFCoreValidator.AdjustEFCoreProperties(propertyDescriptors, association);
 
             // only display roles for 1..1 and 0-1..0-1 associations
-            if (((association.SourceMultiplicity != Multiplicity.One || association.TargetMultiplicity != Multiplicity.One) &&
-                 (association.SourceMultiplicity != Multiplicity.ZeroOne || association.TargetMultiplicity != Multiplicity.ZeroOne)))
+            if (((association.SourceMultiplicity != Multiplicity.One
+               || association.TargetMultiplicity != Multiplicity.One)
+              && (association.SourceMultiplicity != Multiplicity.ZeroOne
+               || association.TargetMultiplicity != Multiplicity.ZeroOne)))
             {
-               PropertyDescriptor sourceRoleTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "SourceRole");
-               propertyDescriptors.Remove(sourceRoleTypeDescriptor);
+               PropertyDescriptor sourceRolePropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().SingleOrDefault(x => x.Name == "SourceRole");
 
-               PropertyDescriptor targetRoleTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "TargetRole");
-               propertyDescriptors.Remove(targetRoleTypeDescriptor);
+               if (sourceRolePropertyDescriptor != null)
+                  propertyDescriptors.Remove(sourceRolePropertyDescriptor);
+
+               PropertyDescriptor targetRolePropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().SingleOrDefault(x => x.Name == "TargetRole");
+
+               if (targetRolePropertyDescriptor != null)
+                  propertyDescriptors.Remove(targetRolePropertyDescriptor);
             }
 
             // only display delete behavior on the principal end
             if (association.SourceRole != EndpointRole.Principal)
             {
-               PropertyDescriptor sourceDeleteActionTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "SourceDeleteAction");
-               propertyDescriptors.Remove(sourceDeleteActionTypeDescriptor);
+               PropertyDescriptor sourceDeleteActionPropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().SingleOrDefault(x => x.Name == "SourceDeleteAction");
+
+               if (sourceDeleteActionPropertyDescriptor != null)
+                  propertyDescriptors.Remove(sourceDeleteActionPropertyDescriptor);
             }
 
             if (association.TargetRole != EndpointRole.Principal)
             {
-               PropertyDescriptor targetDeleteActionTypeDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().Single(x => x.Name == "TargetDeleteAction");
-               propertyDescriptors.Remove(targetDeleteActionTypeDescriptor);
+               PropertyDescriptor targetDeleteActionPropertyDescriptor = propertyDescriptors.OfType<PropertyDescriptor>().SingleOrDefault(x => x.Name == "TargetDeleteAction");
+
+               if (targetDeleteActionPropertyDescriptor != null)
+                  propertyDescriptors.Remove(targetDeleteActionPropertyDescriptor);
             }
 
             /********************************************************************************/
 
-            DomainPropertyInfo collectionClassPropertyInfo = storeDomainDataDirectory.GetDomainProperty(Association.CollectionClassDomainPropertyId);
-            DomainPropertyInfo isCollectionClassTrackingPropertyInfo = storeDomainDataDirectory.GetDomainProperty(Association.IsCollectionClassTrackingDomainPropertyId);
+            //Add the descriptors for the tracking properties 
 
-            // Define attributes for the tracking property/properties so that the Properties window displays them correctly.  
-            Attribute[] collectionClassAttributes =
+            propertyDescriptors.Add(new TrackingPropertyDescriptor(association
+                                                                 , storeDomainDataDirectory.GetDomainProperty(Association.CollectionClassDomainPropertyId)
+                                                                 , storeDomainDataDirectory.GetDomainProperty(Association.IsCollectionClassTrackingDomainPropertyId)
+                                                                 , new Attribute[]
+                                                                   {
+                                                                      new DisplayNameAttribute("Collection Class")
+                                                                    , new DescriptionAttribute("Type of collections generated. Overrides the default collection class for the model")
+                                                                    , new CategoryAttribute("Code Generation")
+                                                                   }));
+
+            if (association.TargetMultiplicity == Multiplicity.One || association.TargetMultiplicity == Multiplicity.ZeroOne)
             {
-               new DisplayNameAttribute("Collection Class"),
-               new DescriptionAttribute("Type of collections generated. Overrides the default collection class for the model"),
-               new CategoryAttribute("Code Generation")
-            };
+               propertyDescriptors.Add(new TrackingPropertyDescriptor(association
+                                                                    , storeDomainDataDirectory.GetDomainProperty(Association.TargetImplementNotifyDomainPropertyId)
+                                                                    , storeDomainDataDirectory.GetDomainProperty(Association.IsTargetImplementNotifyTrackingDomainPropertyId)
+                                                                    , new Attribute[]
+                                                                      {
+                                                                         new DisplayNameAttribute("Implement INotifyPropertyChanged")
+                                                                       , new DescriptionAttribute("Should this end participate in INotifyPropertyChanged activities? "
+                                                                                                + "Only valid for non-collection targets.")
+                                                                       , new CategoryAttribute("End 2")
+                                                                      }));
+            }
 
-            propertyDescriptors.Add(new TrackingPropertyDescriptor(association, collectionClassPropertyInfo, isCollectionClassTrackingPropertyInfo, collectionClassAttributes));
+            if (association is BidirectionalAssociation bidirectionalAssociation && (bidirectionalAssociation.SourceMultiplicity == Multiplicity.One || 
+                                                                                     bidirectionalAssociation.SourceMultiplicity == Multiplicity.ZeroOne))
+            {
+               propertyDescriptors.Add(new TrackingPropertyDescriptor(bidirectionalAssociation
+                                                                    , storeDomainDataDirectory.GetDomainProperty(BidirectionalAssociation.SourceImplementNotifyDomainPropertyId)
+                                                                    , storeDomainDataDirectory.GetDomainProperty(BidirectionalAssociation.IsSourceImplementNotifyTrackingDomainPropertyId)
+                                                                    , new Attribute[]
+                                                                      {
+                                                                         new DisplayNameAttribute("Implement INotifyPropertyChanged")
+                                                                       , new DescriptionAttribute("Should this end participate in INotifyPropertyChanged activities? "
+                                                                                                + "Only valid for non-collection targets.")
+                                                                       , new CategoryAttribute("End 1")
+                                                                      }));
+            }
+
          }
 
          // Return the property descriptors for this element  
          return propertyDescriptors;
       }
-
    }
 }

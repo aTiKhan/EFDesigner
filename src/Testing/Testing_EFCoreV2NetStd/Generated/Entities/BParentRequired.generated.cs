@@ -23,35 +23,13 @@ namespace Testing
       partial void Init();
 
       /// <summary>
-      /// Default constructor. Protected due to required properties, but present because EF needs it.
+      /// Default constructor
       /// </summary>
-      protected BParentRequired()
+      public BParentRequired()
       {
          BChildCollection = new System.Collections.Generic.HashSet<global::Testing.BChild>();
 
          Init();
-      }
-
-      /// <summary>
-      /// Public constructor with required data
-      /// </summary>
-      /// <param name="bchildrequired"></param>
-      public BParentRequired(global::Testing.BChild bchildrequired)
-      {
-         if (bchildrequired == null) throw new ArgumentNullException(nameof(bchildrequired));
-         this.BChildRequired = bchildrequired;
-
-         this.BChildCollection = new System.Collections.Generic.HashSet<global::Testing.BChild>();
-         Init();
-      }
-
-      /// <summary>
-      /// Static create function (for use in LINQ queries, etc.)
-      /// </summary>
-      /// <param name="bchildrequired"></param>
-      public static BParentRequired Create(global::Testing.BChild bchildrequired)
-      {
-         return new BParentRequired(bchildrequired);
       }
 
       /*************************************************************************
@@ -59,11 +37,41 @@ namespace Testing
        *************************************************************************/
 
       /// <summary>
+      /// Backing field for Id
+      /// </summary>
+      protected int _Id;
+      /// <summary>
+      /// When provided in a partial class, allows value of Id to be changed before setting.
+      /// </summary>
+      partial void SetId(int oldValue, ref int newValue);
+      /// <summary>
+      /// When provided in a partial class, allows value of Id to be changed before returning.
+      /// </summary>
+      partial void GetId(ref int result);
+
+      /// <summary>
       /// Identity, Required, Indexed
       /// </summary>
       [Key]
       [Required]
-      public int Id { get; private set; }
+      public int Id
+      {
+         get
+         {
+            int value = _Id;
+            GetId(ref value);
+            return (_Id = value);
+         }
+         private set
+         {
+            int oldValue = _Id;
+            SetId(oldValue, ref value);
+            if (oldValue != value)
+            {
+               _Id = value;
+            }
+         }
+      }
 
       /*************************************************************************
        * Persistent navigation properties

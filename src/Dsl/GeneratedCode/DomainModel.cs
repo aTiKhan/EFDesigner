@@ -166,6 +166,7 @@ namespace Sawczyn.EFDesigner.EFModel
 				new DomainMemberInfo(typeof(ModelClass), "Summary", ModelClass.SummaryDomainPropertyId, typeof(ModelClass.SummaryPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelClass), "BaseClass", ModelClass.BaseClassDomainPropertyId, typeof(ModelClass.BaseClassPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelClass), "CustomAttributes", ModelClass.CustomAttributesDomainPropertyId, typeof(ModelClass.CustomAttributesPropertyHandler)),
+				new DomainMemberInfo(typeof(ModelClass), "AutoPropertyDefault", ModelClass.AutoPropertyDefaultDomainPropertyId, typeof(ModelClass.AutoPropertyDefaultPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelAttribute), "Type", ModelAttribute.TypeDomainPropertyId, typeof(ModelAttribute.TypePropertyHandler)),
 				new DomainMemberInfo(typeof(ModelAttribute), "InitialValue", ModelAttribute.InitialValueDomainPropertyId, typeof(ModelAttribute.InitialValuePropertyHandler)),
 				new DomainMemberInfo(typeof(ModelAttribute), "IsIdentity", ModelAttribute.IsIdentityDomainPropertyId, typeof(ModelAttribute.IsIdentityPropertyHandler)),
@@ -192,6 +193,10 @@ namespace Sawczyn.EFDesigner.EFModel
 				new DomainMemberInfo(typeof(ModelAttribute), "IsColumnTypeTracking", ModelAttribute.IsColumnTypeTrackingDomainPropertyId, typeof(ModelAttribute.IsColumnTypeTrackingPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelAttribute), "CustomAttributes", ModelAttribute.CustomAttributesDomainPropertyId, typeof(ModelAttribute.CustomAttributesPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelAttribute), "DisplayText", ModelAttribute.DisplayTextDomainPropertyId, typeof(ModelAttribute.DisplayTextPropertyHandler)),
+				new DomainMemberInfo(typeof(ModelAttribute), "PersistencePoint", ModelAttribute.PersistencePointDomainPropertyId, typeof(ModelAttribute.PersistencePointPropertyHandler)),
+				new DomainMemberInfo(typeof(ModelAttribute), "ImplementNotify", ModelAttribute.ImplementNotifyDomainPropertyId, typeof(ModelAttribute.ImplementNotifyPropertyHandler)),
+				new DomainMemberInfo(typeof(ModelAttribute), "IsImplementNotifyTracking", ModelAttribute.IsImplementNotifyTrackingDomainPropertyId, typeof(ModelAttribute.IsImplementNotifyTrackingPropertyHandler)),
+				new DomainMemberInfo(typeof(ModelAttribute), "IsAutoPropertyTracking", ModelAttribute.IsAutoPropertyTrackingDomainPropertyId, typeof(ModelAttribute.IsAutoPropertyTrackingPropertyHandler)),
 				new DomainMemberInfo(typeof(Comment), "Text", Comment.TextDomainPropertyId, typeof(Comment.TextPropertyHandler)),
 				new DomainMemberInfo(typeof(Comment), "ShortText", Comment.ShortTextDomainPropertyId, typeof(Comment.ShortTextPropertyHandler)),
 				new DomainMemberInfo(typeof(ModelEnum), "ValueType", ModelEnum.ValueTypeDomainPropertyId, typeof(ModelEnum.ValueTypePropertyHandler)),
@@ -229,13 +234,15 @@ namespace Sawczyn.EFDesigner.EFModel
 				new DomainMemberInfo(typeof(Association), "ForeignKeyLocation", Association.ForeignKeyLocationDomainPropertyId, typeof(Association.ForeignKeyLocationPropertyHandler)),
 				new DomainMemberInfo(typeof(Association), "TargetCustomAttributes", Association.TargetCustomAttributesDomainPropertyId, typeof(Association.TargetCustomAttributesPropertyHandler)),
 				new DomainMemberInfo(typeof(Association), "TargetDisplayText", Association.TargetDisplayTextDomainPropertyId, typeof(Association.TargetDisplayTextPropertyHandler)),
-				new DomainMemberInfo(typeof(Association), "TargetAutoProperty", Association.TargetAutoPropertyDomainPropertyId, typeof(Association.TargetAutoPropertyPropertyHandler)),
+				new DomainMemberInfo(typeof(Association), "TargetImplementNotify", Association.TargetImplementNotifyDomainPropertyId, typeof(Association.TargetImplementNotifyPropertyHandler)),
+				new DomainMemberInfo(typeof(Association), "IsTargetImplementNotifyTracking", Association.IsTargetImplementNotifyTrackingDomainPropertyId, typeof(Association.IsTargetImplementNotifyTrackingPropertyHandler)),
 				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourcePropertyName", BidirectionalAssociation.SourcePropertyNameDomainPropertyId, typeof(BidirectionalAssociation.SourcePropertyNamePropertyHandler)),
 				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceDescription", BidirectionalAssociation.SourceDescriptionDomainPropertyId, typeof(BidirectionalAssociation.SourceDescriptionPropertyHandler)),
 				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceSummary", BidirectionalAssociation.SourceSummaryDomainPropertyId, typeof(BidirectionalAssociation.SourceSummaryPropertyHandler)),
 				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceCustomAttributes", BidirectionalAssociation.SourceCustomAttributesDomainPropertyId, typeof(BidirectionalAssociation.SourceCustomAttributesPropertyHandler)),
 				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceDisplayText", BidirectionalAssociation.SourceDisplayTextDomainPropertyId, typeof(BidirectionalAssociation.SourceDisplayTextPropertyHandler)),
-				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceAutoProperty", BidirectionalAssociation.SourceAutoPropertyDomainPropertyId, typeof(BidirectionalAssociation.SourceAutoPropertyPropertyHandler)),
+				new DomainMemberInfo(typeof(BidirectionalAssociation), "SourceImplementNotify", BidirectionalAssociation.SourceImplementNotifyDomainPropertyId, typeof(BidirectionalAssociation.SourceImplementNotifyPropertyHandler)),
+				new DomainMemberInfo(typeof(BidirectionalAssociation), "IsSourceImplementNotifyTracking", BidirectionalAssociation.IsSourceImplementNotifyTrackingDomainPropertyId, typeof(BidirectionalAssociation.IsSourceImplementNotifyTrackingPropertyHandler)),
 				new DomainMemberInfo(typeof(AssociationConnector), "Color", AssociationConnector.ColorDomainPropertyId, typeof(AssociationConnector.ColorPropertyHandler)),
 				new DomainMemberInfo(typeof(AssociationConnector), "DashStyle", AssociationConnector.DashStyleDomainPropertyId, typeof(AssociationConnector.DashStylePropertyHandler)),
 				new DomainMemberInfo(typeof(ClassShape), "FillColor", ClassShape.FillColorDomainPropertyId, typeof(ClassShape.FillColorPropertyHandler)),
@@ -1504,6 +1511,29 @@ namespace Sawczyn.EFDesigner.EFModel
 		/// </summary>
 		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Default.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
 		Default = 0,
+	}
+}
+namespace Sawczyn.EFDesigner.EFModel
+{
+	/// <summary>
+	/// DomainEnumeration: PersistencePointType
+	/// Used to define whether the property or its backing field is persisted
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum PersistencePointType
+	{
+		/// <summary>
+		/// Property
+		/// Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Property
+		/// </summary>
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.PersistencePointType/Property.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		Property,
+		/// <summary>
+		/// Field
+		/// Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Field
+		/// </summary>
+		[DslDesign::DescriptionResource("Sawczyn.EFDesigner.EFModel.PersistencePointType/Field.Description", typeof(global::Sawczyn.EFDesigner.EFModel.EFModelDomainModel), "Sawczyn.EFDesigner.EFModel.GeneratedCode.DomainModelResx")]
+		Field,
 	}
 }
 

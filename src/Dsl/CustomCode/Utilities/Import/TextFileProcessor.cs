@@ -287,6 +287,11 @@ namespace Sawczyn.EFDesigner.EFModel
                                                       ? minLengthValue
                                                       : 0;
                   }
+                  else
+                  {
+                     modelAttribute.MaxLength = 0;
+                     modelAttribute.MinLength = 0;
+                  }
 
                   // if no setAccessor, it's a calculated readonly property
                   if (setAccessor == null)

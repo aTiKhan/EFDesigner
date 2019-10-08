@@ -34,10 +34,16 @@ namespace Sawczyn.EFDesigner.EFModel
          string nullable = attribute.Required ? "" : "?";
          string name = attribute.Name;
          string type = attribute.Type;
-         string length = attribute.MaxLength > 0 ? $"[{attribute.MaxLength}]" : "";
          string initial = !string.IsNullOrEmpty(attribute.InitialValue) ? " = " + attribute.InitialValue : "";
 
-         return $"{name} : {type}{nullable}{length}{initial}";
+         string lengthDisplay = "";
+
+         if (attribute.MinLength > 0)
+            lengthDisplay = $"[{attribute.MinLength}-{attribute.MaxLength}]";
+         else if (attribute.MaxLength > 0)
+            lengthDisplay = $"[{attribute.MaxLength}]";
+
+         return $"{name} : {type}{nullable}{lengthDisplay}{initial}";
       }
 
       internal sealed partial class FillColorPropertyHandler

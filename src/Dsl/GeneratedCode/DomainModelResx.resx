@@ -634,7 +634,7 @@
     <comment>Category for DomainProperty &apos;Name&apos; on DomainClass &apos;ModelClass&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ImplementNotify.Description" xml:space="preserve">
-    <value>Should this class implement INotifyPropertyChanged?</value>
+    <value>Should this class&apos;s properties implement INotifyPropertyChanged by default?</value>
     <comment>Description for DomainProperty &apos;ImplementNotify&apos; on DomainClass &apos;ModelClass&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ImplementNotify.DisplayName" xml:space="preserve">
@@ -744,6 +744,18 @@
   <data name="Sawczyn.EFDesigner.EFModel.ModelClass/CustomAttributes.Category" xml:space="preserve">
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;CustomAttributes&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/AutoPropertyDefault.Description" xml:space="preserve">
+    <value>Default value for this class&apos;s attribute AutoProperty setting</value>
+    <comment>Description for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/AutoPropertyDefault.DisplayName" xml:space="preserve">
+    <value>AutoProperty Default</value>
+    <comment>DisplayName for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/AutoPropertyDefault.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelClass&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute.Description" xml:space="preserve">
     <value>An attribute of a class.</value>
@@ -970,7 +982,7 @@
     <comment>Category for DomainProperty &apos;ReadOnly&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/AutoProperty.Description" xml:space="preserve">
-    <value>If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property.</value>
+    <value>If false, generates a backing field and a partial method to hook getting and setting the property. If true, generates a simple auto property.</value>
     <comment>Description for DomainProperty &apos;AutoProperty&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/AutoProperty.DisplayName" xml:space="preserve">
@@ -1057,6 +1069,46 @@
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;DisplayText&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.Description" xml:space="preserve">
+    <value>The element that will be persisted for this attribute, either the property or the backing field</value>
+    <comment>Description for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.DisplayName" xml:space="preserve">
+    <value>Persistence Point</value>
+    <comment>DisplayName for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/ImplementNotify.Description" xml:space="preserve">
+    <value>Should this class implement INotifyPropertyChanged?</value>
+    <comment>Description for DomainProperty &apos;ImplementNotify&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/ImplementNotify.DisplayName" xml:space="preserve">
+    <value>Implement INotifyPropertyChanged</value>
+    <comment>DisplayName for DomainProperty &apos;ImplementNotify&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/ImplementNotify.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;ImplementNotify&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsImplementNotifyTracking.Description" xml:space="preserve">
+    <value>If true, ModelAttribute.IsImplementNotify tracks ModelClass.ImplementNotify</value>
+    <comment>Description for DomainProperty &apos;IsImplementNotifyTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsImplementNotifyTracking.DisplayName" xml:space="preserve">
+    <value>Is Implement Notify Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsImplementNotifyTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAutoPropertyTracking.Description" xml:space="preserve">
+    <value>If true, ModelAttribute.AutoProperty tracks ModelClass.AutoPropertyDefault</value>
+    <comment>Description for DomainProperty &apos;IsAutoPropertyTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAutoPropertyTracking.DisplayName" xml:space="preserve">
+    <value>Is Auto Property Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsAutoPropertyTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.Comment.Description" xml:space="preserve">
     <value></value>
     <comment>Description for DomainClass &apos;Comment&apos;</comment>
@@ -1082,7 +1134,7 @@
     <comment>DisplayName for DomainProperty &apos;ShortText&apos; on DomainClass &apos;Comment&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnum.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Represents an enumeration in C#</value>
     <comment>Description for DomainClass &apos;ModelEnum&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnum.DisplayName" xml:space="preserve">
@@ -1210,7 +1262,7 @@
     <comment>Category for DomainProperty &apos;CustomAttributes&apos; on DomainClass &apos;ModelEnum&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Represents a value in a C# enumeration</value>
     <comment>Description for DomainClass &apos;ModelEnumValue&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnumValue.DisplayName" xml:space="preserve">
@@ -1513,17 +1565,25 @@
     <value>End 2</value>
     <comment>Category for DomainProperty &apos;TargetDisplayText&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Description" xml:space="preserve">
-    <value>If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property.</value>
-    <comment>Description for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetImplementNotify.Description" xml:space="preserve">
+    <value>Should this end participate in INotifyPropertyChanged activities? Only valid for non-collection targets.</value>
+    <comment>Description for DomainProperty &apos;TargetImplementNotify&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.DisplayName" xml:space="preserve">
-    <value>Target Auto Property</value>
-    <comment>DisplayName for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetImplementNotify.DisplayName" xml:space="preserve">
+    <value>Implement INotifyPropertyChanged</value>
+    <comment>DisplayName for DomainProperty &apos;TargetImplementNotify&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Category" xml:space="preserve">
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetImplementNotify.Category" xml:space="preserve">
     <value>End 2</value>
-    <comment>Category for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+    <comment>Category for DomainProperty &apos;TargetImplementNotify&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetImplementNotifyTracking.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.Association.Is Target Implement Notify Tracking</value>
+    <comment>Description for DomainProperty &apos;IsTargetImplementNotifyTracking&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetImplementNotifyTracking.DisplayName" xml:space="preserve">
+    <value>Is Target Implement Notify Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsTargetImplementNotifyTracking&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/Source.Description" xml:space="preserve">
     <value></value>
@@ -1745,17 +1805,25 @@
     <value>End 1</value>
     <comment>Category for DomainProperty &apos;SourceDisplayText&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.Description" xml:space="preserve">
-    <value>If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property.</value>
-    <comment>Description for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceImplementNotify.Description" xml:space="preserve">
+    <value>Should this end participate in INotifyPropertyChanged activities? Only valid for non-collection targets.</value>
+    <comment>Description for DomainProperty &apos;SourceImplementNotify&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.DisplayName" xml:space="preserve">
-    <value>Source Auto Property</value>
-    <comment>DisplayName for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceImplementNotify.DisplayName" xml:space="preserve">
+    <value>Implement INotifyPropertyChanged</value>
+    <comment>DisplayName for DomainProperty &apos;SourceImplementNotify&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.Category" xml:space="preserve">
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceImplementNotify.Category" xml:space="preserve">
     <value>End 1</value>
-    <comment>Category for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+    <comment>Category for DomainProperty &apos;SourceImplementNotify&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceImplementNotifyTracking.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.BidirectionalAssociation.Is Source Implement Notify Tracking</value>
+    <comment>Description for DomainProperty &apos;IsSourceImplementNotifyTracking&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceImplementNotifyTracking.DisplayName" xml:space="preserve">
+    <value>Is Source Implement Notify Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsSourceImplementNotifyTracking&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/BidirectionalSource.Description" xml:space="preserve">
     <value></value>
@@ -1782,7 +1850,7 @@
     <comment>PropertyDisplayName for DomainRole &apos;BidirectionalTarget&apos; on DomainRelationship &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasEnums.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Relationship rooting ModelEnum domain entities to the tree</value>
     <comment>Description for DomainClass &apos;ModelRootHasEnums&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasEnums.DisplayName" xml:space="preserve">
@@ -1814,7 +1882,7 @@
     <comment>PropertyDisplayName for DomainRole &apos;ModelEnum&apos; on DomainRelationship &apos;ModelRootHasEnums&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnumHasValues.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Relationship linking enumeration values to an enumeration</value>
     <comment>Description for DomainClass &apos;ModelEnumHasValues&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnumHasValues.DisplayName" xml:space="preserve">
@@ -2772,6 +2840,22 @@
   <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Default.Description" xml:space="preserve">
     <value>Default</value>
     <comment>Description for EnumerationLiteral &apos;Default&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Property.DisplayName" xml:space="preserve">
+    <value>Property</value>
+    <comment>Display name for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Property.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Property</value>
+    <comment>Description for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>Display name for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Field.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Field</value>
+    <comment>Description for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape.Description" xml:space="preserve">
     <value></value>

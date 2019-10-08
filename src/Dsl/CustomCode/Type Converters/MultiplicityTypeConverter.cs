@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public class MultiplicityTypeConverter : TypeConverter
+   public class MultiplicityTypeConverter : TypeConverterBase
    {
       /// <summary>
       ///    Returns whether this converter can convert an object of the given type to the type of this converter, using

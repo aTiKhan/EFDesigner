@@ -12,7 +12,7 @@ Model and generate code for Entity Framework v6, Entity Framework Core 2.0 throu
 <img src="https://msawczyn.github.io/EFDesigner/images/Designer.jpg">
 </td></tr></tbody></table>
 
-This Visual Studio 2017/2019 extension adds a new file type (.efmodel) that allows for fast, easy and, most
+This Visual Studio 2017/2019 extension is an opinionated code generator, adding a new file type (.efmodel) that allows for fast, easy and, most
 importantly, **visual** design of persistent classes. Inheritance, unidirectional and bidirectional 
 associations are all supported. Enumerations are also included in the visual model, as is the 
 ability to add text blocks to explain potentially arcane parts of your design.
@@ -42,33 +42,69 @@ ASP.Net Core in addition to any other project type, so you'll have flexibility i
 
 You can read more about how to use the designer in the [Documentation site](https://msawczyn.github.io/EFDesigner/).
 
-**Known Issues**
+### Known Issues
 
-In Visual Studio 2019, projects using the new project format (typically .NET Core and .NET Standard projects) will throw an exception when
-opening an .efmodel file. This is an issue related to the Visual Studio 16 SDK and is currently under investigation. Visual Studio
-2017 does not exhibit this issue.
-
-**The workaround** is to place the `.efodel` file in a .NET Framework project and place the T4 in the .NET Core or .NET Standard project
-you want to generate into. You can then change the location of the `.efmodel` file in the T4 template (right at the top of the template) 
-to point to its location in the other project and it will use that as its source data. 
-
-If this is important to you, you can follow it at [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/content/problem/539313/microsoftvisualstudioprojectsystemvsimplementation.html).
+**Visual Studio 2019 v16.2.0 currently breaks the designer** -- you're not able to draw connections between
+classes, enums, structs and comment blocks. [It was reported to Microsoft](https://developercommunity.visualstudio.com/content/problem/660095/dsl-tools-broken-in-1620-preview-4.html), 
+and has since been **fixed as of v16.2.5**, so if you're using a version between 16.2.0 and 16.2.4, you'll want 
+to upgrade to 16.2.5 in order to use not just this extension, but any extension based on the Microsoft Modeling SDK.
 
 ### Change Log
 
-**1.3.0.1**
+**1.3.0.7**
+   - Fix: bad merge broke MaxLength and MinLength properties in entity string properties (See https://github.com/msawczyn/EFDesigner/issues/103)
+   - Fix: backing fields caused duplicate database columns (See https://github.com/msawczyn/EFDesigner/issues/101)
+
+**1.3.0.6** 
+   - Added a model fixup for when user doesn't use full enumeration name for a property's initial value in an entity (See https://github.com/msawczyn/EFDesigner/issues/82)
+   - To more fully support DDD models, added a toggle for persisting either the property or its backing field (if not an autoproperty) for EFCore
+   - Can now override the NotifyPropertyChanged value for an entity on a per-property and per-association basis
+   - Fix: Removed stray quote marks in default values for string properties (See https://github.com/msawczyn/EFDesigner/issues/86)
+   - Fix: Minimum string length was ignored when setting properties via text edit (See https://github.com/msawczyn/EFDesigner/issues/86)
+   - Fix: Required string identity property is not present in the constructor (See https://github.com/msawczyn/EFDesigner/issues/93)
+   - Fix: Some issues with owned entities in EFCore
+   - Fix: If NotifyPropertyChanged is active, wrong Output is generated (See https://github.com/msawczyn/EFDesigner/issues/97)
+   - For folks wanting to read and/or modify the source for this tool, added a readme on how to deal with tracking properties
+
+<details>
+<summary><b>1.3.0.4</b></summary>
+
+   - Fixed problematic code generation in constructors for classes having 1..1 associations (See https://github.com/msawczyn/EFDesigner/issues/74)
+   - Fixed problem where database was always generating identity values, regardless of setting in the model (See https://github.com/msawczyn/EFDesigner/issues/79)
+   - Fixed errors when creating nested project folders (See https://github.com/msawczyn/EFDesigner/issues/77)
+   - Fixed cascade delete errors in EFCore when overriding cascade behavior (See https://github.com/msawczyn/EFDesigner/issues/76)
+   - Added more information in headers for generated code (tool version, URLs, license info)
+
+</details>
+
+<details>
+<summary><b>1.3.0.2</b></summary>
+
+   - Fixed error found in some VS2017 installations preventing running due to dependency problems
+
+</details>
+
+<details>
+<summary><b>1.3.0.1</b></summary>
+
    - Enhanced source code drag/drop to handle bidirectional associations and enumerations better.
    - Can now import assemblies containing DbContext classes. Dropping a compiled assembly onto the design surface will attempt to process and merge it into the design.
    - Added ability to merge two unidirectional associations into one bidirectional association (via context menu action)
    - Added ability to split a bidirectional association to two unidirectional associations (via context menu action)
    - Added [Microsoft Automatic Graph Layout](https://github.com/Microsoft/automatic-graph-layout), giving the user the ability to choose the diagram's auto-layout strategy 
 
-**1.2.7.2**
+</details>
+
+<details>
+<summary><b>1.2.7.2</b></summary>
+
    - Added additional types of UInt16, UInt32, UInt64 and SByte to property type list
    - Added the ability to use a modeled enumeration, if it has a proper backing type, as an entity identifier
    - Added DateTime.UtcNow as a valid initial value for a DateTime property
    - Fix: "One-to-one relation in EFCore" (See https://github.com/msawczyn/EFDesigner/issues/71)
    - Remove default DbContext constructor in EFCore to allow support for AddDbContextPool calls in ConfigureServices (See https://github.com/msawczyn/EFDesigner/issues/72)
+
+</details>
 
 <details>
 <summary><b>1.2.7.1</b></summary>

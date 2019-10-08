@@ -27,6 +27,9 @@ namespace Testing
       /// </summary>
       protected BChild()
       {
+         // NOTE: This class has one-to-one associations with BChild.
+         // One-to-one associations are not validated in constructors since this causes a scenario where each one must be constructed before the other.
+
          BParentCollection = new System.Collections.Generic.HashSet<global::Testing.BParentCollection>();
          BParentCollection_2 = new System.Collections.Generic.HashSet<global::Testing.BParentCollection>();
 
@@ -37,15 +40,14 @@ namespace Testing
       /// Public constructor with required data
       /// </summary>
       /// <param name="bparentrequired"></param>
-      /// <param name="bparentrequired_1"></param>
       /// <param name="bparentrequired_2"></param>
-      public BChild(global::Testing.BParentRequired bparentrequired, global::Testing.BParentRequired bparentrequired_1, global::Testing.BParentRequired bparentrequired_2)
+      public BChild(global::Testing.BParentRequired bparentrequired, global::Testing.BParentRequired bparentrequired_2)
       {
+         // NOTE: This class has one-to-one associations with BChild.
+         // One-to-one associations are not validated in constructors since this causes a scenario where each one must be constructed before the other.
+
          if (bparentrequired == null) throw new ArgumentNullException(nameof(bparentrequired));
          this.BParentRequired = bparentrequired;
-
-         if (bparentrequired_1 == null) throw new ArgumentNullException(nameof(bparentrequired_1));
-         this.BParentRequired_1 = bparentrequired_1;
 
          if (bparentrequired_2 == null) throw new ArgumentNullException(nameof(bparentrequired_2));
          this.BParentRequired_2 = bparentrequired_2;
@@ -59,11 +61,10 @@ namespace Testing
       /// Static create function (for use in LINQ queries, etc.)
       /// </summary>
       /// <param name="bparentrequired"></param>
-      /// <param name="bparentrequired_1"></param>
       /// <param name="bparentrequired_2"></param>
-      public static BChild Create(global::Testing.BParentRequired bparentrequired, global::Testing.BParentRequired bparentrequired_1, global::Testing.BParentRequired bparentrequired_2)
+      public static BChild Create(global::Testing.BParentRequired bparentrequired, global::Testing.BParentRequired bparentrequired_2)
       {
-         return new BChild(bparentrequired, bparentrequired_1, bparentrequired_2);
+         return new BChild(bparentrequired, bparentrequired_2);
       }
 
       /*************************************************************************
@@ -71,11 +72,41 @@ namespace Testing
        *************************************************************************/
 
       /// <summary>
+      /// Backing field for Id
+      /// </summary>
+      protected int _Id;
+      /// <summary>
+      /// When provided in a partial class, allows value of Id to be changed before setting.
+      /// </summary>
+      partial void SetId(int oldValue, ref int newValue);
+      /// <summary>
+      /// When provided in a partial class, allows value of Id to be changed before returning.
+      /// </summary>
+      partial void GetId(ref int result);
+
+      /// <summary>
       /// Identity, Required, Indexed
       /// </summary>
       [Key]
       [Required]
-      public int Id { get; private set; }
+      public int Id
+      {
+         get
+         {
+            int value = _Id;
+            GetId(ref value);
+            return (_Id = value);
+         }
+         private set
+         {
+            int oldValue = _Id;
+            SetId(oldValue, ref value);
+            if (oldValue != value)
+            {
+               _Id = value;
+            }
+         }
+      }
 
       /*************************************************************************
        * Persistent navigation properties

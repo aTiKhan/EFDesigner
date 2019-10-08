@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9987f227-3d05-49b7-b151-857879f5dfb8" Description="Entity Framework visual editor for EF6, EFCore and beyond." Name="EFModel" DisplayName="Entity Framework Visual Editor" Namespace="Sawczyn.EFDesigner.EFModel" MinorVersion="3" Revision="1" ProductName="EFDesigner" CompanyName="Michael Sawczyn" PackageGuid="56bbe1ba-aaee-4883-848f-e3c8656f8db2" PackageNamespace="Sawczyn.EFDesigner.EFModel" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
+<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9987f227-3d05-49b7-b151-857879f5dfb8" Description="Entity Framework visual editor for EF6, EFCore and beyond." Name="EFModel" DisplayName="Entity Framework Visual Editor" Namespace="Sawczyn.EFDesigner.EFModel" MinorVersion="3" Revision="7" ProductName="EFDesigner" CompanyName="Michael Sawczyn" PackageGuid="56bbe1ba-aaee-4883-848f-e3c8656f8db2" PackageNamespace="Sawczyn.EFDesigner.EFModel" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
   <Classes>
     <DomainClass Id="95532cb8-3452-4b09-a654-aeb2e2d0b3ad" Description="" Name="ModelRoot" DisplayName="Entity Model" Namespace="Sawczyn.EFDesigner.EFModel">
       <CustomTypeDescriptor>
@@ -335,7 +335,7 @@
             <ExternalTypeMoniker Name="ModelClassNameProvider" />
           </ElementNameProvider>
         </DomainProperty>
-        <DomainProperty Id="268b5655-43ae-4871-b7e7-2ea7e003d485" Description="Should this class implement INotifyPropertyChanged?" Name="ImplementNotify" DisplayName="Implement INotifyPropertyChanged" DefaultValue="false" Category="Code Generation">
+        <DomainProperty Id="268b5655-43ae-4871-b7e7-2ea7e003d485" Description="Should this class's properties implement INotifyPropertyChanged by default?" Name="ImplementNotify" DisplayName="Implement INotifyPropertyChanged" DefaultValue="false" Category="Code Generation">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
@@ -408,6 +408,11 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="aae9a58c-df8c-4557-826a-f0a66bb75d66" Description="Default value for this class's attribute AutoProperty setting" Name="AutoPropertyDefault" DisplayName="AutoProperty Default" DefaultValue="true" Category="Code Generation">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
       </Properties>
       <ElementMergeDirectives>
         <ElementMergeDirective>
@@ -466,7 +471,7 @@
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="8c128f2b-8f9f-4c8e-acf1-dd5488736b79" Description="Maximum length of the string, 0 for no max length" Name="MaxLength" DisplayName="Max Length" DefaultValue="0" Category="String Properties">
+        <DomainProperty Id="8c128f2b-8f9f-4c8e-acf1-dd5488736b79" Description="Maximum length of the string, 0 for no max length" Name="MaxLength" DisplayName="Max Length" DefaultValue="" Category="String Properties">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
@@ -550,12 +555,12 @@
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="bd0273dc-d3ea-44e2-8b01-f79d39ca0704" Description="If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="AutoProperty" DisplayName="Auto Property" DefaultValue="true" Category="Code Generation">
+        <DomainProperty Id="bd0273dc-d3ea-44e2-8b01-f79d39ca0704" Description="If false, generates a backing field and a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="AutoProperty" DisplayName="Auto Property" DefaultValue="" Kind="CustomStorage" Category="Code Generation" IsBrowsable="false">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="7fe42ef4-9691-4db1-8219-59107c14478b" Description="Minimum length of the string, 0 for no minimum length" Name="MinLength" DisplayName="Min Length" DefaultValue="0" Category="String Properties">
+        <DomainProperty Id="7fe42ef4-9691-4db1-8219-59107c14478b" Description="Minimum length of the string, 0 for no minimum length" Name="MinLength" DisplayName="Min Length" DefaultValue="" Category="String Properties">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
@@ -570,7 +575,7 @@
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="17cc5012-1352-4a08-9965-55dcecaa985f" Description="The data type for the table column backing this property" Name="ColumnType" DisplayName="Column Type" Kind="CustomStorage" Category="Database">
+        <DomainProperty Id="17cc5012-1352-4a08-9965-55dcecaa985f" Description="The data type for the table column backing this property" Name="ColumnType" DisplayName="Column Type" Kind="CustomStorage" Category="Database" IsBrowsable="false">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
@@ -588,6 +593,26 @@
         <DomainProperty Id="7d65b45d-ff09-49c7-b1bc-ea80175686d8" Description="Text for [Display(Name=&quot;&lt;text&gt;&quot;)] attribute" Name="DisplayText" DisplayName="Display Text" Category="Code Generation">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="e85447bb-4dfc-4e0a-800f-dc62d831ee25" Description="The element that will be persisted for this attribute, either the property or the backing field" Name="PersistencePoint" DisplayName="Persistence Point" DefaultValue="Property" Category="Code Generation">
+          <Type>
+            <DomainEnumerationMoniker Name="PersistencePointType" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="dfb9a776-9fda-4565-8f78-bcac2a6fb734" Description="Should this class implement INotifyPropertyChanged?" Name="ImplementNotify" DisplayName="Implement INotifyPropertyChanged" DefaultValue="" Kind="CustomStorage" Category="Code Generation" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="51e44c7a-7fbc-4ddc-ae59-97ea5519baa7" Description="If true, ModelAttribute.IsImplementNotify tracks ModelClass.ImplementNotify" Name="IsImplementNotifyTracking" DisplayName="Is Implement Notify Tracking" DefaultValue="true" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="79e4dae8-e284-44a2-b7b2-6aaae8c0239d" Description="If true, ModelAttribute.AutoProperty tracks ModelClass.AutoPropertyDefault" Name="IsAutoPropertyTracking" DisplayName="Is Auto Property Tracking" DefaultValue="true" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -614,7 +639,7 @@
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="9c7f55aa-1cc9-4841-b671-0cab31164a24" Description="No description available" Name="ModelEnum" DisplayName="Enum" Namespace="Sawczyn.EFDesigner.EFModel">
+    <DomainClass Id="9c7f55aa-1cc9-4841-b671-0cab31164a24" Description="Represents an enumeration in C#" Name="ModelEnum" DisplayName="Enum" Namespace="Sawczyn.EFDesigner.EFModel">
       <BaseClass>
         <DomainClassMoniker Name="DesignElement" />
       </BaseClass>
@@ -717,7 +742,7 @@
         </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
-    <DomainClass Id="89938de9-60f8-472a-9507-f7c7de18a511" Description="No description available" Name="ModelEnumValue" DisplayName="Value" Namespace="Sawczyn.EFDesigner.EFModel">
+    <DomainClass Id="89938de9-60f8-472a-9507-f7c7de18a511" Description="Represents a value in a C# enumeration" Name="ModelEnumValue" DisplayName="Value" Namespace="Sawczyn.EFDesigner.EFModel">
       <Properties>
         <DomainProperty Id="f67322ba-10ef-44d8-bd5f-b54955cb70ff" Description="" Name="Name" DisplayName="Name" DefaultValue="" Category="Code Generation" IsElementName="true">
           <Type>
@@ -912,7 +937,12 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="c3f59c5e-2afa-4a56-92af-00396e973805" Description="If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="TargetAutoProperty" DisplayName="Target Auto Property" DefaultValue="true" Category="End 2">
+        <DomainProperty Id="637b64d2-193d-47f9-b63f-df8ccc23f900" Description="Should this end participate in INotifyPropertyChanged activities? Only valid for non-collection targets." Name="TargetImplementNotify" DisplayName="Implement INotifyPropertyChanged" Kind="CustomStorage" Category="End 2" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="30a6413f-ab71-4297-9d37-e53f0eda887f" Description="Description for Sawczyn.EFDesigner.EFModel.Association.Is Target Implement Notify Tracking" Name="IsTargetImplementNotifyTracking" DisplayName="Is Target Implement Notify Tracking" DefaultValue="true" IsBrowsable="false">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
@@ -1048,7 +1078,12 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="9b6ff495-8b09-434d-9bcc-411afd7e94d5" Description="If false, generates a backing field with a partial method to hook getting and setting the property. If true, generates a simple auto property." Name="SourceAutoProperty" DisplayName="Source Auto Property" DefaultValue="true" Category="End 1">
+        <DomainProperty Id="44fda399-d8f1-4d63-80f1-881277cb8115" Description="Should this end participate in INotifyPropertyChanged activities? Only valid for non-collection targets." Name="SourceImplementNotify" DisplayName="Implement INotifyPropertyChanged" Kind="CustomStorage" Category="End 1" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="4b2acec5-2746-43a0-b4be-176e3cfa533f" Description="Description for Sawczyn.EFDesigner.EFModel.BidirectionalAssociation.Is Source Implement Notify Tracking" Name="IsSourceImplementNotifyTracking" DisplayName="Is Source Implement Notify Tracking" DefaultValue="true" IsBrowsable="false">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
@@ -1069,7 +1104,7 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="7937b5d4-2003-470b-9140-051f2dcd8dd0" Description="No description available" Name="ModelRootHasEnums" DisplayName="Model Root Has Enums" Namespace="Sawczyn.EFDesigner.EFModel" IsEmbedding="true">
+    <DomainRelationship Id="7937b5d4-2003-470b-9140-051f2dcd8dd0" Description="Relationship rooting ModelEnum domain entities to the tree" Name="ModelRootHasEnums" DisplayName="Model Root Has Enums" Namespace="Sawczyn.EFDesigner.EFModel" IsEmbedding="true">
       <Source>
         <DomainRole Id="a613cf7f-477b-4842-b1c2-9586977463f8" Description="No description available" Name="ModelRoot" DisplayName="Model Root" PropertyName="Enums" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Enums">
           <RolePlayer>
@@ -1085,7 +1120,7 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="168660d9-3989-40a9-b6ef-25d54c6e6d34" Description="No description available" Name="ModelEnumHasValues" DisplayName="Model Enum Has Values" Namespace="Sawczyn.EFDesigner.EFModel" IsEmbedding="true">
+    <DomainRelationship Id="168660d9-3989-40a9-b6ef-25d54c6e6d34" Description="Relationship linking enumeration values to an enumeration" Name="ModelEnumHasValues" DisplayName="Model Enum Has Values" Namespace="Sawczyn.EFDesigner.EFModel" IsEmbedding="true">
       <Source>
         <DomainRole Id="0e073c3b-ea79-41d0-b820-b972052cfb86" Description="No description available" Name="Enum" DisplayName="Enum" PropertyName="Values" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Values">
           <RolePlayer>
@@ -1383,6 +1418,15 @@
       </Literals>
     </DomainEnumeration>
     <ExternalType Name="LayoutAlgorithmSettings" Namespace="Microsoft.Msagl.Core.Layout" />
+    <DomainEnumeration Name="PersistencePointType" Namespace="Sawczyn.EFDesigner.EFModel" Description="Used to define whether the property or its backing field is persisted">
+      <Literals>
+        <EnumerationLiteral Description="Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Property" Name="Property" Value="" />
+        <EnumerationLiteral Description="Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Field" Name="Field" Value="" />
+      </Literals>
+    </DomainEnumeration>
+    <ExternalType Name="InitialValueType" Namespace="Sawczyn.EFDesigner.EFModel">
+      <Notes>Just a string, but a specialized type so we can have a type converter for it</Notes>
+    </ExternalType>
   </Types>
   <Shapes>
     <CompartmentShape Id="8055f08f-3d3a-435f-8b47-7afcd0e051bd" Description="" Name="ClassShape" DisplayName="Class Shape" Namespace="Sawczyn.EFDesigner.EFModel" GeneratesDoubleDerived="true" FixedTooltipText="Class Shape" TextColor="White" ExposesTextColor="true" FillColor="0, 122, 204" InitialHeight="0.3" OutlineThickness="0.01" FillGradientMode="None" ExposesOutlineColorAsProperty="true" ExposesFillColorAsProperty="true" ExposesOutlineDashStyleAsProperty="true" ExposesOutlineThicknessAsProperty="true" Geometry="Rectangle">
@@ -1589,8 +1633,11 @@
           <XmlPropertyData XmlName="targetDisplayText">
             <DomainPropertyMoniker Name="Association/TargetDisplayText" />
           </XmlPropertyData>
-          <XmlPropertyData XmlName="targetAutoProperty">
-            <DomainPropertyMoniker Name="Association/TargetAutoProperty" />
+          <XmlPropertyData XmlName="targetImplementNotify">
+            <DomainPropertyMoniker Name="Association/TargetImplementNotify" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="isTargetImplementNotifyTracking">
+            <DomainPropertyMoniker Name="Association/IsTargetImplementNotifyTracking" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -1791,6 +1838,9 @@
           <XmlPropertyData XmlName="customAttributes">
             <DomainPropertyMoniker Name="ModelClass/CustomAttributes" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="autoPropertyDefault">
+            <DomainPropertyMoniker Name="ModelClass/AutoPropertyDefault" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="ModelAttribute" MonikerAttributeName="" SerializeId="true" MonikerElementName="modelAttributeMoniker" ElementName="modelAttribute" MonikerTypeName="ModelAttributeMoniker">
@@ -1874,6 +1924,18 @@
           <XmlPropertyData XmlName="displayText">
             <DomainPropertyMoniker Name="ModelAttribute/DisplayText" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="persistencePoint">
+            <DomainPropertyMoniker Name="ModelAttribute/PersistencePoint" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="implementNotify">
+            <DomainPropertyMoniker Name="ModelAttribute/ImplementNotify" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="isImplementNotifyTracking">
+            <DomainPropertyMoniker Name="ModelAttribute/IsImplementNotifyTracking" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="isAutoPropertyTracking">
+            <DomainPropertyMoniker Name="ModelAttribute/IsAutoPropertyTracking" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="Comment" MonikerAttributeName="" SerializeId="true" MonikerElementName="commentMoniker" ElementName="comment" MonikerTypeName="CommentMoniker">
@@ -1917,8 +1979,11 @@
           <XmlPropertyData XmlName="sourceDisplayText">
             <DomainPropertyMoniker Name="BidirectionalAssociation/SourceDisplayText" />
           </XmlPropertyData>
-          <XmlPropertyData XmlName="sourceAutoProperty">
-            <DomainPropertyMoniker Name="BidirectionalAssociation/SourceAutoProperty" />
+          <XmlPropertyData XmlName="sourceImplementNotify">
+            <DomainPropertyMoniker Name="BidirectionalAssociation/SourceImplementNotify" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="isSourceImplementNotifyTracking">
+            <DomainPropertyMoniker Name="BidirectionalAssociation/IsSourceImplementNotifyTracking" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>

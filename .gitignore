@@ -2,4 +2,12 @@ docs/.jekyll-metadata
 docs/_site
 /.vs
 /src/DslPackage/Parsers
-/src/EFCoreParser/dotnetwarp_temp
+/src/Utilities/EFCoreParser/dotnetwarp_temp
+/src/Utilities/DslPackage/Parsers
+/src/_ReSharper.Caches
+/src/.sonarqube
+/src/Testing/Sandbox_EF6/IncludeHealth.tt
+/src/Testing/Sandbox_EF6/IncludeHealth.efmodel.diagram
+/src/Testing/Sandbox_EF6/IncludeHealth.efmodel
+/src/Testing/Sandbox_EF6/IncludeHealth.cs
+/c-o-s-space differences.txt

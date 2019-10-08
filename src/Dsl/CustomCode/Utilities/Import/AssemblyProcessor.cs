@@ -58,7 +58,7 @@ namespace Sawczyn.EFDesigner.EFModel
             throw new ArgumentNullException(nameof(filename));
 
          string outputFilename = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
-         StatusDisplay.Show($"Detecting .NET and EF versions");
+         StatusDisplay.Show("Detecting .NET and EF versions");
 
          if (TryParseAssembly(filename, @"Parsers\EF6ParserFmwk.exe", outputFilename) == 0 ||
              TryParseAssembly(filename, @"Parsers\EFCoreParserFmwk.exe", outputFilename) == 0 ||
@@ -67,7 +67,7 @@ namespace Sawczyn.EFDesigner.EFModel
             return DoProcessing(outputFilename);
          }
 
-         ErrorDisplay.Show($"Error procesing assembly");
+         ErrorDisplay.Show("Error procesing assembly");
          return false;
       }
 
@@ -318,8 +318,8 @@ namespace Sawczyn.EFDesigner.EFModel
                                              {
                                                 Arguments = $"\"{filename.Trim('\"')}\" \"{outputFilename}\"", 
                                                 CreateNoWindow = true, 
-                                                ErrorDialog = false, 
-                                                UseShellExecute = false
+                                                ErrorDialog = true, 
+                                                UseShellExecute = true
                                              };
 
          using (Process process = System.Diagnostics.Process.Start(processStartInfo))

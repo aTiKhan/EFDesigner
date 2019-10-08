@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -23,6 +24,7 @@ using VSLangProj;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
+   [SuppressMessage("ReSharper", "RemoveRedundantBraces")]
    internal partial class EFModelDocData
    {
       private static DTE _dte;
@@ -238,7 +240,10 @@ namespace Sawczyn.EFDesigner.EFModel
             EventManagerDirectory events = Store.EventManagerDirectory;
 
             foreach (DomainClassInfo classInfo in classesWithWarnings)
+            {
                events.ElementPropertyChanged.Add(classInfo, new EventHandler<ElementPropertyChangedEventArgs>(ValidateModelElement));
+               events.ElementAdded.Add(classInfo, new EventHandler<ElementAddedEventArgs>(ValidateModelElement));   
+            }
 
             tx.Commit();
          }
@@ -257,7 +262,17 @@ namespace Sawczyn.EFDesigner.EFModel
       private void ValidateModelElement(object sender, ElementPropertyChangedEventArgs e)
       {
          ModelElement modelElement = e.ModelElement;
+         ValidateModelElement(modelElement);
+      }
 
+      private void ValidateModelElement(object sender, ElementAddedEventArgs e)
+      {
+         ModelElement modelElement = e.ModelElement;
+         ValidateModelElement(modelElement);
+      }
+
+      private void ValidateModelElement(ModelElement modelElement)
+      {
          if (modelElement is IDisplaysWarning displaysWarningElement)
          {
             displaysWarningElement.ResetWarning();
@@ -485,9 +500,6 @@ namespace Sawczyn.EFDesigner.EFModel
 
                                                       new PropertyAssignment(Association.SourceMultiplicityDomainPropertyId, selected[1].TargetMultiplicity), 
                                                       new PropertyAssignment(Association.TargetMultiplicityDomainPropertyId, selected[0].TargetMultiplicity), 
-
-                                                      new PropertyAssignment(BidirectionalAssociation.SourceAutoPropertyDomainPropertyId, selected[1].TargetAutoProperty), 
-                                                      new PropertyAssignment(Association.TargetAutoPropertyDomainPropertyId, selected[0].TargetAutoProperty), 
                                                    });
             tx.Commit();
          }
@@ -527,8 +539,6 @@ namespace Sawczyn.EFDesigner.EFModel
 
                                                       new PropertyAssignment(Association.SourceMultiplicityDomainPropertyId, selected.SourceMultiplicity), 
                                                       new PropertyAssignment(Association.TargetMultiplicityDomainPropertyId, selected.TargetMultiplicity), 
-
-                                                      new PropertyAssignment(Association.TargetAutoPropertyDomainPropertyId, selected.TargetAutoProperty), 
                                                    });
 
             // ReSharper disable once UnusedVariable
@@ -557,8 +567,6 @@ namespace Sawczyn.EFDesigner.EFModel
 
                                                       new PropertyAssignment(Association.SourceMultiplicityDomainPropertyId, selected.TargetMultiplicity), 
                                                       new PropertyAssignment(Association.TargetMultiplicityDomainPropertyId, selected.SourceMultiplicity), 
-
-                                                      new PropertyAssignment(Association.TargetAutoPropertyDomainPropertyId, selected.SourceAutoProperty), 
                                                    });
 
             tx.Commit();
