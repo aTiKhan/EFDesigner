@@ -2,20 +2,26 @@
 using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Validation;
 using Sawczyn.EFDesigner.EFModel.Extensions;
-using System.Collections.Generic;
 using System.Linq;
+
+using Sawczyn.EFDesigner.EFModel.Annotations;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
    [ValidationState(ValidationState.Enabled)]
-   public partial class ModelEnumValue : IModelElementInCompartment, IDisplaysWarning
+   public partial class ModelEnumValue : IModelElementInCompartment, IDisplaysWarning, IHasStore
    {
       private ModelEnum cachedParent;
 
       public IModelElementWithCompartments ParentModelElement => Enum;
       public string CompartmentName => this.GetFirstShapeElement().AccessibleName;
 
-      #region Warning display
+      public string GetDisplayText()
+      {
+         return $"{Enum.Name}.{Name}";
+      }
+
+#region Warning display
 
       // set as methods to avoid issues around serialization
 
@@ -27,19 +33,23 @@ namespace Sawczyn.EFDesigner.EFModel
 
       public void RedrawItem()
       {
-         List<ShapeElement> shapeElements = PresentationViewsSubject.GetPresentation(ParentModelElement as ModelElement).OfType<ShapeElement>().ToList();
-         foreach (ShapeElement shapeElement in shapeElements)
+         // redraw on every diagram
+         foreach (ShapeElement shapeElement in 
+               PresentationViewsSubject.GetPresentation(ParentModelElement as ModelElement).OfType<ShapeElement>().Distinct())
             shapeElement.Invalidate();
       }
 
       #endregion
 
       [ValidationMethod(ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu)]
-      // ReSharper disable once UnusedMember.Local
+      [UsedImplicitly]
+      [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "Called by validation")]
       private void SummaryDescriptionIsEmpty(ValidationContext context)
       {
+         if (Enum?.ModelRoot == null) return;
+
          ModelRoot modelRoot = Store.ElementDirectory.FindElements<ModelRoot>().FirstOrDefault();
-         if (modelRoot.WarnOnMissingDocumentation && string.IsNullOrWhiteSpace(Summary))
+         if (Enum != null && modelRoot?.WarnOnMissingDocumentation == true && string.IsNullOrWhiteSpace(Summary))
          {
             context.LogWarning($"{Enum.Name}.{Name}: Enum value should be documented", "AWMissingSummary", this);
             hasWarning = true;

@@ -37,6 +37,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CopyVsixExtensionFiles>False</CopyVsixExtensionFiles>
+    <LangVersion>7.3</LangVersion>
+    <NoWarn>CS1762</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,13 +54,22 @@
     <RegisterWithCodebase>true</RegisterWithCodebase>
     <GacTargetOutput>false</GacTargetOutput>
     <TransformOnBuild>True</TransformOnBuild>
+    <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <GetVsixSourceItemsDependsOn>$(GetVsixSourceItemsDependsOn);IncludeNuGetResolvedAssets</GetVsixSourceItemsDependsOn>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)'!=''" />
   <Import Project="$(DslTargetsPath)\Microsoft.DSLTools.targets" />
+  <Target Name="IncludeNuGetResolvedAssets" DependsOnTargets="ResolveNuGetPackageAssets">
+    <ItemGroup>
+      <VSIXCopyLocalReferenceSourceItem Include="@(ReferenceCopyLocalPaths)" />
+    </ItemGroup>
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -86,10 +97,12 @@
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.15.3.DesignTime, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.10.0" />
     <Reference Include="Microsoft.VisualStudio.TextTemplating.Interfaces.11.0" />
     <Reference Include="Microsoft.VisualStudio.TextTemplating$(T4VersionSuffix)" />
     <Reference Include="Microsoft.VisualStudio.TextTemplating.VSHost$(T4VersionSuffix)" />
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -97,6 +110,8 @@
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IO.Compression" />
@@ -113,6 +128,7 @@
     <Reference Include="WindowsBase">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomCode\AddCodeForm.cs">
@@ -127,13 +143,17 @@
     <Compile Include="CustomCode\ChooseForm.Designer.cs">
       <DependentUpon>ChooseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomCode\Commands.cs" />
+    <Compile Include="CustomCode\Extensions\TreeViewExtensions.cs" />
+    <Compile Include="CustomCode\LayoutCommands.cs" />
     <Compile Include="CustomCode\CommandSet.cs" />
     <Compile Include="CustomCode\Extensions\ModelClassExtensions.cs" />
     <Compile Include="CustomCode\Extensions\ModelElementExtensions.cs" />
     <Compile Include="CustomCode\Extensions\ModelEnumExtensions.cs" />
+    <Compile Include="CustomCode\OptionsPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomCode\Partials\Constants.cs" />
-    <Compile Include="CustomCode\Partials\EFModelCommandSet.cs" />
+    <Compile Include="CustomCode\Partials\EFModelClipboardCommandSet.cs" />
     <Compile Include="CustomCode\Partials\EFModelDocData.cs" />
     <Compile Include="CustomCode\Extensions\ProjectExtensions.cs" />
     <Compile Include="CustomCode\Partials\EFModelDocView.cs" />
@@ -143,12 +163,110 @@
     <Compile Include="CustomCode\Partials\EFModelPackage.cs" />
     <Compile Include="CustomCode\Messages.cs" />
     <Compile Include="CustomCode\Partials\EFModelExplorerToolWindow.cs" />
+    <Compile Include="CustomCode\WaitCursor.cs" />
+    <Compile Include="CustomCode\WizardImplementation.cs" />
     <Compile Include="GeneratedCode\CommandSet.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CommandSet.tt</DependentUpon>
     </Compile>
-    <Compile Include="CustomCode\WizardImplementation.cs" />
+    <Compile Include="GeneratedCode\Constants.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Constants.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\DocData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\DocView.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocView.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\EditorFactory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorFactory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\GeneratedVSCT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratedVSCT.vsct</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\ModelExplorer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelExplorer.tt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneratedCode\ModelExplorerToolWindow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelExplorerToolWindow.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedCode\Package.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MefExtension\CommandExtensionRegistrar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommandExtensionRegistrar.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MefExtension\PackageExtensionEnablement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackageExtensionEnablement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MefExtension\ValidationExtensionRegistrar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationExtensionRegistrar.tt</DependentUpon>
+    </Compile>
+    <Content Include="GeneratedCode\GeneratedVSCT.vsct">
+      <Generator>VsctGenerator</Generator>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratedVSCT.tt</DependentUpon>
+      <LastGenOutput>GeneratedVSCT.cs</LastGenOutput>
+    </Content>
+    <Content Include="Parsers\EFCore5Parser.exe">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EF6Designer.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EF6ModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFCore2ModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFCore3ModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFCore5ModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFCoreDesigner.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFCoreModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFDesigner.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFModelFileManager.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="TextTemplates\EFModelGenerator.ttinclude">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Compile Include="VSPackage.Designer.cs" />
     <Content Include="Logo.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -180,115 +298,21 @@
     <Content Include="Microsoft.Data.ConnectionUI.dll">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Parsers\EF6ParserFmwk.exe">
+    <Content Include="Parsers\EF6Parser.exe">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Parsers\EFCoreParser.exe">
+    <Content Include="Parsers\EFCore2Parser.exe">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Parsers\EFCoreParserFmwk.exe">
+    <Content Include="Parsers\EFCore3Parser.exe">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Parsers\Effort.dll">
+    <Content Include="ProjectItemTemplates\EFModel.xsd">
+      <SubType>Designer</SubType>
       <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\EntityFramework.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\EntityFramework.SqlServer.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\log4net.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.EntityFrameworkCore.Abstractions.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.EntityFrameworkCore.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.EntityFrameworkCore.InMemory.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.EntityFrameworkCore.Relational.Design.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.EntityFrameworkCore.Relational.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Caching.Abstractions.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Caching.Memory.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Configuration.Abstractions.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Configuration.Binder.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Configuration.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.DependencyInjection.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Logging.Abstractions.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Logging.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Options.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Microsoft.Extensions.Primitives.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\Newtonsoft.Json.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\NMemory.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\ParsingModels.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
+      <InstallRoot>Schemas</InstallRoot>
     </Content>
     <None Include="ReadMe - Build Events.txt" />
-    <Content Include="Parsers\Remotion.Linq.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Buffers.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Collections.Immutable.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.ComponentModel.Annotations.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Diagnostics.DiagnosticSource.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Interactive.Async.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Memory.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Numerics.Vectors.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\System.Runtime.CompilerServices.Unsafe.dll">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="System.Spatial.dll">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -304,23 +328,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </None>
-    <Content Include="Parsers\EFCoreParserFmwk.exe.config">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Parsers\EF6ParserFmwk.exe.config">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <None Include="ProjectItemTemplates\efmodel.tt">
       <Parameters>
             &lt;%3fxml version="1.0" encoding="utf-16"%3f&gt;
             &lt;ArrayOfParameterStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;
          </Parameters>
     </None>
-    <Content Include="EFModel.xsd">
-      <SubType>Designer</SubType>
-      <InstallRoot>Schemas</InstallRoot>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <None Include="source.extension.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>source.extension.vsixmanifest</LastGenOutput>
@@ -335,71 +348,20 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Constants.cs</LastGenOutput>
     </None>
-    <Compile Include="GeneratedCode\Constants.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Constants.tt</DependentUpon>
-    </Compile>
     <None Include="GeneratedCode\DocData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DocData.cs</LastGenOutput>
     </None>
-    <Compile Include="GeneratedCode\DocData.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DocData.tt</DependentUpon>
-    </Compile>
     <None Include="GeneratedCode\DocView.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DocView.cs</LastGenOutput>
     </None>
-    <Compile Include="GeneratedCode\DocView.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DocView.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedCode\EditorFactory.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorFactory.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedCode\ModelExplorer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelExplorer.tt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="GeneratedCode\ModelExplorerToolWindow.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelExplorerToolWindow.tt</DependentUpon>
-    </Compile>
     <None Include="GeneratedCode\ModelExplorer.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelExplorer.cs</LastGenOutput>
     </None>
-    <Compile Include="GeneratedCode\Package.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Package.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MefExtension\PackageExtensionEnablement.cs">
-      <DependentUpon>PackageExtensionEnablement.tt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="MefExtension\CommandExtensionRegistrar.cs">
-      <DependentUpon>CommandExtensionRegistrar.tt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="MefExtension\ValidationExtensionEnablement.cs">
       <DependentUpon>ValidationExtensionEnablement.tt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="MefExtension\ValidationExtensionRegistrar.cs">
-      <DependentUpon>ValidationExtensionRegistrar.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -420,19 +382,17 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TextTemplates\EF6Designer.ttinclude">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <None Include="Templates\Constants.tt" />
+    <None Include="Templates\DocData.tt" />
+    <None Include="Templates\DocView.tt" />
+    <None Include="Templates\EditorFactory.tt" />
+    <None Include="Templates\Package.tt" />
+    <Content Include="Templates\CommandSet.tt" />
+    <None Include="Templates\ModelExplorer.tt" />
     <Content Include="TextTemplates\MultipleOutputHelper.ttinclude">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="TextTemplates\VSIntegration.ttinclude">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="TextTemplates\EFCoreDesigner.ttinclude">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="TextTemplates\EFDesigner.ttinclude">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
@@ -446,10 +406,6 @@
       <IncludeOutputGroupsInVSIXLocalOnly>
         DebugSymbolsProjectOutputGroup;
       </IncludeOutputGroupsInVSIXLocalOnly>
-    </ProjectReference>
-    <ProjectReference Include="..\Utilities\MSAGL\Msagl.csproj">
-      <Project>{415d3e3f-7105-46c1-84d2-7ecb34213d92}</Project>
-      <Name>Msagl</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -493,17 +449,12 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>GeneratedVSCT.vsct</LastGenOutput>
     </None>
-    <Content Include="GeneratedCode\GeneratedVSCT.vsct">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GeneratedVSCT.tt</DependentUpon>
-    </Content>
     <None Include="ProjectItemTemplates\CSharp.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CSharp.vstemplate</LastGenOutput>
     </None>
     <None Include="ProjectItemTemplates\efmodel.efmodel" />
-    <None Include="ProjectItemTemplates\efmodel.diagram" />
+    <None Include="ProjectItemTemplates\efmodel.diagramx" />
     <VSCTCompile Include="Commands.vsct">
       <ResourceName>1000.ctmenu</ResourceName>
     </VSCTCompile>
@@ -518,14 +469,13 @@
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>dotnet tool install -g dotnet-warp
-dotnet-warp "$(SolutionDir)Utilities\EFCoreParser\EFCoreParser.csproj" -o "$(ProjectDir)Parsers\EFCoreParser.exe"
+    <PreBuildEvent>copy /y "$(SolutionDir)Dsl\GeneratedCode\EFModelSchema.xsd" "$(ProjectDir)ProjectItemTemplates\EFModel.xsd"
 
-mkdir "$(TargetDir)Parsers"
-
-copy /y "$(ProjectDir)Parsers\*.*" "$(TargetDir)Parsers"
-copy /y "$(SolutionDir)Dsl\GeneratedCode\EFModelSchema.xsd" "EFModel.xsd"
-
+dotnet publish -c $(ConfigurationName) -r win-x64 -f netcoreapp3.1 --nologo --no-self-contained -o $(ProjectDir)Parsers /p:PublishSingleFile=true "$(SolutionDir)Utilities\EF6Parser\EF6Parser.csproj"
+dotnet publish -c $(ConfigurationName) -r win-x64 -f netcoreapp3.1 --nologo --no-self-contained -o $(ProjectDir)Parsers /p:PublishSingleFile=true "$(SolutionDir)Utilities\EFCore2Parser\EFCore2Parser.csproj"
+dotnet publish -c $(ConfigurationName) -r win-x64 -f netcoreapp3.1 --nologo --no-self-contained -o $(ProjectDir)Parsers /p:PublishSingleFile=true "$(SolutionDir)Utilities\EFCore3Parser\EFCore3Parser.csproj"
+dotnet publish -c $(ConfigurationName) -r win-x64 -f netcoreapp3.1 --nologo --no-self-contained -o $(ProjectDir)Parsers /p:PublishSingleFile=true "$(SolutionDir)Utilities\EFCore5Parser\EFCore5Parser.csproj"
+if "$(ConfigurationName)"=="Release" del "$(ProjectDir)Parsers\*.pdb
 </PreBuildEvent>
   </PropertyGroup>
   <ItemGroup>
@@ -536,28 +486,21 @@ copy /y "$(SolutionDir)Dsl\GeneratedCode\EFModelSchema.xsd" "EFModel.xsd"
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EnvDTE80">
-      <Version>8.0.3</Version>
+      <Version>16.9.31023.347</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK.EmbedInteropTypes">
-      <Version>15.0.27</Version>
+      <Version>15.0.36</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Shell.Interop.12.0">
-      <Version>12.0.30111</Version>
+      <Version>16.9.31023.347</Version>
     </PackageReference>
-    <PackageReference Include="NuGet.Packaging.Core">
-      <Version>5.2.0</Version>
-    </PackageReference>
-    <PackageReference Include="NuGet.Packaging.Core.Types">
-      <Version>4.2.0</Version>
-    </PackageReference>
-    <PackageReference Include="NuGet.Protocol.Core.v3">
-      <Version>4.2.0</Version>
-    </PackageReference>
-    <PackageReference Include="NuGet.VisualStudio">
-      <Version>5.2.0</Version>
+    <PackageReference Include="QuikGraph" Version="2.3.0" />
+    <PackageReference Include="QuikGraph.Graphviz" Version="2.3.0" />
+    <PackageReference Include="Shields.GraphViz">
+      <Version>1.0.2</Version>
     </PackageReference>
     <PackageReference Include="stdole">
-      <Version>7.0.3303</Version>
+      <Version>16.9.31023.347</Version>
     </PackageReference>
     <PackageReference Include="System.Runtime">
       <Version>4.3.1</Version>
@@ -569,4 +512,5 @@ copy /y "$(SolutionDir)Dsl\GeneratedCode\EFModelSchema.xsd" "EFModel.xsd"
       <Version>4.3.2</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>

@@ -2,6 +2,7 @@
 using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
+using Microsoft.VisualStudio.Modeling.Immutability;
 
 using Sawczyn.EFDesigner.EFModel.Extensions;
 
@@ -18,10 +19,13 @@ namespace Sawczyn.EFDesigner.EFModel
          Store store = element.Store;
          Transaction current = store.TransactionManager.CurrentTransaction;
 
-         if (current.IsSerializing)
+         if (current.IsSerializing || ModelRoot.BatchUpdating)
             return;
 
-         List<Generalization> generalizations = store.Get<Generalization>().Where(g => g.Superclass == element).ToList();
+         foreach (ModelAttribute attribute in element.Attributes)
+            attribute.SetLocks(Locks.None);
+
+         List<Generalization> generalizations = store.GetAll<Generalization>().Where(g => g.Superclass == element).ToList();
 
          if (generalizations.Any())
          {
@@ -29,10 +33,10 @@ namespace Sawczyn.EFDesigner.EFModel
                                  ? $"Push {element.Name} attributes and associations down its to its subclass?"
                                  : $"Push {element.Name} attributes and associations down its to {generalizations.Count} subclasses?";
 
-            if (QuestionDisplay.Show(question) == true)
+            if (BooleanQuestionDisplay.Show(store, question) == true)
             {
                foreach (ModelClass subclass in generalizations.Select(g => g.Subclass))
-                  element.PushDown(subclass);
+                  element.MoveContents(subclass);
             }
          }
       }

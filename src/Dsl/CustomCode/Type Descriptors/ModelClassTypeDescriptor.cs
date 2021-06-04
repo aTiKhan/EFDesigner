@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Design;
@@ -21,11 +22,50 @@ namespace Sawczyn.EFDesigner.EFModel
 
          if (ModelElement is ModelClass modelClass)
          {
-            EFCoreValidator.AdjustEFCoreProperties(propertyDescriptors, modelClass);
-
             storeDomainDataDirectory = modelClass.Store.DomainDataDirectory;
+            ModelRoot modelRoot = modelClass.ModelRoot;
+
+            // things unavailable if pre-EFCore5
+            if (!modelRoot.IsEFCore5Plus)
+            {
+               propertyDescriptors.Remove("IsPropertyBag");
+               propertyDescriptors.Remove("IsQueryType");
+               propertyDescriptors.Remove("ExcludeFromMigrations");
+               propertyDescriptors.Remove("IsDatabaseView");
+               propertyDescriptors.Remove("ViewName");
+
+               if (modelClass.IsDependentType && modelRoot.EntityFrameworkVersion == EFVersion.EF6)
+                  propertyDescriptors.Remove("TableName");
+            }
+            else
+            {
+               if (modelClass.IsQueryType)
+               {
+                  propertyDescriptors.Remove("TableName");
+                  propertyDescriptors.Remove("DatabaseSchema");
+                  propertyDescriptors.Remove("Concurrency");
+               }
+
+               if (modelClass.IsDatabaseView)
+                  propertyDescriptors.Remove("TableName");
+               else
+                  propertyDescriptors.Remove("ViewName");
+
+               if (modelClass.IsPropertyBag)
+                  propertyDescriptors.Remove("IsDependentType");
+            }
 
             //Add the descriptors for the tracking properties 
+
+            propertyDescriptors.Add(new TrackingPropertyDescriptor(modelClass
+                                                                 , storeDomainDataDirectory.GetDomainProperty(ModelClass.AutoPropertyDefaultDomainPropertyId)
+                                                                 , storeDomainDataDirectory.GetDomainProperty(ModelClass.IsAutoPropertyDefaultTrackingDomainPropertyId)
+                                                                 , new Attribute[]
+                                                                   {
+                                                                      new DisplayNameAttribute("AutoProperty Default")
+                                                                    , new DescriptionAttribute("Overrides default autoproperty default setting")
+                                                                    , new CategoryAttribute("Code Generation")
+                                                                   }));
 
             propertyDescriptors.Add(new TrackingPropertyDescriptor(modelClass
                                                                  , storeDomainDataDirectory.GetDomainProperty(ModelClass.DatabaseSchemaDomainPropertyId)
@@ -44,6 +84,16 @@ namespace Sawczyn.EFDesigner.EFModel
                                                                    {
                                                                       new DisplayNameAttribute("Namespace")
                                                                     , new DescriptionAttribute("Overrides default namespace")
+                                                                    , new CategoryAttribute("Code Generation")
+                                                                   }));
+
+            propertyDescriptors.Add(new TrackingPropertyDescriptor(modelClass
+                                                                 , storeDomainDataDirectory.GetDomainProperty(ModelClass.DefaultConstructorVisibilityDomainPropertyId)
+                                                                 , storeDomainDataDirectory.GetDomainProperty(ModelClass.IsDefaultConstructorVisibilityTrackingDomainPropertyId)
+                                                                 , new Attribute[]
+                                                                   {
+                                                                      new DisplayNameAttribute("Default Constructor Visibility")
+                                                                    , new DescriptionAttribute("By default, default (empty) constructors generate as public unless there are required properties or associations in the entity, then they generate as protected.")
                                                                     , new CategoryAttribute("Code Generation")
                                                                    }));
 

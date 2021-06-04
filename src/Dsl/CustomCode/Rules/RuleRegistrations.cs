@@ -8,7 +8,8 @@ namespace Sawczyn.EFDesigner.EFModel
       private static readonly Type[] RuleClasses =
       {
          typeof(AssociationAddRules),
-         typeof(AssociationChangeRules),
+         typeof(AssociationChangedRules),
+         typeof(AssociationDeletingRules),
          typeof(GeneralizationAddRules),
          typeof(GeneralizationChangeRules),
          typeof(GeneralizationDeletingRules),
@@ -17,7 +18,11 @@ namespace Sawczyn.EFDesigner.EFModel
          typeof(ModelClassAddRules),
          typeof(ModelClassChangeRules),
          typeof(ModelClassDeletingRules),
+         typeof(ModelDiagramDataAddRules),
+         typeof(ModelDiagramDataChangeRules),
+         typeof(ModelDiagramDataDeleteRules),
          typeof(ModelEnumChangeRules),
+         typeof(ModelEnumDeleteRules),
          typeof(ModelEnumValueAddRules),
          typeof(ModelEnumValueChangeRules),
          typeof(ModelRootChangeRules)

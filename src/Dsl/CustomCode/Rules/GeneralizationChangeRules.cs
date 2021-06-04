@@ -19,7 +19,7 @@ namespace Sawczyn.EFDesigner.EFModel
          Store store = element.Store;
          Transaction current = store.TransactionManager.CurrentTransaction;
 
-         if (current.IsSerializing)
+         if (current.IsSerializing || ModelRoot.BatchUpdating)
             return;
 
          if (Equals(e.NewValue, e.OldValue))
@@ -30,9 +30,17 @@ namespace Sawczyn.EFDesigner.EFModel
             case "Superclass":
             case "Subclass":
 
+               if (element.Subclass.IsPropertyBag && !element.Superclass.IsPropertyBag)
+               {
+                  ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: Since {element.Subclass.Name} is a property bag, it can't inherit from {element.Superclass.Name}, which is not a property bag.");
+                  current.Rollback();
+
+                  return;
+               }
+
                if (!element.IsInCircularInheritance())
                {
-                  ErrorDisplay.Show($"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause a circular reference.");
+                  ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause a circular reference.");
                   current.Rollback();
 
                   return;
@@ -63,7 +71,7 @@ namespace Sawczyn.EFDesigner.EFModel
                   if (nameClashes.Any())
                   {
                      string nameClashList = string.Join("\n   ", nameClashes);
-                     ErrorDisplay.Show($"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause name clashes. Resolve the following before setting the inheritance:\n   " + nameClashList);
+                     ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause name clashes. Resolve the following before setting the inheritance:\n   " + nameClashList);
                      current.Rollback();
                   }
                }

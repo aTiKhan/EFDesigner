@@ -2,7 +2,7 @@
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public partial class Generalization
+   public partial class Generalization: IHasStore
    {
       public bool IsInCircularInheritance()
       {
@@ -17,5 +17,16 @@ namespace Sawczyn.EFDesigner.EFModel
 
          return false;
       }
+
+      public string GetDisplayText()
+      {
+         return $"{Subclass.Name} inherits from {Superclass.Name}";
+      }
+
+      private string GetNameValue()
+      {
+         return GetDisplayText();
+      }
+
    }
 }

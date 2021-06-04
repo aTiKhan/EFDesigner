@@ -1,9 +1,10 @@
 ﻿using Microsoft.VisualStudio.Modeling.Diagrams;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public partial class CommentBoxShape
+   public partial class CommentBoxShape: IHasStore
    {
       //Called once for each shape instance. 
       protected override void InitializeDecorators(IList<ShapeField> shapeFields, IList<Decorator> decorators)
@@ -23,6 +24,5 @@ namespace Sawczyn.EFDesigner.EFModel
          commentField.AnchoringBehavior.SetTopAnchor(AnchoringBehavior.Edge.Top, 0.01);
          commentField.AnchoringBehavior.SetBottomAnchor(AnchoringBehavior.Edge.Bottom, 0.01);
       }
-
    }
 }

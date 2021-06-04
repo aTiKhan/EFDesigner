@@ -1,11 +1,7 @@
-#region Using directives
-
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.ConstrainedExecution;
-
-#endregion
 
 [assembly: AssemblyTitle("Entity Framework Visual Designer")]
 [assembly: AssemblyDescription("Entity Framework visual design surface and code-first code generation for EF6, EFCore and beyond")]
@@ -16,12 +12,12 @@ using System.Runtime.ConstrainedExecution;
 #endif
 [assembly: AssemblyCompany("Michael Sawczyn")]
 [assembly: AssemblyProduct("EFDesigner")]
-[assembly: AssemblyCopyright("Copyright © Michael Sawczyn 2017-2019")]
+[assembly: AssemblyCopyright("Copyright © Michael Sawczyn 2017-2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: System.Resources.NeutralResourcesLanguage("en")]
 
-[assembly: AssemblyVersion("1.3.0.7")]
+[assembly: AssemblyVersion("3.0.5")]
+[assembly: AssemblyFileVersion("3.0.5")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
 [assembly: ReliabilityContract(Consistency.MayCorruptProcess, Cer.None)]

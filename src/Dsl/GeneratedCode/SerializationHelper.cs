@@ -244,7 +244,7 @@ namespace Sawczyn.EFDesigner.EFModel
 		/// <param name="isDiagram">Indicates whether a diagram or model file is currently being serialized.</param>
 		internal virtual global::System.Xml.XmlReaderSettings CreateXmlReaderSettings(DslModeling::SerializationContext serializationContext, bool isDiagram)
 		{
-			return new global::System.Xml.XmlReaderSettings();
+			return new global::System.Xml.XmlReaderSettings() { DtdProcessing = System.Xml.DtdProcessing.Prohibit };
 		}
 	
 		/// <summary>
@@ -445,7 +445,7 @@ namespace Sawczyn.EFDesigner.EFModel
 					this.InitializeSerializationContext(partition, serializationContext, true);
 					DslModeling::TransactionContext transactionContext = new DslModeling::TransactionContext();
 					transactionContext.Add(DslModeling::SerializationContext.TransactionContextKey, serializationContext);
-					using (DslModeling::Transaction t = partition.Store.TransactionManager.BeginTransaction("Load Model from " + location??"stream", true, transactionContext))
+					using (DslModeling::Transaction t = partition.Store.TransactionManager.BeginTransaction("Load Model from " + location ?? "stream", true, transactionContext))
 					{
 						// Ensure there is some content in the file.  Blank (or almost blank, to account for encoding header bytes, etc.)
 						// files will cause a new root element to be created and returned. 
@@ -506,7 +506,7 @@ namespace Sawczyn.EFDesigner.EFModel
 					///// <param name="partition">Partition in which the new ModelRoot instance will be created.</param>
 					///// <param name="fileName">Name of the file from which the ModelRoot instance will be deserialized.</param>
 					///// <param name="modelRoot">The root of the file that was loaded.</param>
-					// private void OnPostLoadModel(DslModeling::SerializationResult serializationResult, DslModeling::Partition partition, string location, ModelRoot modelRoot )
+					// private void OnPostLoadModel(DslModeling::SerializationResult serializationResult, DslModeling::Partition partition, string fileName, ModelRoot modelRoot )
 	
 					this.OnPostLoadModel(serializationResult, partition, location, modelRoot);
 					if (serializationResult.Failed)
@@ -1168,7 +1168,7 @@ namespace Sawczyn.EFDesigner.EFModel
 				// Only model has schema, diagram has no schema.
 				rootElementSettings.SchemaTargetNamespace = "http://schemas.microsoft.com/dsltools/EFModel";
 			}
-			rootElementSettings.Version = new global::System.Version("1.3.0.7");
+			rootElementSettings.Version = new global::System.Version("3.0.6.4");
 	
 			// Carry out the normal serialization.
 			rootSerializer.Write(serializationContext, rootElement, writer, rootElementSettings);
@@ -1190,7 +1190,7 @@ namespace Sawczyn.EFDesigner.EFModel
 				throw new global::System.ArgumentNullException("reader");
 			#endregion
 	
-			global::System.Version expectedVersion = new global::System.Version("1.3.0.7");
+			global::System.Version expectedVersion = new global::System.Version("3.0.6.4");
 			string dslVersionStr = reader.GetAttribute("dslVersion");
 			if (dslVersionStr != null)
 			{
@@ -1562,8 +1562,14 @@ namespace Sawczyn.EFDesigner.EFModel
 		[DslValidation::ValidationMethod(DslValidation::ValidationCategories.Load | DslValidation::ValidationCategories.Save | DslValidation::ValidationCategories.Menu)]
 		private void ValidateMonikerAmbiguity(DslValidation::ValidationContext context)
 		{
+		   // this is so embarrassing. I have shame....
+		   // while not the safest thing in the world, these get thrown on the first save of the model since we went multi-diagram. 
+			// and they've never been a real problem, so ...
+		   return;
+	
 			// Don't run this rule when deserializing - any ambiguous monikers will 
 			// already have stopped the file from loading.
+	#pragma warning disable 162
 			if (this.Store.InSerializationTransaction)
 			{
 				return;

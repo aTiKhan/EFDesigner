@@ -170,11 +170,11 @@
     <comment>Category for DomainProperty &apos;EntityContainerName&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespace.Description" xml:space="preserve">
-    <value>Namespace for all generated classes</value>
+    <value>Namespace for DBContext and, unless otherwise specified, all other generated code</value>
     <comment>Description for DomainProperty &apos;Namespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespace.DisplayName" xml:space="preserve">
-    <value>Namespace</value>
+    <value>DbContext Namespace</value>
     <comment>DisplayName for DomainProperty &apos;Namespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespace.Category" xml:space="preserve">
@@ -326,7 +326,7 @@
     <comment>Category for DomainProperty &apos;ChopMethodChains&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/InheritanceStrategy.Description" xml:space="preserve">
-    <value>How tables will be created/used to handle inheritance</value>
+    <value>How tables will be created and used to handle inheritance</value>
     <comment>Description for DomainProperty &apos;InheritanceStrategy&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/InheritanceStrategy.DisplayName" xml:space="preserve">
@@ -362,15 +362,15 @@
     <comment>Category for DomainProperty &apos;ProxyGenerationEnabled&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/TransformOnSave.Description" xml:space="preserve">
-    <value>If true, will run Transform All Templates when this model is saved</value>
+    <value>If true, will trigger code generation when the file is saved. If false, code generation will have to be triggered manually.</value>
     <comment>Description for DomainProperty &apos;TransformOnSave&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/TransformOnSave.DisplayName" xml:space="preserve">
-    <value>Transform On Save</value>
+    <value>Generate Code on Save</value>
     <comment>DisplayName for DomainProperty &apos;TransformOnSave&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/TransformOnSave.Category" xml:space="preserve">
-    <value>Designer</value>
+    <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;TransformOnSave&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/DefaultIdentityType.Description" xml:space="preserve">
@@ -441,18 +441,6 @@
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;StructOutputDirectory&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/InstallNuGetPackages.Description" xml:space="preserve">
-    <value>On save, should the editor install/remove Entity Framework Nuget packages to match the model&apos;s EF version settings?</value>
-    <comment>Description for DomainProperty &apos;InstallNuGetPackages&apos; on DomainClass &apos;ModelRoot&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/InstallNuGetPackages.DisplayName" xml:space="preserve">
-    <value>Install Nuget Packages On Save</value>
-    <comment>DisplayName for DomainProperty &apos;InstallNuGetPackages&apos; on DomainClass &apos;ModelRoot&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/InstallNuGetPackages.Category" xml:space="preserve">
-    <value>Misc</value>
-    <comment>Category for DomainProperty &apos;InstallNuGetPackages&apos; on DomainClass &apos;ModelRoot&apos;</comment>
-  </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/DbSetAccess.Description" xml:space="preserve">
     <value>Code visibility for DbSets</value>
     <comment>Description for DomainProperty &apos;DbSetAccess&apos; on DomainClass &apos;ModelRoot&apos;</comment>
@@ -501,29 +489,269 @@
     <value>Designer</value>
     <comment>Category for DomainProperty &apos;ShowWarningsInDesigner&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithm.Description" xml:space="preserve">
-    <value>Strategy for auto-layout operations</value>
-    <comment>Description for DomainProperty &apos;LayoutAlgorithm&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityNamespace.Description" xml:space="preserve">
+    <value>Namespace for entities</value>
+    <comment>Description for DomainProperty &apos;EntityNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithm.DisplayName" xml:space="preserve">
-    <value>Layout Algorithm</value>
-    <comment>DisplayName for DomainProperty &apos;LayoutAlgorithm&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityNamespace.DisplayName" xml:space="preserve">
+    <value>Entity Namespace</value>
+    <comment>DisplayName for DomainProperty &apos;EntityNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithm.Category" xml:space="preserve">
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityNamespace.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;EntityNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EnumNamespace.Description" xml:space="preserve">
+    <value>Namespace for enumerations</value>
+    <comment>Description for DomainProperty &apos;EnumNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EnumNamespace.DisplayName" xml:space="preserve">
+    <value>Enum Namespace</value>
+    <comment>DisplayName for DomainProperty &apos;EnumNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EnumNamespace.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;EnumNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/StructNamespace.Description" xml:space="preserve">
+    <value>Namespace for owned entities</value>
+    <comment>Description for DomainProperty &apos;StructNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/StructNamespace.DisplayName" xml:space="preserve">
+    <value>Struct Namespace</value>
+    <comment>DisplayName for DomainProperty &apos;StructNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/StructNamespace.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;StructNamespace&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespaces.Description" xml:space="preserve">
+    <value>Default namespaces for generated code</value>
+    <comment>Description for DomainProperty &apos;Namespaces&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespaces.DisplayName" xml:space="preserve">
+    <value>Namespaces</value>
+    <comment>DisplayName for DomainProperty &apos;Namespaces&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/Namespaces.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;Namespaces&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/OutputLocations.Description" xml:space="preserve">
+    <value>Default output folders for generated code</value>
+    <comment>Description for DomainProperty &apos;OutputLocations&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/OutputLocations.DisplayName" xml:space="preserve">
+    <value>Output Locations</value>
+    <comment>DisplayName for DomainProperty &apos;OutputLocations&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/OutputLocations.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;OutputLocations&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeys.Description" xml:space="preserve">
+    <value>Allow foreign key properties to be available in the POCO entities (recommended: false)</value>
+    <comment>Description for DomainProperty &apos;ExposeForeignKeys&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeys.DisplayName" xml:space="preserve">
+    <value>Allow Modeled Foreign Keys</value>
+    <comment>DisplayName for DomainProperty &apos;ExposeForeignKeys&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ExposeForeignKeys.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;ExposeForeignKeys&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/BaseClass.Description" xml:space="preserve">
+    <value>Base class for DbContext in generated code. Should be fully qualified if not in a standard namespace.</value>
+    <comment>Description for DomainProperty &apos;BaseClass&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/BaseClass.DisplayName" xml:space="preserve">
+    <value>Context Base Class</value>
+    <comment>DisplayName for DomainProperty &apos;BaseClass&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/BaseClass.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;BaseClass&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowGrid.Description" xml:space="preserve">
+    <value>If true, displays a grid for aligning shapes</value>
+    <comment>Description for DomainProperty &apos;ShowGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowGrid.DisplayName" xml:space="preserve">
+    <value>Show Grid</value>
+    <comment>DisplayName for DomainProperty &apos;ShowGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowGrid.Category" xml:space="preserve">
     <value>Designer</value>
-    <comment>Category for DomainProperty &apos;LayoutAlgorithm&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+    <comment>Category for DomainProperty &apos;ShowGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithmSettings.Description" xml:space="preserve">
-    <value>Tunable parameters for auto-layout of the designer</value>
-    <comment>Description for DomainProperty &apos;LayoutAlgorithmSettings&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/SnapToGrid.Description" xml:space="preserve">
+    <value>If true, shapes snap to the designer&apos;s grid</value>
+    <comment>Description for DomainProperty &apos;SnapToGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithmSettings.DisplayName" xml:space="preserve">
-    <value>Layout Algorithm Settings</value>
-    <comment>DisplayName for DomainProperty &apos;LayoutAlgorithmSettings&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/SnapToGrid.DisplayName" xml:space="preserve">
+    <value>Snap To Grid</value>
+    <comment>DisplayName for DomainProperty &apos;SnapToGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/LayoutAlgorithmSettings.Category" xml:space="preserve">
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/SnapToGrid.Category" xml:space="preserve">
     <value>Designer</value>
-    <comment>Category for DomainProperty &apos;LayoutAlgorithmSettings&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+    <comment>Category for DomainProperty &apos;SnapToGrid&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridColor.Description" xml:space="preserve">
+    <value>Color for designer grid</value>
+    <comment>Description for DomainProperty &apos;GridColor&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridColor.DisplayName" xml:space="preserve">
+    <value>Grid Color</value>
+    <comment>DisplayName for DomainProperty &apos;GridColor&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridColor.Category" xml:space="preserve">
+    <value>Designer</value>
+    <comment>Category for DomainProperty &apos;GridColor&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridSize.Description" xml:space="preserve">
+    <value>Size of display grid units, in inches</value>
+    <comment>Description for DomainProperty &apos;GridSize&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridSize.DisplayName" xml:space="preserve">
+    <value>Grid Size</value>
+    <comment>DisplayName for DomainProperty &apos;GridSize&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GridSize.Category" xml:space="preserve">
+    <value>Designer</value>
+    <comment>Category for DomainProperty &apos;GridSize&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowForeignKeyPropertyNames.Description" xml:space="preserve">
+    <value>If true, will show declared foreign key property names (if any) on the association ends</value>
+    <comment>Description for DomainProperty &apos;ShowForeignKeyPropertyNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowForeignKeyPropertyNames.DisplayName" xml:space="preserve">
+    <value>Show Foreign Key Property Names</value>
+    <comment>DisplayName for DomainProperty &apos;ShowForeignKeyPropertyNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowForeignKeyPropertyNames.Category" xml:space="preserve">
+    <value>Designer</value>
+    <comment>Category for DomainProperty &apos;ShowForeignKeyPropertyNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/DatabaseCollationDefault.Description" xml:space="preserve">
+    <value>The default collation for database storage.</value>
+    <comment>Description for DomainProperty &apos;DatabaseCollationDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/DatabaseCollationDefault.DisplayName" xml:space="preserve">
+    <value>Database Collation Default</value>
+    <comment>DisplayName for DomainProperty &apos;DatabaseCollationDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/DatabaseCollationDefault.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;DatabaseCollationDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PropertyAccessModeDefault.Description" xml:space="preserve">
+    <value>Default property access mode for backing fields</value>
+    <comment>Description for DomainProperty &apos;PropertyAccessModeDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PropertyAccessModeDefault.DisplayName" xml:space="preserve">
+    <value>Property Access Mode Default</value>
+    <comment>DisplayName for DomainProperty &apos;PropertyAccessModeDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PropertyAccessModeDefault.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;PropertyAccessModeDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/UseTabs.Description" xml:space="preserve">
+    <value>If true, will generate code with tabs instead of spaces for indentation</value>
+    <comment>Description for DomainProperty &apos;UseTabs&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/UseTabs.DisplayName" xml:space="preserve">
+    <value>Use Tabs</value>
+    <comment>DisplayName for DomainProperty &apos;UseTabs&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/UseTabs.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;UseTabs&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GenerateDbContextFactory.Description" xml:space="preserve">
+    <value>If true, a DbContextFactory-derived class will be generated for the project</value>
+    <comment>Description for DomainProperty &apos;GenerateDbContextFactory&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GenerateDbContextFactory.DisplayName" xml:space="preserve">
+    <value>Generate Db Context Factory</value>
+    <comment>DisplayName for DomainProperty &apos;GenerateDbContextFactory&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/GenerateDbContextFactory.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;GenerateDbContextFactory&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityDefaultConstructorVisibilityDefault.Description" xml:space="preserve">
+    <value>Defines the visibility of an entity&apos;s default constructor. Normally, those are public unless there are required properties or associations, then they generate as protected.</value>
+    <comment>Description for DomainProperty &apos;EntityDefaultConstructorVisibilityDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityDefaultConstructorVisibilityDefault.DisplayName" xml:space="preserve">
+    <value>Entity Default Constructor Visibility Default</value>
+    <comment>DisplayName for DomainProperty &apos;EntityDefaultConstructorVisibilityDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/EntityDefaultConstructorVisibilityDefault.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;EntityDefaultConstructorVisibilityDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeDbSetNames.Description" xml:space="preserve">
+    <value>If true, DbSet names will default to the plural value of the class name. If false, they&apos;ll be the same as the class name</value>
+    <comment>Description for DomainProperty &apos;PluralizeDbSetNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeDbSetNames.DisplayName" xml:space="preserve">
+    <value>Pluralize DbSet Names</value>
+    <comment>DisplayName for DomainProperty &apos;PluralizeDbSetNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeDbSetNames.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;PluralizeDbSetNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeTableNames.Description" xml:space="preserve">
+    <value>If true, table names will default to the plural value of the class name. If false, they&apos;ll be the same as the class name</value>
+    <comment>Description for DomainProperty &apos;PluralizeTableNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeTableNames.DisplayName" xml:space="preserve">
+    <value>Pluralize Table Names</value>
+    <comment>DisplayName for DomainProperty &apos;PluralizeTableNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/PluralizeTableNames.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;PluralizeTableNames&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShadowKeyNamePattern.Description" xml:space="preserve">
+    <value>The pattern to use for generating shadow foreign key property names</value>
+    <comment>Description for DomainProperty &apos;ShadowKeyNamePattern&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShadowKeyNamePattern.DisplayName" xml:space="preserve">
+    <value>Shadow Key Name Pattern</value>
+    <comment>DisplayName for DomainProperty &apos;ShadowKeyNamePattern&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShadowKeyNamePattern.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;ShadowKeyNamePattern&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/AutoPropertyDefault.Description" xml:space="preserve">
+    <value>Default value for attribute AutoProperty setting</value>
+    <comment>Description for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/AutoPropertyDefault.DisplayName" xml:space="preserve">
+    <value>AutoProperty Default</value>
+    <comment>DisplayName for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/AutoPropertyDefault.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowInterfaceIndicators.Description" xml:space="preserve">
+    <value>If true, will display a UML interface glyph on classes that have custom interfaces defined</value>
+    <comment>Description for DomainProperty &apos;ShowInterfaceIndicators&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowInterfaceIndicators.DisplayName" xml:space="preserve">
+    <value>Show Interface Indicators</value>
+    <comment>DisplayName for DomainProperty &apos;ShowInterfaceIndicators&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRoot/ShowInterfaceIndicators.Category" xml:space="preserve">
+    <value>Designer</value>
+    <comment>Category for DomainProperty &apos;ShowInterfaceIndicators&apos; on DomainClass &apos;ModelRoot&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelClass.Description" xml:space="preserve">
     <value></value>
@@ -757,6 +985,114 @@
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;AutoPropertyDefault&apos; on DomainClass &apos;ModelClass&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/GenerateCode.Description" xml:space="preserve">
+    <value>If true (the default), code will be generated for this class. If false, it is assumed to be referenced from another assembly.</value>
+    <comment>Description for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/GenerateCode.DisplayName" xml:space="preserve">
+    <value>Generate Code</value>
+    <comment>DisplayName for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/GenerateCode.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsPropertyBag.Description" xml:space="preserve">
+    <value>If true, this class will be implemented as Dictionary&lt;string, object&gt;</value>
+    <comment>Description for DomainProperty &apos;IsPropertyBag&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsPropertyBag.DisplayName" xml:space="preserve">
+    <value>Is Property Bag</value>
+    <comment>DisplayName for DomainProperty &apos;IsPropertyBag&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsPropertyBag.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;IsPropertyBag&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsQueryType.Description" xml:space="preserve">
+    <value>If true, this class is defined by a SQL query that must be implemented in a partial method. See comments in generated code for more information.</value>
+    <comment>Description for DomainProperty &apos;IsQueryType&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsQueryType.DisplayName" xml:space="preserve">
+    <value>Is Query Type</value>
+    <comment>DisplayName for DomainProperty &apos;IsQueryType&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsQueryType.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;IsQueryType&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ExcludeFromMigrations.Description" xml:space="preserve">
+    <value>If true, this class won&apos;t be involved in database migrations</value>
+    <comment>Description for DomainProperty &apos;ExcludeFromMigrations&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ExcludeFromMigrations.DisplayName" xml:space="preserve">
+    <value>Exclude From Migrations</value>
+    <comment>DisplayName for DomainProperty &apos;ExcludeFromMigrations&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ExcludeFromMigrations.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;ExcludeFromMigrations&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsDatabaseView.Description" xml:space="preserve">
+    <value>If true, this class is persisted in a view in the database</value>
+    <comment>Description for DomainProperty &apos;IsDatabaseView&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsDatabaseView.DisplayName" xml:space="preserve">
+    <value>Is Database View</value>
+    <comment>DisplayName for DomainProperty &apos;IsDatabaseView&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsDatabaseView.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;IsDatabaseView&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ViewName.Description" xml:space="preserve">
+    <value>The name of the database view persisting this class</value>
+    <comment>Description for DomainProperty &apos;ViewName&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ViewName.DisplayName" xml:space="preserve">
+    <value>View Name</value>
+    <comment>DisplayName for DomainProperty &apos;ViewName&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ViewName.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;ViewName&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/DefaultConstructorVisibility.Description" xml:space="preserve">
+    <value>By default, default (empty) constructors generate as public unless there are required properties or associations in the entity, then they generate as protected.</value>
+    <comment>Description for DomainProperty &apos;DefaultConstructorVisibility&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/DefaultConstructorVisibility.DisplayName" xml:space="preserve">
+    <value>Default Constructor Visibility</value>
+    <comment>DisplayName for DomainProperty &apos;DefaultConstructorVisibility&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/DefaultConstructorVisibility.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;DefaultConstructorVisibility&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsDefaultConstructorVisibilityTracking.Description" xml:space="preserve">
+    <value>If true, Model.DefaultConstructorVisibility tracks ModelRoot.EntityDefaultConstructorVisibilityDefault</value>
+    <comment>Description for DomainProperty &apos;IsDefaultConstructorVisibilityTracking&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsDefaultConstructorVisibilityTracking.DisplayName" xml:space="preserve">
+    <value>Is Default Constructor Visibility Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsDefaultConstructorVisibilityTracking&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsAutoPropertyDefaultTracking.Description" xml:space="preserve">
+    <value>If true, ModelClass.AutoPropertyDefault tracks ModelRoot.AutoPropertyDefault</value>
+    <comment>Description for DomainProperty &apos;IsAutoPropertyDefaultTracking&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/IsAutoPropertyDefaultTracking.DisplayName" xml:space="preserve">
+    <value>Is Auto Property Default Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsAutoPropertyDefaultTracking&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ShouldShowInterfaceGlyph.Description" xml:space="preserve">
+    <value>Used internally to determine whether an interface glyph should be shown on the diagram for the class</value>
+    <comment>Description for DomainProperty &apos;ShouldShowInterfaceGlyph&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelClass/ShouldShowInterfaceGlyph.DisplayName" xml:space="preserve">
+    <value>Should Show Interface Glyph</value>
+    <comment>DisplayName for DomainProperty &apos;ShouldShowInterfaceGlyph&apos; on DomainClass &apos;ModelClass&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute.Description" xml:space="preserve">
     <value>An attribute of a class.</value>
     <comment>Description for DomainClass &apos;ModelAttribute&apos;</comment>
@@ -826,7 +1162,7 @@
     <comment>Category for DomainProperty &apos;Persistent&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/MaxLength.Description" xml:space="preserve">
-    <value>Maximum length of the string, 0 for no max length</value>
+    <value>Maximum length of the string, A positive number will generate a length constraint, negative number means the database maximum (approx. 2GB), and null or 0 for no max length entry (migration traditionally will set the database column to 2000 characters).</value>
     <comment>Description for DomainProperty &apos;MaxLength&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/MaxLength.DisplayName" xml:space="preserve">
@@ -1069,18 +1405,6 @@
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;DisplayText&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.Description" xml:space="preserve">
-    <value>The element that will be persisted for this attribute, either the property or the backing field</value>
-    <comment>Description for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.DisplayName" xml:space="preserve">
-    <value>Persistence Point</value>
-    <comment>DisplayName for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PersistencePoint.Category" xml:space="preserve">
-    <value>Code Generation</value>
-    <comment>Category for DomainProperty &apos;PersistencePoint&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
-  </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/ImplementNotify.Description" xml:space="preserve">
     <value>Should this class implement INotifyPropertyChanged?</value>
     <comment>Description for DomainProperty &apos;ImplementNotify&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
@@ -1108,6 +1432,78 @@
   <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAutoPropertyTracking.DisplayName" xml:space="preserve">
     <value>Is Auto Property Tracking</value>
     <comment>DisplayName for DomainProperty &apos;IsAutoPropertyTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsForeignKeyFor.Description" xml:space="preserve">
+    <value>If present, this attribute is a foreign key for the association named by this Guid</value>
+    <comment>Description for DomainProperty &apos;IsForeignKeyFor&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsForeignKeyFor.DisplayName" xml:space="preserve">
+    <value>Is Foreign Key For</value>
+    <comment>DisplayName for DomainProperty &apos;IsForeignKeyFor&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/BackingFieldName.Description" xml:space="preserve">
+    <value>The name of the backing field for this property</value>
+    <comment>Description for DomainProperty &apos;BackingFieldName&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/BackingFieldName.DisplayName" xml:space="preserve">
+    <value>Backing Field</value>
+    <comment>DisplayName for DomainProperty &apos;BackingFieldName&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/BackingFieldName.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;BackingFieldName&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/DatabaseCollation.Description" xml:space="preserve">
+    <value>Overrides the default database collation setting for the column that persists this attribute</value>
+    <comment>Description for DomainProperty &apos;DatabaseCollation&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/DatabaseCollation.DisplayName" xml:space="preserve">
+    <value>Database Collation</value>
+    <comment>DisplayName for DomainProperty &apos;DatabaseCollation&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/DatabaseCollation.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;DatabaseCollation&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsDatabaseCollationTracking.Description" xml:space="preserve">
+    <value>If true, ModelAttribute.DatabaseCollation tracks ModelRoot.DatabaseCollationDefault</value>
+    <comment>Description for DomainProperty &apos;IsDatabaseCollationTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsDatabaseCollationTracking.DisplayName" xml:space="preserve">
+    <value>Is Database Collation Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsDatabaseCollationTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PropertyAccessMode.Description" xml:space="preserve">
+    <value>Defines how EF reads and write this property or its backing field. See  https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.propertyaccessmode</value>
+    <comment>Description for DomainProperty &apos;PropertyAccessMode&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PropertyAccessMode.DisplayName" xml:space="preserve">
+    <value>Property Access Mode</value>
+    <comment>DisplayName for DomainProperty &apos;PropertyAccessMode&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/PropertyAccessMode.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;PropertyAccessMode&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAbstract.Description" xml:space="preserve">
+    <value>If true, this will be generated as an abstract property</value>
+    <comment>Description for DomainProperty &apos;IsAbstract&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAbstract.DisplayName" xml:space="preserve">
+    <value>Abstract</value>
+    <comment>DisplayName for DomainProperty &apos;IsAbstract&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsAbstract.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;IsAbstract&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsPropertyAccessModeTracking.Description" xml:space="preserve">
+    <value>If true, ModelAttribute.PropertyAccessMode tracks ModelRoot.PropertyAccessModeDefault</value>
+    <comment>Description for DomainProperty &apos;IsPropertyAccessModeTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelAttribute/IsPropertyAccessModeTracking.DisplayName" xml:space="preserve">
+    <value>Is Property Access Mode Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsPropertyAccessModeTracking&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Comment.Description" xml:space="preserve">
     <value></value>
@@ -1261,6 +1657,18 @@
     <value>Code Generation</value>
     <comment>Category for DomainProperty &apos;CustomAttributes&apos; on DomainClass &apos;ModelEnum&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelEnum/GenerateCode.Description" xml:space="preserve">
+    <value>If true (the default), code will be generated for this enum. If false, it is assumed to be referenced from another assembly.</value>
+    <comment>Description for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelEnum&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelEnum/GenerateCode.DisplayName" xml:space="preserve">
+    <value>Generate Code</value>
+    <comment>DisplayName for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelEnum&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelEnum/GenerateCode.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;GenerateCode&apos; on DomainClass &apos;ModelEnum&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.ModelEnumValue.Description" xml:space="preserve">
     <value>Represents a value in a C# enumeration</value>
     <comment>Description for DomainClass &apos;ModelEnumValue&apos;</comment>
@@ -1349,6 +1757,22 @@
     <value>Design Element</value>
     <comment>DisplayName for DomainClass &apos;DesignElement&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelDiagramData.Description" xml:space="preserve">
+    <value>Represents a viewable model diagram</value>
+    <comment>Description for DomainClass &apos;ModelDiagramData&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelDiagramData.DisplayName" xml:space="preserve">
+    <value>Diagram</value>
+    <comment>DisplayName for DomainClass &apos;ModelDiagramData&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelDiagramData/Name.Description" xml:space="preserve">
+    <value>Diagram name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ModelDiagramData&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelDiagramData/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ModelDiagramData&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association.Description" xml:space="preserve">
     <value>Associations between Classes.</value>
     <comment>Description for DomainClass &apos;Association&apos;</comment>
@@ -1386,7 +1810,7 @@
     <comment>Description for DomainProperty &apos;TargetPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyName.DisplayName" xml:space="preserve">
-    <value>End1 Navigation Property</value>
+    <value>End2 Navigation Property</value>
     <comment>DisplayName for DomainProperty &apos;TargetPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyName.Category" xml:space="preserve">
@@ -1418,7 +1842,7 @@
     <comment>Category for DomainProperty &apos;SourceMultiplicityDisplay&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicityDisplay.Description" xml:space="preserve">
-    <value></value>
+    <value>Decorator text</value>
     <comment>Description for DomainProperty &apos;TargetMultiplicityDisplay&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetMultiplicityDisplay.DisplayName" xml:space="preserve">
@@ -1570,7 +1994,7 @@
     <comment>Description for DomainProperty &apos;TargetImplementNotify&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetImplementNotify.DisplayName" xml:space="preserve">
-    <value>Implement INotifyPropertyChanged</value>
+    <value>End2 Implement INotifyPropertyChanged</value>
     <comment>DisplayName for DomainProperty &apos;TargetImplementNotify&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/TargetImplementNotify.Category" xml:space="preserve">
@@ -1584,6 +2008,118 @@
   <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetImplementNotifyTracking.DisplayName" xml:space="preserve">
     <value>Is Target Implement Notify Tracking</value>
     <comment>DisplayName for DomainProperty &apos;IsTargetImplementNotifyTracking&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/FKPropertyName.Description" xml:space="preserve">
+    <value>Name of property holding foreign key value for this association</value>
+    <comment>Description for DomainProperty &apos;FKPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/FKPropertyName.DisplayName" xml:space="preserve">
+    <value>Foreign Key Property</value>
+    <comment>DisplayName for DomainProperty &apos;FKPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/FKPropertyName.Category" xml:space="preserve">
+    <value>Code Generation</value>
+    <comment>Category for DomainProperty &apos;FKPropertyName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyNameDisplay.Description" xml:space="preserve">
+    <value>Decorator text</value>
+    <comment>Description for DomainProperty &apos;TargetPropertyNameDisplay&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyNameDisplay.DisplayName" xml:space="preserve">
+    <value>Target Property Name Display</value>
+    <comment>DisplayName for DomainProperty &apos;TargetPropertyNameDisplay&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyNameDisplay.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;TargetPropertyNameDisplay&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/Name.Description" xml:space="preserve">
+    <value>Solely for display in the object list of the VStudio property window</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/JoinTableName.Description" xml:space="preserve">
+    <value>Optional name of the database table used to join the two end classes for many-to-many associations. If empty, a reasonable default name will be used.</value>
+    <comment>Description for DomainProperty &apos;JoinTableName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/JoinTableName.DisplayName" xml:space="preserve">
+    <value>Join Table Name</value>
+    <comment>DisplayName for DomainProperty &apos;JoinTableName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/JoinTableName.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;JoinTableName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetBackingFieldName.Description" xml:space="preserve">
+    <value>The name of the backing field for this property</value>
+    <comment>Description for DomainProperty &apos;TargetBackingFieldName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetBackingFieldName.DisplayName" xml:space="preserve">
+    <value>End2 Backing Field</value>
+    <comment>DisplayName for DomainProperty &apos;TargetBackingFieldName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetBackingFieldName.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;TargetBackingFieldName&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyAccessMode.Description" xml:space="preserve">
+    <value>Defines how EF reads and write this property or its backing field. See  https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.propertyaccessmode</value>
+    <comment>Description for DomainProperty &apos;TargetPropertyAccessMode&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyAccessMode.DisplayName" xml:space="preserve">
+    <value>End2 Property Access Mode</value>
+    <comment>DisplayName for DomainProperty &apos;TargetPropertyAccessMode&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetPropertyAccessMode.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;TargetPropertyAccessMode&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Description" xml:space="preserve">
+    <value>If false, generates a backing field and a partial method to hook getting and setting the property. If true, generates a simple auto property. Only valid for non-collection properties.</value>
+    <comment>Description for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.DisplayName" xml:space="preserve">
+    <value>End2 Is Auto Property</value>
+    <comment>DisplayName for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoProperty.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;TargetAutoProperty&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetAutoPropertyTracking.Description" xml:space="preserve">
+    <value>If true, Association.TargetAutoProperty tracks ModelClass.AutoPropertyDefault</value>
+    <comment>Description for DomainProperty &apos;IsTargetAutoPropertyTracking&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetAutoPropertyTracking.DisplayName" xml:space="preserve">
+    <value>Is Target Auto Property Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsTargetAutoPropertyTracking&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetAbstract.Description" xml:space="preserve">
+    <value>If true, the property for this end will be abstract</value>
+    <comment>Description for DomainProperty &apos;IsTargetAbstract&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetAbstract.DisplayName" xml:space="preserve">
+    <value>End2 Is Abstract</value>
+    <comment>DisplayName for DomainProperty &apos;IsTargetAbstract&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/IsTargetAbstract.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;IsTargetAbstract&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoInclude.Description" xml:space="preserve">
+    <value>If true, the property at End1 will be automatically included in queries</value>
+    <comment>Description for DomainProperty &apos;TargetAutoInclude&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoInclude.DisplayName" xml:space="preserve">
+    <value>End2 Auto Include</value>
+    <comment>DisplayName for DomainProperty &apos;TargetAutoInclude&apos; on DomainClass &apos;Association&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Association/TargetAutoInclude.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;TargetAutoInclude&apos; on DomainClass &apos;Association&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.Association/Source.Description" xml:space="preserve">
     <value></value>
@@ -1713,6 +2249,14 @@
     <value>Inheritance</value>
     <comment>DisplayName for DomainClass &apos;Generalization&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Generalization/Name.Description" xml:space="preserve">
+    <value>Solely for display in the object list of the VStudio property window</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Generalization&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.Generalization/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Generalization&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.Generalization/Superclass.Description" xml:space="preserve">
     <value></value>
     <comment>Description for DomainRole &apos;Superclass&apos; on DomainRelationship &apos;Generalization&apos;</comment>
@@ -1750,7 +2294,7 @@
     <comment>Description for DomainProperty &apos;SourcePropertyName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyName.DisplayName" xml:space="preserve">
-    <value>End2 Navigation Property</value>
+    <value>End1 Navigation Property</value>
     <comment>DisplayName for DomainProperty &apos;SourcePropertyName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyName.Category" xml:space="preserve">
@@ -1824,6 +2368,86 @@
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceImplementNotifyTracking.DisplayName" xml:space="preserve">
     <value>Is Source Implement Notify Tracking</value>
     <comment>DisplayName for DomainProperty &apos;IsSourceImplementNotifyTracking&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyNameDisplay.Description" xml:space="preserve">
+    <value>Decorator text</value>
+    <comment>Description for DomainProperty &apos;SourcePropertyNameDisplay&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyNameDisplay.DisplayName" xml:space="preserve">
+    <value>Source Property Name Display</value>
+    <comment>DisplayName for DomainProperty &apos;SourcePropertyNameDisplay&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyNameDisplay.Category" xml:space="preserve">
+    <value>End 2</value>
+    <comment>Category for DomainProperty &apos;SourcePropertyNameDisplay&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyAccessMode.Description" xml:space="preserve">
+    <value>Defines how EF reads and write this property or its backing field. See  https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.propertyaccessmode</value>
+    <comment>Description for DomainProperty &apos;SourcePropertyAccessMode&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyAccessMode.DisplayName" xml:space="preserve">
+    <value>End1 Property Access Mode</value>
+    <comment>DisplayName for DomainProperty &apos;SourcePropertyAccessMode&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourcePropertyAccessMode.Category" xml:space="preserve">
+    <value>End 1</value>
+    <comment>Category for DomainProperty &apos;SourcePropertyAccessMode&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceBackingFieldName.Description" xml:space="preserve">
+    <value>The name of the backing field for this property</value>
+    <comment>Description for DomainProperty &apos;SourceBackingFieldName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceBackingFieldName.DisplayName" xml:space="preserve">
+    <value>End1 Backing Field</value>
+    <comment>DisplayName for DomainProperty &apos;SourceBackingFieldName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceBackingFieldName.Category" xml:space="preserve">
+    <value>End 1</value>
+    <comment>Category for DomainProperty &apos;SourceBackingFieldName&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.Description" xml:space="preserve">
+    <value>If false, generates a backing field and a partial method to hook getting and setting the property. If true, generates a simple auto property. Only valid for non-collection properties.</value>
+    <comment>Description for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.DisplayName" xml:space="preserve">
+    <value>End1 Is Auto Property</value>
+    <comment>DisplayName for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoProperty.Category" xml:space="preserve">
+    <value>End 1</value>
+    <comment>Category for DomainProperty &apos;SourceAutoProperty&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceAutoPropertyTracking.Description" xml:space="preserve">
+    <value>If true, Association.SourceAutoProperty tracks ModelClass.AutoPropertyDefault</value>
+    <comment>Description for DomainProperty &apos;IsSourceAutoPropertyTracking&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceAutoPropertyTracking.DisplayName" xml:space="preserve">
+    <value>Is Source Auto Property Tracking</value>
+    <comment>DisplayName for DomainProperty &apos;IsSourceAutoPropertyTracking&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceAbstract.Description" xml:space="preserve">
+    <value>If true, the property for this end will be abstract</value>
+    <comment>Description for DomainProperty &apos;IsSourceAbstract&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceAbstract.DisplayName" xml:space="preserve">
+    <value>End1 Is Abstract</value>
+    <comment>DisplayName for DomainProperty &apos;IsSourceAbstract&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/IsSourceAbstract.Category" xml:space="preserve">
+    <value>End 1</value>
+    <comment>Category for DomainProperty &apos;IsSourceAbstract&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoInclude.Description" xml:space="preserve">
+    <value>If true, the property at End2 will be automatically included in queries</value>
+    <comment>Description for DomainProperty &apos;SourceAutoInclude&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoInclude.DisplayName" xml:space="preserve">
+    <value>End1 Auto Include</value>
+    <comment>DisplayName for DomainProperty &apos;SourceAutoInclude&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/SourceAutoInclude.Category" xml:space="preserve">
+    <value>End 1</value>
+    <comment>Category for DomainProperty &apos;SourceAutoInclude&apos; on DomainClass &apos;BidirectionalAssociation&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.BidirectionalAssociation/BidirectionalSource.Description" xml:space="preserve">
     <value></value>
@@ -2041,6 +2665,38 @@
     <value>Comments</value>
     <comment>PropertyDisplayName for DomainRole &apos;ModelEnum&apos; on DomainRelationship &apos;CommentReferencesEnums&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams</value>
+    <comment>Description for DomainClass &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams.DisplayName" xml:space="preserve">
+    <value>Model Root Has Model Diagrams</value>
+    <comment>DisplayName for DomainClass &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelRoot.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Diagrams</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelDiagramData.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams.ModelDiagramData</value>
+    <comment>Description for DomainRole &apos;ModelDiagramData&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelDiagramData.DisplayName" xml:space="preserve">
+    <value>Model Diagram Data</value>
+    <comment>DisplayName for DomainRole &apos;ModelDiagramData&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ModelRootHasModelDiagrams/ModelDiagramData.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelDiagramData&apos; on DomainRelationship &apos;ModelRootHasModelDiagrams&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifier/Public.DisplayName" xml:space="preserve">
     <value>Public</value>
     <comment>Display name for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;TypeAccessModifier&apos;</comment>
@@ -2120,14 +2776,6 @@
   <data name="Sawczyn.EFDesigner.EFModel.Multiplicity/ZeroOne.Description" xml:space="preserve">
     <value></value>
     <comment>Description for EnumerationLiteral &apos;ZeroOne&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.DBWorkflow/TablePerTypeStrategy.DisplayName" xml:space="preserve">
-    <value>TablePerTypeStrategy</value>
-    <comment>Display name for EnumerationLiteral &apos;TablePerTypeStrategy&apos; on DomainEnumeration &apos;DBWorkflow&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.DBWorkflow/TablePerTypeStrategy.Description" xml:space="preserve">
-    <value>No description available</value>
-    <comment>Description for EnumerationLiteral &apos;TablePerTypeStrategy&apos; on DomainEnumeration &apos;DBWorkflow&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ContainerAccess/Public.DisplayName" xml:space="preserve">
     <value>Public</value>
@@ -2801,61 +3449,125 @@
     <value>Ask each time if should perform the action automatically</value>
     <comment>Description for EnumerationLiteral &apos;Ask&apos; on DomainEnumeration &apos;AutomaticAction&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/MDS.DisplayName" xml:space="preserve">
-    <value>MDS</value>
-    <comment>Display name for EnumerationLiteral &apos;MDS&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/MDS.Description" xml:space="preserve">
-    <value>MDS</value>
-    <comment>Description for EnumerationLiteral &apos;MDS&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Sugiyama.DisplayName" xml:space="preserve">
-    <value>Sugiyama</value>
-    <comment>Display name for EnumerationLiteral &apos;Sugiyama&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Sugiyama.Description" xml:space="preserve">
-    <value>Sugiyama</value>
-    <comment>Description for EnumerationLiteral &apos;Sugiyama&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/FastIncremental.DisplayName" xml:space="preserve">
-    <value>FastIncremental</value>
-    <comment>Display name for EnumerationLiteral &apos;FastIncremental&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/FastIncremental.Description" xml:space="preserve">
-    <value>FastIncremental</value>
-    <comment>Description for EnumerationLiteral &apos;FastIncremental&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Ranking.DisplayName" xml:space="preserve">
-    <value>Ranking</value>
-    <comment>Display name for EnumerationLiteral &apos;Ranking&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Ranking.Description" xml:space="preserve">
-    <value>Ranking</value>
-    <comment>Description for EnumerationLiteral &apos;Ranking&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Default.DisplayName" xml:space="preserve">
-    <value>Default</value>
-    <comment>Display name for EnumerationLiteral &apos;Default&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.LayoutAlgorithm/Default.Description" xml:space="preserve">
-    <value>Default</value>
-    <comment>Description for EnumerationLiteral &apos;Default&apos; on DomainEnumeration &apos;LayoutAlgorithm&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Property.DisplayName" xml:space="preserve">
-    <value>Property</value>
-    <comment>Display name for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Property.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Property</value>
-    <comment>Description for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
-  </data>
-  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Field.DisplayName" xml:space="preserve">
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/Field.DisplayName" xml:space="preserve">
     <value>Field</value>
-    <comment>Display name for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
+    <comment>Display name for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
   </data>
-  <data name="Sawczyn.EFDesigner.EFModel.PersistencePointType/Field.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.PersistencePointType.Field</value>
-    <comment>Description for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PersistencePointType&apos;</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/Field.Description" xml:space="preserve">
+    <value>Enforces that all accesses to the property must go through the field. An exception will be thrown if this mode is set and it is not possible to read from or write to the field.</value>
+    <comment>Description for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/FieldDuringConstruction.DisplayName" xml:space="preserve">
+    <value>FieldDuringConstruction</value>
+    <comment>Display name for EnumerationLiteral &apos;FieldDuringConstruction&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/FieldDuringConstruction.Description" xml:space="preserve">
+    <value>Enforces that all accesses to the property must go through the field when new instances are being constructed. New instances are typically constructed when entities are queried from the database. An exception will be thrown if this mode is set and it is not possible to write to the field. All other uses of the property will go through the property getters and setters, unless this is not possible because, for example, the property is read-only, in which case these accesses will also use the field.</value>
+    <comment>Description for EnumerationLiteral &apos;FieldDuringConstruction&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferField.DisplayName" xml:space="preserve">
+    <value>PreferField</value>
+    <comment>Display name for EnumerationLiteral &apos;PreferField&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferField.Description" xml:space="preserve">
+    <value>All accesses to the property goes directly to the field, unless the field is not known, in which as access goes through the property.</value>
+    <comment>Description for EnumerationLiteral &apos;PreferField&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferFieldDuringConstruction.DisplayName" xml:space="preserve">
+    <value>PreferFieldDuringConstruction</value>
+    <comment>Display name for EnumerationLiteral &apos;PreferFieldDuringConstruction&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferFieldDuringConstruction.Description" xml:space="preserve">
+    <value>All accesses to the property when constructing new entity instances goes directly to the field, unless the field is not known, in which as access goes through the property. All other uses of the property will go through the property getters and setters, unless this is not possible because, for example, the property is read-only, in which case these accesses will also use the field.</value>
+    <comment>Description for EnumerationLiteral &apos;PreferFieldDuringConstruction&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferProperty.DisplayName" xml:space="preserve">
+    <value>PreferProperty</value>
+    <comment>Display name for EnumerationLiteral &apos;PreferProperty&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/PreferProperty.Description" xml:space="preserve">
+    <value>All accesses to the property go through the property, unless there is no property or it is missing a setter/getter, in which as access goes directly to the field.</value>
+    <comment>Description for EnumerationLiteral &apos;PreferProperty&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/Property.DisplayName" xml:space="preserve">
+    <value>Property</value>
+    <comment>Display name for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyAccessMode/Property.Description" xml:space="preserve">
+    <value>Enforces that all accesses to the property must go through the property getters and setters, even when new objects are being constructed. An exception will be thrown if this mode is set and it is not possible to read from or write to the property, for example because it is read-only.</value>
+    <comment>Description for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PropertyAccessMode&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyExposure/Property.DisplayName" xml:space="preserve">
+    <value>Property</value>
+    <comment>Display name for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PropertyExposure&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyExposure/Property.Description" xml:space="preserve">
+    <value>Generated code will create and use this attribute as a .NET property,</value>
+    <comment>Description for EnumerationLiteral &apos;Property&apos; on DomainEnumeration &apos;PropertyExposure&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyExposure/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>Display name for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PropertyExposure&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.PropertyExposure/Field.Description" xml:space="preserve">
+    <value>Generated code will create and use this attribute as a .NET field</value>
+    <comment>Description for EnumerationLiteral &apos;Field&apos; on DomainEnumeration &apos;PropertyExposure&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Internal.DisplayName" xml:space="preserve">
+    <value>Internal</value>
+    <comment>Display name for EnumerationLiteral &apos;Internal&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Internal.Description" xml:space="preserve">
+    <value>No description available</value>
+    <comment>Description for EnumerationLiteral &apos;Internal&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Private.DisplayName" xml:space="preserve">
+    <value>Private</value>
+    <comment>Display name for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Private.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Protected.DisplayName" xml:space="preserve">
+    <value>Protected</value>
+    <comment>Display name for EnumerationLiteral &apos;Protected&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Protected.Description" xml:space="preserve">
+    <value>No description available</value>
+    <comment>Description for EnumerationLiteral &apos;Protected&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Public.DisplayName" xml:space="preserve">
+    <value>Public</value>
+    <comment>Display name for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Public.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Default.DisplayName" xml:space="preserve">
+    <value>Default</value>
+    <comment>Display name for EnumerationLiteral &apos;Default&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt/Default.Description" xml:space="preserve">
+    <value>Description for Sawczyn.EFDesigner.EFModel.TypeAccessModifierExt.Default</value>
+    <comment>Description for EnumerationLiteral &apos;Default&apos; on DomainEnumeration &apos;TypeAccessModifierExt&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ShadowKeyPattern/TableColumn.DisplayName" xml:space="preserve">
+    <value>TableColumn</value>
+    <comment>Display name for EnumerationLiteral &apos;TableColumn&apos; on DomainEnumeration &apos;ShadowKeyPattern&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ShadowKeyPattern/TableColumn.Description" xml:space="preserve">
+    <value>Generate as [Foreign Table][Key Column]</value>
+    <comment>Description for EnumerationLiteral &apos;TableColumn&apos; on DomainEnumeration &apos;ShadowKeyPattern&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ShadowKeyPattern/TableUnderscoreColumn.DisplayName" xml:space="preserve">
+    <value>TableUnderscoreColumn</value>
+    <comment>Display name for EnumerationLiteral &apos;TableUnderscoreColumn&apos; on DomainEnumeration &apos;ShadowKeyPattern&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ShadowKeyPattern/TableUnderscoreColumn.Description" xml:space="preserve">
+    <value>Generate as [Foreign Table]_[Key Column]</value>
+    <comment>Description for EnumerationLiteral &apos;TableUnderscoreColumn&apos; on DomainEnumeration &apos;ShadowKeyPattern&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape.Description" xml:space="preserve">
     <value></value>
@@ -2866,7 +3578,7 @@
     <comment>DisplayName for DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/FillColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Fill color for shape</value>
     <comment>Description for DomainProperty &apos;FillColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/FillColor.DisplayName" xml:space="preserve">
@@ -2878,7 +3590,7 @@
     <comment>Category for DomainProperty &apos;FillColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/TextColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Color of the shape&apos;s text</value>
     <comment>Description for DomainProperty &apos;TextColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/TextColor.DisplayName" xml:space="preserve">
@@ -2890,7 +3602,7 @@
     <comment>Category for DomainProperty &apos;TextColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Color of the shape&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineColor.DisplayName" xml:space="preserve">
@@ -2902,7 +3614,7 @@
     <comment>Category for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineDashStyle.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.ClassShape.Outline Dash Style</value>
+    <value>Line style for the shape&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineDashStyle.DisplayName" xml:space="preserve">
@@ -2914,7 +3626,7 @@
     <comment>Category for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/Visible.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.ClassShape.Visible</value>
+    <value>If true, shape is visible.</value>
     <comment>Description for DomainProperty &apos;Visible&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/Visible.DisplayName" xml:space="preserve">
@@ -2926,12 +3638,16 @@
     <comment>Category for DomainProperty &apos;Visible&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineThickness.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.ClassShape.Outline Thickness</value>
+    <value>Thickness, in inches, of the shapes&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineThickness.DisplayName" xml:space="preserve">
     <value>Outline Thickness</value>
     <comment>DisplayName for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;ClassShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.ClassShape/OutlineThickness.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;ClassShape&apos;</comment>
   </data>
   <data name="ClassShapeAttributesCompartmentTitle" xml:space="preserve">
     <value>Properties</value>
@@ -2957,9 +3673,77 @@
     <value>Comment Box Shape</value>
     <comment>DisplayName for DomainClass &apos;CommentBoxShape&apos;</comment>
   </data>
-  <data name="CommentBoxShapeCommentDefaultText" xml:space="preserve">
-    <value>BusinessRulesShapeNameDecorator</value>
-    <comment>Text decorator default text</comment>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/FillColor.Description" xml:space="preserve">
+    <value>Fill color for shape</value>
+    <comment>Description for DomainProperty &apos;FillColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/FillColor.DisplayName" xml:space="preserve">
+    <value>Fill Color</value>
+    <comment>DisplayName for DomainProperty &apos;FillColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/FillColor.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;FillColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineColor.Description" xml:space="preserve">
+    <value>Color of the shape&apos;s outline</value>
+    <comment>Description for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineColor.DisplayName" xml:space="preserve">
+    <value>Outline Color</value>
+    <comment>DisplayName for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineColor.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/TextColor.Description" xml:space="preserve">
+    <value>Color of the shape&apos;s text</value>
+    <comment>Description for DomainProperty &apos;TextColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/TextColor.DisplayName" xml:space="preserve">
+    <value>Text Color</value>
+    <comment>DisplayName for DomainProperty &apos;TextColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/TextColor.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;TextColor&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineDashStyle.Description" xml:space="preserve">
+    <value>Line style for the shape&apos;s outline</value>
+    <comment>Description for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineDashStyle.DisplayName" xml:space="preserve">
+    <value>Outline Dash Style</value>
+    <comment>DisplayName for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineDashStyle.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineThickness.Description" xml:space="preserve">
+    <value>Thickness, in inches, of the shapes&apos;s outline</value>
+    <comment>Description for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineThickness.DisplayName" xml:space="preserve">
+    <value>Outline Thickness</value>
+    <comment>DisplayName for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/OutlineThickness.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/Visible.Description" xml:space="preserve">
+    <value>If true, shape is visible.</value>
+    <comment>Description for DomainProperty &apos;Visible&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/Visible.DisplayName" xml:space="preserve">
+    <value>Visible</value>
+    <comment>DisplayName for DomainProperty &apos;Visible&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.CommentBoxShape/Visible.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;Visible&apos; on DomainClass &apos;CommentBoxShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape.Description" xml:space="preserve">
     <value></value>
@@ -2970,7 +3754,7 @@
     <comment>DisplayName for DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/FillColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Fill color for shape</value>
     <comment>Description for DomainProperty &apos;FillColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/FillColor.DisplayName" xml:space="preserve">
@@ -2982,7 +3766,7 @@
     <comment>Category for DomainProperty &apos;FillColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/TextColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Color of the shape&apos;s text</value>
     <comment>Description for DomainProperty &apos;TextColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/TextColor.DisplayName" xml:space="preserve">
@@ -2994,7 +3778,7 @@
     <comment>Category for DomainProperty &apos;TextColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineColor.Description" xml:space="preserve">
-    <value>No description available</value>
+    <value>Color of the shape&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineColor.DisplayName" xml:space="preserve">
@@ -3006,7 +3790,7 @@
     <comment>Category for DomainProperty &apos;OutlineColor&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/Visible.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.EnumShape.Visible</value>
+    <value>If true, shape is visible.</value>
     <comment>Description for DomainProperty &apos;Visible&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/Visible.DisplayName" xml:space="preserve">
@@ -3018,20 +3802,28 @@
     <comment>Category for DomainProperty &apos;Visible&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineThickness.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.EnumShape.Outline Thickness</value>
+    <value>Thickness, in inches, of the shapes&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineThickness.DisplayName" xml:space="preserve">
     <value>Outline Thickness</value>
     <comment>DisplayName for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
+  <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineThickness.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineThickness&apos; on DomainClass &apos;EnumShape&apos;</comment>
+  </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineDashStyle.Description" xml:space="preserve">
-    <value>Description for Sawczyn.EFDesigner.EFModel.EnumShape.Outline Dash Style</value>
+    <value>Line style for the shape&apos;s outline</value>
     <comment>Description for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineDashStyle.DisplayName" xml:space="preserve">
     <value>Outline Dash Style</value>
     <comment>DisplayName for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;EnumShape&apos;</comment>
+  </data>
+  <data name="Sawczyn.EFDesigner.EFModel.EnumShape/OutlineDashStyle.Category" xml:space="preserve">
+    <value>Display</value>
+    <comment>Category for DomainProperty &apos;OutlineDashStyle&apos; on DomainClass &apos;EnumShape&apos;</comment>
   </data>
   <data name="EnumShapeValuesCompartmentTitle" xml:space="preserve">
     <value>Values</value>
@@ -3065,8 +3857,8 @@
     <value>Dash Style</value>
     <comment>DisplayName for DomainProperty &apos;DashStyle&apos; on DomainClass &apos;AssociationConnector&apos;</comment>
   </data>
-  <data name="AssociationConnectorTargetPropertyNameDefaultText" xml:space="preserve">
-    <value>TargetPropertyName</value>
+  <data name="AssociationConnectorTargetPropertyNameDisplayDefaultText" xml:space="preserve">
+    <value>TargetPropertyNameDisplay</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="AssociationConnectorSourceMultiplicityDisplayDefaultText" xml:space="preserve">
@@ -3093,8 +3885,8 @@
     <value>Bidirectional Connector</value>
     <comment>DisplayName for DomainClass &apos;BidirectionalConnector&apos;</comment>
   </data>
-  <data name="BidirectionalConnectorSourcePropertyNameDefaultText" xml:space="preserve">
-    <value>SourcePropertyName</value>
+  <data name="BidirectionalConnectorSourcePropertyNameDisplayDefaultText" xml:space="preserve">
+    <value>SourcePropertyNameDisplay</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="Sawczyn.EFDesigner.EFModel.GeneralizationConnector.Description" xml:space="preserve">
@@ -3129,8 +3921,8 @@
     <value>Class Diagram</value>
     <comment>DisplayName for DomainClass &apos;EFModelDiagram&apos;</comment>
   </data>
-  <data name="Class DiagramsToolboxTab" xml:space="preserve">
-    <value>Class Diagrams</value>
+  <data name="EF Model DiagramsToolboxTab" xml:space="preserve">
+    <value>EF Model Diagrams</value>
     <comment>Toolbox item tab name</comment>
   </data>
   <data name="ModelClassToolboxItem" xml:space="preserve">
@@ -3326,12 +4118,36 @@ A DomainClass can be serialized as a moniker only if
     <value>..\Resources\Warning.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Icon decorator default image</comment>
   </data>
+  <data name="ClassShapeTransientGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\TransientClass.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ClassShapeNoGenGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\No.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ClassShapeDictionaryGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Dictionary_16x.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ClassShapeSQLGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\SQL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ClassShapeInterfaceDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Interface.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
   <data name="EnumShapeEnumGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\EnumTool.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Enumerator_16x.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Icon decorator default image</comment>
   </data>
   <data name="EnumShapeWarningGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\Warning.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="EnumShapeNoGenGlyphDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\No.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Icon decorator default image</comment>
   </data>
   <data name="ModelClassExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
@@ -3339,7 +4155,7 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="ModelEnumExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\EnumTool.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Enumerator_16x.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
   <data name="ModelAttributeExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
@@ -3347,11 +4163,15 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="ModelEnumValueExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\EnumValue.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\EnumItem_16x.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
   <data name="CommentExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\CommentTool.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ModelDiagramDataExplorerImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ShowDiagramPane_16x.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
   <data name="ModelClassToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">

@@ -2,38 +2,38 @@
 using System.Collections.Generic;
 using System.Data.Entity.Design.PluralizationServices;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 
-using Microsoft.Msagl.Core.Layout;
-using Microsoft.Msagl.Core.Routing;
-using Microsoft.Msagl.Layout.Incremental;
-using Microsoft.Msagl.Layout.MDS;
-using Microsoft.Msagl.Prototype.Ranking;
 using Microsoft.VisualStudio.Modeling;
+using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Validation;
 
+using Sawczyn.EFDesigner.EFModel.Annotations;
 using Sawczyn.EFDesigner.EFModel.Extensions;
-
-using SugiyamaLayoutSettings = Microsoft.Msagl.Layout.Layered.SugiyamaLayoutSettings;
-
-#pragma warning disable 1591
 
 namespace Sawczyn.EFDesigner.EFModel
 {
    [ValidationState(ValidationState.Enabled)]
-   public partial class ModelRoot
+   public partial class ModelRoot : IHasStore
    {
       public static readonly PluralizationService PluralizationService;
 
+      internal static bool BatchUpdating = false;
+      internal static string InstallationDirectory { get; set; }
+
       public static Action ExecuteValidator { get; set; }
 
-      public static string DSLVersion { get; set; }
+      public static Func<Diagram> GetCurrentDiagram { get; set; }
+
+      public static Func<bool> WriteDiagramAsBinary { get; set; } = () => false;
 
       static ModelRoot()
       {
          try
          {
             PluralizationService = PluralizationService.CreateService(CultureInfo.CurrentCulture);
+            InstallationDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetAssembly(typeof(ModelRoot)).Location);
          }
          catch (NotImplementedException)
          {
@@ -41,91 +41,74 @@ namespace Sawczyn.EFDesigner.EFModel
          }
       }
 
+      // ReSharper disable once UnusedMember.Global
       public string FullName => string.IsNullOrWhiteSpace(Namespace) ? $"global::{EntityContainerName}" : $"global::{Namespace}.{EntityContainerName}";
 
+      /// <summary>
+      /// True if the model is EFCore and the Entity Framework version is >= 5
+      /// </summary>
+      public bool IsEFCore5Plus => EntityFrameworkVersion == EFVersion.EFCore && (EntityFrameworkPackageVersion == "Latest" || GetEntityFrameworkPackageVersionNum() >= 5);
+
       [Obsolete("Use ModelRoot.Classes instead")]
-      public LinkedElementCollection<ModelClass> Types
+      public LinkedElementCollection<ModelClass> Types => Classes;
+
+      public EFModelDiagram[] GetDiagrams()
       {
-         get
-         {
-            return Classes;
-         }
+         return Store
+               .DefaultPartitionForClass(EFModelDiagram.DomainClassId)
+               .ElementDirectory
+               .AllElements
+               .OfType<EFModelDiagram>()
+               .ToArray();
       }
 
-      internal sealed partial class LayoutAlgorithmPropertyHandler
+      #region Filename
+
+      private string filename;
+
+      public void SetFileName(string fileName)
       {
-         private static readonly Dictionary<LayoutAlgorithm, LayoutAlgorithmSettings> settingsCache = new Dictionary<LayoutAlgorithm, LayoutAlgorithmSettings>();
-
-         protected override void OnValueChanged(ModelRoot element, LayoutAlgorithm oldValue, LayoutAlgorithm newValue)
-         {
-            base.OnValueChanged(element, oldValue, newValue);
-
-            if (!element.Store.InUndoRedoOrRollback)
-            {
-               // if this is the first time we've been here, cache what's alread there
-               if (oldValue != LayoutAlgorithm.Default && !settingsCache.ContainsKey(oldValue) && element.LayoutAlgorithmSettings != null)
-                  settingsCache[oldValue] = element.LayoutAlgorithmSettings;
-
-               // use the prior settings for this layout type if available
-               if (newValue != LayoutAlgorithm.Default && settingsCache.ContainsKey(newValue))
-                  element.LayoutAlgorithmSettings = settingsCache[newValue];
-               else
-               {
-                  // if not, set some defaults that make sense in our context
-                  switch (newValue)
-                  {
-                     case LayoutAlgorithm.Default:
-                        element.LayoutAlgorithmSettings = null;
-                        return;
-
-                     case LayoutAlgorithm.FastIncremental:
-                        FastIncrementalLayoutSettings fastIncrementalLayoutSettings = new FastIncrementalLayoutSettings();
-                        element.LayoutAlgorithmSettings = fastIncrementalLayoutSettings;
-
-                        break;
-
-                     case LayoutAlgorithm.MDS:
-                        MdsLayoutSettings mdsLayoutSettings = new MdsLayoutSettings();
-                        mdsLayoutSettings.ScaleX = 1;
-                        mdsLayoutSettings.ScaleY = 1;
-                        mdsLayoutSettings.AdjustScale = true;
-                        mdsLayoutSettings.RemoveOverlaps = true;
-                        element.LayoutAlgorithmSettings = mdsLayoutSettings;
-
-                        break;
-
-                     case LayoutAlgorithm.Ranking:
-                        RankingLayoutSettings rankingLayoutSettings = new RankingLayoutSettings();
-                        rankingLayoutSettings.ScaleX = 1;
-                        rankingLayoutSettings.ScaleY = 1;
-                        element.LayoutAlgorithmSettings = rankingLayoutSettings;
-
-                        break;
-
-                     case LayoutAlgorithm.Sugiyama:
-                        SugiyamaLayoutSettings sugiyamaLayoutSettings = new SugiyamaLayoutSettings
-                        {
-                           LayerSeparation = 1,
-                           MinNodeHeight = 1,
-                           MinNodeWidth = 1
-                        };
-
-                        element.LayoutAlgorithmSettings = sugiyamaLayoutSettings;
-
-                        break;
-                  }
-
-                  element.LayoutAlgorithmSettings.ClusterMargin = 1;
-                  element.LayoutAlgorithmSettings.NodeSeparation = 1;
-                  element.LayoutAlgorithmSettings.EdgeRoutingSettings.Padding = .3;
-                  element.LayoutAlgorithmSettings.EdgeRoutingSettings.PolylinePadding = 1.5;
-                  element.LayoutAlgorithmSettings.EdgeRoutingSettings.EdgeRoutingMode = EdgeRoutingMode.StraightLine;
-
-                  settingsCache[newValue] = element.LayoutAlgorithmSettings;
-               }
-            }
-         }
+         filename = fileName;
       }
+
+      public string GetFileName()
+      {
+         return filename;
+      }
+
+      #endregion 
+
+      #region OutputLocations
+
+      private OutputLocations outputLocationsStorage;
+
+      private OutputLocations GetOutputLocationsValue()
+      {
+         return outputLocationsStorage ?? (outputLocationsStorage = new OutputLocations(this));
+      }
+
+      private void SetOutputLocationsValue(OutputLocations value)
+      {
+         outputLocationsStorage = value;
+      }
+
+      #endregion OutputLocations
+
+      #region Namespaces
+
+      private Namespaces namespacesStorage;
+
+      private Namespaces GetNamespacesValue()
+      {
+         return namespacesStorage ?? (namespacesStorage = new Namespaces(this));
+      }
+
+      private void SetNamespacesValue(Namespaces value)
+      {
+         namespacesStorage = value;
+      }
+
+      #endregion Namespaces
 
       #region Valid types based on EF version
 
@@ -133,91 +116,137 @@ namespace Sawczyn.EFDesigner.EFModel
       {
          get
          {
-            return EntityFrameworkVersion == EFVersion.EF6 || GetEntityFrameworkPackageVersionNum() > 2.1
-                      ? new[]
-                        {
-                           "Geography",
-                           "GeographyCollection",
-                           "GeographyLineString",
-                           "GeographyMultiLineString",
-                           "GeographyMultiPoint",
-                           "GeographyMultiPolygon",
-                           "GeographyPoint",
-                           "GeographyPolygon",
-                           "Geometry",
-                           "GeometryCollection",
-                           "GeometryLineString",
-                           "GeometryMultiLineString",
-                           "GeometryMultiPoint",
-                           "GeometryMultiPolygon",
-                           "GeometryPoint",
-                           "GeometryPolygon"
-                        }
-                      : new string[0];
+            return EntityFrameworkVersion == EFVersion.EF6
+                         ? new[]
+                           {
+                                 "Geography"
+                               , "GeographyCollection"
+                               , "GeographyLineString"
+                               , "GeographyMultiLineString"
+                               , "GeographyMultiPoint"
+                               , "GeographyMultiPolygon"
+                               , "GeographyPoint"
+                               , "GeographyPolygon"
+                               , "Geometry"
+                               , "GeometryCollection"
+                               , "GeometryLineString"
+                               , "GeometryMultiLineString"
+                               , "GeometryMultiPoint"
+                               , "GeometryMultiPolygon"
+                               , "GeometryPoint"
+                               , "GeometryPolygon"
+                           }
+                         : new[]
+                           {
+                                 "Geometry"
+                               , "GeometryCollection"
+                               , "LineString"
+                               , "MultiLineString"
+                               , "MultiPoint"
+                               , "MultiPolygon"
+                               , "Point"
+                               , "Polygon"
+                           };
          }
       }
 
+      /// <summary>
+      /// Class types that can be used in the model
+      /// </summary>
       public string[] ValidTypes
       {
          get
          {
-            string[] validTypes = {
-                                     "Binary",
-                                     "Boolean",
-                                     "Byte",
-                                     "byte",
-                                     "DateTime",
-                                     "DateTimeOffset",
-                                     "Decimal",
-                                     "Double",
-                                     "Guid",
-                                     "Int16",
-                                     "Int32",
-                                     "Int64",
-                                     "Single",
-                                     "String",
-                                     "Time"
-                                  };
+            List<string> validTypes = new List<string>(new[]
+                                                       {
+                                                          "Binary"
+                                                        , "Boolean"
+                                                        , "Byte"
+                                                        , "byte"
+                                                        , "DateTime"
+                                                        , "DateTimeOffset"
+                                                        , "Decimal"
+                                                        , "Double"
+                                                        , "Guid"
+                                                       });
+
+            if (IsEFCore5Plus)
+            {
+               validTypes.Add("System.Net.IPAddress");
+               validTypes.Add("System.Net.NetworkInformation.PhysicalAddress");
+            }
+
+            validTypes.AddRange(new[]
+                                {
+                                   "Int16"
+                                 , "Int32"
+                                 , "Int64"
+                                 , "Single"
+                                 , "String"
+                                 , "Time"
+                                });
 
             return validTypes.Union(SpatialTypes).ToArray();
          }
       }
 
+      /// <summary>
+      /// CLR Types that can be used in the model
+      /// </summary>
       public string[] ValidCLRTypes
       {
          get
          {
-            string[] validClrTypes = {
-                                        "Binary",
-                                        "Boolean", "Boolean?", "Nullable<Boolean>",
-                                        "Byte", "Byte?", "Nullable<Byte>",
-                                        "DateTime", "DateTime?", "Nullable<DateTime>",
-                                        "DateTimeOffset", "DateTimeOffset?", "Nullable<DateTimeOffset>",
-                                        "DbGeography",
-                                        "DbGeometry",
-                                        "Decimal", "Decimal?", "Nullable<Decimal>",
-                                        "Double", "Double?", "Nullable<Double>",
-                                        "Guid", "Guid?", "Nullable<Guid>",
-                                        "Int16", "Int16?", "Nullable<Int16>",
-                                        "Int32", "Int32?", "Nullable<Int32>",
-                                        "Int64", "Int64?", "Nullable<Int64>",
-                                        "Single", "Single?", "Nullable<Single>",
-                                        "String",
-                                        "Time",
-                                        "TimeSpan", "TimeSpan?", "Nullable<TimeSpan>",
-                                        "bool", "bool?", "Nullable<bool>",
-                                        "byte", "byte?", "Nullable<byte>",
-                                        "byte[]",
-                                        "decimal", "decimal?", "Nullable<decimal>",
-                                        "double", "double?", "Nullable<double>",
-                                        "int", "int?", "Nullable<int>",
-                                        "long", "long?", "Nullable<long>",
-                                        "short", "short?", "Nullable<short>",
-                                        "string"
-                                     };
+            List<string> validClrTypes = new List<string>(new[]
+                                                          {
+                                                             "Binary",
+                                                             "Boolean", "Boolean?", "Nullable<Boolean>",
+                                                             "Byte", "Byte?", "Nullable<Byte>",
+                                                             "DateTime", "DateTime?", "Nullable<DateTime>",
+                                                             "DateTimeOffset", "DateTimeOffset?", "Nullable<DateTimeOffset>",
+                                                             "DbGeography",
+                                                             "DbGeometry",
+                                                             "Decimal", "Decimal?", "Nullable<Decimal>",
+                                                             "Double", "Double?", "Nullable<Double>",
+                                                             "Guid", "Guid?", "Nullable<Guid>"
+                                                          });
+            if (IsEFCore5Plus)
+               validClrTypes.Add("System.Net.IPAddress");
+
+            validClrTypes.AddRange(new[]
+                                   {
+                                      "Int16", "Int16?", "Nullable<Int16>",
+                                      "Int32", "Int32?", "Nullable<Int32>",
+                                      "Int64", "Int64?", "Nullable<Int64>",
+                                      "Single", "Single?", "Nullable<Single>",
+                                      "String",
+                                      "Time",
+                                      "TimeSpan", "TimeSpan?", "Nullable<TimeSpan>",
+                                      "bool", "bool?", "Nullable<bool>",
+                                      "byte", "byte?", "Nullable<byte>",
+                                      "byte[]",
+                                      "decimal", "decimal?", "Nullable<decimal>",
+                                      "double", "double?", "Nullable<double>",
+                                      "int", "int?", "Nullable<int>",
+                                      "long", "long?", "Nullable<long>",
+                                      "short", "short?", "Nullable<short>",
+                                      "string"
+                                   });
 
             return validClrTypes.Union(SpatialTypes).ToArray();
          }
+      }
+
+      /// <summary>
+      /// Validates that the type in question can be used as an identity.
+      /// EF6 is constrained as to identity types, as is EFCore before v5.
+      /// EFCore v5+ has no constraints, other than what's put on by the database type
+      /// </summary>
+      /// <param name="typename">Name of type to check for use as identity</param>
+      /// <returns>True if valid, false otherwise</returns>
+      public bool IsValidIdentityAttributeType(string typename)
+      {
+         return IsEFCore5Plus || ValidIdentityAttributeTypes.Contains(typename);
       }
 
       public string[] ValidIdentityAttributeTypes
@@ -237,7 +266,7 @@ namespace Sawczyn.EFDesigner.EFModel
          }
       }
 
-      internal static List<string> ValidIdentityTypeAttributesBaseList
+      private static List<string> ValidIdentityTypeAttributesBaseList
       {
          get
          {
@@ -262,40 +291,73 @@ namespace Sawczyn.EFDesigner.EFModel
 
       #region Nuget
 
+      [Obsolete] 
       public NuGetDisplay NuGetPackageVersion
       {
          get
          {
-            return NuGetHelper.NuGetPackageDisplay.FirstOrDefault(x => x.EFVersion == EntityFrameworkVersion &&
-                                                                           x.DisplayVersion == EntityFrameworkPackageVersion);
+            return NuGetHelper.NuGetPackageDisplay
+                              .FirstOrDefault(x => x.EFVersion == EntityFrameworkVersion
+                                                && x.DisplayVersion == EntityFrameworkPackageVersion);
          }
       }
 
       /// <summary>
-      /// DslPackage might set this to false depending on whether or not it can find the resources needed to load Nuget packages
+      /// Transforms the selected EntityFrameworkPackageVersion into a decimal number, only taking the first two segments into account. If a "Latest" version is chosen, looks up the appropriate real version.
       /// </summary>
-      public static bool CanLoadNugetPackages { get; set; } = true;
-
-      // ReSharper disable once UnusedMember.Global
       public double GetEntityFrameworkPackageVersionNum()
       {
-         string[] parts = EntityFrameworkPackageVersion.Split('.');
+         string packageVersion = EntityFrameworkPackageVersion;
+         string[] parts = packageVersion.Split('.');
 
-         string resultString = parts.Length > 1
-                                  ? $"{parts[0]}.{parts[1]}"
-                                  : parts.FirstOrDefault();
+         if (packageVersion.EndsWith("Latest"))
+         {
+            (int A, int B, int C) actualVersion;
 
-         return double.TryParse(resultString, out double result)
-                   ? result
-                   : 0;
+            switch (parts.Length)
+            {
+               case 1: // just "Latest"
+                  actualVersion = NugetVersions.Last();
+                  break;
+               case 2: // x.Latest
+                  actualVersion = NugetVersions.Last(v => v.A == int.Parse(parts[0], CultureInfo.InvariantCulture));
+                  break;
+               default: // x.y.Latest
+                  actualVersion = NugetVersions.Last(v => v.A == int.Parse(parts[0], CultureInfo.InvariantCulture) && v.B == int.Parse(parts[1], CultureInfo.InvariantCulture));
+                  break;
+            }
+
+            packageVersion = $"{actualVersion.A}.{actualVersion.B}";
+         }
+         else
+            packageVersion = $"{parts[0]}.{parts[1]}";
+
+         return double.Parse(packageVersion, CultureInfo.InvariantCulture);
       }
 
+      private List<(int A, int B, int C)> nugetVersions;
+      private List<(int A, int B, int C)> NugetVersions
+      {
+         get
+         {
+            return nugetVersions
+                ?? (nugetVersions = NuGetHelper.EFPackageVersions[EntityFrameworkVersion]
+                                               .Where(x => x.Count(c => c == '.') == 2)
+                                               .Select(v => (int.TryParse(v.Substring(0, v.IndexOf('.')), out int x1) ? x1 : 0
+                                                           , int.TryParse(v.Substring(v.IndexOf('.') + 1, v.IndexOf('.', v.IndexOf('.') + 1) - v.IndexOf('.') - 1), out int x2) ? x2 : 0
+                                                           , int.TryParse(v.Substring(v.IndexOf('.', v.IndexOf('.') + 1) + 1), out int x3) ? x3 : 0))
+                                               .OrderBy<(int A, int B, int C), int>(v => v.A).ThenBy(v => v.B).ThenBy(v => v.C)
+                                               .Distinct()
+                                               .ToList());
+         }
+      }
       #endregion Nuget
 
       #region Validation methods
 
       [ValidationMethod(ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu)]
-      // ReSharper disable once UnusedMember.Local
+      [UsedImplicitly]
+      [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "Called by validation")]
       private void ConnectionStringMustExist(ValidationContext context)
       {
          if (!Classes.Any() && !Enums.Any())
@@ -309,7 +371,8 @@ namespace Sawczyn.EFDesigner.EFModel
       }
 
       [ValidationMethod(ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu)]
-      // ReSharper disable once UnusedMember.Local
+      [UsedImplicitly]
+      [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "Called by validation")]
       private void SummaryDescriptionIsEmpty(ValidationContext context)
       {
          if (string.IsNullOrWhiteSpace(Summary) && WarnOnMissingDocumentation)
@@ -341,12 +404,35 @@ namespace Sawczyn.EFDesigner.EFModel
 
       #endregion DatabaseSchema tracking property
 
+      #region DatabaseCollationDefault tracking property
+
+      protected virtual void OnDatabaseCollationDefaultChanged(string oldValue, string newValue)
+      {
+         TrackingHelper.UpdateTrackingCollectionProperty(Store,
+                                                         Classes,
+                                                         ModelAttribute.DatabaseCollationDomainPropertyId,
+                                                         ModelAttribute.IsDatabaseCollationTrackingDomainPropertyId);
+      }
+
+      internal sealed partial class DatabaseCollationDefaultPropertyHandler
+      {
+         protected override void OnValueChanged(ModelRoot element, string oldValue, string newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+
+            if (!element.Store.InUndoRedoOrRollback)
+               element.OnDatabaseCollationDefaultChanged(oldValue, newValue);
+         }
+      }
+
+      #endregion DatabaseCollationDefault tracking property
+
       #region DefaultCollectionClass tracking property
 
       protected virtual void OnCollectionClassChanged(string oldValue, string newValue)
       {
          TrackingHelper.UpdateTrackingCollectionProperty(Store,
-                                                         Store.Get<Association>().ToList(),
+                                                         Store.GetAll<Association>().ToList(),
                                                          Association.CollectionClassDomainPropertyId,
                                                          Association.IsCollectionClassTrackingDomainPropertyId);
       }
@@ -406,12 +492,6 @@ namespace Sawczyn.EFDesigner.EFModel
 
       #region Namespace tracking property
 
-      protected virtual void OnNamespaceChanged(string oldValue, string newValue)
-      {
-         TrackingHelper.UpdateTrackingCollectionProperty(Store, Classes, ModelClass.NamespaceDomainPropertyId, ModelClass.IsNamespaceTrackingDomainPropertyId);
-         TrackingHelper.UpdateTrackingCollectionProperty(Store, Enums, ModelEnum.NamespaceDomainPropertyId, ModelEnum.IsNamespaceTrackingDomainPropertyId);
-      }
-
       internal sealed partial class NamespacePropertyHandler
       {
          protected override void OnValueChanged(ModelRoot element, string oldValue, string newValue)
@@ -419,11 +499,100 @@ namespace Sawczyn.EFDesigner.EFModel
             base.OnValueChanged(element, oldValue, newValue);
 
             if (!element.Store.InUndoRedoOrRollback)
-               element.OnNamespaceChanged(oldValue, newValue);
+            {
+               if (string.IsNullOrWhiteSpace(element.EntityNamespace))
+               {
+                  TrackingHelper.UpdateTrackingCollectionProperty(element.Store
+                                                                , element.Classes.Where(c => !c.IsDependentType)
+                                                                , ModelClass.NamespaceDomainPropertyId
+                                                                , ModelClass.IsNamespaceTrackingDomainPropertyId);
+               }
+
+               if (string.IsNullOrWhiteSpace(element.StructNamespace))
+               {
+                  TrackingHelper.UpdateTrackingCollectionProperty(element.Store
+                                                                , element.Classes.Where(c => c.IsDependentType)
+                                                                , ModelClass.NamespaceDomainPropertyId
+                                                                , ModelClass.IsNamespaceTrackingDomainPropertyId);
+               }
+
+               if (string.IsNullOrWhiteSpace(element.EnumNamespace))
+                  TrackingHelper.UpdateTrackingCollectionProperty(element.Store, element.Enums, ModelEnum.NamespaceDomainPropertyId, ModelEnum.IsNamespaceTrackingDomainPropertyId);
+            }
+         }
+      }
+
+      internal sealed partial class EntityNamespacePropertyHandler
+      {
+         protected override void OnValueChanged(ModelRoot element, string oldValue, string newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+
+            if (!element.Store.InUndoRedoOrRollback)
+            {
+               TrackingHelper.UpdateTrackingCollectionProperty(element.Store,
+                                                               element.Classes.Where(c => !c.IsDependentType),
+                                                               ModelClass.NamespaceDomainPropertyId,
+                                                               ModelClass.IsNamespaceTrackingDomainPropertyId);
+            }
+         }
+      }
+
+      internal sealed partial class EnumNamespacePropertyHandler
+      {
+         protected override void OnValueChanged(ModelRoot element, string oldValue, string newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+
+            if (!element.Store.InUndoRedoOrRollback)
+               TrackingHelper.UpdateTrackingCollectionProperty(element.Store, element.Enums, ModelEnum.NamespaceDomainPropertyId, ModelEnum.IsNamespaceTrackingDomainPropertyId);
+         }
+      }
+
+      internal sealed partial class StructNamespacePropertyHandler
+      {
+         protected override void OnValueChanged(ModelRoot element, string oldValue, string newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+
+            if (!element.Store.InUndoRedoOrRollback)
+            {
+               TrackingHelper.UpdateTrackingCollectionProperty(element.Store
+                                                             , element.Classes.Where(c => c.IsDependentType)
+                                                             , ModelClass.NamespaceDomainPropertyId
+                                                             , ModelClass.IsNamespaceTrackingDomainPropertyId);
+            }
          }
       }
 
       #endregion Namespace tracking property
 
+      #region AutoPropertyDefault tracking property
+
+      /// <summary>
+      /// Updates tracking properties when the IsImplementNotify value changes
+      /// </summary>
+      /// <param name="oldValue">Prior value</param>
+      /// <param name="newValue">Current value</param>
+      protected virtual void OnAutoPropertyDefaultChanged(bool oldValue, bool newValue)
+      {
+         TrackingHelper.UpdateTrackingCollectionProperty(Store,
+                                                         Classes,
+                                                         ModelClass.AutoPropertyDefaultDomainPropertyId,
+                                                         ModelClass.IsAutoPropertyDefaultTrackingDomainPropertyId);
+      }
+
+      internal sealed partial class AutoPropertyDefaultPropertyHandler
+      {
+         protected override void OnValueChanged(ModelRoot element, bool oldValue, bool newValue)
+         {
+            base.OnValueChanged(element, oldValue, newValue);
+
+            if (!element.Store.InUndoRedoOrRollback)
+               element.OnAutoPropertyDefaultChanged(oldValue, newValue);
+         }
+      }
+
+      #endregion AutoPropertyDefault tracking property
    }
 }

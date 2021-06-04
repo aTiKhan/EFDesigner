@@ -1,17 +1,15 @@
-This Visual Studio 2017/2019 extension is an opinionated code generator, adding a new file type (.efmodel) that allows for fast, easy and, most importantly, **visual** design 
-of persistent classes. Inheritance, unidirectional and bidirectional associations are all supported. Enumerations are also included in 
-the visual model, as is the ability to add text blocks to explain potentially arcane parts of your design.
+This Visual Studio 2019 extension is the easiest way to add a consistently correct Entity Framework model to your project with support for EF6, EFCore2, EFCore3 and EFCore5.
+
+It's an opinionated code generator, adding a new file type (.efmodel) that allows for fast, easy and, most importantly, **visual** design of persistent classes. Inheritance, unidirectional and bidirectional associations are all supported. Enumerations are also included in the visual model, as is the ability to add text blocks to explain potentially arcane parts of your design.
 
 <img src="https://msawczyn.github.io/EFDesigner/images/Designer.jpg">
 
-While giving you complete control over how the code is generated you'll be able to create, out of the box, sophisticated, 
-consistent and **correct** Entity Framework code that can be regenerated when your model changes. And, since the code is written using 
-partial classes, any additions you make to your generated code are retained across subsequent generations.
+While giving you complete control over how the code is generated you'll be able to create, out of the box, sophisticated, consistent and **correct** Entity Framework code that can be regenerated when your model changes. And, since the code is written using partial classes, any additions you make to your generated code are retained across subsequent generations. The designer doesn't need to be present to use the code that's generated - it generates standard C#, using the code-first, fluent API - so the tool doesn't become a dependency to your project.
 
-If you are used to the EF visual modeling that comes with Visual Studio, you'll be pretty much at home. The goal was to duplicate 
-at least those features and, in addition, add all the little things that _should_ have been there. Things like:
+If you are used to the EF visual modeling that comes with Visual Studio, you'll be pretty much at home. The goal was to duplicate at least those features and, in addition, add all the little things that _should_ have been there. Things like:
 
 *   importing entities from C# source, or existing DbContext definitions (including their entities) from compiled EF6 or EFCore assemblies
+*   multiple views of your model to highlight important aspects of your design
 *   the ability to show and hide parts of the model
 *   easy customization of generated output by editing or even replacing the T4 templates
 *   entities by default generated as partial classes so the generated code can be easily extended
@@ -21,48 +19,84 @@ at least those features and, in addition, add all the little things that _should
 
 and many other nice-to-have bits.
 
+**Note:** This tool does not reverse engineer from the database (i.e., "database-first"). Microsoft has provided tools for that, and there are other, well-maintained opensourced projects that provide that functionality as well. 
+
 For comprehensive documentation, please visit [the project's documentation site](https://msawczyn.github.io/EFDesigner/).
-
-**Known Issues**
-
-**Visual Studio 2019 v16.2.0 currently breaks the designer** -- you're not able to draw connections between
-classes, enums, structs and comment blocks. [It was reported to Microsoft](https://developercommunity.visualstudio.com/content/problem/660095/dsl-tools-broken-in-1620-preview-4.html), 
-and has since been **fixed as of v16.2.5**, so if you're using a version between 16.2.0 and 16.2.4, you'll want 
-to upgrade to 16.2.5 or later in order to use not just this extension, but any extension based on the Microsoft Modeling SDK.
 
 **ChangeLog**
 
-**1.3.0.7**
-   - Fix: bad merge broke MaxLength and MinLength properties in entity string properties (See https://github.com/msawczyn/EFDesigner/issues/103)
-   - Fix: backing fields caused duplicate database columns (See https://github.com/msawczyn/EFDesigner/issues/101)
+**3.0.6**
+   - **[NEW]** Added ability to copy current diagram to clipboard
+   - DbContext fix for configuring associations with backing fields
+   - Code generation fix for associations with backing fields
 
-**1.3.0.6**
-   - Added a model fixup for when user doesn't use full enumeration name for a property's initial value in an entity (See https://github.com/msawczyn/EFDesigner/issues/82)
-   - **[NEW]** To more fully support DDD models, added a toggle for persisting either the property or its backing field (if not an autoproperty) for EFCore
-   - **[NEW]** Can now override the NotifyPropertyChanged value for an entity on a per-property and per-association basis
-   - Fix: Removed stray quote marks in default values for string properties (See https://github.com/msawczyn/EFDesigner/issues/86)
-   - Fix: Minimum string length was ignored when setting properties via text edit (See https://github.com/msawczyn/EFDesigner/issues/86)
-   - Fix: Required string identity property is not present in the constructor (See https://github.com/msawczyn/EFDesigner/issues/93)
-   - Fix: Some issues with owned entities in EFCore
-   - Fix: If NotifyPropertyChanged is active, wrong Output is generated (See https://github.com/msawczyn/EFDesigner/issues/97)
-   - For folks wanting to read and/or modify the source for this tool, added a readme on how to deal with tracking properties
+**3.0.5**
+   - Fix where parsing EF version numbers should be culture-neutral (see https://github.com/msawczyn/EFDesigner/issues/282)
+   - Fixed circular logic flaw in identity properties for database views (see https://github.com/msawczyn/EFDesigner/issues/275)
+   - Corrected tracking property access modes from the default to overrides in entity attributes
 
-**1.3.0.4**
-   - Fixed problematic code generation in constructors for classes having 1..1 associations (See https://github.com/msawczyn/EFDesigner/issues/74)
-   - Fixed problem where database was always generating identity values, regardless of setting in the model (See https://github.com/msawczyn/EFDesigner/issues/79)
-   - Fixed errors when creating nested project folders (See https://github.com/msawczyn/EFDesigner/issues/77)
-   - Fixed cascade delete errors in EFCore when overriding cascade behavior (See https://github.com/msawczyn/EFDesigner/issues/76)
-   - Added more information in headers for generated code (tool version, URLs, license info)
+**3.0.4**
+   - **[NEW]** Added context menu choice to visually align node elements on diagrams.
+   - Fix for detecting correct EF version when anything with "Latest" in it is configured (see https://github.com/msawczyn/EFDesigner/issues/266)
+   - Fix to generate correct initial value code for decimal properties (see https://github.com/msawczyn/EFDesigner/issues/268)
+   - Fix for constructor code generation in 1-N unidirectional associations (see https://github.com/msawczyn/EFDesigner/issues/263)
+   - Removed addition of default objects in constructors for required associations for all EF versions (see https://github.com/msawczyn/EFDesigner/issues/271)
 
-**1.3.0.2**
-   - Fixed error found in some VS2017 installations preventing running due to dependency problems
+**3.0.3**
+   - **[NEW]** Added VS UML icon for model file in solution explorer (thanks to https://github.com/dcastenholz for the change)
+   - **[NEW]** Classes with custom interfaces can now display an indicator with a tooltip indicating the interface type(s). This glyph is enabled/disabled at model level.
+   - **[NEW]** Added ability to specify that an association should be automatically included in any queries that use it (EFCore5 only). The association connector will appear bolder if at least one end is auto-included.
+   - **[NEW]** Updated association tooltip to indicate which, if any, end is auto-included
+   - Fix to ensure database collation overrides don't get applied to the wrong column types
+   - Fix to allow 1..1 association to owned types in EFCore5 (see https://github.com/msawczyn/EFDesigner/issues/252)
+   - Fix to calculate EF version number correctly when "Latest" was specified in designer (see https://github.com/msawczyn/EFDesigner/issues/254)
+   - Fix to generate correct DeleteBehavior enum values in EFCore < v3 (see https://github.com/msawczyn/EFDesigner/issues/257)
+   - Removed `INotifyPropertyChanged` option from designer. Implementers wanting this interface can add it to a partial class file as any other interface, as there's really nothing special about it.
+   - Generated code now honors the `ExcludeFromMigration` setting for a class
 
-**1.3.0.1**
-   - Enhanced source code drag/drop to handle bidirectional associations and enumerations better.
-   - **[NEW]** Can now import assemblies containing DbContext classes. Dropping a compiled assembly onto the design surface will attempt to process and merge it into the design.
-   - **[NEW]** Added ability to merge two unidirectional associations into one bidirectional association (via context menu action)
-   - **[NEW]** Added ability to split a bidirectional association to two unidirectional associations (via context menu action)
-   - **[NEW]** Added [Microsoft Automatic Graph Layout](https://github.com/Microsoft/automatic-graph-layout), giving the user the ability to choose the diagram's auto-layout strategy 
+**3.0.2**
+   - **[NEW]** Added setting on designer surface to set visibility defaults for entity default constructors, and overrides for that setting on the entities
+   - **[NEW]** Added `public bool ModelAttribute.IsForeignKeyProperty` for use by developers doing custom code generation from the model
+   - **[NEW]** Added option for turning off DbSet and table name pluralization (see https://github.com/msawczyn/EFDesigner/issues/246)
+   - **[NEW]** Added option for how to name foreign key shadow properties - either with or without underscores (see https://github.com/msawczyn/EFDesigner/issues/250)
+   - **[NEW]** Added option to generate DbContextFactory class, for use in context pooling. Asking for DbContext factory method generation disables generating OnCreating method, since they don't play well together.
+   - Changed property editor for custom attributes to be multiline, to ease editing (see https://github.com/msawczyn/EFDesigner/issues/251)
+   - Fixes for code generation of new EFCore5 database collation options
+   - Fixed condition where sometimes generated code in entity default constructors would create infinitely recursive calls
+   - Stopped escaping standard XML comment tags in summary and description fields (see https://github.com/msawczyn/EFDesigner/issues/248)
+   - Due to the new seeding needs in EFCore5, setters for identity properties are now public even if set to be auto-generated
+
+**3.0.1**
+   - **[NEW]** Added [Description] attribute (to classes, properties, enums and enum values where summary was non-blank) to facilitate tooling use
+   - Fixed an issue where EFCore5 code was generating cascade delete commands in the wrong place (see https://github.com/msawczyn/EFDesigner/issues/243)
+   - Editing class properties and enum values as text now retains properties that aren't available in the text syntax (see https://github.com/msawczyn/EFDesigner/issues/242)
+
+**3.0**
+   - **[NEW]** Now supports EFCore5.X 
+      - **[NEW]** Added System.Net.IPAddress and System.Net.NetworkInformation.PhysicalAddress to the list of available property types
+      - **[NEW]** Added ability to specify both default database collation and a collation override at the property level 
+      - **[NEW]** Many-to-many bidirectional associations are now allowed 
+      - **[NEW]** Any property type can now be used as an identity 
+      - **[NEW]** Can now customize backing field names for non-AutoProperty properties 
+      - **[NEW]** Properties with backing fields (i.e., non-AutoProperty properties) can now choose how EF will read/write those values (see https://docs.microsoft.com/en-us/ef/core/modeling/backing-field).
+      - **[NEW]** Added support for keyless entity types created by defining queries
+      - **[NEW]** Added support for keyless entity types coming from database views
+   - Enhancements and Fixes
+      - **[NEW]** Added ability to globally add and remove exposed foreign key properties to all modeled entities (via menu command) (see https://github.com/msawczyn/EFDesigner/issues/223)
+      - **[NEW]** Added ability to choose to place newly imported model elements on the diagram where they were dropped. Caution: this can be EXTREMELY slow for large imports. (see https://github.com/msawczyn/EFDesigner/issues/225)
+      - **[NEW]** Added composition and aggregation indicators to association connectors
+      - Default code generation type is now the latest version of EFCore (currently, 5.0)
+      - Fixed inability to paste enumerations using diagram copy/paste
+      - Changing an identity property's type now changes the type of any defined foreign-key properties pointing to that identity property
+      - Title text color didn't always change when class/enum fill color changed in the diagram
+      - Selecting tabs or spaces for indentation in generated code has been moved to a property on the designer surface.
+      - Added ModelRoot.IsEFCore5Plus convenience property. It can be used in custom T4 edits
+   - Possibly breaking changes
+      - T4 template structure has been changed drastically to simplify managing code generation for the various EF versions.
+        If customized T4 templates have been added to a project, they'll still work, but enhancements will continue to be made only to the new, more 
+        object-oriented, T4 structure. Updating the model's .tt file to use the new template structure is quite simple; details will be in the documentation 
+        at https://msawczyn.github.io/EFDesigner/Customizing.html
 
 [Earlier changes](https://github.com/msawczyn/EFDesigner/blob/master/changelog.txt)
 
+A big thanks to <a href="https://www.jetbrains.com/?from=EFDesigner"><img src="https://msawczyn.github.io/EFDesigner/images/jetbrains-variant-2a.png" style="margin-bottom: -30px"></a> &nbsp; for providing free development tools to support this project.

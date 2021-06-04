@@ -17,12 +17,20 @@ namespace Sawczyn.EFDesigner.EFModel
       /// <summary>
       /// Exposes NodeShape Collapse() function to DSL's context menu
       /// </summary>
-      public void CollapseShape() => SetIsExpandedValue(false);
+      public void CollapseShape()
+      {
+         if (this.IsVisible())
+            SetIsExpandedValue(false);
+      }
 
       /// <summary>
       /// Exposes NodeShape Expand() function to DSL's context menu
       /// </summary>
-      public void ExpandShape() => SetIsExpandedValue(true);
+      public void ExpandShape()
+      {
+         if (this.IsVisible())
+            SetIsExpandedValue(true);
+      }
 
       protected override CompartmentMapping[] GetCompartmentMappings(Type melType)
       {
@@ -220,7 +228,14 @@ namespace Sawczyn.EFDesigner.EFModel
             if (OpenCodeFile(modelEnum))
                return;
 
-            if (ExecCodeGeneration != null && QuestionDisplay.Show($"Can't open generated file for {modelEnum.Name}. It may not have been generated yet. Do you want to generate the code now?") == true)
+            if (!modelEnum.GenerateCode)
+            {
+               ErrorDisplay.Show(Store, $"{modelEnum.Name} has its GenerateCode property set to false. No file available to open.");
+
+               return;
+            }
+
+            if (ExecCodeGeneration != null && BooleanQuestionDisplay.Show(Store, $"Can't open generated file for {modelEnum.Name}. It may not have been generated yet. Do you want to generate the code now?") == true)
             {
                ExecCodeGeneration();
 
@@ -228,7 +243,7 @@ namespace Sawczyn.EFDesigner.EFModel
                   return;
             }
 
-            ErrorDisplay.Show($"Can't open generated file for {modelEnum.Name}");
+            ErrorDisplay.Show(Store, $"Can't open generated file for {modelEnum.Name}");
          }
       }
    }

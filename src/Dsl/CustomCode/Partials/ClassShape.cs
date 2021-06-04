@@ -2,16 +2,30 @@
 using Microsoft.VisualStudio.Modeling.Diagrams;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 
 using Sawczyn.EFDesigner.EFModel.Extensions;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
+
    public partial class ClassShape : IHighlightFromModelExplorer, IMouseActionTarget
    {
-      private static readonly Dictionary<bool, Dictionary<SetterAccessModifier, Bitmap>> AttributeGlyphs =
+      /// <summary>
+      /// Initializes style set resources for this shape type
+      /// </summary>
+      /// <param name="classStyleSet">The style set for this shape class</param>
+      protected override void InitializeResources(StyleSet classStyleSet)
+      {
+         base.InitializeResources(classStyleSet);
+
+         AssociateValueWith(Store, ModelRoot.ShowInterfaceIndicatorsDomainPropertyId);
+      }
+
+      internal static readonly Dictionary<bool, Dictionary<SetterAccessModifier, Bitmap>> AttributeGlyphs =
          new Dictionary<bool, Dictionary<SetterAccessModifier, Bitmap>>
          {
             {true, new Dictionary<SetterAccessModifier, Bitmap>
@@ -51,75 +65,236 @@ namespace Sawczyn.EFDesigner.EFModel
                                     }},
          };
 
+      /// <summary>  
+      /// Override to indicate that this shape has tool tips  
+      /// </summary>  
+      public override bool HasToolTip
+      {
+         get
+         {
+            return true;
+         }
+      }
+
       /// <summary>
       /// Exposes NodeShape Collapse() function to DSL's context menu
       /// </summary>
-      public void CollapseShape() => SetIsExpandedValue(false);
+      public void CollapseShape()
+      {
+         if (this.IsVisible())
+            SetIsExpandedValue(false);
+      }
 
       /// <summary>
       /// Exposes NodeShape Expand() function to DSL's context menu
       /// </summary>
-      public void ExpandShape() => SetIsExpandedValue(true);
+      public void ExpandShape()
+      {
+         if (this.IsVisible())
+            SetIsExpandedValue(true);
+      }
 
+      /// <summary>  
+      /// Return the tooltip text for the specified item  
+      /// </summary>  
+      /// <param name="item">A DiagramItem for the selected shape. This could be the shape, or a nested child shape or field.</param>  
+      public override string GetToolTipText(DiagramItem item)
+      {
+
+         // Work out which shape is selected - is it this ClassShape, or  
+         // is it one of the comparment shapes it contains?  
+         if (item.Shape is ElementListCompartment compartment)
+         {
+            // It's a compartment shape.  
+            // Get a list of the elements that are represented by diagram item (should be only one)  
+            ModelAttribute modelAttribute = compartment.GetSubFieldRepresentedElements(item.Field, item.SubField)
+                                                       .OfType<ModelAttribute>()
+                                                       .FirstOrDefault();
+
+            if (modelAttribute != null && modelAttribute.IsForeignKeyFor != Guid.Empty)
+            {
+               Association association = modelAttribute.Store.GetAll<Association>().FirstOrDefault(x => x.Id == modelAttribute.IsForeignKeyFor);
+
+               if (association != null)
+                  return $"FK for [{association.GetDisplayText()}]";
+            }
+         }
+
+         // is this the interface lollipop?
+         if (item.Shape is DecoratorHostShape && item.Field?.Name == "Interface")
+            return ((ModelClass)ModelElement).CustomInterfaces;
+
+         return base.GetToolTipText(item);
+      }
+
+      /// <inheritdoc />
       protected override CompartmentMapping[] GetCompartmentMappings(Type melType)
       {
          CompartmentMapping[] mappings = base.GetCompartmentMappings(melType);
 
          // Each item in the each compartment will call the appropriate method to determine its icon.
          // This happens any time the element's presentation element invalidates.
-         foreach (ElementListCompartmentMapping mapping in mappings.OfType<ElementListCompartmentMapping>().Where(m => m.CompartmentId == "AttributesCompartment"))
-            mapping.ImageGetter = GetAttributePropertyImage;
-         foreach (ElementListCompartmentMapping mapping in mappings.OfType<ElementListCompartmentMapping>().Where(m => m.CompartmentId == "AssociationsCompartment"))
-            mapping.ImageGetter = GetAssociationPropertyImage;
-         foreach (ElementListCompartmentMapping mapping in mappings.OfType<ElementListCompartmentMapping>().Where(m => m.CompartmentId == "SourcesCompartment"))
-            mapping.ImageGetter = GetSourcesPropertyImage;
+         foreach (ElementListCompartmentMapping mapping in mappings.OfType<ElementListCompartmentMapping>())
+            mapping.ImageGetter = GetPropertyImage;
 
          return mappings;
       }
 
-      private Image GetAssociationPropertyImage(ModelElement element)
+      public static ReadOnlyDictionary<string, Image> ClassImages =
+         new ReadOnlyDictionary<string, Image>(new Dictionary<string, Image>
+                                               {
+                                                  {nameof(Resources.EntityGlyph), Resources.EntityGlyph}
+                                                , {nameof(Resources.EntityGlyphVisible), Resources.EntityGlyphVisible}
+                                                , {nameof(Resources.SQL), Resources.SQL}
+                                                , {nameof(Resources.SQLVisible), Resources.SQLVisible}
+                                                , {nameof(Resources.AbstractEntityGlyph), Resources.AbstractEntityGlyph}
+                                                , {nameof(Resources.AbstractEntityGlyphVisible), Resources.AbstractEntityGlyphVisible}
+                                               });
+
+      public static ReadOnlyDictionary<string, Image> PropertyImages =
+         new ReadOnlyDictionary<string, Image>(new Dictionary<string, Image>
+                                               {
+                                                  {nameof(Resources.Warning), Resources.Warning}
+                                                , {nameof(Resources.ForeignKeyIdentity), Resources.ForeignKeyIdentity}
+                                                , {nameof(Resources.Identity), Resources.Identity}
+                                                , {nameof(Resources.ForeignKey), Resources.ForeignKey}
+                                                , {nameof(Resources.Spacer), Resources.Spacer}
+                                                , {$"[{true}][{SetterAccessModifier.Internal}]", AttributeGlyphs[true][SetterAccessModifier.Internal]}
+                                                , {$"[{true}][{SetterAccessModifier.Protected}]", AttributeGlyphs[true][SetterAccessModifier.Protected]}
+                                                , {$"[{true}][{SetterAccessModifier.Public}]", AttributeGlyphs[true][SetterAccessModifier.Public]}
+                                                , {$"[{false}][{SetterAccessModifier.Internal}]", AttributeGlyphs[false][SetterAccessModifier.Internal]}
+                                                , {$"[{false}][{SetterAccessModifier.Protected}]", AttributeGlyphs[false][SetterAccessModifier.Protected]}
+                                                , {$"[{false}][{SetterAccessModifier.Public}]", AttributeGlyphs[false][SetterAccessModifier.Public]}
+                                                , {$"[{Multiplicity.One}][{Multiplicity.One}]", AssociationGlyphs[Multiplicity.One][Multiplicity.One]}
+                                                , {$"[{Multiplicity.ZeroMany}][{Multiplicity.One}]", AssociationGlyphs[Multiplicity.ZeroMany][Multiplicity.One]}
+                                                , {$"[{Multiplicity.ZeroOne}][{Multiplicity.One}]", AssociationGlyphs[Multiplicity.ZeroOne][Multiplicity.One]}
+                                                , {$"[{Multiplicity.One}][{Multiplicity.ZeroMany}]", AssociationGlyphs[Multiplicity.One][Multiplicity.ZeroMany]}
+                                                , {$"[{Multiplicity.ZeroMany}][{Multiplicity.ZeroMany}]", AssociationGlyphs[Multiplicity.ZeroMany][Multiplicity.ZeroMany]}
+                                                , {$"[{Multiplicity.ZeroOne}][{Multiplicity.ZeroMany}]", AssociationGlyphs[Multiplicity.ZeroOne][Multiplicity.ZeroMany]}
+                                                , {$"[{Multiplicity.One}][{Multiplicity.ZeroOne}]", AssociationGlyphs[Multiplicity.One][Multiplicity.ZeroOne]}
+                                                , {$"[{Multiplicity.ZeroMany}][{Multiplicity.ZeroOne}]", AssociationGlyphs[Multiplicity.ZeroMany][Multiplicity.ZeroOne]}
+                                                , {$"[{Multiplicity.ZeroOne}][{Multiplicity.ZeroOne}]", AssociationGlyphs[Multiplicity.ZeroOne][Multiplicity.ZeroOne]}
+                                               });
+
+      /// <summary>
+      /// Determines which image to display for a property on the diagram only. Model explorer uses GetExplorerNodeImageName instead.
+      /// </summary>
+      /// <param name="element"></param>
+      /// <returns></returns>
+      public static Image GetPropertyImage(ModelElement element)
       {
          ModelRoot modelRoot = element.Store.ModelRoot();
-         if (element is Association association)
-         {
-            if (modelRoot.ShowWarningsInDesigner && association.GetHasWarningValue())
-               return Resources.Warning;
 
-            return AssociationGlyphs[association.SourceMultiplicity][association.TargetMultiplicity];
+         switch (element)
+         {
+            case BidirectionalAssociation bidirectionalAssociation:
+               if (modelRoot.ShowWarningsInDesigner && bidirectionalAssociation.GetHasWarningValue())
+                  return Resources.Warning;
+
+               return AssociationGlyphs[bidirectionalAssociation.TargetMultiplicity][bidirectionalAssociation.SourceMultiplicity];
+
+            case UnidirectionalAssociation unidirectionalAssociation:
+               if (modelRoot.ShowWarningsInDesigner && unidirectionalAssociation.GetHasWarningValue())
+                  return Resources.Warning;
+
+               return AssociationGlyphs[unidirectionalAssociation.SourceMultiplicity][unidirectionalAssociation.TargetMultiplicity];
+
+            case ModelAttribute attribute:
+               if (modelRoot.ShowWarningsInDesigner && attribute.GetHasWarningValue())
+                  return Resources.Warning;
+
+               if (attribute.IsIdentity && attribute.IsForeignKeyFor != Guid.Empty)
+                  return Resources.ForeignKeyIdentity;
+
+               if (attribute.IsIdentity)
+                  return Resources.Identity;
+
+               // ReSharper disable once ConvertIfStatementToReturnStatement
+               if (attribute.IsForeignKeyFor != Guid.Empty)
+                  return Resources.ForeignKey;
+
+               return AttributeGlyphs[attribute.Persistent][attribute.SetterVisibility];
          }
 
          return Resources.Spacer;
       }
 
-      private Image GetSourcesPropertyImage(ModelElement element)
+      /// <summary>
+      /// OnBeforePaint is called at the start of the ShapeElement's painting.
+      /// It provides an opportunity for developers to update and override resources
+      /// before they're used in painting.
+      /// </summary>
+      /// <remarks>
+      /// You can override existing resources by calling StyleSet.OverrideXXX and
+      /// changing the specific setting that you would like.
+      /// </remarks>
+      protected override void OnBeforePaint()
       {
-         ModelRoot modelRoot = element.Store.ModelRoot();
-         if (element is BidirectionalAssociation association)
+         if (ModelElement is ModelClass element && (element.IsAbstract || element.IsDependentType))
          {
-            if (modelRoot.ShowWarningsInDesigner && association.GetHasWarningValue())
-               return Resources.Warning;
+            PenSettings penSettings = StyleSet.GetOverriddenPenSettings(DiagramPens.ConnectionLine) ?? new PenSettings();
 
-            return AssociationGlyphs[association.TargetMultiplicity][association.SourceMultiplicity];
+            if (element.IsAbstract)
+            {
+               penSettings.Color = Color.OrangeRed;
+               penSettings.Width = 0.03f;
+               penSettings.DashStyle = DashStyle.Dot;
+            }
+            else if (element.IsDependentType)
+            {
+               penSettings.Color = Color.ForestGreen;
+               penSettings.Width = 0.03f;
+               penSettings.DashStyle = DashStyle.Dot;
+            }
+
+            StyleSet.OverridePen(DiagramPens.ShapeOutline, penSettings);
          }
+         else
+            StyleSet.ClearPenOverride(DiagramPens.ShapeOutline);
 
-         return Resources.Spacer;
       }
 
-      private Image GetAttributePropertyImage(ModelElement element)
+      /// <summary>
+      /// Provides the well-known name of the resource image for the Model Explorer. Note that these are not directly the resource names in
+      /// Dsl::Resources.resx, but rather a) for diagrams, a key to a dictionary containing the glyphs
+      /// or b) for the model explorer, the names of the glyphs registered with its image list
+      /// </summary>
+      /// <param name="element">ModelElement the explorer node is representing</param>
+      /// <returns>Well-known name of the resource image for the Model Explorer</returns>
+      public static string GetExplorerNodeImageName(ModelElement element)
       {
-         ModelRoot modelRoot = element.Store.ModelRoot();
-         if (element is ModelAttribute attribute)
+         // note: model explorer doesn't show warning nodes
+         switch (element)
          {
-            if (modelRoot.ShowWarningsInDesigner && attribute.GetHasWarningValue())
-               return Resources.Warning;
+            case BidirectionalAssociation bidirectionalAssociation:
+               return $"[{bidirectionalAssociation.TargetMultiplicity}][{bidirectionalAssociation.SourceMultiplicity}]";
 
-            if (attribute.IsIdentity)
-               return Resources.Identity;
+            case UnidirectionalAssociation unidirectionalAssociation:
+               return $"[{unidirectionalAssociation.SourceMultiplicity}][{unidirectionalAssociation.TargetMultiplicity}]";
 
-            return AttributeGlyphs[attribute.Persistent][attribute.SetterVisibility];
+            case ModelAttribute attribute:
+               if (attribute.IsIdentity && attribute.IsForeignKeyFor != Guid.Empty)
+                  return nameof(Resources.ForeignKeyIdentity);
+
+               if (attribute.IsIdentity)
+                  return nameof(Resources.Identity);
+
+               // ReSharper disable once ConvertIfStatementToReturnStatement
+               if (attribute.IsForeignKeyFor != Guid.Empty)
+                  return nameof(Resources.ForeignKey);
+
+               return $"[{attribute.Persistent}][{attribute.SetterVisibility}]";
+
+            case ModelClass modelClass:
+               if (modelClass.IsQueryType)
+                  return modelClass.IsVisible() ? nameof(Resources.SQLVisible) : nameof(Resources.SQL);
+               if (modelClass.IsAbstract)
+                  return modelClass.IsVisible() ? nameof(Resources.AbstractEntityGlyphVisible) : nameof(Resources.AbstractEntityGlyph);
+
+               return modelClass.IsVisible() ? nameof(Resources.EntityGlyphVisible) : nameof(Resources.EntityGlyph);
          }
 
-         return Resources.Spacer;
+         return nameof(Resources.Spacer);
       }
 
       #region Drag/drop model attributes
@@ -220,8 +395,6 @@ namespace Sawczyn.EFDesigner.EFModel
                      using (Transaction t = parentFrom.Store.TransactionManager.BeginTransaction("Move list item"))
                      {
                         parentFromLink.MoveToIndex(parentFromRole, newIndex);
-                        // HACK
-                        //parentTo.SetFlagValues();
                         t.Commit();
                      }
                   }
@@ -231,7 +404,7 @@ namespace Sawczyn.EFDesigner.EFModel
       }
 
       /// <summary>
-      ///    Attach mouse listeners to the compartments for the shape.
+      ///    Attach mouse listeners to the compartments for the shape amd register that they may have tool tips as well
       ///    This is called once per compartment shape.
       ///    The base method creates the compartments for this shape.
       /// </summary>
@@ -239,8 +412,10 @@ namespace Sawczyn.EFDesigner.EFModel
       {
          base.EnsureCompartments();
 
-         foreach (Compartment compartment in NestedChildShapes.OfType<Compartment>())
+         foreach (ElementListCompartment compartment in NestedChildShapes.OfType<ElementListCompartment>())
          {
+            compartment.HasItemToolTips = true;
+
             compartment.MouseDown += Compartment_MouseDown;
             compartment.MouseUp += Compartment_MouseUp;
             compartment.MouseMove += Compartment_MouseMove;
@@ -294,7 +469,14 @@ namespace Sawczyn.EFDesigner.EFModel
             if (OpenCodeFile(modelClass))
                return;
 
-            if (ExecCodeGeneration != null && QuestionDisplay.Show($"Can't open generated file for {modelClass.Name}. It may not have been generated yet. Do you want to generate the code now?") == true)
+            if (!modelClass.GenerateCode)
+            {
+               ErrorDisplay.Show(Store, $"{modelClass.Name} has its GenerateCode property set to false. No file available to open.");
+
+               return;
+            }
+
+            if (ExecCodeGeneration != null && BooleanQuestionDisplay.Show(Store, $"Can't open generated file for {modelClass.Name}. It may not have been generated yet. Do you want to generate the code now?") == true)
             {
                ExecCodeGeneration();
 
@@ -302,8 +484,9 @@ namespace Sawczyn.EFDesigner.EFModel
                   return;
             }
 
-            ErrorDisplay.Show($"Can't open generated file for {modelClass.Name}");
+            ErrorDisplay.Show(Store, $"Can't open generated file for {modelClass.Name}");
          }
       }
+
    }
 }

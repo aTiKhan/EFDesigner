@@ -4,6 +4,8 @@ using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
 
+using Sawczyn.EFDesigner.EFModel.Extensions;
+
 namespace Sawczyn.EFDesigner.EFModel
 {
    class IdentityAttributeTypeTypeConverter: TypeConverterBase
@@ -29,7 +31,7 @@ namespace Sawczyn.EFDesigner.EFModel
 
          if (store != null)
          {
-            ModelRoot modelRoot = store.ElementDirectory.FindElements<ModelRoot>().First();
+            ModelRoot modelRoot = store.ModelRoot();
             values = new List<string>(modelRoot.ValidIdentityAttributeTypes);
          }
 
@@ -49,7 +51,9 @@ namespace Sawczyn.EFDesigner.EFModel
       /// </returns>
       public override bool GetStandardValuesExclusive(ITypeDescriptorContext context)
       {
-         return true;
+         // standard values are required for EF6 or EFCore before v5
+         ModelRoot modelRoot = GetStore(context.Instance).ModelRoot();
+         return !modelRoot.IsEFCore5Plus;
       }
 
       /// <summary>

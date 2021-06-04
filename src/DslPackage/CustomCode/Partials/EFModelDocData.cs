@@ -12,11 +12,11 @@ using EnvDTE80;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.Modeling;
+using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Shell;
 using Microsoft.VisualStudio.Modeling.Validation;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using NuGet.VisualStudio;
 
 using Sawczyn.EFDesigner.EFModel.Extensions;
 
@@ -30,22 +30,17 @@ namespace Sawczyn.EFDesigner.EFModel
       private static DTE _dte;
       private static DTE2 _dte2;
       private IComponentModel _componentModel;
-      private IVsOutputWindowPane _outputWindow;
-      private IVsPackageInstaller _nugetInstaller;
-      private IVsPackageUninstaller _nugetUninstaller;
-      private IVsPackageInstallerServices _nugetInstallerServices;
+      //private IVsOutputWindowPane _outputWindow;
 
       internal static DTE Dte => _dte ?? (_dte = Package.GetGlobalService(typeof(DTE)) as DTE);
       internal static DTE2 Dte2 => _dte2 ?? (_dte2 = Package.GetGlobalService(typeof(SDTE)) as DTE2);
       internal IComponentModel ComponentModel => _componentModel ?? (_componentModel = (IComponentModel)GetService(typeof(SComponentModel)));
-      internal IVsOutputWindowPane OutputWindow => _outputWindow ?? (_outputWindow = (IVsOutputWindowPane)GetService(typeof(SVsGeneralOutputWindowPane)));
-      internal IVsPackageInstallerServices NuGetInstallerServices => _nugetInstallerServices ?? (_nugetInstallerServices = ComponentModel?.GetService<IVsPackageInstallerServices>());
-      internal IVsPackageInstaller NuGetInstaller => _nugetInstaller ?? (_nugetInstaller = ComponentModel.GetService<IVsPackageInstaller>());
-      internal IVsPackageUninstaller NuGetUninstaller => _nugetUninstaller ?? (_nugetUninstaller = ComponentModel.GetService<IVsPackageUninstaller>());
+      //internal IVsOutputWindowPane OutputWindow => _outputWindow ?? (_outputWindow = (IVsOutputWindowPane)GetService(typeof(SVsGeneralOutputWindowPane)));
 
-      internal static Project ActiveProject => Dte.ActiveSolutionProjects is Array activeSolutionProjects && activeSolutionProjects.Length > 0
-                                                 ? activeSolutionProjects.GetValue(0) as Project
-                                                 : null;
+      internal static Project ActiveProject =>
+            Dte.ActiveSolutionProjects is Array activeSolutionProjects && activeSolutionProjects.Length > 0
+                  ? activeSolutionProjects.GetValue(0) as Project
+                  : null;
 
       internal static void GenerateCode()
       {
@@ -101,21 +96,30 @@ namespace Sawczyn.EFDesigner.EFModel
       /// <param name="modelClass"></param>
       internal static bool OpenFileFor(ModelClass modelClass)
       {
-         Project activeProject = ActiveProject;
-
-         if (activeProject != null)
+         try
          {
-            string projectDirectory = Path.GetDirectoryName(activeProject.FullName);
-            Debug.Assert(projectDirectory != null, nameof(projectDirectory) + " != null");
-            string filename = Path.Combine(projectDirectory, modelClass.GetRelativeFileName());
-            if (File.Exists(filename))
-            {
-               Dte.ItemOperations.OpenFile(filename);
-               return true;
-            }
-         }
+            Project activeProject = ActiveProject;
 
-         return false;
+            if (activeProject != null)
+            {
+               string projectDirectory = Path.GetDirectoryName(activeProject.FullName);
+               string filename = Path.Combine(projectDirectory, modelClass.GetRelativeFileName());
+
+               if (File.Exists(filename))
+               {
+                  Dte.ItemOperations.OpenFile(filename);
+
+                  return true;
+               }
+            }
+
+            return false;
+         }
+         catch (Exception e)
+         {
+            Debug.WriteLine("Error opening file. " + e.Message);
+            return false;
+         }
       }
 
       /// <summary>
@@ -124,21 +128,64 @@ namespace Sawczyn.EFDesigner.EFModel
       /// <param name="modelEnum"></param>
       internal static bool OpenFileFor(ModelEnum modelEnum)
       {
-         Project activeProject = ActiveProject;
-
-         if (activeProject != null)
+         try
          {
-            string projectDirectory = Path.GetDirectoryName(activeProject.FullName);
-            Debug.Assert(projectDirectory != null, nameof(projectDirectory) + " != null");
-            string filename = Path.Combine(projectDirectory, modelEnum.GetRelativeFileName());
-            if (File.Exists(filename))
-            {
-               Dte.ItemOperations.OpenFile(filename);
-               return true;
-            }
-         }
+            Project activeProject = ActiveProject;
 
-         return false;
+            if (activeProject != null)
+            {
+               string projectDirectory = Path.GetDirectoryName(activeProject.FullName);
+               Debug.Assert(projectDirectory != null, nameof(projectDirectory) + " != null");
+               string filename = Path.Combine(projectDirectory, modelEnum.GetRelativeFileName());
+
+               if (File.Exists(filename))
+               {
+                  Dte.ItemOperations.OpenFile(filename);
+
+                  return true;
+               }
+            }
+
+            return false;
+         }
+         catch (Exception e)
+         {
+            Debug.WriteLine("Error opening file. " + e.Message);
+            return false;
+         }
+      }
+
+      private IMonitorSelectionService monitorSelection;
+
+      protected IMonitorSelectionService MonitorSelection
+      {
+         get
+         {
+            return monitorSelection
+                ?? (monitorSelection = (IMonitorSelectionService)GetService(typeof(IMonitorSelectionService)));
+         }
+      }
+
+      protected ModelingDocView CurrentModelingDocView
+      {
+         get
+         {
+            return MonitorSelection?.CurrentDocumentView as ModelingDocView;
+         }
+      }
+
+      /// <summary>Currently focused document view</summary>
+      public DiagramDocView CurrentDocView
+      {
+         get
+         {
+            return CurrentModelingDocView as DiagramDocView;
+         }
+      }
+
+      protected Diagram GetCurrentDiagram()
+      {
+         return CurrentDocView?.CurrentDiagram;
       }
 
       /// <summary>
@@ -147,9 +194,16 @@ namespace Sawczyn.EFDesigner.EFModel
       protected override void OnDocumentLoaded()
       {
          base.OnDocumentLoaded();
+
+         if (!(RootElement is ModelRoot modelRoot))
+            return;
+
+         // TODO: This is getting out of hand. Consolidate into an interface and load it up all at once
+
          ErrorDisplay.RegisterDisplayHandler(ShowError);
          WarningDisplay.RegisterDisplayHandler(ShowWarning);
-         QuestionDisplay.RegisterDisplayHandler(ShowBooleanQuestionBox);
+         MessageDisplay.RegisterDisplayHandler(ShowMessage);
+         BooleanQuestionDisplay.RegisterDisplayHandler(ShowBooleanQuestionBox);
          StatusDisplay.RegisterDisplayHandler(ShowStatus);
          ChoiceDisplay.RegisterDisplayHandler(GetChoice);
          ModelDisplay.RegisterLayoutDiagramAction(Commands.LayoutDiagram);
@@ -159,56 +213,75 @@ namespace Sawczyn.EFDesigner.EFModel
          EnumShape.OpenCodeFile = OpenFileFor;
          EnumShape.ExecCodeGeneration = GenerateCode;
          ModelRoot.ExecuteValidator = ValidateAll;
-
-         if (!(RootElement is ModelRoot modelRoot)) return;
-
-         if (NuGetInstaller == null || NuGetUninstaller == null || NuGetInstallerServices == null)
-            ModelRoot.CanLoadNugetPackages = false;
+         ModelRoot.GetCurrentDiagram = GetCurrentDiagram;
+         ModelRoot.WriteDiagramAsBinary = () => EFModelPackage.Options.SaveDiagramsCompressed;
+         ModelDiagramData.OpenDiagram = DisplayDiagram;
+         ModelDiagramData.CloseDiagram = CloseDiagram;
+         ModelDiagramData.RenameWindow = RenameWindow;
 
          // set to the project's namespace if no namespace set
          if (string.IsNullOrEmpty(modelRoot.Namespace))
          {
-            using (Transaction tx = modelRoot.Store.TransactionManager.BeginTransaction("SetDefaultNamespace"))
+            using (Transaction tx = Store.TransactionManager.BeginTransaction("SetDefaultNamespace"))
             {
                modelRoot.Namespace = ActiveProject.Properties.Item("DefaultNamespace")?.Value as string;
                tx.Commit();
             }
          }
 
-         ReadOnlyCollection<Association> associations = modelRoot.Store.ElementDirectory.FindElements<Association>();
+         ReadOnlyCollection<Association> associations = Store.ElementDirectory.FindElements<Association>();
 
          if (associations.Any())
          {
-            using (Transaction tx = modelRoot.Store.TransactionManager.BeginTransaction("StyleConnectors"))
+            using (Transaction tx = Store.TransactionManager.BeginTransaction("StyleConnectors"))
             {
                // style association connectors if needed
-               foreach (Association element in associations)
+               foreach (Association association in associations)
                {
-                  AssociationChangeRules.UpdateDisplayForPersistence(element);
-                  AssociationChangeRules.UpdateDisplayForCascadeDelete(element);
+                  PresentationHelper.UpdateAssociationDisplay(association);
 
                   // for older diagrams that didn't calculate this initially
-                     AssociationChangeRules.SetEndpointRoles(element);
+                  AssociationChangedRules.SetEndpointRoles(association);
                }
 
                tx.Commit();
             }
+
+            // in prior versions, we accidentally allowed EF6 1-1 associations to have defined foreign keys
+            // but EF6 doesn't support that. Fix that now.
+            if (modelRoot.EntityFrameworkVersion == EFVersion.EF6)
+            {
+               using (Transaction tx = Store.TransactionManager.BeginTransaction())
+               {
+                  Store.ElementDirectory
+                       .AllElements
+                       .OfType<Association>()
+                       .Where(a => a.SourceMultiplicity != Multiplicity.ZeroMany
+                                && a.TargetMultiplicity != Multiplicity.ZeroMany
+                                && !string.IsNullOrEmpty(a.FKPropertyName))
+                       .ToList()
+                       .ForEach(a => a.FKPropertyName = null);
+
+                  tx.Commit();
+               }
+            }
+
+
          }
 
-         List<GeneralizationConnector> generalizationConnectors = modelRoot.Store
-                                                                           .ElementDirectory
-                                                                           .FindElements<GeneralizationConnector>()
-                                                                           .Where(x => !x.FromShape.IsVisible || !x.ToShape.IsVisible).ToList();
-         List<AssociationConnector> associationConnectors = modelRoot.Store
-                                                                     .ElementDirectory
-                                                                     .FindElements<AssociationConnector>()
-                                                                     .Where(x => !x.FromShape.IsVisible || !x.ToShape.IsVisible).ToList();
+         List<GeneralizationConnector> generalizationConnectors = Store.ElementDirectory
+                                                                       .FindElements<GeneralizationConnector>()
+                                                                       .Where(x => !x.FromShape.IsVisible || !x.ToShape.IsVisible).ToList();
+
+         List<AssociationConnector> associationConnectors = Store.ElementDirectory
+                                                                 .FindElements<AssociationConnector>()
+                                                                 .Where(x => !x.FromShape.IsVisible || !x.ToShape.IsVisible).ToList();
 
          if (generalizationConnectors.Any() || associationConnectors.Any())
          {
-            using (Transaction tx = modelRoot.Store.TransactionManager.BeginTransaction("HideConnectors"))
+            using (Transaction tx = Store.TransactionManager.BeginTransaction("HideConnectors"))
             {
-               // hide any connectors that may have been hidden due to hidden shapes
+               // hide any connectors that shouldn't be visible because their nodes are hidden
                foreach (GeneralizationConnector connector in generalizationConnectors)
                   connector.Hide();
 
@@ -219,14 +292,15 @@ namespace Sawczyn.EFDesigner.EFModel
             }
          }
 
-         using (Transaction tx = modelRoot.Store.TransactionManager.BeginTransaction("ColorShapeOutlines"))
+         using (Transaction tx = Store.TransactionManager.BeginTransaction("SetClassVisuals"))
          {
-            foreach (ModelClass modelClass in modelRoot.Store.ElementDirectory.FindElements<ModelClass>())
-               PresentationHelper.ColorShapeOutline(modelClass);
+            foreach (ModelClass modelClass in Store.ElementDirectory.FindElements<ModelClass>())
+               PresentationHelper.UpdateClassDisplay(modelClass);
+
             tx.Commit();
          }
 
-         using (Transaction tx = modelRoot.Store.TransactionManager.BeginTransaction("ValidateOnChanges"))
+         using (Transaction tx = Store.TransactionManager.BeginTransaction("ValidateOnChanges"))
          {
             // validate classes that show warnings, so that we can change glyphs accordingly
             List<DomainClassInfo> classesWithWarnings = Store.ElementDirectory
@@ -242,7 +316,7 @@ namespace Sawczyn.EFDesigner.EFModel
             foreach (DomainClassInfo classInfo in classesWithWarnings)
             {
                events.ElementPropertyChanged.Add(classInfo, new EventHandler<ElementPropertyChangedEventArgs>(ValidateModelElement));
-               events.ElementAdded.Add(classInfo, new EventHandler<ElementAddedEventArgs>(ValidateModelElement));   
+               events.ElementAdded.Add(classInfo, new EventHandler<ElementAddedEventArgs>(ValidateModelElement));
             }
 
             tx.Commit();
@@ -251,10 +325,26 @@ namespace Sawczyn.EFDesigner.EFModel
          SetDocDataDirty(0);
       }
 
+      private void DisplayDiagram(ModelDiagramData diagramData)
+      {
+         OpenView(Constants.LogicalView, new Mexedge.VisualStudio.Modeling.ViewContext(diagramData.Name, typeof(EFModelDiagram), RootElement));
+      }
+
+      private void CloseDiagram(EFModelDiagram diagram)
+      {
+         DocViews.OfType<EFModelDocView>().FirstOrDefault(d => d.Diagram == diagram)?.Frame?.CloseFrame((uint)__FRAMECLOSE.FRAMECLOSE_SaveIfDirty);
+      }
+
+      private void RenameWindow(EFModelDiagram diagram)
+      {
+         DocViews.OfType<EFModelDocView>().FirstOrDefault(d => d.Diagram == diagram)?.Frame
+                ?.SetProperty((int)__VSFPROPID.VSFPROPID_EditorCaption, $" [{diagram.Name}]");
+      }
+
       private void ValidateAll()
       {
          ValidationCategories allCategories = ValidationCategories.Menu | ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Custom | ValidationCategories.Load;
-         Store.Get<IDisplaysWarning>().ToList().ForEach(e => e.ResetWarning());
+         Store.GetAll<IDisplaysWarning>().ToList().ForEach(e => e.ResetWarning());
          ValidationController?.ClearMessages();
          ValidationController?.Validate(Store.ElementDirectory.AllElements, allCategories);
       }
@@ -273,47 +363,53 @@ namespace Sawczyn.EFDesigner.EFModel
 
       private void ValidateModelElement(ModelElement modelElement)
       {
-         if (modelElement is IDisplaysWarning displaysWarningElement)
+         if (!ModelRoot.BatchUpdating && modelElement is IDisplaysWarning displaysWarningElement)
          {
             displaysWarningElement.ResetWarning();
 
             ValidationCategories allCategories = ValidationCategories.Menu | ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Custom | ValidationCategories.Load;
             ValidationController.Validate(modelElement, allCategories);
+            
             displaysWarningElement.RedrawItem();
          }
       }
 
-      private DialogResult ShowQuestionBox(string question)
+      internal static DialogResult ShowQuestionBox(IServiceProvider serviceProvider, string question)
       {
-         return PackageUtility.ShowMessageBox(ServiceProvider, 
+         return PackageUtility.ShowMessageBox(serviceProvider, 
                                               question, 
                                               OLEMSGBUTTON.OLEMSGBUTTON_YESNO, 
                                               OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_SECOND, 
                                               OLEMSGICON.OLEMSGICON_QUERY);
       }
 
-      private bool ShowBooleanQuestionBox(string question)
+      internal static bool ShowBooleanQuestionBox(IServiceProvider serviceProvider, string question)
       {
-         return ShowQuestionBox(question) == DialogResult.Yes;
+         return ShowQuestionBox(serviceProvider, question) == DialogResult.Yes;
       }
 
-      // ReSharper disable once UnusedMember.Local
-      private void ShowMessage(string message)
+      internal static void ShowMessage(string message)
       {
          Messages.AddMessage(message);
       }
 
-      private void ShowWarning(string message)
+      internal static void ShowWarning(string message)
       {
          Messages.AddWarning(message);
       }
 
-      private void ShowStatus(string message)
+      internal static void ShowStatus(string message)
       {
          Messages.AddStatus(message);
       }
 
-      private string GetChoice(string title, IEnumerable<string> choices)
+      internal static void ShowError(IServiceProvider serviceProvider, string message)
+      {
+         Messages.AddError(message);
+         PackageUtility.ShowError(serviceProvider, message);
+      }
+
+      internal static string GetChoice(string title, IEnumerable<string> choices)
       {
          return Messages.GetChoice(title, choices);
       }
@@ -324,16 +420,6 @@ namespace Sawczyn.EFDesigner.EFModel
          elements.OfType<IDisplaysWarning>().ToList().ForEach(e => e.ResetWarning());
 
          return elements;
-      }
-
-      private void ShowError(string message)
-      {
-         Messages.AddError(message);
-         PackageUtility.ShowMessageBox(ServiceProvider, 
-                                       message, 
-                                       OLEMSGBUTTON.OLEMSGBUTTON_OK, 
-                                       OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST, 
-                                       OLEMSGICON.OLEMSGICON_CRITICAL);
       }
 
       /// <summary>
@@ -352,111 +438,13 @@ namespace Sawczyn.EFDesigner.EFModel
 
          if (RootElement is ModelRoot modelRoot)
          {
-            // if false, don't even check
-            if (modelRoot.InstallNuGetPackages != AutomaticAction.False)
-               EnsureCorrectNuGetPackages(modelRoot, false);
-
             if (modelRoot.TransformOnSave)
                GenerateCode(((DocumentSavedEventArgs)e).NewFileName);
+
+            CurrentDocView?.CurrentDesigner?.Focus();
+
+            // add other post-save processing as needed
          }
-      }
-
-      private class EFVersionDetails
-      {
-         public string TargetPackageId { get; set; }
-         public string TargetPackageVersion { get; set; }
-         public string CurrentPackageId { get; set; }
-         public string CurrentPackageVersion { get; set; }
-      }
-
-      public void EnsureCorrectNuGetPackages(ModelRoot modelRoot, bool force = true)
-      {
-         EFVersionDetails versionInfo = GetEFVersionDetails(modelRoot);
-
-         if (force || ShouldLoadPackages(modelRoot, versionInfo))
-         {
-            // first unload what's there, if anything
-            if (versionInfo.CurrentPackageId != null)
-            {
-               // only remove dependencies if we're switching EF types
-               Dte.StatusBar.Text = $"Uninstalling {versionInfo.CurrentPackageId} v{versionInfo.CurrentPackageVersion}";
-
-               try
-               {
-                  NuGetUninstaller.UninstallPackage(ActiveProject, versionInfo.CurrentPackageId, true);
-                  Dte.StatusBar.Text = $"Finished uninstalling {versionInfo.CurrentPackageId} v{versionInfo.CurrentPackageVersion}";
-               }
-               catch (Exception ex)
-               {
-                  string message = $"Error uninstalling {versionInfo.CurrentPackageId} v{versionInfo.CurrentPackageVersion}";
-                  Dte.StatusBar.Text = message;
-                  OutputWindow.OutputString(message + "\n");
-                  OutputWindow.OutputString(ex.Message + "\n");
-                  OutputWindow.Activate();
-                  return;
-               }
-            }
-
-            Dte.StatusBar.Text = $"Installing {versionInfo.TargetPackageId} v{versionInfo.TargetPackageVersion}";
-
-            try
-            {
-               NuGetInstaller.InstallPackage(null, ActiveProject, versionInfo.TargetPackageId, versionInfo.TargetPackageVersion, false);
-               Dte.StatusBar.Text = $"Finished installing {versionInfo.TargetPackageId} v{versionInfo.TargetPackageVersion}";
-            }
-            catch (Exception ex)
-            {
-               string message = $"Error installing {versionInfo.TargetPackageId} v{versionInfo.TargetPackageVersion}";
-               Dte.StatusBar.Text = message;
-               OutputWindow.OutputString(message + "\n");
-               OutputWindow.OutputString(ex.Message + "\n");
-               OutputWindow.Activate();
-            }
-         }
-         else if (versionInfo.CurrentPackageId == versionInfo.TargetPackageId && versionInfo.CurrentPackageVersion == versionInfo.TargetPackageVersion)
-         {
-            string message = $"{versionInfo.TargetPackageId} v{versionInfo.TargetPackageVersion} already installed";
-            Dte.StatusBar.Text = message;
-         }
-      }
-
-      private bool ShouldLoadPackages(ModelRoot modelRoot, EFVersionDetails versionInfo)
-      {
-         Version currentPackageVersion = new Version(versionInfo.CurrentPackageVersion);
-         Version targetPackageVersion = new Version(versionInfo.TargetPackageVersion);
-
-         return ModelRoot.CanLoadNugetPackages &&
-                (versionInfo.CurrentPackageId != versionInfo.TargetPackageId || currentPackageVersion != targetPackageVersion) &&
-                (modelRoot.InstallNuGetPackages == AutomaticAction.True ||
-                 ShowQuestionBox($"Referenced libraries don't match Entity Framework {modelRoot.NuGetPackageVersion.ActualPackageVersion}. Fix that now?") == DialogResult.Yes);
-      }
-
-      private static EFVersionDetails GetEFVersionDetails(ModelRoot modelRoot)
-      {
-
-         EFVersionDetails versionInfo = new EFVersionDetails
-         {
-            TargetPackageId = modelRoot.NuGetPackageVersion.PackageId,
-            TargetPackageVersion = modelRoot.NuGetPackageVersion.ActualPackageVersion,
-            CurrentPackageId = null,
-            CurrentPackageVersion = null
-         };
-
-         References references = ((VSProject)ActiveProject.Object).References;
-
-         foreach (Reference reference in references)
-         {
-            if (string.Compare(reference.Name, NuGetHelper.PACKAGEID_EF6, StringComparison.InvariantCultureIgnoreCase) == 0 ||
-                string.Compare(reference.Name, NuGetHelper.PACKAGEID_EFCORE, StringComparison.InvariantCultureIgnoreCase) == 0)
-            {
-               versionInfo.CurrentPackageId = reference.Name;
-               versionInfo.CurrentPackageVersion = reference.Version;
-
-               break;
-            }
-         }
-
-         return versionInfo;
       }
 
       public void Merge(UnidirectionalAssociation[] selected)
@@ -570,6 +558,18 @@ namespace Sawczyn.EFDesigner.EFModel
                                                    });
 
             tx.Commit();
+         }
+      }
+
+      protected override void CleanupOldDiagramFiles()
+      {
+         string diagramsFileName = FileName + this.DiagramExtension;
+         if (diagramsFileName.EndsWith("x"))
+         {
+            string oldDiagramFileName = diagramsFileName.TrimEnd('x');
+
+            if (File.Exists(oldDiagramFileName))
+               Dte2.Solution.FindProjectItem(oldDiagramFileName)?.Delete();
          }
       }
    }

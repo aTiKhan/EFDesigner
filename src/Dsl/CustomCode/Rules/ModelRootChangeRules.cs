@@ -1,5 +1,7 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -20,7 +22,7 @@ namespace Sawczyn.EFDesigner.EFModel
          Store store = element.Store;
          Transaction current = store.TransactionManager.CurrentTransaction;
 
-         if (current.IsSerializing)
+         if (current.IsSerializing || ModelRoot.BatchUpdating)
             return;
 
          if (Equals(e.NewValue, e.OldValue))
@@ -45,32 +47,96 @@ namespace Sawczyn.EFDesigner.EFModel
 
                break;
 
-            case "DatabaseSchema":
+            case "DatabaseCollationDefault":
 
-               if (string.IsNullOrEmpty((string)e.NewValue))
-                  element.DatabaseSchema = "dbo";
+               if (string.IsNullOrEmpty(element.DatabaseCollationDefault))
+                  element.DatabaseCollationDefault = "default";
+
+               break;
+
+            case "EntityFrameworkPackageVersion":
+
+               if (element.EntityFrameworkVersion == EFVersion.EFCore)
+               {
+                  if (element.IsEFCore5Plus)
+                  {
+                     if (element.InheritanceStrategy == CodeStrategy.TablePerConcreteType)
+                        element.InheritanceStrategy = CodeStrategy.TablePerType;
+                  }
+                  else
+                  {
+                     element.InheritanceStrategy = CodeStrategy.TablePerHierarchy;
+                     store.ElementDirectory.AllElements.OfType<ModelClass>().Where(c => c.IsPropertyBag).ToList().ForEach(c => c.IsPropertyBag = false);
+                  }
+               }
 
                break;
 
             case "EntityFrameworkVersion":
                element.EntityFrameworkPackageVersion = "Latest";
 
-               if (element.EntityFrameworkVersion == EFVersion.EFCore)
-                  element.InheritanceStrategy = CodeStrategy.TablePerHierarchy;
+               switch (element.EntityFrameworkVersion)
+               {
+                  case EFVersion.EFCore:
+                  {
+                     if (element.IsEFCore5Plus)
+                     {
+                        if (element.InheritanceStrategy == CodeStrategy.TablePerConcreteType)
+                           element.InheritanceStrategy = CodeStrategy.TablePerType;
+                     }
+                     else
+                     {
+                        element.InheritanceStrategy = CodeStrategy.TablePerHierarchy;
+                        store.ElementDirectory.AllElements.OfType<ModelClass>().Where(c => c.IsPropertyBag).ToList().ForEach(c => c.IsPropertyBag = false);
 
-               break;
+                        switch (element.PropertyAccessModeDefault)
+                        {
+                           case PropertyAccessMode.PreferField:
+                           case PropertyAccessMode.PreferFieldDuringConstruction:
+                           case PropertyAccessMode.PreferProperty:
+                              element.PropertyAccessModeDefault = PropertyAccessMode.FieldDuringConstruction;
 
-            case "EnumOutputDirectory":
+                              store.ElementDirectory.AllElements.OfType<ModelAttribute>()
+                                   .Where(a => !a.IsPropertyAccessModeTracking
+                                            && (a.PropertyAccessMode == PropertyAccessMode.PreferField
+                                             || a.PropertyAccessMode == PropertyAccessMode.PreferProperty
+                                             || a.PropertyAccessMode == PropertyAccessMode.PreferFieldDuringConstruction))
+                                   .ToList()
+                                   .ForEach(a => a.PropertyAccessMode = PropertyAccessMode.FieldDuringConstruction);
 
-               if (string.IsNullOrEmpty((string)e.NewValue) && !string.IsNullOrEmpty(element.EntityOutputDirectory))
-                  element.EnumOutputDirectory = element.EntityOutputDirectory;
+                              break;
+                        }
+                     }
 
-               break;
+                     break;
+                  }
 
-            case "StructOutputDirectory":
+                  case EFVersion.EF6:
+                  {
+                     store.ElementDirectory.AllElements.OfType<ModelClass>().Where(c => c.IsPropertyBag).ToList().ForEach(c => c.IsPropertyBag = false);
 
-               if (string.IsNullOrEmpty((string)e.NewValue) && !string.IsNullOrEmpty(element.EntityOutputDirectory))
-                  element.StructOutputDirectory = element.EntityOutputDirectory;
+                     List<Association> associations = store.ElementDirectory
+                                                           .AllElements
+                                                           .OfType<Association>()
+                                                           .Where(a => !string.IsNullOrEmpty(a.FKPropertyName) && a.SourceMultiplicity != Multiplicity.ZeroMany && a.TargetMultiplicity != Multiplicity.ZeroMany)
+                                                           .ToList();
+
+                     string message = $"This will remove declared foreign key properties from {associations.Count} one-to-one association{(associations.Count == 1 ? "" : "s")}. Are you sure?";
+
+                     if (associations.Any() && BooleanQuestionDisplay.Show(store, message) == true)
+                     {
+                        foreach (Association association in associations)
+                        {
+                           association.FKPropertyName = null;
+                           AssociationChangedRules.FixupForeignKeys(association);
+                        }
+                     }
+
+                     break;
+                  }
+               }
+
+               ModelRoot.ExecuteValidator?.Invoke();
 
                break;
 
@@ -84,6 +150,27 @@ namespace Sawczyn.EFDesigner.EFModel
 
                break;
 
+            case "EnumOutputDirectory":
+
+               if (string.IsNullOrEmpty((string)e.NewValue) && !string.IsNullOrEmpty(element.EntityOutputDirectory))
+                  element.EnumOutputDirectory = element.EntityOutputDirectory;
+
+               break;
+
+            case "ExposeForeignKeys":
+               if (!element.ExposeForeignKeys)
+               {
+                  foreach (Association association in element.Store.GetAll<Association>()
+                                                             .Where(a => (a.SourceRole == EndpointRole.Dependent || a.TargetRole == EndpointRole.Dependent)
+                                                                      && !string.IsNullOrWhiteSpace(a.FKPropertyName)))
+                  {
+                     association.FKPropertyName = null;
+                     AssociationChangedRules.FixupForeignKeys(association);
+                  }
+               }
+
+               break;
+
             case "FileNameMarker":
                string newFileNameMarker = (string)e.NewValue;
 
@@ -94,43 +181,96 @@ namespace Sawczyn.EFDesigner.EFModel
 
                break;
 
-            case "InheritanceStrategy":
+            case "GridColor":
+               foreach (EFModelDiagram diagram in element.GetDiagrams())
+                  diagram.GridColor = (Color)e.NewValue;
 
-               if ((element.EntityFrameworkVersion == EFVersion.EFCore) && (element.NuGetPackageVersion.MajorMinorVersionNum < 2.1))
-                  element.InheritanceStrategy = CodeStrategy.TablePerHierarchy;
+               redraw = true;
 
                break;
 
-            case "LayoutAlgorithm":
-               ModelDisplay.LayoutDiagram(element.Classes.FirstOrDefault()?.GetActiveDiagram() as EFModelDiagram);
+            case "InheritanceStrategy":
+
+               if (element.EntityFrameworkVersion == EFVersion.EFCore)
+               {
+                  if (element.IsEFCore5Plus && element.InheritanceStrategy == CodeStrategy.TablePerConcreteType)
+                     element.InheritanceStrategy = CodeStrategy.TablePerType;
+
+                  if (!element.IsEFCore5Plus)
+                     element.InheritanceStrategy = CodeStrategy.TablePerHierarchy;
+               }
 
                break;
 
             case "Namespace":
                errorMessages.Add(CommonRules.ValidateNamespace((string)e.NewValue, CodeGenerator.IsValidLanguageIndependentIdentifier));
+               break;
 
+            case "PluralizeDbSetNames":
+               if (ModelRoot.PluralizationService != null)
+               {
+                  foreach (ModelClass modelClass in element.Classes)
+                  {
+                     if (modelClass.DbSetName == modelClass.GetDefaultDbSetName((bool)e.OldValue))
+                        modelClass.DbSetName = modelClass.GetDefaultDbSetName((bool)e.NewValue);
+                  }
+               }
+               break;
+
+            case "PluralizeTableNames":
+               if (ModelRoot.PluralizationService != null)
+               {
+                  foreach (ModelClass modelClass in element.Classes)
+                  {
+                     if (modelClass.TableName == modelClass.GetDefaultTableName((bool)e.OldValue))
+                        modelClass.TableName = modelClass.GetDefaultTableName((bool)e.NewValue);
+                  }
+               }
                break;
 
             case "ShowCascadeDeletes":
+               // Normally you'd think that we should be able to register this in a AssociateValueWith call
+               // in AssociationConnector, but that doesn't appear to work. So call the update method here.
+               foreach (Association association in store.ElementDirectory.FindElements<Association>())
+                  PresentationHelper.UpdateAssociationDisplay(association);
 
-               // need these change rules to fire even though nothing in Association has changed
-               // so we need to set this early -- requires guarding against recursion.
-               bool newShowCascadeDeletes = (bool)e.NewValue;
+               redraw = true;
 
-               if (element.ShowCascadeDeletes != newShowCascadeDeletes)
-               {
-                  element.ShowCascadeDeletes = newShowCascadeDeletes;
+               break;
 
-                  foreach (Association association in store.ElementDirectory.FindElements<Association>())
-                     AssociationChangeRules.UpdateDisplayForCascadeDelete(association);
-               }
+            case "ShowGrid":
+               foreach (EFModelDiagram diagram in element.GetDiagrams())
+                  diagram.ShowGrid = (bool)e.NewValue;
 
+               redraw = true;
+
+               break;
+
+            case "ShowInterfaceIndicators":
                redraw = true;
 
                break;
 
             case "ShowWarningsInDesigner":
                redraw = true;
+
+               if ((bool)e.NewValue)
+                  ModelRoot.ExecuteValidator?.Invoke();
+
+               break;
+
+            case "SnapToGrid":
+               foreach (EFModelDiagram diagram in element.GetDiagrams())
+                  diagram.SnapToGrid = (bool)e.NewValue;
+
+               redraw = true;
+
+               break;
+
+            case "StructOutputDirectory":
+
+               if (string.IsNullOrEmpty((string)e.NewValue) && !string.IsNullOrEmpty(element.EntityOutputDirectory))
+                  element.StructOutputDirectory = element.EntityOutputDirectory;
 
                break;
 
@@ -149,11 +289,14 @@ namespace Sawczyn.EFDesigner.EFModel
          if (errorMessages.Any())
          {
             current.Rollback();
-            ErrorDisplay.Show(string.Join("\n", errorMessages));
+            ErrorDisplay.Show(store, string.Join("\n", errorMessages));
          }
 
          if (redraw)
-            element.InvalidateDiagrams();
+         {
+            foreach (EFModelDiagram diagram in element.GetDiagrams().Where(d => d.ActiveDiagramView != null))
+               diagram.Invalidate(true);
+         }
       }
    }
 }

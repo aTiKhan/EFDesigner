@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -6,15 +7,68 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 namespace Sawczyn.EFDesigner.EFModel.Extensions
 {
+   /// <summary>
+   /// Extension methods for Microsoft.VisualStudio.Modeling.ModelElement
+   /// </summary>
    public static class ModelElementExtensions
    {
-      private static ShapeElement GetShapeElement(this ModelElement element)
+      /// <summary>
+      /// Detects whether the model element has a visible shape on the indicated diagram, or on the current diagram if none is passed
+      /// </summary>
+      /// <param name="modelElement">ModelElement represented by the shape in question</param>
+      /// <param name="diagram">Diagram to interrogate</param>
+      /// <returns>True if found, false otherwise</returns>
+      internal static bool IsVisible(this ModelElement modelElement, Diagram diagram = null)
       {
-         // Get the first shape
-         // If the model element is in a compartment the result will be null
-         return element?.GetFirstShapeElement() ?? element?.GetCompartmentElementFirstParentElement()?.GetFirstShapeElement();
+         return modelElement.GetShapeElement(diagram)?.IsVisible(diagram) == true;
       }
 
+      /// <summary>
+      /// Detects whether the shape element is present and visible on the indicated diagram, or on the current diagram if none is passed
+      /// </summary>
+      /// <param name="shapeElement">ShapeElement to find</param>
+      /// <param name="diagram">Diagram to interrogate</param>
+      /// <returns>True if found, false otherwise</returns>
+      internal static bool IsVisible(this ShapeElement shapeElement, Diagram diagram = null)
+      {
+         Diagram targetDiagram = diagram ?? EFModel.ModelRoot.GetCurrentDiagram();
+         return targetDiagram != null && shapeElement.Diagram == targetDiagram && shapeElement.IsVisible;
+      }
+
+      /// <summary>
+      /// Find the shape element if any, representing the model element on the indicated diagram, or on the current diagram if none is passed
+      /// </summary>
+      /// <param name="element">ModelElement represented by the shape in question</param>
+      /// <param name="diagram">Diagram to interrogate</param>
+      /// <returns>ShapeElement if available, null otherwise</returns>
+      private static ShapeElement GetShapeElement(this ModelElement element, Diagram diagram = null)
+      {
+         ShapeElement result = null;
+
+         // Get the shape on the diagram. If not specified, pick the current one
+         if (diagram == null)
+            diagram = EFModel.ModelRoot.GetCurrentDiagram();
+
+         if (diagram != null)
+         {
+            result = diagram.Store.GetAll<ShapeElement>().FirstOrDefault(x => x.ModelElement == element && x.Diagram == diagram);
+
+            // If the model element is in a compartment the result should be null? Check for Compartment type just in case
+            if (result is Compartment)
+            {
+               ModelElement parentElement = element.GetCompartmentElementFirstParentElement();
+               result = parentElement?.GetShapeElement(diagram);
+            }
+         }
+
+         return result;
+      }
+
+      /// <summary>
+      /// Finds the ModelElement surrounding the current ModelElement. Assumes current ModelElement is a compartment.
+      /// </summary>
+      /// <param name="modelElement">Compartment</param>
+      /// <returns>Surrounding (owning) element, if any</returns>
       private static ModelElement GetCompartmentElementFirstParentElement(this ModelElement modelElement)
       {
          // Get the domain class associated with model element.
@@ -35,25 +89,64 @@ namespace Sawczyn.EFDesigner.EFModel.Extensions
          return null;
       }
 
+      /// <summary>
+      /// Detects if the model element is currently loading into memory from storage
+      /// </summary>
+      /// <param name="element">Element to interrogate</param>
+      /// <returns>True if loading, false otherwise</returns>
+      public static bool IsLoading(this ModelElement element)
+      {
+         TransactionManager transactionManager = element.Store.TransactionManager;
+
+         Transaction currentTransaction = transactionManager.CurrentTransaction;
+
+         return transactionManager.InTransaction
+             && (currentTransaction.IsSerializing
+              || currentTransaction.Name.ToLowerInvariant() == "paste"
+              || currentTransaction.Name.ToLowerInvariant() == "local merge transaction");
+      }
+
+      /// <summary>
+      /// Gets the root element of the model
+      /// </summary>
+      /// <param name="store">Store object to search to find the root</param>
       public static ModelRoot ModelRoot(this Store store)
       {
-         return store.Get<ModelRoot>().FirstOrDefault();
+         return store.GetAll<ModelRoot>().FirstOrDefault();
       }
 
-      public static IEnumerable<T> Get<T>(this Store store)
+      public static List<(string propertyName, object thisValue, object otherValue)> GetDifferences<T>(this T This, T Other) where T:ModelElement
       {
-         return store.ElementDirectory.AllElements.OfType<T>();
+         List<(string propertyName, object thisValue, object otherValue)> result = new List<(string propertyName, object thisValue, object otherValue)>();
+         ReadOnlyCollection<DomainPropertyInfo> domainProperties = This.GetDomainClass().AllDomainProperties;
+
+         foreach (DomainPropertyInfo domainProperty in domainProperties)
+         {
+            object thisProperty = domainProperty.GetValue(This);
+            object otherProperty = domainProperty.GetValue(Other);
+
+            if (thisProperty == null && otherProperty == null)
+               continue;
+
+            if (thisProperty != null && otherProperty != null && thisProperty.Equals(otherProperty))
+               continue;
+
+            result.Add((domainProperty.Name, thisProperty, otherProperty));
+         }
+
+         return result;
       }
 
-      public static bool LocateInDiagram(this ModelElement element)
+      public static IEnumerable<T> GetAll<T>(this Store store)
       {
-         DiagramView diagramView = element.GetShapeElement()?.Diagram?.ActiveDiagramView;
-         return diagramView != null && diagramView.SelectModelElement(element);
+         return store?.ElementDirectory?.AllElements?.OfType<T>() ?? new T[0];
       }
 
       public static ShapeElement GetFirstShapeElement(this ModelElement element)
       {
-         return PresentationViewsSubject.GetPresentation(element).OfType<ShapeElement>().FirstOrDefault();
+         return PresentationViewsSubject.GetPresentation(element)
+                                        .OfType<ShapeElement>()
+                                        .FirstOrDefault(s => s.Diagram == EFModel.ModelRoot.GetCurrentDiagram());
       }
 
       /// <summary>
@@ -86,18 +179,16 @@ namespace Sawczyn.EFDesigner.EFModel.Extensions
                                                    .ToList();
 
             foreach (EFModelDiagram diagram in diagrams)
-            {
                diagram.Invalidate();
-            }
          }
       }
 
-      //public static DiagramView GetActiveDiagramView(this ModelElement element)
-      //{
-      //   // Get the shape that corresponds to this model element
-      //   ShapeElement shapeElement = element.GetShapeElement();
-      //   return shapeElement?.Vi
-      //}
+      public static void Redraw(this ModelElement element)
+      {
+         // redraw on every diagram
+         foreach (ShapeElement shapeElement in PresentationViewsSubject.GetPresentation(element).OfType<ShapeElement>().Distinct().ToList())
+            shapeElement.Invalidate();
+      }
 
       public static Diagram GetActiveDiagram(this ModelElement element)
       {

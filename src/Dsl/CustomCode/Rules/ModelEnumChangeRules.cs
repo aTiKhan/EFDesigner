@@ -21,7 +21,6 @@ namespace Sawczyn.EFDesigner.EFModel
 
          Store store = element.Store;
          Transaction currentTransaction = store.TransactionManager.CurrentTransaction;
-         ModelRoot modelRoot = store.ModelRoot();
 
          if (currentTransaction.IsSerializing)
             return;
@@ -40,23 +39,29 @@ namespace Sawczyn.EFDesigner.EFModel
 
                if (string.IsNullOrWhiteSpace(element.Name) || !CodeGenerator.IsValidLanguageIndependentIdentifier(element.Name))
                   errorMessage = "Name must be a valid .NET identifier";
-               else if (store.Get<ModelClass>().Any(x => x.Name == element.Name))
+               else if (store.GetAll<ModelClass>().Any(x => x.FullName == element.FullName))
                   errorMessage = "Enum name already in use by a class";
-               else if (store.Get<ModelEnum>().Except(new[] {element}).Any(x => x.Name == element.Name))
+               else if (store.GetAll<ModelEnum>().Except(new[] {element}).Any(x => x.FullName == element.FullName))
                   errorMessage = "Enum name already in use by another enum";
                else
                {
                   // rename type names for ModelAttributes that reference this enum
-                  foreach (ModelAttribute modelAttribute in store.Get<ModelAttribute>().Where(a => a.Type == (string)e.OldValue))
+                  foreach (ModelAttribute modelAttribute in store.GetAll<ModelAttribute>().Where(a => a.Type == (string)e.OldValue))
+                  {
                      modelAttribute.Type = element.Name;
+
+                     if (!string.IsNullOrEmpty(modelAttribute.InitialValue))
+                     {
+                        string[] parts = modelAttribute.InitialValue.Split('.');
+                        parts[0] = (string)e.NewValue;
+                        modelAttribute.InitialValue = string.Join(".", parts);
+                     }
+                  }
                }
 
                break;
 
             case "Namespace":
-
-               if (string.IsNullOrWhiteSpace(element.Namespace))
-                  element.Namespace = modelRoot.Namespace;
 
                if (currentTransaction.Name.ToLowerInvariant() != "paste")
                   errorMessage = CommonRules.ValidateNamespace(element.Namespace, CodeGenerator.IsValidLanguageIndependentIdentifier);
@@ -90,7 +95,7 @@ namespace Sawczyn.EFDesigner.EFModel
          if (errorMessage != null)
          {
             currentTransaction.Rollback();
-            ErrorDisplay.Show(errorMessage);
+            ErrorDisplay.Show(store, errorMessage);
          }
       }
    }

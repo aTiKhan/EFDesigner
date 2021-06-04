@@ -3,6 +3,8 @@ using System.Linq;
 
 using Microsoft.VisualStudio.Modeling;
 
+using Sawczyn.EFDesigner.EFModel.Extensions;
+
 namespace Sawczyn.EFDesigner.EFModel
 {
    [RuleOn(typeof(Generalization), FireTime = TimeToFire.TopLevelCommit)]
@@ -16,25 +18,26 @@ namespace Sawczyn.EFDesigner.EFModel
          Store store = element.Store;
          Transaction current = store.TransactionManager.CurrentTransaction;
 
-         if (current.IsSerializing)
+         if (current.IsSerializing || ModelRoot.BatchUpdating)
             return;
 
-         if (element.IsInCircularInheritance())
+         if (element.Subclass.IsPropertyBag && !element.Superclass.IsPropertyBag)
          {
-            ErrorDisplay.Show($"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause a circular reference.");
+            ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: Since {element.Subclass.Name} is a property bag, it can't inherit from {element.Superclass.Name}, which is not a property bag.");
             current.Rollback();
 
             return;
          }
 
-         List<string> superclassPropertyNames = element.Superclass
-                                                       .AllAttributes
-                                                       .Select(a => a.Name)
-                                                       .Union(element.Superclass
-                                                                     .AllNavigationProperties()
-                                                                     .Where(x => x.PropertyName != null)
-                                                                     .Select(a => a.PropertyName))
-                                                       .ToList();
+         if (element.IsInCircularInheritance())
+         {
+            ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause a circular reference.");
+            current.Rollback();
+
+            return;
+         }
+
+         List<string> superclassPropertyNames = element.Superclass.AllPropertyNames.ToList();
 
          List<string> nameClashes = element.Subclass
                                            .Attributes
@@ -46,19 +49,30 @@ namespace Sawczyn.EFDesigner.EFModel
                                                          .Select(p => p.PropertyName))
                                            .ToList();
 
-         // since we created the Id property, we'll remove it. Any other clashes are up to the user to resolve.
-         if (nameClashes.Contains("Id") &&
-             element.Subclass.Attributes.FirstOrDefault(a => a.Name == "Id")?.IsIdentity == true &&
-             element.Superclass.AllAttributes.FirstOrDefault(a => a.Name == "Id")?.IsIdentity == true)
+         // remove attributes in subclass that are present in superclass IF they are completely identical (except for ModelClass, of course)
+         for (int i = 0; i < nameClashes.Count; i++)
          {
-            element.Subclass.Attributes.Remove(element.Subclass.Attributes.Single(a => a.Name == "Id"));
-            nameClashes.Remove("Id");
+            ModelAttribute subclassAttribute = element.Subclass.Attributes.First(a => a.Name == nameClashes[i]);
+            ModelAttribute superclassAttribute = element.Superclass.AllAttributes.First(a => a.Name == nameClashes[i]);
+            List<(string propertyName, object thisValue, object otherValue)> differences = superclassAttribute.GetDifferences(subclassAttribute);
+
+            // ignore these differences if found
+            differences.RemoveAll(x => x.propertyName == "ModelClass" || 
+                                       x.propertyName == "Summary" || 
+                                       x.propertyName == "Description");
+
+            if (!differences.Any())
+            {
+               element.Subclass.Attributes.Remove(element.Subclass.Attributes.Single(a => a.Name == nameClashes[i]));
+               nameClashes.RemoveAt(i--);
+            }
          }
 
+         // if any remain with the same name, it's an error
          if (nameClashes.Any())
          {
             string nameClashList = string.Join("\n   ", nameClashes);
-            ErrorDisplay.Show($"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause name clashes. Resolve the following before setting the inheritance:\n   {nameClashList}");
+            ErrorDisplay.Show(store, $"{element.Subclass.Name} -> {element.Superclass.Name}: That inheritance link would cause name clashes. Resolve the following before setting the inheritance:\n   {nameClashList}");
             current.Rollback();
          }
       }

@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.Modeling;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public partial class EnumShapeBase
+   public partial class EnumShapeBase: IHasStore
    {
       internal sealed partial class FillColorPropertyHandler
       {
@@ -14,8 +14,9 @@ namespace Sawczyn.EFDesigner.EFModel
             if (element.Store.InUndoRedoOrRollback || element.Store.InSerializationTransaction)
                return;
 
-            // set text color to contrasting color based on new fill color
-            element.TextColor = newValue.LegibleTextColor();
+            // set text color to contrasting color based on new fill color, if it's currently black or white
+            if (element.TextColor == Color.Black || element.TextColor == Color.White)
+               element.TextColor = newValue.LegibleTextColor();
          }
       }
 

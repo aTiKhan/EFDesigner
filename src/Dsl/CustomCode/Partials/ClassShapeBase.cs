@@ -3,13 +3,14 @@ using Microsoft.VisualStudio.Modeling;
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public abstract partial class ClassShapeBase
+   public abstract partial class ClassShapeBase: IHasStore
    {
       private static string GetDisplayPropertyFromModelClassForAssociationsCompartment(ModelElement element)
       {
          Association association = (Association)element;
          ModelClass target = association.Target;
          
+         // ReSharper disable once ConvertIfStatementToReturnStatement
          if (!string.IsNullOrEmpty(association.TargetPropertyName))
             return $"{association.TargetPropertyName} : {target.Name}";
 
@@ -21,6 +22,7 @@ namespace Sawczyn.EFDesigner.EFModel
          BidirectionalAssociation association = (BidirectionalAssociation)element;
          ModelClass source = association.Source;
 
+         // ReSharper disable once ConvertIfStatementToReturnStatement
          if (!string.IsNullOrEmpty(association.SourcePropertyName))
             return $"{association.SourcePropertyName} : {source.Name}";
 
@@ -29,21 +31,7 @@ namespace Sawczyn.EFDesigner.EFModel
 
       private static string GetDisplayPropertyFromModelClassForAttributesCompartment(ModelElement element)
       {
-         ModelAttribute attribute = (ModelAttribute)element;
-
-         string nullable = attribute.Required ? "" : "?";
-         string name = attribute.Name;
-         string type = attribute.Type;
-         string initial = !string.IsNullOrEmpty(attribute.InitialValue) ? " = " + attribute.InitialValue : "";
-
-         string lengthDisplay = "";
-
-         if (attribute.MinLength > 0)
-            lengthDisplay = $"[{attribute.MinLength}-{attribute.MaxLength}]";
-         else if (attribute.MaxLength > 0)
-            lengthDisplay = $"[{attribute.MaxLength}]";
-
-         return $"{name} : {type}{nullable}{lengthDisplay}{initial}";
+         return ((ModelAttribute)element).ToDisplayString();
       }
 
       internal sealed partial class FillColorPropertyHandler
@@ -55,8 +43,9 @@ namespace Sawczyn.EFDesigner.EFModel
             if (element.Store.InUndoRedoOrRollback || element.Store.InSerializationTransaction)
                return;
 
-            // set text color to contrasting color based on new fill color
-            element.TextColor = newValue.LegibleTextColor();
+            // set text color to contrasting color based on new fill color, if it's currently black or white
+            if (element.TextColor == Color.Black || element.TextColor == Color.White)
+               element.TextColor = newValue.LegibleTextColor();
          }
       }
 

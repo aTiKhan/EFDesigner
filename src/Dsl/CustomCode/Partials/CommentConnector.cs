@@ -2,7 +2,7 @@
 
 namespace Sawczyn.EFDesigner.EFModel
 {
-   public partial class CommentConnector
+   public partial class CommentConnector: IHasStore
    {
       protected override int ModifyLuminosity(int currentLuminosity, DiagramClientView view)
       {
@@ -15,5 +15,6 @@ namespace Sawczyn.EFDesigner.EFModel
          // so if it's black we're highlighting, return 130, since that looks ok.
          return baseCalculation == 40 ? 130 : baseCalculation;
       }
+
    }
 }
